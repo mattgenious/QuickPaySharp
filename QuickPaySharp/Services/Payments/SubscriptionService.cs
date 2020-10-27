@@ -13,11 +13,56 @@ namespace RechargeSharp.Services.Subscriptions
 {
     public class PaymentService : QuickPaySharpService
     {
-        public PaymentService(ILogger<QuickPaySharpService> logger, IHttpClientFactory httpClientFactory, IOptions<QuickPaySharpServiceOptions> quickPaySharpOptions) : base(logger, httpClientFactory, quickPaySharpOptions)
+        public PaymentService(ILogger<QuickPaySharpService> logger, IHttpClientFactory httpClientFactory,
+            IOptions<QuickPaySharpServiceOptions> quickPaySharpOptions) : base(logger, httpClientFactory,
+            quickPaySharpOptions)
         {
         }
 
-        public async Task<List<Payment>>
+        /// <summary>
+        /// TODO: implement string value validation as some parameters must have a specific subset of strings to be valid.
+        /// </summary>
+        /// <param name="year"></param>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <param name="hour"></param>
+        /// <param name="minute"></param>
+        /// <param name="timestamp"></param>
+        /// <param name="minTime"></param>
+        /// <param name="maxTime"></param>
+        /// <param name="operationsSize"></param>
+        /// <param name="accepted"></param>
+        /// <param name="orderId"></param>
+        /// <param name="state"></param>
+        /// <param name="id"></param>
+        /// <param name="acquirer"></param>
+        /// <param name="fraudSuspected"></param>
+        /// <param name="page"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="sortBy"></param>
+        /// <param name="sortDirection"></param>
+        /// <param name="pageKey"></param>
+        /// <returns></returns>
+        public async Task<List<Payment>> GetPaymentsAsync(long year, long month, long day, long hour, long minute, string timestamp, DateTime minTime, DateTime maxTime, long operationsSize, bool accepted, string orderId, string state, long id, string acquirer, bool fraudSuspected, long page, long pageSize, string sortBy, string sortDirection, DateTime pageKey)
+        {
+
+            // TODO: implement parameters for getting payments
+            //var queryParams = $"page={page}&limit={limit}";
+            //queryParams += customerId != null ? $"&customer_id={customerId}" : "";
+            //queryParams += addressId != null ? $"&address_id={addressId}" : "";
+            //queryParams += status != null ? $"&status={status}" : "";
+            //queryParams += shopifyCustomerId != null ? $"&shopify_customer_id={shopifyCustomerId}" : "";
+            //queryParams += shopifyVariantId != null ? $"&shopify_variant_id={shopifyVariantId}" : "";
+            //queryParams += createdAtMin != null ? $"&created_at_min={createdAtMin?.ToString("s")}" : "";
+            //queryParams += createAtMax != null ? $"&created_at_max={createAtMax?.ToString("s")}" : "";
+            //queryParams += updatedAtMin != null ? $"&updated_at_min={updatedAtMin?.ToString("s")}" : "";
+            //queryParams += updatedAtMax != null ? $"&updated_at_max={updatedAtMax?.ToString("s")}" : "";
+
+
+            var response = await GetAsync("/payments/").ConfigureAwait(false);
+            return JsonConvert.DeserializeObject<List<Payment>>(
+                await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+        }
 
         //public async Task<bool> SubscriptionExistsAsync(long id)
         //{
