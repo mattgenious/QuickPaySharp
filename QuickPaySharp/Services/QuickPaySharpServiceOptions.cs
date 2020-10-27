@@ -22,11 +22,11 @@ namespace QuickPaySharp.Services
         {
             if (ApiKeyArray == null)
             {
-                throw new ArgumentNullException("Please supply api keys in options when registering RechargeSharp in your DI container");
+                throw new ArgumentNullException("Please supply api keys in options when registering QuickPaySharp in your DI container");
             }
             if (!ApiKeyArray.Any())
             {
-                throw new ArgumentException("Please supply api keys in options when registering RechargeSharp in your DI container");
+                throw new ArgumentException("Please supply api keys in options when registering QuickPaySharp in your DI container");
             }
 
             if (_count == 0)

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -19,25 +20,27 @@ namespace QuickPaySharp.Services
 
         private readonly ILogger<QuickPaySharpService> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
-        private readonly QuickPaySharpServiceOptions _rechargeServiceOptions;
+        private readonly QuickPaySharpServiceOptions _quickPaySharpServiceOptions;
         private readonly HttpClient _client;
         protected QuickPaySharpService(ILogger<QuickPaySharpService> logger, IHttpClientFactory httpClientFactory, IOptions<QuickPaySharpServiceOptions> quickPaySharpServiceOptions)
         {
             _logger = logger;
             _httpClientFactory = httpClientFactory;
-            _rechargeServiceOptions = quickPaySharpServiceOptions.Value;
+            _quickPaySharpServiceOptions = quickPaySharpServiceOptions.Value;
 
-            var apiKey = _rechargeServiceOptions.GetApiKey();
+            var apiKey = _quickPaySharpServiceOptions.GetApiKey();
 
-            _client = _httpClientFactory.CreateClient("RechargeSharpClient");
-            _client.DefaultRequestHeaders.Remove("X-Recharge-Access-Token");
-            _client.DefaultRequestHeaders.Add("X-Recharge-Access-Token", apiKey);
+            _client = _httpClientFactory.CreateClient("QuickPaySharpClient");
+            if (_client.DefaultRequestHeaders.Contains("Authorization"))
+            {
+                _client.DefaultRequestHeaders.Remove("Authorization");
+            }
+            _client.DefaultRequestHeaders.Add($"Authorization", $"Basic {Convert.ToBase64String(Encoding.UTF8.GetBytes($":{apiKey}"))}");
 
             AsyncRetryPolicy = Policy.HandleResult<HttpResponseMessage>(x =>
             {
                 if (!x.IsSuccessStatusCode)
                 {
-                    _logger.LogError("X-Request-Id:" + string.Join(",", x.Headers.GetValues("X-Request-Id")));
                     _logger.LogError(x.Content.ReadAsStringAsync().GetAwaiter().GetResult());
                     if ((int)x.StatusCode == 401)
                     {
@@ -45,9 +48,9 @@ namespace QuickPaySharp.Services
                     }
                     if (x.StatusCode == HttpStatusCode.TooManyRequests)
                     {
-                        var newApiKey = _rechargeServiceOptions.GetApiKey();
-                        _client.DefaultRequestHeaders.Remove("X-Recharge-Access-Token");
-                        _client.DefaultRequestHeaders.Add("X-Recharge-Access-Token", newApiKey);
+                        var newApiKey = _quickPaySharpServiceOptions.GetApiKey();
+                        _client.DefaultRequestHeaders.Remove("Authorization");
+                        _client.DefaultRequestHeaders.Add("Authorization", $"Basic {Convert.ToBase64String(Encoding.UTF8.GetBytes($":{apiKey}"))}");
                         _logger.LogInformation($"changed apikey to: {newApiKey}");
                         return true;
                     }
@@ -73,26 +76,26 @@ namespace QuickPaySharp.Services
 
         protected Task<HttpResponseMessage> GetAsync(string path)
         {
-            _logger.LogInformation($"RechargeSharp GET: {path}");
+            _logger.LogInformation($"QuickPaySharp GET: {path}");
             return AsyncRetryPolicy.ExecuteAsync(async () => await _client.GetAsync(path));
         }
         protected Task<HttpResponseMessage> PutAsJsonAsync(string path, string jsonData)
         {
-            _logger.LogInformation($"RechargeSharp PUT: {path}\r\nJSONDATA: {jsonData}");
+            _logger.LogInformation($"QuickPaySharp PUT: {path}\r\nJSONDATA: {jsonData}");
             var content = new StringContent(jsonData);
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             return AsyncRetryPolicy.ExecuteAsync(async () => await _client.PutAsync(path, content));
         }
         protected Task<HttpResponseMessage> PostAsJsonAsync(string path, string jsonData)
         {
-            _logger.LogInformation($"RechargeSharp POST: {path}\r\nJSONDATA: {jsonData}");
+            _logger.LogInformation($"QuickPaySharp POST: {path}\r\nJSONDATA: {jsonData}");
             var content = new StringContent(jsonData);
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             return AsyncRetryPolicy.ExecuteAsync(async () => await _client.PostAsync(path, content));
         }
         protected Task<HttpResponseMessage> DeleteAsync(string path)
         {
-            _logger.LogInformation($"RechargeSharp DELETE: {path}");
+            _logger.LogInformation($"QuickPaySharp DELETE: {path}");
             return AsyncRetryPolicy.ExecuteAsync(async () => await _client.DeleteAsync(path));
         }
 

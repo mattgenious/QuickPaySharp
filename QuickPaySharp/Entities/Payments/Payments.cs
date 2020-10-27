@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace QuickPaySharp.Entities.Payments
 {
-    public class Payments
+    public class Payment
     {
         [JsonProperty("id", NullValueHandling = NullValueHandling.Ignore)]
         public long? Id { get; set; }
