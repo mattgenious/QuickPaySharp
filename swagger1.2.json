@@ -1,0 +1,2673 @@
+{
+  "apiVersion": "10.0",
+  "swaggerVersion": "1.2",
+  "resourcePath": "/payments",
+  "produces": [
+    "application/xml",
+    "application/json",
+    "application/octet-stream",
+    "text/plain"
+  ],
+  "apis": [
+    {
+      "path": "/payments",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Get all payments",
+          "nickname": "GET-payments---format-",
+          "method": "GET",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "query",
+              "name": "date[year]",
+              "description": "\u003cp\u003eYear\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "date[month]",
+              "description": "\u003cp\u003eMonth\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32",
+              "minimum": 1,
+              "maximum": 12
+            },
+            {
+              "paramType": "query",
+              "name": "date[day]",
+              "description": "\u003cp\u003eDay of the month\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32",
+              "minimum": 1,
+              "maximum": 31
+            },
+            {
+              "paramType": "query",
+              "name": "date[hour]",
+              "description": "\u003cp\u003eHour of the day\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32",
+              "minimum": 0,
+              "maximum": 23
+            },
+            {
+              "paramType": "query",
+              "name": "date[minute]",
+              "description": "\u003cp\u003eMinute of the hour\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32",
+              "minimum": 0,
+              "maximum": 59
+            },
+            {
+              "paramType": "query",
+              "name": "timestamp",
+              "description": "\u003cp\u003eTimestamp field\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "defaultValue": "created_at",
+              "enum": ["created_at", "updated_at"]
+            },
+            {
+              "paramType": "query",
+              "name": "min_time",
+              "description": "\u003cp\u003eFilter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”\u003c/p\u003e\n",
+              "type": "Time",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "query",
+              "name": "max_time",
+              "description": "\u003cp\u003eFilter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”\u003c/p\u003e\n",
+              "type": "Time",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "query",
+              "name": "operations_size",
+              "description": "\u003cp\u003eMaximum number of operations to retrieve\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "accepted",
+              "description": "\u003cp\u003eReturn accepted payments\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "query",
+              "name": "order_id",
+              "description": "\u003cp\u003eFind by order_id\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "query",
+              "name": "state",
+              "description": "\u003cp\u003eFind by state\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "enum": ["initial", "pending", "new", "rejected", "processed"]
+            },
+            {
+              "paramType": "query",
+              "name": "id",
+              "description": "\u003cp\u003eFind by transaction id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "acquirer",
+              "description": "\u003cp\u003eFilter by acquirer\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "enum": [
+                "bambora",
+                "clearhaus",
+                "coinify",
+                "elavon",
+                "handelsbanken",
+                "klarna",
+                "klarnapayments",
+                "mobilepay",
+                "mobilepayonline",
+                "mobilepaysubscriptions",
+                "nets",
+                "paypal",
+                "paysafecard",
+                "resurs",
+                "sofort",
+                "swedbank",
+                "swish",
+                "teller",
+                "trustly",
+                "valitor",
+                "viabill",
+                "vipps"
+              ]
+            },
+            {
+              "paramType": "query",
+              "name": "fraud_suspected",
+              "description": "\u003cp\u003eFilter by suspected fraud\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false,
+              "enum": [true]
+            },
+            {
+              "paramType": "query",
+              "name": "page",
+              "description": "\u003cp\u003ePagination page. Default is 1\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32",
+              "defaultValue": 1
+            },
+            {
+              "paramType": "query",
+              "name": "page_size",
+              "description": "\u003cp\u003eItems per page. Default is 20\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32",
+              "defaultValue": 20
+            },
+            {
+              "paramType": "query",
+              "name": "sort_by",
+              "description": "\u003cp\u003eProperty to sort by\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "defaultValue": "id",
+              "enum": ["id", "order_id", "created_at"]
+            },
+            {
+              "paramType": "query",
+              "name": "sort_dir",
+              "description": "\u003cp\u003eSort direction\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "defaultValue": "desc",
+              "enum": ["asc", "desc"]
+            },
+            {
+              "paramType": "query",
+              "name": "page_key",
+              "description": "\n",
+              "type": "Time",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 200, "message": "OK" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        },
+        {
+          "notes": "\n",
+          "summary": "Create payment",
+          "nickname": "POST-payments---format-",
+          "method": "POST",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "currency",
+              "description": "\u003cp\u003eCurrency\u003c/p\u003e\n",
+              "type": "string",
+              "required": true,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "order_id",
+              "description": "\u003cp\u003eUnique order id(must be between 4-20 characters)\u003c/p\u003e\n",
+              "type": "string",
+              "required": true,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[name]",
+              "description": "\u003cp\u003eName\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[att]",
+              "description": "\u003cp\u003eAtt\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[company_name]",
+              "description": "\u003cp\u003eCompany name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[street]",
+              "description": "\u003cp\u003eStreet\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[house_number]",
+              "description": "\u003cp\u003eHouse number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[house_extension]",
+              "description": "\u003cp\u003eHouse extension\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[city]",
+              "description": "\u003cp\u003eCity\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[zip_code]",
+              "description": "\u003cp\u003eZip code\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[region]",
+              "description": "\u003cp\u003eRegion\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[country_code]",
+              "description": "\u003cp\u003eThree letter country code according to ISO 3166-1 Alpha-3\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[vat_no]",
+              "description": "\u003cp\u003eVAT registration number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[phone_number]",
+              "description": "\u003cp\u003ePhone number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[mobile_number]",
+              "description": "\u003cp\u003eMobile number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[email]",
+              "description": "\u003cp\u003eEmail address\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[name]",
+              "description": "\u003cp\u003eName\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[att]",
+              "description": "\u003cp\u003eAtt\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[company_name]",
+              "description": "\u003cp\u003eCompany name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[street]",
+              "description": "\u003cp\u003eStreet\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[house_number]",
+              "description": "\u003cp\u003eHouse number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[house_extension]",
+              "description": "\u003cp\u003eHouse extension\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[city]",
+              "description": "\u003cp\u003eCity\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[zip_code]",
+              "description": "\u003cp\u003eZip code\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[region]",
+              "description": "\u003cp\u003eRegion\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[country_code]",
+              "description": "\u003cp\u003eThree letter country code according to ISO 3166-1 Alpha-3\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[vat_no]",
+              "description": "\u003cp\u003eVAT registration number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[phone_number]",
+              "description": "\u003cp\u003ePhone number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[mobile_number]",
+              "description": "\u003cp\u003eMobile number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[email]",
+              "description": "\u003cp\u003eEmail address\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "branding_id",
+              "description": "\u003cp\u003eUsed branding id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][qty]",
+              "description": "\u003cp\u003eQuantity\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][item_no]",
+              "description": "\u003cp\u003eItem reference number\u003c/p\u003e\n",
+              "type": "string",
+              "required": true,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][item_name]",
+              "description": "\u003cp\u003eItem name\u003c/p\u003e\n",
+              "type": "string",
+              "required": true,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][item_price]",
+              "description": "\u003cp\u003ePer item price (incl. VAT)\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][vat_rate]",
+              "description": "\u003cp\u003eVAT rate\u003c/p\u003e\n",
+              "type": "number",
+              "required": true,
+              "allowMultiple": false,
+              "format": "float"
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[method]",
+              "description": "\u003cp\u003eShipping method\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "enum": [
+                "store_pick_up",
+                "home_delivery",
+                "registered_box",
+                "unregistered_box",
+                "pick_up_point",
+                "own_delivery"
+              ]
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[company]",
+              "description": "\u003cp\u003eShipping company\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[amount]",
+              "description": "\u003cp\u003eShipping price (incl. VAT)\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[vat_rate]",
+              "description": "\u003cp\u003eVAT rate\u003c/p\u003e\n",
+              "type": "number",
+              "required": false,
+              "allowMultiple": false,
+              "format": "float"
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[tracking_number]",
+              "description": "\u003cp\u003eShipping tracking number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[tracking_url]",
+              "description": "\u003cp\u003eShipping tracking url\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shopsystem[name]",
+              "description": "\u003cp\u003eShop system module name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shopsystem[version]",
+              "description": "\u003cp\u003eShop system module version\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "variables",
+              "description": "\u003cp\u003eCustom variables\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false,
+              "defaultValue": {}
+            },
+            {
+              "paramType": "form",
+              "name": "text_on_statement",
+              "description": "\u003cp\u003eText to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 201, "message": "Created" },
+            { "code": 400, "message": "Invalid parameters" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/link",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Create or update a payment link",
+          "nickname": "PUT-payments--id-link---format-",
+          "method": "PUT",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003eTransaction id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "amount",
+              "description": "\u003cp\u003eAmount to authorize\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "agreement_id",
+              "description": "\u003cp\u003eAgreement to use. Defaults to the Payment Window agreement\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "language",
+              "description": "\u003cp\u003eLanguage\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "defaultValue": "en"
+            },
+            {
+              "paramType": "form",
+              "name": "continue_url",
+              "description": "\u003cp\u003eUrl that cardholder is redirected to after authorize\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "cancel_url",
+              "description": "\u003cp\u003eUrl that cardholder is redirected to after cancelation\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "callback_url",
+              "description": "\u003cp\u003eEndpoint for async callback\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "payment_methods",
+              "description": "\u003cp\u003eLimit payment methods\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "auto_fee",
+              "description": "\u003cp\u003eAdd acquirer fee to amount. Default is merchant autofee\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "branding_id",
+              "description": "\u003cp\u003eOverride branding. Default is merchant default branding\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "google_analytics_tracking_id",
+              "description": "\u003cp\u003eSend events to Google Analytics\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "google_analytics_client_id",
+              "description": "\u003cp\u003eSend events to Google Analytics\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "acquirer",
+              "description": "\u003cp\u003eForce usage of the given acquirer\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "deadline",
+              "description": "\u003cp\u003eSet a deadline in seconds for the cardholder to complete\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "framed",
+              "description": "\u003cp\u003eAllow opening in iframe\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "branding_config",
+              "description": "\u003cp\u003eConfig for branding. Will be merged with the default config in the branding\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "customer_email",
+              "description": "\u003cp\u003eRequired for PayPal. Email of customer.\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address_selection",
+              "description": "\u003cp\u003eGet customer invoice address via acquirer (Currently MobilePay and PayPal only)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address_selection",
+              "description": "\u003cp\u003eGet customer shipping address via acquirer (Currently MobilePay and PayPal only)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "auto_capture",
+              "description": "\u003cp\u003eWhen true, payment is captured after authorization. Default is false\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::PaymentLinkUrl",
+          "responseMessages": [
+            { "code": 200, "message": "OK" },
+            { "code": 400, "message": "Invalid parameters" }
+          ]
+        },
+        {
+          "notes": "\n",
+          "summary": "Delete payment link",
+          "nickname": "DELETE-payments--id-link---format-",
+          "method": "DELETE",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003eTransaction id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            }
+          ],
+          "type": "void",
+          "responseMessages": [
+            { "code": 204, "message": "No content" },
+            { "code": 400, "message": "Invalid parameters" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Get payment",
+          "nickname": "GET-payments--id---format-",
+          "method": "GET",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "operations_size",
+              "description": "\u003cp\u003eMaximum number of operations to retrieve\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 200, "message": "OK" },
+            { "code": 403, "message": "Not authorized" },
+            { "code": 404, "message": "Not found" }
+          ]
+        },
+        {
+          "notes": "\n",
+          "summary": "Update payment",
+          "nickname": "PATCH-payments--id---format-",
+          "method": "PATCH",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "deadline_at",
+              "description": "\u003cp\u003ePayment must be authorized before this time\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "format": "date-time"
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[name]",
+              "description": "\u003cp\u003eName\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[att]",
+              "description": "\u003cp\u003eAtt\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[company_name]",
+              "description": "\u003cp\u003eCompany name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[street]",
+              "description": "\u003cp\u003eStreet\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[house_number]",
+              "description": "\u003cp\u003eHouse number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[house_extension]",
+              "description": "\u003cp\u003eHouse extension\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[city]",
+              "description": "\u003cp\u003eCity\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[zip_code]",
+              "description": "\u003cp\u003eZip code\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[region]",
+              "description": "\u003cp\u003eRegion\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[country_code]",
+              "description": "\u003cp\u003eThree letter country code according to ISO 3166-1 Alpha-3\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[vat_no]",
+              "description": "\u003cp\u003eVAT registration number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[phone_number]",
+              "description": "\u003cp\u003ePhone number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[mobile_number]",
+              "description": "\u003cp\u003eMobile number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "invoice_address[email]",
+              "description": "\u003cp\u003eEmail address\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[name]",
+              "description": "\u003cp\u003eName\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[att]",
+              "description": "\u003cp\u003eAtt\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[company_name]",
+              "description": "\u003cp\u003eCompany name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[street]",
+              "description": "\u003cp\u003eStreet\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[house_number]",
+              "description": "\u003cp\u003eHouse number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[house_extension]",
+              "description": "\u003cp\u003eHouse extension\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[city]",
+              "description": "\u003cp\u003eCity\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[zip_code]",
+              "description": "\u003cp\u003eZip code\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[region]",
+              "description": "\u003cp\u003eRegion\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[country_code]",
+              "description": "\u003cp\u003eThree letter country code according to ISO 3166-1 Alpha-3\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[vat_no]",
+              "description": "\u003cp\u003eVAT registration number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[phone_number]",
+              "description": "\u003cp\u003ePhone number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[mobile_number]",
+              "description": "\u003cp\u003eMobile number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping_address[email]",
+              "description": "\u003cp\u003eEmail address\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][qty]",
+              "description": "\u003cp\u003eQuantity\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][item_no]",
+              "description": "\u003cp\u003eItem reference number\u003c/p\u003e\n",
+              "type": "string",
+              "required": true,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][item_name]",
+              "description": "\u003cp\u003eItem name\u003c/p\u003e\n",
+              "type": "string",
+              "required": true,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][item_price]",
+              "description": "\u003cp\u003ePer item price (incl. VAT)\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "basket[][vat_rate]",
+              "description": "\u003cp\u003eVAT rate\u003c/p\u003e\n",
+              "type": "number",
+              "required": true,
+              "allowMultiple": false,
+              "format": "float"
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[method]",
+              "description": "\u003cp\u003eShipping method\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "enum": [
+                "store_pick_up",
+                "home_delivery",
+                "registered_box",
+                "unregistered_box",
+                "pick_up_point",
+                "own_delivery"
+              ]
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[company]",
+              "description": "\u003cp\u003eShipping company\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[amount]",
+              "description": "\u003cp\u003eShipping price (incl. VAT)\u003c/p\u003e\n",
+              "type": "integer",
+              "required": false,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[vat_rate]",
+              "description": "\u003cp\u003eVAT rate\u003c/p\u003e\n",
+              "type": "number",
+              "required": false,
+              "allowMultiple": false,
+              "format": "float"
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[tracking_number]",
+              "description": "\u003cp\u003eShipping tracking number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "shipping[tracking_url]",
+              "description": "\u003cp\u003eShipping tracking url\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "variables",
+              "description": "\u003cp\u003eCustom variables\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 200, "message": "OK" },
+            { "code": 403, "message": "Not authorized" },
+            { "code": 404, "message": "Not found" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/session",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Create payment session",
+          "nickname": "POST-payments--id-session---format-",
+          "method": "POST",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "QuickPay-Callback-Url",
+              "description": "\u003cp\u003eSpecify the callback url (overrides merchant default callback-url)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "synchronized",
+              "description": "\u003cp\u003eDisables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "amount",
+              "description": "\u003cp\u003eAmount\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "auto_capture",
+              "description": "\u003cp\u003eWhen true, payment is captured after authorization. Default is false\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "acquirer",
+              "description": "\u003cp\u003eIf set, will force the use of this acquirer\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "enum": [
+                "bambora",
+                "clearhaus",
+                "coinify",
+                "elavon",
+                "handelsbanken",
+                "klarna",
+                "klarnapayments",
+                "mobilepay",
+                "mobilepayonline",
+                "mobilepaysubscriptions",
+                "nets",
+                "paypal",
+                "paysafecard",
+                "resurs",
+                "sofort",
+                "swedbank",
+                "swish",
+                "teller",
+                "trustly",
+                "valitor",
+                "viabill",
+                "vipps"
+              ]
+            },
+            {
+              "paramType": "form",
+              "name": "autofee",
+              "description": "\u003cp\u003eWhen true, fee is calculated and added to the given amount. Default is merchant autofee\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "customer_ip",
+              "description": "\u003cp\u003eCustomer IP\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "person[first_name]",
+              "description": "\u003cp\u003ePerson first name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "person[last_name]",
+              "description": "\u003cp\u003ePerson last name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "person[email]",
+              "description": "\u003cp\u003ePerson email\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "extras",
+              "description": "\u003cp\u003eAdditional acquirer specific params\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 202, "message": "Accepted" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/authorize",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Authorize payment",
+          "nickname": "POST-payments--id-authorize---format-",
+          "method": "POST",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "QuickPay-Callback-Url",
+              "description": "\u003cp\u003eSpecify the callback url (overrides merchant default callback-url)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "synchronized",
+              "description": "\u003cp\u003eDisables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "amount",
+              "description": "\u003cp\u003eAmount\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "vat_rate",
+              "description": "\u003cp\u003eVate rate\u003c/p\u003e\n",
+              "type": "number",
+              "required": false,
+              "allowMultiple": false,
+              "format": "float"
+            },
+            {
+              "paramType": "form",
+              "name": "card[number]",
+              "description": "\u003cp\u003eCard number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[expiration]",
+              "description": "\u003cp\u003eExpiration date (YYMM)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[cvd]",
+              "description": "\u003cp\u003eCVD/CVV\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[token]",
+              "description": "\u003cp\u003eCard token\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[apple_pay_token]",
+              "description": "\u003cp\u003eApple Pay payment-token\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[mobilepay_online_token]",
+              "description": "\u003cp\u003eMobilePay Online payment-token\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[issued_to]",
+              "description": "\u003cp\u003eCard holder name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[brand]",
+              "description": "\u003cp\u003eBrand to use on multi-brand card\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "enum": [
+                "american-express",
+                "dankort",
+                "diners",
+                "fbg1886",
+                "jcb",
+                "maestro",
+                "mastercard",
+                "mastercard-debet",
+                "visa",
+                "visa-electron"
+              ]
+            },
+            {
+              "paramType": "form",
+              "name": "card[status]",
+              "description": "\u003cp\u003e3D-Secure status\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[eci]",
+              "description": "\u003cp\u003e3D-Secure eci\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[xav]",
+              "description": "\u003cp\u003e3D-Secure xav\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "card[cavv]",
+              "description": "\u003cp\u003e3D-Secure cavv\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "mobile_number",
+              "description": "\u003cp\u003eMobile number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "nin[number]",
+              "description": "\u003cp\u003eCustomer NIN Number\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "nin[country_code]",
+              "description": "\u003cp\u003eCustomer country (ISO 3166-1 Alpha-3)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "nin[gender]",
+              "description": "\u003cp\u003eCustomer gender\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "enum": ["male", "female"]
+            },
+            {
+              "paramType": "form",
+              "name": "person[first_name]",
+              "description": "\u003cp\u003ePerson first name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "person[last_name]",
+              "description": "\u003cp\u003ePerson last name\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "person[email]",
+              "description": "\u003cp\u003ePerson email\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "auto_capture",
+              "description": "\u003cp\u003eWhen true, payment is captured after authorization. Default is false\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "acquirer",
+              "description": "\u003cp\u003eIf set, will force the use of this acquirer\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false,
+              "enum": [
+                "bambora",
+                "clearhaus",
+                "coinify",
+                "elavon",
+                "handelsbanken",
+                "klarna",
+                "klarnapayments",
+                "mobilepay",
+                "mobilepayonline",
+                "mobilepaysubscriptions",
+                "nets",
+                "paypal",
+                "paysafecard",
+                "resurs",
+                "sofort",
+                "swedbank",
+                "swish",
+                "teller",
+                "trustly",
+                "valitor",
+                "viabill",
+                "vipps"
+              ]
+            },
+            {
+              "paramType": "form",
+              "name": "autofee",
+              "description": "\u003cp\u003eWhen true, fee is calculated and added to the given amount. Default is merchant autofee\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "customer_ip",
+              "description": "\u003cp\u003eCustomer IP\u003c/p\u003e\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "extras",
+              "description": "\u003cp\u003eAdditional acquirer specific params\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "zero_auth",
+              "description": "\u003cp\u003e(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 202, "message": "Accepted" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/capture",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Capture payment",
+          "nickname": "POST-payments--id-capture---format-",
+          "method": "POST",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "QuickPay-Callback-Url",
+              "description": "\u003cp\u003eSpecify the callback url (overrides merchant default callback-url)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "synchronized",
+              "description": "\u003cp\u003eDisables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "amount",
+              "description": "\u003cp\u003eAmount\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "extras",
+              "description": "\u003cp\u003eAdditional acquirer specific params\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 202, "message": "Accepted" },
+            { "code": 400, "message": "Invalid parameters" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/refund",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Refund payment",
+          "nickname": "POST-payments--id-refund---format-",
+          "method": "POST",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "QuickPay-Callback-Url",
+              "description": "\u003cp\u003eSpecify the callback url (overrides merchant default callback-url)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "synchronized",
+              "description": "\u003cp\u003eDisables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            },
+            {
+              "paramType": "form",
+              "name": "amount",
+              "description": "\u003cp\u003eAmount\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "vat_rate",
+              "description": "\u003cp\u003eVate rate\u003c/p\u003e\n",
+              "type": "number",
+              "required": false,
+              "allowMultiple": false,
+              "format": "float"
+            },
+            {
+              "paramType": "form",
+              "name": "extras",
+              "description": "\u003cp\u003eAdditional acquirer specific params\u003c/p\u003e\n",
+              "type": "object",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 202, "message": "Accepted" },
+            { "code": 400, "message": "Invalid parameters" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/cancel",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Cancel payment",
+          "nickname": "POST-payments--id-cancel---format-",
+          "method": "POST",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "QuickPay-Callback-Url",
+              "description": "\u003cp\u003eSpecify the callback url (overrides merchant default callback-url)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "synchronized",
+              "description": "\u003cp\u003eDisables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 202, "message": "Accepted" },
+            { "code": 400, "message": "Invalid parameters" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/renew",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Renew authorization",
+          "nickname": "POST-payments--id-renew---format-",
+          "method": "POST",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "QuickPay-Callback-Url",
+              "description": "\u003cp\u003eSpecify the callback url (overrides merchant default callback-url)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "query",
+              "name": "synchronized",
+              "description": "\u003cp\u003eDisables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Payment",
+          "responseMessages": [
+            { "code": 202, "message": "Accepted" },
+            { "code": 400, "message": "Invalid parameters" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/fraud-report",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Create fraud confirmation report",
+          "nickname": "POST-payments--id-fraud-report---format-",
+          "method": "POST",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "QuickPay-Callback-Url",
+              "description": "\u003cp\u003eSpecify the callback url (overrides merchant default callback-url)\u003c/p\u003e\n",
+              "type": "string",
+              "required": false
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "description",
+              "description": "\n",
+              "type": "string",
+              "required": false,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::FraudReport",
+          "responseMessages": [
+            { "code": 202, "message": "Accepted" },
+            { "code": 400, "message": "Invalid parameters" },
+            { "code": 403, "message": "Not authorized" }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/payments/{id}/operations/{operation_id}",
+      "operations": [
+        {
+          "notes": "\n",
+          "summary": "Get Operation",
+          "nickname": "GET-payments--id-operations--operation_id---format-",
+          "method": "GET",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "path",
+              "name": "operation_id",
+              "description": "\u003cp\u003eOperations id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Operation",
+          "responseMessages": [
+            { "code": 200, "message": "OK" },
+            { "code": 403, "message": "Not authorized" },
+            { "code": 404, "message": "Not found" }
+          ]
+        },
+        {
+          "notes": "\n",
+          "summary": "Update operation",
+          "nickname": "PATCH-payments--id-operations--operation_id---format-",
+          "method": "PATCH",
+          "parameters": [
+            {
+              "paramType": "header",
+              "name": "Accept-Version",
+              "description": "\u003cp\u003eSpecify the version of the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "header",
+              "name": "Authorization",
+              "description": "\u003cp\u003eUse Basic Auth to authorize to the API\u003c/p\u003e\n",
+              "type": "string",
+              "required": true
+            },
+            {
+              "paramType": "path",
+              "name": "id",
+              "description": "\u003cp\u003ePayment id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "path",
+              "name": "operation_id",
+              "description": "\u003cp\u003eOperations id\u003c/p\u003e\n",
+              "type": "integer",
+              "required": true,
+              "allowMultiple": false,
+              "format": "int32"
+            },
+            {
+              "paramType": "form",
+              "name": "pending",
+              "description": "\u003cp\u003eAborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value)\u003c/p\u003e\n",
+              "type": "boolean",
+              "required": true,
+              "allowMultiple": false
+            }
+          ],
+          "type": "QuickPay::Protocol::V10::Operation",
+          "responseMessages": [
+            { "code": 200, "message": "OK" },
+            { "code": 400, "message": "Invalid parameters" },
+            { "code": 428, "message": "Precondition required" },
+            { "code": 403, "message": "Not authorized" },
+            { "code": 404, "message": "Not found" }
+          ]
+        }
+      ]
+    }
+  ],
+  "basePath": "https://api.quickpay.net/docs/v10/merchant",
+  "models": {
+    "QuickPay::Protocol::V10::Payment": {
+      "id": "QuickPay::Protocol::V10::Payment",
+      "properties": {
+        "id": { "type": "integer", "description": "Id", "format": "int32" },
+        "merchant_id": {
+          "type": "integer",
+          "description": "Merchant id",
+          "format": "int32"
+        },
+        "order_id": { "type": "string", "description": "Order number" },
+        "accepted": {
+          "type": "boolean",
+          "description": "Accepted by acquirer"
+        },
+        "type": { "type": "string", "description": "transaction type" },
+        "text_on_statement": {
+          "type": "string",
+          "description": "Text on statement"
+        },
+        "branding_id": {
+          "type": "integer",
+          "description": "Branding id",
+          "format": "int32"
+        },
+        "variables": { "$ref": "hash", "description": "Custom variables" },
+        "currency": { "type": "string", "description": "Currency" },
+        "state": {
+          "enum": ["initial", "pending", "new", "rejected", "processed"],
+          "type": "string",
+          "description": "State of transaction"
+        },
+        "metadata": { "$ref": "Metadata", "description": "Metadata" },
+        "link": { "$ref": "PaymentLink", "description": "PaymentLink" },
+        "shipping_address": {
+          "$ref": "OptionalAddress",
+          "description": "Shipping address set on payment creation"
+        },
+        "invoice_address": {
+          "$ref": "OptionalAddress",
+          "description": "Invoice address set on payment creation"
+        },
+        "basket": { "$ref": "Basket", "description": "Order items" },
+        "shipping": { "$ref": "Shipping", "description": "Shipping" },
+        "operations": {
+          "items": { "type": "Operation" },
+          "$ref": "array",
+          "description": "Operations"
+        },
+        "test_mode": { "type": "boolean", "description": "Test mode" },
+        "acquirer": {
+          "type": "string",
+          "description": "Acquirer that processed the transaction"
+        },
+        "facilitator": {
+          "type": "string",
+          "description": "Facilitator that facilitated the transaction"
+        },
+        "created_at": {
+          "$ref": "ISO-8601",
+          "description": "Timestamp of creation"
+        },
+        "updated_at": {
+          "$ref": "ISO-8601",
+          "description": "Timestamp of last updated"
+        },
+        "retented_at": {
+          "$ref": "ISO-8601",
+          "description": "Timestamp of retention"
+        },
+        "balance": {
+          "type": "integer",
+          "description": "Balance",
+          "format": "int32"
+        },
+        "fee": {
+          "type": "integer",
+          "description": "Fee added to authorization amount (only relevant on auto-fee)",
+          "format": "int32"
+        },
+        "subscription_id": {
+          "type": "integer",
+          "description": "Parent subscription id (only recurring)",
+          "format": "int32"
+        },
+        "deadline_at": {
+          "$ref": "ISO-8601",
+          "description": "Authorize deadline"
+        }
+      },
+      "required": ["branding_id", "variables"]
+    },
+    "QuickPay::Protocol::V10::PaymentLinkUrl": {
+      "id": "QuickPay::Protocol::V10::PaymentLinkUrl",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Url to payment window for this payment link"
+        }
+      }
+    },
+    "QuickPay::Protocol::V10::FraudReport": {
+      "id": "QuickPay::Protocol::V10::FraudReport",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Report description"
+        },
+        "created_at": {
+          "$ref": "ISO-8601",
+          "description": "Report creation date"
+        }
+      }
+    },
+    "QuickPay::Protocol::V10::Operation": {
+      "id": "QuickPay::Protocol::V10::Operation",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "Operation ID",
+          "format": "int32"
+        },
+        "type": { "type": "string", "description": "Type of operation" },
+        "amount": {
+          "type": "integer",
+          "description": "Amount",
+          "format": "int32"
+        },
+        "pending": {
+          "type": "boolean",
+          "description": "If the operation is pending"
+        },
+        "qp_status_code": {
+          "type": "string",
+          "description": "QuickPay status code"
+        },
+        "qp_status_msg": {
+          "type": "string",
+          "description": "QuickPay status message"
+        },
+        "aq_status_code": {
+          "type": "string",
+          "description": "Acquirer status code"
+        },
+        "aq_status_msg": {
+          "type": "string",
+          "description": "Acquirer status message"
+        },
+        "data": { "$ref": "hash", "description": "Acquirer specific data" },
+        "callback_url": {
+          "type": "string",
+          "description": "Operation callback url"
+        },
+        "callback_success": {
+          "type": "boolean",
+          "description": "Did the callback succeed"
+        },
+        "callback_response_code": {
+          "type": "boolean",
+          "description": "The http response code from the callback operation"
+        },
+        "callback_duration": {
+          "type": "integer",
+          "description": "Callback duration (ms)",
+          "format": "int32"
+        },
+        "acquirer": {
+          "type": "string",
+          "description": "Acquirer that processed this operation"
+        },
+        "3d_secure_status": {
+          "type": "string",
+          "description": "3D Secure status"
+        },
+        "callback_at": {
+          "$ref": "ISO-8601",
+          "description": "Timestamp of callback"
+        },
+        "created_at": {
+          "$ref": "ISO-8601",
+          "description": "Timestamp of creation"
+        }
+      }
+    },
+    "QuickPay::Protocol::V10::Metadata": {
+      "id": "QuickPay::Protocol::V10::Metadata",
+      "properties": {
+        "type": {
+          "enum": ["card", "mobile", "nin"],
+          "type": "string",
+          "description": "Type"
+        },
+        "origin": {
+          "type": "string",
+          "description": "Origin of this transaction or card. If set, describes where it came from."
+        },
+        "brand": {
+          "type": "string",
+          "description": "Card type only: The card brand"
+        },
+        "bin": { "type": "string", "description": "Card type only: Card BIN" },
+        "corporate": {
+          "type": "boolean",
+          "description": "Card type only: Corporate status"
+        },
+        "last4": {
+          "type": "string",
+          "description": "Card type only: The last 4 digits of the card number"
+        },
+        "exp_month": {
+          "type": "integer",
+          "description": "Card type only: The expiration month",
+          "format": "int32"
+        },
+        "exp_year": {
+          "type": "integer",
+          "description": "Card type only: The expiration year (YYYY)",
+          "format": "int32"
+        },
+        "country": {
+          "type": "string",
+          "description": "Card type only: The card country in ISO 3166-1 alpha-3"
+        },
+        "is_3d_secure": {
+          "type": "string",
+          "description": "Card type only: Verified via 3D-Secure"
+        },
+        "issued_to": { "type": "string", "description": "Name of cardholder" },
+        "hash": {
+          "type": "string",
+          "description": "Card type only: PCI safe hash of card number"
+        },
+        "number": {
+          "type": "string",
+          "description": "Mobile type only: The mobile number"
+        },
+        "customer_ip": { "type": "string", "description": "Customer IP" },
+        "customer_country": {
+          "type": "string",
+          "description": "Customer country based on IP geo-data, ISO 3166-1 alpha-2"
+        },
+        "fraud_suspected": {
+          "type": "boolean",
+          "description": "Suspected fraud"
+        },
+        "fraud_remarks": {
+          "$ref": "array[string]",
+          "description": "Fraud remarks"
+        },
+        "fraud_reported": {
+          "type": "boolean",
+          "description": "Reported as fraudulent"
+        },
+        "fraud_report_description": {
+          "type": "string",
+          "description": "Fraud report description"
+        },
+        "fraud_reported_at": {
+          "type": "string",
+          "description": "Fraud report description"
+        },
+        "nin_number": {
+          "type": "string",
+          "description": "NIN type only. NIN number"
+        },
+        "nin_country_code": {
+          "type": "string",
+          "description": "NIN type only. NIN country code, ISO 3166-1 alpha-3"
+        },
+        "nin_gender": {
+          "type": "string",
+          "description": "NIN type only. NIN gender"
+        },
+        "shopsystem_name": {
+          "type": "string",
+          "description": "Shop system module name"
+        },
+        "shopsystem_version": {
+          "type": "string",
+          "description": "Shop system module version"
+        }
+      }
+    },
+    "QuickPay::Protocol::V10::PaymentLink": {
+      "id": "QuickPay::Protocol::V10::PaymentLink",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Url to payment window for this payment link"
+        },
+        "agreement_id": {
+          "type": "integer",
+          "description": "Id of agreement that will be used in the payment window",
+          "format": "int32"
+        },
+        "language": {
+          "type": "string",
+          "description": "Two letter language code that determines the language of the payment window"
+        },
+        "amount": {
+          "type": "integer",
+          "description": "Amount to authorize.",
+          "format": "int32"
+        },
+        "continue_url": {
+          "type": "string",
+          "description": "Where cardholder is redirected after success"
+        },
+        "cancel_url": {
+          "type": "string",
+          "description": "Where cardholder is redirected after cancel"
+        },
+        "callback_url": {
+          "type": "string",
+          "description": "Endpoint for a POST callback"
+        },
+        "payment_methods": {
+          "type": "string",
+          "description": "Lock to these payment methods"
+        },
+        "auto_fee": {
+          "type": "boolean",
+          "description": "If true, will add acquirer fee to the amount"
+        },
+        "auto_capture": {
+          "type": "boolean",
+          "description": "If true, will capture the transaction after authorize succeeds"
+        },
+        "branding_id": {
+          "type": "integer",
+          "description": "The branding to use in the payment window",
+          "format": "int32"
+        },
+        "google_analytics_client_id": {
+          "type": "string",
+          "description": "Set this to enable Google Analytics events from the payment window"
+        },
+        "google_analytics_tracking_id": {
+          "type": "string",
+          "description": "Set this to enable Google Analytics events from the payment window"
+        },
+        "version": {
+          "type": "string",
+          "description": "Version of payment window and API"
+        },
+        "acquirer": {
+          "type": "string",
+          "description": "Force usage of this acquirer"
+        },
+        "deadline": {
+          "type": "string",
+          "description": "Deadline in seconds for the cardholder to complete"
+        },
+        "framed": { "type": "boolean", "description": "Allow in iframe" },
+        "branding_config": {
+          "type": "object",
+          "description": "Branding config"
+        },
+        "invoice_address_selection": {
+          "type": "boolean",
+          "description": "Get customer invoice address via acquirer (Currently MobilePay and PayPal only)"
+        },
+        "shipping_address_selection": {
+          "type": "boolean",
+          "description": "Get customer shipping address via acquirer (Currently MobilePay and PayPal only)"
+        },
+        "customer_email": {
+          "type": "string",
+          "description": "PayPal specific: Customer email"
+        }
+      }
+    },
+    "QuickPay::Protocol::V10::OptionalAddress": {
+      "id": "QuickPay::Protocol::V10::OptionalAddress",
+      "properties": {
+        "name": { "type": "string", "description": "Name" },
+        "att": { "type": "string", "description": "Att." },
+        "street": { "type": "string", "description": "Street" },
+        "city": { "type": "string", "description": "City" },
+        "zip_code": { "type": "string", "description": "Zip code" },
+        "region": { "type": "string", "description": "Region" },
+        "country_code": { "type": "string", "description": "Country code" },
+        "vat_no": { "type": "string", "description": "VAT reg. no." },
+        "company_name": { "type": "string", "description": "Company name" },
+        "house_number": { "type": "string", "description": "House number" },
+        "house_extension": {
+          "type": "string",
+          "description": "House extension"
+        },
+        "phone_number": { "type": "string", "description": "Phone number" },
+        "mobile_number": { "type": "string", "description": "Mobile number" },
+        "email": { "type": "string", "description": "E-mail address" }
+      }
+    },
+    "QuickPay::Protocol::V10::Basket": {
+      "id": "QuickPay::Protocol::V10::Basket",
+      "properties": {
+        "qty": {
+          "type": "integer",
+          "description": "Quantity",
+          "format": "int32"
+        },
+        "item_no": { "type": "string", "description": "Item number (SKU)" },
+        "item_name": { "type": "string", "description": "Item name" },
+        "item_price": {
+          "type": "integer",
+          "description": "Item price",
+          "format": "int32"
+        },
+        "vat_rate": {
+          "type": "number",
+          "description": "VAT rate",
+          "format": "float"
+        }
+      }
+    },
+    "QuickPay::Protocol::V10::Shipping": {
+      "id": "QuickPay::Protocol::V10::Shipping",
+      "properties": {
+        "method": { "type": "string", "description": "Delivery method" },
+        "company": { "type": "string", "description": "Delivery company" },
+        "amount": {
+          "type": "integer",
+          "description": "Delivery price",
+          "format": "int32"
+        },
+        "vat_rate": {
+          "type": "number",
+          "description": "Delivery VAT rate",
+          "format": "float"
+        },
+        "tracking_number": {
+          "type": "string",
+          "description": "Tracking number"
+        },
+        "tracking_url": {
+          "type": "string",
+          "description": "Link to delivery status page"
+        }
+      }
+    }
+  }
+}
