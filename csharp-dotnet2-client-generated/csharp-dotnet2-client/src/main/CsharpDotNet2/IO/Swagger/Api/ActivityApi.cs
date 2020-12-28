@@ -25,16 +25,16 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
         /// <param name="pageKey"> </param>
-        /// <returns>QuickPayProtocolV10Activity</returns>
-        QuickPayProtocolV10Activity GETActivityFormat (string acceptVersion, string authorization, int? userId, string targetType, int? targetId, bool? support, int? page, int? pageSize, string sortBy, string sortDir, string pageKey);
+        /// <returns>Activity</returns>
+        Activity GETActivityFormat (string acceptVersion, string authorization, int? userId, string targetType, int? targetId, bool? support, int? page, int? pageSize, string sortBy, string sortDir, string pageKey);
         /// <summary>
         /// Get a single activity entry  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Activity</returns>
-        QuickPayProtocolV10Activity GETActivityIdFormat (string acceptVersion, string authorization, string id);
+        /// <returns>Activity</returns>
+        Activity GETActivityIdFormat (string acceptVersion, string authorization, string id);
     }
   
     /// <summary>
@@ -104,8 +104,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
         /// <param name="pageKey"> </param> 
-        /// <returns>QuickPayProtocolV10Activity</returns>            
-        public QuickPayProtocolV10Activity GETActivityFormat (string acceptVersion, string authorization, int? userId, string targetType, int? targetId, bool? support, int? page, int? pageSize, string sortBy, string sortDir, string pageKey)
+        /// <returns>Activity</returns>            
+        public Activity GETActivityFormat (string acceptVersion, string authorization, int? userId, string targetType, int? targetId, bool? support, int? page, int? pageSize, string sortBy, string sortDir, string pageKey)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -147,7 +147,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETActivityFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Activity) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Activity), response.Headers);
+            return (Activity) ApiClient.Deserialize(response.Content, typeof(Activity), response.Headers);
         }
     
         /// <summary>
@@ -156,8 +156,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Activity</returns>            
-        public QuickPayProtocolV10Activity GETActivityIdFormat (string acceptVersion, string authorization, string id)
+        /// <returns>Activity</returns>            
+        public Activity GETActivityIdFormat (string acceptVersion, string authorization, string id)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -194,7 +194,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETActivityIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Activity) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Activity), response.Headers);
+            return (Activity) ApiClient.Deserialize(response.Content, typeof(Activity), response.Headers);
         }
     
     }

@@ -74,7 +74,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETPingFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Pong> (response, "response is QuickPayProtocolV10Pong");
+            //Assert.IsInstanceOf<Pong> (response, "response is Pong");
         }
         
         /// <summary>
@@ -87,7 +87,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.POSTPingFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Pong> (response, "response is QuickPayProtocolV10Pong");
+            //Assert.IsInstanceOf<Pong> (response, "response is Pong");
         }
         
     }

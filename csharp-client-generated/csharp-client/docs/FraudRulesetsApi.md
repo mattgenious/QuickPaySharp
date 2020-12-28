@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="deletefraudrulesetsidformat"></a>
 # **DELETEFraudRulesetsIdFormat**
-> QuickPayProtocolV10FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
+> FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
 
 Delete ruleset
 
@@ -41,7 +41,7 @@ namespace Example
             try
             {
                 // Delete ruleset
-                QuickPayProtocolV10FraudRuleset result = apiInstance.DELETEFraudRulesetsIdFormat(acceptVersion, authorization, id);
+                FraudRuleset result = apiInstance.DELETEFraudRulesetsIdFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FraudRuleset**](QuickPayProtocolV10FraudRuleset.md)
+[**FraudRuleset**](FraudRuleset.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ No authorization required
 
 <a name="getfraudrulesetsformat"></a>
 # **GETFraudRulesetsFormat**
-> QuickPayProtocolV10FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization)
+> FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization)
 
 Get custom defined fraud rulesets
 
@@ -105,7 +105,7 @@ namespace Example
             try
             {
                 // Get custom defined fraud rulesets
-                QuickPayProtocolV10FraudRuleset result = apiInstance.GETFraudRulesetsFormat(acceptVersion, authorization);
+                FraudRuleset result = apiInstance.GETFraudRulesetsFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FraudRuleset**](QuickPayProtocolV10FraudRuleset.md)
+[**FraudRuleset**](FraudRuleset.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ No authorization required
 
 <a name="getfraudrulesetsidformat"></a>
 # **GETFraudRulesetsIdFormat**
-> QuickPayProtocolV10FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
+> FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
 
 Get ruleset by id
 
@@ -169,7 +169,7 @@ namespace Example
             try
             {
                 // Get ruleset by id
-                QuickPayProtocolV10FraudRuleset result = apiInstance.GETFraudRulesetsIdFormat(acceptVersion, authorization, id);
+                FraudRuleset result = apiInstance.GETFraudRulesetsIdFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FraudRuleset**](QuickPayProtocolV10FraudRuleset.md)
+[**FraudRuleset**](FraudRuleset.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ No authorization required
 
 <a name="patchfraudrulesetsidformat"></a>
 # **PATCHFraudRulesetsIdFormat**
-> QuickPayProtocolV10FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
+> FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
 
 Update a ruleset
 
@@ -240,7 +240,7 @@ namespace Example
             try
             {
                 // Update a ruleset
-                QuickPayProtocolV10FraudRuleset result = apiInstance.PATCHFraudRulesetsIdFormat(acceptVersion, authorization, id, filterRulesMetricName, filterRulesOperator, filterRulesValue, name, action, combinator);
+                FraudRuleset result = apiInstance.PATCHFraudRulesetsIdFormat(acceptVersion, authorization, id, filterRulesMetricName, filterRulesOperator, filterRulesValue, name, action, combinator);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FraudRuleset**](QuickPayProtocolV10FraudRuleset.md)
+[**FraudRuleset**](FraudRuleset.md)
 
 ### Authorization
 
@@ -283,7 +283,7 @@ No authorization required
 
 <a name="postfraudrulesetsformat"></a>
 # **POSTFraudRulesetsFormat**
-> QuickPayProtocolV10FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
+> FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
 
 Create a custom fraud ruleset
 
@@ -316,7 +316,7 @@ namespace Example
             try
             {
                 // Create a custom fraud ruleset
-                QuickPayProtocolV10FraudRuleset result = apiInstance.POSTFraudRulesetsFormat(acceptVersion, authorization, name, filterRulesMetricName, filterRulesOperator, filterRulesValue, action, combinator);
+                FraudRuleset result = apiInstance.POSTFraudRulesetsFormat(acceptVersion, authorization, name, filterRulesMetricName, filterRulesOperator, filterRulesValue, action, combinator);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FraudRuleset**](QuickPayProtocolV10FraudRuleset.md)
+[**FraudRuleset**](FraudRuleset.md)
 
 ### Authorization
 

@@ -83,8 +83,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        QuickPayProtocolV10Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Branding</returns>
+        Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
         /// Get brandings
@@ -101,8 +101,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        ApiResponse<QuickPayProtocolV10Branding> GETBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> GETBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
         /// Get a branding
         /// </summary>
@@ -115,8 +115,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        QuickPayProtocolV10Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <returns>Branding</returns>
+        Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
         /// <summary>
         /// Get a branding
@@ -130,8 +130,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        ApiResponse<QuickPayProtocolV10Branding> GETBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> GETBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
         /// Gets a branding resource as a file
         /// </summary>
@@ -168,8 +168,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        QuickPayProtocolV10Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
+        /// <returns>Branding</returns>
+        Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
 
         /// <summary>
         /// Update a branding
@@ -184,8 +184,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        ApiResponse<QuickPayProtocolV10Branding> PATCHBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> PATCHBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
         /// <summary>
         /// Create a branding
         /// </summary>
@@ -196,8 +196,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        QuickPayProtocolV10Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name);
+        /// <returns>Branding</returns>
+        Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name);
 
         /// <summary>
         /// Create a branding
@@ -209,8 +209,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        ApiResponse<QuickPayProtocolV10Branding> POSTBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string name);
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> POSTBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string name);
         /// <summary>
         /// Copies branding and returns the new branding
         /// </summary>
@@ -223,8 +223,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        QuickPayProtocolV10Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <returns>Branding</returns>
+        Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
         /// <summary>
         /// Copies branding and returns the new branding
@@ -238,8 +238,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        ApiResponse<QuickPayProtocolV10Branding> POSTBrandingsIdCopyFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> POSTBrandingsIdCopyFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
         /// Uploads a file and creates or replaces a resource
         /// </summary>
@@ -330,8 +330,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Branding> GETBrandingsFormatAsync (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> GETBrandingsFormatAsync (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
         /// Get brandings
@@ -348,8 +348,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> GETBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
         /// Get a branding
         /// </summary>
@@ -362,8 +362,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Branding> GETBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> GETBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
         /// <summary>
         /// Get a branding
@@ -377,8 +377,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> GETBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
         /// Gets a branding resource as a file
         /// </summary>
@@ -415,8 +415,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Branding> PATCHBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> PATCHBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
 
         /// <summary>
         /// Update a branding
@@ -431,8 +431,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> PATCHBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> PATCHBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
         /// <summary>
         /// Create a branding
         /// </summary>
@@ -443,8 +443,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Branding> POSTBrandingsFormatAsync (string acceptVersion, string authorization, string name);
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> POSTBrandingsFormatAsync (string acceptVersion, string authorization, string name);
 
         /// <summary>
         /// Create a branding
@@ -456,8 +456,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> POSTBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name);
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name);
         /// <summary>
         /// Copies branding and returns the new branding
         /// </summary>
@@ -470,8 +470,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Branding> POSTBrandingsIdCopyFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> POSTBrandingsIdCopyFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
         /// <summary>
         /// Copies branding and returns the new branding
@@ -485,8 +485,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> POSTBrandingsIdCopyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsIdCopyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
         /// Uploads a file and creates or replaces a resource
         /// </summary>
@@ -908,10 +908,10 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        public QuickPayProtocolV10Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Branding</returns>
+        public Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = GETBrandingsFormatWithHttpInfo(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
+             ApiResponse<Branding> localVarResponse = GETBrandingsFormatWithHttpInfo(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
         }
 
@@ -927,8 +927,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        public ApiResponse< QuickPayProtocolV10Branding > GETBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > GETBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -984,9 +984,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1001,10 +1001,10 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Branding> GETBrandingsFormatAsync (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> GETBrandingsFormatAsync (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = await GETBrandingsFormatAsyncWithHttpInfo(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
+             ApiResponse<Branding> localVarResponse = await GETBrandingsFormatAsyncWithHttpInfo(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
 
         }
@@ -1021,8 +1021,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> GETBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1078,9 +1078,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1092,10 +1092,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        public QuickPayProtocolV10Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        /// <returns>Branding</returns>
+        public Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = GETBrandingsIdFormatWithHttpInfo(acceptVersion, authorization, id, except, only);
+             ApiResponse<Branding> localVarResponse = GETBrandingsIdFormatWithHttpInfo(acceptVersion, authorization, id, except, only);
              return localVarResponse.Data;
         }
 
@@ -1108,8 +1108,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        public ApiResponse< QuickPayProtocolV10Branding > GETBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > GETBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1165,9 +1165,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1179,10 +1179,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Branding> GETBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> GETBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = await GETBrandingsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, except, only);
+             ApiResponse<Branding> localVarResponse = await GETBrandingsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, except, only);
              return localVarResponse.Data;
 
         }
@@ -1196,8 +1196,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> GETBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1253,9 +1253,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1411,10 +1411,10 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        public QuickPayProtocolV10Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
+        /// <returns>Branding</returns>
+        public Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = PATCHBrandingsIdFormatWithHttpInfo(acceptVersion, authorization, id, name, except, only);
+             ApiResponse<Branding> localVarResponse = PATCHBrandingsIdFormatWithHttpInfo(acceptVersion, authorization, id, name, except, only);
              return localVarResponse.Data;
         }
 
@@ -1428,8 +1428,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        public ApiResponse< QuickPayProtocolV10Branding > PATCHBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > PATCHBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1487,9 +1487,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1502,10 +1502,10 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Branding> PATCHBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> PATCHBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = await PATCHBrandingsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, name, except, only);
+             ApiResponse<Branding> localVarResponse = await PATCHBrandingsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, name, except, only);
              return localVarResponse.Data;
 
         }
@@ -1520,8 +1520,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> PATCHBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> PATCHBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1579,9 +1579,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1591,10 +1591,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        public QuickPayProtocolV10Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name)
+        /// <returns>Branding</returns>
+        public Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = POSTBrandingsFormatWithHttpInfo(acceptVersion, authorization, name);
+             ApiResponse<Branding> localVarResponse = POSTBrandingsFormatWithHttpInfo(acceptVersion, authorization, name);
              return localVarResponse.Data;
         }
 
@@ -1605,8 +1605,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        public ApiResponse< QuickPayProtocolV10Branding > POSTBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string name)
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > POSTBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string name)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1661,9 +1661,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1673,10 +1673,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Branding> POSTBrandingsFormatAsync (string acceptVersion, string authorization, string name)
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> POSTBrandingsFormatAsync (string acceptVersion, string authorization, string name)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = await POSTBrandingsFormatAsyncWithHttpInfo(acceptVersion, authorization, name);
+             ApiResponse<Branding> localVarResponse = await POSTBrandingsFormatAsyncWithHttpInfo(acceptVersion, authorization, name);
              return localVarResponse.Data;
 
         }
@@ -1688,8 +1688,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> POSTBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name)
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1744,9 +1744,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1758,10 +1758,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Branding</returns>
-        public QuickPayProtocolV10Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        /// <returns>Branding</returns>
+        public Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = POSTBrandingsIdCopyFormatWithHttpInfo(acceptVersion, authorization, id, except, only);
+             ApiResponse<Branding> localVarResponse = POSTBrandingsIdCopyFormatWithHttpInfo(acceptVersion, authorization, id, except, only);
              return localVarResponse.Data;
         }
 
@@ -1774,8 +1774,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Branding</returns>
-        public ApiResponse< QuickPayProtocolV10Branding > POSTBrandingsIdCopyFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > POSTBrandingsIdCopyFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1832,9 +1832,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
@@ -1846,10 +1846,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Branding</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Branding> POSTBrandingsIdCopyFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> POSTBrandingsIdCopyFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
-             ApiResponse<QuickPayProtocolV10Branding> localVarResponse = await POSTBrandingsIdCopyFormatAsyncWithHttpInfo(acceptVersion, authorization, id, except, only);
+             ApiResponse<Branding> localVarResponse = await POSTBrandingsIdCopyFormatAsyncWithHttpInfo(acceptVersion, authorization, id, except, only);
              return localVarResponse.Data;
 
         }
@@ -1863,8 +1863,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
         /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Branding)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Branding>> POSTBrandingsIdCopyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsIdCopyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1921,9 +1921,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Branding>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Branding)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>

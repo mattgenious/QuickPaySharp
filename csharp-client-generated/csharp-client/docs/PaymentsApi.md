@@ -87,7 +87,7 @@ No authorization required
 
 <a name="getpaymentsformat"></a>
 # **GETPaymentsFormat**
-> List<QuickPayProtocolV10Payment> GETPaymentsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+> List<Payment> GETPaymentsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
 
 Get all payments
 
@@ -134,7 +134,7 @@ namespace Example
             try
             {
                 // Get all payments
-                List&lt;QuickPayProtocolV10Payment&gt; result = apiInstance.GETPaymentsFormat(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
+                List&lt;Payment&gt; result = apiInstance.GETPaymentsFormat(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<QuickPayProtocolV10Payment>**](QuickPayProtocolV10Payment.md)
+[**List<Payment>**](Payment.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ No authorization required
 
 <a name="getpaymentsidformat"></a>
 # **GETPaymentsIdFormat**
-> QuickPayProtocolV10Payment GETPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
+> Payment GETPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
 
 Get payment
 
@@ -219,7 +219,7 @@ namespace Example
             try
             {
                 // Get payment
-                QuickPayProtocolV10Payment result = apiInstance.GETPaymentsIdFormat(acceptVersion, authorization, id, operationsSize);
+                Payment result = apiInstance.GETPaymentsIdFormat(acceptVersion, authorization, id, operationsSize);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -257,7 +257,7 @@ No authorization required
 
 <a name="getpaymentsidoperationsoperationidformat"></a>
 # **GETPaymentsIdOperationsOperationIdFormat**
-> QuickPayProtocolV10Operation GETPaymentsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
+> Operation GETPaymentsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
 
 Get Operation
 
@@ -286,7 +286,7 @@ namespace Example
             try
             {
                 // Get Operation
-                QuickPayProtocolV10Operation result = apiInstance.GETPaymentsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId);
+                Operation result = apiInstance.GETPaymentsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -309,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Operation**](QuickPayProtocolV10Operation.md)
+[**Operation**](Operation.md)
 
 ### Authorization
 
@@ -324,7 +324,7 @@ No authorization required
 
 <a name="patchpaymentsidformat"></a>
 # **PATCHPaymentsIdFormat**
-> QuickPayProtocolV10Payment PATCHPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, DateTime? deadlineAt = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, Dictionary<string, string> variables = null)
+> Payment PATCHPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, DateTime? deadlineAt = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, Dictionary<string, string> variables = null)
 
 Update payment
 
@@ -393,7 +393,7 @@ namespace Example
             try
             {
                 // Update payment
-                QuickPayProtocolV10Payment result = apiInstance.PATCHPaymentsIdFormat(acceptVersion, authorization, id, basketQty, basketItemNo, basketItemName, basketItemPrice, basketVatRate, deadlineAt, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, shippingMethod, shippingCompany, shippingAmount, shippingVatRate, shippingTrackingNumber, shippingTrackingUrl, variables);
+                Payment result = apiInstance.PATCHPaymentsIdFormat(acceptVersion, authorization, id, basketQty, basketItemNo, basketItemName, basketItemPrice, basketVatRate, deadlineAt, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, shippingMethod, shippingCompany, shippingAmount, shippingVatRate, shippingTrackingNumber, shippingTrackingUrl, variables);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -456,7 +456,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -471,7 +471,7 @@ No authorization required
 
 <a name="patchpaymentsidoperationsoperationidformat"></a>
 # **PATCHPaymentsIdOperationsOperationIdFormat**
-> QuickPayProtocolV10Operation PATCHPaymentsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
+> Operation PATCHPaymentsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
 
 Update operation
 
@@ -501,7 +501,7 @@ namespace Example
             try
             {
                 // Update operation
-                QuickPayProtocolV10Operation result = apiInstance.PATCHPaymentsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId, pending);
+                Operation result = apiInstance.PATCHPaymentsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId, pending);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -525,7 +525,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Operation**](QuickPayProtocolV10Operation.md)
+[**Operation**](Operation.md)
 
 ### Authorization
 
@@ -540,7 +540,7 @@ No authorization required
 
 <a name="postpaymentsformat"></a>
 # **POSTPaymentsFormat**
-> QuickPayProtocolV10Payment POSTPaymentsFormat (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null)
+> Payment POSTPaymentsFormat (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null)
 
 Create payment
 
@@ -613,7 +613,7 @@ namespace Example
             try
             {
                 // Create payment
-                QuickPayProtocolV10Payment result = apiInstance.POSTPaymentsFormat(acceptVersion, authorization, currency, orderId, basketQty, basketItemNo, basketItemName, basketItemPrice, basketVatRate, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, brandingId, shippingMethod, shippingCompany, shippingAmount, shippingVatRate, shippingTrackingNumber, shippingTrackingUrl, shopsystemName, shopsystemVersion, variables, textOnStatement);
+                Payment result = apiInstance.POSTPaymentsFormat(acceptVersion, authorization, currency, orderId, basketQty, basketItemNo, basketItemName, basketItemPrice, basketVatRate, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, brandingId, shippingMethod, shippingCompany, shippingAmount, shippingVatRate, shippingTrackingNumber, shippingTrackingUrl, shopsystemName, shopsystemVersion, variables, textOnStatement);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -680,7 +680,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -688,14 +688,14 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/xml, application/json, application/octet-stream, text/plain
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="postpaymentsidauthorizeformat"></a>
 # **POSTPaymentsIdAuthorizeFormat**
-> QuickPayProtocolV10Payment POSTPaymentsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, bool? autoCapture = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null, bool? zeroAuth = null)
+> Payment POSTPaymentsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, bool? autoCapture = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null, bool? zeroAuth = null)
 
 Authorize payment
 
@@ -752,7 +752,7 @@ namespace Example
             try
             {
                 // Authorize payment
-                QuickPayProtocolV10Payment result = apiInstance.POSTPaymentsIdAuthorizeFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, autoCapture, acquirer, autofee, customerIp, extras, zeroAuth);
+                Payment result = apiInstance.POSTPaymentsIdAuthorizeFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, autoCapture, acquirer, autofee, customerIp, extras, zeroAuth);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -803,7 +803,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -818,7 +818,7 @@ No authorization required
 
 <a name="postpaymentsidcancelformat"></a>
 # **POSTPaymentsIdCancelFormat**
-> QuickPayProtocolV10Payment POSTPaymentsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
+> Payment POSTPaymentsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
 
 Cancel payment
 
@@ -848,7 +848,7 @@ namespace Example
             try
             {
                 // Cancel payment
-                QuickPayProtocolV10Payment result = apiInstance.POSTPaymentsIdCancelFormat(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
+                Payment result = apiInstance.POSTPaymentsIdCancelFormat(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -872,7 +872,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -887,7 +887,7 @@ No authorization required
 
 <a name="postpaymentsidcaptureformat"></a>
 # **POSTPaymentsIdCaptureFormat**
-> QuickPayProtocolV10Payment POSTPaymentsIdCaptureFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, Dictionary<string, string> extras = null)
+> Payment POSTPaymentsIdCaptureFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, Dictionary<string, string> extras = null)
 
 Capture payment
 
@@ -919,7 +919,7 @@ namespace Example
             try
             {
                 // Capture payment
-                QuickPayProtocolV10Payment result = apiInstance.POSTPaymentsIdCaptureFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, extras);
+                Payment result = apiInstance.POSTPaymentsIdCaptureFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, extras);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -945,7 +945,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -960,7 +960,7 @@ No authorization required
 
 <a name="postpaymentsidfraudreportformat"></a>
 # **POSTPaymentsIdFraudReportFormat**
-> QuickPayProtocolV10FraudReport POSTPaymentsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
+> FraudReport POSTPaymentsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
 
 Create fraud confirmation report
 
@@ -990,7 +990,7 @@ namespace Example
             try
             {
                 // Create fraud confirmation report
-                QuickPayProtocolV10FraudReport result = apiInstance.POSTPaymentsIdFraudReportFormat(acceptVersion, authorization, id, quickPayCallbackUrl, description);
+                FraudReport result = apiInstance.POSTPaymentsIdFraudReportFormat(acceptVersion, authorization, id, quickPayCallbackUrl, description);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1014,7 +1014,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FraudReport**](QuickPayProtocolV10FraudReport.md)
+[**FraudReport**](FraudReport.md)
 
 ### Authorization
 
@@ -1029,7 +1029,7 @@ No authorization required
 
 <a name="postpaymentsidrefundformat"></a>
 # **POSTPaymentsIdRefundFormat**
-> QuickPayProtocolV10Payment POSTPaymentsIdRefundFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, Dictionary<string, string> extras = null)
+> Payment POSTPaymentsIdRefundFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, Dictionary<string, string> extras = null)
 
 Refund payment
 
@@ -1062,7 +1062,7 @@ namespace Example
             try
             {
                 // Refund payment
-                QuickPayProtocolV10Payment result = apiInstance.POSTPaymentsIdRefundFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, extras);
+                Payment result = apiInstance.POSTPaymentsIdRefundFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, extras);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1089,7 +1089,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -1104,7 +1104,7 @@ No authorization required
 
 <a name="postpaymentsidrenewformat"></a>
 # **POSTPaymentsIdRenewFormat**
-> QuickPayProtocolV10Payment POSTPaymentsIdRenewFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
+> Payment POSTPaymentsIdRenewFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
 
 Renew authorization
 
@@ -1134,7 +1134,7 @@ namespace Example
             try
             {
                 // Renew authorization
-                QuickPayProtocolV10Payment result = apiInstance.POSTPaymentsIdRenewFormat(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
+                Payment result = apiInstance.POSTPaymentsIdRenewFormat(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1158,7 +1158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -1173,7 +1173,7 @@ No authorization required
 
 <a name="postpaymentsidsessionformat"></a>
 # **POSTPaymentsIdSessionFormat**
-> QuickPayProtocolV10Payment POSTPaymentsIdSessionFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, string acquirer = null, bool? autofee = null, string customerIp = null, string personFirstName = null, string personLastName = null, string personEmail = null, Dictionary<string, string> extras = null)
+> Payment POSTPaymentsIdSessionFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, string acquirer = null, bool? autofee = null, string customerIp = null, string personFirstName = null, string personLastName = null, string personEmail = null, Dictionary<string, string> extras = null)
 
 Create payment session
 
@@ -1212,7 +1212,7 @@ namespace Example
             try
             {
                 // Create payment session
-                QuickPayProtocolV10Payment result = apiInstance.POSTPaymentsIdSessionFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, autoCapture, acquirer, autofee, customerIp, personFirstName, personLastName, personEmail, extras);
+                Payment result = apiInstance.POSTPaymentsIdSessionFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, autoCapture, acquirer, autofee, customerIp, personFirstName, personLastName, personEmail, extras);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1245,7 +1245,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -1260,7 +1260,7 @@ No authorization required
 
 <a name="putpaymentsidlinkformat"></a>
 # **PUTPaymentsIdLinkFormat**
-> QuickPayProtocolV10PaymentLinkUrl PUTPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null, bool? autoCapture = null)
+> PaymentLinkUrl PUTPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null, bool? autoCapture = null)
 
 Create or update a payment link
 
@@ -1307,7 +1307,7 @@ namespace Example
             try
             {
                 // Create or update a payment link
-                QuickPayProtocolV10PaymentLinkUrl result = apiInstance.PUTPaymentsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection, autoCapture);
+                PaymentLinkUrl result = apiInstance.PUTPaymentsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection, autoCapture);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1348,7 +1348,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10PaymentLinkUrl**](QuickPayProtocolV10PaymentLinkUrl.md)
+[**PaymentLinkUrl**](PaymentLinkUrl.md)
 
 ### Authorization
 

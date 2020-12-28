@@ -17,8 +17,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>
-        QuickPayProtocolV10SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id);
+        /// <returns>SubscriptionGroup</returns>
+        SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get all subscription groups  
         /// </summary>
@@ -28,16 +28,16 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>
-        QuickPayProtocolV10SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir);
+        /// <returns>SubscriptionGroup</returns>
+        SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir);
         /// <summary>
         /// Find subscription group by id  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>
-        QuickPayProtocolV10SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id);
+        /// <returns>SubscriptionGroup</returns>
+        SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Update subscription group  
         /// </summary>
@@ -47,8 +47,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
         /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>
-        QuickPayProtocolV10SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name, int? amount, string description);
+        /// <returns>SubscriptionGroup</returns>
+        SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name, int? amount, string description);
         /// <summary>
         /// Create subscription group  
         /// </summary>
@@ -58,8 +58,8 @@ namespace IO.Swagger.Api
         /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
         /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
         /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>
-        QuickPayProtocolV10SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description);
+        /// <returns>SubscriptionGroup</returns>
+        SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description);
         /// <summary>
         /// Create recurring payments on subscription group  
         /// </summary>
@@ -67,8 +67,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
         /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10SubscriptionGroupResult</returns>
-        QuickPayProtocolV10SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix);
+        /// <returns>SubscriptionGroupResult</returns>
+        SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix);
     }
   
     /// <summary>
@@ -130,8 +130,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>            
-        public QuickPayProtocolV10SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
+        /// <returns>SubscriptionGroup</returns>            
+        public SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -168,7 +168,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling DELETESubscriptionGroupsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10SubscriptionGroup), response.Headers);
+            return (SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(SubscriptionGroup), response.Headers);
         }
     
         /// <summary>
@@ -180,8 +180,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>            
-        public QuickPayProtocolV10SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
+        /// <returns>SubscriptionGroup</returns>            
+        public SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -218,7 +218,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETSubscriptionGroupsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10SubscriptionGroup), response.Headers);
+            return (SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(SubscriptionGroup), response.Headers);
         }
     
         /// <summary>
@@ -227,8 +227,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>            
-        public QuickPayProtocolV10SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
+        /// <returns>SubscriptionGroup</returns>            
+        public SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -265,7 +265,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETSubscriptionGroupsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10SubscriptionGroup), response.Headers);
+            return (SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(SubscriptionGroup), response.Headers);
         }
     
         /// <summary>
@@ -277,8 +277,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param> 
         /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param> 
         /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>            
-        public QuickPayProtocolV10SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name, int? amount, string description)
+        /// <returns>SubscriptionGroup</returns>            
+        public SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name, int? amount, string description)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -318,7 +318,7 @@ if (description != null) formParams.Add("description", ApiClient.ParameterToStri
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHSubscriptionGroupsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10SubscriptionGroup), response.Headers);
+            return (SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(SubscriptionGroup), response.Headers);
         }
     
         /// <summary>
@@ -330,8 +330,8 @@ if (description != null) formParams.Add("description", ApiClient.ParameterToStri
         /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param> 
         /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param> 
         /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10SubscriptionGroup</returns>            
-        public QuickPayProtocolV10SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description)
+        /// <returns>SubscriptionGroup</returns>            
+        public SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -377,7 +377,7 @@ if (description != null) formParams.Add("description", ApiClient.ParameterToStri
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTSubscriptionGroupsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10SubscriptionGroup), response.Headers);
+            return (SubscriptionGroup) ApiClient.Deserialize(response.Content, typeof(SubscriptionGroup), response.Headers);
         }
     
         /// <summary>
@@ -387,8 +387,8 @@ if (description != null) formParams.Add("description", ApiClient.ParameterToStri
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param> 
         /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10SubscriptionGroupResult</returns>            
-        public QuickPayProtocolV10SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix)
+        /// <returns>SubscriptionGroupResult</returns>            
+        public SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -429,7 +429,7 @@ if (description != null) formParams.Add("description", ApiClient.ParameterToStri
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTSubscriptionGroupsIdCaptureFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10SubscriptionGroupResult) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10SubscriptionGroupResult), response.Headers);
+            return (SubscriptionGroupResult) ApiClient.Deserialize(response.Content, typeof(SubscriptionGroupResult), response.Headers);
         }
     
     }

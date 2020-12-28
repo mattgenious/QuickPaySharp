@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="deleteaccount04platformformat"></a>
 # **DELETEAccount04PlatformFormat**
-> QuickPayProtocolV10Zero4PlatformSettings DELETEAccount04PlatformFormat (string acceptVersion, string authorization)
+> Zero4PlatformSettings DELETEAccount04PlatformFormat (string acceptVersion, string authorization)
 
 Delete 04 platform settings
 
@@ -45,7 +45,7 @@ namespace Example
             try
             {
                 // Delete 04 platform settings
-                QuickPayProtocolV10Zero4PlatformSettings result = apiInstance.DELETEAccount04PlatformFormat(acceptVersion, authorization);
+                Zero4PlatformSettings result = apiInstance.DELETEAccount04PlatformFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Zero4PlatformSettings**](QuickPayProtocolV10Zero4PlatformSettings.md)
+[**Zero4PlatformSettings**](Zero4PlatformSettings.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ No authorization required
 
 <a name="getaccount04platformformat"></a>
 # **GETAccount04PlatformFormat**
-> QuickPayProtocolV10Zero4PlatformSettings GETAccount04PlatformFormat (string acceptVersion, string authorization)
+> Zero4PlatformSettings GETAccount04PlatformFormat (string acceptVersion, string authorization)
 
 Get 04 platform settings
 
@@ -234,7 +234,7 @@ namespace Example
             try
             {
                 // Get 04 platform settings
-                QuickPayProtocolV10Zero4PlatformSettings result = apiInstance.GETAccount04PlatformFormat(acceptVersion, authorization);
+                Zero4PlatformSettings result = apiInstance.GETAccount04PlatformFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Zero4PlatformSettings**](QuickPayProtocolV10Zero4PlatformSettings.md)
+[**Zero4PlatformSettings**](Zero4PlatformSettings.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 
 <a name="getaccountformat"></a>
 # **GETAccountFormat**
-> QuickPayProtocolV10Merchant GETAccountFormat (string acceptVersion, string authorization)
+> Merchant GETAccountFormat (string acceptVersion, string authorization)
 
 Get merchant account
 
@@ -297,7 +297,7 @@ namespace Example
             try
             {
                 // Get merchant account
-                QuickPayProtocolV10Merchant result = apiInstance.GETAccountFormat(acceptVersion, authorization);
+                Merchant result = apiInstance.GETAccountFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Merchant**](QuickPayProtocolV10Merchant.md)
+[**Merchant**](Merchant.md)
 
 ### Authorization
 
@@ -397,7 +397,7 @@ No authorization required
 
 <a name="getaccountprivatekeyformat"></a>
 # **GETAccountPrivateKeyFormat**
-> QuickPayProtocolV10PrivateKey GETAccountPrivateKeyFormat (string acceptVersion, string authorization)
+> PrivateKey GETAccountPrivateKeyFormat (string acceptVersion, string authorization)
 
 Gets the private key of the merchant
 
@@ -424,7 +424,7 @@ namespace Example
             try
             {
                 // Gets the private key of the merchant
-                QuickPayProtocolV10PrivateKey result = apiInstance.GETAccountPrivateKeyFormat(acceptVersion, authorization);
+                PrivateKey result = apiInstance.GETAccountPrivateKeyFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -445,7 +445,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10PrivateKey**](QuickPayProtocolV10PrivateKey.md)
+[**PrivateKey**](PrivateKey.md)
 
 ### Authorization
 
@@ -460,7 +460,7 @@ No authorization required
 
 <a name="patchaccountformat"></a>
 # **PATCHAccountFormat**
-> QuickPayProtocolV10Merchant PATCHAccountFormat (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null)
+> Merchant PATCHAccountFormat (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null)
 
 Update merchant account
 
@@ -650,7 +650,7 @@ namespace Example
             try
             {
                 // Update merchant account
-                QuickPayProtocolV10Merchant result = apiInstance.PATCHAccountFormat(acceptVersion, authorization, customerAddressName, customerAddressAtt, customerAddressStreet, customerAddressCity, customerAddressZipCode, customerAddressRegion, customerAddressCountryCode, customerAddressVatNo, billingAddressName, billingAddressAtt, billingAddressStreet, billingAddressCity, billingAddressZipCode, billingAddressRegion, billingAddressCountryCode, billingAddressVatNo, callbackUrl, acquirerSettingsBamboraActive, acquirerSettingsBamboraIdentificationCode, acquirerSettingsBamboraIdentificationCodeInt, acquirerSettingsBamboraBusinessCode, acquirerSettingsBamboraRecurring, acquirerSettingsBamboraAmericanexpress, acquirerSettingsBamboraDinersclub, acquirerSettingsBamboraSecurepay, acquirerSettingsBamboraVisaMpiMerchantId, acquirerSettingsBamboraMastercardMpiMerchantId, acquirerSettingsBamboraVisaBin, acquirerSettingsBamboraMastercardBin, acquirerSettingsClearhausActive, acquirerSettingsClearhausApiKey, acquirerSettingsClearhausRecurring, acquirerSettingsClearhausPayout, acquirerSettingsClearhausApplePay, acquirerSettingsElavonActive, acquirerSettingsElavonIdentificationCode, acquirerSettingsElavonIdentificationCodeInt, acquirerSettingsElavonBusinessCode, acquirerSettingsElavonRecurring, acquirerSettingsElavonAmericanexpress, acquirerSettingsElavonDinersclub, acquirerSettingsElavonSecurepay, acquirerSettingsElavonVisaMpiMerchantId, acquirerSettingsElavonMastercardMpiMerchantId, acquirerSettingsElavonVisaBin, acquirerSettingsElavonMastercardBin, acquirerSettingsHandelsbankenActive, acquirerSettingsHandelsbankenIdentificationCode, acquirerSettingsHandelsbankenIdentificationCodeInt, acquirerSettingsHandelsbankenBusinessCode, acquirerSettingsHandelsbankenRecurring, acquirerSettingsHandelsbankenAmericanexpress, acquirerSettingsHandelsbankenDinersclub, acquirerSettingsHandelsbankenSecurepay, acquirerSettingsHandelsbankenVisaMpiMerchantId, acquirerSettingsHandelsbankenMastercardMpiMerchantId, acquirerSettingsHandelsbankenVisaBin, acquirerSettingsHandelsbankenMastercardBin, acquirerSettingsKlarnaActive, acquirerSettingsKlarnaEid, acquirerSettingsKlarnaSharedSecret, acquirerSettingsMobilepayActive, acquirerSettingsMobilepayDeliveryLimitedTo, acquirerSettingsMobilepaysubscriptionsActive, acquirerSettingsMobilepaysubscriptionsAuthState, acquirerSettingsMobilepaysubscriptionsCodeVerifier, acquirerSettingsMobilepaysubscriptionsLastTokenRefresh, acquirerSettingsMobilepaysubscriptionsNonce, acquirerSettingsMobilepaysubscriptionsPendingStatus, acquirerSettingsMobilepaysubscriptionsProvider, acquirerSettingsMobilepaysubscriptionsRefreshToken, acquirerSettingsNetsActive, acquirerSettingsNetsIdentificationCode, acquirerSettingsNetsBusinessCode, acquirerSettingsNetsRecurring, acquirerSettingsNetsFbg1886, acquirerSettingsNetsSecuredByNets, acquirerSettingsNetsIdentificationCodeInt, acquirerSettingsNetsAmericanexpress, acquirerSettingsNetsDinersclub, acquirerSettingsNetsSecurepay, acquirerSettingsNetsVisaBin, acquirerSettingsNetsMastercardBin, acquirerSettingsPaypalActive, acquirerSettingsPaypalRecurring, acquirerSettingsPaypalCreditCard, acquirerSettingsPaypalToken, acquirerSettingsPaypalTokenSecret, acquirerSettingsPaypalScope, acquirerSettingsSofortActive, acquirerSettingsSofortCustomerNumber, acquirerSettingsSofortProjectId, acquirerSettingsSofortApiKey, acquirerSettingsSofortGateway, acquirerSettingsSofortIdeal, acquirerSettingsSofortIdealProjectId, acquirerSettingsSofortIdealProjectPassword, acquirerSettingsSofortIdealNotificationPassword, acquirerSettingsSwedbankActive, acquirerSettingsSwedbankIdentificationCode, acquirerSettingsSwedbankIdentificationCodeInt, acquirerSettingsSwedbankBusinessCode, acquirerSettingsSwedbankRecurring, acquirerSettingsSwedbankAmericanexpress, acquirerSettingsSwedbankDinersclub, acquirerSettingsSwedbankSecurepay, acquirerSettingsSwedbankVisaMpiMerchantId, acquirerSettingsSwedbankMastercardMpiMerchantId, acquirerSettingsSwedbankVisaBin, acquirerSettingsSwedbankMastercardBin, acquirerSettingsTellerActive, acquirerSettingsTellerIdentificationCode, acquirerSettingsTellerIdentificationCodeInt, acquirerSettingsTellerBusinessCode, acquirerSettingsTellerRecurring, acquirerSettingsTellerAmericanexpress, acquirerSettingsTellerDinersclub, acquirerSettingsTellerSecurepay, acquirerSettingsTellerVisaMpiMerchantId, acquirerSettingsTellerMastercardMpiMerchantId, acquirerSettingsTellerVisaBin, acquirerSettingsTellerMastercardBin, acquirerSettingsValitorActive, acquirerSettingsValitorIdentificationCode, acquirerSettingsValitorIdentificationCodeInt, acquirerSettingsValitorBusinessCode, acquirerSettingsValitorRecurring, acquirerSettingsValitorAmericanexpress, acquirerSettingsValitorDinersclub, acquirerSettingsValitorSecurepay, acquirerSettingsValitorVisaMpiMerchantId, acquirerSettingsValitorMastercardMpiMerchantId, acquirerSettingsValitorVisaBin, acquirerSettingsValitorMastercardBin, acquirerSettingsViabillActive, acquirerSettingsViabillApiKey, integrationSettingsEconomicActive, integrationSettingsEconomicAgreement, integrationSettingsEconomicAgreementToken, pciSaqA, pciSaqAEp, pciSaqB, pciSaqBIp, pciSaqC, pciSaqCVt, pciSaqDMerchant, pciSaqDServiceProvider, pciSaqP2peHw, autofee, defaultPaymentMethods, shopUrl, shopUrls, contactEmail, shopName, shopsystem, timezone, locale, defaultBrandingId, loggingStopsAt, allowTestTransactions, defaultPaymentLanguage, defaultTextOnStatement, defaultBrandingConfig);
+                Merchant result = apiInstance.PATCHAccountFormat(acceptVersion, authorization, customerAddressName, customerAddressAtt, customerAddressStreet, customerAddressCity, customerAddressZipCode, customerAddressRegion, customerAddressCountryCode, customerAddressVatNo, billingAddressName, billingAddressAtt, billingAddressStreet, billingAddressCity, billingAddressZipCode, billingAddressRegion, billingAddressCountryCode, billingAddressVatNo, callbackUrl, acquirerSettingsBamboraActive, acquirerSettingsBamboraIdentificationCode, acquirerSettingsBamboraIdentificationCodeInt, acquirerSettingsBamboraBusinessCode, acquirerSettingsBamboraRecurring, acquirerSettingsBamboraAmericanexpress, acquirerSettingsBamboraDinersclub, acquirerSettingsBamboraSecurepay, acquirerSettingsBamboraVisaMpiMerchantId, acquirerSettingsBamboraMastercardMpiMerchantId, acquirerSettingsBamboraVisaBin, acquirerSettingsBamboraMastercardBin, acquirerSettingsClearhausActive, acquirerSettingsClearhausApiKey, acquirerSettingsClearhausRecurring, acquirerSettingsClearhausPayout, acquirerSettingsClearhausApplePay, acquirerSettingsElavonActive, acquirerSettingsElavonIdentificationCode, acquirerSettingsElavonIdentificationCodeInt, acquirerSettingsElavonBusinessCode, acquirerSettingsElavonRecurring, acquirerSettingsElavonAmericanexpress, acquirerSettingsElavonDinersclub, acquirerSettingsElavonSecurepay, acquirerSettingsElavonVisaMpiMerchantId, acquirerSettingsElavonMastercardMpiMerchantId, acquirerSettingsElavonVisaBin, acquirerSettingsElavonMastercardBin, acquirerSettingsHandelsbankenActive, acquirerSettingsHandelsbankenIdentificationCode, acquirerSettingsHandelsbankenIdentificationCodeInt, acquirerSettingsHandelsbankenBusinessCode, acquirerSettingsHandelsbankenRecurring, acquirerSettingsHandelsbankenAmericanexpress, acquirerSettingsHandelsbankenDinersclub, acquirerSettingsHandelsbankenSecurepay, acquirerSettingsHandelsbankenVisaMpiMerchantId, acquirerSettingsHandelsbankenMastercardMpiMerchantId, acquirerSettingsHandelsbankenVisaBin, acquirerSettingsHandelsbankenMastercardBin, acquirerSettingsKlarnaActive, acquirerSettingsKlarnaEid, acquirerSettingsKlarnaSharedSecret, acquirerSettingsMobilepayActive, acquirerSettingsMobilepayDeliveryLimitedTo, acquirerSettingsMobilepaysubscriptionsActive, acquirerSettingsMobilepaysubscriptionsAuthState, acquirerSettingsMobilepaysubscriptionsCodeVerifier, acquirerSettingsMobilepaysubscriptionsLastTokenRefresh, acquirerSettingsMobilepaysubscriptionsNonce, acquirerSettingsMobilepaysubscriptionsPendingStatus, acquirerSettingsMobilepaysubscriptionsProvider, acquirerSettingsMobilepaysubscriptionsRefreshToken, acquirerSettingsNetsActive, acquirerSettingsNetsIdentificationCode, acquirerSettingsNetsBusinessCode, acquirerSettingsNetsRecurring, acquirerSettingsNetsFbg1886, acquirerSettingsNetsSecuredByNets, acquirerSettingsNetsIdentificationCodeInt, acquirerSettingsNetsAmericanexpress, acquirerSettingsNetsDinersclub, acquirerSettingsNetsSecurepay, acquirerSettingsNetsVisaBin, acquirerSettingsNetsMastercardBin, acquirerSettingsPaypalActive, acquirerSettingsPaypalRecurring, acquirerSettingsPaypalCreditCard, acquirerSettingsPaypalToken, acquirerSettingsPaypalTokenSecret, acquirerSettingsPaypalScope, acquirerSettingsSofortActive, acquirerSettingsSofortCustomerNumber, acquirerSettingsSofortProjectId, acquirerSettingsSofortApiKey, acquirerSettingsSofortGateway, acquirerSettingsSofortIdeal, acquirerSettingsSofortIdealProjectId, acquirerSettingsSofortIdealProjectPassword, acquirerSettingsSofortIdealNotificationPassword, acquirerSettingsSwedbankActive, acquirerSettingsSwedbankIdentificationCode, acquirerSettingsSwedbankIdentificationCodeInt, acquirerSettingsSwedbankBusinessCode, acquirerSettingsSwedbankRecurring, acquirerSettingsSwedbankAmericanexpress, acquirerSettingsSwedbankDinersclub, acquirerSettingsSwedbankSecurepay, acquirerSettingsSwedbankVisaMpiMerchantId, acquirerSettingsSwedbankMastercardMpiMerchantId, acquirerSettingsSwedbankVisaBin, acquirerSettingsSwedbankMastercardBin, acquirerSettingsTellerActive, acquirerSettingsTellerIdentificationCode, acquirerSettingsTellerIdentificationCodeInt, acquirerSettingsTellerBusinessCode, acquirerSettingsTellerRecurring, acquirerSettingsTellerAmericanexpress, acquirerSettingsTellerDinersclub, acquirerSettingsTellerSecurepay, acquirerSettingsTellerVisaMpiMerchantId, acquirerSettingsTellerMastercardMpiMerchantId, acquirerSettingsTellerVisaBin, acquirerSettingsTellerMastercardBin, acquirerSettingsValitorActive, acquirerSettingsValitorIdentificationCode, acquirerSettingsValitorIdentificationCodeInt, acquirerSettingsValitorBusinessCode, acquirerSettingsValitorRecurring, acquirerSettingsValitorAmericanexpress, acquirerSettingsValitorDinersclub, acquirerSettingsValitorSecurepay, acquirerSettingsValitorVisaMpiMerchantId, acquirerSettingsValitorMastercardMpiMerchantId, acquirerSettingsValitorVisaBin, acquirerSettingsValitorMastercardBin, acquirerSettingsViabillActive, acquirerSettingsViabillApiKey, integrationSettingsEconomicActive, integrationSettingsEconomicAgreement, integrationSettingsEconomicAgreementToken, pciSaqA, pciSaqAEp, pciSaqB, pciSaqBIp, pciSaqC, pciSaqCVt, pciSaqDMerchant, pciSaqDServiceProvider, pciSaqP2peHw, autofee, defaultPaymentMethods, shopUrl, shopUrls, contactEmail, shopName, shopsystem, timezone, locale, defaultBrandingId, loggingStopsAt, allowTestTransactions, defaultPaymentLanguage, defaultTextOnStatement, defaultBrandingConfig);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -834,7 +834,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Merchant**](QuickPayProtocolV10Merchant.md)
+[**Merchant**](Merchant.md)
 
 ### Authorization
 
@@ -849,7 +849,7 @@ No authorization required
 
 <a name="patchaccountprivatekeyformat"></a>
 # **PATCHAccountPrivateKeyFormat**
-> QuickPayProtocolV10PrivateKey PATCHAccountPrivateKeyFormat (string acceptVersion, string authorization)
+> PrivateKey PATCHAccountPrivateKeyFormat (string acceptVersion, string authorization)
 
 Regenerates the private key of the merchant
 
@@ -876,7 +876,7 @@ namespace Example
             try
             {
                 // Regenerates the private key of the merchant
-                QuickPayProtocolV10PrivateKey result = apiInstance.PATCHAccountPrivateKeyFormat(acceptVersion, authorization);
+                PrivateKey result = apiInstance.PATCHAccountPrivateKeyFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -897,7 +897,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10PrivateKey**](QuickPayProtocolV10PrivateKey.md)
+[**PrivateKey**](PrivateKey.md)
 
 ### Authorization
 

@@ -97,7 +97,7 @@ namespace IO.Swagger.Test
             //string sortDir = null;
             //int? pageKey = null;
             //var response = instance.GETCardsFormat(acceptVersion, authorization, timestamp, minTime, maxTime, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Card> (response, "response is QuickPayProtocolV10Card");
+            //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
         
         /// <summary>
@@ -111,7 +111,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //string id = null;
             //var response = instance.GETCardsIdFormat(acceptVersion, authorization, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Card> (response, "response is QuickPayProtocolV10Card");
+            //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
         
         /// <summary>
@@ -126,7 +126,7 @@ namespace IO.Swagger.Test
             //int? operationId = null;
             //string id = null;
             //var response = instance.GETCardsIdOperationsOperationIdFormat(acceptVersion, authorization, operationId, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10CardOperation> (response, "response is QuickPayProtocolV10CardOperation");
+            //Assert.IsInstanceOf<CardOperation> (response, "response is CardOperation");
         }
         
         /// <summary>
@@ -141,7 +141,7 @@ namespace IO.Swagger.Test
             //string id = null;
             //Dictionary<string, string> variables = null;
             //var response = instance.PATCHCardsIdFormat(acceptVersion, authorization, id, variables);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Card> (response, "response is QuickPayProtocolV10Card");
+            //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
         
         /// <summary>
@@ -155,7 +155,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //Dictionary<string, string> variables = null;
             //var response = instance.POSTCardsFormat(acceptVersion, authorization, variables);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Card> (response, "response is QuickPayProtocolV10Card");
+            //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
         
         /// <summary>
@@ -178,7 +178,7 @@ namespace IO.Swagger.Test
             //string customerIp = null;
             //Dictionary<string, string> extras = null;
             //var response = instance.POSTCardsIdAuthorizeFormat(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Card> (response, "response is QuickPayProtocolV10Card");
+            //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
         
         /// <summary>
@@ -193,7 +193,7 @@ namespace IO.Swagger.Test
             //string id = null;
             //bool? synchronized = null;
             //var response = instance.POSTCardsIdCancelFormat(acceptVersion, authorization, id, synchronized);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Card> (response, "response is QuickPayProtocolV10Card");
+            //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
         
         /// <summary>
@@ -209,7 +209,7 @@ namespace IO.Swagger.Test
             //string quickPayCallbackUrl = null;
             //string description = null;
             //var response = instance.POSTCardsIdFraudReportFormat(acceptVersion, authorization, id, quickPayCallbackUrl, description);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FraudReport> (response, "response is QuickPayProtocolV10FraudReport");
+            //Assert.IsInstanceOf<FraudReport> (response, "response is FraudReport");
         }
         
         /// <summary>
@@ -223,7 +223,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //string id = null;
             //var response = instance.POSTCardsIdTokensFormat(acceptVersion, authorization, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10CardToken> (response, "response is QuickPayProtocolV10CardToken");
+            //Assert.IsInstanceOf<CardToken> (response, "response is CardToken");
         }
         
         /// <summary>
@@ -249,7 +249,7 @@ namespace IO.Swagger.Test
             //bool? framed = null;
             //Dictionary<string, string> brandingConfig = null;
             //var response = instance.PUTCardsIdLinkFormat(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
-            //Assert.IsInstanceOf<QuickPayProtocolV10CardLinkUrl> (response, "response is QuickPayProtocolV10CardLinkUrl");
+            //Assert.IsInstanceOf<CardLinkUrl> (response, "response is CardLinkUrl");
         }
         
     }

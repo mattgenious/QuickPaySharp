@@ -20,8 +20,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerStatus</returns>
-        QuickPayProtocolV10AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir);
+        /// <returns>AcquirerStatus</returns>
+        AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir);
     }
   
     /// <summary>
@@ -86,8 +86,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerStatus</returns>            
-        public QuickPayProtocolV10AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
+        /// <returns>AcquirerStatus</returns>            
+        public AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -124,7 +124,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETOperationalStatusAcquirersFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerStatus) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerStatus), response.Headers);
+            return (AcquirerStatus) ApiClient.Deserialize(response.Content, typeof(AcquirerStatus), response.Headers);
         }
     
     }

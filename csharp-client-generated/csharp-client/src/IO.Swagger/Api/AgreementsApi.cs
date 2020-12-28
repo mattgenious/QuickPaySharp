@@ -67,8 +67,8 @@ namespace IO.Swagger.Api
         /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
         /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
         /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        QuickPayProtocolV10Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
+        /// <returns>Agreement</returns>
+        Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
 
         /// <summary>
         /// Get agreements
@@ -88,8 +88,8 @@ namespace IO.Swagger.Api
         /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
         /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
         /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        ApiResponse<QuickPayProtocolV10Agreement> GETAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
+        /// <returns>ApiResponse of Agreement</returns>
+        ApiResponse<Agreement> GETAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
         /// <summary>
         /// Get agreement activity
         /// </summary>
@@ -104,8 +104,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>QuickPayProtocolV10Activity</returns>
-        QuickPayProtocolV10Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Activity</returns>
+        Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
         /// Get agreement activity
@@ -121,8 +121,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Activity</returns>
-        ApiResponse<QuickPayProtocolV10Activity> GETAgreementsIdActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>ApiResponse of Activity</returns>
+        ApiResponse<Activity> GETAgreementsIdActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
         /// Get agreement
         /// </summary>
@@ -133,8 +133,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        QuickPayProtocolV10Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id);
+        /// <returns>Agreement</returns>
+        Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Get agreement
@@ -146,8 +146,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        ApiResponse<QuickPayProtocolV10Agreement> GETAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>ApiResponse of Agreement</returns>
+        ApiResponse<Agreement> GETAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Regenerate the API key for this agreement
         /// </summary>
@@ -158,8 +158,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        QuickPayProtocolV10Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id);
+        /// <returns>Agreement</returns>
+        Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Regenerate the API key for this agreement
@@ -171,8 +171,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        ApiResponse<QuickPayProtocolV10Agreement> PATCHAgreementsIdApiKeyFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>ApiResponse of Agreement</returns>
+        ApiResponse<Agreement> PATCHAgreementsIdApiKeyFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Update agreement
         /// </summary>
@@ -186,8 +186,8 @@ namespace IO.Swagger.Api
         /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
         /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
         /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        QuickPayProtocolV10Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
+        /// <returns>Agreement</returns>
+        Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
 
         /// <summary>
         /// Update agreement
@@ -202,8 +202,8 @@ namespace IO.Swagger.Api
         /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
         /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
         /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        ApiResponse<QuickPayProtocolV10Agreement> PATCHAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
+        /// <returns>ApiResponse of Agreement</returns>
+        ApiResponse<Agreement> PATCHAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
         /// <summary>
         /// Create agreement
         /// </summary>
@@ -224,8 +224,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        QuickPayProtocolV10Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
+        /// <returns>Agreement</returns>
+        Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
 
         /// <summary>
         /// Create agreement
@@ -247,8 +247,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        ApiResponse<QuickPayProtocolV10Agreement> POSTAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
+        /// <returns>ApiResponse of Agreement</returns>
+        ApiResponse<Agreement> POSTAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
         /// <summary>
         /// Replace agreement
         /// </summary>
@@ -268,8 +268,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        QuickPayProtocolV10Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
+        /// <returns>Agreement</returns>
+        Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
 
         /// <summary>
         /// Replace agreement
@@ -290,8 +290,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        ApiResponse<QuickPayProtocolV10Agreement> PUTAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
+        /// <returns>ApiResponse of Agreement</returns>
+        ApiResponse<Agreement> PUTAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -337,8 +337,8 @@ namespace IO.Swagger.Api
         /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
         /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
         /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> GETAgreementsFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
+        /// <returns>Task of Agreement</returns>
+        System.Threading.Tasks.Task<Agreement> GETAgreementsFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
 
         /// <summary>
         /// Get agreements
@@ -358,8 +358,8 @@ namespace IO.Swagger.Api
         /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
         /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
         /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> GETAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Agreement>> GETAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
         /// <summary>
         /// Get agreement activity
         /// </summary>
@@ -374,8 +374,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>Task of QuickPayProtocolV10Activity</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Activity> GETAgreementsIdActivityFormatAsync (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Task of Activity</returns>
+        System.Threading.Tasks.Task<Activity> GETAgreementsIdActivityFormatAsync (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
         /// Get agreement activity
@@ -391,8 +391,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Activity)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Activity>> GETAgreementsIdActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Task of ApiResponse (Activity)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Activity>> GETAgreementsIdActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
         /// Get agreement
         /// </summary>
@@ -403,8 +403,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> GETAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of Agreement</returns>
+        System.Threading.Tasks.Task<Agreement> GETAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Get agreement
@@ -416,8 +416,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> GETAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Agreement>> GETAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Regenerate the API key for this agreement
         /// </summary>
@@ -428,8 +428,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> PATCHAgreementsIdApiKeyFormatAsync (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of Agreement</returns>
+        System.Threading.Tasks.Task<Agreement> PATCHAgreementsIdApiKeyFormatAsync (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Regenerate the API key for this agreement
@@ -441,8 +441,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> PATCHAgreementsIdApiKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Agreement>> PATCHAgreementsIdApiKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Update agreement
         /// </summary>
@@ -456,8 +456,8 @@ namespace IO.Swagger.Api
         /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
         /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
         /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> PATCHAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
+        /// <returns>Task of Agreement</returns>
+        System.Threading.Tasks.Task<Agreement> PATCHAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
 
         /// <summary>
         /// Update agreement
@@ -472,8 +472,8 @@ namespace IO.Swagger.Api
         /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
         /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
         /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> PATCHAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Agreement>> PATCHAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
         /// <summary>
         /// Create agreement
         /// </summary>
@@ -494,8 +494,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> POSTAgreementsFormatAsync (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
+        /// <returns>Task of Agreement</returns>
+        System.Threading.Tasks.Task<Agreement> POSTAgreementsFormatAsync (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
 
         /// <summary>
         /// Create agreement
@@ -517,8 +517,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> POSTAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Agreement>> POSTAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
         /// <summary>
         /// Replace agreement
         /// </summary>
@@ -538,8 +538,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> PUTAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
+        /// <returns>Task of Agreement</returns>
+        System.Threading.Tasks.Task<Agreement> PUTAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
 
         /// <summary>
         /// Replace agreement
@@ -560,8 +560,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> PUTAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Agreement>> PUTAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
         #endregion Asynchronous Operations
     }
 
@@ -838,10 +838,10 @@ namespace IO.Swagger.Api
         /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
         /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
         /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        public QuickPayProtocolV10Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
+        /// <returns>Agreement</returns>
+        public Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = GETAgreementsFormatWithHttpInfo(acceptVersion, authorization, page, pageSize, sortBy, sortDir, pageKey, support, service, me, accountId);
+             ApiResponse<Agreement> localVarResponse = GETAgreementsFormatWithHttpInfo(acceptVersion, authorization, page, pageSize, sortBy, sortDir, pageKey, support, service, me, accountId);
              return localVarResponse.Data;
         }
 
@@ -860,8 +860,8 @@ namespace IO.Swagger.Api
         /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
         /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
         /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        public ApiResponse< QuickPayProtocolV10Agreement > GETAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
+        /// <returns>ApiResponse of Agreement</returns>
+        public ApiResponse< Agreement > GETAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -920,9 +920,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -940,10 +940,10 @@ namespace IO.Swagger.Api
         /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
         /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
         /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> GETAgreementsFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
+        /// <returns>Task of Agreement</returns>
+        public async System.Threading.Tasks.Task<Agreement> GETAgreementsFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = await GETAgreementsFormatAsyncWithHttpInfo(acceptVersion, authorization, page, pageSize, sortBy, sortDir, pageKey, support, service, me, accountId);
+             ApiResponse<Agreement> localVarResponse = await GETAgreementsFormatAsyncWithHttpInfo(acceptVersion, authorization, page, pageSize, sortBy, sortDir, pageKey, support, service, me, accountId);
              return localVarResponse.Data;
 
         }
@@ -963,8 +963,8 @@ namespace IO.Swagger.Api
         /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
         /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
         /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> GETAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Agreement>> GETAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1023,9 +1023,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1039,10 +1039,10 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>QuickPayProtocolV10Activity</returns>
-        public QuickPayProtocolV10Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Activity</returns>
+        public Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<QuickPayProtocolV10Activity> localVarResponse = GETAgreementsIdActivityFormatWithHttpInfo(acceptVersion, authorization, id, page, pageSize, sortBy, sortDir);
+             ApiResponse<Activity> localVarResponse = GETAgreementsIdActivityFormatWithHttpInfo(acceptVersion, authorization, id, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
         }
 
@@ -1057,8 +1057,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Activity</returns>
-        public ApiResponse< QuickPayProtocolV10Activity > GETAgreementsIdActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>ApiResponse of Activity</returns>
+        public ApiResponse< Activity > GETAgreementsIdActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1116,9 +1116,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Activity>(localVarStatusCode,
+            return new ApiResponse<Activity>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Activity)));
+                (Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Activity)));
         }
 
         /// <summary>
@@ -1132,10 +1132,10 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>Task of QuickPayProtocolV10Activity</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Activity> GETAgreementsIdActivityFormatAsync (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Task of Activity</returns>
+        public async System.Threading.Tasks.Task<Activity> GETAgreementsIdActivityFormatAsync (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<QuickPayProtocolV10Activity> localVarResponse = await GETAgreementsIdActivityFormatAsyncWithHttpInfo(acceptVersion, authorization, id, page, pageSize, sortBy, sortDir);
+             ApiResponse<Activity> localVarResponse = await GETAgreementsIdActivityFormatAsyncWithHttpInfo(acceptVersion, authorization, id, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
 
         }
@@ -1151,8 +1151,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Activity)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Activity>> GETAgreementsIdActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Task of ApiResponse (Activity)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Activity>> GETAgreementsIdActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1210,9 +1210,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Activity>(localVarStatusCode,
+            return new ApiResponse<Activity>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Activity)));
+                (Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Activity)));
         }
 
         /// <summary>
@@ -1222,10 +1222,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        public QuickPayProtocolV10Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id)
+        /// <returns>Agreement</returns>
+        public Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = GETAgreementsIdFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Agreement> localVarResponse = GETAgreementsIdFormatWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
         }
 
@@ -1236,8 +1236,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        public ApiResponse< QuickPayProtocolV10Agreement > GETAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>ApiResponse of Agreement</returns>
+        public ApiResponse< Agreement > GETAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1291,9 +1291,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1303,10 +1303,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> GETAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of Agreement</returns>
+        public async System.Threading.Tasks.Task<Agreement> GETAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = await GETAgreementsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Agreement> localVarResponse = await GETAgreementsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
 
         }
@@ -1318,8 +1318,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> GETAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Agreement>> GETAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1373,9 +1373,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1385,10 +1385,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        public QuickPayProtocolV10Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id)
+        /// <returns>Agreement</returns>
+        public Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = PATCHAgreementsIdApiKeyFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Agreement> localVarResponse = PATCHAgreementsIdApiKeyFormatWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
         }
 
@@ -1399,8 +1399,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        public ApiResponse< QuickPayProtocolV10Agreement > PATCHAgreementsIdApiKeyFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>ApiResponse of Agreement</returns>
+        public ApiResponse< Agreement > PATCHAgreementsIdApiKeyFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1454,9 +1454,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1466,10 +1466,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> PATCHAgreementsIdApiKeyFormatAsync (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of Agreement</returns>
+        public async System.Threading.Tasks.Task<Agreement> PATCHAgreementsIdApiKeyFormatAsync (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = await PATCHAgreementsIdApiKeyFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Agreement> localVarResponse = await PATCHAgreementsIdApiKeyFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
 
         }
@@ -1481,8 +1481,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> PATCHAgreementsIdApiKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Agreement>> PATCHAgreementsIdApiKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1536,9 +1536,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1551,10 +1551,10 @@ namespace IO.Swagger.Api
         /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
         /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
         /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        public QuickPayProtocolV10Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
+        /// <returns>Agreement</returns>
+        public Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = PATCHAgreementsIdFormatWithHttpInfo(acceptVersion, authorization, id, ipRestrictionAddress, owner, description);
+             ApiResponse<Agreement> localVarResponse = PATCHAgreementsIdFormatWithHttpInfo(acceptVersion, authorization, id, ipRestrictionAddress, owner, description);
              return localVarResponse.Data;
         }
 
@@ -1568,8 +1568,8 @@ namespace IO.Swagger.Api
         /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
         /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
         /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        public ApiResponse< QuickPayProtocolV10Agreement > PATCHAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
+        /// <returns>ApiResponse of Agreement</returns>
+        public ApiResponse< Agreement > PATCHAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1630,9 +1630,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1645,10 +1645,10 @@ namespace IO.Swagger.Api
         /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
         /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
         /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> PATCHAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
+        /// <returns>Task of Agreement</returns>
+        public async System.Threading.Tasks.Task<Agreement> PATCHAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = await PATCHAgreementsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, ipRestrictionAddress, owner, description);
+             ApiResponse<Agreement> localVarResponse = await PATCHAgreementsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, ipRestrictionAddress, owner, description);
              return localVarResponse.Data;
 
         }
@@ -1663,8 +1663,8 @@ namespace IO.Swagger.Api
         /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
         /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
         /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> PATCHAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Agreement>> PATCHAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1725,9 +1725,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1747,10 +1747,10 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        public QuickPayProtocolV10Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
+        /// <returns>Agreement</returns>
+        public Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = POSTAgreementsFormatWithHttpInfo(acceptVersion, authorization, aclPermissionsResource, ipRestrictionAddress, userEmail, systemUser, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
+             ApiResponse<Agreement> localVarResponse = POSTAgreementsFormatWithHttpInfo(acceptVersion, authorization, aclPermissionsResource, ipRestrictionAddress, userEmail, systemUser, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
              return localVarResponse.Data;
         }
 
@@ -1771,8 +1771,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        public ApiResponse< QuickPayProtocolV10Agreement > POSTAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
+        /// <returns>ApiResponse of Agreement</returns>
+        public ApiResponse< Agreement > POSTAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1840,9 +1840,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1862,10 +1862,10 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> POSTAgreementsFormatAsync (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
+        /// <returns>Task of Agreement</returns>
+        public async System.Threading.Tasks.Task<Agreement> POSTAgreementsFormatAsync (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = await POSTAgreementsFormatAsyncWithHttpInfo(acceptVersion, authorization, aclPermissionsResource, ipRestrictionAddress, userEmail, systemUser, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
+             ApiResponse<Agreement> localVarResponse = await POSTAgreementsFormatAsyncWithHttpInfo(acceptVersion, authorization, aclPermissionsResource, ipRestrictionAddress, userEmail, systemUser, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
              return localVarResponse.Data;
 
         }
@@ -1887,8 +1887,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> POSTAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Agreement>> POSTAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1956,9 +1956,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -1977,10 +1977,10 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Agreement</returns>
-        public QuickPayProtocolV10Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
+        /// <returns>Agreement</returns>
+        public Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = PUTAgreementsIdFormatWithHttpInfo(acceptVersion, authorization, id, aclPermissionsResource, ipRestrictionAddress, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
+             ApiResponse<Agreement> localVarResponse = PUTAgreementsIdFormatWithHttpInfo(acceptVersion, authorization, id, aclPermissionsResource, ipRestrictionAddress, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
              return localVarResponse.Data;
         }
 
@@ -2000,8 +2000,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Agreement</returns>
-        public ApiResponse< QuickPayProtocolV10Agreement > PUTAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
+        /// <returns>ApiResponse of Agreement</returns>
+        public ApiResponse< Agreement > PUTAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2071,9 +2071,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
         /// <summary>
@@ -2092,10 +2092,10 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Agreement</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Agreement> PUTAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
+        /// <returns>Task of Agreement</returns>
+        public async System.Threading.Tasks.Task<Agreement> PUTAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
-             ApiResponse<QuickPayProtocolV10Agreement> localVarResponse = await PUTAgreementsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, aclPermissionsResource, ipRestrictionAddress, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
+             ApiResponse<Agreement> localVarResponse = await PUTAgreementsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, aclPermissionsResource, ipRestrictionAddress, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
              return localVarResponse.Data;
 
         }
@@ -2116,8 +2116,8 @@ namespace IO.Swagger.Api
         /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
         /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Agreement)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Agreement>> PUTAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
+        /// <returns>Task of ApiResponse (Agreement)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Agreement>> PUTAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2187,9 +2187,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Agreement>(localVarStatusCode,
+            return new ApiResponse<Agreement>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Agreement)));
+                (Agreement) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Agreement)));
         }
 
     }

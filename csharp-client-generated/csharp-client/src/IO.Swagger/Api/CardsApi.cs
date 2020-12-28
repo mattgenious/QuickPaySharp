@@ -67,8 +67,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card GETCardsFormat (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
+        /// <returns>Card</returns>
+        Card GETCardsFormat (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
 
         /// <summary>
         /// Get saved cards
@@ -88,8 +88,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        ApiResponse<QuickPayProtocolV10Card> GETCardsFormatWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
+        /// <returns>ApiResponse of Card</returns>
+        ApiResponse<Card> GETCardsFormatWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
         /// <summary>
         /// Get saved card
         /// </summary>
@@ -100,8 +100,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card GETCardsIdFormat (string acceptVersion, string authorization, string id);
+        /// <returns>Card</returns>
+        Card GETCardsIdFormat (string acceptVersion, string authorization, string id);
 
         /// <summary>
         /// Get saved card
@@ -113,8 +113,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        ApiResponse<QuickPayProtocolV10Card> GETCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id);
+        /// <returns>ApiResponse of Card</returns>
+        ApiResponse<Card> GETCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Get Operation
         /// </summary>
@@ -126,8 +126,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10CardOperation</returns>
-        QuickPayProtocolV10CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id);
+        /// <returns>CardOperation</returns>
+        CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id);
 
         /// <summary>
         /// Get Operation
@@ -140,8 +140,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CardOperation</returns>
-        ApiResponse<QuickPayProtocolV10CardOperation> GETCardsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id);
+        /// <returns>ApiResponse of CardOperation</returns>
+        ApiResponse<CardOperation> GETCardsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id);
         /// <summary>
         /// Update saved card
         /// </summary>
@@ -153,8 +153,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
+        /// <returns>Card</returns>
+        Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
 
         /// <summary>
         /// Update saved card
@@ -167,8 +167,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        ApiResponse<QuickPayProtocolV10Card> PATCHCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
+        /// <returns>ApiResponse of Card</returns>
+        ApiResponse<Card> PATCHCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
         /// <summary>
         /// Create saved card
         /// </summary>
@@ -179,8 +179,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
+        /// <returns>Card</returns>
+        Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
 
         /// <summary>
         /// Create saved card
@@ -192,8 +192,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        ApiResponse<QuickPayProtocolV10Card> POSTCardsFormatWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
+        /// <returns>ApiResponse of Card</returns>
+        ApiResponse<Card> POSTCardsFormatWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
         /// <summary>
         /// Authorize saved card
         /// </summary>
@@ -213,8 +213,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Card</returns>
+        Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
 
         /// <summary>
         /// Authorize saved card
@@ -235,8 +235,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        ApiResponse<QuickPayProtocolV10Card> POSTCardsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>ApiResponse of Card</returns>
+        ApiResponse<Card> POSTCardsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
         /// <summary>
         /// Cancel saved card
         /// </summary>
@@ -248,8 +248,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized = null);
+        /// <returns>Card</returns>
+        Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized = null);
 
         /// <summary>
         /// Cancel saved card
@@ -262,8 +262,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        ApiResponse<QuickPayProtocolV10Card> POSTCardsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null);
+        /// <returns>ApiResponse of Card</returns>
+        ApiResponse<Card> POSTCardsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null);
         /// <summary>
         /// Create fraud confirmation report
         /// </summary>
@@ -276,8 +276,8 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>QuickPayProtocolV10FraudReport</returns>
-        QuickPayProtocolV10FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
+        /// <returns>FraudReport</returns>
+        FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
 
         /// <summary>
         /// Create fraud confirmation report
@@ -291,8 +291,8 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudReport</returns>
-        ApiResponse<QuickPayProtocolV10FraudReport> POSTCardsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
+        /// <returns>ApiResponse of FraudReport</returns>
+        ApiResponse<FraudReport> POSTCardsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
         /// <summary>
         /// Create card token
         /// </summary>
@@ -303,8 +303,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10CardToken</returns>
-        QuickPayProtocolV10CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id);
+        /// <returns>CardToken</returns>
+        CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id);
 
         /// <summary>
         /// Create card token
@@ -316,8 +316,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CardToken</returns>
-        ApiResponse<QuickPayProtocolV10CardToken> POSTCardsIdTokensFormatWithHttpInfo (string acceptVersion, string authorization, string id);
+        /// <returns>ApiResponse of CardToken</returns>
+        ApiResponse<CardToken> POSTCardsIdTokensFormatWithHttpInfo (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Create or update a card link
         /// </summary>
@@ -340,8 +340,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10CardLinkUrl</returns>
-        QuickPayProtocolV10CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        /// <returns>CardLinkUrl</returns>
+        CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
 
         /// <summary>
         /// Create or update a card link
@@ -365,8 +365,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CardLinkUrl</returns>
-        ApiResponse<QuickPayProtocolV10CardLinkUrl> PUTCardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        /// <returns>ApiResponse of CardLinkUrl</returns>
+        ApiResponse<CardLinkUrl> PUTCardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -412,8 +412,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Card> GETCardsFormatAsync (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
+        /// <returns>Task of Card</returns>
+        System.Threading.Tasks.Task<Card> GETCardsFormatAsync (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
 
         /// <summary>
         /// Get saved cards
@@ -433,8 +433,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> GETCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
+        /// <returns>Task of ApiResponse (Card)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Card>> GETCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
         /// <summary>
         /// Get saved card
         /// </summary>
@@ -445,8 +445,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Card> GETCardsIdFormatAsync (string acceptVersion, string authorization, string id);
+        /// <returns>Task of Card</returns>
+        System.Threading.Tasks.Task<Card> GETCardsIdFormatAsync (string acceptVersion, string authorization, string id);
 
         /// <summary>
         /// Get saved card
@@ -458,8 +458,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> GETCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
+        /// <returns>Task of ApiResponse (Card)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Card>> GETCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Get Operation
         /// </summary>
@@ -471,8 +471,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of QuickPayProtocolV10CardOperation</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10CardOperation> GETCardsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? operationId, string id);
+        /// <returns>Task of CardOperation</returns>
+        System.Threading.Tasks.Task<CardOperation> GETCardsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? operationId, string id);
 
         /// <summary>
         /// Get Operation
@@ -485,8 +485,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CardOperation)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CardOperation>> GETCardsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id);
+        /// <returns>Task of ApiResponse (CardOperation)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CardOperation>> GETCardsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id);
         /// <summary>
         /// Update saved card
         /// </summary>
@@ -498,8 +498,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Card> PATCHCardsIdFormatAsync (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
+        /// <returns>Task of Card</returns>
+        System.Threading.Tasks.Task<Card> PATCHCardsIdFormatAsync (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
 
         /// <summary>
         /// Update saved card
@@ -512,8 +512,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> PATCHCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
+        /// <returns>Task of ApiResponse (Card)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Card>> PATCHCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
         /// <summary>
         /// Create saved card
         /// </summary>
@@ -524,8 +524,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Card> POSTCardsFormatAsync (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
+        /// <returns>Task of Card</returns>
+        System.Threading.Tasks.Task<Card> POSTCardsFormatAsync (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
 
         /// <summary>
         /// Create saved card
@@ -537,8 +537,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> POSTCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
+        /// <returns>Task of ApiResponse (Card)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
         /// <summary>
         /// Authorize saved card
         /// </summary>
@@ -558,8 +558,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Card> POSTCardsIdAuthorizeFormatAsync (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Task of Card</returns>
+        System.Threading.Tasks.Task<Card> POSTCardsIdAuthorizeFormatAsync (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
 
         /// <summary>
         /// Authorize saved card
@@ -580,8 +580,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> POSTCardsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Task of ApiResponse (Card)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
         /// <summary>
         /// Cancel saved card
         /// </summary>
@@ -593,8 +593,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Card> POSTCardsIdCancelFormatAsync (string acceptVersion, string authorization, string id, bool? synchronized = null);
+        /// <returns>Task of Card</returns>
+        System.Threading.Tasks.Task<Card> POSTCardsIdCancelFormatAsync (string acceptVersion, string authorization, string id, bool? synchronized = null);
 
         /// <summary>
         /// Cancel saved card
@@ -607,8 +607,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> POSTCardsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null);
+        /// <returns>Task of ApiResponse (Card)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null);
         /// <summary>
         /// Create fraud confirmation report
         /// </summary>
@@ -621,8 +621,8 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10FraudReport</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FraudReport> POSTCardsIdFraudReportFormatAsync (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
+        /// <returns>Task of FraudReport</returns>
+        System.Threading.Tasks.Task<FraudReport> POSTCardsIdFraudReportFormatAsync (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
 
         /// <summary>
         /// Create fraud confirmation report
@@ -636,8 +636,8 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudReport)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudReport>> POSTCardsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
+        /// <returns>Task of ApiResponse (FraudReport)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FraudReport>> POSTCardsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
         /// <summary>
         /// Create card token
         /// </summary>
@@ -648,8 +648,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of QuickPayProtocolV10CardToken</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10CardToken> POSTCardsIdTokensFormatAsync (string acceptVersion, string authorization, string id);
+        /// <returns>Task of CardToken</returns>
+        System.Threading.Tasks.Task<CardToken> POSTCardsIdTokensFormatAsync (string acceptVersion, string authorization, string id);
 
         /// <summary>
         /// Create card token
@@ -661,8 +661,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CardToken)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CardToken>> POSTCardsIdTokensFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
+        /// <returns>Task of ApiResponse (CardToken)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CardToken>> POSTCardsIdTokensFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Create or update a card link
         /// </summary>
@@ -685,8 +685,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10CardLinkUrl</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10CardLinkUrl> PUTCardsIdLinkFormatAsync (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        /// <returns>Task of CardLinkUrl</returns>
+        System.Threading.Tasks.Task<CardLinkUrl> PUTCardsIdLinkFormatAsync (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
 
         /// <summary>
         /// Create or update a card link
@@ -710,8 +710,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CardLinkUrl)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CardLinkUrl>> PUTCardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        /// <returns>Task of ApiResponse (CardLinkUrl)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CardLinkUrl>> PUTCardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
         #endregion Asynchronous Operations
     }
 
@@ -988,10 +988,10 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        public QuickPayProtocolV10Card GETCardsFormat (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
+        /// <returns>Card</returns>
+        public Card GETCardsFormat (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = GETCardsFormatWithHttpInfo(acceptVersion, authorization, timestamp, minTime, maxTime, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
+             ApiResponse<Card> localVarResponse = GETCardsFormatWithHttpInfo(acceptVersion, authorization, timestamp, minTime, maxTime, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
              return localVarResponse.Data;
         }
 
@@ -1010,8 +1010,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        public ApiResponse< QuickPayProtocolV10Card > GETCardsFormatWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
+        /// <returns>ApiResponse of Card</returns>
+        public ApiResponse< Card > GETCardsFormatWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1070,9 +1070,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1090,10 +1090,10 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Card> GETCardsFormatAsync (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
+        /// <returns>Task of Card</returns>
+        public async System.Threading.Tasks.Task<Card> GETCardsFormatAsync (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = await GETCardsFormatAsyncWithHttpInfo(acceptVersion, authorization, timestamp, minTime, maxTime, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
+             ApiResponse<Card> localVarResponse = await GETCardsFormatAsyncWithHttpInfo(acceptVersion, authorization, timestamp, minTime, maxTime, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
              return localVarResponse.Data;
 
         }
@@ -1113,8 +1113,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> GETCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
+        /// <returns>Task of ApiResponse (Card)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> GETCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1173,9 +1173,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1185,10 +1185,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        public QuickPayProtocolV10Card GETCardsIdFormat (string acceptVersion, string authorization, string id)
+        /// <returns>Card</returns>
+        public Card GETCardsIdFormat (string acceptVersion, string authorization, string id)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = GETCardsIdFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Card> localVarResponse = GETCardsIdFormatWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
         }
 
@@ -1199,8 +1199,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        public ApiResponse< QuickPayProtocolV10Card > GETCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id)
+        /// <returns>ApiResponse of Card</returns>
+        public ApiResponse< Card > GETCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1254,9 +1254,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1266,10 +1266,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Card> GETCardsIdFormatAsync (string acceptVersion, string authorization, string id)
+        /// <returns>Task of Card</returns>
+        public async System.Threading.Tasks.Task<Card> GETCardsIdFormatAsync (string acceptVersion, string authorization, string id)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = await GETCardsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Card> localVarResponse = await GETCardsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
 
         }
@@ -1281,8 +1281,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> GETCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
+        /// <returns>Task of ApiResponse (Card)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> GETCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1336,9 +1336,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1349,10 +1349,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10CardOperation</returns>
-        public QuickPayProtocolV10CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id)
+        /// <returns>CardOperation</returns>
+        public CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id)
         {
-             ApiResponse<QuickPayProtocolV10CardOperation> localVarResponse = GETCardsIdOperationsOperationIdFormatWithHttpInfo(acceptVersion, authorization, operationId, id);
+             ApiResponse<CardOperation> localVarResponse = GETCardsIdOperationsOperationIdFormatWithHttpInfo(acceptVersion, authorization, operationId, id);
              return localVarResponse.Data;
         }
 
@@ -1364,8 +1364,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CardOperation</returns>
-        public ApiResponse< QuickPayProtocolV10CardOperation > GETCardsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id)
+        /// <returns>ApiResponse of CardOperation</returns>
+        public ApiResponse< CardOperation > GETCardsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1423,9 +1423,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CardOperation>(localVarStatusCode,
+            return new ApiResponse<CardOperation>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CardOperation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CardOperation)));
+                (CardOperation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CardOperation)));
         }
 
         /// <summary>
@@ -1436,10 +1436,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of QuickPayProtocolV10CardOperation</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10CardOperation> GETCardsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? operationId, string id)
+        /// <returns>Task of CardOperation</returns>
+        public async System.Threading.Tasks.Task<CardOperation> GETCardsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? operationId, string id)
         {
-             ApiResponse<QuickPayProtocolV10CardOperation> localVarResponse = await GETCardsIdOperationsOperationIdFormatAsyncWithHttpInfo(acceptVersion, authorization, operationId, id);
+             ApiResponse<CardOperation> localVarResponse = await GETCardsIdOperationsOperationIdFormatAsyncWithHttpInfo(acceptVersion, authorization, operationId, id);
              return localVarResponse.Data;
 
         }
@@ -1452,8 +1452,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CardOperation)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CardOperation>> GETCardsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id)
+        /// <returns>Task of ApiResponse (CardOperation)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CardOperation>> GETCardsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1511,9 +1511,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CardOperation>(localVarStatusCode,
+            return new ApiResponse<CardOperation>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CardOperation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CardOperation)));
+                (CardOperation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CardOperation)));
         }
 
         /// <summary>
@@ -1524,10 +1524,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        public QuickPayProtocolV10Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
+        /// <returns>Card</returns>
+        public Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = PATCHCardsIdFormatWithHttpInfo(acceptVersion, authorization, id, variables);
+             ApiResponse<Card> localVarResponse = PATCHCardsIdFormatWithHttpInfo(acceptVersion, authorization, id, variables);
              return localVarResponse.Data;
         }
 
@@ -1539,8 +1539,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        public ApiResponse< QuickPayProtocolV10Card > PATCHCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
+        /// <returns>ApiResponse of Card</returns>
+        public ApiResponse< Card > PATCHCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1596,9 +1596,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1609,10 +1609,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Card> PATCHCardsIdFormatAsync (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
+        /// <returns>Task of Card</returns>
+        public async System.Threading.Tasks.Task<Card> PATCHCardsIdFormatAsync (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = await PATCHCardsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, variables);
+             ApiResponse<Card> localVarResponse = await PATCHCardsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, variables);
              return localVarResponse.Data;
 
         }
@@ -1625,8 +1625,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> PATCHCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
+        /// <returns>Task of ApiResponse (Card)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> PATCHCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1682,9 +1682,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1694,10 +1694,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        public QuickPayProtocolV10Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
+        /// <returns>Card</returns>
+        public Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = POSTCardsFormatWithHttpInfo(acceptVersion, authorization, variables);
+             ApiResponse<Card> localVarResponse = POSTCardsFormatWithHttpInfo(acceptVersion, authorization, variables);
              return localVarResponse.Data;
         }
 
@@ -1708,8 +1708,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        public ApiResponse< QuickPayProtocolV10Card > POSTCardsFormatWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
+        /// <returns>ApiResponse of Card</returns>
+        public ApiResponse< Card > POSTCardsFormatWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1761,9 +1761,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1773,10 +1773,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Card> POSTCardsFormatAsync (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
+        /// <returns>Task of Card</returns>
+        public async System.Threading.Tasks.Task<Card> POSTCardsFormatAsync (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = await POSTCardsFormatAsyncWithHttpInfo(acceptVersion, authorization, variables);
+             ApiResponse<Card> localVarResponse = await POSTCardsFormatAsyncWithHttpInfo(acceptVersion, authorization, variables);
              return localVarResponse.Data;
 
         }
@@ -1788,8 +1788,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> POSTCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
+        /// <returns>Task of ApiResponse (Card)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1841,9 +1841,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1862,10 +1862,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        public QuickPayProtocolV10Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Card</returns>
+        public Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = POSTCardsIdAuthorizeFormatWithHttpInfo(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
+             ApiResponse<Card> localVarResponse = POSTCardsIdAuthorizeFormatWithHttpInfo(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
              return localVarResponse.Data;
         }
 
@@ -1885,8 +1885,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        public ApiResponse< QuickPayProtocolV10Card > POSTCardsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>ApiResponse of Card</returns>
+        public ApiResponse< Card > POSTCardsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1956,9 +1956,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -1977,10 +1977,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Card> POSTCardsIdAuthorizeFormatAsync (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Task of Card</returns>
+        public async System.Threading.Tasks.Task<Card> POSTCardsIdAuthorizeFormatAsync (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = await POSTCardsIdAuthorizeFormatAsyncWithHttpInfo(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
+             ApiResponse<Card> localVarResponse = await POSTCardsIdAuthorizeFormatAsyncWithHttpInfo(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
              return localVarResponse.Data;
 
         }
@@ -2001,8 +2001,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> POSTCardsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Task of ApiResponse (Card)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2072,9 +2072,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -2085,10 +2085,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        public QuickPayProtocolV10Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized = null)
+        /// <returns>Card</returns>
+        public Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = POSTCardsIdCancelFormatWithHttpInfo(acceptVersion, authorization, id, synchronized);
+             ApiResponse<Card> localVarResponse = POSTCardsIdCancelFormatWithHttpInfo(acceptVersion, authorization, id, synchronized);
              return localVarResponse.Data;
         }
 
@@ -2100,8 +2100,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Card</returns>
-        public ApiResponse< QuickPayProtocolV10Card > POSTCardsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null)
+        /// <returns>ApiResponse of Card</returns>
+        public ApiResponse< Card > POSTCardsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2156,9 +2156,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -2169,10 +2169,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Card</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Card> POSTCardsIdCancelFormatAsync (string acceptVersion, string authorization, string id, bool? synchronized = null)
+        /// <returns>Task of Card</returns>
+        public async System.Threading.Tasks.Task<Card> POSTCardsIdCancelFormatAsync (string acceptVersion, string authorization, string id, bool? synchronized = null)
         {
-             ApiResponse<QuickPayProtocolV10Card> localVarResponse = await POSTCardsIdCancelFormatAsyncWithHttpInfo(acceptVersion, authorization, id, synchronized);
+             ApiResponse<Card> localVarResponse = await POSTCardsIdCancelFormatAsyncWithHttpInfo(acceptVersion, authorization, id, synchronized);
              return localVarResponse.Data;
 
         }
@@ -2185,8 +2185,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Card>> POSTCardsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null)
+        /// <returns>Task of ApiResponse (Card)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2241,9 +2241,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Card>(localVarStatusCode,
+            return new ApiResponse<Card>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Card)));
+                (Card) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Card)));
         }
 
         /// <summary>
@@ -2255,10 +2255,10 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>QuickPayProtocolV10FraudReport</returns>
-        public QuickPayProtocolV10FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
+        /// <returns>FraudReport</returns>
+        public FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
         {
-             ApiResponse<QuickPayProtocolV10FraudReport> localVarResponse = POSTCardsIdFraudReportFormatWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, description);
+             ApiResponse<FraudReport> localVarResponse = POSTCardsIdFraudReportFormatWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, description);
              return localVarResponse.Data;
         }
 
@@ -2271,8 +2271,8 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudReport</returns>
-        public ApiResponse< QuickPayProtocolV10FraudReport > POSTCardsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
+        /// <returns>ApiResponse of FraudReport</returns>
+        public ApiResponse< FraudReport > POSTCardsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2329,9 +2329,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudReport>(localVarStatusCode,
+            return new ApiResponse<FraudReport>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudReport) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudReport)));
+                (FraudReport) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudReport)));
         }
 
         /// <summary>
@@ -2343,10 +2343,10 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10FraudReport</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FraudReport> POSTCardsIdFraudReportFormatAsync (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
+        /// <returns>Task of FraudReport</returns>
+        public async System.Threading.Tasks.Task<FraudReport> POSTCardsIdFraudReportFormatAsync (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
         {
-             ApiResponse<QuickPayProtocolV10FraudReport> localVarResponse = await POSTCardsIdFraudReportFormatAsyncWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, description);
+             ApiResponse<FraudReport> localVarResponse = await POSTCardsIdFraudReportFormatAsyncWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, description);
              return localVarResponse.Data;
 
         }
@@ -2360,8 +2360,8 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudReport)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudReport>> POSTCardsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
+        /// <returns>Task of ApiResponse (FraudReport)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FraudReport>> POSTCardsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2418,9 +2418,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudReport>(localVarStatusCode,
+            return new ApiResponse<FraudReport>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudReport) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudReport)));
+                (FraudReport) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudReport)));
         }
 
         /// <summary>
@@ -2430,10 +2430,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10CardToken</returns>
-        public QuickPayProtocolV10CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id)
+        /// <returns>CardToken</returns>
+        public CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id)
         {
-             ApiResponse<QuickPayProtocolV10CardToken> localVarResponse = POSTCardsIdTokensFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<CardToken> localVarResponse = POSTCardsIdTokensFormatWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
         }
 
@@ -2444,8 +2444,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CardToken</returns>
-        public ApiResponse< QuickPayProtocolV10CardToken > POSTCardsIdTokensFormatWithHttpInfo (string acceptVersion, string authorization, string id)
+        /// <returns>ApiResponse of CardToken</returns>
+        public ApiResponse< CardToken > POSTCardsIdTokensFormatWithHttpInfo (string acceptVersion, string authorization, string id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2499,9 +2499,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CardToken>(localVarStatusCode,
+            return new ApiResponse<CardToken>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CardToken) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CardToken)));
+                (CardToken) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CardToken)));
         }
 
         /// <summary>
@@ -2511,10 +2511,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of QuickPayProtocolV10CardToken</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10CardToken> POSTCardsIdTokensFormatAsync (string acceptVersion, string authorization, string id)
+        /// <returns>Task of CardToken</returns>
+        public async System.Threading.Tasks.Task<CardToken> POSTCardsIdTokensFormatAsync (string acceptVersion, string authorization, string id)
         {
-             ApiResponse<QuickPayProtocolV10CardToken> localVarResponse = await POSTCardsIdTokensFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<CardToken> localVarResponse = await POSTCardsIdTokensFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
 
         }
@@ -2526,8 +2526,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CardToken)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CardToken>> POSTCardsIdTokensFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
+        /// <returns>Task of ApiResponse (CardToken)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CardToken>> POSTCardsIdTokensFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2581,9 +2581,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CardToken>(localVarStatusCode,
+            return new ApiResponse<CardToken>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CardToken) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CardToken)));
+                (CardToken) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CardToken)));
         }
 
         /// <summary>
@@ -2605,10 +2605,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10CardLinkUrl</returns>
-        public QuickPayProtocolV10CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        /// <returns>CardLinkUrl</returns>
+        public CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
         {
-             ApiResponse<QuickPayProtocolV10CardLinkUrl> localVarResponse = PUTCardsIdLinkFormatWithHttpInfo(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
+             ApiResponse<CardLinkUrl> localVarResponse = PUTCardsIdLinkFormatWithHttpInfo(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
              return localVarResponse.Data;
         }
 
@@ -2631,8 +2631,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CardLinkUrl</returns>
-        public ApiResponse< QuickPayProtocolV10CardLinkUrl > PUTCardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        /// <returns>ApiResponse of CardLinkUrl</returns>
+        public ApiResponse< CardLinkUrl > PUTCardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2699,9 +2699,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CardLinkUrl>(localVarStatusCode,
+            return new ApiResponse<CardLinkUrl>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CardLinkUrl) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CardLinkUrl)));
+                (CardLinkUrl) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CardLinkUrl)));
         }
 
         /// <summary>
@@ -2723,10 +2723,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10CardLinkUrl</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10CardLinkUrl> PUTCardsIdLinkFormatAsync (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        /// <returns>Task of CardLinkUrl</returns>
+        public async System.Threading.Tasks.Task<CardLinkUrl> PUTCardsIdLinkFormatAsync (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
         {
-             ApiResponse<QuickPayProtocolV10CardLinkUrl> localVarResponse = await PUTCardsIdLinkFormatAsyncWithHttpInfo(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
+             ApiResponse<CardLinkUrl> localVarResponse = await PUTCardsIdLinkFormatAsyncWithHttpInfo(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
              return localVarResponse.Data;
 
         }
@@ -2750,8 +2750,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CardLinkUrl)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CardLinkUrl>> PUTCardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        /// <returns>Task of ApiResponse (CardLinkUrl)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CardLinkUrl>> PUTCardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2818,9 +2818,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CardLinkUrl>(localVarStatusCode,
+            return new ApiResponse<CardLinkUrl>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CardLinkUrl) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CardLinkUrl)));
+                (CardLinkUrl) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CardLinkUrl)));
         }
 
     }

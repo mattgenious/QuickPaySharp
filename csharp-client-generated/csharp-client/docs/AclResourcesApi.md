@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getaclresourcesformat"></a>
 # **GETAclResourcesFormat**
-> QuickPayProtocolV10AclResource GETAclResourcesFormat (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
+> AclResource GETAclResourcesFormat (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
 
 Get acl resources
 
@@ -38,7 +38,7 @@ namespace Example
             try
             {
                 // Get acl resources
-                QuickPayProtocolV10AclResource result = apiInstance.GETAclResourcesFormat(acceptVersion, authorization, page, pageSize);
+                AclResource result = apiInstance.GETAclResourcesFormat(acceptVersion, authorization, page, pageSize);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AclResource**](QuickPayProtocolV10AclResource.md)
+[**AclResource**](AclResource.md)
 
 ### Authorization
 

@@ -42,8 +42,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>QuickPayProtocolV10Activity</returns>
-        QuickPayProtocolV10Activity GETActivityFormat (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
+        /// <returns>Activity</returns>
+        Activity GETActivityFormat (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
 
         /// <summary>
         /// Get activity
@@ -63,8 +63,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Activity</returns>
-        ApiResponse<QuickPayProtocolV10Activity> GETActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
+        /// <returns>ApiResponse of Activity</returns>
+        ApiResponse<Activity> GETActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
         /// <summary>
         /// Get a single activity entry
         /// </summary>
@@ -75,8 +75,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Activity</returns>
-        QuickPayProtocolV10Activity GETActivityIdFormat (string acceptVersion, string authorization, string id);
+        /// <returns>Activity</returns>
+        Activity GETActivityIdFormat (string acceptVersion, string authorization, string id);
 
         /// <summary>
         /// Get a single activity entry
@@ -88,8 +88,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Activity</returns>
-        ApiResponse<QuickPayProtocolV10Activity> GETActivityIdFormatWithHttpInfo (string acceptVersion, string authorization, string id);
+        /// <returns>ApiResponse of Activity</returns>
+        ApiResponse<Activity> GETActivityIdFormatWithHttpInfo (string acceptVersion, string authorization, string id);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -110,8 +110,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Activity</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Activity> GETActivityFormatAsync (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
+        /// <returns>Task of Activity</returns>
+        System.Threading.Tasks.Task<Activity> GETActivityFormatAsync (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
 
         /// <summary>
         /// Get activity
@@ -131,8 +131,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Activity)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Activity>> GETActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
+        /// <returns>Task of ApiResponse (Activity)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Activity>> GETActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
         /// <summary>
         /// Get a single activity entry
         /// </summary>
@@ -143,8 +143,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Activity</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Activity> GETActivityIdFormatAsync (string acceptVersion, string authorization, string id);
+        /// <returns>Task of Activity</returns>
+        System.Threading.Tasks.Task<Activity> GETActivityIdFormatAsync (string acceptVersion, string authorization, string id);
 
         /// <summary>
         /// Get a single activity entry
@@ -156,8 +156,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Activity)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Activity>> GETActivityIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
+        /// <returns>Task of ApiResponse (Activity)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Activity>> GETActivityIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
         #endregion Asynchronous Operations
     }
 
@@ -273,10 +273,10 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>QuickPayProtocolV10Activity</returns>
-        public QuickPayProtocolV10Activity GETActivityFormat (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+        /// <returns>Activity</returns>
+        public Activity GETActivityFormat (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
         {
-             ApiResponse<QuickPayProtocolV10Activity> localVarResponse = GETActivityFormatWithHttpInfo(acceptVersion, authorization, userId, targetType, targetId, support, page, pageSize, sortBy, sortDir, pageKey);
+             ApiResponse<Activity> localVarResponse = GETActivityFormatWithHttpInfo(acceptVersion, authorization, userId, targetType, targetId, support, page, pageSize, sortBy, sortDir, pageKey);
              return localVarResponse.Data;
         }
 
@@ -295,8 +295,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Activity</returns>
-        public ApiResponse< QuickPayProtocolV10Activity > GETActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+        /// <returns>ApiResponse of Activity</returns>
+        public ApiResponse< Activity > GETActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -355,9 +355,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Activity>(localVarStatusCode,
+            return new ApiResponse<Activity>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Activity)));
+                (Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Activity)));
         }
 
         /// <summary>
@@ -375,10 +375,10 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Activity</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Activity> GETActivityFormatAsync (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+        /// <returns>Task of Activity</returns>
+        public async System.Threading.Tasks.Task<Activity> GETActivityFormatAsync (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
         {
-             ApiResponse<QuickPayProtocolV10Activity> localVarResponse = await GETActivityFormatAsyncWithHttpInfo(acceptVersion, authorization, userId, targetType, targetId, support, page, pageSize, sortBy, sortDir, pageKey);
+             ApiResponse<Activity> localVarResponse = await GETActivityFormatAsyncWithHttpInfo(acceptVersion, authorization, userId, targetType, targetId, support, page, pageSize, sortBy, sortDir, pageKey);
              return localVarResponse.Data;
 
         }
@@ -398,8 +398,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Activity)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Activity>> GETActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+        /// <returns>Task of ApiResponse (Activity)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Activity>> GETActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -458,9 +458,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Activity>(localVarStatusCode,
+            return new ApiResponse<Activity>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Activity)));
+                (Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Activity)));
         }
 
         /// <summary>
@@ -470,10 +470,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Activity</returns>
-        public QuickPayProtocolV10Activity GETActivityIdFormat (string acceptVersion, string authorization, string id)
+        /// <returns>Activity</returns>
+        public Activity GETActivityIdFormat (string acceptVersion, string authorization, string id)
         {
-             ApiResponse<QuickPayProtocolV10Activity> localVarResponse = GETActivityIdFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Activity> localVarResponse = GETActivityIdFormatWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
         }
 
@@ -484,8 +484,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Activity</returns>
-        public ApiResponse< QuickPayProtocolV10Activity > GETActivityIdFormatWithHttpInfo (string acceptVersion, string authorization, string id)
+        /// <returns>ApiResponse of Activity</returns>
+        public ApiResponse< Activity > GETActivityIdFormatWithHttpInfo (string acceptVersion, string authorization, string id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -539,9 +539,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Activity>(localVarStatusCode,
+            return new ApiResponse<Activity>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Activity)));
+                (Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Activity)));
         }
 
         /// <summary>
@@ -551,10 +551,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Activity</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Activity> GETActivityIdFormatAsync (string acceptVersion, string authorization, string id)
+        /// <returns>Task of Activity</returns>
+        public async System.Threading.Tasks.Task<Activity> GETActivityIdFormatAsync (string acceptVersion, string authorization, string id)
         {
-             ApiResponse<QuickPayProtocolV10Activity> localVarResponse = await GETActivityIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Activity> localVarResponse = await GETActivityIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
 
         }
@@ -566,8 +566,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Activity)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Activity>> GETActivityIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
+        /// <returns>Task of ApiResponse (Activity)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Activity>> GETActivityIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -621,9 +621,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Activity>(localVarStatusCode,
+            return new ApiResponse<Activity>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Activity)));
+                (Activity) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Activity)));
         }
 
     }

@@ -37,8 +37,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to acquirer)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>QuickPayProtocolV10AcquirerStatus</returns>
-        QuickPayProtocolV10AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>AcquirerStatus</returns>
+        AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
         /// Gets operational status of all acquirers
@@ -53,8 +53,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to acquirer)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10AcquirerStatus</returns>
-        ApiResponse<QuickPayProtocolV10AcquirerStatus> GETOperationalStatusAcquirersFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>ApiResponse of AcquirerStatus</returns>
+        ApiResponse<AcquirerStatus> GETOperationalStatusAcquirersFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -70,8 +70,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to acquirer)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>Task of QuickPayProtocolV10AcquirerStatus</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10AcquirerStatus> GETOperationalStatusAcquirersFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Task of AcquirerStatus</returns>
+        System.Threading.Tasks.Task<AcquirerStatus> GETOperationalStatusAcquirersFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
         /// Gets operational status of all acquirers
@@ -86,8 +86,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to acquirer)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10AcquirerStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10AcquirerStatus>> GETOperationalStatusAcquirersFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Task of ApiResponse (AcquirerStatus)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AcquirerStatus>> GETOperationalStatusAcquirersFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         #endregion Asynchronous Operations
     }
 
@@ -198,10 +198,10 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to acquirer)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>QuickPayProtocolV10AcquirerStatus</returns>
-        public QuickPayProtocolV10AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>AcquirerStatus</returns>
+        public AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<QuickPayProtocolV10AcquirerStatus> localVarResponse = GETOperationalStatusAcquirersFormatWithHttpInfo(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
+             ApiResponse<AcquirerStatus> localVarResponse = GETOperationalStatusAcquirersFormatWithHttpInfo(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
         }
 
@@ -215,8 +215,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to acquirer)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10AcquirerStatus</returns>
-        public ApiResponse< QuickPayProtocolV10AcquirerStatus > GETOperationalStatusAcquirersFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>ApiResponse of AcquirerStatus</returns>
+        public ApiResponse< AcquirerStatus > GETOperationalStatusAcquirersFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -270,9 +270,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10AcquirerStatus>(localVarStatusCode,
+            return new ApiResponse<AcquirerStatus>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10AcquirerStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10AcquirerStatus)));
+                (AcquirerStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AcquirerStatus)));
         }
 
         /// <summary>
@@ -285,10 +285,10 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to acquirer)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>Task of QuickPayProtocolV10AcquirerStatus</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10AcquirerStatus> GETOperationalStatusAcquirersFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Task of AcquirerStatus</returns>
+        public async System.Threading.Tasks.Task<AcquirerStatus> GETOperationalStatusAcquirersFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<QuickPayProtocolV10AcquirerStatus> localVarResponse = await GETOperationalStatusAcquirersFormatAsyncWithHttpInfo(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
+             ApiResponse<AcquirerStatus> localVarResponse = await GETOperationalStatusAcquirersFormatAsyncWithHttpInfo(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
 
         }
@@ -303,8 +303,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to acquirer)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10AcquirerStatus)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10AcquirerStatus>> GETOperationalStatusAcquirersFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Task of ApiResponse (AcquirerStatus)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AcquirerStatus>> GETOperationalStatusAcquirersFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -358,9 +358,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10AcquirerStatus>(localVarStatusCode,
+            return new ApiResponse<AcquirerStatus>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10AcquirerStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10AcquirerStatus)));
+                (AcquirerStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AcquirerStatus)));
         }
 
     }

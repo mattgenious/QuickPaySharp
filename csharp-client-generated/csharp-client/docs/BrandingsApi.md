@@ -139,7 +139,7 @@ No authorization required
 
 <a name="getbrandingsformat"></a>
 # **GETBrandingsFormat**
-> QuickPayProtocolV10Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+> Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
 
 Get brandings
 
@@ -172,7 +172,7 @@ namespace Example
             try
             {
                 // Get brandings
-                QuickPayProtocolV10Branding result = apiInstance.GETBrandingsFormat(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
+                Branding result = apiInstance.GETBrandingsFormat(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Branding**](QuickPayProtocolV10Branding.md)
+[**Branding**](Branding.md)
 
 ### Authorization
 
@@ -214,7 +214,7 @@ No authorization required
 
 <a name="getbrandingsidformat"></a>
 # **GETBrandingsIdFormat**
-> QuickPayProtocolV10Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+> Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
 
 Get a branding
 
@@ -244,7 +244,7 @@ namespace Example
             try
             {
                 // Get a branding
-                QuickPayProtocolV10Branding result = apiInstance.GETBrandingsIdFormat(acceptVersion, authorization, id, except, only);
+                Branding result = apiInstance.GETBrandingsIdFormat(acceptVersion, authorization, id, except, only);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Branding**](QuickPayProtocolV10Branding.md)
+[**Branding**](Branding.md)
 
 ### Authorization
 
@@ -345,7 +345,7 @@ No authorization required
 
 <a name="patchbrandingsidformat"></a>
 # **PATCHBrandingsIdFormat**
-> QuickPayProtocolV10Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
+> Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
 
 Update a branding
 
@@ -376,7 +376,7 @@ namespace Example
             try
             {
                 // Update a branding
-                QuickPayProtocolV10Branding result = apiInstance.PATCHBrandingsIdFormat(acceptVersion, authorization, id, name, except, only);
+                Branding result = apiInstance.PATCHBrandingsIdFormat(acceptVersion, authorization, id, name, except, only);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -401,7 +401,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Branding**](QuickPayProtocolV10Branding.md)
+[**Branding**](Branding.md)
 
 ### Authorization
 
@@ -416,7 +416,7 @@ No authorization required
 
 <a name="postbrandingsformat"></a>
 # **POSTBrandingsFormat**
-> QuickPayProtocolV10Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name)
+> Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name)
 
 Create a branding
 
@@ -444,7 +444,7 @@ namespace Example
             try
             {
                 // Create a branding
-                QuickPayProtocolV10Branding result = apiInstance.POSTBrandingsFormat(acceptVersion, authorization, name);
+                Branding result = apiInstance.POSTBrandingsFormat(acceptVersion, authorization, name);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -466,7 +466,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Branding**](QuickPayProtocolV10Branding.md)
+[**Branding**](Branding.md)
 
 ### Authorization
 
@@ -481,7 +481,7 @@ No authorization required
 
 <a name="postbrandingsidcopyformat"></a>
 # **POSTBrandingsIdCopyFormat**
-> QuickPayProtocolV10Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+> Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
 
 Copies branding and returns the new branding
 
@@ -511,7 +511,7 @@ namespace Example
             try
             {
                 // Copies branding and returns the new branding
-                QuickPayProtocolV10Branding result = apiInstance.POSTBrandingsIdCopyFormat(acceptVersion, authorization, id, except, only);
+                Branding result = apiInstance.POSTBrandingsIdCopyFormat(acceptVersion, authorization, id, except, only);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Branding**](QuickPayProtocolV10Branding.md)
+[**Branding**](Branding.md)
 
 ### Authorization
 

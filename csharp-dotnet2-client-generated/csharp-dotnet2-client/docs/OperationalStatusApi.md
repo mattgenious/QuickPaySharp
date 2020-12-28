@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getoperationalstatusacquirersformat"></a>
 # **GETOperationalStatusAcquirersFormat**
-> QuickPayProtocolV10AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
+> AcquirerStatus GETOperationalStatusAcquirersFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
 
 Gets operational status of all acquirers
 
@@ -41,7 +41,7 @@ namespace Example
             try
             {
                 // Gets operational status of all acquirers
-                QuickPayProtocolV10AcquirerStatus result = apiInstance.GETOperationalStatusAcquirersFormat(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
+                AcquirerStatus result = apiInstance.GETOperationalStatusAcquirersFormat(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerStatus**](QuickPayProtocolV10AcquirerStatus.md)
+[**AcquirerStatus**](AcquirerStatus.md)
 
 ### Authorization
 

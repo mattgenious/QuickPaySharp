@@ -147,7 +147,7 @@ No authorization required
 
 <a name="getcryptographykeysformat"></a>
 # **GETCryptographyKeysFormat**
-> QuickPayProtocolV10MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type, string query, string sortBy, string sortDir, int? pageSize, int? pageKey)
+> MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type, string query, string sortBy, string sortDir, int? pageSize, int? pageKey)
 
 Get keys
 
@@ -181,7 +181,7 @@ namespace Example
             try
             {
                 // Get keys
-                QuickPayProtocolV10MerchantCryptographyKey result = apiInstance.GETCryptographyKeysFormat(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
+                MerchantCryptographyKey result = apiInstance.GETCryptographyKeysFormat(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10MerchantCryptographyKey**](QuickPayProtocolV10MerchantCryptographyKey.md)
+[**MerchantCryptographyKey**](MerchantCryptographyKey.md)
 
 ### Authorization
 
@@ -288,7 +288,7 @@ No authorization required
 
 <a name="getcryptographykeysidformat"></a>
 # **GETCryptographyKeysIdFormat**
-> QuickPayProtocolV10MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
+> MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
 
 Get key
 
@@ -317,7 +317,7 @@ namespace Example
             try
             {
                 // Get key
-                QuickPayProtocolV10MerchantCryptographyKey result = apiInstance.GETCryptographyKeysIdFormat(acceptVersion, authorization, id);
+                MerchantCryptographyKey result = apiInstance.GETCryptographyKeysIdFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -339,7 +339,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10MerchantCryptographyKey**](QuickPayProtocolV10MerchantCryptographyKey.md)
+[**MerchantCryptographyKey**](MerchantCryptographyKey.md)
 
 ### Authorization
 
@@ -354,7 +354,7 @@ No authorization required
 
 <a name="patchcryptographykeysidformat"></a>
 # **PATCHCryptographyKeysIdFormat**
-> QuickPayProtocolV10MerchantCryptographyKey PATCHCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id, string shortDescription)
+> MerchantCryptographyKey PATCHCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id, string shortDescription)
 
 update key
 
@@ -384,7 +384,7 @@ namespace Example
             try
             {
                 // update key
-                QuickPayProtocolV10MerchantCryptographyKey result = apiInstance.PATCHCryptographyKeysIdFormat(acceptVersion, authorization, id, shortDescription);
+                MerchantCryptographyKey result = apiInstance.PATCHCryptographyKeysIdFormat(acceptVersion, authorization, id, shortDescription);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10MerchantCryptographyKey**](QuickPayProtocolV10MerchantCryptographyKey.md)
+[**MerchantCryptographyKey**](MerchantCryptographyKey.md)
 
 ### Authorization
 
@@ -422,7 +422,7 @@ No authorization required
 
 <a name="postcryptographykeysformat"></a>
 # **POSTCryptographyKeysFormat**
-> QuickPayProtocolV10MerchantCryptographyKey POSTCryptographyKeysFormat (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+> MerchantCryptographyKey POSTCryptographyKeysFormat (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
 
 Create key
 
@@ -454,7 +454,7 @@ namespace Example
             try
             {
                 // Create key
-                QuickPayProtocolV10MerchantCryptographyKey result = apiInstance.POSTCryptographyKeysFormat(acceptVersion, authorization, type, shortDescription, keySize, curve);
+                MerchantCryptographyKey result = apiInstance.POSTCryptographyKeysFormat(acceptVersion, authorization, type, shortDescription, keySize, curve);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -479,7 +479,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10MerchantCryptographyKey**](QuickPayProtocolV10MerchantCryptographyKey.md)
+[**MerchantCryptographyKey**](MerchantCryptographyKey.md)
 
 ### Authorization
 

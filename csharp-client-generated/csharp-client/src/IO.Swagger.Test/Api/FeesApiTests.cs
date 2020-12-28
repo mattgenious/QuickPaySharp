@@ -90,7 +90,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //string acquirer = null;
             //var response = instance.GETFeesFormulasAcquirerFormat(acceptVersion, authorization, acquirer);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FeeFormula> (response, "response is QuickPayProtocolV10FeeFormula");
+            //Assert.IsInstanceOf<FeeFormula> (response, "response is FeeFormula");
         }
         
         /// <summary>
@@ -105,7 +105,7 @@ namespace IO.Swagger.Test
             //string acquirer = null;
             //string paymentMethod = null;
             //var response = instance.GETFeesFormulasAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FeeFormula> (response, "response is QuickPayProtocolV10FeeFormula");
+            //Assert.IsInstanceOf<FeeFormula> (response, "response is FeeFormula");
         }
         
         /// <summary>
@@ -120,7 +120,7 @@ namespace IO.Swagger.Test
             //int? page = null;
             //int? pageSize = null;
             //var response = instance.GETFeesFormulasFormat(acceptVersion, authorization, page, pageSize);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FeeFormula> (response, "response is QuickPayProtocolV10FeeFormula");
+            //Assert.IsInstanceOf<FeeFormula> (response, "response is FeeFormula");
         }
         
         /// <summary>
@@ -136,7 +136,7 @@ namespace IO.Swagger.Test
             //string paymentMethod = null;
             //string formula = null;
             //var response = instance.PATCHFeesFormulasAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod, formula);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FeeFormula> (response, "response is QuickPayProtocolV10FeeFormula");
+            //Assert.IsInstanceOf<FeeFormula> (response, "response is FeeFormula");
         }
         
         /// <summary>
@@ -152,7 +152,7 @@ namespace IO.Swagger.Test
             //string paymentMethod = null;
             //int? amount = null;
             //var response = instance.POSTFeesAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod, amount);
-            //Assert.IsInstanceOf<QuickPayProtocolV10CalculatedFee> (response, "response is QuickPayProtocolV10CalculatedFee");
+            //Assert.IsInstanceOf<CalculatedFee> (response, "response is CalculatedFee");
         }
         
         /// <summary>
@@ -173,7 +173,7 @@ namespace IO.Swagger.Test
             //string cardBrand = null;
             //string acquirer = null;
             //var response = instance.POSTFeesFormat(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
-            //Assert.IsInstanceOf<QuickPayProtocolV10CalculatedFee> (response, "response is QuickPayProtocolV10CalculatedFee");
+            //Assert.IsInstanceOf<CalculatedFee> (response, "response is CalculatedFee");
         }
         
     }

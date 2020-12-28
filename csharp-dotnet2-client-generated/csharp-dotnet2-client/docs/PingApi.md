@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getpingformat"></a>
 # **GETPingFormat**
-> QuickPayProtocolV10Pong GETPingFormat (string acceptVersion, string authorization)
+> Pong GETPingFormat (string acceptVersion, string authorization)
 
 Use this to test connectivity to the API
 
@@ -38,7 +38,7 @@ namespace Example
             try
             {
                 // Use this to test connectivity to the API
-                QuickPayProtocolV10Pong result = apiInstance.GETPingFormat(acceptVersion, authorization);
+                Pong result = apiInstance.GETPingFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Pong**](QuickPayProtocolV10Pong.md)
+[**Pong**](Pong.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 
 <a name="postpingformat"></a>
 # **POSTPingFormat**
-> QuickPayProtocolV10Pong POSTPingFormat (string acceptVersion, string authorization)
+> Pong POSTPingFormat (string acceptVersion, string authorization)
 
 Use this to test connectivity to the API
 
@@ -102,7 +102,7 @@ namespace Example
             try
             {
                 // Use this to test connectivity to the API
-                QuickPayProtocolV10Pong result = apiInstance.POSTPingFormat(acceptVersion, authorization);
+                Pong result = apiInstance.POSTPingFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Pong**](QuickPayProtocolV10Pong.md)
+[**Pong**](Pong.md)
 
 ### Authorization
 

@@ -76,7 +76,7 @@ namespace IO.Swagger.Test
             //int? page = null;
             //int? pageSize = null;
             //var response = instance.GETAclResourcesFormat(acceptVersion, authorization, page, pageSize);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AclResource> (response, "response is QuickPayProtocolV10AclResource");
+            //Assert.IsInstanceOf<AclResource> (response, "response is AclResource");
         }
         
     }

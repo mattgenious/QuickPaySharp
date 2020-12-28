@@ -74,7 +74,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.DELETEAccount04PlatformFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Zero4PlatformSettings> (response, "response is QuickPayProtocolV10Zero4PlatformSettings");
+            //Assert.IsInstanceOf<Zero4PlatformSettings> (response, "response is Zero4PlatformSettings");
         }
         
         /// <summary>
@@ -114,7 +114,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAccount04PlatformFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Zero4PlatformSettings> (response, "response is QuickPayProtocolV10Zero4PlatformSettings");
+            //Assert.IsInstanceOf<Zero4PlatformSettings> (response, "response is Zero4PlatformSettings");
         }
         
         /// <summary>
@@ -127,7 +127,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAccountFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Merchant> (response, "response is QuickPayProtocolV10Merchant");
+            //Assert.IsInstanceOf<Merchant> (response, "response is Merchant");
         }
         
         /// <summary>
@@ -154,7 +154,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAccountPrivateKeyFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10PrivateKey> (response, "response is QuickPayProtocolV10PrivateKey");
+            //Assert.IsInstanceOf<PrivateKey> (response, "response is PrivateKey");
         }
         
         /// <summary>
@@ -330,7 +330,7 @@ namespace IO.Swagger.Test
             //string defaultTextOnStatement = null;
             //Dictionary<string, string> defaultBrandingConfig = null;
             //var response = instance.PATCHAccountFormat(acceptVersion, authorization, customerAddressName, customerAddressAtt, customerAddressStreet, customerAddressCity, customerAddressZipCode, customerAddressRegion, customerAddressCountryCode, customerAddressVatNo, billingAddressName, billingAddressAtt, billingAddressStreet, billingAddressCity, billingAddressZipCode, billingAddressRegion, billingAddressCountryCode, billingAddressVatNo, callbackUrl, acquirerSettingsBamboraActive, acquirerSettingsBamboraIdentificationCode, acquirerSettingsBamboraIdentificationCodeInt, acquirerSettingsBamboraBusinessCode, acquirerSettingsBamboraRecurring, acquirerSettingsBamboraAmericanexpress, acquirerSettingsBamboraDinersclub, acquirerSettingsBamboraSecurepay, acquirerSettingsBamboraVisaMpiMerchantId, acquirerSettingsBamboraMastercardMpiMerchantId, acquirerSettingsBamboraVisaBin, acquirerSettingsBamboraMastercardBin, acquirerSettingsClearhausActive, acquirerSettingsClearhausApiKey, acquirerSettingsClearhausRecurring, acquirerSettingsClearhausPayout, acquirerSettingsClearhausApplePay, acquirerSettingsElavonActive, acquirerSettingsElavonIdentificationCode, acquirerSettingsElavonIdentificationCodeInt, acquirerSettingsElavonBusinessCode, acquirerSettingsElavonRecurring, acquirerSettingsElavonAmericanexpress, acquirerSettingsElavonDinersclub, acquirerSettingsElavonSecurepay, acquirerSettingsElavonVisaMpiMerchantId, acquirerSettingsElavonMastercardMpiMerchantId, acquirerSettingsElavonVisaBin, acquirerSettingsElavonMastercardBin, acquirerSettingsHandelsbankenActive, acquirerSettingsHandelsbankenIdentificationCode, acquirerSettingsHandelsbankenIdentificationCodeInt, acquirerSettingsHandelsbankenBusinessCode, acquirerSettingsHandelsbankenRecurring, acquirerSettingsHandelsbankenAmericanexpress, acquirerSettingsHandelsbankenDinersclub, acquirerSettingsHandelsbankenSecurepay, acquirerSettingsHandelsbankenVisaMpiMerchantId, acquirerSettingsHandelsbankenMastercardMpiMerchantId, acquirerSettingsHandelsbankenVisaBin, acquirerSettingsHandelsbankenMastercardBin, acquirerSettingsKlarnaActive, acquirerSettingsKlarnaEid, acquirerSettingsKlarnaSharedSecret, acquirerSettingsMobilepayActive, acquirerSettingsMobilepayDeliveryLimitedTo, acquirerSettingsMobilepaysubscriptionsActive, acquirerSettingsMobilepaysubscriptionsAuthState, acquirerSettingsMobilepaysubscriptionsCodeVerifier, acquirerSettingsMobilepaysubscriptionsLastTokenRefresh, acquirerSettingsMobilepaysubscriptionsNonce, acquirerSettingsMobilepaysubscriptionsPendingStatus, acquirerSettingsMobilepaysubscriptionsProvider, acquirerSettingsMobilepaysubscriptionsRefreshToken, acquirerSettingsNetsActive, acquirerSettingsNetsIdentificationCode, acquirerSettingsNetsBusinessCode, acquirerSettingsNetsRecurring, acquirerSettingsNetsFbg1886, acquirerSettingsNetsSecuredByNets, acquirerSettingsNetsIdentificationCodeInt, acquirerSettingsNetsAmericanexpress, acquirerSettingsNetsDinersclub, acquirerSettingsNetsSecurepay, acquirerSettingsNetsVisaBin, acquirerSettingsNetsMastercardBin, acquirerSettingsPaypalActive, acquirerSettingsPaypalRecurring, acquirerSettingsPaypalCreditCard, acquirerSettingsPaypalToken, acquirerSettingsPaypalTokenSecret, acquirerSettingsPaypalScope, acquirerSettingsSofortActive, acquirerSettingsSofortCustomerNumber, acquirerSettingsSofortProjectId, acquirerSettingsSofortApiKey, acquirerSettingsSofortGateway, acquirerSettingsSofortIdeal, acquirerSettingsSofortIdealProjectId, acquirerSettingsSofortIdealProjectPassword, acquirerSettingsSofortIdealNotificationPassword, acquirerSettingsSwedbankActive, acquirerSettingsSwedbankIdentificationCode, acquirerSettingsSwedbankIdentificationCodeInt, acquirerSettingsSwedbankBusinessCode, acquirerSettingsSwedbankRecurring, acquirerSettingsSwedbankAmericanexpress, acquirerSettingsSwedbankDinersclub, acquirerSettingsSwedbankSecurepay, acquirerSettingsSwedbankVisaMpiMerchantId, acquirerSettingsSwedbankMastercardMpiMerchantId, acquirerSettingsSwedbankVisaBin, acquirerSettingsSwedbankMastercardBin, acquirerSettingsTellerActive, acquirerSettingsTellerIdentificationCode, acquirerSettingsTellerIdentificationCodeInt, acquirerSettingsTellerBusinessCode, acquirerSettingsTellerRecurring, acquirerSettingsTellerAmericanexpress, acquirerSettingsTellerDinersclub, acquirerSettingsTellerSecurepay, acquirerSettingsTellerVisaMpiMerchantId, acquirerSettingsTellerMastercardMpiMerchantId, acquirerSettingsTellerVisaBin, acquirerSettingsTellerMastercardBin, acquirerSettingsValitorActive, acquirerSettingsValitorIdentificationCode, acquirerSettingsValitorIdentificationCodeInt, acquirerSettingsValitorBusinessCode, acquirerSettingsValitorRecurring, acquirerSettingsValitorAmericanexpress, acquirerSettingsValitorDinersclub, acquirerSettingsValitorSecurepay, acquirerSettingsValitorVisaMpiMerchantId, acquirerSettingsValitorMastercardMpiMerchantId, acquirerSettingsValitorVisaBin, acquirerSettingsValitorMastercardBin, acquirerSettingsViabillActive, acquirerSettingsViabillApiKey, integrationSettingsEconomicActive, integrationSettingsEconomicAgreement, integrationSettingsEconomicAgreementToken, pciSaqA, pciSaqAEp, pciSaqB, pciSaqBIp, pciSaqC, pciSaqCVt, pciSaqDMerchant, pciSaqDServiceProvider, pciSaqP2peHw, autofee, defaultPaymentMethods, shopUrl, shopUrls, contactEmail, shopName, shopsystem, timezone, locale, defaultBrandingId, loggingStopsAt, allowTestTransactions, defaultPaymentLanguage, defaultTextOnStatement, defaultBrandingConfig);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Merchant> (response, "response is QuickPayProtocolV10Merchant");
+            //Assert.IsInstanceOf<Merchant> (response, "response is Merchant");
         }
         
         /// <summary>
@@ -343,7 +343,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.PATCHAccountPrivateKeyFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10PrivateKey> (response, "response is QuickPayProtocolV10PrivateKey");
+            //Assert.IsInstanceOf<PrivateKey> (response, "response is PrivateKey");
         }
         
         /// <summary>

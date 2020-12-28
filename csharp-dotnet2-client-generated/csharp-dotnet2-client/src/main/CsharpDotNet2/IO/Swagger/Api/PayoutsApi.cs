@@ -42,8 +42,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Payout</returns>
-        QuickPayProtocolV10Payout GETPayoutsFormat (string acceptVersion, string authorization, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, string timestamp, string minTime, string maxTime, int? operationsSize, bool? accepted, string orderId, string state, int? id, string acquirer, int? page, int? pageSize, string sortBy, string sortDir);
+        /// <returns>Payout</returns>
+        Payout GETPayoutsFormat (string acceptVersion, string authorization, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, string timestamp, string minTime, string maxTime, int? operationsSize, bool? accepted, string orderId, string state, int? id, string acquirer, int? page, int? pageSize, string sortBy, string sortDir);
         /// <summary>
         /// Get payout  
         /// </summary>
@@ -51,8 +51,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Payout</returns>
-        QuickPayProtocolV10Payout GETPayoutsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize);
+        /// <returns>Payout</returns>
+        Payout GETPayoutsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize);
         /// <summary>
         /// Get Operation  
         /// </summary>
@@ -60,8 +60,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Operation</returns>
-        QuickPayProtocolV10Operation GETPayoutsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId);
+        /// <returns>Operation</returns>
+        Operation GETPayoutsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId);
         /// <summary>
         /// Update payout  
         /// </summary>
@@ -69,8 +69,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Payout</returns>
-        QuickPayProtocolV10Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables);
+        /// <returns>Payout</returns>
+        Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables);
         /// <summary>
         /// Create payout  
         /// </summary>
@@ -80,8 +80,8 @@ namespace IO.Swagger.Api
         /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Payout</returns>
-        QuickPayProtocolV10Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables, string textOnStatement);
+        /// <returns>Payout</returns>
+        Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables, string textOnStatement);
         /// <summary>
         /// Authorize a payout  
         /// </summary>
@@ -114,8 +114,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Payout</returns>
-        QuickPayProtocolV10Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, string acquirer, string customerIp, Dictionary<string, string> extras);
+        /// <returns>Payout</returns>
+        Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, string acquirer, string customerIp, Dictionary<string, string> extras);
         /// <summary>
         /// Create or update a payout link  
         /// </summary>
@@ -135,8 +135,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10PaymentLinkUrl</returns>
-        QuickPayProtocolV10PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig);
+        /// <returns>PaymentLinkUrl</returns>
+        PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig);
     }
   
     /// <summary>
@@ -262,8 +262,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Payout</returns>            
-        public QuickPayProtocolV10Payout GETPayoutsFormat (string acceptVersion, string authorization, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, string timestamp, string minTime, string maxTime, int? operationsSize, bool? accepted, string orderId, string state, int? id, string acquirer, int? page, int? pageSize, string sortBy, string sortDir)
+        /// <returns>Payout</returns>            
+        public Payout GETPayoutsFormat (string acceptVersion, string authorization, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, string timestamp, string minTime, string maxTime, int? operationsSize, bool? accepted, string orderId, string state, int? id, string acquirer, int? page, int? pageSize, string sortBy, string sortDir)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -314,7 +314,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETPayoutsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Payout) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Payout), response.Headers);
+            return (Payout) ApiClient.Deserialize(response.Content, typeof(Payout), response.Headers);
         }
     
         /// <summary>
@@ -324,8 +324,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param> 
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Payout</returns>            
-        public QuickPayProtocolV10Payout GETPayoutsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize)
+        /// <returns>Payout</returns>            
+        public Payout GETPayoutsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -363,7 +363,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETPayoutsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Payout) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Payout), response.Headers);
+            return (Payout) ApiClient.Deserialize(response.Content, typeof(Payout), response.Headers);
         }
     
         /// <summary>
@@ -373,8 +373,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param> 
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Operation</returns>            
-        public QuickPayProtocolV10Operation GETPayoutsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
+        /// <returns>Operation</returns>            
+        public Operation GETPayoutsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -415,7 +415,7 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETPayoutsIdOperationsOperationIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Operation) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Operation), response.Headers);
+            return (Operation) ApiClient.Deserialize(response.Content, typeof(Operation), response.Headers);
         }
     
         /// <summary>
@@ -425,8 +425,8 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param> 
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Payout</returns>            
-        public QuickPayProtocolV10Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables)
+        /// <returns>Payout</returns>            
+        public Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -464,7 +464,7 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHPayoutsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Payout) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Payout), response.Headers);
+            return (Payout) ApiClient.Deserialize(response.Content, typeof(Payout), response.Headers);
         }
     
         /// <summary>
@@ -476,8 +476,8 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
         /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param> 
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Payout</returns>            
-        public QuickPayProtocolV10Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables, string textOnStatement)
+        /// <returns>Payout</returns>            
+        public Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables, string textOnStatement)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -520,7 +520,7 @@ if (textOnStatement != null) formParams.Add("text_on_statement", ApiClient.Param
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTPayoutsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Payout) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Payout), response.Headers);
+            return (Payout) ApiClient.Deserialize(response.Content, typeof(Payout), response.Headers);
         }
     
         /// <summary>
@@ -555,8 +555,8 @@ if (textOnStatement != null) formParams.Add("text_on_statement", ApiClient.Param
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param> 
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Payout</returns>            
-        public QuickPayProtocolV10Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, string acquirer, string customerIp, Dictionary<string, string> extras)
+        /// <returns>Payout</returns>            
+        public Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, string acquirer, string customerIp, Dictionary<string, string> extras)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -622,7 +622,7 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTPayoutsIdCreditFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Payout) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Payout), response.Headers);
+            return (Payout) ApiClient.Deserialize(response.Content, typeof(Payout), response.Headers);
         }
     
         /// <summary>
@@ -644,8 +644,8 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param> 
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param> 
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10PaymentLinkUrl</returns>            
-        public QuickPayProtocolV10PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig)
+        /// <returns>PaymentLinkUrl</returns>            
+        public PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -698,7 +698,7 @@ if (brandingConfig != null) formParams.Add("branding_config", ApiClient.Paramete
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PUTPayoutsIdLinkFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10PaymentLinkUrl) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10PaymentLinkUrl), response.Headers);
+            return (PaymentLinkUrl) ApiClient.Deserialize(response.Content, typeof(PaymentLinkUrl), response.Headers);
         }
     
     }

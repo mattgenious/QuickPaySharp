@@ -18,8 +18,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AclResource</returns>
-        QuickPayProtocolV10AclResource GETAclResourcesFormat (string acceptVersion, string authorization, int? page, int? pageSize);
+        /// <returns>AclResource</returns>
+        AclResource GETAclResourcesFormat (string acceptVersion, string authorization, int? page, int? pageSize);
     }
   
     /// <summary>
@@ -82,8 +82,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AclResource</returns>            
-        public QuickPayProtocolV10AclResource GETAclResourcesFormat (string acceptVersion, string authorization, int? page, int? pageSize)
+        /// <returns>AclResource</returns>            
+        public AclResource GETAclResourcesFormat (string acceptVersion, string authorization, int? page, int? pageSize)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -115,7 +115,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAclResourcesFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AclResource) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AclResource), response.Headers);
+            return (AclResource) ApiClient.Deserialize(response.Content, typeof(AclResource), response.Headers);
         }
     
     }

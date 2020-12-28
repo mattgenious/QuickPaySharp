@@ -26,8 +26,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer);
+        /// <returns>FeeFormula</returns>
+        FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer);
         /// <summary>
         /// Get fee formula  
         /// </summary>
@@ -35,8 +35,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod);
+        /// <returns>FeeFormula</returns>
+        FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
         /// Get all fee formulas  
         /// </summary>
@@ -44,8 +44,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        QuickPayProtocolV10FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page, int? pageSize);
+        /// <returns>FeeFormula</returns>
+        FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page, int? pageSize);
         /// <summary>
         /// Update a fee formula  
         /// </summary>
@@ -54,8 +54,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        QuickPayProtocolV10FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula);
+        /// <returns>FeeFormula</returns>
+        FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula);
         /// <summary>
         /// Calculate fee  
         /// </summary>
@@ -64,8 +64,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10CalculatedFee</returns>
-        QuickPayProtocolV10CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
+        /// <returns>CalculatedFee</returns>
+        CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]  
         /// </summary>
@@ -79,8 +79,8 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10CalculatedFee</returns>
-        QuickPayProtocolV10CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer);
+        /// <returns>CalculatedFee</returns>
+        CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer);
     }
   
     /// <summary>
@@ -194,8 +194,8 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>            
-        public QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer)
+        /// <returns>FeeFormula</returns>            
+        public FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -232,7 +232,7 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETFeesFormulasAcquirerFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10FeeFormula) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10FeeFormula), response.Headers);
+            return (FeeFormula) ApiClient.Deserialize(response.Content, typeof(FeeFormula), response.Headers);
         }
     
         /// <summary>
@@ -242,8 +242,8 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>            
-        public QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
+        /// <returns>FeeFormula</returns>            
+        public FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -284,7 +284,7 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETFeesFormulasAcquirerPaymentMethodFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10FeeFormula) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10FeeFormula), response.Headers);
+            return (FeeFormula) ApiClient.Deserialize(response.Content, typeof(FeeFormula), response.Headers);
         }
     
         /// <summary>
@@ -294,8 +294,8 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>            
-        public QuickPayProtocolV10FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page, int? pageSize)
+        /// <returns>FeeFormula</returns>            
+        public FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page, int? pageSize)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -330,7 +330,7 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETFeesFormulasFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10FeeFormula) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10FeeFormula), response.Headers);
+            return (FeeFormula) ApiClient.Deserialize(response.Content, typeof(FeeFormula), response.Headers);
         }
     
         /// <summary>
@@ -341,8 +341,8 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param> 
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>            
-        public QuickPayProtocolV10FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula)
+        /// <returns>FeeFormula</returns>            
+        public FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -384,7 +384,7 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHFeesFormulasAcquirerPaymentMethodFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10FeeFormula) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10FeeFormula), response.Headers);
+            return (FeeFormula) ApiClient.Deserialize(response.Content, typeof(FeeFormula), response.Headers);
         }
     
         /// <summary>
@@ -395,8 +395,8 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param> 
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10CalculatedFee</returns>            
-        public QuickPayProtocolV10CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
+        /// <returns>CalculatedFee</returns>            
+        public CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -441,7 +441,7 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTFeesAcquirerPaymentMethodFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10CalculatedFee) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10CalculatedFee), response.Headers);
+            return (CalculatedFee) ApiClient.Deserialize(response.Content, typeof(CalculatedFee), response.Headers);
         }
     
         /// <summary>
@@ -457,8 +457,8 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param> 
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param> 
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10CalculatedFee</returns>            
-        public QuickPayProtocolV10CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer)
+        /// <returns>CalculatedFee</returns>            
+        public CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -502,7 +502,7 @@ if (acquirer != null) formParams.Add("acquirer", ApiClient.ParameterToString(acq
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTFeesFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10CalculatedFee) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10CalculatedFee), response.Headers);
+            return (CalculatedFee) ApiClient.Deserialize(response.Content, typeof(CalculatedFee), response.Headers);
         }
     
     }

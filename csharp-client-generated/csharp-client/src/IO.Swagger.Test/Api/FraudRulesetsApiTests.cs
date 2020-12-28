@@ -75,7 +75,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //int? id = null;
             //var response = instance.DELETEFraudRulesetsIdFormat(acceptVersion, authorization, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FraudRuleset> (response, "response is QuickPayProtocolV10FraudRuleset");
+            //Assert.IsInstanceOf<FraudRuleset> (response, "response is FraudRuleset");
         }
         
         /// <summary>
@@ -88,7 +88,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETFraudRulesetsFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FraudRuleset> (response, "response is QuickPayProtocolV10FraudRuleset");
+            //Assert.IsInstanceOf<FraudRuleset> (response, "response is FraudRuleset");
         }
         
         /// <summary>
@@ -102,7 +102,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //int? id = null;
             //var response = instance.GETFraudRulesetsIdFormat(acceptVersion, authorization, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FraudRuleset> (response, "response is QuickPayProtocolV10FraudRuleset");
+            //Assert.IsInstanceOf<FraudRuleset> (response, "response is FraudRuleset");
         }
         
         /// <summary>
@@ -122,7 +122,7 @@ namespace IO.Swagger.Test
             //string action = null;
             //string combinator = null;
             //var response = instance.PATCHFraudRulesetsIdFormat(acceptVersion, authorization, id, filterRulesMetricName, filterRulesOperator, filterRulesValue, name, action, combinator);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FraudRuleset> (response, "response is QuickPayProtocolV10FraudRuleset");
+            //Assert.IsInstanceOf<FraudRuleset> (response, "response is FraudRuleset");
         }
         
         /// <summary>
@@ -141,7 +141,7 @@ namespace IO.Swagger.Test
             //string action = null;
             //string combinator = null;
             //var response = instance.POSTFraudRulesetsFormat(acceptVersion, authorization, name, filterRulesMetricName, filterRulesOperator, filterRulesValue, action, combinator);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FraudRuleset> (response, "response is QuickPayProtocolV10FraudRuleset");
+            //Assert.IsInstanceOf<FraudRuleset> (response, "response is FraudRuleset");
         }
         
     }

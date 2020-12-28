@@ -34,8 +34,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        QuickPayProtocolV10FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id);
+        /// <returns>FraudRuleset</returns>
+        FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Delete ruleset
@@ -47,8 +47,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        ApiResponse<QuickPayProtocolV10FraudRuleset> DELETEFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        ApiResponse<FraudRuleset> DELETEFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get custom defined fraud rulesets
         /// </summary>
@@ -58,8 +58,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        QuickPayProtocolV10FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization);
+        /// <returns>FraudRuleset</returns>
+        FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization);
 
         /// <summary>
         /// Get custom defined fraud rulesets
@@ -70,8 +70,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        ApiResponse<QuickPayProtocolV10FraudRuleset> GETFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization);
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        ApiResponse<FraudRuleset> GETFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
         /// Get ruleset by id
         /// </summary>
@@ -82,8 +82,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        QuickPayProtocolV10FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id);
+        /// <returns>FraudRuleset</returns>
+        FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Get ruleset by id
@@ -95,8 +95,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        ApiResponse<QuickPayProtocolV10FraudRuleset> GETFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        ApiResponse<FraudRuleset> GETFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Update a ruleset
         /// </summary>
@@ -113,8 +113,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        QuickPayProtocolV10FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
+        /// <returns>FraudRuleset</returns>
+        FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
 
         /// <summary>
         /// Update a ruleset
@@ -132,8 +132,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        ApiResponse<QuickPayProtocolV10FraudRuleset> PATCHFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        ApiResponse<FraudRuleset> PATCHFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
         /// <summary>
         /// Create a custom fraud ruleset
         /// </summary>
@@ -149,8 +149,8 @@ namespace IO.Swagger.Api
         /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        QuickPayProtocolV10FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
+        /// <returns>FraudRuleset</returns>
+        FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
 
         /// <summary>
         /// Create a custom fraud ruleset
@@ -167,8 +167,8 @@ namespace IO.Swagger.Api
         /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        ApiResponse<QuickPayProtocolV10FraudRuleset> POSTFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        ApiResponse<FraudRuleset> POSTFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -181,8 +181,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> DELETEFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of FraudRuleset</returns>
+        System.Threading.Tasks.Task<FraudRuleset> DELETEFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Delete ruleset
@@ -194,8 +194,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> DELETEFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> DELETEFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get custom defined fraud rulesets
         /// </summary>
@@ -205,8 +205,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> GETFraudRulesetsFormatAsync (string acceptVersion, string authorization);
+        /// <returns>Task of FraudRuleset</returns>
+        System.Threading.Tasks.Task<FraudRuleset> GETFraudRulesetsFormatAsync (string acceptVersion, string authorization);
 
         /// <summary>
         /// Get custom defined fraud rulesets
@@ -217,8 +217,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> GETFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> GETFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
         /// Get ruleset by id
         /// </summary>
@@ -229,8 +229,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> GETFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of FraudRuleset</returns>
+        System.Threading.Tasks.Task<FraudRuleset> GETFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Get ruleset by id
@@ -242,8 +242,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> GETFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> GETFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Update a ruleset
         /// </summary>
@@ -260,8 +260,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> PATCHFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
+        /// <returns>Task of FraudRuleset</returns>
+        System.Threading.Tasks.Task<FraudRuleset> PATCHFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
 
         /// <summary>
         /// Update a ruleset
@@ -279,8 +279,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> PATCHFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> PATCHFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
         /// <summary>
         /// Create a custom fraud ruleset
         /// </summary>
@@ -296,8 +296,8 @@ namespace IO.Swagger.Api
         /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> POSTFraudRulesetsFormatAsync (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
+        /// <returns>Task of FraudRuleset</returns>
+        System.Threading.Tasks.Task<FraudRuleset> POSTFraudRulesetsFormatAsync (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
 
         /// <summary>
         /// Create a custom fraud ruleset
@@ -314,8 +314,8 @@ namespace IO.Swagger.Api
         /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> POSTFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> POSTFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
         #endregion Asynchronous Operations
     }
 
@@ -423,10 +423,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        public QuickPayProtocolV10FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
+        /// <returns>FraudRuleset</returns>
+        public FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = DELETEFraudRulesetsIdFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<FraudRuleset> localVarResponse = DELETEFraudRulesetsIdFormatWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
         }
 
@@ -437,8 +437,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        public ApiResponse< QuickPayProtocolV10FraudRuleset > DELETEFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        public ApiResponse< FraudRuleset > DELETEFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -492,9 +492,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -504,10 +504,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> DELETEFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of FraudRuleset</returns>
+        public async System.Threading.Tasks.Task<FraudRuleset> DELETEFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = await DELETEFraudRulesetsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<FraudRuleset> localVarResponse = await DELETEFraudRulesetsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
 
         }
@@ -519,8 +519,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> DELETEFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> DELETEFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -574,9 +574,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -585,10 +585,10 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        public QuickPayProtocolV10FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization)
+        /// <returns>FraudRuleset</returns>
+        public FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = GETFraudRulesetsFormatWithHttpInfo(acceptVersion, authorization);
+             ApiResponse<FraudRuleset> localVarResponse = GETFraudRulesetsFormatWithHttpInfo(acceptVersion, authorization);
              return localVarResponse.Data;
         }
 
@@ -598,8 +598,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        public ApiResponse< QuickPayProtocolV10FraudRuleset > GETFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization)
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        public ApiResponse< FraudRuleset > GETFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -649,9 +649,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -660,10 +660,10 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> GETFraudRulesetsFormatAsync (string acceptVersion, string authorization)
+        /// <returns>Task of FraudRuleset</returns>
+        public async System.Threading.Tasks.Task<FraudRuleset> GETFraudRulesetsFormatAsync (string acceptVersion, string authorization)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = await GETFraudRulesetsFormatAsyncWithHttpInfo(acceptVersion, authorization);
+             ApiResponse<FraudRuleset> localVarResponse = await GETFraudRulesetsFormatAsyncWithHttpInfo(acceptVersion, authorization);
              return localVarResponse.Data;
 
         }
@@ -674,8 +674,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> GETFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> GETFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -725,9 +725,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -737,10 +737,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        public QuickPayProtocolV10FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
+        /// <returns>FraudRuleset</returns>
+        public FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = GETFraudRulesetsIdFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<FraudRuleset> localVarResponse = GETFraudRulesetsIdFormatWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
         }
 
@@ -751,8 +751,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        public ApiResponse< QuickPayProtocolV10FraudRuleset > GETFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        public ApiResponse< FraudRuleset > GETFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -806,9 +806,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -818,10 +818,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> GETFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of FraudRuleset</returns>
+        public async System.Threading.Tasks.Task<FraudRuleset> GETFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = await GETFraudRulesetsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<FraudRuleset> localVarResponse = await GETFraudRulesetsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
 
         }
@@ -833,8 +833,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> GETFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> GETFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -888,9 +888,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -906,10 +906,10 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        public QuickPayProtocolV10FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
+        /// <returns>FraudRuleset</returns>
+        public FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = PATCHFraudRulesetsIdFormatWithHttpInfo(acceptVersion, authorization, id, filterRulesMetricName, filterRulesOperator, filterRulesValue, name, action, combinator);
+             ApiResponse<FraudRuleset> localVarResponse = PATCHFraudRulesetsIdFormatWithHttpInfo(acceptVersion, authorization, id, filterRulesMetricName, filterRulesOperator, filterRulesValue, name, action, combinator);
              return localVarResponse.Data;
         }
 
@@ -926,8 +926,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        public ApiResponse< QuickPayProtocolV10FraudRuleset > PATCHFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        public ApiResponse< FraudRuleset > PATCHFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -997,9 +997,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -1015,10 +1015,10 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> PATCHFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
+        /// <returns>Task of FraudRuleset</returns>
+        public async System.Threading.Tasks.Task<FraudRuleset> PATCHFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = await PATCHFraudRulesetsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, filterRulesMetricName, filterRulesOperator, filterRulesValue, name, action, combinator);
+             ApiResponse<FraudRuleset> localVarResponse = await PATCHFraudRulesetsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, filterRulesMetricName, filterRulesOperator, filterRulesValue, name, action, combinator);
              return localVarResponse.Data;
 
         }
@@ -1036,8 +1036,8 @@ namespace IO.Swagger.Api
         /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> PATCHFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> PATCHFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1107,9 +1107,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -1124,10 +1124,10 @@ namespace IO.Swagger.Api
         /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FraudRuleset</returns>
-        public QuickPayProtocolV10FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
+        /// <returns>FraudRuleset</returns>
+        public FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = POSTFraudRulesetsFormatWithHttpInfo(acceptVersion, authorization, name, filterRulesMetricName, filterRulesOperator, filterRulesValue, action, combinator);
+             ApiResponse<FraudRuleset> localVarResponse = POSTFraudRulesetsFormatWithHttpInfo(acceptVersion, authorization, name, filterRulesMetricName, filterRulesOperator, filterRulesValue, action, combinator);
              return localVarResponse.Data;
         }
 
@@ -1143,8 +1143,8 @@ namespace IO.Swagger.Api
         /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudRuleset</returns>
-        public ApiResponse< QuickPayProtocolV10FraudRuleset > POSTFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
+        /// <returns>ApiResponse of FraudRuleset</returns>
+        public ApiResponse< FraudRuleset > POSTFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1219,9 +1219,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
         /// <summary>
@@ -1236,10 +1236,10 @@ namespace IO.Swagger.Api
         /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FraudRuleset</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FraudRuleset> POSTFraudRulesetsFormatAsync (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
+        /// <returns>Task of FraudRuleset</returns>
+        public async System.Threading.Tasks.Task<FraudRuleset> POSTFraudRulesetsFormatAsync (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {
-             ApiResponse<QuickPayProtocolV10FraudRuleset> localVarResponse = await POSTFraudRulesetsFormatAsyncWithHttpInfo(acceptVersion, authorization, name, filterRulesMetricName, filterRulesOperator, filterRulesValue, action, combinator);
+             ApiResponse<FraudRuleset> localVarResponse = await POSTFraudRulesetsFormatAsyncWithHttpInfo(acceptVersion, authorization, name, filterRulesMetricName, filterRulesOperator, filterRulesValue, action, combinator);
              return localVarResponse.Data;
 
         }
@@ -1256,8 +1256,8 @@ namespace IO.Swagger.Api
         /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
         /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
         /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudRuleset)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudRuleset>> POSTFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
+        /// <returns>Task of ApiResponse (FraudRuleset)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> POSTFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1332,9 +1332,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudRuleset>(localVarStatusCode,
+            return new ApiResponse<FraudRuleset>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudRuleset)));
+                (FraudRuleset) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudRuleset)));
         }
 
     }

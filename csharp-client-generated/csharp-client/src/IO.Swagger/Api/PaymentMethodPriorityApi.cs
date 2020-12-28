@@ -33,8 +33,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10PaymentMethodPriority</returns>
-        QuickPayProtocolV10PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization);
+        /// <returns>PaymentMethodPriority</returns>
+        PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization);
 
         /// <summary>
         /// Get merchant payment method priority
@@ -45,8 +45,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10PaymentMethodPriority</returns>
-        ApiResponse<QuickPayProtocolV10PaymentMethodPriority> GETPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization);
+        /// <returns>ApiResponse of PaymentMethodPriority</returns>
+        ApiResponse<PaymentMethodPriority> GETPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
         /// Replaces the payment method priority of the merchant
         /// </summary>
@@ -83,8 +83,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10PaymentMethodPriority</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10PaymentMethodPriority> GETPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization);
+        /// <returns>Task of PaymentMethodPriority</returns>
+        System.Threading.Tasks.Task<PaymentMethodPriority> GETPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization);
 
         /// <summary>
         /// Get merchant payment method priority
@@ -95,8 +95,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10PaymentMethodPriority)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10PaymentMethodPriority>> GETPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
+        /// <returns>Task of ApiResponse (PaymentMethodPriority)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PaymentMethodPriority>> GETPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
         /// Replaces the payment method priority of the merchant
         /// </summary>
@@ -228,10 +228,10 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10PaymentMethodPriority</returns>
-        public QuickPayProtocolV10PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization)
+        /// <returns>PaymentMethodPriority</returns>
+        public PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization)
         {
-             ApiResponse<QuickPayProtocolV10PaymentMethodPriority> localVarResponse = GETPaymentMethodPriorityFormatWithHttpInfo(acceptVersion, authorization);
+             ApiResponse<PaymentMethodPriority> localVarResponse = GETPaymentMethodPriorityFormatWithHttpInfo(acceptVersion, authorization);
              return localVarResponse.Data;
         }
 
@@ -241,8 +241,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10PaymentMethodPriority</returns>
-        public ApiResponse< QuickPayProtocolV10PaymentMethodPriority > GETPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization)
+        /// <returns>ApiResponse of PaymentMethodPriority</returns>
+        public ApiResponse< PaymentMethodPriority > GETPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -292,9 +292,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10PaymentMethodPriority>(localVarStatusCode,
+            return new ApiResponse<PaymentMethodPriority>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10PaymentMethodPriority) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10PaymentMethodPriority)));
+                (PaymentMethodPriority) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(PaymentMethodPriority)));
         }
 
         /// <summary>
@@ -303,10 +303,10 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10PaymentMethodPriority</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10PaymentMethodPriority> GETPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization)
+        /// <returns>Task of PaymentMethodPriority</returns>
+        public async System.Threading.Tasks.Task<PaymentMethodPriority> GETPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization)
         {
-             ApiResponse<QuickPayProtocolV10PaymentMethodPriority> localVarResponse = await GETPaymentMethodPriorityFormatAsyncWithHttpInfo(acceptVersion, authorization);
+             ApiResponse<PaymentMethodPriority> localVarResponse = await GETPaymentMethodPriorityFormatAsyncWithHttpInfo(acceptVersion, authorization);
              return localVarResponse.Data;
 
         }
@@ -317,8 +317,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10PaymentMethodPriority)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10PaymentMethodPriority>> GETPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
+        /// <returns>Task of ApiResponse (PaymentMethodPriority)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<PaymentMethodPriority>> GETPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -368,9 +368,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10PaymentMethodPriority>(localVarStatusCode,
+            return new ApiResponse<PaymentMethodPriority>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10PaymentMethodPriority) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10PaymentMethodPriority)));
+                (PaymentMethodPriority) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(PaymentMethodPriority)));
         }
 
         /// <summary>

@@ -105,7 +105,7 @@ namespace IO.Swagger.Test
             //string sortBy = null;
             //string sortDir = null;
             //var response = instance.GETBrandingsFormat(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Branding> (response, "response is QuickPayProtocolV10Branding");
+            //Assert.IsInstanceOf<Branding> (response, "response is Branding");
         }
         
         /// <summary>
@@ -121,7 +121,7 @@ namespace IO.Swagger.Test
             //string except = null;
             //string only = null;
             //var response = instance.GETBrandingsIdFormat(acceptVersion, authorization, id, except, only);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Branding> (response, "response is QuickPayProtocolV10Branding");
+            //Assert.IsInstanceOf<Branding> (response, "response is Branding");
         }
         
         /// <summary>
@@ -151,7 +151,7 @@ namespace IO.Swagger.Test
             //string except = null;
             //string only = null;
             //var response = instance.PATCHBrandingsIdFormat(acceptVersion, authorization, id, name, except, only);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Branding> (response, "response is QuickPayProtocolV10Branding");
+            //Assert.IsInstanceOf<Branding> (response, "response is Branding");
         }
         
         /// <summary>
@@ -165,7 +165,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //string name = null;
             //var response = instance.POSTBrandingsFormat(acceptVersion, authorization, name);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Branding> (response, "response is QuickPayProtocolV10Branding");
+            //Assert.IsInstanceOf<Branding> (response, "response is Branding");
         }
         
         /// <summary>
@@ -181,7 +181,7 @@ namespace IO.Swagger.Test
             //string except = null;
             //string only = null;
             //var response = instance.POSTBrandingsIdCopyFormat(acceptVersion, authorization, id, except, only);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Branding> (response, "response is QuickPayProtocolV10Branding");
+            //Assert.IsInstanceOf<Branding> (response, "response is Branding");
         }
         
         /// <summary>

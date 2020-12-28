@@ -89,8 +89,8 @@ namespace IO.Swagger.Api
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>QuickPayProtocolV10MerchantCryptographyKey</returns>
-        QuickPayProtocolV10MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
+        /// <returns>MerchantCryptographyKey</returns>
+        MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
 
         /// <summary>
         /// Get keys
@@ -107,8 +107,8 @@ namespace IO.Swagger.Api
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> GETCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
+        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
+        ApiResponse<MerchantCryptographyKey> GETCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
         /// <summary>
         /// Get certificate
         /// </summary>
@@ -144,8 +144,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10MerchantCryptographyKey</returns>
-        QuickPayProtocolV10MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id);
+        /// <returns>MerchantCryptographyKey</returns>
+        MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Get key
@@ -157,8 +157,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> GETCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
+        ApiResponse<MerchantCryptographyKey> GETCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// update key
         /// </summary>
@@ -170,8 +170,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
-        /// <returns>QuickPayProtocolV10MerchantCryptographyKey</returns>
-        QuickPayProtocolV10MerchantCryptographyKey PATCHCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id, string shortDescription = null);
+        /// <returns>MerchantCryptographyKey</returns>
+        MerchantCryptographyKey PATCHCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id, string shortDescription = null);
 
         /// <summary>
         /// update key
@@ -184,8 +184,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> PATCHCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null);
+        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
+        ApiResponse<MerchantCryptographyKey> PATCHCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null);
         /// <summary>
         /// Create key
         /// </summary>
@@ -199,8 +199,8 @@ namespace IO.Swagger.Api
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
         /// <param name="curve"> </param>
-        /// <returns>QuickPayProtocolV10MerchantCryptographyKey</returns>
-        QuickPayProtocolV10MerchantCryptographyKey POSTCryptographyKeysFormat (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
+        /// <returns>MerchantCryptographyKey</returns>
+        MerchantCryptographyKey POSTCryptographyKeysFormat (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
 
         /// <summary>
         /// Create key
@@ -215,8 +215,8 @@ namespace IO.Swagger.Api
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
         /// <param name="curve"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> POSTCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
+        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
+        ApiResponse<MerchantCryptographyKey> POSTCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
         /// <summary>
         /// Create certificate request (CSR)
         /// </summary>
@@ -342,8 +342,8 @@ namespace IO.Swagger.Api
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10MerchantCryptographyKey> GETCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
+        /// <returns>Task of MerchantCryptographyKey</returns>
+        System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
 
         /// <summary>
         /// Get keys
@@ -360,8 +360,8 @@ namespace IO.Swagger.Api
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10MerchantCryptographyKey)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>> GETCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
+        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
+        System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
         /// <summary>
         /// Get certificate
         /// </summary>
@@ -397,8 +397,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10MerchantCryptographyKey> GETCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of MerchantCryptographyKey</returns>
+        System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id);
 
         /// <summary>
         /// Get key
@@ -410,8 +410,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10MerchantCryptographyKey)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>> GETCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
+        System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// update key
         /// </summary>
@@ -423,8 +423,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10MerchantCryptographyKey> PATCHCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id, string shortDescription = null);
+        /// <returns>Task of MerchantCryptographyKey</returns>
+        System.Threading.Tasks.Task<MerchantCryptographyKey> PATCHCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id, string shortDescription = null);
 
         /// <summary>
         /// update key
@@ -437,8 +437,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10MerchantCryptographyKey)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>> PATCHCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null);
+        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
+        System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> PATCHCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null);
         /// <summary>
         /// Create key
         /// </summary>
@@ -452,8 +452,8 @@ namespace IO.Swagger.Api
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
         /// <param name="curve"> </param>
-        /// <returns>Task of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10MerchantCryptographyKey> POSTCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
+        /// <returns>Task of MerchantCryptographyKey</returns>
+        System.Threading.Tasks.Task<MerchantCryptographyKey> POSTCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
 
         /// <summary>
         /// Create key
@@ -468,8 +468,8 @@ namespace IO.Swagger.Api
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
         /// <param name="curve"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10MerchantCryptographyKey)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>> POSTCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
+        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
+        System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> POSTCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
         /// <summary>
         /// Create certificate request (CSR)
         /// </summary>
@@ -962,10 +962,10 @@ namespace IO.Swagger.Api
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public QuickPayProtocolV10MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
+        /// <returns>MerchantCryptographyKey</returns>
+        public MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
         {
-             ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> localVarResponse = GETCryptographyKeysFormatWithHttpInfo(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
+             ApiResponse<MerchantCryptographyKey> localVarResponse = GETCryptographyKeysFormatWithHttpInfo(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
              return localVarResponse.Data;
         }
 
@@ -981,8 +981,8 @@ namespace IO.Swagger.Api
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public ApiResponse< QuickPayProtocolV10MerchantCryptographyKey > GETCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
+        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
+        public ApiResponse< MerchantCryptographyKey > GETCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1038,9 +1038,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10MerchantCryptographyKey)));
+                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
         }
 
         /// <summary>
@@ -1055,10 +1055,10 @@ namespace IO.Swagger.Api
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10MerchantCryptographyKey> GETCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
+        /// <returns>Task of MerchantCryptographyKey</returns>
+        public async System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
         {
-             ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> localVarResponse = await GETCryptographyKeysFormatAsyncWithHttpInfo(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
+             ApiResponse<MerchantCryptographyKey> localVarResponse = await GETCryptographyKeysFormatAsyncWithHttpInfo(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
              return localVarResponse.Data;
 
         }
@@ -1075,8 +1075,8 @@ namespace IO.Swagger.Api
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10MerchantCryptographyKey)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>> GETCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
+        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1132,9 +1132,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10MerchantCryptographyKey)));
+                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
         }
 
         /// <summary>
@@ -1305,10 +1305,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public QuickPayProtocolV10MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
+        /// <returns>MerchantCryptographyKey</returns>
+        public MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> localVarResponse = GETCryptographyKeysIdFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<MerchantCryptographyKey> localVarResponse = GETCryptographyKeysIdFormatWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
         }
 
@@ -1319,8 +1319,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public ApiResponse< QuickPayProtocolV10MerchantCryptographyKey > GETCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
+        public ApiResponse< MerchantCryptographyKey > GETCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1374,9 +1374,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10MerchantCryptographyKey)));
+                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
         }
 
         /// <summary>
@@ -1386,10 +1386,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10MerchantCryptographyKey> GETCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of MerchantCryptographyKey</returns>
+        public async System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
-             ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> localVarResponse = await GETCryptographyKeysIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<MerchantCryptographyKey> localVarResponse = await GETCryptographyKeysIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
              return localVarResponse.Data;
 
         }
@@ -1401,8 +1401,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10MerchantCryptographyKey)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>> GETCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1456,9 +1456,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10MerchantCryptographyKey)));
+                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
         }
 
         /// <summary>
@@ -1469,10 +1469,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
-        /// <returns>QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public QuickPayProtocolV10MerchantCryptographyKey PATCHCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id, string shortDescription = null)
+        /// <returns>MerchantCryptographyKey</returns>
+        public MerchantCryptographyKey PATCHCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id, string shortDescription = null)
         {
-             ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> localVarResponse = PATCHCryptographyKeysIdFormatWithHttpInfo(acceptVersion, authorization, id, shortDescription);
+             ApiResponse<MerchantCryptographyKey> localVarResponse = PATCHCryptographyKeysIdFormatWithHttpInfo(acceptVersion, authorization, id, shortDescription);
              return localVarResponse.Data;
         }
 
@@ -1484,8 +1484,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public ApiResponse< QuickPayProtocolV10MerchantCryptographyKey > PATCHCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null)
+        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
+        public ApiResponse< MerchantCryptographyKey > PATCHCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1541,9 +1541,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10MerchantCryptographyKey)));
+                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
         }
 
         /// <summary>
@@ -1554,10 +1554,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10MerchantCryptographyKey> PATCHCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id, string shortDescription = null)
+        /// <returns>Task of MerchantCryptographyKey</returns>
+        public async System.Threading.Tasks.Task<MerchantCryptographyKey> PATCHCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id, string shortDescription = null)
         {
-             ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> localVarResponse = await PATCHCryptographyKeysIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, shortDescription);
+             ApiResponse<MerchantCryptographyKey> localVarResponse = await PATCHCryptographyKeysIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, shortDescription);
              return localVarResponse.Data;
 
         }
@@ -1570,8 +1570,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10MerchantCryptographyKey)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>> PATCHCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null)
+        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> PATCHCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1627,9 +1627,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10MerchantCryptographyKey)));
+                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
         }
 
         /// <summary>
@@ -1642,10 +1642,10 @@ namespace IO.Swagger.Api
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
         /// <param name="curve"> </param>
-        /// <returns>QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public QuickPayProtocolV10MerchantCryptographyKey POSTCryptographyKeysFormat (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+        /// <returns>MerchantCryptographyKey</returns>
+        public MerchantCryptographyKey POSTCryptographyKeysFormat (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
         {
-             ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> localVarResponse = POSTCryptographyKeysFormatWithHttpInfo(acceptVersion, authorization, type, shortDescription, keySize, curve);
+             ApiResponse<MerchantCryptographyKey> localVarResponse = POSTCryptographyKeysFormatWithHttpInfo(acceptVersion, authorization, type, shortDescription, keySize, curve);
              return localVarResponse.Data;
         }
 
@@ -1659,8 +1659,8 @@ namespace IO.Swagger.Api
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
         /// <param name="curve"> </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public ApiResponse< QuickPayProtocolV10MerchantCryptographyKey > POSTCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
+        public ApiResponse< MerchantCryptographyKey > POSTCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1727,9 +1727,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10MerchantCryptographyKey)));
+                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
         }
 
         /// <summary>
@@ -1742,10 +1742,10 @@ namespace IO.Swagger.Api
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
         /// <param name="curve"> </param>
-        /// <returns>Task of QuickPayProtocolV10MerchantCryptographyKey</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10MerchantCryptographyKey> POSTCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+        /// <returns>Task of MerchantCryptographyKey</returns>
+        public async System.Threading.Tasks.Task<MerchantCryptographyKey> POSTCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
         {
-             ApiResponse<QuickPayProtocolV10MerchantCryptographyKey> localVarResponse = await POSTCryptographyKeysFormatAsyncWithHttpInfo(acceptVersion, authorization, type, shortDescription, keySize, curve);
+             ApiResponse<MerchantCryptographyKey> localVarResponse = await POSTCryptographyKeysFormatAsyncWithHttpInfo(acceptVersion, authorization, type, shortDescription, keySize, curve);
              return localVarResponse.Data;
 
         }
@@ -1760,8 +1760,8 @@ namespace IO.Swagger.Api
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
         /// <param name="curve"> </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10MerchantCryptographyKey)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>> POSTCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> POSTCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1828,9 +1828,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10MerchantCryptographyKey)));
+                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
         }
 
         /// <summary>

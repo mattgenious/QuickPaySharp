@@ -16,8 +16,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10PaymentMethodPriority</returns>
-        QuickPayProtocolV10PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization);
+        /// <returns>PaymentMethodPriority</returns>
+        PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Replaces the payment method priority of the merchant  
         /// </summary>
@@ -86,8 +86,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10PaymentMethodPriority</returns>            
-        public QuickPayProtocolV10PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization)
+        /// <returns>PaymentMethodPriority</returns>            
+        public PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -120,7 +120,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETPaymentMethodPriorityFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10PaymentMethodPriority) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10PaymentMethodPriority), response.Headers);
+            return (PaymentMethodPriority) ApiClient.Deserialize(response.Content, typeof(PaymentMethodPriority), response.Headers);
         }
     
         /// <summary>

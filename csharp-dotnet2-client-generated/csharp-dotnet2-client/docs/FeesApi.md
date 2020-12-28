@@ -82,7 +82,7 @@ No authorization required
 
 <a name="getfeesformulasacquirerformat"></a>
 # **GETFeesFormulasAcquirerFormat**
-> QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer)
+> FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer)
 
 Get fee formulas
 
@@ -111,7 +111,7 @@ namespace Example
             try
             {
                 // Get fee formulas
-                QuickPayProtocolV10FeeFormula result = apiInstance.GETFeesFormulasAcquirerFormat(acceptVersion, authorization, acquirer);
+                FeeFormula result = apiInstance.GETFeesFormulasAcquirerFormat(acceptVersion, authorization, acquirer);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FeeFormula**](QuickPayProtocolV10FeeFormula.md)
+[**FeeFormula**](FeeFormula.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ No authorization required
 
 <a name="getfeesformulasacquirerpaymentmethodformat"></a>
 # **GETFeesFormulasAcquirerPaymentMethodFormat**
-> QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
+> FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
 
 Get fee formula
 
@@ -178,7 +178,7 @@ namespace Example
             try
             {
                 // Get fee formula
-                QuickPayProtocolV10FeeFormula result = apiInstance.GETFeesFormulasAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod);
+                FeeFormula result = apiInstance.GETFeesFormulasAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FeeFormula**](QuickPayProtocolV10FeeFormula.md)
+[**FeeFormula**](FeeFormula.md)
 
 ### Authorization
 
@@ -216,7 +216,7 @@ No authorization required
 
 <a name="getfeesformulasformat"></a>
 # **GETFeesFormulasFormat**
-> QuickPayProtocolV10FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page, int? pageSize)
+> FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page, int? pageSize)
 
 Get all fee formulas
 
@@ -246,7 +246,7 @@ namespace Example
             try
             {
                 // Get all fee formulas
-                QuickPayProtocolV10FeeFormula result = apiInstance.GETFeesFormulasFormat(acceptVersion, authorization, page, pageSize);
+                FeeFormula result = apiInstance.GETFeesFormulasFormat(acceptVersion, authorization, page, pageSize);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FeeFormula**](QuickPayProtocolV10FeeFormula.md)
+[**FeeFormula**](FeeFormula.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ No authorization required
 
 <a name="patchfeesformulasacquirerpaymentmethodformat"></a>
 # **PATCHFeesFormulasAcquirerPaymentMethodFormat**
-> QuickPayProtocolV10FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula)
+> FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula)
 
 Update a fee formula
 
@@ -315,7 +315,7 @@ namespace Example
             try
             {
                 // Update a fee formula
-                QuickPayProtocolV10FeeFormula result = apiInstance.PATCHFeesFormulasAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod, formula);
+                FeeFormula result = apiInstance.PATCHFeesFormulasAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod, formula);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -339,7 +339,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FeeFormula**](QuickPayProtocolV10FeeFormula.md)
+[**FeeFormula**](FeeFormula.md)
 
 ### Authorization
 
@@ -354,7 +354,7 @@ No authorization required
 
 <a name="postfeesacquirerpaymentmethodformat"></a>
 # **POSTFeesAcquirerPaymentMethodFormat**
-> QuickPayProtocolV10CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
+> CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
 
 Calculate fee
 
@@ -385,7 +385,7 @@ namespace Example
             try
             {
                 // Calculate fee
-                QuickPayProtocolV10CalculatedFee result = apiInstance.POSTFeesAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod, amount);
+                CalculatedFee result = apiInstance.POSTFeesAcquirerPaymentMethodFormat(acceptVersion, authorization, acquirer, paymentMethod, amount);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -409,7 +409,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10CalculatedFee**](QuickPayProtocolV10CalculatedFee.md)
+[**CalculatedFee**](CalculatedFee.md)
 
 ### Authorization
 
@@ -424,7 +424,7 @@ No authorization required
 
 <a name="postfeesformat"></a>
 # **POSTFeesFormat**
-> QuickPayProtocolV10CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer)
+> CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer)
 
 Calculate fee for auth params. Requires one of card[number] or card[token]
 
@@ -460,7 +460,7 @@ namespace Example
             try
             {
                 // Calculate fee for auth params. Requires one of card[number] or card[token]
-                QuickPayProtocolV10CalculatedFee result = apiInstance.POSTFeesFormat(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
+                CalculatedFee result = apiInstance.POSTFeesFormat(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -489,7 +489,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10CalculatedFee**](QuickPayProtocolV10CalculatedFee.md)
+[**CalculatedFee**](CalculatedFee.md)
 
 ### Authorization
 

@@ -12,7 +12,7 @@ Contact: support@quickpay.net
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D2F94428-EF93-46A7-BD6A-5ADB1F0EFE21}</ProjectGuid>
+    <ProjectGuid>{8B7B9B13-DD7A-44FD-A6AC-C8DF46423F1C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IO.Swagger</RootNamespace>

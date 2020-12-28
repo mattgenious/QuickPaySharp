@@ -54,7 +54,7 @@ Method | HTTP request | Description
 
 <a name="getacquirersbamboraformat"></a>
 # **GETAcquirersBamboraFormat**
-> QuickPayProtocolV10AcquirerSettingsBambora GETAcquirersBamboraFormat (string acceptVersion, string authorization)
+> AcquirerSettingsBambora GETAcquirersBamboraFormat (string acceptVersion, string authorization)
 
 Get Bambora acquirer settings
 
@@ -82,7 +82,7 @@ namespace Example
             try
             {
                 // Get Bambora acquirer settings
-                QuickPayProtocolV10AcquirerSettingsBambora result = apiInstance.GETAcquirersBamboraFormat(acceptVersion, authorization);
+                AcquirerSettingsBambora result = apiInstance.GETAcquirersBamboraFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsBambora**](QuickPayProtocolV10AcquirerSettingsBambora.md)
+[**AcquirerSettingsBambora**](AcquirerSettingsBambora.md)
 
 ### Authorization
 
@@ -118,7 +118,7 @@ No authorization required
 
 <a name="getacquirersclearhausformat"></a>
 # **GETAcquirersClearhausFormat**
-> QuickPayProtocolV10AcquirerSettingsClearhaus GETAcquirersClearhausFormat (string acceptVersion, string authorization)
+> AcquirerSettingsClearhaus GETAcquirersClearhausFormat (string acceptVersion, string authorization)
 
 Get Clearhaus acquirer settings
 
@@ -146,7 +146,7 @@ namespace Example
             try
             {
                 // Get Clearhaus acquirer settings
-                QuickPayProtocolV10AcquirerSettingsClearhaus result = apiInstance.GETAcquirersClearhausFormat(acceptVersion, authorization);
+                AcquirerSettingsClearhaus result = apiInstance.GETAcquirersClearhausFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsClearhaus**](QuickPayProtocolV10AcquirerSettingsClearhaus.md)
+[**AcquirerSettingsClearhaus**](AcquirerSettingsClearhaus.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 
 <a name="getacquirerscoinifyformat"></a>
 # **GETAcquirersCoinifyFormat**
-> QuickPayProtocolV10AcquirerSettingsCoinify GETAcquirersCoinifyFormat (string acceptVersion, string authorization)
+> AcquirerSettingsCoinify GETAcquirersCoinifyFormat (string acceptVersion, string authorization)
 
 Get Coinify acquirer settings
 
@@ -210,7 +210,7 @@ namespace Example
             try
             {
                 // Get Coinify acquirer settings
-                QuickPayProtocolV10AcquirerSettingsCoinify result = apiInstance.GETAcquirersCoinifyFormat(acceptVersion, authorization);
+                AcquirerSettingsCoinify result = apiInstance.GETAcquirersCoinifyFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsCoinify**](QuickPayProtocolV10AcquirerSettingsCoinify.md)
+[**AcquirerSettingsCoinify**](AcquirerSettingsCoinify.md)
 
 ### Authorization
 
@@ -246,7 +246,7 @@ No authorization required
 
 <a name="getacquirerselavonformat"></a>
 # **GETAcquirersElavonFormat**
-> QuickPayProtocolV10AcquirerSettingsElavon GETAcquirersElavonFormat (string acceptVersion, string authorization)
+> AcquirerSettingsElavon GETAcquirersElavonFormat (string acceptVersion, string authorization)
 
 Get Elavon acquirer settings
 
@@ -274,7 +274,7 @@ namespace Example
             try
             {
                 // Get Elavon acquirer settings
-                QuickPayProtocolV10AcquirerSettingsElavon result = apiInstance.GETAcquirersElavonFormat(acceptVersion, authorization);
+                AcquirerSettingsElavon result = apiInstance.GETAcquirersElavonFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -295,7 +295,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsElavon**](QuickPayProtocolV10AcquirerSettingsElavon.md)
+[**AcquirerSettingsElavon**](AcquirerSettingsElavon.md)
 
 ### Authorization
 
@@ -310,7 +310,7 @@ No authorization required
 
 <a name="getacquirersformat"></a>
 # **GETAcquirersFormat**
-> QuickPayProtocolV10AcquirerSettings GETAcquirersFormat (string acceptVersion, string authorization)
+> AcquirerSettings GETAcquirersFormat (string acceptVersion, string authorization)
 
 Fetch acquirers
 
@@ -338,7 +338,7 @@ namespace Example
             try
             {
                 // Fetch acquirers
-                QuickPayProtocolV10AcquirerSettings result = apiInstance.GETAcquirersFormat(acceptVersion, authorization);
+                AcquirerSettings result = apiInstance.GETAcquirersFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -359,7 +359,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettings**](QuickPayProtocolV10AcquirerSettings.md)
+[**AcquirerSettings**](AcquirerSettings.md)
 
 ### Authorization
 
@@ -374,7 +374,7 @@ No authorization required
 
 <a name="getacquirershandelsbankenformat"></a>
 # **GETAcquirersHandelsbankenFormat**
-> QuickPayProtocolV10AcquirerSettingsHandelsbanken GETAcquirersHandelsbankenFormat (string acceptVersion, string authorization)
+> AcquirerSettingsHandelsbanken GETAcquirersHandelsbankenFormat (string acceptVersion, string authorization)
 
 Get Handelsbanken acquirer settings
 
@@ -402,7 +402,7 @@ namespace Example
             try
             {
                 // Get Handelsbanken acquirer settings
-                QuickPayProtocolV10AcquirerSettingsHandelsbanken result = apiInstance.GETAcquirersHandelsbankenFormat(acceptVersion, authorization);
+                AcquirerSettingsHandelsbanken result = apiInstance.GETAcquirersHandelsbankenFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -423,7 +423,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsHandelsbanken**](QuickPayProtocolV10AcquirerSettingsHandelsbanken.md)
+[**AcquirerSettingsHandelsbanken**](AcquirerSettingsHandelsbanken.md)
 
 ### Authorization
 
@@ -438,7 +438,7 @@ No authorization required
 
 <a name="getacquirersklarnaformat"></a>
 # **GETAcquirersKlarnaFormat**
-> QuickPayProtocolV10AcquirerSettingsKlarna GETAcquirersKlarnaFormat (string acceptVersion, string authorization)
+> AcquirerSettingsKlarna GETAcquirersKlarnaFormat (string acceptVersion, string authorization)
 
 Get Klarna acquirer settings
 
@@ -466,7 +466,7 @@ namespace Example
             try
             {
                 // Get Klarna acquirer settings
-                QuickPayProtocolV10AcquirerSettingsKlarna result = apiInstance.GETAcquirersKlarnaFormat(acceptVersion, authorization);
+                AcquirerSettingsKlarna result = apiInstance.GETAcquirersKlarnaFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -487,7 +487,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsKlarna**](QuickPayProtocolV10AcquirerSettingsKlarna.md)
+[**AcquirerSettingsKlarna**](AcquirerSettingsKlarna.md)
 
 ### Authorization
 
@@ -502,7 +502,7 @@ No authorization required
 
 <a name="getacquirersklarnapaymentsformat"></a>
 # **GETAcquirersKlarnapaymentsFormat**
-> QuickPayProtocolV10AcquirerSettingsKlarnaPayments GETAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization)
+> AcquirerSettingsKlarnaPayments GETAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization)
 
 Get KlarnaPayments acquirer settings
 
@@ -530,7 +530,7 @@ namespace Example
             try
             {
                 // Get KlarnaPayments acquirer settings
-                QuickPayProtocolV10AcquirerSettingsKlarnaPayments result = apiInstance.GETAcquirersKlarnapaymentsFormat(acceptVersion, authorization);
+                AcquirerSettingsKlarnaPayments result = apiInstance.GETAcquirersKlarnapaymentsFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -551,7 +551,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsKlarnaPayments**](QuickPayProtocolV10AcquirerSettingsKlarnaPayments.md)
+[**AcquirerSettingsKlarnaPayments**](AcquirerSettingsKlarnaPayments.md)
 
 ### Authorization
 
@@ -566,7 +566,7 @@ No authorization required
 
 <a name="getacquirersmobilepayformat"></a>
 # **GETAcquirersMobilepayFormat**
-> QuickPayProtocolV10AcquirerSettingsMobilePay GETAcquirersMobilepayFormat (string acceptVersion, string authorization)
+> AcquirerSettingsMobilePay GETAcquirersMobilepayFormat (string acceptVersion, string authorization)
 
 Get MobilePay acquirer settings
 
@@ -594,7 +594,7 @@ namespace Example
             try
             {
                 // Get MobilePay acquirer settings
-                QuickPayProtocolV10AcquirerSettingsMobilePay result = apiInstance.GETAcquirersMobilepayFormat(acceptVersion, authorization);
+                AcquirerSettingsMobilePay result = apiInstance.GETAcquirersMobilepayFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -615,7 +615,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsMobilePay**](QuickPayProtocolV10AcquirerSettingsMobilePay.md)
+[**AcquirerSettingsMobilePay**](AcquirerSettingsMobilePay.md)
 
 ### Authorization
 
@@ -630,7 +630,7 @@ No authorization required
 
 <a name="getacquirersmobilepayonlineformat"></a>
 # **GETAcquirersMobilepayonlineFormat**
-> QuickPayProtocolV10AcquirerSettingsMobilePayOnline GETAcquirersMobilepayonlineFormat (string acceptVersion, string authorization)
+> AcquirerSettingsMobilePayOnline GETAcquirersMobilepayonlineFormat (string acceptVersion, string authorization)
 
 Get MobilePayOnline acquirer settings
 
@@ -658,7 +658,7 @@ namespace Example
             try
             {
                 // Get MobilePayOnline acquirer settings
-                QuickPayProtocolV10AcquirerSettingsMobilePayOnline result = apiInstance.GETAcquirersMobilepayonlineFormat(acceptVersion, authorization);
+                AcquirerSettingsMobilePayOnline result = apiInstance.GETAcquirersMobilepayonlineFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -679,7 +679,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsMobilePayOnline**](QuickPayProtocolV10AcquirerSettingsMobilePayOnline.md)
+[**AcquirerSettingsMobilePayOnline**](AcquirerSettingsMobilePayOnline.md)
 
 ### Authorization
 
@@ -694,7 +694,7 @@ No authorization required
 
 <a name="getacquirersmobilepaysubscriptionsformat"></a>
 # **GETAcquirersMobilepaysubscriptionsFormat**
-> QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions GETAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization)
+> AcquirerSettingsMobilePaySubscriptions GETAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization)
 
 Get MobilePaySubscriptions acquirer settings
 
@@ -722,7 +722,7 @@ namespace Example
             try
             {
                 // Get MobilePaySubscriptions acquirer settings
-                QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions result = apiInstance.GETAcquirersMobilepaysubscriptionsFormat(acceptVersion, authorization);
+                AcquirerSettingsMobilePaySubscriptions result = apiInstance.GETAcquirersMobilepaysubscriptionsFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -743,7 +743,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions**](QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions.md)
+[**AcquirerSettingsMobilePaySubscriptions**](AcquirerSettingsMobilePaySubscriptions.md)
 
 ### Authorization
 
@@ -758,7 +758,7 @@ No authorization required
 
 <a name="getacquirersnetsformat"></a>
 # **GETAcquirersNetsFormat**
-> QuickPayProtocolV10AcquirerSettingsNets GETAcquirersNetsFormat (string acceptVersion, string authorization)
+> AcquirerSettingsNets GETAcquirersNetsFormat (string acceptVersion, string authorization)
 
 Get Nets acquirer settings
 
@@ -786,7 +786,7 @@ namespace Example
             try
             {
                 // Get Nets acquirer settings
-                QuickPayProtocolV10AcquirerSettingsNets result = apiInstance.GETAcquirersNetsFormat(acceptVersion, authorization);
+                AcquirerSettingsNets result = apiInstance.GETAcquirersNetsFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -807,7 +807,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsNets**](QuickPayProtocolV10AcquirerSettingsNets.md)
+[**AcquirerSettingsNets**](AcquirerSettingsNets.md)
 
 ### Authorization
 
@@ -822,7 +822,7 @@ No authorization required
 
 <a name="getacquirerspaypalformat"></a>
 # **GETAcquirersPaypalFormat**
-> QuickPayProtocolV10AcquirerSettingsPayPal GETAcquirersPaypalFormat (string acceptVersion, string authorization)
+> AcquirerSettingsPayPal GETAcquirersPaypalFormat (string acceptVersion, string authorization)
 
 Get PayPal acquirer settings
 
@@ -850,7 +850,7 @@ namespace Example
             try
             {
                 // Get PayPal acquirer settings
-                QuickPayProtocolV10AcquirerSettingsPayPal result = apiInstance.GETAcquirersPaypalFormat(acceptVersion, authorization);
+                AcquirerSettingsPayPal result = apiInstance.GETAcquirersPaypalFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -871,7 +871,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsPayPal**](QuickPayProtocolV10AcquirerSettingsPayPal.md)
+[**AcquirerSettingsPayPal**](AcquirerSettingsPayPal.md)
 
 ### Authorization
 
@@ -886,7 +886,7 @@ No authorization required
 
 <a name="getacquirerspaysafecardformat"></a>
 # **GETAcquirersPaysafecardFormat**
-> QuickPayProtocolV10AcquirerSettingsPaysafecard GETAcquirersPaysafecardFormat (string acceptVersion, string authorization)
+> AcquirerSettingsPaysafecard GETAcquirersPaysafecardFormat (string acceptVersion, string authorization)
 
 Get Paysafecard acquirer settings
 
@@ -914,7 +914,7 @@ namespace Example
             try
             {
                 // Get Paysafecard acquirer settings
-                QuickPayProtocolV10AcquirerSettingsPaysafecard result = apiInstance.GETAcquirersPaysafecardFormat(acceptVersion, authorization);
+                AcquirerSettingsPaysafecard result = apiInstance.GETAcquirersPaysafecardFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -935,7 +935,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsPaysafecard**](QuickPayProtocolV10AcquirerSettingsPaysafecard.md)
+[**AcquirerSettingsPaysafecard**](AcquirerSettingsPaysafecard.md)
 
 ### Authorization
 
@@ -950,7 +950,7 @@ No authorization required
 
 <a name="getacquirersresursformat"></a>
 # **GETAcquirersResursFormat**
-> QuickPayProtocolV10AcquirerSettingsResurs GETAcquirersResursFormat (string acceptVersion, string authorization)
+> AcquirerSettingsResurs GETAcquirersResursFormat (string acceptVersion, string authorization)
 
 Get Resurs acquirer settings
 
@@ -978,7 +978,7 @@ namespace Example
             try
             {
                 // Get Resurs acquirer settings
-                QuickPayProtocolV10AcquirerSettingsResurs result = apiInstance.GETAcquirersResursFormat(acceptVersion, authorization);
+                AcquirerSettingsResurs result = apiInstance.GETAcquirersResursFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -999,7 +999,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsResurs**](QuickPayProtocolV10AcquirerSettingsResurs.md)
+[**AcquirerSettingsResurs**](AcquirerSettingsResurs.md)
 
 ### Authorization
 
@@ -1014,7 +1014,7 @@ No authorization required
 
 <a name="getacquirerssofortformat"></a>
 # **GETAcquirersSofortFormat**
-> QuickPayProtocolV10AcquirerSettingsSofort GETAcquirersSofortFormat (string acceptVersion, string authorization)
+> AcquirerSettingsSofort GETAcquirersSofortFormat (string acceptVersion, string authorization)
 
 Get Sofort acquirer settings
 
@@ -1042,7 +1042,7 @@ namespace Example
             try
             {
                 // Get Sofort acquirer settings
-                QuickPayProtocolV10AcquirerSettingsSofort result = apiInstance.GETAcquirersSofortFormat(acceptVersion, authorization);
+                AcquirerSettingsSofort result = apiInstance.GETAcquirersSofortFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1063,7 +1063,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsSofort**](QuickPayProtocolV10AcquirerSettingsSofort.md)
+[**AcquirerSettingsSofort**](AcquirerSettingsSofort.md)
 
 ### Authorization
 
@@ -1078,7 +1078,7 @@ No authorization required
 
 <a name="getacquirersswedbankformat"></a>
 # **GETAcquirersSwedbankFormat**
-> QuickPayProtocolV10AcquirerSettingsSwedbank GETAcquirersSwedbankFormat (string acceptVersion, string authorization)
+> AcquirerSettingsSwedbank GETAcquirersSwedbankFormat (string acceptVersion, string authorization)
 
 Get Swedbank acquirer settings
 
@@ -1106,7 +1106,7 @@ namespace Example
             try
             {
                 // Get Swedbank acquirer settings
-                QuickPayProtocolV10AcquirerSettingsSwedbank result = apiInstance.GETAcquirersSwedbankFormat(acceptVersion, authorization);
+                AcquirerSettingsSwedbank result = apiInstance.GETAcquirersSwedbankFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1127,7 +1127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsSwedbank**](QuickPayProtocolV10AcquirerSettingsSwedbank.md)
+[**AcquirerSettingsSwedbank**](AcquirerSettingsSwedbank.md)
 
 ### Authorization
 
@@ -1142,7 +1142,7 @@ No authorization required
 
 <a name="getacquirersswishformat"></a>
 # **GETAcquirersSwishFormat**
-> QuickPayProtocolV10AcquirerSettingsSwish GETAcquirersSwishFormat (string acceptVersion, string authorization)
+> AcquirerSettingsSwish GETAcquirersSwishFormat (string acceptVersion, string authorization)
 
 Get Swish acquirer settings
 
@@ -1170,7 +1170,7 @@ namespace Example
             try
             {
                 // Get Swish acquirer settings
-                QuickPayProtocolV10AcquirerSettingsSwish result = apiInstance.GETAcquirersSwishFormat(acceptVersion, authorization);
+                AcquirerSettingsSwish result = apiInstance.GETAcquirersSwishFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1191,7 +1191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsSwish**](QuickPayProtocolV10AcquirerSettingsSwish.md)
+[**AcquirerSettingsSwish**](AcquirerSettingsSwish.md)
 
 ### Authorization
 
@@ -1206,7 +1206,7 @@ No authorization required
 
 <a name="getacquirerstellerformat"></a>
 # **GETAcquirersTellerFormat**
-> QuickPayProtocolV10AcquirerSettingsTeller GETAcquirersTellerFormat (string acceptVersion, string authorization)
+> AcquirerSettingsTeller GETAcquirersTellerFormat (string acceptVersion, string authorization)
 
 Get Teller acquirer settings
 
@@ -1234,7 +1234,7 @@ namespace Example
             try
             {
                 // Get Teller acquirer settings
-                QuickPayProtocolV10AcquirerSettingsTeller result = apiInstance.GETAcquirersTellerFormat(acceptVersion, authorization);
+                AcquirerSettingsTeller result = apiInstance.GETAcquirersTellerFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1255,7 +1255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsTeller**](QuickPayProtocolV10AcquirerSettingsTeller.md)
+[**AcquirerSettingsTeller**](AcquirerSettingsTeller.md)
 
 ### Authorization
 
@@ -1270,7 +1270,7 @@ No authorization required
 
 <a name="getacquirerstrustlyformat"></a>
 # **GETAcquirersTrustlyFormat**
-> QuickPayProtocolV10AcquirerSettingsTrustly GETAcquirersTrustlyFormat (string acceptVersion, string authorization)
+> AcquirerSettingsTrustly GETAcquirersTrustlyFormat (string acceptVersion, string authorization)
 
 Get Trustly acquirer settings
 
@@ -1298,7 +1298,7 @@ namespace Example
             try
             {
                 // Get Trustly acquirer settings
-                QuickPayProtocolV10AcquirerSettingsTrustly result = apiInstance.GETAcquirersTrustlyFormat(acceptVersion, authorization);
+                AcquirerSettingsTrustly result = apiInstance.GETAcquirersTrustlyFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1319,7 +1319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsTrustly**](QuickPayProtocolV10AcquirerSettingsTrustly.md)
+[**AcquirerSettingsTrustly**](AcquirerSettingsTrustly.md)
 
 ### Authorization
 
@@ -1334,7 +1334,7 @@ No authorization required
 
 <a name="getacquirersvalitorformat"></a>
 # **GETAcquirersValitorFormat**
-> QuickPayProtocolV10AcquirerSettingsValitor GETAcquirersValitorFormat (string acceptVersion, string authorization)
+> AcquirerSettingsValitor GETAcquirersValitorFormat (string acceptVersion, string authorization)
 
 Get Valitor acquirer settings
 
@@ -1362,7 +1362,7 @@ namespace Example
             try
             {
                 // Get Valitor acquirer settings
-                QuickPayProtocolV10AcquirerSettingsValitor result = apiInstance.GETAcquirersValitorFormat(acceptVersion, authorization);
+                AcquirerSettingsValitor result = apiInstance.GETAcquirersValitorFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1383,7 +1383,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsValitor**](QuickPayProtocolV10AcquirerSettingsValitor.md)
+[**AcquirerSettingsValitor**](AcquirerSettingsValitor.md)
 
 ### Authorization
 
@@ -1398,7 +1398,7 @@ No authorization required
 
 <a name="getacquirersviabillformat"></a>
 # **GETAcquirersViabillFormat**
-> QuickPayProtocolV10AcquirerSettingsViaBill GETAcquirersViabillFormat (string acceptVersion, string authorization)
+> AcquirerSettingsViaBill GETAcquirersViabillFormat (string acceptVersion, string authorization)
 
 Get ViaBill acquirer settings
 
@@ -1426,7 +1426,7 @@ namespace Example
             try
             {
                 // Get ViaBill acquirer settings
-                QuickPayProtocolV10AcquirerSettingsViaBill result = apiInstance.GETAcquirersViabillFormat(acceptVersion, authorization);
+                AcquirerSettingsViaBill result = apiInstance.GETAcquirersViabillFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1447,7 +1447,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsViaBill**](QuickPayProtocolV10AcquirerSettingsViaBill.md)
+[**AcquirerSettingsViaBill**](AcquirerSettingsViaBill.md)
 
 ### Authorization
 
@@ -1462,7 +1462,7 @@ No authorization required
 
 <a name="getacquirersvippsformat"></a>
 # **GETAcquirersVippsFormat**
-> QuickPayProtocolV10AcquirerSettingsVipps GETAcquirersVippsFormat (string acceptVersion, string authorization)
+> AcquirerSettingsVipps GETAcquirersVippsFormat (string acceptVersion, string authorization)
 
 Get Vipps acquirer settings
 
@@ -1490,7 +1490,7 @@ namespace Example
             try
             {
                 // Get Vipps acquirer settings
-                QuickPayProtocolV10AcquirerSettingsVipps result = apiInstance.GETAcquirersVippsFormat(acceptVersion, authorization);
+                AcquirerSettingsVipps result = apiInstance.GETAcquirersVippsFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1511,7 +1511,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsVipps**](QuickPayProtocolV10AcquirerSettingsVipps.md)
+[**AcquirerSettingsVipps**](AcquirerSettingsVipps.md)
 
 ### Authorization
 
@@ -1526,7 +1526,7 @@ No authorization required
 
 <a name="patchacquirersbamboraformat"></a>
 # **PATCHAcquirersBamboraFormat**
-> QuickPayProtocolV10AcquirerSettingsBambora PATCHAcquirersBamboraFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+> AcquirerSettingsBambora PATCHAcquirersBamboraFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
 
 Update Bambora acquirer settings
 
@@ -1566,7 +1566,7 @@ namespace Example
             try
             {
                 // Update Bambora acquirer settings
-                QuickPayProtocolV10AcquirerSettingsBambora result = apiInstance.PATCHAcquirersBamboraFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
+                AcquirerSettingsBambora result = apiInstance.PATCHAcquirersBamboraFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1599,7 +1599,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsBambora**](QuickPayProtocolV10AcquirerSettingsBambora.md)
+[**AcquirerSettingsBambora**](AcquirerSettingsBambora.md)
 
 ### Authorization
 
@@ -1614,7 +1614,7 @@ No authorization required
 
 <a name="patchacquirersclearhausformat"></a>
 # **PATCHAcquirersClearhausFormat**
-> QuickPayProtocolV10AcquirerSettingsClearhaus PATCHAcquirersClearhausFormat (string acceptVersion, string authorization, bool? active, string apiKey, bool? recurring, bool? payout, bool? applePay)
+> AcquirerSettingsClearhaus PATCHAcquirersClearhausFormat (string acceptVersion, string authorization, bool? active, string apiKey, bool? recurring, bool? payout, bool? applePay)
 
 Update Clearhaus acquirer settings
 
@@ -1647,7 +1647,7 @@ namespace Example
             try
             {
                 // Update Clearhaus acquirer settings
-                QuickPayProtocolV10AcquirerSettingsClearhaus result = apiInstance.PATCHAcquirersClearhausFormat(acceptVersion, authorization, active, apiKey, recurring, payout, applePay);
+                AcquirerSettingsClearhaus result = apiInstance.PATCHAcquirersClearhausFormat(acceptVersion, authorization, active, apiKey, recurring, payout, applePay);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1673,7 +1673,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsClearhaus**](QuickPayProtocolV10AcquirerSettingsClearhaus.md)
+[**AcquirerSettingsClearhaus**](AcquirerSettingsClearhaus.md)
 
 ### Authorization
 
@@ -1688,7 +1688,7 @@ No authorization required
 
 <a name="patchacquirerscoinifyformat"></a>
 # **PATCHAcquirersCoinifyFormat**
-> QuickPayProtocolV10AcquirerSettingsCoinify PATCHAcquirersCoinifyFormat (string acceptVersion, string authorization, bool? active, string apiKey, string apiSecret, string ipnSecret)
+> AcquirerSettingsCoinify PATCHAcquirersCoinifyFormat (string acceptVersion, string authorization, bool? active, string apiKey, string apiSecret, string ipnSecret)
 
 Update Coinify acquirer settings
 
@@ -1720,7 +1720,7 @@ namespace Example
             try
             {
                 // Update Coinify acquirer settings
-                QuickPayProtocolV10AcquirerSettingsCoinify result = apiInstance.PATCHAcquirersCoinifyFormat(acceptVersion, authorization, active, apiKey, apiSecret, ipnSecret);
+                AcquirerSettingsCoinify result = apiInstance.PATCHAcquirersCoinifyFormat(acceptVersion, authorization, active, apiKey, apiSecret, ipnSecret);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1745,7 +1745,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsCoinify**](QuickPayProtocolV10AcquirerSettingsCoinify.md)
+[**AcquirerSettingsCoinify**](AcquirerSettingsCoinify.md)
 
 ### Authorization
 
@@ -1760,7 +1760,7 @@ No authorization required
 
 <a name="patchacquirerselavonformat"></a>
 # **PATCHAcquirersElavonFormat**
-> QuickPayProtocolV10AcquirerSettingsElavon PATCHAcquirersElavonFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+> AcquirerSettingsElavon PATCHAcquirersElavonFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
 
 Update Elavon acquirer settings
 
@@ -1800,7 +1800,7 @@ namespace Example
             try
             {
                 // Update Elavon acquirer settings
-                QuickPayProtocolV10AcquirerSettingsElavon result = apiInstance.PATCHAcquirersElavonFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
+                AcquirerSettingsElavon result = apiInstance.PATCHAcquirersElavonFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1833,7 +1833,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsElavon**](QuickPayProtocolV10AcquirerSettingsElavon.md)
+[**AcquirerSettingsElavon**](AcquirerSettingsElavon.md)
 
 ### Authorization
 
@@ -1848,7 +1848,7 @@ No authorization required
 
 <a name="patchacquirershandelsbankenformat"></a>
 # **PATCHAcquirersHandelsbankenFormat**
-> QuickPayProtocolV10AcquirerSettingsHandelsbanken PATCHAcquirersHandelsbankenFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+> AcquirerSettingsHandelsbanken PATCHAcquirersHandelsbankenFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
 
 Update Handelsbanken acquirer settings
 
@@ -1888,7 +1888,7 @@ namespace Example
             try
             {
                 // Update Handelsbanken acquirer settings
-                QuickPayProtocolV10AcquirerSettingsHandelsbanken result = apiInstance.PATCHAcquirersHandelsbankenFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
+                AcquirerSettingsHandelsbanken result = apiInstance.PATCHAcquirersHandelsbankenFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1921,7 +1921,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsHandelsbanken**](QuickPayProtocolV10AcquirerSettingsHandelsbanken.md)
+[**AcquirerSettingsHandelsbanken**](AcquirerSettingsHandelsbanken.md)
 
 ### Authorization
 
@@ -1936,7 +1936,7 @@ No authorization required
 
 <a name="patchacquirersklarnaformat"></a>
 # **PATCHAcquirersKlarnaFormat**
-> QuickPayProtocolV10AcquirerSettingsKlarna PATCHAcquirersKlarnaFormat (string acceptVersion, string authorization, bool? active, int? eid, string sharedSecret)
+> AcquirerSettingsKlarna PATCHAcquirersKlarnaFormat (string acceptVersion, string authorization, bool? active, int? eid, string sharedSecret)
 
 Update Klarna acquirer settings
 
@@ -1967,7 +1967,7 @@ namespace Example
             try
             {
                 // Update Klarna acquirer settings
-                QuickPayProtocolV10AcquirerSettingsKlarna result = apiInstance.PATCHAcquirersKlarnaFormat(acceptVersion, authorization, active, eid, sharedSecret);
+                AcquirerSettingsKlarna result = apiInstance.PATCHAcquirersKlarnaFormat(acceptVersion, authorization, active, eid, sharedSecret);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1991,7 +1991,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsKlarna**](QuickPayProtocolV10AcquirerSettingsKlarna.md)
+[**AcquirerSettingsKlarna**](AcquirerSettingsKlarna.md)
 
 ### Authorization
 
@@ -2006,7 +2006,7 @@ No authorization required
 
 <a name="patchacquirersklarnapaymentsformat"></a>
 # **PATCHAcquirersKlarnapaymentsFormat**
-> QuickPayProtocolV10AcquirerSettingsKlarnaPayments PATCHAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization, bool? active, string uid, string password)
+> AcquirerSettingsKlarnaPayments PATCHAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization, bool? active, string uid, string password)
 
 Update KlarnaPayments acquirer settings
 
@@ -2037,7 +2037,7 @@ namespace Example
             try
             {
                 // Update KlarnaPayments acquirer settings
-                QuickPayProtocolV10AcquirerSettingsKlarnaPayments result = apiInstance.PATCHAcquirersKlarnapaymentsFormat(acceptVersion, authorization, active, uid, password);
+                AcquirerSettingsKlarnaPayments result = apiInstance.PATCHAcquirersKlarnapaymentsFormat(acceptVersion, authorization, active, uid, password);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2061,7 +2061,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsKlarnaPayments**](QuickPayProtocolV10AcquirerSettingsKlarnaPayments.md)
+[**AcquirerSettingsKlarnaPayments**](AcquirerSettingsKlarnaPayments.md)
 
 ### Authorization
 
@@ -2076,7 +2076,7 @@ No authorization required
 
 <a name="patchacquirersmobilepayformat"></a>
 # **PATCHAcquirersMobilepayFormat**
-> QuickPayProtocolV10AcquirerSettingsMobilePay PATCHAcquirersMobilepayFormat (string acceptVersion, string authorization, bool? active, string deliveryLimitedTo)
+> AcquirerSettingsMobilePay PATCHAcquirersMobilepayFormat (string acceptVersion, string authorization, bool? active, string deliveryLimitedTo)
 
 Update MobilePay acquirer settings
 
@@ -2106,7 +2106,7 @@ namespace Example
             try
             {
                 // Update MobilePay acquirer settings
-                QuickPayProtocolV10AcquirerSettingsMobilePay result = apiInstance.PATCHAcquirersMobilepayFormat(acceptVersion, authorization, active, deliveryLimitedTo);
+                AcquirerSettingsMobilePay result = apiInstance.PATCHAcquirersMobilepayFormat(acceptVersion, authorization, active, deliveryLimitedTo);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2129,7 +2129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsMobilePay**](QuickPayProtocolV10AcquirerSettingsMobilePay.md)
+[**AcquirerSettingsMobilePay**](AcquirerSettingsMobilePay.md)
 
 ### Authorization
 
@@ -2144,7 +2144,7 @@ No authorization required
 
 <a name="patchacquirersmobilepayonlineformat"></a>
 # **PATCHAcquirersMobilepayonlineFormat**
-> QuickPayProtocolV10AcquirerSettingsMobilePayOnline PATCHAcquirersMobilepayonlineFormat (string acceptVersion, string authorization, bool? active, int? merchantId, string deliveryLimitedTo)
+> AcquirerSettingsMobilePayOnline PATCHAcquirersMobilepayonlineFormat (string acceptVersion, string authorization, bool? active, int? merchantId, string deliveryLimitedTo)
 
 Update MobilePayOnline acquirer settings
 
@@ -2175,7 +2175,7 @@ namespace Example
             try
             {
                 // Update MobilePayOnline acquirer settings
-                QuickPayProtocolV10AcquirerSettingsMobilePayOnline result = apiInstance.PATCHAcquirersMobilepayonlineFormat(acceptVersion, authorization, active, merchantId, deliveryLimitedTo);
+                AcquirerSettingsMobilePayOnline result = apiInstance.PATCHAcquirersMobilepayonlineFormat(acceptVersion, authorization, active, merchantId, deliveryLimitedTo);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2199,7 +2199,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsMobilePayOnline**](QuickPayProtocolV10AcquirerSettingsMobilePayOnline.md)
+[**AcquirerSettingsMobilePayOnline**](AcquirerSettingsMobilePayOnline.md)
 
 ### Authorization
 
@@ -2214,7 +2214,7 @@ No authorization required
 
 <a name="patchacquirersmobilepaysubscriptionsformat"></a>
 # **PATCHAcquirersMobilepaysubscriptionsFormat**
-> QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken)
+> AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken)
 
 Update MobilePaySubscriptions acquirer settings
 
@@ -2250,7 +2250,7 @@ namespace Example
             try
             {
                 // Update MobilePaySubscriptions acquirer settings
-                QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions result = apiInstance.PATCHAcquirersMobilepaysubscriptionsFormat(acceptVersion, authorization, active, authState, codeVerifier, lastTokenRefresh, nonce, pendingStatus, provider, refreshToken);
+                AcquirerSettingsMobilePaySubscriptions result = apiInstance.PATCHAcquirersMobilepaysubscriptionsFormat(acceptVersion, authorization, active, authState, codeVerifier, lastTokenRefresh, nonce, pendingStatus, provider, refreshToken);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2279,7 +2279,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions**](QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions.md)
+[**AcquirerSettingsMobilePaySubscriptions**](AcquirerSettingsMobilePaySubscriptions.md)
 
 ### Authorization
 
@@ -2294,7 +2294,7 @@ No authorization required
 
 <a name="patchacquirersnetsformat"></a>
 # **PATCHAcquirersNetsFormat**
-> QuickPayProtocolV10AcquirerSettingsNets PATCHAcquirersNetsFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, bool? recurring, bool? fbg1886, bool? securedByNets, string identificationCodeInt, bool? americanexpress, bool? dinersclub, bool? securepay, string visaBin, string mastercardBin)
+> AcquirerSettingsNets PATCHAcquirersNetsFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, bool? recurring, bool? fbg1886, bool? securedByNets, string identificationCodeInt, bool? americanexpress, bool? dinersclub, bool? securepay, string visaBin, string mastercardBin)
 
 Update Nets acquirer settings
 
@@ -2334,7 +2334,7 @@ namespace Example
             try
             {
                 // Update Nets acquirer settings
-                QuickPayProtocolV10AcquirerSettingsNets result = apiInstance.PATCHAcquirersNetsFormat(acceptVersion, authorization, active, identificationCode, businessCode, recurring, fbg1886, securedByNets, identificationCodeInt, americanexpress, dinersclub, securepay, visaBin, mastercardBin);
+                AcquirerSettingsNets result = apiInstance.PATCHAcquirersNetsFormat(acceptVersion, authorization, active, identificationCode, businessCode, recurring, fbg1886, securedByNets, identificationCodeInt, americanexpress, dinersclub, securepay, visaBin, mastercardBin);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2367,7 +2367,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsNets**](QuickPayProtocolV10AcquirerSettingsNets.md)
+[**AcquirerSettingsNets**](AcquirerSettingsNets.md)
 
 ### Authorization
 
@@ -2382,7 +2382,7 @@ No authorization required
 
 <a name="patchacquirerspaypalformat"></a>
 # **PATCHAcquirersPaypalFormat**
-> QuickPayProtocolV10AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope)
+> AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope)
 
 Update PayPal acquirer settings
 
@@ -2416,7 +2416,7 @@ namespace Example
             try
             {
                 // Update PayPal acquirer settings
-                QuickPayProtocolV10AcquirerSettingsPayPal result = apiInstance.PATCHAcquirersPaypalFormat(acceptVersion, authorization, active, recurring, creditCard, token, tokenSecret, scope);
+                AcquirerSettingsPayPal result = apiInstance.PATCHAcquirersPaypalFormat(acceptVersion, authorization, active, recurring, creditCard, token, tokenSecret, scope);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2443,7 +2443,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsPayPal**](QuickPayProtocolV10AcquirerSettingsPayPal.md)
+[**AcquirerSettingsPayPal**](AcquirerSettingsPayPal.md)
 
 ### Authorization
 
@@ -2458,7 +2458,7 @@ No authorization required
 
 <a name="patchacquirerspaysafecardformat"></a>
 # **PATCHAcquirersPaysafecardFormat**
-> QuickPayProtocolV10AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies)
+> AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies)
 
 Update Paysafecard acquirer settings
 
@@ -2490,7 +2490,7 @@ namespace Example
             try
             {
                 // Update Paysafecard acquirer settings
-                QuickPayProtocolV10AcquirerSettingsPaysafecard result = apiInstance.PATCHAcquirersPaysafecardFormat(acceptVersion, authorization, active, username, password, currencies);
+                AcquirerSettingsPaysafecard result = apiInstance.PATCHAcquirersPaysafecardFormat(acceptVersion, authorization, active, username, password, currencies);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2515,7 +2515,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsPaysafecard**](QuickPayProtocolV10AcquirerSettingsPaysafecard.md)
+[**AcquirerSettingsPaysafecard**](AcquirerSettingsPaysafecard.md)
 
 ### Authorization
 
@@ -2530,7 +2530,7 @@ No authorization required
 
 <a name="patchacquirersresursformat"></a>
 # **PATCHAcquirersResursFormat**
-> QuickPayProtocolV10AcquirerSettingsResurs PATCHAcquirersResursFormat (string acceptVersion, string authorization, bool? active, string customerId, string customerPassword)
+> AcquirerSettingsResurs PATCHAcquirersResursFormat (string acceptVersion, string authorization, bool? active, string customerId, string customerPassword)
 
 Update Resurs acquirer settings
 
@@ -2561,7 +2561,7 @@ namespace Example
             try
             {
                 // Update Resurs acquirer settings
-                QuickPayProtocolV10AcquirerSettingsResurs result = apiInstance.PATCHAcquirersResursFormat(acceptVersion, authorization, active, customerId, customerPassword);
+                AcquirerSettingsResurs result = apiInstance.PATCHAcquirersResursFormat(acceptVersion, authorization, active, customerId, customerPassword);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2585,7 +2585,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsResurs**](QuickPayProtocolV10AcquirerSettingsResurs.md)
+[**AcquirerSettingsResurs**](AcquirerSettingsResurs.md)
 
 ### Authorization
 
@@ -2600,7 +2600,7 @@ No authorization required
 
 <a name="patchacquirerssofortformat"></a>
 # **PATCHAcquirersSofortFormat**
-> QuickPayProtocolV10AcquirerSettingsSofort PATCHAcquirersSofortFormat (string acceptVersion, string authorization, bool? active, int? customerNumber, int? projectId, string apiKey, bool? gateway, bool? ideal, int? idealProjectId, string idealProjectPassword, string idealNotificationPassword)
+> AcquirerSettingsSofort PATCHAcquirersSofortFormat (string acceptVersion, string authorization, bool? active, int? customerNumber, int? projectId, string apiKey, bool? gateway, bool? ideal, int? idealProjectId, string idealProjectPassword, string idealNotificationPassword)
 
 Update Sofort acquirer settings
 
@@ -2637,7 +2637,7 @@ namespace Example
             try
             {
                 // Update Sofort acquirer settings
-                QuickPayProtocolV10AcquirerSettingsSofort result = apiInstance.PATCHAcquirersSofortFormat(acceptVersion, authorization, active, customerNumber, projectId, apiKey, gateway, ideal, idealProjectId, idealProjectPassword, idealNotificationPassword);
+                AcquirerSettingsSofort result = apiInstance.PATCHAcquirersSofortFormat(acceptVersion, authorization, active, customerNumber, projectId, apiKey, gateway, ideal, idealProjectId, idealProjectPassword, idealNotificationPassword);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2667,7 +2667,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsSofort**](QuickPayProtocolV10AcquirerSettingsSofort.md)
+[**AcquirerSettingsSofort**](AcquirerSettingsSofort.md)
 
 ### Authorization
 
@@ -2682,7 +2682,7 @@ No authorization required
 
 <a name="patchacquirersswedbankformat"></a>
 # **PATCHAcquirersSwedbankFormat**
-> QuickPayProtocolV10AcquirerSettingsSwedbank PATCHAcquirersSwedbankFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+> AcquirerSettingsSwedbank PATCHAcquirersSwedbankFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
 
 Update Swedbank acquirer settings
 
@@ -2722,7 +2722,7 @@ namespace Example
             try
             {
                 // Update Swedbank acquirer settings
-                QuickPayProtocolV10AcquirerSettingsSwedbank result = apiInstance.PATCHAcquirersSwedbankFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
+                AcquirerSettingsSwedbank result = apiInstance.PATCHAcquirersSwedbankFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2755,7 +2755,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsSwedbank**](QuickPayProtocolV10AcquirerSettingsSwedbank.md)
+[**AcquirerSettingsSwedbank**](AcquirerSettingsSwedbank.md)
 
 ### Authorization
 
@@ -2770,7 +2770,7 @@ No authorization required
 
 <a name="patchacquirersswishformat"></a>
 # **PATCHAcquirersSwishFormat**
-> QuickPayProtocolV10AcquirerSettingsSwish PATCHAcquirersSwishFormat (string acceptVersion, string authorization, bool? active, string merchantId, int? cryptographyKeyId)
+> AcquirerSettingsSwish PATCHAcquirersSwishFormat (string acceptVersion, string authorization, bool? active, string merchantId, int? cryptographyKeyId)
 
 Update Swish acquirer settings
 
@@ -2801,7 +2801,7 @@ namespace Example
             try
             {
                 // Update Swish acquirer settings
-                QuickPayProtocolV10AcquirerSettingsSwish result = apiInstance.PATCHAcquirersSwishFormat(acceptVersion, authorization, active, merchantId, cryptographyKeyId);
+                AcquirerSettingsSwish result = apiInstance.PATCHAcquirersSwishFormat(acceptVersion, authorization, active, merchantId, cryptographyKeyId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2825,7 +2825,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsSwish**](QuickPayProtocolV10AcquirerSettingsSwish.md)
+[**AcquirerSettingsSwish**](AcquirerSettingsSwish.md)
 
 ### Authorization
 
@@ -2840,7 +2840,7 @@ No authorization required
 
 <a name="patchacquirerstellerformat"></a>
 # **PATCHAcquirersTellerFormat**
-> QuickPayProtocolV10AcquirerSettingsTeller PATCHAcquirersTellerFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+> AcquirerSettingsTeller PATCHAcquirersTellerFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
 
 Update Teller acquirer settings
 
@@ -2880,7 +2880,7 @@ namespace Example
             try
             {
                 // Update Teller acquirer settings
-                QuickPayProtocolV10AcquirerSettingsTeller result = apiInstance.PATCHAcquirersTellerFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
+                AcquirerSettingsTeller result = apiInstance.PATCHAcquirersTellerFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2913,7 +2913,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsTeller**](QuickPayProtocolV10AcquirerSettingsTeller.md)
+[**AcquirerSettingsTeller**](AcquirerSettingsTeller.md)
 
 ### Authorization
 
@@ -2928,7 +2928,7 @@ No authorization required
 
 <a name="patchacquirerstrustlyformat"></a>
 # **PATCHAcquirersTrustlyFormat**
-> QuickPayProtocolV10AcquirerSettingsTrustly PATCHAcquirersTrustlyFormat (string acceptVersion, string authorization, bool? active, bool? ideal, string username, string password)
+> AcquirerSettingsTrustly PATCHAcquirersTrustlyFormat (string acceptVersion, string authorization, bool? active, bool? ideal, string username, string password)
 
 Update Trustly acquirer settings
 
@@ -2960,7 +2960,7 @@ namespace Example
             try
             {
                 // Update Trustly acquirer settings
-                QuickPayProtocolV10AcquirerSettingsTrustly result = apiInstance.PATCHAcquirersTrustlyFormat(acceptVersion, authorization, active, ideal, username, password);
+                AcquirerSettingsTrustly result = apiInstance.PATCHAcquirersTrustlyFormat(acceptVersion, authorization, active, ideal, username, password);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2985,7 +2985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsTrustly**](QuickPayProtocolV10AcquirerSettingsTrustly.md)
+[**AcquirerSettingsTrustly**](AcquirerSettingsTrustly.md)
 
 ### Authorization
 
@@ -3000,7 +3000,7 @@ No authorization required
 
 <a name="patchacquirersvalitorformat"></a>
 # **PATCHAcquirersValitorFormat**
-> QuickPayProtocolV10AcquirerSettingsValitor PATCHAcquirersValitorFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+> AcquirerSettingsValitor PATCHAcquirersValitorFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
 
 Update Valitor acquirer settings
 
@@ -3040,7 +3040,7 @@ namespace Example
             try
             {
                 // Update Valitor acquirer settings
-                QuickPayProtocolV10AcquirerSettingsValitor result = apiInstance.PATCHAcquirersValitorFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
+                AcquirerSettingsValitor result = apiInstance.PATCHAcquirersValitorFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3073,7 +3073,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsValitor**](QuickPayProtocolV10AcquirerSettingsValitor.md)
+[**AcquirerSettingsValitor**](AcquirerSettingsValitor.md)
 
 ### Authorization
 
@@ -3088,7 +3088,7 @@ No authorization required
 
 <a name="patchacquirersviabillformat"></a>
 # **PATCHAcquirersViabillFormat**
-> QuickPayProtocolV10AcquirerSettingsViaBill PATCHAcquirersViabillFormat (string acceptVersion, string authorization, bool? active, string apiKey)
+> AcquirerSettingsViaBill PATCHAcquirersViabillFormat (string acceptVersion, string authorization, bool? active, string apiKey)
 
 Update ViaBill acquirer settings
 
@@ -3118,7 +3118,7 @@ namespace Example
             try
             {
                 // Update ViaBill acquirer settings
-                QuickPayProtocolV10AcquirerSettingsViaBill result = apiInstance.PATCHAcquirersViabillFormat(acceptVersion, authorization, active, apiKey);
+                AcquirerSettingsViaBill result = apiInstance.PATCHAcquirersViabillFormat(acceptVersion, authorization, active, apiKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3141,7 +3141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsViaBill**](QuickPayProtocolV10AcquirerSettingsViaBill.md)
+[**AcquirerSettingsViaBill**](AcquirerSettingsViaBill.md)
 
 ### Authorization
 
@@ -3156,7 +3156,7 @@ No authorization required
 
 <a name="patchacquirersvippsformat"></a>
 # **PATCHAcquirersVippsFormat**
-> QuickPayProtocolV10AcquirerSettingsVipps PATCHAcquirersVippsFormat (string acceptVersion, string authorization, bool? active, string clientId, string clientSecret, string serialNumber, string accessTokenSubscriptionKey, string ecommerceSubscriptionKey, string orgno)
+> AcquirerSettingsVipps PATCHAcquirersVippsFormat (string acceptVersion, string authorization, bool? active, string clientId, string clientSecret, string serialNumber, string accessTokenSubscriptionKey, string ecommerceSubscriptionKey, string orgno)
 
 Update Vipps acquirer settings
 
@@ -3191,7 +3191,7 @@ namespace Example
             try
             {
                 // Update Vipps acquirer settings
-                QuickPayProtocolV10AcquirerSettingsVipps result = apiInstance.PATCHAcquirersVippsFormat(acceptVersion, authorization, active, clientId, clientSecret, serialNumber, accessTokenSubscriptionKey, ecommerceSubscriptionKey, orgno);
+                AcquirerSettingsVipps result = apiInstance.PATCHAcquirersVippsFormat(acceptVersion, authorization, active, clientId, clientSecret, serialNumber, accessTokenSubscriptionKey, ecommerceSubscriptionKey, orgno);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3219,7 +3219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerSettingsVipps**](QuickPayProtocolV10AcquirerSettingsVipps.md)
+[**AcquirerSettingsVipps**](AcquirerSettingsVipps.md)
 
 ### Authorization
 
@@ -3234,7 +3234,7 @@ No authorization required
 
 <a name="postacquirersacquirertestformat"></a>
 # **POSTAcquirersAcquirerTestFormat**
-> QuickPayProtocolV10AcquirerTest POSTAcquirersAcquirerTestFormat (string acceptVersion, string authorization, string acquirer)
+> AcquirerTest POSTAcquirersAcquirerTestFormat (string acceptVersion, string authorization, string acquirer)
 
 Test payments via acquirer
 
@@ -3263,7 +3263,7 @@ namespace Example
             try
             {
                 // Test payments via acquirer
-                QuickPayProtocolV10AcquirerTest result = apiInstance.POSTAcquirersAcquirerTestFormat(acceptVersion, authorization, acquirer);
+                AcquirerTest result = apiInstance.POSTAcquirersAcquirerTestFormat(acceptVersion, authorization, acquirer);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3285,7 +3285,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10AcquirerTest**](QuickPayProtocolV10AcquirerTest.md)
+[**AcquirerTest**](AcquirerTest.md)
 
 ### Authorization
 

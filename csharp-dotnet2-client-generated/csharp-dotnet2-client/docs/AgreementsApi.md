@@ -81,7 +81,7 @@ No authorization required
 
 <a name="getagreementsformat"></a>
 # **GETAgreementsFormat**
-> QuickPayProtocolV10Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey, bool? support, string service, bool? me, int? accountId)
+> Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey, bool? support, string service, bool? me, int? accountId)
 
 Get agreements
 
@@ -118,7 +118,7 @@ namespace Example
             try
             {
                 // Get agreements
-                QuickPayProtocolV10Agreement result = apiInstance.GETAgreementsFormat(acceptVersion, authorization, page, pageSize, sortBy, sortDir, pageKey, support, service, me, accountId);
+                Agreement result = apiInstance.GETAgreementsFormat(acceptVersion, authorization, page, pageSize, sortBy, sortDir, pageKey, support, service, me, accountId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Agreement**](QuickPayProtocolV10Agreement.md)
+[**Agreement**](Agreement.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ No authorization required
 
 <a name="getagreementsidactivityformat"></a>
 # **GETAgreementsIdActivityFormat**
-> QuickPayProtocolV10Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page, int? pageSize, string sortBy, string sortDir)
+> Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page, int? pageSize, string sortBy, string sortDir)
 
 Get agreement activity
 
@@ -196,7 +196,7 @@ namespace Example
             try
             {
                 // Get agreement activity
-                QuickPayProtocolV10Activity result = apiInstance.GETAgreementsIdActivityFormat(acceptVersion, authorization, id, page, pageSize, sortBy, sortDir);
+                Activity result = apiInstance.GETAgreementsIdActivityFormat(acceptVersion, authorization, id, page, pageSize, sortBy, sortDir);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Activity**](QuickPayProtocolV10Activity.md)
+[**Activity**](Activity.md)
 
 ### Authorization
 
@@ -237,7 +237,7 @@ No authorization required
 
 <a name="getagreementsidformat"></a>
 # **GETAgreementsIdFormat**
-> QuickPayProtocolV10Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id)
+> Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id)
 
 Get agreement
 
@@ -266,7 +266,7 @@ namespace Example
             try
             {
                 // Get agreement
-                QuickPayProtocolV10Agreement result = apiInstance.GETAgreementsIdFormat(acceptVersion, authorization, id);
+                Agreement result = apiInstance.GETAgreementsIdFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -288,7 +288,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Agreement**](QuickPayProtocolV10Agreement.md)
+[**Agreement**](Agreement.md)
 
 ### Authorization
 
@@ -303,7 +303,7 @@ No authorization required
 
 <a name="patchagreementsidapikeyformat"></a>
 # **PATCHAgreementsIdApiKeyFormat**
-> QuickPayProtocolV10Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id)
+> Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id)
 
 Regenerate the API key for this agreement
 
@@ -332,7 +332,7 @@ namespace Example
             try
             {
                 // Regenerate the API key for this agreement
-                QuickPayProtocolV10Agreement result = apiInstance.PATCHAgreementsIdApiKeyFormat(acceptVersion, authorization, id);
+                Agreement result = apiInstance.PATCHAgreementsIdApiKeyFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Agreement**](QuickPayProtocolV10Agreement.md)
+[**Agreement**](Agreement.md)
 
 ### Authorization
 
@@ -369,7 +369,7 @@ No authorization required
 
 <a name="patchagreementsidformat"></a>
 # **PATCHAgreementsIdFormat**
-> QuickPayProtocolV10Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner, string description)
+> Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner, string description)
 
 Update agreement
 
@@ -401,7 +401,7 @@ namespace Example
             try
             {
                 // Update agreement
-                QuickPayProtocolV10Agreement result = apiInstance.PATCHAgreementsIdFormat(acceptVersion, authorization, id, ipRestrictionAddress, owner, description);
+                Agreement result = apiInstance.PATCHAgreementsIdFormat(acceptVersion, authorization, id, ipRestrictionAddress, owner, description);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -426,7 +426,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Agreement**](QuickPayProtocolV10Agreement.md)
+[**Agreement**](Agreement.md)
 
 ### Authorization
 
@@ -441,7 +441,7 @@ No authorization required
 
 <a name="postagreementsformat"></a>
 # **POSTAgreementsFormat**
-> QuickPayProtocolV10Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail, string systemUser, bool? owner, string description, bool? aclPermissionsGet, bool? aclPermissionsPost, bool? aclPermissionsPut, bool? aclPermissionsDelete, bool? aclPermissionsPatch)
+> Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail, string systemUser, bool? owner, string description, bool? aclPermissionsGet, bool? aclPermissionsPost, bool? aclPermissionsPut, bool? aclPermissionsDelete, bool? aclPermissionsPatch)
 
 Create agreement
 
@@ -480,7 +480,7 @@ namespace Example
             try
             {
                 // Create agreement
-                QuickPayProtocolV10Agreement result = apiInstance.POSTAgreementsFormat(acceptVersion, authorization, aclPermissionsResource, ipRestrictionAddress, userEmail, systemUser, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
+                Agreement result = apiInstance.POSTAgreementsFormat(acceptVersion, authorization, aclPermissionsResource, ipRestrictionAddress, userEmail, systemUser, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -512,7 +512,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Agreement**](QuickPayProtocolV10Agreement.md)
+[**Agreement**](Agreement.md)
 
 ### Authorization
 
@@ -527,7 +527,7 @@ No authorization required
 
 <a name="putagreementsidformat"></a>
 # **PUTAgreementsIdFormat**
-> QuickPayProtocolV10Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner, string description, bool? aclPermissionsGet, bool? aclPermissionsPost, bool? aclPermissionsPut, bool? aclPermissionsDelete, bool? aclPermissionsPatch)
+> Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner, string description, bool? aclPermissionsGet, bool? aclPermissionsPost, bool? aclPermissionsPut, bool? aclPermissionsDelete, bool? aclPermissionsPatch)
 
 Replace agreement
 
@@ -565,7 +565,7 @@ namespace Example
             try
             {
                 // Replace agreement
-                QuickPayProtocolV10Agreement result = apiInstance.PUTAgreementsIdFormat(acceptVersion, authorization, id, aclPermissionsResource, ipRestrictionAddress, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
+                Agreement result = apiInstance.PUTAgreementsIdFormat(acceptVersion, authorization, id, aclPermissionsResource, ipRestrictionAddress, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -596,7 +596,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Agreement**](QuickPayProtocolV10Agreement.md)
+[**Agreement**](Agreement.md)
 
 ### Authorization
 

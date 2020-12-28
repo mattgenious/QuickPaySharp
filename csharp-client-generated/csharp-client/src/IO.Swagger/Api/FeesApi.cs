@@ -61,8 +61,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer);
+        /// <returns>FeeFormula</returns>
+        FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer);
 
         /// <summary>
         /// Get fee formulas
@@ -74,8 +74,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FeeFormula</returns>
-        ApiResponse<QuickPayProtocolV10FeeFormula> GETFeesFormulasAcquirerFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer);
+        /// <returns>ApiResponse of FeeFormula</returns>
+        ApiResponse<FeeFormula> GETFeesFormulasAcquirerFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer);
         /// <summary>
         /// Get fee formula
         /// </summary>
@@ -87,8 +87,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod);
+        /// <returns>FeeFormula</returns>
+        FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod);
 
         /// <summary>
         /// Get fee formula
@@ -101,8 +101,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FeeFormula</returns>
-        ApiResponse<QuickPayProtocolV10FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod);
+        /// <returns>ApiResponse of FeeFormula</returns>
+        ApiResponse<FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
         /// Get all fee formulas
         /// </summary>
@@ -114,8 +114,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        QuickPayProtocolV10FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
+        /// <returns>FeeFormula</returns>
+        FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
 
         /// <summary>
         /// Get all fee formulas
@@ -128,8 +128,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FeeFormula</returns>
-        ApiResponse<QuickPayProtocolV10FeeFormula> GETFeesFormulasFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
+        /// <returns>ApiResponse of FeeFormula</returns>
+        ApiResponse<FeeFormula> GETFeesFormulasFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
         /// <summary>
         /// Update a fee formula
         /// </summary>
@@ -142,8 +142,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        QuickPayProtocolV10FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
+        /// <returns>FeeFormula</returns>
+        FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
 
         /// <summary>
         /// Update a fee formula
@@ -157,8 +157,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FeeFormula</returns>
-        ApiResponse<QuickPayProtocolV10FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
+        /// <returns>ApiResponse of FeeFormula</returns>
+        ApiResponse<FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
         /// <summary>
         /// Calculate fee
         /// </summary>
@@ -171,8 +171,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10CalculatedFee</returns>
-        QuickPayProtocolV10CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
+        /// <returns>CalculatedFee</returns>
+        CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
 
         /// <summary>
         /// Calculate fee
@@ -186,8 +186,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CalculatedFee</returns>
-        ApiResponse<QuickPayProtocolV10CalculatedFee> POSTFeesAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
+        /// <returns>ApiResponse of CalculatedFee</returns>
+        ApiResponse<CalculatedFee> POSTFeesAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]
         /// </summary>
@@ -205,8 +205,8 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10CalculatedFee</returns>
-        QuickPayProtocolV10CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
+        /// <returns>CalculatedFee</returns>
+        CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
 
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]
@@ -225,8 +225,8 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CalculatedFee</returns>
-        ApiResponse<QuickPayProtocolV10CalculatedFee> POSTFeesFormatWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
+        /// <returns>ApiResponse of CalculatedFee</returns>
+        ApiResponse<CalculatedFee> POSTFeesFormatWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -266,8 +266,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FeeFormula</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FeeFormula> GETFeesFormulasAcquirerFormatAsync (string acceptVersion, string authorization, string acquirer);
+        /// <returns>Task of FeeFormula</returns>
+        System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasAcquirerFormatAsync (string acceptVersion, string authorization, string acquirer);
 
         /// <summary>
         /// Get fee formulas
@@ -279,8 +279,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FeeFormula)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FeeFormula>> GETFeesFormulasAcquirerFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer);
+        /// <returns>Task of ApiResponse (FeeFormula)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasAcquirerFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer);
         /// <summary>
         /// Get fee formula
         /// </summary>
@@ -292,8 +292,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FeeFormula</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod);
+        /// <returns>Task of FeeFormula</returns>
+        System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod);
 
         /// <summary>
         /// Get fee formula
@@ -306,8 +306,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FeeFormula)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FeeFormula>> GETFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod);
+        /// <returns>Task of ApiResponse (FeeFormula)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
         /// Get all fee formulas
         /// </summary>
@@ -319,8 +319,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>Task of QuickPayProtocolV10FeeFormula</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FeeFormula> GETFeesFormulasFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
+        /// <returns>Task of FeeFormula</returns>
+        System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
 
         /// <summary>
         /// Get all fee formulas
@@ -333,8 +333,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FeeFormula)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FeeFormula>> GETFeesFormulasFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
+        /// <returns>Task of ApiResponse (FeeFormula)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
         /// <summary>
         /// Update a fee formula
         /// </summary>
@@ -347,8 +347,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10FeeFormula</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
+        /// <returns>Task of FeeFormula</returns>
+        System.Threading.Tasks.Task<FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
 
         /// <summary>
         /// Update a fee formula
@@ -362,8 +362,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FeeFormula)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FeeFormula>> PATCHFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
+        /// <returns>Task of ApiResponse (FeeFormula)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FeeFormula>> PATCHFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
         /// <summary>
         /// Calculate fee
         /// </summary>
@@ -376,8 +376,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10CalculatedFee</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10CalculatedFee> POSTFeesAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
+        /// <returns>Task of CalculatedFee</returns>
+        System.Threading.Tasks.Task<CalculatedFee> POSTFeesAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
 
         /// <summary>
         /// Calculate fee
@@ -391,8 +391,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CalculatedFee)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CalculatedFee>> POSTFeesAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
+        /// <returns>Task of ApiResponse (CalculatedFee)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]
         /// </summary>
@@ -410,8 +410,8 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10CalculatedFee</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10CalculatedFee> POSTFeesFormatAsync (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
+        /// <returns>Task of CalculatedFee</returns>
+        System.Threading.Tasks.Task<CalculatedFee> POSTFeesFormatAsync (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
 
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]
@@ -430,8 +430,8 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CalculatedFee)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CalculatedFee>> POSTFeesFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
+        /// <returns>Task of ApiResponse (CalculatedFee)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
         #endregion Asynchronous Operations
     }
 
@@ -712,10 +712,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        public QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer)
+        /// <returns>FeeFormula</returns>
+        public FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer)
         {
-             ApiResponse<QuickPayProtocolV10FeeFormula> localVarResponse = GETFeesFormulasAcquirerFormatWithHttpInfo(acceptVersion, authorization, acquirer);
+             ApiResponse<FeeFormula> localVarResponse = GETFeesFormulasAcquirerFormatWithHttpInfo(acceptVersion, authorization, acquirer);
              return localVarResponse.Data;
         }
 
@@ -726,8 +726,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FeeFormula</returns>
-        public ApiResponse< QuickPayProtocolV10FeeFormula > GETFeesFormulasAcquirerFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer)
+        /// <returns>ApiResponse of FeeFormula</returns>
+        public ApiResponse< FeeFormula > GETFeesFormulasAcquirerFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -781,9 +781,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FeeFormula>(localVarStatusCode,
+            return new ApiResponse<FeeFormula>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FeeFormula)));
+                (FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeeFormula)));
         }
 
         /// <summary>
@@ -793,10 +793,10 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FeeFormula</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FeeFormula> GETFeesFormulasAcquirerFormatAsync (string acceptVersion, string authorization, string acquirer)
+        /// <returns>Task of FeeFormula</returns>
+        public async System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasAcquirerFormatAsync (string acceptVersion, string authorization, string acquirer)
         {
-             ApiResponse<QuickPayProtocolV10FeeFormula> localVarResponse = await GETFeesFormulasAcquirerFormatAsyncWithHttpInfo(acceptVersion, authorization, acquirer);
+             ApiResponse<FeeFormula> localVarResponse = await GETFeesFormulasAcquirerFormatAsyncWithHttpInfo(acceptVersion, authorization, acquirer);
              return localVarResponse.Data;
 
         }
@@ -808,8 +808,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FeeFormula)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FeeFormula>> GETFeesFormulasAcquirerFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer)
+        /// <returns>Task of ApiResponse (FeeFormula)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasAcquirerFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -863,9 +863,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FeeFormula>(localVarStatusCode,
+            return new ApiResponse<FeeFormula>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FeeFormula)));
+                (FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeeFormula)));
         }
 
         /// <summary>
@@ -876,10 +876,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        public QuickPayProtocolV10FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
+        /// <returns>FeeFormula</returns>
+        public FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
-             ApiResponse<QuickPayProtocolV10FeeFormula> localVarResponse = GETFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod);
+             ApiResponse<FeeFormula> localVarResponse = GETFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod);
              return localVarResponse.Data;
         }
 
@@ -891,8 +891,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FeeFormula</returns>
-        public ApiResponse< QuickPayProtocolV10FeeFormula > GETFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod)
+        /// <returns>ApiResponse of FeeFormula</returns>
+        public ApiResponse< FeeFormula > GETFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -950,9 +950,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FeeFormula>(localVarStatusCode,
+            return new ApiResponse<FeeFormula>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FeeFormula)));
+                (FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeeFormula)));
         }
 
         /// <summary>
@@ -963,10 +963,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10FeeFormula</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod)
+        /// <returns>Task of FeeFormula</returns>
+        public async System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
-             ApiResponse<QuickPayProtocolV10FeeFormula> localVarResponse = await GETFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod);
+             ApiResponse<FeeFormula> localVarResponse = await GETFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod);
              return localVarResponse.Data;
 
         }
@@ -979,8 +979,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FeeFormula)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FeeFormula>> GETFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod)
+        /// <returns>Task of ApiResponse (FeeFormula)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1038,9 +1038,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FeeFormula>(localVarStatusCode,
+            return new ApiResponse<FeeFormula>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FeeFormula)));
+                (FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeeFormula)));
         }
 
         /// <summary>
@@ -1051,10 +1051,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        public QuickPayProtocolV10FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
+        /// <returns>FeeFormula</returns>
+        public FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
         {
-             ApiResponse<QuickPayProtocolV10FeeFormula> localVarResponse = GETFeesFormulasFormatWithHttpInfo(acceptVersion, authorization, page, pageSize);
+             ApiResponse<FeeFormula> localVarResponse = GETFeesFormulasFormatWithHttpInfo(acceptVersion, authorization, page, pageSize);
              return localVarResponse.Data;
         }
 
@@ -1066,8 +1066,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FeeFormula</returns>
-        public ApiResponse< QuickPayProtocolV10FeeFormula > GETFeesFormulasFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
+        /// <returns>ApiResponse of FeeFormula</returns>
+        public ApiResponse< FeeFormula > GETFeesFormulasFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1119,9 +1119,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FeeFormula>(localVarStatusCode,
+            return new ApiResponse<FeeFormula>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FeeFormula)));
+                (FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeeFormula)));
         }
 
         /// <summary>
@@ -1132,10 +1132,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>Task of QuickPayProtocolV10FeeFormula</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FeeFormula> GETFeesFormulasFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
+        /// <returns>Task of FeeFormula</returns>
+        public async System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
         {
-             ApiResponse<QuickPayProtocolV10FeeFormula> localVarResponse = await GETFeesFormulasFormatAsyncWithHttpInfo(acceptVersion, authorization, page, pageSize);
+             ApiResponse<FeeFormula> localVarResponse = await GETFeesFormulasFormatAsyncWithHttpInfo(acceptVersion, authorization, page, pageSize);
              return localVarResponse.Data;
 
         }
@@ -1148,8 +1148,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FeeFormula)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FeeFormula>> GETFeesFormulasFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
+        /// <returns>Task of ApiResponse (FeeFormula)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1201,9 +1201,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FeeFormula>(localVarStatusCode,
+            return new ApiResponse<FeeFormula>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FeeFormula)));
+                (FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeeFormula)));
         }
 
         /// <summary>
@@ -1215,10 +1215,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10FeeFormula</returns>
-        public QuickPayProtocolV10FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
+        /// <returns>FeeFormula</returns>
+        public FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
         {
-             ApiResponse<QuickPayProtocolV10FeeFormula> localVarResponse = PATCHFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod, formula);
+             ApiResponse<FeeFormula> localVarResponse = PATCHFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod, formula);
              return localVarResponse.Data;
         }
 
@@ -1231,8 +1231,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FeeFormula</returns>
-        public ApiResponse< QuickPayProtocolV10FeeFormula > PATCHFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
+        /// <returns>ApiResponse of FeeFormula</returns>
+        public ApiResponse< FeeFormula > PATCHFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1292,9 +1292,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FeeFormula>(localVarStatusCode,
+            return new ApiResponse<FeeFormula>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FeeFormula)));
+                (FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeeFormula)));
         }
 
         /// <summary>
@@ -1306,10 +1306,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10FeeFormula</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
+        /// <returns>Task of FeeFormula</returns>
+        public async System.Threading.Tasks.Task<FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
         {
-             ApiResponse<QuickPayProtocolV10FeeFormula> localVarResponse = await PATCHFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod, formula);
+             ApiResponse<FeeFormula> localVarResponse = await PATCHFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod, formula);
              return localVarResponse.Data;
 
         }
@@ -1323,8 +1323,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FeeFormula)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FeeFormula>> PATCHFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
+        /// <returns>Task of ApiResponse (FeeFormula)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FeeFormula>> PATCHFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1384,9 +1384,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FeeFormula>(localVarStatusCode,
+            return new ApiResponse<FeeFormula>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FeeFormula)));
+                (FeeFormula) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FeeFormula)));
         }
 
         /// <summary>
@@ -1398,10 +1398,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10CalculatedFee</returns>
-        public QuickPayProtocolV10CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
+        /// <returns>CalculatedFee</returns>
+        public CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
-             ApiResponse<QuickPayProtocolV10CalculatedFee> localVarResponse = POSTFeesAcquirerPaymentMethodFormatWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod, amount);
+             ApiResponse<CalculatedFee> localVarResponse = POSTFeesAcquirerPaymentMethodFormatWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod, amount);
              return localVarResponse.Data;
         }
 
@@ -1414,8 +1414,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CalculatedFee</returns>
-        public ApiResponse< QuickPayProtocolV10CalculatedFee > POSTFeesAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
+        /// <returns>ApiResponse of CalculatedFee</returns>
+        public ApiResponse< CalculatedFee > POSTFeesAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1478,9 +1478,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CalculatedFee>(localVarStatusCode,
+            return new ApiResponse<CalculatedFee>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CalculatedFee) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CalculatedFee)));
+                (CalculatedFee) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CalculatedFee)));
         }
 
         /// <summary>
@@ -1492,10 +1492,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10CalculatedFee</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10CalculatedFee> POSTFeesAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
+        /// <returns>Task of CalculatedFee</returns>
+        public async System.Threading.Tasks.Task<CalculatedFee> POSTFeesAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
-             ApiResponse<QuickPayProtocolV10CalculatedFee> localVarResponse = await POSTFeesAcquirerPaymentMethodFormatAsyncWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod, amount);
+             ApiResponse<CalculatedFee> localVarResponse = await POSTFeesAcquirerPaymentMethodFormatAsyncWithHttpInfo(acceptVersion, authorization, acquirer, paymentMethod, amount);
              return localVarResponse.Data;
 
         }
@@ -1509,8 +1509,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
         /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
         /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CalculatedFee)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CalculatedFee>> POSTFeesAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
+        /// <returns>Task of ApiResponse (CalculatedFee)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1573,9 +1573,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CalculatedFee>(localVarStatusCode,
+            return new ApiResponse<CalculatedFee>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CalculatedFee) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CalculatedFee)));
+                (CalculatedFee) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CalculatedFee)));
         }
 
         /// <summary>
@@ -1592,10 +1592,10 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10CalculatedFee</returns>
-        public QuickPayProtocolV10CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
+        /// <returns>CalculatedFee</returns>
+        public CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
         {
-             ApiResponse<QuickPayProtocolV10CalculatedFee> localVarResponse = POSTFeesFormatWithHttpInfo(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
+             ApiResponse<CalculatedFee> localVarResponse = POSTFeesFormatWithHttpInfo(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
              return localVarResponse.Data;
         }
 
@@ -1613,8 +1613,8 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10CalculatedFee</returns>
-        public ApiResponse< QuickPayProtocolV10CalculatedFee > POSTFeesFormatWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
+        /// <returns>ApiResponse of CalculatedFee</returns>
+        public ApiResponse< CalculatedFee > POSTFeesFormatWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1676,9 +1676,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CalculatedFee>(localVarStatusCode,
+            return new ApiResponse<CalculatedFee>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CalculatedFee) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CalculatedFee)));
+                (CalculatedFee) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CalculatedFee)));
         }
 
         /// <summary>
@@ -1695,10 +1695,10 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10CalculatedFee</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10CalculatedFee> POSTFeesFormatAsync (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
+        /// <returns>Task of CalculatedFee</returns>
+        public async System.Threading.Tasks.Task<CalculatedFee> POSTFeesFormatAsync (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
         {
-             ApiResponse<QuickPayProtocolV10CalculatedFee> localVarResponse = await POSTFeesFormatAsyncWithHttpInfo(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
+             ApiResponse<CalculatedFee> localVarResponse = await POSTFeesFormatAsyncWithHttpInfo(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
              return localVarResponse.Data;
 
         }
@@ -1717,8 +1717,8 @@ namespace IO.Swagger.Api
         /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
         /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10CalculatedFee)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10CalculatedFee>> POSTFeesFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
+        /// <returns>Task of ApiResponse (CalculatedFee)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1780,9 +1780,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10CalculatedFee>(localVarStatusCode,
+            return new ApiResponse<CalculatedFee>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10CalculatedFee) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10CalculatedFee)));
+                (CalculatedFee) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CalculatedFee)));
         }
 
     }

@@ -83,7 +83,7 @@ namespace IO.Swagger.Test
             //string sortDir = null;
             //string pageKey = null;
             //var response = instance.GETActivityFormat(acceptVersion, authorization, userId, targetType, targetId, support, page, pageSize, sortBy, sortDir, pageKey);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Activity> (response, "response is QuickPayProtocolV10Activity");
+            //Assert.IsInstanceOf<Activity> (response, "response is Activity");
         }
         
         /// <summary>
@@ -97,7 +97,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //string id = null;
             //var response = instance.GETActivityIdFormat(acceptVersion, authorization, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Activity> (response, "response is QuickPayProtocolV10Activity");
+            //Assert.IsInstanceOf<Activity> (response, "response is Activity");
         }
         
     }

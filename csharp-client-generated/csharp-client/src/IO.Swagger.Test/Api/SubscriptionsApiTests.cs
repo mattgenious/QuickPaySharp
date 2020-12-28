@@ -110,7 +110,7 @@ namespace IO.Swagger.Test
             //string sortDir = null;
             //string pageKey = null;
             //var response = instance.GETSubscriptionsFormat(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, groupId, fraudSuspected, expired, page, pageSize, sortBy, sortDir, pageKey);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Subscription> (response, "response is QuickPayProtocolV10Subscription");
+            //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
         
         /// <summary>
@@ -125,7 +125,7 @@ namespace IO.Swagger.Test
             //int? id = null;
             //int? operationsSize = null;
             //var response = instance.GETSubscriptionsIdFormat(acceptVersion, authorization, id, operationsSize);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Subscription> (response, "response is QuickPayProtocolV10Subscription");
+            //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
         
         /// <summary>
@@ -140,7 +140,7 @@ namespace IO.Swagger.Test
             //int? id = null;
             //int? operationId = null;
             //var response = instance.GETSubscriptionsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Operation> (response, "response is QuickPayProtocolV10Operation");
+            //Assert.IsInstanceOf<Operation> (response, "response is Operation");
         }
         
         /// <summary>
@@ -164,7 +164,7 @@ namespace IO.Swagger.Test
             //string sortBy = null;
             //string sortDir = null;
             //var response = instance.GETSubscriptionsIdPaymentsFormat(acceptVersion, authorization, id, accepted, dateYear, dateMonth, dateDay, dateHour, dateMinute, page, pageSize, sortBy, sortDir);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Payment> (response, "response is QuickPayProtocolV10Payment");
+            //Assert.IsInstanceOf<Payment> (response, "response is Payment");
         }
         
         /// <summary>
@@ -210,7 +210,7 @@ namespace IO.Swagger.Test
             //string shippingAddressEmail = null;
             //Dictionary<string, string> variables = null;
             //var response = instance.PATCHSubscriptionsIdFormat(acceptVersion, authorization, id, deadlineAt, groupIds, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Subscription> (response, "response is QuickPayProtocolV10Subscription");
+            //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
         
         /// <summary>
@@ -226,7 +226,7 @@ namespace IO.Swagger.Test
             //int? operationId = null;
             //bool? pending = null;
             //var response = instance.PATCHSubscriptionsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId, pending);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Operation> (response, "response is QuickPayProtocolV10Operation");
+            //Assert.IsInstanceOf<Operation> (response, "response is Operation");
         }
         
         /// <summary>
@@ -276,7 +276,7 @@ namespace IO.Swagger.Test
             //string shopsystemName = null;
             //string shopsystemVersion = null;
             //var response = instance.POSTSubscriptionsFormat(acceptVersion, authorization, orderId, currency, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables, brandingId, groupIds, textOnStatement, shopsystemName, shopsystemVersion);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Subscription> (response, "response is QuickPayProtocolV10Subscription");
+            //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
         
         /// <summary>
@@ -316,7 +316,7 @@ namespace IO.Swagger.Test
             //string customerIp = null;
             //Dictionary<string, string> extras = null;
             //var response = instance.POSTSubscriptionsIdAuthorizeFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Subscription> (response, "response is QuickPayProtocolV10Subscription");
+            //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
         
         /// <summary>
@@ -332,7 +332,7 @@ namespace IO.Swagger.Test
             //string quickPayCallbackUrl = null;
             //bool? synchronized = null;
             //var response = instance.POSTSubscriptionsIdCancelFormat(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Subscription> (response, "response is QuickPayProtocolV10Subscription");
+            //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
         
         /// <summary>
@@ -348,7 +348,7 @@ namespace IO.Swagger.Test
             //string quickPayCallbackUrl = null;
             //string description = null;
             //var response = instance.POSTSubscriptionsIdFraudReportFormat(acceptVersion, authorization, id, quickPayCallbackUrl, description);
-            //Assert.IsInstanceOf<QuickPayProtocolV10FraudReport> (response, "response is QuickPayProtocolV10FraudReport");
+            //Assert.IsInstanceOf<FraudReport> (response, "response is FraudReport");
         }
         
         /// <summary>
@@ -370,7 +370,7 @@ namespace IO.Swagger.Test
             //bool? zeroAuth = null;
             //string textOnStatement = null;
             //var response = instance.POSTSubscriptionsIdRecurringFormat(acceptVersion, authorization, id, amount, orderId, quickPayCallbackUrl, synchronized, autoCapture, autofee, zeroAuth, textOnStatement);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Payment> (response, "response is QuickPayProtocolV10Payment");
+            //Assert.IsInstanceOf<Payment> (response, "response is Payment");
         }
         
         /// <summary>
@@ -389,7 +389,7 @@ namespace IO.Swagger.Test
             //string customerIp = null;
             //Dictionary<string, string> extras = null;
             //var response = instance.POSTSubscriptionsIdSessionFormat(acceptVersion, authorization, id, quickPayCallbackUrl, acquirer, autofee, customerIp, extras);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Subscription> (response, "response is QuickPayProtocolV10Subscription");
+            //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
         
         /// <summary>
@@ -421,7 +421,7 @@ namespace IO.Swagger.Test
             //bool? invoiceAddressSelection = null;
             //bool? shippingAddressSelection = null;
             //var response = instance.PUTSubscriptionsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection);
-            //Assert.IsInstanceOf<QuickPayProtocolV10PaymentLinkUrl> (response, "response is QuickPayProtocolV10PaymentLinkUrl");
+            //Assert.IsInstanceOf<PaymentLinkUrl> (response, "response is PaymentLinkUrl");
         }
         
     }

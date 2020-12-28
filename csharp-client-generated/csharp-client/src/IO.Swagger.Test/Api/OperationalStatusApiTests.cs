@@ -78,7 +78,7 @@ namespace IO.Swagger.Test
             //string sortBy = null;
             //string sortDir = null;
             //var response = instance.GETOperationalStatusAcquirersFormat(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerStatus> (response, "response is QuickPayProtocolV10AcquirerStatus");
+            //Assert.IsInstanceOf<AcquirerStatus> (response, "response is AcquirerStatus");
         }
         
     }

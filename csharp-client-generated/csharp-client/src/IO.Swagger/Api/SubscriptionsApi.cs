@@ -80,8 +80,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        QuickPayProtocolV10Subscription GETSubscriptionsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
+        /// <returns>Subscription</returns>
+        Subscription GETSubscriptionsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
 
         /// <summary>
         /// Get subscriptions
@@ -114,8 +114,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        ApiResponse<QuickPayProtocolV10Subscription> GETSubscriptionsFormatWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
+        /// <returns>ApiResponse of Subscription</returns>
+        ApiResponse<Subscription> GETSubscriptionsFormatWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
         /// <summary>
         /// Get subscription
         /// </summary>
@@ -127,8 +127,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        QuickPayProtocolV10Subscription GETSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null);
+        /// <returns>Subscription</returns>
+        Subscription GETSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null);
 
         /// <summary>
         /// Get subscription
@@ -141,8 +141,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        ApiResponse<QuickPayProtocolV10Subscription> GETSubscriptionsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null);
+        /// <returns>ApiResponse of Subscription</returns>
+        ApiResponse<Subscription> GETSubscriptionsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null);
         /// <summary>
         /// Get Operation
         /// </summary>
@@ -154,8 +154,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Operation</returns>
-        QuickPayProtocolV10Operation GETSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId);
+        /// <returns>Operation</returns>
+        Operation GETSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId);
 
         /// <summary>
         /// Get Operation
@@ -168,8 +168,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Operation</returns>
-        ApiResponse<QuickPayProtocolV10Operation> GETSubscriptionsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId);
+        /// <returns>ApiResponse of Operation</returns>
+        ApiResponse<Operation> GETSubscriptionsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId);
         /// <summary>
         /// Get all subscription payments
         /// </summary>
@@ -190,8 +190,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to payment_id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>QuickPayProtocolV10Payment</returns>
-        QuickPayProtocolV10Payment GETSubscriptionsIdPaymentsFormat (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Payment</returns>
+        Payment GETSubscriptionsIdPaymentsFormat (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
         /// Get all subscription payments
@@ -213,8 +213,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to payment_id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Payment</returns>
-        ApiResponse<QuickPayProtocolV10Payment> GETSubscriptionsIdPaymentsFormatWithHttpInfo (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>ApiResponse of Payment</returns>
+        ApiResponse<Payment> GETSubscriptionsIdPaymentsFormatWithHttpInfo (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
         /// Update subscription
         /// </summary>
@@ -257,8 +257,8 @@ namespace IO.Swagger.Api
         /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        QuickPayProtocolV10Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null);
+        /// <returns>Subscription</returns>
+        Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null);
 
         /// <summary>
         /// Update subscription
@@ -302,8 +302,8 @@ namespace IO.Swagger.Api
         /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        ApiResponse<QuickPayProtocolV10Subscription> PATCHSubscriptionsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null);
+        /// <returns>ApiResponse of Subscription</returns>
+        ApiResponse<Subscription> PATCHSubscriptionsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null);
         /// <summary>
         /// Update operation
         /// </summary>
@@ -316,8 +316,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Operation</returns>
-        QuickPayProtocolV10Operation PATCHSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
+        /// <returns>Operation</returns>
+        Operation PATCHSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
 
         /// <summary>
         /// Update operation
@@ -331,8 +331,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Operation</returns>
-        ApiResponse<QuickPayProtocolV10Operation> PATCHSubscriptionsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
+        /// <returns>ApiResponse of Operation</returns>
+        ApiResponse<Operation> PATCHSubscriptionsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
         /// <summary>
         /// Create subscription
         /// </summary>
@@ -379,8 +379,8 @@ namespace IO.Swagger.Api
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        QuickPayProtocolV10Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null);
+        /// <returns>Subscription</returns>
+        Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null);
 
         /// <summary>
         /// Create subscription
@@ -428,8 +428,8 @@ namespace IO.Swagger.Api
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        ApiResponse<QuickPayProtocolV10Subscription> POSTSubscriptionsFormatWithHttpInfo (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null);
+        /// <returns>ApiResponse of Subscription</returns>
+        ApiResponse<Subscription> POSTSubscriptionsFormatWithHttpInfo (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null);
         /// <summary>
         /// Authorize a subscription
         /// </summary>
@@ -466,8 +466,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        QuickPayProtocolV10Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Subscription</returns>
+        Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
 
         /// <summary>
         /// Authorize a subscription
@@ -505,8 +505,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        ApiResponse<QuickPayProtocolV10Subscription> POSTSubscriptionsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>ApiResponse of Subscription</returns>
+        ApiResponse<Subscription> POSTSubscriptionsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
         /// <summary>
         /// Cancel subscription
         /// </summary>
@@ -519,8 +519,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        QuickPayProtocolV10Subscription POSTSubscriptionsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null);
+        /// <returns>Subscription</returns>
+        Subscription POSTSubscriptionsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null);
 
         /// <summary>
         /// Cancel subscription
@@ -534,8 +534,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        ApiResponse<QuickPayProtocolV10Subscription> POSTSubscriptionsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null);
+        /// <returns>ApiResponse of Subscription</returns>
+        ApiResponse<Subscription> POSTSubscriptionsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null);
         /// <summary>
         /// Create fraud confirmation report
         /// </summary>
@@ -548,8 +548,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>QuickPayProtocolV10FraudReport</returns>
-        QuickPayProtocolV10FraudReport POSTSubscriptionsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null);
+        /// <returns>FraudReport</returns>
+        FraudReport POSTSubscriptionsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null);
 
         /// <summary>
         /// Create fraud confirmation report
@@ -563,8 +563,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudReport</returns>
-        ApiResponse<QuickPayProtocolV10FraudReport> POSTSubscriptionsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null);
+        /// <returns>ApiResponse of FraudReport</returns>
+        ApiResponse<FraudReport> POSTSubscriptionsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null);
         /// <summary>
         /// Create subscription recurring payment
         /// </summary>
@@ -583,8 +583,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  (optional)</param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Payment</returns>
-        QuickPayProtocolV10Payment POSTSubscriptionsIdRecurringFormat (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null);
+        /// <returns>Payment</returns>
+        Payment POSTSubscriptionsIdRecurringFormat (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null);
 
         /// <summary>
         /// Create subscription recurring payment
@@ -604,8 +604,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  (optional)</param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Payment</returns>
-        ApiResponse<QuickPayProtocolV10Payment> POSTSubscriptionsIdRecurringFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null);
+        /// <returns>ApiResponse of Payment</returns>
+        ApiResponse<Payment> POSTSubscriptionsIdRecurringFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null);
         /// <summary>
         /// Create subscription session
         /// </summary>
@@ -621,8 +621,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        QuickPayProtocolV10Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Subscription</returns>
+        Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null);
 
         /// <summary>
         /// Create subscription session
@@ -639,8 +639,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        ApiResponse<QuickPayProtocolV10Subscription> POSTSubscriptionsIdSessionFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>ApiResponse of Subscription</returns>
+        ApiResponse<Subscription> POSTSubscriptionsIdSessionFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null);
         /// <summary>
         /// Create or update a payment link
         /// </summary>
@@ -669,8 +669,8 @@ namespace IO.Swagger.Api
         /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  (optional)</param>
         /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10PaymentLinkUrl</returns>
-        QuickPayProtocolV10PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null);
+        /// <returns>PaymentLinkUrl</returns>
+        PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null);
 
         /// <summary>
         /// Create or update a payment link
@@ -700,8 +700,8 @@ namespace IO.Swagger.Api
         /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  (optional)</param>
         /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10PaymentLinkUrl</returns>
-        ApiResponse<QuickPayProtocolV10PaymentLinkUrl> PUTSubscriptionsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null);
+        /// <returns>ApiResponse of PaymentLinkUrl</returns>
+        ApiResponse<PaymentLinkUrl> PUTSubscriptionsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -760,8 +760,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> GETSubscriptionsFormatAsync (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
+        /// <returns>Task of Subscription</returns>
+        System.Threading.Tasks.Task<Subscription> GETSubscriptionsFormatAsync (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
 
         /// <summary>
         /// Get subscriptions
@@ -794,8 +794,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> GETSubscriptionsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Subscription>> GETSubscriptionsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
         /// <summary>
         /// Get subscription
         /// </summary>
@@ -807,8 +807,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> GETSubscriptionsIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationsSize = null);
+        /// <returns>Task of Subscription</returns>
+        System.Threading.Tasks.Task<Subscription> GETSubscriptionsIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationsSize = null);
 
         /// <summary>
         /// Get subscription
@@ -821,8 +821,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> GETSubscriptionsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null);
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Subscription>> GETSubscriptionsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null);
         /// <summary>
         /// Get Operation
         /// </summary>
@@ -834,8 +834,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Operation</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Operation> GETSubscriptionsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId);
+        /// <returns>Task of Operation</returns>
+        System.Threading.Tasks.Task<Operation> GETSubscriptionsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId);
 
         /// <summary>
         /// Get Operation
@@ -848,8 +848,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Operation)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Operation>> GETSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId);
+        /// <returns>Task of ApiResponse (Operation)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Operation>> GETSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId);
         /// <summary>
         /// Get all subscription payments
         /// </summary>
@@ -870,8 +870,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to payment_id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>Task of QuickPayProtocolV10Payment</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Payment> GETSubscriptionsIdPaymentsFormatAsync (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Task of Payment</returns>
+        System.Threading.Tasks.Task<Payment> GETSubscriptionsIdPaymentsFormatAsync (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
         /// Get all subscription payments
@@ -893,8 +893,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to payment_id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Payment)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Payment>> GETSubscriptionsIdPaymentsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
+        /// <returns>Task of ApiResponse (Payment)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Payment>> GETSubscriptionsIdPaymentsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
         /// Update subscription
         /// </summary>
@@ -937,8 +937,8 @@ namespace IO.Swagger.Api
         /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> PATCHSubscriptionsIdFormatAsync (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null);
+        /// <returns>Task of Subscription</returns>
+        System.Threading.Tasks.Task<Subscription> PATCHSubscriptionsIdFormatAsync (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null);
 
         /// <summary>
         /// Update subscription
@@ -982,8 +982,8 @@ namespace IO.Swagger.Api
         /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> PATCHSubscriptionsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null);
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Subscription>> PATCHSubscriptionsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null);
         /// <summary>
         /// Update operation
         /// </summary>
@@ -996,8 +996,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Operation</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Operation> PATCHSubscriptionsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
+        /// <returns>Task of Operation</returns>
+        System.Threading.Tasks.Task<Operation> PATCHSubscriptionsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
 
         /// <summary>
         /// Update operation
@@ -1011,8 +1011,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Operation)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Operation>> PATCHSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
+        /// <returns>Task of ApiResponse (Operation)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Operation>> PATCHSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
         /// <summary>
         /// Create subscription
         /// </summary>
@@ -1059,8 +1059,8 @@ namespace IO.Swagger.Api
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> POSTSubscriptionsFormatAsync (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null);
+        /// <returns>Task of Subscription</returns>
+        System.Threading.Tasks.Task<Subscription> POSTSubscriptionsFormatAsync (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null);
 
         /// <summary>
         /// Create subscription
@@ -1108,8 +1108,8 @@ namespace IO.Swagger.Api
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> POSTSubscriptionsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null);
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Subscription>> POSTSubscriptionsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null);
         /// <summary>
         /// Authorize a subscription
         /// </summary>
@@ -1146,8 +1146,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> POSTSubscriptionsIdAuthorizeFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Task of Subscription</returns>
+        System.Threading.Tasks.Task<Subscription> POSTSubscriptionsIdAuthorizeFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
 
         /// <summary>
         /// Authorize a subscription
@@ -1185,8 +1185,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> POSTSubscriptionsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Subscription>> POSTSubscriptionsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
         /// <summary>
         /// Cancel subscription
         /// </summary>
@@ -1199,8 +1199,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> POSTSubscriptionsIdCancelFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null);
+        /// <returns>Task of Subscription</returns>
+        System.Threading.Tasks.Task<Subscription> POSTSubscriptionsIdCancelFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null);
 
         /// <summary>
         /// Cancel subscription
@@ -1214,8 +1214,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> POSTSubscriptionsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null);
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Subscription>> POSTSubscriptionsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null);
         /// <summary>
         /// Create fraud confirmation report
         /// </summary>
@@ -1228,8 +1228,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10FraudReport</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10FraudReport> POSTSubscriptionsIdFraudReportFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null);
+        /// <returns>Task of FraudReport</returns>
+        System.Threading.Tasks.Task<FraudReport> POSTSubscriptionsIdFraudReportFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null);
 
         /// <summary>
         /// Create fraud confirmation report
@@ -1243,8 +1243,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudReport)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudReport>> POSTSubscriptionsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null);
+        /// <returns>Task of ApiResponse (FraudReport)</returns>
+        System.Threading.Tasks.Task<ApiResponse<FraudReport>> POSTSubscriptionsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null);
         /// <summary>
         /// Create subscription recurring payment
         /// </summary>
@@ -1263,8 +1263,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  (optional)</param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Payment</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Payment> POSTSubscriptionsIdRecurringFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null);
+        /// <returns>Task of Payment</returns>
+        System.Threading.Tasks.Task<Payment> POSTSubscriptionsIdRecurringFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null);
 
         /// <summary>
         /// Create subscription recurring payment
@@ -1284,8 +1284,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  (optional)</param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Payment)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Payment>> POSTSubscriptionsIdRecurringFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null);
+        /// <returns>Task of ApiResponse (Payment)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Payment>> POSTSubscriptionsIdRecurringFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null);
         /// <summary>
         /// Create subscription session
         /// </summary>
@@ -1301,8 +1301,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> POSTSubscriptionsIdSessionFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Task of Subscription</returns>
+        System.Threading.Tasks.Task<Subscription> POSTSubscriptionsIdSessionFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null);
 
         /// <summary>
         /// Create subscription session
@@ -1319,8 +1319,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> POSTSubscriptionsIdSessionFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null);
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Subscription>> POSTSubscriptionsIdSessionFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null);
         /// <summary>
         /// Create or update a payment link
         /// </summary>
@@ -1349,8 +1349,8 @@ namespace IO.Swagger.Api
         /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  (optional)</param>
         /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10PaymentLinkUrl</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10PaymentLinkUrl> PUTSubscriptionsIdLinkFormatAsync (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null);
+        /// <returns>Task of PaymentLinkUrl</returns>
+        System.Threading.Tasks.Task<PaymentLinkUrl> PUTSubscriptionsIdLinkFormatAsync (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null);
 
         /// <summary>
         /// Create or update a payment link
@@ -1380,8 +1380,8 @@ namespace IO.Swagger.Api
         /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  (optional)</param>
         /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10PaymentLinkUrl)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10PaymentLinkUrl>> PUTSubscriptionsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null);
+        /// <returns>Task of ApiResponse (PaymentLinkUrl)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PaymentLinkUrl>> PUTSubscriptionsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null);
         #endregion Asynchronous Operations
     }
 
@@ -1671,10 +1671,10 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        public QuickPayProtocolV10Subscription GETSubscriptionsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+        /// <returns>Subscription</returns>
+        public Subscription GETSubscriptionsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = GETSubscriptionsFormatWithHttpInfo(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, groupId, fraudSuspected, expired, page, pageSize, sortBy, sortDir, pageKey);
+             ApiResponse<Subscription> localVarResponse = GETSubscriptionsFormatWithHttpInfo(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, groupId, fraudSuspected, expired, page, pageSize, sortBy, sortDir, pageKey);
              return localVarResponse.Data;
         }
 
@@ -1706,8 +1706,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        public ApiResponse< QuickPayProtocolV10Subscription > GETSubscriptionsFormatWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+        /// <returns>ApiResponse of Subscription</returns>
+        public ApiResponse< Subscription > GETSubscriptionsFormatWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1779,9 +1779,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -1812,10 +1812,10 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> GETSubscriptionsFormatAsync (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+        /// <returns>Task of Subscription</returns>
+        public async System.Threading.Tasks.Task<Subscription> GETSubscriptionsFormatAsync (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = await GETSubscriptionsFormatAsyncWithHttpInfo(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, groupId, fraudSuspected, expired, page, pageSize, sortBy, sortDir, pageKey);
+             ApiResponse<Subscription> localVarResponse = await GETSubscriptionsFormatAsyncWithHttpInfo(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, groupId, fraudSuspected, expired, page, pageSize, sortBy, sortDir, pageKey);
              return localVarResponse.Data;
 
         }
@@ -1848,8 +1848,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> GETSubscriptionsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Subscription>> GETSubscriptionsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1921,9 +1921,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -1934,10 +1934,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        public QuickPayProtocolV10Subscription GETSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
+        /// <returns>Subscription</returns>
+        public Subscription GETSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = GETSubscriptionsIdFormatWithHttpInfo(acceptVersion, authorization, id, operationsSize);
+             ApiResponse<Subscription> localVarResponse = GETSubscriptionsIdFormatWithHttpInfo(acceptVersion, authorization, id, operationsSize);
              return localVarResponse.Data;
         }
 
@@ -1949,8 +1949,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        public ApiResponse< QuickPayProtocolV10Subscription > GETSubscriptionsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null)
+        /// <returns>ApiResponse of Subscription</returns>
+        public ApiResponse< Subscription > GETSubscriptionsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2005,9 +2005,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -2018,10 +2018,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> GETSubscriptionsIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationsSize = null)
+        /// <returns>Task of Subscription</returns>
+        public async System.Threading.Tasks.Task<Subscription> GETSubscriptionsIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationsSize = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = await GETSubscriptionsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, operationsSize);
+             ApiResponse<Subscription> localVarResponse = await GETSubscriptionsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, operationsSize);
              return localVarResponse.Data;
 
         }
@@ -2034,8 +2034,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> GETSubscriptionsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null)
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Subscription>> GETSubscriptionsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2090,9 +2090,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -2103,10 +2103,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Operation</returns>
-        public QuickPayProtocolV10Operation GETSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
+        /// <returns>Operation</returns>
+        public Operation GETSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
         {
-             ApiResponse<QuickPayProtocolV10Operation> localVarResponse = GETSubscriptionsIdOperationsOperationIdFormatWithHttpInfo(acceptVersion, authorization, id, operationId);
+             ApiResponse<Operation> localVarResponse = GETSubscriptionsIdOperationsOperationIdFormatWithHttpInfo(acceptVersion, authorization, id, operationId);
              return localVarResponse.Data;
         }
 
@@ -2118,8 +2118,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Operation</returns>
-        public ApiResponse< QuickPayProtocolV10Operation > GETSubscriptionsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId)
+        /// <returns>ApiResponse of Operation</returns>
+        public ApiResponse< Operation > GETSubscriptionsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2177,9 +2177,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Operation>(localVarStatusCode,
+            return new ApiResponse<Operation>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Operation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Operation)));
+                (Operation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Operation)));
         }
 
         /// <summary>
@@ -2190,10 +2190,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Operation</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Operation> GETSubscriptionsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId)
+        /// <returns>Task of Operation</returns>
+        public async System.Threading.Tasks.Task<Operation> GETSubscriptionsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId)
         {
-             ApiResponse<QuickPayProtocolV10Operation> localVarResponse = await GETSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, operationId);
+             ApiResponse<Operation> localVarResponse = await GETSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, operationId);
              return localVarResponse.Data;
 
         }
@@ -2206,8 +2206,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Operation)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Operation>> GETSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId)
+        /// <returns>Task of ApiResponse (Operation)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Operation>> GETSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2265,9 +2265,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Operation>(localVarStatusCode,
+            return new ApiResponse<Operation>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Operation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Operation)));
+                (Operation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Operation)));
         }
 
         /// <summary>
@@ -2287,10 +2287,10 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to payment_id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>QuickPayProtocolV10Payment</returns>
-        public QuickPayProtocolV10Payment GETSubscriptionsIdPaymentsFormat (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Payment</returns>
+        public Payment GETSubscriptionsIdPaymentsFormat (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<QuickPayProtocolV10Payment> localVarResponse = GETSubscriptionsIdPaymentsFormatWithHttpInfo(acceptVersion, authorization, id, accepted, dateYear, dateMonth, dateDay, dateHour, dateMinute, page, pageSize, sortBy, sortDir);
+             ApiResponse<Payment> localVarResponse = GETSubscriptionsIdPaymentsFormatWithHttpInfo(acceptVersion, authorization, id, accepted, dateYear, dateMonth, dateDay, dateHour, dateMinute, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
         }
 
@@ -2311,8 +2311,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to payment_id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Payment</returns>
-        public ApiResponse< QuickPayProtocolV10Payment > GETSubscriptionsIdPaymentsFormatWithHttpInfo (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>ApiResponse of Payment</returns>
+        public ApiResponse< Payment > GETSubscriptionsIdPaymentsFormatWithHttpInfo (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2376,9 +2376,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Payment>(localVarStatusCode,
+            return new ApiResponse<Payment>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Payment) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Payment)));
+                (Payment) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Payment)));
         }
 
         /// <summary>
@@ -2398,10 +2398,10 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to payment_id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>Task of QuickPayProtocolV10Payment</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Payment> GETSubscriptionsIdPaymentsFormatAsync (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Task of Payment</returns>
+        public async System.Threading.Tasks.Task<Payment> GETSubscriptionsIdPaymentsFormatAsync (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<QuickPayProtocolV10Payment> localVarResponse = await GETSubscriptionsIdPaymentsFormatAsyncWithHttpInfo(acceptVersion, authorization, id, accepted, dateYear, dateMonth, dateDay, dateHour, dateMinute, page, pageSize, sortBy, sortDir);
+             ApiResponse<Payment> localVarResponse = await GETSubscriptionsIdPaymentsFormatAsyncWithHttpInfo(acceptVersion, authorization, id, accepted, dateYear, dateMonth, dateDay, dateHour, dateMinute, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
 
         }
@@ -2423,8 +2423,8 @@ namespace IO.Swagger.Api
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to payment_id)</param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Payment)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Payment>> GETSubscriptionsIdPaymentsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+        /// <returns>Task of ApiResponse (Payment)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Payment>> GETSubscriptionsIdPaymentsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2488,9 +2488,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Payment>(localVarStatusCode,
+            return new ApiResponse<Payment>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Payment) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Payment)));
+                (Payment) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Payment)));
         }
 
         /// <summary>
@@ -2532,10 +2532,10 @@ namespace IO.Swagger.Api
         /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        public QuickPayProtocolV10Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
+        /// <returns>Subscription</returns>
+        public Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = PATCHSubscriptionsIdFormatWithHttpInfo(acceptVersion, authorization, id, deadlineAt, groupIds, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables);
+             ApiResponse<Subscription> localVarResponse = PATCHSubscriptionsIdFormatWithHttpInfo(acceptVersion, authorization, id, deadlineAt, groupIds, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables);
              return localVarResponse.Data;
         }
 
@@ -2578,8 +2578,8 @@ namespace IO.Swagger.Api
         /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        public ApiResponse< QuickPayProtocolV10Subscription > PATCHSubscriptionsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
+        /// <returns>ApiResponse of Subscription</returns>
+        public ApiResponse< Subscription > PATCHSubscriptionsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2673,9 +2673,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -2717,10 +2717,10 @@ namespace IO.Swagger.Api
         /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> PATCHSubscriptionsIdFormatAsync (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
+        /// <returns>Task of Subscription</returns>
+        public async System.Threading.Tasks.Task<Subscription> PATCHSubscriptionsIdFormatAsync (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = await PATCHSubscriptionsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, deadlineAt, groupIds, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables);
+             ApiResponse<Subscription> localVarResponse = await PATCHSubscriptionsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, deadlineAt, groupIds, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables);
              return localVarResponse.Data;
 
         }
@@ -2764,8 +2764,8 @@ namespace IO.Swagger.Api
         /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> PATCHSubscriptionsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Subscription>> PATCHSubscriptionsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2859,9 +2859,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -2873,10 +2873,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Operation</returns>
-        public QuickPayProtocolV10Operation PATCHSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
+        /// <returns>Operation</returns>
+        public Operation PATCHSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
         {
-             ApiResponse<QuickPayProtocolV10Operation> localVarResponse = PATCHSubscriptionsIdOperationsOperationIdFormatWithHttpInfo(acceptVersion, authorization, id, operationId, pending);
+             ApiResponse<Operation> localVarResponse = PATCHSubscriptionsIdOperationsOperationIdFormatWithHttpInfo(acceptVersion, authorization, id, operationId, pending);
              return localVarResponse.Data;
         }
 
@@ -2889,8 +2889,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Operation</returns>
-        public ApiResponse< QuickPayProtocolV10Operation > PATCHSubscriptionsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
+        /// <returns>ApiResponse of Operation</returns>
+        public ApiResponse< Operation > PATCHSubscriptionsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2953,9 +2953,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Operation>(localVarStatusCode,
+            return new ApiResponse<Operation>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Operation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Operation)));
+                (Operation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Operation)));
         }
 
         /// <summary>
@@ -2967,10 +2967,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
-        /// <returns>Task of QuickPayProtocolV10Operation</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Operation> PATCHSubscriptionsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
+        /// <returns>Task of Operation</returns>
+        public async System.Threading.Tasks.Task<Operation> PATCHSubscriptionsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
         {
-             ApiResponse<QuickPayProtocolV10Operation> localVarResponse = await PATCHSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, operationId, pending);
+             ApiResponse<Operation> localVarResponse = await PATCHSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, operationId, pending);
              return localVarResponse.Data;
 
         }
@@ -2984,8 +2984,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Operation)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Operation>> PATCHSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
+        /// <returns>Task of ApiResponse (Operation)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Operation>> PATCHSubscriptionsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3048,9 +3048,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Operation>(localVarStatusCode,
+            return new ApiResponse<Operation>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Operation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Operation)));
+                (Operation) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Operation)));
         }
 
         /// <summary>
@@ -3096,10 +3096,10 @@ namespace IO.Swagger.Api
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        public QuickPayProtocolV10Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
+        /// <returns>Subscription</returns>
+        public Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = POSTSubscriptionsFormatWithHttpInfo(acceptVersion, authorization, orderId, currency, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables, brandingId, groupIds, textOnStatement, shopsystemName, shopsystemVersion);
+             ApiResponse<Subscription> localVarResponse = POSTSubscriptionsFormatWithHttpInfo(acceptVersion, authorization, orderId, currency, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables, brandingId, groupIds, textOnStatement, shopsystemName, shopsystemVersion);
              return localVarResponse.Data;
         }
 
@@ -3146,8 +3146,8 @@ namespace IO.Swagger.Api
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        public ApiResponse< QuickPayProtocolV10Subscription > POSTSubscriptionsFormatWithHttpInfo (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
+        /// <returns>ApiResponse of Subscription</returns>
+        public ApiResponse< Subscription > POSTSubscriptionsFormatWithHttpInfo (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3251,9 +3251,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -3299,10 +3299,10 @@ namespace IO.Swagger.Api
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> POSTSubscriptionsFormatAsync (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
+        /// <returns>Task of Subscription</returns>
+        public async System.Threading.Tasks.Task<Subscription> POSTSubscriptionsFormatAsync (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = await POSTSubscriptionsFormatAsyncWithHttpInfo(acceptVersion, authorization, orderId, currency, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables, brandingId, groupIds, textOnStatement, shopsystemName, shopsystemVersion);
+             ApiResponse<Subscription> localVarResponse = await POSTSubscriptionsFormatAsyncWithHttpInfo(acceptVersion, authorization, orderId, currency, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables, brandingId, groupIds, textOnStatement, shopsystemName, shopsystemVersion);
              return localVarResponse.Data;
 
         }
@@ -3350,8 +3350,8 @@ namespace IO.Swagger.Api
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
         /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> POSTSubscriptionsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Subscription>> POSTSubscriptionsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3455,9 +3455,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -3493,10 +3493,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        public QuickPayProtocolV10Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Subscription</returns>
+        public Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = POSTSubscriptionsIdAuthorizeFormatWithHttpInfo(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
+             ApiResponse<Subscription> localVarResponse = POSTSubscriptionsIdAuthorizeFormatWithHttpInfo(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
              return localVarResponse.Data;
         }
 
@@ -3533,8 +3533,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        public ApiResponse< QuickPayProtocolV10Subscription > POSTSubscriptionsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>ApiResponse of Subscription</returns>
+        public ApiResponse< Subscription > POSTSubscriptionsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3618,9 +3618,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -3656,10 +3656,10 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> POSTSubscriptionsIdAuthorizeFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Task of Subscription</returns>
+        public async System.Threading.Tasks.Task<Subscription> POSTSubscriptionsIdAuthorizeFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = await POSTSubscriptionsIdAuthorizeFormatAsyncWithHttpInfo(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
+             ApiResponse<Subscription> localVarResponse = await POSTSubscriptionsIdAuthorizeFormatAsyncWithHttpInfo(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
              return localVarResponse.Data;
 
         }
@@ -3697,8 +3697,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> POSTSubscriptionsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Subscription>> POSTSubscriptionsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3782,9 +3782,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -3796,10 +3796,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        public QuickPayProtocolV10Subscription POSTSubscriptionsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
+        /// <returns>Subscription</returns>
+        public Subscription POSTSubscriptionsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = POSTSubscriptionsIdCancelFormatWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
+             ApiResponse<Subscription> localVarResponse = POSTSubscriptionsIdCancelFormatWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
              return localVarResponse.Data;
         }
 
@@ -3812,8 +3812,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        public ApiResponse< QuickPayProtocolV10Subscription > POSTSubscriptionsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
+        /// <returns>ApiResponse of Subscription</returns>
+        public ApiResponse< Subscription > POSTSubscriptionsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3869,9 +3869,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -3883,10 +3883,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> POSTSubscriptionsIdCancelFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
+        /// <returns>Task of Subscription</returns>
+        public async System.Threading.Tasks.Task<Subscription> POSTSubscriptionsIdCancelFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = await POSTSubscriptionsIdCancelFormatAsyncWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
+             ApiResponse<Subscription> localVarResponse = await POSTSubscriptionsIdCancelFormatAsyncWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
              return localVarResponse.Data;
 
         }
@@ -3900,8 +3900,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> POSTSubscriptionsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Subscription>> POSTSubscriptionsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3957,9 +3957,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -3971,10 +3971,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>QuickPayProtocolV10FraudReport</returns>
-        public QuickPayProtocolV10FraudReport POSTSubscriptionsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
+        /// <returns>FraudReport</returns>
+        public FraudReport POSTSubscriptionsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
         {
-             ApiResponse<QuickPayProtocolV10FraudReport> localVarResponse = POSTSubscriptionsIdFraudReportFormatWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, description);
+             ApiResponse<FraudReport> localVarResponse = POSTSubscriptionsIdFraudReportFormatWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, description);
              return localVarResponse.Data;
         }
 
@@ -3987,8 +3987,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10FraudReport</returns>
-        public ApiResponse< QuickPayProtocolV10FraudReport > POSTSubscriptionsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
+        /// <returns>ApiResponse of FraudReport</returns>
+        public ApiResponse< FraudReport > POSTSubscriptionsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -4045,9 +4045,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudReport>(localVarStatusCode,
+            return new ApiResponse<FraudReport>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudReport) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudReport)));
+                (FraudReport) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudReport)));
         }
 
         /// <summary>
@@ -4059,10 +4059,10 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10FraudReport</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10FraudReport> POSTSubscriptionsIdFraudReportFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
+        /// <returns>Task of FraudReport</returns>
+        public async System.Threading.Tasks.Task<FraudReport> POSTSubscriptionsIdFraudReportFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
         {
-             ApiResponse<QuickPayProtocolV10FraudReport> localVarResponse = await POSTSubscriptionsIdFraudReportFormatAsyncWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, description);
+             ApiResponse<FraudReport> localVarResponse = await POSTSubscriptionsIdFraudReportFormatAsyncWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, description);
              return localVarResponse.Data;
 
         }
@@ -4076,8 +4076,8 @@ namespace IO.Swagger.Api
         /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
         /// <param name="description">  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10FraudReport)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10FraudReport>> POSTSubscriptionsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
+        /// <returns>Task of ApiResponse (FraudReport)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<FraudReport>> POSTSubscriptionsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -4134,9 +4134,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10FraudReport>(localVarStatusCode,
+            return new ApiResponse<FraudReport>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10FraudReport) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10FraudReport)));
+                (FraudReport) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FraudReport)));
         }
 
         /// <summary>
@@ -4154,10 +4154,10 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  (optional)</param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Payment</returns>
-        public QuickPayProtocolV10Payment POSTSubscriptionsIdRecurringFormat (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
+        /// <returns>Payment</returns>
+        public Payment POSTSubscriptionsIdRecurringFormat (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
         {
-             ApiResponse<QuickPayProtocolV10Payment> localVarResponse = POSTSubscriptionsIdRecurringFormatWithHttpInfo(acceptVersion, authorization, id, amount, orderId, quickPayCallbackUrl, synchronized, autoCapture, autofee, zeroAuth, textOnStatement);
+             ApiResponse<Payment> localVarResponse = POSTSubscriptionsIdRecurringFormatWithHttpInfo(acceptVersion, authorization, id, amount, orderId, quickPayCallbackUrl, synchronized, autoCapture, autofee, zeroAuth, textOnStatement);
              return localVarResponse.Data;
         }
 
@@ -4176,8 +4176,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  (optional)</param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Payment</returns>
-        public ApiResponse< QuickPayProtocolV10Payment > POSTSubscriptionsIdRecurringFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
+        /// <returns>ApiResponse of Payment</returns>
+        public ApiResponse< Payment > POSTSubscriptionsIdRecurringFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -4246,9 +4246,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Payment>(localVarStatusCode,
+            return new ApiResponse<Payment>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Payment) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Payment)));
+                (Payment) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Payment)));
         }
 
         /// <summary>
@@ -4266,10 +4266,10 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  (optional)</param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Payment</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Payment> POSTSubscriptionsIdRecurringFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
+        /// <returns>Task of Payment</returns>
+        public async System.Threading.Tasks.Task<Payment> POSTSubscriptionsIdRecurringFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
         {
-             ApiResponse<QuickPayProtocolV10Payment> localVarResponse = await POSTSubscriptionsIdRecurringFormatAsyncWithHttpInfo(acceptVersion, authorization, id, amount, orderId, quickPayCallbackUrl, synchronized, autoCapture, autofee, zeroAuth, textOnStatement);
+             ApiResponse<Payment> localVarResponse = await POSTSubscriptionsIdRecurringFormatAsyncWithHttpInfo(acceptVersion, authorization, id, amount, orderId, quickPayCallbackUrl, synchronized, autoCapture, autofee, zeroAuth, textOnStatement);
              return localVarResponse.Data;
 
         }
@@ -4289,8 +4289,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  (optional)</param>
         /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Payment)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Payment>> POSTSubscriptionsIdRecurringFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
+        /// <returns>Task of ApiResponse (Payment)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Payment>> POSTSubscriptionsIdRecurringFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -4359,9 +4359,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Payment>(localVarStatusCode,
+            return new ApiResponse<Payment>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Payment) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Payment)));
+                (Payment) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Payment)));
         }
 
         /// <summary>
@@ -4376,10 +4376,10 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Subscription</returns>
-        public QuickPayProtocolV10Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Subscription</returns>
+        public Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = POSTSubscriptionsIdSessionFormatWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, acquirer, autofee, customerIp, extras);
+             ApiResponse<Subscription> localVarResponse = POSTSubscriptionsIdSessionFormatWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, acquirer, autofee, customerIp, extras);
              return localVarResponse.Data;
         }
 
@@ -4395,8 +4395,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Subscription</returns>
-        public ApiResponse< QuickPayProtocolV10Subscription > POSTSubscriptionsIdSessionFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>ApiResponse of Subscription</returns>
+        public ApiResponse< Subscription > POSTSubscriptionsIdSessionFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -4456,9 +4456,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -4473,10 +4473,10 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Subscription</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Subscription> POSTSubscriptionsIdSessionFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Task of Subscription</returns>
+        public async System.Threading.Tasks.Task<Subscription> POSTSubscriptionsIdSessionFormatAsync (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
-             ApiResponse<QuickPayProtocolV10Subscription> localVarResponse = await POSTSubscriptionsIdSessionFormatAsyncWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, acquirer, autofee, customerIp, extras);
+             ApiResponse<Subscription> localVarResponse = await POSTSubscriptionsIdSessionFormatAsyncWithHttpInfo(acceptVersion, authorization, id, quickPayCallbackUrl, acquirer, autofee, customerIp, extras);
              return localVarResponse.Data;
 
         }
@@ -4493,8 +4493,8 @@ namespace IO.Swagger.Api
         /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  (optional)</param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Subscription)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Subscription>> POSTSubscriptionsIdSessionFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
+        /// <returns>Task of ApiResponse (Subscription)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Subscription>> POSTSubscriptionsIdSessionFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -4554,9 +4554,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Subscription>(localVarStatusCode,
+            return new ApiResponse<Subscription>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Subscription)));
+                (Subscription) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Subscription)));
         }
 
         /// <summary>
@@ -4584,10 +4584,10 @@ namespace IO.Swagger.Api
         /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  (optional)</param>
         /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10PaymentLinkUrl</returns>
-        public QuickPayProtocolV10PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
+        /// <returns>PaymentLinkUrl</returns>
+        public PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
         {
-             ApiResponse<QuickPayProtocolV10PaymentLinkUrl> localVarResponse = PUTSubscriptionsIdLinkFormatWithHttpInfo(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection);
+             ApiResponse<PaymentLinkUrl> localVarResponse = PUTSubscriptionsIdLinkFormatWithHttpInfo(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection);
              return localVarResponse.Data;
         }
 
@@ -4616,8 +4616,8 @@ namespace IO.Swagger.Api
         /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  (optional)</param>
         /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10PaymentLinkUrl</returns>
-        public ApiResponse< QuickPayProtocolV10PaymentLinkUrl > PUTSubscriptionsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
+        /// <returns>ApiResponse of PaymentLinkUrl</returns>
+        public ApiResponse< PaymentLinkUrl > PUTSubscriptionsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -4693,9 +4693,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10PaymentLinkUrl>(localVarStatusCode,
+            return new ApiResponse<PaymentLinkUrl>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10PaymentLinkUrl) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10PaymentLinkUrl)));
+                (PaymentLinkUrl) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(PaymentLinkUrl)));
         }
 
         /// <summary>
@@ -4723,10 +4723,10 @@ namespace IO.Swagger.Api
         /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  (optional)</param>
         /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10PaymentLinkUrl</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10PaymentLinkUrl> PUTSubscriptionsIdLinkFormatAsync (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
+        /// <returns>Task of PaymentLinkUrl</returns>
+        public async System.Threading.Tasks.Task<PaymentLinkUrl> PUTSubscriptionsIdLinkFormatAsync (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
         {
-             ApiResponse<QuickPayProtocolV10PaymentLinkUrl> localVarResponse = await PUTSubscriptionsIdLinkFormatAsyncWithHttpInfo(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection);
+             ApiResponse<PaymentLinkUrl> localVarResponse = await PUTSubscriptionsIdLinkFormatAsyncWithHttpInfo(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection);
              return localVarResponse.Data;
 
         }
@@ -4756,8 +4756,8 @@ namespace IO.Swagger.Api
         /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  (optional)</param>
         /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
         /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10PaymentLinkUrl)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10PaymentLinkUrl>> PUTSubscriptionsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
+        /// <returns>Task of ApiResponse (PaymentLinkUrl)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<PaymentLinkUrl>> PUTSubscriptionsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -4833,9 +4833,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10PaymentLinkUrl>(localVarStatusCode,
+            return new ApiResponse<PaymentLinkUrl>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10PaymentLinkUrl) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10PaymentLinkUrl)));
+                (PaymentLinkUrl) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(PaymentLinkUrl)));
         }
 
     }

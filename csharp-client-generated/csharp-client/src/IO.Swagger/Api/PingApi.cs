@@ -33,8 +33,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Pong</returns>
-        QuickPayProtocolV10Pong GETPingFormat (string acceptVersion, string authorization = null);
+        /// <returns>Pong</returns>
+        Pong GETPingFormat (string acceptVersion, string authorization = null);
 
         /// <summary>
         /// Use this to test connectivity to the API
@@ -45,8 +45,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Pong</returns>
-        ApiResponse<QuickPayProtocolV10Pong> GETPingFormatWithHttpInfo (string acceptVersion, string authorization = null);
+        /// <returns>ApiResponse of Pong</returns>
+        ApiResponse<Pong> GETPingFormatWithHttpInfo (string acceptVersion, string authorization = null);
         /// <summary>
         /// Use this to test connectivity to the API
         /// </summary>
@@ -56,8 +56,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Pong</returns>
-        QuickPayProtocolV10Pong POSTPingFormat (string acceptVersion, string authorization = null);
+        /// <returns>Pong</returns>
+        Pong POSTPingFormat (string acceptVersion, string authorization = null);
 
         /// <summary>
         /// Use this to test connectivity to the API
@@ -68,8 +68,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Pong</returns>
-        ApiResponse<QuickPayProtocolV10Pong> POSTPingFormatWithHttpInfo (string acceptVersion, string authorization = null);
+        /// <returns>ApiResponse of Pong</returns>
+        ApiResponse<Pong> POSTPingFormatWithHttpInfo (string acceptVersion, string authorization = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -81,8 +81,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Pong</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Pong> GETPingFormatAsync (string acceptVersion, string authorization = null);
+        /// <returns>Task of Pong</returns>
+        System.Threading.Tasks.Task<Pong> GETPingFormatAsync (string acceptVersion, string authorization = null);
 
         /// <summary>
         /// Use this to test connectivity to the API
@@ -93,8 +93,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Pong)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Pong>> GETPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null);
+        /// <returns>Task of ApiResponse (Pong)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Pong>> GETPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null);
         /// <summary>
         /// Use this to test connectivity to the API
         /// </summary>
@@ -104,8 +104,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Pong</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10Pong> POSTPingFormatAsync (string acceptVersion, string authorization = null);
+        /// <returns>Task of Pong</returns>
+        System.Threading.Tasks.Task<Pong> POSTPingFormatAsync (string acceptVersion, string authorization = null);
 
         /// <summary>
         /// Use this to test connectivity to the API
@@ -116,8 +116,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Pong)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Pong>> POSTPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null);
+        /// <returns>Task of ApiResponse (Pong)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Pong>> POSTPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null);
         #endregion Asynchronous Operations
     }
 
@@ -224,10 +224,10 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Pong</returns>
-        public QuickPayProtocolV10Pong GETPingFormat (string acceptVersion, string authorization = null)
+        /// <returns>Pong</returns>
+        public Pong GETPingFormat (string acceptVersion, string authorization = null)
         {
-             ApiResponse<QuickPayProtocolV10Pong> localVarResponse = GETPingFormatWithHttpInfo(acceptVersion, authorization);
+             ApiResponse<Pong> localVarResponse = GETPingFormatWithHttpInfo(acceptVersion, authorization);
              return localVarResponse.Data;
         }
 
@@ -237,8 +237,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Pong</returns>
-        public ApiResponse< QuickPayProtocolV10Pong > GETPingFormatWithHttpInfo (string acceptVersion, string authorization = null)
+        /// <returns>ApiResponse of Pong</returns>
+        public ApiResponse< Pong > GETPingFormatWithHttpInfo (string acceptVersion, string authorization = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -285,9 +285,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Pong>(localVarStatusCode,
+            return new ApiResponse<Pong>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Pong) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Pong)));
+                (Pong) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Pong)));
         }
 
         /// <summary>
@@ -296,10 +296,10 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Pong</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Pong> GETPingFormatAsync (string acceptVersion, string authorization = null)
+        /// <returns>Task of Pong</returns>
+        public async System.Threading.Tasks.Task<Pong> GETPingFormatAsync (string acceptVersion, string authorization = null)
         {
-             ApiResponse<QuickPayProtocolV10Pong> localVarResponse = await GETPingFormatAsyncWithHttpInfo(acceptVersion, authorization);
+             ApiResponse<Pong> localVarResponse = await GETPingFormatAsyncWithHttpInfo(acceptVersion, authorization);
              return localVarResponse.Data;
 
         }
@@ -310,8 +310,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Pong)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Pong>> GETPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null)
+        /// <returns>Task of ApiResponse (Pong)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Pong>> GETPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -358,9 +358,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Pong>(localVarStatusCode,
+            return new ApiResponse<Pong>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Pong) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Pong)));
+                (Pong) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Pong)));
         }
 
         /// <summary>
@@ -369,10 +369,10 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>QuickPayProtocolV10Pong</returns>
-        public QuickPayProtocolV10Pong POSTPingFormat (string acceptVersion, string authorization = null)
+        /// <returns>Pong</returns>
+        public Pong POSTPingFormat (string acceptVersion, string authorization = null)
         {
-             ApiResponse<QuickPayProtocolV10Pong> localVarResponse = POSTPingFormatWithHttpInfo(acceptVersion, authorization);
+             ApiResponse<Pong> localVarResponse = POSTPingFormatWithHttpInfo(acceptVersion, authorization);
              return localVarResponse.Data;
         }
 
@@ -382,8 +382,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10Pong</returns>
-        public ApiResponse< QuickPayProtocolV10Pong > POSTPingFormatWithHttpInfo (string acceptVersion, string authorization = null)
+        /// <returns>ApiResponse of Pong</returns>
+        public ApiResponse< Pong > POSTPingFormatWithHttpInfo (string acceptVersion, string authorization = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -430,9 +430,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Pong>(localVarStatusCode,
+            return new ApiResponse<Pong>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Pong) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Pong)));
+                (Pong) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Pong)));
         }
 
         /// <summary>
@@ -441,10 +441,10 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of QuickPayProtocolV10Pong</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10Pong> POSTPingFormatAsync (string acceptVersion, string authorization = null)
+        /// <returns>Task of Pong</returns>
+        public async System.Threading.Tasks.Task<Pong> POSTPingFormatAsync (string acceptVersion, string authorization = null)
         {
-             ApiResponse<QuickPayProtocolV10Pong> localVarResponse = await POSTPingFormatAsyncWithHttpInfo(acceptVersion, authorization);
+             ApiResponse<Pong> localVarResponse = await POSTPingFormatAsyncWithHttpInfo(acceptVersion, authorization);
              return localVarResponse.Data;
 
         }
@@ -455,8 +455,8 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10Pong)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10Pong>> POSTPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null)
+        /// <returns>Task of ApiResponse (Pong)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Pong>> POSTPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -503,9 +503,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10Pong>(localVarStatusCode,
+            return new ApiResponse<Pong>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10Pong) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10Pong)));
+                (Pong) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Pong)));
         }
 
     }

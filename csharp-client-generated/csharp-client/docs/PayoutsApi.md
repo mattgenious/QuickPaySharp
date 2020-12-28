@@ -80,7 +80,7 @@ No authorization required
 
 <a name="getpayoutsformat"></a>
 # **GETPayoutsFormat**
-> QuickPayProtocolV10Payout GETPayoutsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+> Payout GETPayoutsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
 
 Get payouts
 
@@ -125,7 +125,7 @@ namespace Example
             try
             {
                 // Get payouts
-                QuickPayProtocolV10Payout result = apiInstance.GETPayoutsFormat(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, page, pageSize, sortBy, sortDir);
+                Payout result = apiInstance.GETPayoutsFormat(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, page, pageSize, sortBy, sortDir);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payout**](QuickPayProtocolV10Payout.md)
+[**Payout**](Payout.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ No authorization required
 
 <a name="getpayoutsidformat"></a>
 # **GETPayoutsIdFormat**
-> QuickPayProtocolV10Payout GETPayoutsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
+> Payout GETPayoutsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
 
 Get payout
 
@@ -208,7 +208,7 @@ namespace Example
             try
             {
                 // Get payout
-                QuickPayProtocolV10Payout result = apiInstance.GETPayoutsIdFormat(acceptVersion, authorization, id, operationsSize);
+                Payout result = apiInstance.GETPayoutsIdFormat(acceptVersion, authorization, id, operationsSize);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payout**](QuickPayProtocolV10Payout.md)
+[**Payout**](Payout.md)
 
 ### Authorization
 
@@ -246,7 +246,7 @@ No authorization required
 
 <a name="getpayoutsidoperationsoperationidformat"></a>
 # **GETPayoutsIdOperationsOperationIdFormat**
-> QuickPayProtocolV10Operation GETPayoutsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
+> Operation GETPayoutsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
 
 Get Operation
 
@@ -275,7 +275,7 @@ namespace Example
             try
             {
                 // Get Operation
-                QuickPayProtocolV10Operation result = apiInstance.GETPayoutsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId);
+                Operation result = apiInstance.GETPayoutsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -298,7 +298,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Operation**](QuickPayProtocolV10Operation.md)
+[**Operation**](Operation.md)
 
 ### Authorization
 
@@ -313,7 +313,7 @@ No authorization required
 
 <a name="patchpayoutsidformat"></a>
 # **PATCHPayoutsIdFormat**
-> QuickPayProtocolV10Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null)
+> Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null)
 
 Update payout
 
@@ -342,7 +342,7 @@ namespace Example
             try
             {
                 // Update payout
-                QuickPayProtocolV10Payout result = apiInstance.PATCHPayoutsIdFormat(acceptVersion, authorization, id, variables);
+                Payout result = apiInstance.PATCHPayoutsIdFormat(acceptVersion, authorization, id, variables);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payout**](QuickPayProtocolV10Payout.md)
+[**Payout**](Payout.md)
 
 ### Authorization
 
@@ -380,7 +380,7 @@ No authorization required
 
 <a name="postpayoutsformat"></a>
 # **POSTPayoutsFormat**
-> QuickPayProtocolV10Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null)
+> Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null)
 
 Create payout
 
@@ -411,7 +411,7 @@ namespace Example
             try
             {
                 // Create payout
-                QuickPayProtocolV10Payout result = apiInstance.POSTPayoutsFormat(acceptVersion, authorization, currency, orderId, variables, textOnStatement);
+                Payout result = apiInstance.POSTPayoutsFormat(acceptVersion, authorization, currency, orderId, variables, textOnStatement);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -436,7 +436,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payout**](QuickPayProtocolV10Payout.md)
+[**Payout**](Payout.md)
 
 ### Authorization
 
@@ -451,7 +451,7 @@ No authorization required
 
 <a name="postpayoutsidcreditformat"></a>
 # **POSTPayoutsIdCreditFormat**
-> QuickPayProtocolV10Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+> Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
 
 Authorize a payout
 
@@ -505,7 +505,7 @@ namespace Example
             try
             {
                 // Authorize a payout
-                QuickPayProtocolV10Payout result = apiInstance.POSTPayoutsIdCreditFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
+                Payout result = apiInstance.POSTPayoutsIdCreditFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -553,7 +553,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payout**](QuickPayProtocolV10Payout.md)
+[**Payout**](Payout.md)
 
 ### Authorization
 
@@ -568,7 +568,7 @@ No authorization required
 
 <a name="putpayoutsidlinkformat"></a>
 # **PUTPayoutsIdLinkFormat**
-> QuickPayProtocolV10PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+> PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
 
 Create or update a payout link
 
@@ -609,7 +609,7 @@ namespace Example
             try
             {
                 // Create or update a payout link
-                QuickPayProtocolV10PaymentLinkUrl result = apiInstance.PUTPayoutsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
+                PaymentLinkUrl result = apiInstance.PUTPayoutsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -644,7 +644,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10PaymentLinkUrl**](QuickPayProtocolV10PaymentLinkUrl.md)
+[**PaymentLinkUrl**](PaymentLinkUrl.md)
 
 ### Authorization
 

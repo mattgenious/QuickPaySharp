@@ -74,7 +74,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersBamboraFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsBambora> (response, "response is QuickPayProtocolV10AcquirerSettingsBambora");
+            //Assert.IsInstanceOf<AcquirerSettingsBambora> (response, "response is AcquirerSettingsBambora");
         }
         
         /// <summary>
@@ -87,7 +87,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersClearhausFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsClearhaus> (response, "response is QuickPayProtocolV10AcquirerSettingsClearhaus");
+            //Assert.IsInstanceOf<AcquirerSettingsClearhaus> (response, "response is AcquirerSettingsClearhaus");
         }
         
         /// <summary>
@@ -100,7 +100,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersCoinifyFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsCoinify> (response, "response is QuickPayProtocolV10AcquirerSettingsCoinify");
+            //Assert.IsInstanceOf<AcquirerSettingsCoinify> (response, "response is AcquirerSettingsCoinify");
         }
         
         /// <summary>
@@ -113,7 +113,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersElavonFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsElavon> (response, "response is QuickPayProtocolV10AcquirerSettingsElavon");
+            //Assert.IsInstanceOf<AcquirerSettingsElavon> (response, "response is AcquirerSettingsElavon");
         }
         
         /// <summary>
@@ -126,7 +126,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettings> (response, "response is QuickPayProtocolV10AcquirerSettings");
+            //Assert.IsInstanceOf<AcquirerSettings> (response, "response is AcquirerSettings");
         }
         
         /// <summary>
@@ -139,7 +139,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersHandelsbankenFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsHandelsbanken> (response, "response is QuickPayProtocolV10AcquirerSettingsHandelsbanken");
+            //Assert.IsInstanceOf<AcquirerSettingsHandelsbanken> (response, "response is AcquirerSettingsHandelsbanken");
         }
         
         /// <summary>
@@ -152,7 +152,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersKlarnaFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsKlarna> (response, "response is QuickPayProtocolV10AcquirerSettingsKlarna");
+            //Assert.IsInstanceOf<AcquirerSettingsKlarna> (response, "response is AcquirerSettingsKlarna");
         }
         
         /// <summary>
@@ -165,7 +165,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersKlarnapaymentsFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsKlarnaPayments> (response, "response is QuickPayProtocolV10AcquirerSettingsKlarnaPayments");
+            //Assert.IsInstanceOf<AcquirerSettingsKlarnaPayments> (response, "response is AcquirerSettingsKlarnaPayments");
         }
         
         /// <summary>
@@ -178,7 +178,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersMobilepayFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsMobilePay> (response, "response is QuickPayProtocolV10AcquirerSettingsMobilePay");
+            //Assert.IsInstanceOf<AcquirerSettingsMobilePay> (response, "response is AcquirerSettingsMobilePay");
         }
         
         /// <summary>
@@ -191,7 +191,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersMobilepayonlineFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsMobilePayOnline> (response, "response is QuickPayProtocolV10AcquirerSettingsMobilePayOnline");
+            //Assert.IsInstanceOf<AcquirerSettingsMobilePayOnline> (response, "response is AcquirerSettingsMobilePayOnline");
         }
         
         /// <summary>
@@ -204,7 +204,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersMobilepaysubscriptionsFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions> (response, "response is QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions");
+            //Assert.IsInstanceOf<AcquirerSettingsMobilePaySubscriptions> (response, "response is AcquirerSettingsMobilePaySubscriptions");
         }
         
         /// <summary>
@@ -217,7 +217,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersNetsFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsNets> (response, "response is QuickPayProtocolV10AcquirerSettingsNets");
+            //Assert.IsInstanceOf<AcquirerSettingsNets> (response, "response is AcquirerSettingsNets");
         }
         
         /// <summary>
@@ -230,7 +230,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersPaypalFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsPayPal> (response, "response is QuickPayProtocolV10AcquirerSettingsPayPal");
+            //Assert.IsInstanceOf<AcquirerSettingsPayPal> (response, "response is AcquirerSettingsPayPal");
         }
         
         /// <summary>
@@ -243,7 +243,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersPaysafecardFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsPaysafecard> (response, "response is QuickPayProtocolV10AcquirerSettingsPaysafecard");
+            //Assert.IsInstanceOf<AcquirerSettingsPaysafecard> (response, "response is AcquirerSettingsPaysafecard");
         }
         
         /// <summary>
@@ -256,7 +256,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersResursFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsResurs> (response, "response is QuickPayProtocolV10AcquirerSettingsResurs");
+            //Assert.IsInstanceOf<AcquirerSettingsResurs> (response, "response is AcquirerSettingsResurs");
         }
         
         /// <summary>
@@ -269,7 +269,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersSofortFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsSofort> (response, "response is QuickPayProtocolV10AcquirerSettingsSofort");
+            //Assert.IsInstanceOf<AcquirerSettingsSofort> (response, "response is AcquirerSettingsSofort");
         }
         
         /// <summary>
@@ -282,7 +282,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersSwedbankFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsSwedbank> (response, "response is QuickPayProtocolV10AcquirerSettingsSwedbank");
+            //Assert.IsInstanceOf<AcquirerSettingsSwedbank> (response, "response is AcquirerSettingsSwedbank");
         }
         
         /// <summary>
@@ -295,7 +295,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersSwishFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsSwish> (response, "response is QuickPayProtocolV10AcquirerSettingsSwish");
+            //Assert.IsInstanceOf<AcquirerSettingsSwish> (response, "response is AcquirerSettingsSwish");
         }
         
         /// <summary>
@@ -308,7 +308,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersTellerFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsTeller> (response, "response is QuickPayProtocolV10AcquirerSettingsTeller");
+            //Assert.IsInstanceOf<AcquirerSettingsTeller> (response, "response is AcquirerSettingsTeller");
         }
         
         /// <summary>
@@ -321,7 +321,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersTrustlyFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsTrustly> (response, "response is QuickPayProtocolV10AcquirerSettingsTrustly");
+            //Assert.IsInstanceOf<AcquirerSettingsTrustly> (response, "response is AcquirerSettingsTrustly");
         }
         
         /// <summary>
@@ -334,7 +334,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersValitorFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsValitor> (response, "response is QuickPayProtocolV10AcquirerSettingsValitor");
+            //Assert.IsInstanceOf<AcquirerSettingsValitor> (response, "response is AcquirerSettingsValitor");
         }
         
         /// <summary>
@@ -347,7 +347,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersViabillFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsViaBill> (response, "response is QuickPayProtocolV10AcquirerSettingsViaBill");
+            //Assert.IsInstanceOf<AcquirerSettingsViaBill> (response, "response is AcquirerSettingsViaBill");
         }
         
         /// <summary>
@@ -360,7 +360,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETAcquirersVippsFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsVipps> (response, "response is QuickPayProtocolV10AcquirerSettingsVipps");
+            //Assert.IsInstanceOf<AcquirerSettingsVipps> (response, "response is AcquirerSettingsVipps");
         }
         
         /// <summary>
@@ -385,7 +385,7 @@ namespace IO.Swagger.Test
             //string visaBin = null;
             //string mastercardBin = null;
             //var response = instance.PATCHAcquirersBamboraFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsBambora> (response, "response is QuickPayProtocolV10AcquirerSettingsBambora");
+            //Assert.IsInstanceOf<AcquirerSettingsBambora> (response, "response is AcquirerSettingsBambora");
         }
         
         /// <summary>
@@ -403,7 +403,7 @@ namespace IO.Swagger.Test
             //bool? payout = null;
             //bool? applePay = null;
             //var response = instance.PATCHAcquirersClearhausFormat(acceptVersion, authorization, active, apiKey, recurring, payout, applePay);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsClearhaus> (response, "response is QuickPayProtocolV10AcquirerSettingsClearhaus");
+            //Assert.IsInstanceOf<AcquirerSettingsClearhaus> (response, "response is AcquirerSettingsClearhaus");
         }
         
         /// <summary>
@@ -420,7 +420,7 @@ namespace IO.Swagger.Test
             //string apiSecret = null;
             //string ipnSecret = null;
             //var response = instance.PATCHAcquirersCoinifyFormat(acceptVersion, authorization, active, apiKey, apiSecret, ipnSecret);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsCoinify> (response, "response is QuickPayProtocolV10AcquirerSettingsCoinify");
+            //Assert.IsInstanceOf<AcquirerSettingsCoinify> (response, "response is AcquirerSettingsCoinify");
         }
         
         /// <summary>
@@ -445,7 +445,7 @@ namespace IO.Swagger.Test
             //string visaBin = null;
             //string mastercardBin = null;
             //var response = instance.PATCHAcquirersElavonFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsElavon> (response, "response is QuickPayProtocolV10AcquirerSettingsElavon");
+            //Assert.IsInstanceOf<AcquirerSettingsElavon> (response, "response is AcquirerSettingsElavon");
         }
         
         /// <summary>
@@ -470,7 +470,7 @@ namespace IO.Swagger.Test
             //string visaBin = null;
             //string mastercardBin = null;
             //var response = instance.PATCHAcquirersHandelsbankenFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsHandelsbanken> (response, "response is QuickPayProtocolV10AcquirerSettingsHandelsbanken");
+            //Assert.IsInstanceOf<AcquirerSettingsHandelsbanken> (response, "response is AcquirerSettingsHandelsbanken");
         }
         
         /// <summary>
@@ -486,7 +486,7 @@ namespace IO.Swagger.Test
             //int? eid = null;
             //string sharedSecret = null;
             //var response = instance.PATCHAcquirersKlarnaFormat(acceptVersion, authorization, active, eid, sharedSecret);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsKlarna> (response, "response is QuickPayProtocolV10AcquirerSettingsKlarna");
+            //Assert.IsInstanceOf<AcquirerSettingsKlarna> (response, "response is AcquirerSettingsKlarna");
         }
         
         /// <summary>
@@ -502,7 +502,7 @@ namespace IO.Swagger.Test
             //string uid = null;
             //string password = null;
             //var response = instance.PATCHAcquirersKlarnapaymentsFormat(acceptVersion, authorization, active, uid, password);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsKlarnaPayments> (response, "response is QuickPayProtocolV10AcquirerSettingsKlarnaPayments");
+            //Assert.IsInstanceOf<AcquirerSettingsKlarnaPayments> (response, "response is AcquirerSettingsKlarnaPayments");
         }
         
         /// <summary>
@@ -517,7 +517,7 @@ namespace IO.Swagger.Test
             //bool? active = null;
             //string deliveryLimitedTo = null;
             //var response = instance.PATCHAcquirersMobilepayFormat(acceptVersion, authorization, active, deliveryLimitedTo);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsMobilePay> (response, "response is QuickPayProtocolV10AcquirerSettingsMobilePay");
+            //Assert.IsInstanceOf<AcquirerSettingsMobilePay> (response, "response is AcquirerSettingsMobilePay");
         }
         
         /// <summary>
@@ -533,7 +533,7 @@ namespace IO.Swagger.Test
             //int? merchantId = null;
             //string deliveryLimitedTo = null;
             //var response = instance.PATCHAcquirersMobilepayonlineFormat(acceptVersion, authorization, active, merchantId, deliveryLimitedTo);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsMobilePayOnline> (response, "response is QuickPayProtocolV10AcquirerSettingsMobilePayOnline");
+            //Assert.IsInstanceOf<AcquirerSettingsMobilePayOnline> (response, "response is AcquirerSettingsMobilePayOnline");
         }
         
         /// <summary>
@@ -554,7 +554,7 @@ namespace IO.Swagger.Test
             //Dictionary<string, string> provider = null;
             //string refreshToken = null;
             //var response = instance.PATCHAcquirersMobilepaysubscriptionsFormat(acceptVersion, authorization, active, authState, codeVerifier, lastTokenRefresh, nonce, pendingStatus, provider, refreshToken);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions> (response, "response is QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions");
+            //Assert.IsInstanceOf<AcquirerSettingsMobilePaySubscriptions> (response, "response is AcquirerSettingsMobilePaySubscriptions");
         }
         
         /// <summary>
@@ -579,7 +579,7 @@ namespace IO.Swagger.Test
             //string visaBin = null;
             //string mastercardBin = null;
             //var response = instance.PATCHAcquirersNetsFormat(acceptVersion, authorization, active, identificationCode, businessCode, recurring, fbg1886, securedByNets, identificationCodeInt, americanexpress, dinersclub, securepay, visaBin, mastercardBin);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsNets> (response, "response is QuickPayProtocolV10AcquirerSettingsNets");
+            //Assert.IsInstanceOf<AcquirerSettingsNets> (response, "response is AcquirerSettingsNets");
         }
         
         /// <summary>
@@ -598,7 +598,7 @@ namespace IO.Swagger.Test
             //string tokenSecret = null;
             //List<string> scope = null;
             //var response = instance.PATCHAcquirersPaypalFormat(acceptVersion, authorization, active, recurring, creditCard, token, tokenSecret, scope);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsPayPal> (response, "response is QuickPayProtocolV10AcquirerSettingsPayPal");
+            //Assert.IsInstanceOf<AcquirerSettingsPayPal> (response, "response is AcquirerSettingsPayPal");
         }
         
         /// <summary>
@@ -615,7 +615,7 @@ namespace IO.Swagger.Test
             //string password = null;
             //List<Object> currencies = null;
             //var response = instance.PATCHAcquirersPaysafecardFormat(acceptVersion, authorization, active, username, password, currencies);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsPaysafecard> (response, "response is QuickPayProtocolV10AcquirerSettingsPaysafecard");
+            //Assert.IsInstanceOf<AcquirerSettingsPaysafecard> (response, "response is AcquirerSettingsPaysafecard");
         }
         
         /// <summary>
@@ -631,7 +631,7 @@ namespace IO.Swagger.Test
             //string customerId = null;
             //string customerPassword = null;
             //var response = instance.PATCHAcquirersResursFormat(acceptVersion, authorization, active, customerId, customerPassword);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsResurs> (response, "response is QuickPayProtocolV10AcquirerSettingsResurs");
+            //Assert.IsInstanceOf<AcquirerSettingsResurs> (response, "response is AcquirerSettingsResurs");
         }
         
         /// <summary>
@@ -653,7 +653,7 @@ namespace IO.Swagger.Test
             //string idealProjectPassword = null;
             //string idealNotificationPassword = null;
             //var response = instance.PATCHAcquirersSofortFormat(acceptVersion, authorization, active, customerNumber, projectId, apiKey, gateway, ideal, idealProjectId, idealProjectPassword, idealNotificationPassword);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsSofort> (response, "response is QuickPayProtocolV10AcquirerSettingsSofort");
+            //Assert.IsInstanceOf<AcquirerSettingsSofort> (response, "response is AcquirerSettingsSofort");
         }
         
         /// <summary>
@@ -678,7 +678,7 @@ namespace IO.Swagger.Test
             //string visaBin = null;
             //string mastercardBin = null;
             //var response = instance.PATCHAcquirersSwedbankFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsSwedbank> (response, "response is QuickPayProtocolV10AcquirerSettingsSwedbank");
+            //Assert.IsInstanceOf<AcquirerSettingsSwedbank> (response, "response is AcquirerSettingsSwedbank");
         }
         
         /// <summary>
@@ -694,7 +694,7 @@ namespace IO.Swagger.Test
             //string merchantId = null;
             //int? cryptographyKeyId = null;
             //var response = instance.PATCHAcquirersSwishFormat(acceptVersion, authorization, active, merchantId, cryptographyKeyId);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsSwish> (response, "response is QuickPayProtocolV10AcquirerSettingsSwish");
+            //Assert.IsInstanceOf<AcquirerSettingsSwish> (response, "response is AcquirerSettingsSwish");
         }
         
         /// <summary>
@@ -719,7 +719,7 @@ namespace IO.Swagger.Test
             //string visaBin = null;
             //string mastercardBin = null;
             //var response = instance.PATCHAcquirersTellerFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsTeller> (response, "response is QuickPayProtocolV10AcquirerSettingsTeller");
+            //Assert.IsInstanceOf<AcquirerSettingsTeller> (response, "response is AcquirerSettingsTeller");
         }
         
         /// <summary>
@@ -736,7 +736,7 @@ namespace IO.Swagger.Test
             //string username = null;
             //string password = null;
             //var response = instance.PATCHAcquirersTrustlyFormat(acceptVersion, authorization, active, ideal, username, password);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsTrustly> (response, "response is QuickPayProtocolV10AcquirerSettingsTrustly");
+            //Assert.IsInstanceOf<AcquirerSettingsTrustly> (response, "response is AcquirerSettingsTrustly");
         }
         
         /// <summary>
@@ -761,7 +761,7 @@ namespace IO.Swagger.Test
             //string visaBin = null;
             //string mastercardBin = null;
             //var response = instance.PATCHAcquirersValitorFormat(acceptVersion, authorization, active, identificationCode, businessCode, identificationCodeInt, recurring, americanexpress, dinersclub, securepay, visaMpiMerchantId, mastercardMpiMerchantId, visaBin, mastercardBin);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsValitor> (response, "response is QuickPayProtocolV10AcquirerSettingsValitor");
+            //Assert.IsInstanceOf<AcquirerSettingsValitor> (response, "response is AcquirerSettingsValitor");
         }
         
         /// <summary>
@@ -776,7 +776,7 @@ namespace IO.Swagger.Test
             //bool? active = null;
             //string apiKey = null;
             //var response = instance.PATCHAcquirersViabillFormat(acceptVersion, authorization, active, apiKey);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsViaBill> (response, "response is QuickPayProtocolV10AcquirerSettingsViaBill");
+            //Assert.IsInstanceOf<AcquirerSettingsViaBill> (response, "response is AcquirerSettingsViaBill");
         }
         
         /// <summary>
@@ -796,7 +796,7 @@ namespace IO.Swagger.Test
             //string ecommerceSubscriptionKey = null;
             //string orgno = null;
             //var response = instance.PATCHAcquirersVippsFormat(acceptVersion, authorization, active, clientId, clientSecret, serialNumber, accessTokenSubscriptionKey, ecommerceSubscriptionKey, orgno);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerSettingsVipps> (response, "response is QuickPayProtocolV10AcquirerSettingsVipps");
+            //Assert.IsInstanceOf<AcquirerSettingsVipps> (response, "response is AcquirerSettingsVipps");
         }
         
         /// <summary>
@@ -810,7 +810,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //string acquirer = null;
             //var response = instance.POSTAcquirersAcquirerTestFormat(acceptVersion, authorization, acquirer);
-            //Assert.IsInstanceOf<QuickPayProtocolV10AcquirerTest> (response, "response is QuickPayProtocolV10AcquirerTest");
+            //Assert.IsInstanceOf<AcquirerTest> (response, "response is AcquirerTest");
         }
         
     }

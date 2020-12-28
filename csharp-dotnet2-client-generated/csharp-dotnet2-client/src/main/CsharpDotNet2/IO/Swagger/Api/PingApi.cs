@@ -16,15 +16,15 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Pong</returns>
-        QuickPayProtocolV10Pong GETPingFormat (string acceptVersion, string authorization);
+        /// <returns>Pong</returns>
+        Pong GETPingFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Pong</returns>
-        QuickPayProtocolV10Pong POSTPingFormat (string acceptVersion, string authorization);
+        /// <returns>Pong</returns>
+        Pong POSTPingFormat (string acceptVersion, string authorization);
     }
   
     /// <summary>
@@ -85,8 +85,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Pong</returns>            
-        public QuickPayProtocolV10Pong GETPingFormat (string acceptVersion, string authorization)
+        /// <returns>Pong</returns>            
+        public Pong GETPingFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -116,7 +116,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETPingFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Pong) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Pong), response.Headers);
+            return (Pong) ApiClient.Deserialize(response.Content, typeof(Pong), response.Headers);
         }
     
         /// <summary>
@@ -124,8 +124,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Pong</returns>            
-        public QuickPayProtocolV10Pong POSTPingFormat (string acceptVersion, string authorization)
+        /// <returns>Pong</returns>            
+        public Pong POSTPingFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -155,7 +155,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTPingFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Pong) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Pong), response.Headers);
+            return (Pong) ApiClient.Deserialize(response.Content, typeof(Pong), response.Headers);
         }
     
     }

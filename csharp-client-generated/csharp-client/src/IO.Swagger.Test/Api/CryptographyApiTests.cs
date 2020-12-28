@@ -108,7 +108,7 @@ namespace IO.Swagger.Test
             //int? pageSize = null;
             //int? pageKey = null;
             //var response = instance.GETCryptographyKeysFormat(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
-            //Assert.IsInstanceOf<QuickPayProtocolV10MerchantCryptographyKey> (response, "response is QuickPayProtocolV10MerchantCryptographyKey");
+            //Assert.IsInstanceOf<MerchantCryptographyKey> (response, "response is MerchantCryptographyKey");
         }
         
         /// <summary>
@@ -136,7 +136,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //int? id = null;
             //var response = instance.GETCryptographyKeysIdFormat(acceptVersion, authorization, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10MerchantCryptographyKey> (response, "response is QuickPayProtocolV10MerchantCryptographyKey");
+            //Assert.IsInstanceOf<MerchantCryptographyKey> (response, "response is MerchantCryptographyKey");
         }
         
         /// <summary>
@@ -151,7 +151,7 @@ namespace IO.Swagger.Test
             //int? id = null;
             //string shortDescription = null;
             //var response = instance.PATCHCryptographyKeysIdFormat(acceptVersion, authorization, id, shortDescription);
-            //Assert.IsInstanceOf<QuickPayProtocolV10MerchantCryptographyKey> (response, "response is QuickPayProtocolV10MerchantCryptographyKey");
+            //Assert.IsInstanceOf<MerchantCryptographyKey> (response, "response is MerchantCryptographyKey");
         }
         
         /// <summary>
@@ -168,7 +168,7 @@ namespace IO.Swagger.Test
             //int? keySize = null;
             //string curve = null;
             //var response = instance.POSTCryptographyKeysFormat(acceptVersion, authorization, type, shortDescription, keySize, curve);
-            //Assert.IsInstanceOf<QuickPayProtocolV10MerchantCryptographyKey> (response, "response is QuickPayProtocolV10MerchantCryptographyKey");
+            //Assert.IsInstanceOf<MerchantCryptographyKey> (response, "response is MerchantCryptographyKey");
         }
         
         /// <summary>

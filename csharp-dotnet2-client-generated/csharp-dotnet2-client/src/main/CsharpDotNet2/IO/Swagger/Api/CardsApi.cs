@@ -33,16 +33,16 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
         /// <param name="pageKey"> </param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card GETCardsFormat (string acceptVersion, string authorization, string timestamp, string minTime, string maxTime, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey);
+        /// <returns>Card</returns>
+        Card GETCardsFormat (string acceptVersion, string authorization, string timestamp, string minTime, string maxTime, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey);
         /// <summary>
         /// Get saved card  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card GETCardsIdFormat (string acceptVersion, string authorization, string id);
+        /// <returns>Card</returns>
+        Card GETCardsIdFormat (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Get Operation  
         /// </summary>
@@ -50,8 +50,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10CardOperation</returns>
-        QuickPayProtocolV10CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id);
+        /// <returns>CardOperation</returns>
+        CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id);
         /// <summary>
         /// Update saved card  
         /// </summary>
@@ -59,16 +59,16 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables);
+        /// <returns>Card</returns>
+        Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables);
         /// <summary>
         /// Create saved card  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables);
+        /// <returns>Card</returns>
+        Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables);
         /// <summary>
         /// Authorize saved card  
         /// </summary>
@@ -84,8 +84,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param>
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras);
+        /// <returns>Card</returns>
+        Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras);
         /// <summary>
         /// Cancel saved card  
         /// </summary>
@@ -93,8 +93,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10Card</returns>
-        QuickPayProtocolV10Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized);
+        /// <returns>Card</returns>
+        Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized);
         /// <summary>
         /// Create fraud confirmation report  
         /// </summary>
@@ -103,16 +103,16 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
         /// <param name="description"> </param>
-        /// <returns>QuickPayProtocolV10FraudReport</returns>
-        QuickPayProtocolV10FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl, string description);
+        /// <returns>FraudReport</returns>
+        FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl, string description);
         /// <summary>
         /// Create card token  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
-        /// <returns>QuickPayProtocolV10CardToken</returns>
-        QuickPayProtocolV10CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id);
+        /// <returns>CardToken</returns>
+        CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Create or update a card link  
         /// </summary>
@@ -131,8 +131,8 @@ namespace IO.Swagger.Api
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param>
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param>
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10CardLinkUrl</returns>
-        QuickPayProtocolV10CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig);
+        /// <returns>CardLinkUrl</returns>
+        CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig);
     }
   
     /// <summary>
@@ -249,8 +249,8 @@ namespace IO.Swagger.Api
         /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
         /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
         /// <param name="pageKey"> </param> 
-        /// <returns>QuickPayProtocolV10Card</returns>            
-        public QuickPayProtocolV10Card GETCardsFormat (string acceptVersion, string authorization, string timestamp, string minTime, string maxTime, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey)
+        /// <returns>Card</returns>            
+        public Card GETCardsFormat (string acceptVersion, string authorization, string timestamp, string minTime, string maxTime, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -292,7 +292,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETCardsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Card) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Card), response.Headers);
+            return (Card) ApiClient.Deserialize(response.Content, typeof(Card), response.Headers);
         }
     
         /// <summary>
@@ -301,8 +301,8 @@ namespace IO.Swagger.Api
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id"> </param> 
-        /// <returns>QuickPayProtocolV10Card</returns>            
-        public QuickPayProtocolV10Card GETCardsIdFormat (string acceptVersion, string authorization, string id)
+        /// <returns>Card</returns>            
+        public Card GETCardsIdFormat (string acceptVersion, string authorization, string id)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -339,7 +339,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETCardsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Card) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Card), response.Headers);
+            return (Card) ApiClient.Deserialize(response.Content, typeof(Card), response.Headers);
         }
     
         /// <summary>
@@ -349,8 +349,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param> 
         /// <param name="id"> </param> 
-        /// <returns>QuickPayProtocolV10CardOperation</returns>            
-        public QuickPayProtocolV10CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id)
+        /// <returns>CardOperation</returns>            
+        public CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -391,7 +391,7 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETCardsIdOperationsOperationIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10CardOperation) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10CardOperation), response.Headers);
+            return (CardOperation) ApiClient.Deserialize(response.Content, typeof(CardOperation), response.Headers);
         }
     
         /// <summary>
@@ -401,8 +401,8 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id"> </param> 
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Card</returns>            
-        public QuickPayProtocolV10Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables)
+        /// <returns>Card</returns>            
+        public Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -440,7 +440,7 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHCardsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Card) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Card), response.Headers);
+            return (Card) ApiClient.Deserialize(response.Content, typeof(Card), response.Headers);
         }
     
         /// <summary>
@@ -449,8 +449,8 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Card</returns>            
-        public QuickPayProtocolV10Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables)
+        /// <returns>Card</returns>            
+        public Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -484,7 +484,7 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTCardsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Card) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Card), response.Headers);
+            return (Card) ApiClient.Deserialize(response.Content, typeof(Card), response.Headers);
         }
     
         /// <summary>
@@ -502,8 +502,8 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
         /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
         /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param> 
         /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Card</returns>            
-        public QuickPayProtocolV10Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras)
+        /// <returns>Card</returns>            
+        public Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -555,7 +555,7 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTCardsIdAuthorizeFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Card) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Card), response.Headers);
+            return (Card) ApiClient.Deserialize(response.Content, typeof(Card), response.Headers);
         }
     
         /// <summary>
@@ -565,8 +565,8 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id"> </param> 
         /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10Card</returns>            
-        public QuickPayProtocolV10Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized)
+        /// <returns>Card</returns>            
+        public Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -604,7 +604,7 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTCardsIdCancelFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10Card) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10Card), response.Headers);
+            return (Card) ApiClient.Deserialize(response.Content, typeof(Card), response.Headers);
         }
     
         /// <summary>
@@ -615,8 +615,8 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <param name="id"> </param> 
         /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
         /// <param name="description"> </param> 
-        /// <returns>QuickPayProtocolV10FraudReport</returns>            
-        public QuickPayProtocolV10FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl, string description)
+        /// <returns>FraudReport</returns>            
+        public FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl, string description)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -655,7 +655,7 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTCardsIdFraudReportFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10FraudReport) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10FraudReport), response.Headers);
+            return (FraudReport) ApiClient.Deserialize(response.Content, typeof(FraudReport), response.Headers);
         }
     
         /// <summary>
@@ -664,8 +664,8 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="id"> </param> 
-        /// <returns>QuickPayProtocolV10CardToken</returns>            
-        public QuickPayProtocolV10CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id)
+        /// <returns>CardToken</returns>            
+        public CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -702,7 +702,7 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTCardsIdTokensFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10CardToken) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10CardToken), response.Headers);
+            return (CardToken) ApiClient.Deserialize(response.Content, typeof(CardToken), response.Headers);
         }
     
         /// <summary>
@@ -723,8 +723,8 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param> 
         /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param> 
         /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10CardLinkUrl</returns>            
-        public QuickPayProtocolV10CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig)
+        /// <returns>CardLinkUrl</returns>            
+        public CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -773,7 +773,7 @@ if (brandingConfig != null) formParams.Add("branding_config", ApiClient.Paramete
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PUTCardsIdLinkFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10CardLinkUrl) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10CardLinkUrl), response.Headers);
+            return (CardLinkUrl) ApiClient.Deserialize(response.Content, typeof(CardLinkUrl), response.Headers);
         }
     
     }

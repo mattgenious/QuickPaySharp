@@ -74,7 +74,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //var response = instance.GETPaymentMethodPriorityFormat(acceptVersion, authorization);
-            //Assert.IsInstanceOf<QuickPayProtocolV10PaymentMethodPriority> (response, "response is QuickPayProtocolV10PaymentMethodPriority");
+            //Assert.IsInstanceOf<PaymentMethodPriority> (response, "response is PaymentMethodPriority");
         }
         
         /// <summary>

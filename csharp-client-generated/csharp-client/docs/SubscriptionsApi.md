@@ -86,7 +86,7 @@ No authorization required
 
 <a name="getsubscriptionsformat"></a>
 # **GETSubscriptionsFormat**
-> QuickPayProtocolV10Subscription GETSubscriptionsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+> Subscription GETSubscriptionsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? groupId = null, bool? fraudSuspected = null, bool? expired = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
 
 Get subscriptions
 
@@ -135,7 +135,7 @@ namespace Example
             try
             {
                 // Get subscriptions
-                QuickPayProtocolV10Subscription result = apiInstance.GETSubscriptionsFormat(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, groupId, fraudSuspected, expired, page, pageSize, sortBy, sortDir, pageKey);
+                Subscription result = apiInstance.GETSubscriptionsFormat(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, groupId, fraudSuspected, expired, page, pageSize, sortBy, sortDir, pageKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Subscription**](QuickPayProtocolV10Subscription.md)
+[**Subscription**](Subscription.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ No authorization required
 
 <a name="getsubscriptionsidformat"></a>
 # **GETSubscriptionsIdFormat**
-> QuickPayProtocolV10Subscription GETSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
+> Subscription GETSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
 
 Get subscription
 
@@ -222,7 +222,7 @@ namespace Example
             try
             {
                 // Get subscription
-                QuickPayProtocolV10Subscription result = apiInstance.GETSubscriptionsIdFormat(acceptVersion, authorization, id, operationsSize);
+                Subscription result = apiInstance.GETSubscriptionsIdFormat(acceptVersion, authorization, id, operationsSize);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Subscription**](QuickPayProtocolV10Subscription.md)
+[**Subscription**](Subscription.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ No authorization required
 
 <a name="getsubscriptionsidoperationsoperationidformat"></a>
 # **GETSubscriptionsIdOperationsOperationIdFormat**
-> QuickPayProtocolV10Operation GETSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
+> Operation GETSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
 
 Get Operation
 
@@ -289,7 +289,7 @@ namespace Example
             try
             {
                 // Get Operation
-                QuickPayProtocolV10Operation result = apiInstance.GETSubscriptionsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId);
+                Operation result = apiInstance.GETSubscriptionsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Operation**](QuickPayProtocolV10Operation.md)
+[**Operation**](Operation.md)
 
 ### Authorization
 
@@ -327,7 +327,7 @@ No authorization required
 
 <a name="getsubscriptionsidpaymentsformat"></a>
 # **GETSubscriptionsIdPaymentsFormat**
-> QuickPayProtocolV10Payment GETSubscriptionsIdPaymentsFormat (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
+> Payment GETSubscriptionsIdPaymentsFormat (string acceptVersion, string authorization, int? id, bool? accepted = null, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
 
 Get all subscription payments
 
@@ -365,7 +365,7 @@ namespace Example
             try
             {
                 // Get all subscription payments
-                QuickPayProtocolV10Payment result = apiInstance.GETSubscriptionsIdPaymentsFormat(acceptVersion, authorization, id, accepted, dateYear, dateMonth, dateDay, dateHour, dateMinute, page, pageSize, sortBy, sortDir);
+                Payment result = apiInstance.GETSubscriptionsIdPaymentsFormat(acceptVersion, authorization, id, accepted, dateYear, dateMonth, dateDay, dateHour, dateMinute, page, pageSize, sortBy, sortDir);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -397,7 +397,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -412,7 +412,7 @@ No authorization required
 
 <a name="patchsubscriptionsidformat"></a>
 # **PATCHSubscriptionsIdFormat**
-> QuickPayProtocolV10Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
+> Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt = null, List<int?> groupIds = null, string description = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null)
 
 Update subscription
 
@@ -472,7 +472,7 @@ namespace Example
             try
             {
                 // Update subscription
-                QuickPayProtocolV10Subscription result = apiInstance.PATCHSubscriptionsIdFormat(acceptVersion, authorization, id, deadlineAt, groupIds, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables);
+                Subscription result = apiInstance.PATCHSubscriptionsIdFormat(acceptVersion, authorization, id, deadlineAt, groupIds, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -526,7 +526,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Subscription**](QuickPayProtocolV10Subscription.md)
+[**Subscription**](Subscription.md)
 
 ### Authorization
 
@@ -541,7 +541,7 @@ No authorization required
 
 <a name="patchsubscriptionsidoperationsoperationidformat"></a>
 # **PATCHSubscriptionsIdOperationsOperationIdFormat**
-> QuickPayProtocolV10Operation PATCHSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
+> Operation PATCHSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
 
 Update operation
 
@@ -571,7 +571,7 @@ namespace Example
             try
             {
                 // Update operation
-                QuickPayProtocolV10Operation result = apiInstance.PATCHSubscriptionsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId, pending);
+                Operation result = apiInstance.PATCHSubscriptionsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId, pending);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -595,7 +595,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Operation**](QuickPayProtocolV10Operation.md)
+[**Operation**](Operation.md)
 
 ### Authorization
 
@@ -610,7 +610,7 @@ No authorization required
 
 <a name="postsubscriptionsformat"></a>
 # **POSTSubscriptionsFormat**
-> QuickPayProtocolV10Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
+> Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, Dictionary<string, string> variables = null, int? brandingId = null, List<int?> groupIds = null, string textOnStatement = null, string shopsystemName = null, string shopsystemVersion = null)
 
 Create subscription
 
@@ -674,7 +674,7 @@ namespace Example
             try
             {
                 // Create subscription
-                QuickPayProtocolV10Subscription result = apiInstance.POSTSubscriptionsFormat(acceptVersion, authorization, orderId, currency, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables, brandingId, groupIds, textOnStatement, shopsystemName, shopsystemVersion);
+                Subscription result = apiInstance.POSTSubscriptionsFormat(acceptVersion, authorization, orderId, currency, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables, brandingId, groupIds, textOnStatement, shopsystemName, shopsystemVersion);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -732,7 +732,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Subscription**](QuickPayProtocolV10Subscription.md)
+[**Subscription**](Subscription.md)
 
 ### Authorization
 
@@ -747,7 +747,7 @@ No authorization required
 
 <a name="postsubscriptionsidauthorizeformat"></a>
 # **POSTSubscriptionsIdAuthorizeFormat**
-> QuickPayProtocolV10Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+> Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
 
 Authorize a subscription
 
@@ -801,7 +801,7 @@ namespace Example
             try
             {
                 // Authorize a subscription
-                QuickPayProtocolV10Subscription result = apiInstance.POSTSubscriptionsIdAuthorizeFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
+                Subscription result = apiInstance.POSTSubscriptionsIdAuthorizeFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -849,7 +849,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Subscription**](QuickPayProtocolV10Subscription.md)
+[**Subscription**](Subscription.md)
 
 ### Authorization
 
@@ -864,7 +864,7 @@ No authorization required
 
 <a name="postsubscriptionsidcancelformat"></a>
 # **POSTSubscriptionsIdCancelFormat**
-> QuickPayProtocolV10Subscription POSTSubscriptionsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
+> Subscription POSTSubscriptionsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, bool? synchronized = null)
 
 Cancel subscription
 
@@ -894,7 +894,7 @@ namespace Example
             try
             {
                 // Cancel subscription
-                QuickPayProtocolV10Subscription result = apiInstance.POSTSubscriptionsIdCancelFormat(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
+                Subscription result = apiInstance.POSTSubscriptionsIdCancelFormat(acceptVersion, authorization, id, quickPayCallbackUrl, synchronized);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -918,7 +918,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Subscription**](QuickPayProtocolV10Subscription.md)
+[**Subscription**](Subscription.md)
 
 ### Authorization
 
@@ -933,7 +933,7 @@ No authorization required
 
 <a name="postsubscriptionsidfraudreportformat"></a>
 # **POSTSubscriptionsIdFraudReportFormat**
-> QuickPayProtocolV10FraudReport POSTSubscriptionsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
+> FraudReport POSTSubscriptionsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string description = null)
 
 Create fraud confirmation report
 
@@ -963,7 +963,7 @@ namespace Example
             try
             {
                 // Create fraud confirmation report
-                QuickPayProtocolV10FraudReport result = apiInstance.POSTSubscriptionsIdFraudReportFormat(acceptVersion, authorization, id, quickPayCallbackUrl, description);
+                FraudReport result = apiInstance.POSTSubscriptionsIdFraudReportFormat(acceptVersion, authorization, id, quickPayCallbackUrl, description);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -987,7 +987,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FraudReport**](QuickPayProtocolV10FraudReport.md)
+[**FraudReport**](FraudReport.md)
 
 ### Authorization
 
@@ -1002,7 +1002,7 @@ No authorization required
 
 <a name="postsubscriptionsidrecurringformat"></a>
 # **POSTSubscriptionsIdRecurringFormat**
-> QuickPayProtocolV10Payment POSTSubscriptionsIdRecurringFormat (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
+> Payment POSTSubscriptionsIdRecurringFormat (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, bool? autofee = null, bool? zeroAuth = null, string textOnStatement = null)
 
 Create subscription recurring payment
 
@@ -1038,7 +1038,7 @@ namespace Example
             try
             {
                 // Create subscription recurring payment
-                QuickPayProtocolV10Payment result = apiInstance.POSTSubscriptionsIdRecurringFormat(acceptVersion, authorization, id, amount, orderId, quickPayCallbackUrl, synchronized, autoCapture, autofee, zeroAuth, textOnStatement);
+                Payment result = apiInstance.POSTSubscriptionsIdRecurringFormat(acceptVersion, authorization, id, amount, orderId, quickPayCallbackUrl, synchronized, autoCapture, autofee, zeroAuth, textOnStatement);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1068,7 +1068,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Payment**](QuickPayProtocolV10Payment.md)
+[**Payment**](Payment.md)
 
 ### Authorization
 
@@ -1083,7 +1083,7 @@ No authorization required
 
 <a name="postsubscriptionsidsessionformat"></a>
 # **POSTSubscriptionsIdSessionFormat**
-> QuickPayProtocolV10Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
+> Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null)
 
 Create subscription session
 
@@ -1116,7 +1116,7 @@ namespace Example
             try
             {
                 // Create subscription session
-                QuickPayProtocolV10Subscription result = apiInstance.POSTSubscriptionsIdSessionFormat(acceptVersion, authorization, id, quickPayCallbackUrl, acquirer, autofee, customerIp, extras);
+                Subscription result = apiInstance.POSTSubscriptionsIdSessionFormat(acceptVersion, authorization, id, quickPayCallbackUrl, acquirer, autofee, customerIp, extras);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1143,7 +1143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Subscription**](QuickPayProtocolV10Subscription.md)
+[**Subscription**](Subscription.md)
 
 ### Authorization
 
@@ -1158,7 +1158,7 @@ No authorization required
 
 <a name="putsubscriptionsidlinkformat"></a>
 # **PUTSubscriptionsIdLinkFormat**
-> QuickPayProtocolV10PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
+> PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null)
 
 Create or update a payment link
 
@@ -1204,7 +1204,7 @@ namespace Example
             try
             {
                 // Create or update a payment link
-                QuickPayProtocolV10PaymentLinkUrl result = apiInstance.PUTSubscriptionsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection);
+                PaymentLinkUrl result = apiInstance.PUTSubscriptionsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, autoFee, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, deadline, framed, brandingConfig, customerEmail, invoiceAddressSelection, shippingAddressSelection);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1244,7 +1244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10PaymentLinkUrl**](QuickPayProtocolV10PaymentLinkUrl.md)
+[**PaymentLinkUrl**](PaymentLinkUrl.md)
 
 ### Authorization
 

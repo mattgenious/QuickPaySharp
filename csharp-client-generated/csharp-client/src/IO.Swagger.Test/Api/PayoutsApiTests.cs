@@ -106,7 +106,7 @@ namespace IO.Swagger.Test
             //string sortBy = null;
             //string sortDir = null;
             //var response = instance.GETPayoutsFormat(acceptVersion, authorization, dateYear, dateMonth, dateDay, dateHour, dateMinute, timestamp, minTime, maxTime, operationsSize, accepted, orderId, state, id, acquirer, page, pageSize, sortBy, sortDir);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Payout> (response, "response is QuickPayProtocolV10Payout");
+            //Assert.IsInstanceOf<Payout> (response, "response is Payout");
         }
         
         /// <summary>
@@ -121,7 +121,7 @@ namespace IO.Swagger.Test
             //int? id = null;
             //int? operationsSize = null;
             //var response = instance.GETPayoutsIdFormat(acceptVersion, authorization, id, operationsSize);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Payout> (response, "response is QuickPayProtocolV10Payout");
+            //Assert.IsInstanceOf<Payout> (response, "response is Payout");
         }
         
         /// <summary>
@@ -136,7 +136,7 @@ namespace IO.Swagger.Test
             //int? id = null;
             //int? operationId = null;
             //var response = instance.GETPayoutsIdOperationsOperationIdFormat(acceptVersion, authorization, id, operationId);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Operation> (response, "response is QuickPayProtocolV10Operation");
+            //Assert.IsInstanceOf<Operation> (response, "response is Operation");
         }
         
         /// <summary>
@@ -151,7 +151,7 @@ namespace IO.Swagger.Test
             //int? id = null;
             //Dictionary<string, string> variables = null;
             //var response = instance.PATCHPayoutsIdFormat(acceptVersion, authorization, id, variables);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Payout> (response, "response is QuickPayProtocolV10Payout");
+            //Assert.IsInstanceOf<Payout> (response, "response is Payout");
         }
         
         /// <summary>
@@ -168,7 +168,7 @@ namespace IO.Swagger.Test
             //Dictionary<string, string> variables = null;
             //string textOnStatement = null;
             //var response = instance.POSTPayoutsFormat(acceptVersion, authorization, currency, orderId, variables, textOnStatement);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Payout> (response, "response is QuickPayProtocolV10Payout");
+            //Assert.IsInstanceOf<Payout> (response, "response is Payout");
         }
         
         /// <summary>
@@ -208,7 +208,7 @@ namespace IO.Swagger.Test
             //string customerIp = null;
             //Dictionary<string, string> extras = null;
             //var response = instance.POSTPayoutsIdCreditFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Payout> (response, "response is QuickPayProtocolV10Payout");
+            //Assert.IsInstanceOf<Payout> (response, "response is Payout");
         }
         
         /// <summary>
@@ -235,7 +235,7 @@ namespace IO.Swagger.Test
             //bool? framed = null;
             //Dictionary<string, string> brandingConfig = null;
             //var response = instance.PUTPayoutsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
-            //Assert.IsInstanceOf<QuickPayProtocolV10PaymentLinkUrl> (response, "response is QuickPayProtocolV10PaymentLinkUrl");
+            //Assert.IsInstanceOf<PaymentLinkUrl> (response, "response is PaymentLinkUrl");
         }
         
     }

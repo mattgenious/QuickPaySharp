@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getpaymentmethodpriorityformat"></a>
 # **GETPaymentMethodPriorityFormat**
-> QuickPayProtocolV10PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization)
+> PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization)
 
 Get merchant payment method priority
 
@@ -37,7 +37,7 @@ namespace Example
             try
             {
                 // Get merchant payment method priority
-                QuickPayProtocolV10PaymentMethodPriority result = apiInstance.GETPaymentMethodPriorityFormat(acceptVersion, authorization);
+                PaymentMethodPriority result = apiInstance.GETPaymentMethodPriorityFormat(acceptVersion, authorization);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10PaymentMethodPriority**](QuickPayProtocolV10PaymentMethodPriority.md)
+[**PaymentMethodPriority**](PaymentMethodPriority.md)
 
 ### Authorization
 

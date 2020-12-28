@@ -84,7 +84,7 @@ No authorization required
 
 <a name="getcardsformat"></a>
 # **GETCardsFormat**
-> QuickPayProtocolV10Card GETCardsFormat (string acceptVersion, string authorization, string timestamp, string minTime, string maxTime, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey)
+> Card GETCardsFormat (string acceptVersion, string authorization, string timestamp, string minTime, string maxTime, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey)
 
 Get saved cards
 
@@ -121,7 +121,7 @@ namespace Example
             try
             {
                 // Get saved cards
-                QuickPayProtocolV10Card result = apiInstance.GETCardsFormat(acceptVersion, authorization, timestamp, minTime, maxTime, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
+                Card result = apiInstance.GETCardsFormat(acceptVersion, authorization, timestamp, minTime, maxTime, fraudSuspected, page, pageSize, sortBy, sortDir, pageKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Card**](QuickPayProtocolV10Card.md)
+[**Card**](Card.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ No authorization required
 
 <a name="getcardsidformat"></a>
 # **GETCardsIdFormat**
-> QuickPayProtocolV10Card GETCardsIdFormat (string acceptVersion, string authorization, string id)
+> Card GETCardsIdFormat (string acceptVersion, string authorization, string id)
 
 Get saved card
 
@@ -195,7 +195,7 @@ namespace Example
             try
             {
                 // Get saved card
-                QuickPayProtocolV10Card result = apiInstance.GETCardsIdFormat(acceptVersion, authorization, id);
+                Card result = apiInstance.GETCardsIdFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -217,7 +217,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Card**](QuickPayProtocolV10Card.md)
+[**Card**](Card.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ No authorization required
 
 <a name="getcardsidoperationsoperationidformat"></a>
 # **GETCardsIdOperationsOperationIdFormat**
-> QuickPayProtocolV10CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id)
+> CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id)
 
 Get Operation
 
@@ -262,7 +262,7 @@ namespace Example
             try
             {
                 // Get Operation
-                QuickPayProtocolV10CardOperation result = apiInstance.GETCardsIdOperationsOperationIdFormat(acceptVersion, authorization, operationId, id);
+                CardOperation result = apiInstance.GETCardsIdOperationsOperationIdFormat(acceptVersion, authorization, operationId, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10CardOperation**](QuickPayProtocolV10CardOperation.md)
+[**CardOperation**](CardOperation.md)
 
 ### Authorization
 
@@ -300,7 +300,7 @@ No authorization required
 
 <a name="patchcardsidformat"></a>
 # **PATCHCardsIdFormat**
-> QuickPayProtocolV10Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables)
+> Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables)
 
 Update saved card
 
@@ -330,7 +330,7 @@ namespace Example
             try
             {
                 // Update saved card
-                QuickPayProtocolV10Card result = apiInstance.PATCHCardsIdFormat(acceptVersion, authorization, id, variables);
+                Card result = apiInstance.PATCHCardsIdFormat(acceptVersion, authorization, id, variables);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Card**](QuickPayProtocolV10Card.md)
+[**Card**](Card.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ No authorization required
 
 <a name="postcardsformat"></a>
 # **POSTCardsFormat**
-> QuickPayProtocolV10Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables)
+> Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables)
 
 Create saved card
 
@@ -397,7 +397,7 @@ namespace Example
             try
             {
                 // Create saved card
-                QuickPayProtocolV10Card result = apiInstance.POSTCardsFormat(acceptVersion, authorization, variables);
+                Card result = apiInstance.POSTCardsFormat(acceptVersion, authorization, variables);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Card**](QuickPayProtocolV10Card.md)
+[**Card**](Card.md)
 
 ### Authorization
 
@@ -434,7 +434,7 @@ No authorization required
 
 <a name="postcardsidauthorizeformat"></a>
 # **POSTCardsIdAuthorizeFormat**
-> QuickPayProtocolV10Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras)
+> Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras)
 
 Authorize saved card
 
@@ -472,7 +472,7 @@ namespace Example
             try
             {
                 // Authorize saved card
-                QuickPayProtocolV10Card result = apiInstance.POSTCardsIdAuthorizeFormat(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
+                Card result = apiInstance.POSTCardsIdAuthorizeFormat(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -503,7 +503,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Card**](QuickPayProtocolV10Card.md)
+[**Card**](Card.md)
 
 ### Authorization
 
@@ -518,7 +518,7 @@ No authorization required
 
 <a name="postcardsidcancelformat"></a>
 # **POSTCardsIdCancelFormat**
-> QuickPayProtocolV10Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized)
+> Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized)
 
 Cancel saved card
 
@@ -548,7 +548,7 @@ namespace Example
             try
             {
                 // Cancel saved card
-                QuickPayProtocolV10Card result = apiInstance.POSTCardsIdCancelFormat(acceptVersion, authorization, id, synchronized);
+                Card result = apiInstance.POSTCardsIdCancelFormat(acceptVersion, authorization, id, synchronized);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -571,7 +571,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Card**](QuickPayProtocolV10Card.md)
+[**Card**](Card.md)
 
 ### Authorization
 
@@ -586,7 +586,7 @@ No authorization required
 
 <a name="postcardsidfraudreportformat"></a>
 # **POSTCardsIdFraudReportFormat**
-> QuickPayProtocolV10FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl, string description)
+> FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl, string description)
 
 Create fraud confirmation report
 
@@ -617,7 +617,7 @@ namespace Example
             try
             {
                 // Create fraud confirmation report
-                QuickPayProtocolV10FraudReport result = apiInstance.POSTCardsIdFraudReportFormat(acceptVersion, authorization, id, quickPayCallbackUrl, description);
+                FraudReport result = apiInstance.POSTCardsIdFraudReportFormat(acceptVersion, authorization, id, quickPayCallbackUrl, description);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -641,7 +641,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10FraudReport**](QuickPayProtocolV10FraudReport.md)
+[**FraudReport**](FraudReport.md)
 
 ### Authorization
 
@@ -656,7 +656,7 @@ No authorization required
 
 <a name="postcardsidtokensformat"></a>
 # **POSTCardsIdTokensFormat**
-> QuickPayProtocolV10CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id)
+> CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id)
 
 Create card token
 
@@ -685,7 +685,7 @@ namespace Example
             try
             {
                 // Create card token
-                QuickPayProtocolV10CardToken result = apiInstance.POSTCardsIdTokensFormat(acceptVersion, authorization, id);
+                CardToken result = apiInstance.POSTCardsIdTokensFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -707,7 +707,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10CardToken**](QuickPayProtocolV10CardToken.md)
+[**CardToken**](CardToken.md)
 
 ### Authorization
 
@@ -722,7 +722,7 @@ No authorization required
 
 <a name="putcardsidlinkformat"></a>
 # **PUTCardsIdLinkFormat**
-> QuickPayProtocolV10CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig)
+> CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig)
 
 Create or update a card link
 
@@ -763,7 +763,7 @@ namespace Example
             try
             {
                 // Create or update a card link
-                QuickPayProtocolV10CardLinkUrl result = apiInstance.PUTCardsIdLinkFormat(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
+                CardLinkUrl result = apiInstance.PUTCardsIdLinkFormat(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -797,7 +797,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10CardLinkUrl**](QuickPayProtocolV10CardLinkUrl.md)
+[**CardLinkUrl**](CardLinkUrl.md)
 
 ### Authorization
 

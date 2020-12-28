@@ -16,162 +16,162 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsBambora</returns>
-        QuickPayProtocolV10AcquirerSettingsBambora GETAcquirersBamboraFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsBambora</returns>
+        AcquirerSettingsBambora GETAcquirersBamboraFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Clearhaus acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsClearhaus</returns>
-        QuickPayProtocolV10AcquirerSettingsClearhaus GETAcquirersClearhausFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsClearhaus</returns>
+        AcquirerSettingsClearhaus GETAcquirersClearhausFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Coinify acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsCoinify</returns>
-        QuickPayProtocolV10AcquirerSettingsCoinify GETAcquirersCoinifyFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsCoinify</returns>
+        AcquirerSettingsCoinify GETAcquirersCoinifyFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Elavon acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsElavon</returns>
-        QuickPayProtocolV10AcquirerSettingsElavon GETAcquirersElavonFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsElavon</returns>
+        AcquirerSettingsElavon GETAcquirersElavonFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Fetch acquirers  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettings</returns>
-        QuickPayProtocolV10AcquirerSettings GETAcquirersFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettings</returns>
+        AcquirerSettings GETAcquirersFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Handelsbanken acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsHandelsbanken</returns>
-        QuickPayProtocolV10AcquirerSettingsHandelsbanken GETAcquirersHandelsbankenFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsHandelsbanken</returns>
+        AcquirerSettingsHandelsbanken GETAcquirersHandelsbankenFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Klarna acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsKlarna</returns>
-        QuickPayProtocolV10AcquirerSettingsKlarna GETAcquirersKlarnaFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsKlarna</returns>
+        AcquirerSettingsKlarna GETAcquirersKlarnaFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get KlarnaPayments acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsKlarnaPayments</returns>
-        QuickPayProtocolV10AcquirerSettingsKlarnaPayments GETAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsKlarnaPayments</returns>
+        AcquirerSettingsKlarnaPayments GETAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get MobilePay acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePay</returns>
-        QuickPayProtocolV10AcquirerSettingsMobilePay GETAcquirersMobilepayFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsMobilePay</returns>
+        AcquirerSettingsMobilePay GETAcquirersMobilepayFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get MobilePayOnline acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePayOnline</returns>
-        QuickPayProtocolV10AcquirerSettingsMobilePayOnline GETAcquirersMobilepayonlineFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsMobilePayOnline</returns>
+        AcquirerSettingsMobilePayOnline GETAcquirersMobilepayonlineFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get MobilePaySubscriptions acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions</returns>
-        QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions GETAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsMobilePaySubscriptions</returns>
+        AcquirerSettingsMobilePaySubscriptions GETAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Nets acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsNets</returns>
-        QuickPayProtocolV10AcquirerSettingsNets GETAcquirersNetsFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsNets</returns>
+        AcquirerSettingsNets GETAcquirersNetsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get PayPal acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsPayPal</returns>
-        QuickPayProtocolV10AcquirerSettingsPayPal GETAcquirersPaypalFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsPayPal</returns>
+        AcquirerSettingsPayPal GETAcquirersPaypalFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Paysafecard acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsPaysafecard</returns>
-        QuickPayProtocolV10AcquirerSettingsPaysafecard GETAcquirersPaysafecardFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsPaysafecard</returns>
+        AcquirerSettingsPaysafecard GETAcquirersPaysafecardFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Resurs acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsResurs</returns>
-        QuickPayProtocolV10AcquirerSettingsResurs GETAcquirersResursFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsResurs</returns>
+        AcquirerSettingsResurs GETAcquirersResursFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Sofort acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSofort</returns>
-        QuickPayProtocolV10AcquirerSettingsSofort GETAcquirersSofortFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsSofort</returns>
+        AcquirerSettingsSofort GETAcquirersSofortFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Swedbank acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSwedbank</returns>
-        QuickPayProtocolV10AcquirerSettingsSwedbank GETAcquirersSwedbankFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsSwedbank</returns>
+        AcquirerSettingsSwedbank GETAcquirersSwedbankFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Swish acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSwish</returns>
-        QuickPayProtocolV10AcquirerSettingsSwish GETAcquirersSwishFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsSwish</returns>
+        AcquirerSettingsSwish GETAcquirersSwishFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Teller acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsTeller</returns>
-        QuickPayProtocolV10AcquirerSettingsTeller GETAcquirersTellerFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsTeller</returns>
+        AcquirerSettingsTeller GETAcquirersTellerFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Trustly acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsTrustly</returns>
-        QuickPayProtocolV10AcquirerSettingsTrustly GETAcquirersTrustlyFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsTrustly</returns>
+        AcquirerSettingsTrustly GETAcquirersTrustlyFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Valitor acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsValitor</returns>
-        QuickPayProtocolV10AcquirerSettingsValitor GETAcquirersValitorFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsValitor</returns>
+        AcquirerSettingsValitor GETAcquirersValitorFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get ViaBill acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsViaBill</returns>
-        QuickPayProtocolV10AcquirerSettingsViaBill GETAcquirersViabillFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsViaBill</returns>
+        AcquirerSettingsViaBill GETAcquirersViabillFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Vipps acquirer settings  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsVipps</returns>
-        QuickPayProtocolV10AcquirerSettingsVipps GETAcquirersVippsFormat (string acceptVersion, string authorization);
+        /// <returns>AcquirerSettingsVipps</returns>
+        AcquirerSettingsVipps GETAcquirersVippsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Update Bambora acquirer settings  
         /// </summary>
@@ -189,8 +189,8 @@ namespace IO.Swagger.Api
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsBambora</returns>
-        QuickPayProtocolV10AcquirerSettingsBambora PATCHAcquirersBamboraFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
+        /// <returns>AcquirerSettingsBambora</returns>
+        AcquirerSettingsBambora PATCHAcquirersBamboraFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Clearhaus acquirer settings  
         /// </summary>
@@ -201,8 +201,8 @@ namespace IO.Swagger.Api
         /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt; </param>
         /// <param name="payout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt; </param>
         /// <param name="applePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsClearhaus</returns>
-        QuickPayProtocolV10AcquirerSettingsClearhaus PATCHAcquirersClearhausFormat (string acceptVersion, string authorization, bool? active, string apiKey, bool? recurring, bool? payout, bool? applePay);
+        /// <returns>AcquirerSettingsClearhaus</returns>
+        AcquirerSettingsClearhaus PATCHAcquirersClearhausFormat (string acceptVersion, string authorization, bool? active, string apiKey, bool? recurring, bool? payout, bool? applePay);
         /// <summary>
         /// Update Coinify acquirer settings  
         /// </summary>
@@ -212,8 +212,8 @@ namespace IO.Swagger.Api
         /// <param name="apiKey">&lt;p&gt;Coinify API key&lt;/p&gt; </param>
         /// <param name="apiSecret">&lt;p&gt;Coinify API secret&lt;/p&gt; </param>
         /// <param name="ipnSecret">&lt;p&gt;Coinify IPN secret (recommended)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsCoinify</returns>
-        QuickPayProtocolV10AcquirerSettingsCoinify PATCHAcquirersCoinifyFormat (string acceptVersion, string authorization, bool? active, string apiKey, string apiSecret, string ipnSecret);
+        /// <returns>AcquirerSettingsCoinify</returns>
+        AcquirerSettingsCoinify PATCHAcquirersCoinifyFormat (string acceptVersion, string authorization, bool? active, string apiKey, string apiSecret, string ipnSecret);
         /// <summary>
         /// Update Elavon acquirer settings  
         /// </summary>
@@ -231,8 +231,8 @@ namespace IO.Swagger.Api
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsElavon</returns>
-        QuickPayProtocolV10AcquirerSettingsElavon PATCHAcquirersElavonFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
+        /// <returns>AcquirerSettingsElavon</returns>
+        AcquirerSettingsElavon PATCHAcquirersElavonFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Handelsbanken acquirer settings  
         /// </summary>
@@ -250,8 +250,8 @@ namespace IO.Swagger.Api
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsHandelsbanken</returns>
-        QuickPayProtocolV10AcquirerSettingsHandelsbanken PATCHAcquirersHandelsbankenFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
+        /// <returns>AcquirerSettingsHandelsbanken</returns>
+        AcquirerSettingsHandelsbanken PATCHAcquirersHandelsbankenFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Klarna acquirer settings  
         /// </summary>
@@ -260,8 +260,8 @@ namespace IO.Swagger.Api
         /// <param name="active">&lt;p&gt;Enable Klarna payments&lt;/p&gt; </param>
         /// <param name="eid">&lt;p&gt;Klarna merchant ID&lt;/p&gt; </param>
         /// <param name="sharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsKlarna</returns>
-        QuickPayProtocolV10AcquirerSettingsKlarna PATCHAcquirersKlarnaFormat (string acceptVersion, string authorization, bool? active, int? eid, string sharedSecret);
+        /// <returns>AcquirerSettingsKlarna</returns>
+        AcquirerSettingsKlarna PATCHAcquirersKlarnaFormat (string acceptVersion, string authorization, bool? active, int? eid, string sharedSecret);
         /// <summary>
         /// Update KlarnaPayments acquirer settings  
         /// </summary>
@@ -270,8 +270,8 @@ namespace IO.Swagger.Api
         /// <param name="active">&lt;p&gt;Enable Klarna payments&lt;/p&gt; </param>
         /// <param name="uid">&lt;p&gt;Klarna username&lt;/p&gt; </param>
         /// <param name="password">&lt;p&gt;Klarna password&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsKlarnaPayments</returns>
-        QuickPayProtocolV10AcquirerSettingsKlarnaPayments PATCHAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization, bool? active, string uid, string password);
+        /// <returns>AcquirerSettingsKlarnaPayments</returns>
+        AcquirerSettingsKlarnaPayments PATCHAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization, bool? active, string uid, string password);
         /// <summary>
         /// Update MobilePay acquirer settings  
         /// </summary>
@@ -279,8 +279,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="active">&lt;p&gt;Enable MobilePay payments&lt;/p&gt; </param>
         /// <param name="deliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePay</returns>
-        QuickPayProtocolV10AcquirerSettingsMobilePay PATCHAcquirersMobilepayFormat (string acceptVersion, string authorization, bool? active, string deliveryLimitedTo);
+        /// <returns>AcquirerSettingsMobilePay</returns>
+        AcquirerSettingsMobilePay PATCHAcquirersMobilepayFormat (string acceptVersion, string authorization, bool? active, string deliveryLimitedTo);
         /// <summary>
         /// Update MobilePayOnline acquirer settings  
         /// </summary>
@@ -289,8 +289,8 @@ namespace IO.Swagger.Api
         /// <param name="active">&lt;p&gt;Enable MobilePay Online payments&lt;/p&gt; </param>
         /// <param name="merchantId">&lt;p&gt;Id for the merchant&lt;/p&gt; </param>
         /// <param name="deliveryLimitedTo">&lt;p&gt;Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePayOnline</returns>
-        QuickPayProtocolV10AcquirerSettingsMobilePayOnline PATCHAcquirersMobilepayonlineFormat (string acceptVersion, string authorization, bool? active, int? merchantId, string deliveryLimitedTo);
+        /// <returns>AcquirerSettingsMobilePayOnline</returns>
+        AcquirerSettingsMobilePayOnline PATCHAcquirersMobilepayonlineFormat (string acceptVersion, string authorization, bool? active, int? merchantId, string deliveryLimitedTo);
         /// <summary>
         /// Update MobilePaySubscriptions acquirer settings  
         /// </summary>
@@ -304,8 +304,8 @@ namespace IO.Swagger.Api
         /// <param name="pendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt; </param>
         /// <param name="provider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt; </param>
         /// <param name="refreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions</returns>
-        QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken);
+        /// <returns>AcquirerSettingsMobilePaySubscriptions</returns>
+        AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken);
         /// <summary>
         /// Update Nets acquirer settings  
         /// </summary>
@@ -323,8 +323,8 @@ namespace IO.Swagger.Api
         /// <param name="securepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
         /// <param name="visaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
         /// <param name="mastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsNets</returns>
-        QuickPayProtocolV10AcquirerSettingsNets PATCHAcquirersNetsFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, bool? recurring, bool? fbg1886, bool? securedByNets, string identificationCodeInt, bool? americanexpress, bool? dinersclub, bool? securepay, string visaBin, string mastercardBin);
+        /// <returns>AcquirerSettingsNets</returns>
+        AcquirerSettingsNets PATCHAcquirersNetsFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, bool? recurring, bool? fbg1886, bool? securedByNets, string identificationCodeInt, bool? americanexpress, bool? dinersclub, bool? securepay, string visaBin, string mastercardBin);
         /// <summary>
         /// Update PayPal acquirer settings  
         /// </summary>
@@ -336,8 +336,8 @@ namespace IO.Swagger.Api
         /// <param name="token">&lt;p&gt;Authentication token&lt;/p&gt; </param>
         /// <param name="tokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt; </param>
         /// <param name="scope">&lt;p&gt;Authentication scope&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsPayPal</returns>
-        QuickPayProtocolV10AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope);
+        /// <returns>AcquirerSettingsPayPal</returns>
+        AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope);
         /// <summary>
         /// Update Paysafecard acquirer settings  
         /// </summary>
@@ -347,8 +347,8 @@ namespace IO.Swagger.Api
         /// <param name="username">&lt;p&gt;Paysafecard username&lt;/p&gt; </param>
         /// <param name="password">&lt;p&gt;Paysafecard password&lt;/p&gt; </param>
         /// <param name="currencies">&lt;p&gt;Paysafecard currencies (Paysafecard requires agreement per currency)&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsPaysafecard</returns>
-        QuickPayProtocolV10AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies);
+        /// <returns>AcquirerSettingsPaysafecard</returns>
+        AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies);
         /// <summary>
         /// Update Resurs acquirer settings  
         /// </summary>
@@ -357,8 +357,8 @@ namespace IO.Swagger.Api
         /// <param name="active">&lt;p&gt;Enable Resurs payments&lt;/p&gt; </param>
         /// <param name="customerId">&lt;p&gt;Resurs customer ID&lt;/p&gt; </param>
         /// <param name="customerPassword">&lt;p&gt;Resurs password&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsResurs</returns>
-        QuickPayProtocolV10AcquirerSettingsResurs PATCHAcquirersResursFormat (string acceptVersion, string authorization, bool? active, string customerId, string customerPassword);
+        /// <returns>AcquirerSettingsResurs</returns>
+        AcquirerSettingsResurs PATCHAcquirersResursFormat (string acceptVersion, string authorization, bool? active, string customerId, string customerPassword);
         /// <summary>
         /// Update Sofort acquirer settings  
         /// </summary>
@@ -373,8 +373,8 @@ namespace IO.Swagger.Api
         /// <param name="idealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt; </param>
         /// <param name="idealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt; </param>
         /// <param name="idealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSofort</returns>
-        QuickPayProtocolV10AcquirerSettingsSofort PATCHAcquirersSofortFormat (string acceptVersion, string authorization, bool? active, int? customerNumber, int? projectId, string apiKey, bool? gateway, bool? ideal, int? idealProjectId, string idealProjectPassword, string idealNotificationPassword);
+        /// <returns>AcquirerSettingsSofort</returns>
+        AcquirerSettingsSofort PATCHAcquirersSofortFormat (string acceptVersion, string authorization, bool? active, int? customerNumber, int? projectId, string apiKey, bool? gateway, bool? ideal, int? idealProjectId, string idealProjectPassword, string idealNotificationPassword);
         /// <summary>
         /// Update Swedbank acquirer settings  
         /// </summary>
@@ -392,8 +392,8 @@ namespace IO.Swagger.Api
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSwedbank</returns>
-        QuickPayProtocolV10AcquirerSettingsSwedbank PATCHAcquirersSwedbankFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
+        /// <returns>AcquirerSettingsSwedbank</returns>
+        AcquirerSettingsSwedbank PATCHAcquirersSwedbankFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Swish acquirer settings  
         /// </summary>
@@ -402,8 +402,8 @@ namespace IO.Swagger.Api
         /// <param name="active">&lt;p&gt;Enable Swish payments&lt;/p&gt; </param>
         /// <param name="merchantId">&lt;p&gt;Swish merchant id&lt;/p&gt; </param>
         /// <param name="cryptographyKeyId">&lt;p&gt;Swish certificate and private-key from Cryptography store&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSwish</returns>
-        QuickPayProtocolV10AcquirerSettingsSwish PATCHAcquirersSwishFormat (string acceptVersion, string authorization, bool? active, string merchantId, int? cryptographyKeyId);
+        /// <returns>AcquirerSettingsSwish</returns>
+        AcquirerSettingsSwish PATCHAcquirersSwishFormat (string acceptVersion, string authorization, bool? active, string merchantId, int? cryptographyKeyId);
         /// <summary>
         /// Update Teller acquirer settings  
         /// </summary>
@@ -421,8 +421,8 @@ namespace IO.Swagger.Api
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
         /// <param name="visaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
         /// <param name="mastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsTeller</returns>
-        QuickPayProtocolV10AcquirerSettingsTeller PATCHAcquirersTellerFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
+        /// <returns>AcquirerSettingsTeller</returns>
+        AcquirerSettingsTeller PATCHAcquirersTellerFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Trustly acquirer settings  
         /// </summary>
@@ -432,8 +432,8 @@ namespace IO.Swagger.Api
         /// <param name="ideal">&lt;p&gt;Enable iDeal payments&lt;/p&gt; </param>
         /// <param name="username">&lt;p&gt;Trustly API username&lt;/p&gt; </param>
         /// <param name="password">&lt;p&gt;Trustly API password&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsTrustly</returns>
-        QuickPayProtocolV10AcquirerSettingsTrustly PATCHAcquirersTrustlyFormat (string acceptVersion, string authorization, bool? active, bool? ideal, string username, string password);
+        /// <returns>AcquirerSettingsTrustly</returns>
+        AcquirerSettingsTrustly PATCHAcquirersTrustlyFormat (string acceptVersion, string authorization, bool? active, bool? ideal, string username, string password);
         /// <summary>
         /// Update Valitor acquirer settings  
         /// </summary>
@@ -451,8 +451,8 @@ namespace IO.Swagger.Api
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsValitor</returns>
-        QuickPayProtocolV10AcquirerSettingsValitor PATCHAcquirersValitorFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
+        /// <returns>AcquirerSettingsValitor</returns>
+        AcquirerSettingsValitor PATCHAcquirersValitorFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update ViaBill acquirer settings  
         /// </summary>
@@ -460,8 +460,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="active">&lt;p&gt;Enable ViaBill payments&lt;/p&gt; </param>
         /// <param name="apiKey">&lt;p&gt;ViaBill API key&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsViaBill</returns>
-        QuickPayProtocolV10AcquirerSettingsViaBill PATCHAcquirersViabillFormat (string acceptVersion, string authorization, bool? active, string apiKey);
+        /// <returns>AcquirerSettingsViaBill</returns>
+        AcquirerSettingsViaBill PATCHAcquirersViabillFormat (string acceptVersion, string authorization, bool? active, string apiKey);
         /// <summary>
         /// Update Vipps acquirer settings  
         /// </summary>
@@ -474,16 +474,16 @@ namespace IO.Swagger.Api
         /// <param name="accessTokenSubscriptionKey">&lt;p&gt;Vipps Access-Token Subscription Key&lt;/p&gt; </param>
         /// <param name="ecommerceSubscriptionKey">&lt;p&gt;Vipps eCommerce Subscription Key&lt;/p&gt; </param>
         /// <param name="orgno">&lt;p&gt;Vipps companys organization number&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerSettingsVipps</returns>
-        QuickPayProtocolV10AcquirerSettingsVipps PATCHAcquirersVippsFormat (string acceptVersion, string authorization, bool? active, string clientId, string clientSecret, string serialNumber, string accessTokenSubscriptionKey, string ecommerceSubscriptionKey, string orgno);
+        /// <returns>AcquirerSettingsVipps</returns>
+        AcquirerSettingsVipps PATCHAcquirersVippsFormat (string acceptVersion, string authorization, bool? active, string clientId, string clientSecret, string serialNumber, string accessTokenSubscriptionKey, string ecommerceSubscriptionKey, string orgno);
         /// <summary>
         /// Test payments via acquirer  
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="acquirer">&lt;p&gt;Acquirer name&lt;/p&gt; </param>
-        /// <returns>QuickPayProtocolV10AcquirerTest</returns>
-        QuickPayProtocolV10AcquirerTest POSTAcquirersAcquirerTestFormat (string acceptVersion, string authorization, string acquirer);
+        /// <returns>AcquirerTest</returns>
+        AcquirerTest POSTAcquirersAcquirerTestFormat (string acceptVersion, string authorization, string acquirer);
     }
   
     /// <summary>
@@ -544,8 +544,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsBambora</returns>            
-        public QuickPayProtocolV10AcquirerSettingsBambora GETAcquirersBamboraFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsBambora</returns>            
+        public AcquirerSettingsBambora GETAcquirersBamboraFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -578,7 +578,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersBamboraFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsBambora) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsBambora), response.Headers);
+            return (AcquirerSettingsBambora) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsBambora), response.Headers);
         }
     
         /// <summary>
@@ -586,8 +586,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsClearhaus</returns>            
-        public QuickPayProtocolV10AcquirerSettingsClearhaus GETAcquirersClearhausFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsClearhaus</returns>            
+        public AcquirerSettingsClearhaus GETAcquirersClearhausFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -620,7 +620,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersClearhausFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsClearhaus) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsClearhaus), response.Headers);
+            return (AcquirerSettingsClearhaus) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsClearhaus), response.Headers);
         }
     
         /// <summary>
@@ -628,8 +628,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsCoinify</returns>            
-        public QuickPayProtocolV10AcquirerSettingsCoinify GETAcquirersCoinifyFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsCoinify</returns>            
+        public AcquirerSettingsCoinify GETAcquirersCoinifyFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -662,7 +662,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersCoinifyFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsCoinify) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsCoinify), response.Headers);
+            return (AcquirerSettingsCoinify) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsCoinify), response.Headers);
         }
     
         /// <summary>
@@ -670,8 +670,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsElavon</returns>            
-        public QuickPayProtocolV10AcquirerSettingsElavon GETAcquirersElavonFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsElavon</returns>            
+        public AcquirerSettingsElavon GETAcquirersElavonFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -704,7 +704,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersElavonFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsElavon) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsElavon), response.Headers);
+            return (AcquirerSettingsElavon) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsElavon), response.Headers);
         }
     
         /// <summary>
@@ -712,8 +712,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettings</returns>            
-        public QuickPayProtocolV10AcquirerSettings GETAcquirersFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettings</returns>            
+        public AcquirerSettings GETAcquirersFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -746,7 +746,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettings) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettings), response.Headers);
+            return (AcquirerSettings) ApiClient.Deserialize(response.Content, typeof(AcquirerSettings), response.Headers);
         }
     
         /// <summary>
@@ -754,8 +754,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsHandelsbanken</returns>            
-        public QuickPayProtocolV10AcquirerSettingsHandelsbanken GETAcquirersHandelsbankenFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsHandelsbanken</returns>            
+        public AcquirerSettingsHandelsbanken GETAcquirersHandelsbankenFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -788,7 +788,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersHandelsbankenFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsHandelsbanken) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsHandelsbanken), response.Headers);
+            return (AcquirerSettingsHandelsbanken) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsHandelsbanken), response.Headers);
         }
     
         /// <summary>
@@ -796,8 +796,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsKlarna</returns>            
-        public QuickPayProtocolV10AcquirerSettingsKlarna GETAcquirersKlarnaFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsKlarna</returns>            
+        public AcquirerSettingsKlarna GETAcquirersKlarnaFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -830,7 +830,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersKlarnaFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsKlarna) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsKlarna), response.Headers);
+            return (AcquirerSettingsKlarna) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsKlarna), response.Headers);
         }
     
         /// <summary>
@@ -838,8 +838,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsKlarnaPayments</returns>            
-        public QuickPayProtocolV10AcquirerSettingsKlarnaPayments GETAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsKlarnaPayments</returns>            
+        public AcquirerSettingsKlarnaPayments GETAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -872,7 +872,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersKlarnapaymentsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsKlarnaPayments) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsKlarnaPayments), response.Headers);
+            return (AcquirerSettingsKlarnaPayments) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsKlarnaPayments), response.Headers);
         }
     
         /// <summary>
@@ -880,8 +880,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePay</returns>            
-        public QuickPayProtocolV10AcquirerSettingsMobilePay GETAcquirersMobilepayFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsMobilePay</returns>            
+        public AcquirerSettingsMobilePay GETAcquirersMobilepayFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -914,7 +914,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersMobilepayFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsMobilePay) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsMobilePay), response.Headers);
+            return (AcquirerSettingsMobilePay) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsMobilePay), response.Headers);
         }
     
         /// <summary>
@@ -922,8 +922,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePayOnline</returns>            
-        public QuickPayProtocolV10AcquirerSettingsMobilePayOnline GETAcquirersMobilepayonlineFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsMobilePayOnline</returns>            
+        public AcquirerSettingsMobilePayOnline GETAcquirersMobilepayonlineFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -956,7 +956,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersMobilepayonlineFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsMobilePayOnline) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsMobilePayOnline), response.Headers);
+            return (AcquirerSettingsMobilePayOnline) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsMobilePayOnline), response.Headers);
         }
     
         /// <summary>
@@ -964,8 +964,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions</returns>            
-        public QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions GETAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsMobilePaySubscriptions</returns>            
+        public AcquirerSettingsMobilePaySubscriptions GETAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -998,7 +998,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersMobilepaysubscriptionsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions), response.Headers);
+            return (AcquirerSettingsMobilePaySubscriptions) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsMobilePaySubscriptions), response.Headers);
         }
     
         /// <summary>
@@ -1006,8 +1006,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsNets</returns>            
-        public QuickPayProtocolV10AcquirerSettingsNets GETAcquirersNetsFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsNets</returns>            
+        public AcquirerSettingsNets GETAcquirersNetsFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1040,7 +1040,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersNetsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsNets) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsNets), response.Headers);
+            return (AcquirerSettingsNets) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsNets), response.Headers);
         }
     
         /// <summary>
@@ -1048,8 +1048,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsPayPal</returns>            
-        public QuickPayProtocolV10AcquirerSettingsPayPal GETAcquirersPaypalFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsPayPal</returns>            
+        public AcquirerSettingsPayPal GETAcquirersPaypalFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1082,7 +1082,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersPaypalFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsPayPal) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsPayPal), response.Headers);
+            return (AcquirerSettingsPayPal) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsPayPal), response.Headers);
         }
     
         /// <summary>
@@ -1090,8 +1090,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsPaysafecard</returns>            
-        public QuickPayProtocolV10AcquirerSettingsPaysafecard GETAcquirersPaysafecardFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsPaysafecard</returns>            
+        public AcquirerSettingsPaysafecard GETAcquirersPaysafecardFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1124,7 +1124,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersPaysafecardFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsPaysafecard) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsPaysafecard), response.Headers);
+            return (AcquirerSettingsPaysafecard) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsPaysafecard), response.Headers);
         }
     
         /// <summary>
@@ -1132,8 +1132,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsResurs</returns>            
-        public QuickPayProtocolV10AcquirerSettingsResurs GETAcquirersResursFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsResurs</returns>            
+        public AcquirerSettingsResurs GETAcquirersResursFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1166,7 +1166,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersResursFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsResurs) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsResurs), response.Headers);
+            return (AcquirerSettingsResurs) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsResurs), response.Headers);
         }
     
         /// <summary>
@@ -1174,8 +1174,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSofort</returns>            
-        public QuickPayProtocolV10AcquirerSettingsSofort GETAcquirersSofortFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsSofort</returns>            
+        public AcquirerSettingsSofort GETAcquirersSofortFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1208,7 +1208,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersSofortFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsSofort) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsSofort), response.Headers);
+            return (AcquirerSettingsSofort) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsSofort), response.Headers);
         }
     
         /// <summary>
@@ -1216,8 +1216,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSwedbank</returns>            
-        public QuickPayProtocolV10AcquirerSettingsSwedbank GETAcquirersSwedbankFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsSwedbank</returns>            
+        public AcquirerSettingsSwedbank GETAcquirersSwedbankFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1250,7 +1250,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersSwedbankFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsSwedbank) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsSwedbank), response.Headers);
+            return (AcquirerSettingsSwedbank) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsSwedbank), response.Headers);
         }
     
         /// <summary>
@@ -1258,8 +1258,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSwish</returns>            
-        public QuickPayProtocolV10AcquirerSettingsSwish GETAcquirersSwishFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsSwish</returns>            
+        public AcquirerSettingsSwish GETAcquirersSwishFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1292,7 +1292,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersSwishFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsSwish) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsSwish), response.Headers);
+            return (AcquirerSettingsSwish) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsSwish), response.Headers);
         }
     
         /// <summary>
@@ -1300,8 +1300,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsTeller</returns>            
-        public QuickPayProtocolV10AcquirerSettingsTeller GETAcquirersTellerFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsTeller</returns>            
+        public AcquirerSettingsTeller GETAcquirersTellerFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1334,7 +1334,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersTellerFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsTeller) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsTeller), response.Headers);
+            return (AcquirerSettingsTeller) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsTeller), response.Headers);
         }
     
         /// <summary>
@@ -1342,8 +1342,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsTrustly</returns>            
-        public QuickPayProtocolV10AcquirerSettingsTrustly GETAcquirersTrustlyFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsTrustly</returns>            
+        public AcquirerSettingsTrustly GETAcquirersTrustlyFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1376,7 +1376,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersTrustlyFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsTrustly) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsTrustly), response.Headers);
+            return (AcquirerSettingsTrustly) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsTrustly), response.Headers);
         }
     
         /// <summary>
@@ -1384,8 +1384,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsValitor</returns>            
-        public QuickPayProtocolV10AcquirerSettingsValitor GETAcquirersValitorFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsValitor</returns>            
+        public AcquirerSettingsValitor GETAcquirersValitorFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1418,7 +1418,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersValitorFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsValitor) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsValitor), response.Headers);
+            return (AcquirerSettingsValitor) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsValitor), response.Headers);
         }
     
         /// <summary>
@@ -1426,8 +1426,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsViaBill</returns>            
-        public QuickPayProtocolV10AcquirerSettingsViaBill GETAcquirersViabillFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsViaBill</returns>            
+        public AcquirerSettingsViaBill GETAcquirersViabillFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1460,7 +1460,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersViabillFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsViaBill) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsViaBill), response.Headers);
+            return (AcquirerSettingsViaBill) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsViaBill), response.Headers);
         }
     
         /// <summary>
@@ -1468,8 +1468,8 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsVipps</returns>            
-        public QuickPayProtocolV10AcquirerSettingsVipps GETAcquirersVippsFormat (string acceptVersion, string authorization)
+        /// <returns>AcquirerSettingsVipps</returns>            
+        public AcquirerSettingsVipps GETAcquirersVippsFormat (string acceptVersion, string authorization)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1502,7 +1502,7 @@ namespace IO.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETAcquirersVippsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsVipps) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsVipps), response.Headers);
+            return (AcquirerSettingsVipps) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsVipps), response.Headers);
         }
     
         /// <summary>
@@ -1522,8 +1522,8 @@ namespace IO.Swagger.Api
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsBambora</returns>            
-        public QuickPayProtocolV10AcquirerSettingsBambora PATCHAcquirersBamboraFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+        /// <returns>AcquirerSettingsBambora</returns>            
+        public AcquirerSettingsBambora PATCHAcquirersBamboraFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1577,7 +1577,7 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersBamboraFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsBambora) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsBambora), response.Headers);
+            return (AcquirerSettingsBambora) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsBambora), response.Headers);
         }
     
         /// <summary>
@@ -1590,8 +1590,8 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt; </param> 
         /// <param name="payout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt; </param> 
         /// <param name="applePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsClearhaus</returns>            
-        public QuickPayProtocolV10AcquirerSettingsClearhaus PATCHAcquirersClearhausFormat (string acceptVersion, string authorization, bool? active, string apiKey, bool? recurring, bool? payout, bool? applePay)
+        /// <returns>AcquirerSettingsClearhaus</returns>            
+        public AcquirerSettingsClearhaus PATCHAcquirersClearhausFormat (string acceptVersion, string authorization, bool? active, string apiKey, bool? recurring, bool? payout, bool? applePay)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1635,7 +1635,7 @@ if (applePay != null) formParams.Add("apple_pay", ApiClient.ParameterToString(ap
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersClearhausFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsClearhaus) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsClearhaus), response.Headers);
+            return (AcquirerSettingsClearhaus) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsClearhaus), response.Headers);
         }
     
         /// <summary>
@@ -1647,8 +1647,8 @@ if (applePay != null) formParams.Add("apple_pay", ApiClient.ParameterToString(ap
         /// <param name="apiKey">&lt;p&gt;Coinify API key&lt;/p&gt; </param> 
         /// <param name="apiSecret">&lt;p&gt;Coinify API secret&lt;/p&gt; </param> 
         /// <param name="ipnSecret">&lt;p&gt;Coinify IPN secret (recommended)&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsCoinify</returns>            
-        public QuickPayProtocolV10AcquirerSettingsCoinify PATCHAcquirersCoinifyFormat (string acceptVersion, string authorization, bool? active, string apiKey, string apiSecret, string ipnSecret)
+        /// <returns>AcquirerSettingsCoinify</returns>            
+        public AcquirerSettingsCoinify PATCHAcquirersCoinifyFormat (string acceptVersion, string authorization, bool? active, string apiKey, string apiSecret, string ipnSecret)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1694,7 +1694,7 @@ if (ipnSecret != null) formParams.Add("ipn_secret", ApiClient.ParameterToString(
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersCoinifyFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsCoinify) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsCoinify), response.Headers);
+            return (AcquirerSettingsCoinify) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsCoinify), response.Headers);
         }
     
         /// <summary>
@@ -1714,8 +1714,8 @@ if (ipnSecret != null) formParams.Add("ipn_secret", ApiClient.ParameterToString(
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsElavon</returns>            
-        public QuickPayProtocolV10AcquirerSettingsElavon PATCHAcquirersElavonFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+        /// <returns>AcquirerSettingsElavon</returns>            
+        public AcquirerSettingsElavon PATCHAcquirersElavonFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1769,7 +1769,7 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersElavonFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsElavon) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsElavon), response.Headers);
+            return (AcquirerSettingsElavon) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsElavon), response.Headers);
         }
     
         /// <summary>
@@ -1789,8 +1789,8 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsHandelsbanken</returns>            
-        public QuickPayProtocolV10AcquirerSettingsHandelsbanken PATCHAcquirersHandelsbankenFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+        /// <returns>AcquirerSettingsHandelsbanken</returns>            
+        public AcquirerSettingsHandelsbanken PATCHAcquirersHandelsbankenFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1844,7 +1844,7 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersHandelsbankenFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsHandelsbanken) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsHandelsbanken), response.Headers);
+            return (AcquirerSettingsHandelsbanken) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsHandelsbanken), response.Headers);
         }
     
         /// <summary>
@@ -1855,8 +1855,8 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <param name="active">&lt;p&gt;Enable Klarna payments&lt;/p&gt; </param> 
         /// <param name="eid">&lt;p&gt;Klarna merchant ID&lt;/p&gt; </param> 
         /// <param name="sharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsKlarna</returns>            
-        public QuickPayProtocolV10AcquirerSettingsKlarna PATCHAcquirersKlarnaFormat (string acceptVersion, string authorization, bool? active, int? eid, string sharedSecret)
+        /// <returns>AcquirerSettingsKlarna</returns>            
+        public AcquirerSettingsKlarna PATCHAcquirersKlarnaFormat (string acceptVersion, string authorization, bool? active, int? eid, string sharedSecret)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1901,7 +1901,7 @@ if (sharedSecret != null) formParams.Add("shared_secret", ApiClient.ParameterToS
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersKlarnaFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsKlarna) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsKlarna), response.Headers);
+            return (AcquirerSettingsKlarna) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsKlarna), response.Headers);
         }
     
         /// <summary>
@@ -1912,8 +1912,8 @@ if (sharedSecret != null) formParams.Add("shared_secret", ApiClient.ParameterToS
         /// <param name="active">&lt;p&gt;Enable Klarna payments&lt;/p&gt; </param> 
         /// <param name="uid">&lt;p&gt;Klarna username&lt;/p&gt; </param> 
         /// <param name="password">&lt;p&gt;Klarna password&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsKlarnaPayments</returns>            
-        public QuickPayProtocolV10AcquirerSettingsKlarnaPayments PATCHAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization, bool? active, string uid, string password)
+        /// <returns>AcquirerSettingsKlarnaPayments</returns>            
+        public AcquirerSettingsKlarnaPayments PATCHAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization, bool? active, string uid, string password)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1958,7 +1958,7 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersKlarnapaymentsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsKlarnaPayments) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsKlarnaPayments), response.Headers);
+            return (AcquirerSettingsKlarnaPayments) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsKlarnaPayments), response.Headers);
         }
     
         /// <summary>
@@ -1968,8 +1968,8 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="active">&lt;p&gt;Enable MobilePay payments&lt;/p&gt; </param> 
         /// <param name="deliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePay</returns>            
-        public QuickPayProtocolV10AcquirerSettingsMobilePay PATCHAcquirersMobilepayFormat (string acceptVersion, string authorization, bool? active, string deliveryLimitedTo)
+        /// <returns>AcquirerSettingsMobilePay</returns>            
+        public AcquirerSettingsMobilePay PATCHAcquirersMobilepayFormat (string acceptVersion, string authorization, bool? active, string deliveryLimitedTo)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2007,7 +2007,7 @@ if (deliveryLimitedTo != null) formParams.Add("delivery_limited_to", ApiClient.P
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersMobilepayFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsMobilePay) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsMobilePay), response.Headers);
+            return (AcquirerSettingsMobilePay) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsMobilePay), response.Headers);
         }
     
         /// <summary>
@@ -2018,8 +2018,8 @@ if (deliveryLimitedTo != null) formParams.Add("delivery_limited_to", ApiClient.P
         /// <param name="active">&lt;p&gt;Enable MobilePay Online payments&lt;/p&gt; </param> 
         /// <param name="merchantId">&lt;p&gt;Id for the merchant&lt;/p&gt; </param> 
         /// <param name="deliveryLimitedTo">&lt;p&gt;Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePayOnline</returns>            
-        public QuickPayProtocolV10AcquirerSettingsMobilePayOnline PATCHAcquirersMobilepayonlineFormat (string acceptVersion, string authorization, bool? active, int? merchantId, string deliveryLimitedTo)
+        /// <returns>AcquirerSettingsMobilePayOnline</returns>            
+        public AcquirerSettingsMobilePayOnline PATCHAcquirersMobilepayonlineFormat (string acceptVersion, string authorization, bool? active, int? merchantId, string deliveryLimitedTo)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2058,7 +2058,7 @@ if (deliveryLimitedTo != null) formParams.Add("delivery_limited_to", ApiClient.P
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersMobilepayonlineFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsMobilePayOnline) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsMobilePayOnline), response.Headers);
+            return (AcquirerSettingsMobilePayOnline) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsMobilePayOnline), response.Headers);
         }
     
         /// <summary>
@@ -2074,8 +2074,8 @@ if (deliveryLimitedTo != null) formParams.Add("delivery_limited_to", ApiClient.P
         /// <param name="pendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt; </param> 
         /// <param name="provider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt; </param> 
         /// <param name="refreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions</returns>            
-        public QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken)
+        /// <returns>AcquirerSettingsMobilePaySubscriptions</returns>            
+        public AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2119,7 +2119,7 @@ if (refreshToken != null) formParams.Add("refresh_token", ApiClient.ParameterToS
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersMobilepaysubscriptionsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsMobilePaySubscriptions), response.Headers);
+            return (AcquirerSettingsMobilePaySubscriptions) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsMobilePaySubscriptions), response.Headers);
         }
     
         /// <summary>
@@ -2139,8 +2139,8 @@ if (refreshToken != null) formParams.Add("refresh_token", ApiClient.ParameterToS
         /// <param name="securepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
         /// <param name="visaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
         /// <param name="mastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsNets</returns>            
-        public QuickPayProtocolV10AcquirerSettingsNets PATCHAcquirersNetsFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, bool? recurring, bool? fbg1886, bool? securedByNets, string identificationCodeInt, bool? americanexpress, bool? dinersclub, bool? securepay, string visaBin, string mastercardBin)
+        /// <returns>AcquirerSettingsNets</returns>            
+        public AcquirerSettingsNets PATCHAcquirersNetsFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, bool? recurring, bool? fbg1886, bool? securedByNets, string identificationCodeInt, bool? americanexpress, bool? dinersclub, bool? securepay, string visaBin, string mastercardBin)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2194,7 +2194,7 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersNetsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsNets) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsNets), response.Headers);
+            return (AcquirerSettingsNets) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsNets), response.Headers);
         }
     
         /// <summary>
@@ -2208,8 +2208,8 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <param name="token">&lt;p&gt;Authentication token&lt;/p&gt; </param> 
         /// <param name="tokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt; </param> 
         /// <param name="scope">&lt;p&gt;Authentication scope&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsPayPal</returns>            
-        public QuickPayProtocolV10AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope)
+        /// <returns>AcquirerSettingsPayPal</returns>            
+        public AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2251,7 +2251,7 @@ if (tokenSecret != null) formParams.Add("token_secret", ApiClient.ParameterToStr
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersPaypalFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsPayPal) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsPayPal), response.Headers);
+            return (AcquirerSettingsPayPal) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsPayPal), response.Headers);
         }
     
         /// <summary>
@@ -2263,8 +2263,8 @@ if (tokenSecret != null) formParams.Add("token_secret", ApiClient.ParameterToStr
         /// <param name="username">&lt;p&gt;Paysafecard username&lt;/p&gt; </param> 
         /// <param name="password">&lt;p&gt;Paysafecard password&lt;/p&gt; </param> 
         /// <param name="currencies">&lt;p&gt;Paysafecard currencies (Paysafecard requires agreement per currency)&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsPaysafecard</returns>            
-        public QuickPayProtocolV10AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies)
+        /// <returns>AcquirerSettingsPaysafecard</returns>            
+        public AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2313,7 +2313,7 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersPaysafecardFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsPaysafecard) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsPaysafecard), response.Headers);
+            return (AcquirerSettingsPaysafecard) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsPaysafecard), response.Headers);
         }
     
         /// <summary>
@@ -2324,8 +2324,8 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
         /// <param name="active">&lt;p&gt;Enable Resurs payments&lt;/p&gt; </param> 
         /// <param name="customerId">&lt;p&gt;Resurs customer ID&lt;/p&gt; </param> 
         /// <param name="customerPassword">&lt;p&gt;Resurs password&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsResurs</returns>            
-        public QuickPayProtocolV10AcquirerSettingsResurs PATCHAcquirersResursFormat (string acceptVersion, string authorization, bool? active, string customerId, string customerPassword)
+        /// <returns>AcquirerSettingsResurs</returns>            
+        public AcquirerSettingsResurs PATCHAcquirersResursFormat (string acceptVersion, string authorization, bool? active, string customerId, string customerPassword)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2370,7 +2370,7 @@ if (customerPassword != null) formParams.Add("customer_password", ApiClient.Para
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersResursFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsResurs) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsResurs), response.Headers);
+            return (AcquirerSettingsResurs) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsResurs), response.Headers);
         }
     
         /// <summary>
@@ -2387,8 +2387,8 @@ if (customerPassword != null) formParams.Add("customer_password", ApiClient.Para
         /// <param name="idealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt; </param> 
         /// <param name="idealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt; </param> 
         /// <param name="idealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSofort</returns>            
-        public QuickPayProtocolV10AcquirerSettingsSofort PATCHAcquirersSofortFormat (string acceptVersion, string authorization, bool? active, int? customerNumber, int? projectId, string apiKey, bool? gateway, bool? ideal, int? idealProjectId, string idealProjectPassword, string idealNotificationPassword)
+        /// <returns>AcquirerSettingsSofort</returns>            
+        public AcquirerSettingsSofort PATCHAcquirersSofortFormat (string acceptVersion, string authorization, bool? active, int? customerNumber, int? projectId, string apiKey, bool? gateway, bool? ideal, int? idealProjectId, string idealProjectPassword, string idealNotificationPassword)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2442,7 +2442,7 @@ if (idealNotificationPassword != null) formParams.Add("ideal_notification_passwo
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersSofortFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsSofort) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsSofort), response.Headers);
+            return (AcquirerSettingsSofort) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsSofort), response.Headers);
         }
     
         /// <summary>
@@ -2462,8 +2462,8 @@ if (idealNotificationPassword != null) formParams.Add("ideal_notification_passwo
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSwedbank</returns>            
-        public QuickPayProtocolV10AcquirerSettingsSwedbank PATCHAcquirersSwedbankFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+        /// <returns>AcquirerSettingsSwedbank</returns>            
+        public AcquirerSettingsSwedbank PATCHAcquirersSwedbankFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2517,7 +2517,7 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersSwedbankFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsSwedbank) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsSwedbank), response.Headers);
+            return (AcquirerSettingsSwedbank) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsSwedbank), response.Headers);
         }
     
         /// <summary>
@@ -2528,8 +2528,8 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <param name="active">&lt;p&gt;Enable Swish payments&lt;/p&gt; </param> 
         /// <param name="merchantId">&lt;p&gt;Swish merchant id&lt;/p&gt; </param> 
         /// <param name="cryptographyKeyId">&lt;p&gt;Swish certificate and private-key from Cryptography store&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsSwish</returns>            
-        public QuickPayProtocolV10AcquirerSettingsSwish PATCHAcquirersSwishFormat (string acceptVersion, string authorization, bool? active, string merchantId, int? cryptographyKeyId)
+        /// <returns>AcquirerSettingsSwish</returns>            
+        public AcquirerSettingsSwish PATCHAcquirersSwishFormat (string acceptVersion, string authorization, bool? active, string merchantId, int? cryptographyKeyId)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2571,7 +2571,7 @@ if (cryptographyKeyId != null) formParams.Add("cryptography_key_id", ApiClient.P
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersSwishFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsSwish) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsSwish), response.Headers);
+            return (AcquirerSettingsSwish) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsSwish), response.Headers);
         }
     
         /// <summary>
@@ -2591,8 +2591,8 @@ if (cryptographyKeyId != null) formParams.Add("cryptography_key_id", ApiClient.P
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
         /// <param name="visaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
         /// <param name="mastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsTeller</returns>            
-        public QuickPayProtocolV10AcquirerSettingsTeller PATCHAcquirersTellerFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+        /// <returns>AcquirerSettingsTeller</returns>            
+        public AcquirerSettingsTeller PATCHAcquirersTellerFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2646,7 +2646,7 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersTellerFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsTeller) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsTeller), response.Headers);
+            return (AcquirerSettingsTeller) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsTeller), response.Headers);
         }
     
         /// <summary>
@@ -2658,8 +2658,8 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <param name="ideal">&lt;p&gt;Enable iDeal payments&lt;/p&gt; </param> 
         /// <param name="username">&lt;p&gt;Trustly API username&lt;/p&gt; </param> 
         /// <param name="password">&lt;p&gt;Trustly API password&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsTrustly</returns>            
-        public QuickPayProtocolV10AcquirerSettingsTrustly PATCHAcquirersTrustlyFormat (string acceptVersion, string authorization, bool? active, bool? ideal, string username, string password)
+        /// <returns>AcquirerSettingsTrustly</returns>            
+        public AcquirerSettingsTrustly PATCHAcquirersTrustlyFormat (string acceptVersion, string authorization, bool? active, bool? ideal, string username, string password)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2708,7 +2708,7 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersTrustlyFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsTrustly) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsTrustly), response.Headers);
+            return (AcquirerSettingsTrustly) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsTrustly), response.Headers);
         }
     
         /// <summary>
@@ -2728,8 +2728,8 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
         /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
         /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
         /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsValitor</returns>            
-        public QuickPayProtocolV10AcquirerSettingsValitor PATCHAcquirersValitorFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
+        /// <returns>AcquirerSettingsValitor</returns>            
+        public AcquirerSettingsValitor PATCHAcquirersValitorFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2783,7 +2783,7 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersValitorFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsValitor) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsValitor), response.Headers);
+            return (AcquirerSettingsValitor) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsValitor), response.Headers);
         }
     
         /// <summary>
@@ -2793,8 +2793,8 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="active">&lt;p&gt;Enable ViaBill payments&lt;/p&gt; </param> 
         /// <param name="apiKey">&lt;p&gt;ViaBill API key&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsViaBill</returns>            
-        public QuickPayProtocolV10AcquirerSettingsViaBill PATCHAcquirersViabillFormat (string acceptVersion, string authorization, bool? active, string apiKey)
+        /// <returns>AcquirerSettingsViaBill</returns>            
+        public AcquirerSettingsViaBill PATCHAcquirersViabillFormat (string acceptVersion, string authorization, bool? active, string apiKey)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2835,7 +2835,7 @@ if (apiKey != null) formParams.Add("api_key", ApiClient.ParameterToString(apiKey
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersViabillFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsViaBill) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsViaBill), response.Headers);
+            return (AcquirerSettingsViaBill) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsViaBill), response.Headers);
         }
     
         /// <summary>
@@ -2850,8 +2850,8 @@ if (apiKey != null) formParams.Add("api_key", ApiClient.ParameterToString(apiKey
         /// <param name="accessTokenSubscriptionKey">&lt;p&gt;Vipps Access-Token Subscription Key&lt;/p&gt; </param> 
         /// <param name="ecommerceSubscriptionKey">&lt;p&gt;Vipps eCommerce Subscription Key&lt;/p&gt; </param> 
         /// <param name="orgno">&lt;p&gt;Vipps companys organization number&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerSettingsVipps</returns>            
-        public QuickPayProtocolV10AcquirerSettingsVipps PATCHAcquirersVippsFormat (string acceptVersion, string authorization, bool? active, string clientId, string clientSecret, string serialNumber, string accessTokenSubscriptionKey, string ecommerceSubscriptionKey, string orgno)
+        /// <returns>AcquirerSettingsVipps</returns>            
+        public AcquirerSettingsVipps PATCHAcquirersVippsFormat (string acceptVersion, string authorization, bool? active, string clientId, string clientSecret, string serialNumber, string accessTokenSubscriptionKey, string ecommerceSubscriptionKey, string orgno)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2909,7 +2909,7 @@ if (orgno != null) formParams.Add("orgno", ApiClient.ParameterToString(orgno)); 
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHAcquirersVippsFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerSettingsVipps) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerSettingsVipps), response.Headers);
+            return (AcquirerSettingsVipps) ApiClient.Deserialize(response.Content, typeof(AcquirerSettingsVipps), response.Headers);
         }
     
         /// <summary>
@@ -2918,8 +2918,8 @@ if (orgno != null) formParams.Add("orgno", ApiClient.ParameterToString(orgno)); 
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
         /// <param name="acquirer">&lt;p&gt;Acquirer name&lt;/p&gt; </param> 
-        /// <returns>QuickPayProtocolV10AcquirerTest</returns>            
-        public QuickPayProtocolV10AcquirerTest POSTAcquirersAcquirerTestFormat (string acceptVersion, string authorization, string acquirer)
+        /// <returns>AcquirerTest</returns>            
+        public AcquirerTest POSTAcquirersAcquirerTestFormat (string acceptVersion, string authorization, string acquirer)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2956,7 +2956,7 @@ if (orgno != null) formParams.Add("orgno", ApiClient.ParameterToString(orgno)); 
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTAcquirersAcquirerTestFormat: " + response.ErrorMessage, response.ErrorMessage);
     
-            return (QuickPayProtocolV10AcquirerTest) ApiClient.Deserialize(response.Content, typeof(QuickPayProtocolV10AcquirerTest), response.Headers);
+            return (AcquirerTest) ApiClient.Deserialize(response.Content, typeof(AcquirerTest), response.Headers);
         }
     
     }

@@ -97,7 +97,7 @@ namespace IO.Swagger.Test
             //bool? me = null;
             //int? accountId = null;
             //var response = instance.GETAgreementsFormat(acceptVersion, authorization, page, pageSize, sortBy, sortDir, pageKey, support, service, me, accountId);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Agreement> (response, "response is QuickPayProtocolV10Agreement");
+            //Assert.IsInstanceOf<Agreement> (response, "response is Agreement");
         }
         
         /// <summary>
@@ -115,7 +115,7 @@ namespace IO.Swagger.Test
             //string sortBy = null;
             //string sortDir = null;
             //var response = instance.GETAgreementsIdActivityFormat(acceptVersion, authorization, id, page, pageSize, sortBy, sortDir);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Activity> (response, "response is QuickPayProtocolV10Activity");
+            //Assert.IsInstanceOf<Activity> (response, "response is Activity");
         }
         
         /// <summary>
@@ -129,7 +129,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //int? id = null;
             //var response = instance.GETAgreementsIdFormat(acceptVersion, authorization, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Agreement> (response, "response is QuickPayProtocolV10Agreement");
+            //Assert.IsInstanceOf<Agreement> (response, "response is Agreement");
         }
         
         /// <summary>
@@ -143,7 +143,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //int? id = null;
             //var response = instance.PATCHAgreementsIdApiKeyFormat(acceptVersion, authorization, id);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Agreement> (response, "response is QuickPayProtocolV10Agreement");
+            //Assert.IsInstanceOf<Agreement> (response, "response is Agreement");
         }
         
         /// <summary>
@@ -160,7 +160,7 @@ namespace IO.Swagger.Test
             //bool? owner = null;
             //string description = null;
             //var response = instance.PATCHAgreementsIdFormat(acceptVersion, authorization, id, ipRestrictionAddress, owner, description);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Agreement> (response, "response is QuickPayProtocolV10Agreement");
+            //Assert.IsInstanceOf<Agreement> (response, "response is Agreement");
         }
         
         /// <summary>
@@ -184,7 +184,7 @@ namespace IO.Swagger.Test
             //bool? aclPermissionsDelete = null;
             //bool? aclPermissionsPatch = null;
             //var response = instance.POSTAgreementsFormat(acceptVersion, authorization, aclPermissionsResource, ipRestrictionAddress, userEmail, systemUser, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Agreement> (response, "response is QuickPayProtocolV10Agreement");
+            //Assert.IsInstanceOf<Agreement> (response, "response is Agreement");
         }
         
         /// <summary>
@@ -207,7 +207,7 @@ namespace IO.Swagger.Test
             //bool? aclPermissionsDelete = null;
             //bool? aclPermissionsPatch = null;
             //var response = instance.PUTAgreementsIdFormat(acceptVersion, authorization, id, aclPermissionsResource, ipRestrictionAddress, owner, description, aclPermissionsGet, aclPermissionsPost, aclPermissionsPut, aclPermissionsDelete, aclPermissionsPatch);
-            //Assert.IsInstanceOf<QuickPayProtocolV10Agreement> (response, "response is QuickPayProtocolV10Agreement");
+            //Assert.IsInstanceOf<Agreement> (response, "response is Agreement");
         }
         
     }

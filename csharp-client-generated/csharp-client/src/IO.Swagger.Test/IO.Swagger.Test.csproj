@@ -81,7 +81,7 @@ Contact: support@quickpay.net
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\IO.Swagger\IO.Swagger.csproj">
-          <Project>{D2F94428-EF93-46A7-BD6A-5ADB1F0EFE21}</Project>
+          <Project>{8B7B9B13-DD7A-44FD-A6AC-C8DF46423F1C}</Project>
           <Name>IO.Swagger</Name>
       </ProjectReference>
   </ItemGroup>

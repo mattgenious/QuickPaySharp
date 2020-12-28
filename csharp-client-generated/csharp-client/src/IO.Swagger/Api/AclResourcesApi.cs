@@ -35,8 +35,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>QuickPayProtocolV10AclResource</returns>
-        QuickPayProtocolV10AclResource GETAclResourcesFormat (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null);
+        /// <returns>AclResource</returns>
+        AclResource GETAclResourcesFormat (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null);
 
         /// <summary>
         /// Get acl resources
@@ -49,8 +49,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10AclResource</returns>
-        ApiResponse<QuickPayProtocolV10AclResource> GETAclResourcesFormatWithHttpInfo (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null);
+        /// <returns>ApiResponse of AclResource</returns>
+        ApiResponse<AclResource> GETAclResourcesFormatWithHttpInfo (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -64,8 +64,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>Task of QuickPayProtocolV10AclResource</returns>
-        System.Threading.Tasks.Task<QuickPayProtocolV10AclResource> GETAclResourcesFormatAsync (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null);
+        /// <returns>Task of AclResource</returns>
+        System.Threading.Tasks.Task<AclResource> GETAclResourcesFormatAsync (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null);
 
         /// <summary>
         /// Get acl resources
@@ -78,8 +78,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10AclResource)</returns>
-        System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10AclResource>> GETAclResourcesFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null);
+        /// <returns>Task of ApiResponse (AclResource)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AclResource>> GETAclResourcesFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null);
         #endregion Asynchronous Operations
     }
 
@@ -188,10 +188,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>QuickPayProtocolV10AclResource</returns>
-        public QuickPayProtocolV10AclResource GETAclResourcesFormat (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
+        /// <returns>AclResource</returns>
+        public AclResource GETAclResourcesFormat (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
         {
-             ApiResponse<QuickPayProtocolV10AclResource> localVarResponse = GETAclResourcesFormatWithHttpInfo(acceptVersion, authorization, page, pageSize);
+             ApiResponse<AclResource> localVarResponse = GETAclResourcesFormatWithHttpInfo(acceptVersion, authorization, page, pageSize);
              return localVarResponse.Data;
         }
 
@@ -203,8 +203,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>ApiResponse of QuickPayProtocolV10AclResource</returns>
-        public ApiResponse< QuickPayProtocolV10AclResource > GETAclResourcesFormatWithHttpInfo (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
+        /// <returns>ApiResponse of AclResource</returns>
+        public ApiResponse< AclResource > GETAclResourcesFormatWithHttpInfo (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -253,9 +253,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10AclResource>(localVarStatusCode,
+            return new ApiResponse<AclResource>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10AclResource) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10AclResource)));
+                (AclResource) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AclResource)));
         }
 
         /// <summary>
@@ -266,10 +266,10 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>Task of QuickPayProtocolV10AclResource</returns>
-        public async System.Threading.Tasks.Task<QuickPayProtocolV10AclResource> GETAclResourcesFormatAsync (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
+        /// <returns>Task of AclResource</returns>
+        public async System.Threading.Tasks.Task<AclResource> GETAclResourcesFormatAsync (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
         {
-             ApiResponse<QuickPayProtocolV10AclResource> localVarResponse = await GETAclResourcesFormatAsyncWithHttpInfo(acceptVersion, authorization, page, pageSize);
+             ApiResponse<AclResource> localVarResponse = await GETAclResourcesFormatAsyncWithHttpInfo(acceptVersion, authorization, page, pageSize);
              return localVarResponse.Data;
 
         }
@@ -282,8 +282,8 @@ namespace IO.Swagger.Api
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
         /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <returns>Task of ApiResponse (QuickPayProtocolV10AclResource)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<QuickPayProtocolV10AclResource>> GETAclResourcesFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
+        /// <returns>Task of ApiResponse (AclResource)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AclResource>> GETAclResourcesFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null, int? page = null, int? pageSize = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -332,9 +332,9 @@ namespace IO.Swagger.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<QuickPayProtocolV10AclResource>(localVarStatusCode,
+            return new ApiResponse<AclResource>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (QuickPayProtocolV10AclResource) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(QuickPayProtocolV10AclResource)));
+                (AclResource) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AclResource)));
         }
 
     }

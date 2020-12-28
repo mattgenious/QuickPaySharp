@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getactivityformat"></a>
 # **GETActivityFormat**
-> QuickPayProtocolV10Activity GETActivityFormat (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
+> Activity GETActivityFormat (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
 
 Get activity
 
@@ -46,7 +46,7 @@ namespace Example
             try
             {
                 // Get activity
-                QuickPayProtocolV10Activity result = apiInstance.GETActivityFormat(acceptVersion, authorization, userId, targetType, targetId, support, page, pageSize, sortBy, sortDir, pageKey);
+                Activity result = apiInstance.GETActivityFormat(acceptVersion, authorization, userId, targetType, targetId, support, page, pageSize, sortBy, sortDir, pageKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Activity**](QuickPayProtocolV10Activity.md)
+[**Activity**](Activity.md)
 
 ### Authorization
 
@@ -91,7 +91,7 @@ No authorization required
 
 <a name="getactivityidformat"></a>
 # **GETActivityIdFormat**
-> QuickPayProtocolV10Activity GETActivityIdFormat (string acceptVersion, string authorization, string id)
+> Activity GETActivityIdFormat (string acceptVersion, string authorization, string id)
 
 Get a single activity entry
 
@@ -119,7 +119,7 @@ namespace Example
             try
             {
                 // Get a single activity entry
-                QuickPayProtocolV10Activity result = apiInstance.GETActivityIdFormat(acceptVersion, authorization, id);
+                Activity result = apiInstance.GETActivityIdFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10Activity**](QuickPayProtocolV10Activity.md)
+[**Activity**](Activity.md)
 
 ### Authorization
 

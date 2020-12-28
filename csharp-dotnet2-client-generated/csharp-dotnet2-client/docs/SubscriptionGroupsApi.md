@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="deletesubscriptiongroupsidformat"></a>
 # **DELETESubscriptionGroupsIdFormat**
-> QuickPayProtocolV10SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
+> SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
 
 Delete subscription group
 
@@ -43,7 +43,7 @@ namespace Example
             try
             {
                 // Delete subscription group
-                QuickPayProtocolV10SubscriptionGroup result = apiInstance.DELETESubscriptionGroupsIdFormat(acceptVersion, authorization, id);
+                SubscriptionGroup result = apiInstance.DELETESubscriptionGroupsIdFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10SubscriptionGroup**](QuickPayProtocolV10SubscriptionGroup.md)
+[**SubscriptionGroup**](SubscriptionGroup.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ No authorization required
 
 <a name="getsubscriptiongroupsformat"></a>
 # **GETSubscriptionGroupsFormat**
-> QuickPayProtocolV10SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
+> SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
 
 Get all subscription groups
 
@@ -112,7 +112,7 @@ namespace Example
             try
             {
                 // Get all subscription groups
-                QuickPayProtocolV10SubscriptionGroup result = apiInstance.GETSubscriptionGroupsFormat(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
+                SubscriptionGroup result = apiInstance.GETSubscriptionGroupsFormat(acceptVersion, authorization, page, pageSize, sortBy, sortDir);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10SubscriptionGroup**](QuickPayProtocolV10SubscriptionGroup.md)
+[**SubscriptionGroup**](SubscriptionGroup.md)
 
 ### Authorization
 
@@ -152,7 +152,7 @@ No authorization required
 
 <a name="getsubscriptiongroupsidformat"></a>
 # **GETSubscriptionGroupsIdFormat**
-> QuickPayProtocolV10SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
+> SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
 
 Find subscription group by id
 
@@ -181,7 +181,7 @@ namespace Example
             try
             {
                 // Find subscription group by id
-                QuickPayProtocolV10SubscriptionGroup result = apiInstance.GETSubscriptionGroupsIdFormat(acceptVersion, authorization, id);
+                SubscriptionGroup result = apiInstance.GETSubscriptionGroupsIdFormat(acceptVersion, authorization, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10SubscriptionGroup**](QuickPayProtocolV10SubscriptionGroup.md)
+[**SubscriptionGroup**](SubscriptionGroup.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ No authorization required
 
 <a name="patchsubscriptiongroupsidformat"></a>
 # **PATCHSubscriptionGroupsIdFormat**
-> QuickPayProtocolV10SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name, int? amount, string description)
+> SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name, int? amount, string description)
 
 Update subscription group
 
@@ -250,7 +250,7 @@ namespace Example
             try
             {
                 // Update subscription group
-                QuickPayProtocolV10SubscriptionGroup result = apiInstance.PATCHSubscriptionGroupsIdFormat(acceptVersion, authorization, id, name, amount, description);
+                SubscriptionGroup result = apiInstance.PATCHSubscriptionGroupsIdFormat(acceptVersion, authorization, id, name, amount, description);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -275,7 +275,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10SubscriptionGroup**](QuickPayProtocolV10SubscriptionGroup.md)
+[**SubscriptionGroup**](SubscriptionGroup.md)
 
 ### Authorization
 
@@ -290,7 +290,7 @@ No authorization required
 
 <a name="postsubscriptiongroupsformat"></a>
 # **POSTSubscriptionGroupsFormat**
-> QuickPayProtocolV10SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description)
+> SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description)
 
 Create subscription group
 
@@ -322,7 +322,7 @@ namespace Example
             try
             {
                 // Create subscription group
-                QuickPayProtocolV10SubscriptionGroup result = apiInstance.POSTSubscriptionGroupsFormat(acceptVersion, authorization, name, amount, currency, description);
+                SubscriptionGroup result = apiInstance.POSTSubscriptionGroupsFormat(acceptVersion, authorization, name, amount, currency, description);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -347,7 +347,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10SubscriptionGroup**](QuickPayProtocolV10SubscriptionGroup.md)
+[**SubscriptionGroup**](SubscriptionGroup.md)
 
 ### Authorization
 
@@ -362,7 +362,7 @@ No authorization required
 
 <a name="postsubscriptiongroupsidcaptureformat"></a>
 # **POSTSubscriptionGroupsIdCaptureFormat**
-> QuickPayProtocolV10SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix)
+> SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix)
 
 Create recurring payments on subscription group
 
@@ -392,7 +392,7 @@ namespace Example
             try
             {
                 // Create recurring payments on subscription group
-                QuickPayProtocolV10SubscriptionGroupResult result = apiInstance.POSTSubscriptionGroupsIdCaptureFormat(acceptVersion, authorization, id, orderIdPrefix);
+                SubscriptionGroupResult result = apiInstance.POSTSubscriptionGroupsIdCaptureFormat(acceptVersion, authorization, id, orderIdPrefix);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuickPayProtocolV10SubscriptionGroupResult**](QuickPayProtocolV10SubscriptionGroupResult.md)
+[**SubscriptionGroupResult**](SubscriptionGroupResult.md)
 
 ### Authorization
 
