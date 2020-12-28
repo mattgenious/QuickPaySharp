@@ -646,7 +646,7 @@
             "description": "<p>The provider / sales-place chosen by the merchant</p>\n",
             "name": "acquirer_settings[mobilepaysubscriptions][provider]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -776,16 +776,11 @@
             "type": "string"
           },
           {
-            "in": "body",
+            "in": "formData",
             "description": "<p>Authentication scope</p>\n",
             "name": "acquirer_settings[paypal][scope]",
             "required": false,
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
+            "type": "string"
           },
           {
             "in": "formData",
@@ -1227,16 +1222,11 @@
             "type": "string"
           },
           {
-            "in": "body",
+            "in": "formData",
             "description": "<p>Shop URLs</p>\n",
             "name": "shop_urls",
             "required": false,
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
+            "type": "string"
           },
           {
             "in": "formData",
@@ -1314,7 +1304,7 @@
             "description": "<p>Default branding config. Can be overwritten in branding or in request to payment window</p>\n",
             "name": "default_branding_config",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -2997,7 +2987,7 @@
             "description": "<p>The provider / sales-place chosen by the merchant</p>\n",
             "name": "provider",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -3295,16 +3285,11 @@
             "type": "string"
           },
           {
-            "in": "body",
+            "in": "formData",
             "description": "<p>Authentication scope</p>\n",
             "name": "scope",
             "required": false,
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
+            "type": "string"
           }
         ],
         "responses": {
@@ -3412,14 +3397,11 @@
             "type": "string"
           },
           {
-            "in": "body",
+            "in": "formData",
             "description": "<p>Paysafecard currencies (Paysafecard requires agreement per currency)</p>\n",
             "name": "currencies",
             "required": true,
-            "schema": {
-              "type": "array",
-              "items": {}
-            }
+            "type": "string"
           }
         ],
         "responses": {
@@ -4751,14 +4733,14 @@
             "description": "<p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>\n",
             "name": "min_time",
             "required": false,
-            "type": "Time"
+            "type": "string"
           },
           {
             "in": "query",
             "description": "<p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>\n",
             "name": "max_time",
             "required": false,
-            "type": "Time"
+            "type": "string"
           },
           {
             "in": "query",
@@ -4857,7 +4839,7 @@
             "description": "<p>Custom variables</p>\n",
             "name": "variables",
             "required": false,
-            "type": "object",
+            "type": "string",
             "default": {}
           }
         ],
@@ -4962,7 +4944,7 @@
             "description": "<p>Custom variables</p>\n",
             "name": "variables",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "path",
@@ -5116,7 +5098,7 @@
             "description": "<p>Additional acquirer specific params</p>\n",
             "name": "extras",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "path",
@@ -5374,7 +5356,7 @@
             "description": "<p>Config for branding. Will be merged with the default config in the branding</p>\n",
             "name": "branding_config",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "path",
@@ -6399,7 +6381,7 @@
             "description": "\n",
             "name": "page_key",
             "required": false,
-            "type": "Time"
+            "type": "string"
           }
         ],
         "responses": {
@@ -7770,13 +7752,11 @@
             "format": "int32"
           },
           {
-            "in": "body",
+            "in": "formData",
             "description": "<p>The file send as multipart</p>\n",
             "name": "file",
             "required": true,
-            "schema": {
-              "type": "file"
-            }
+            "type": "file"
           }
         ],
         "responses": {
@@ -7890,14 +7870,14 @@
             "description": "<p>Apple Pay payment-token</p>\n",
             "name": "card[apple_pay_token]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
             "description": "<p>MobilePay Online payment-token</p>\n",
             "name": "card[mobilepay_online_token]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -8848,7 +8828,7 @@
             "description": "<p>A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }</p>\n",
             "name": "payment_method_priority",
             "required": true,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -8953,14 +8933,14 @@
             "description": "<p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>\n",
             "name": "min_time",
             "required": false,
-            "type": "Time"
+            "type": "string"
           },
           {
             "in": "query",
             "description": "<p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>\n",
             "name": "max_time",
             "required": false,
-            "type": "Time"
+            "type": "string"
           },
           {
             "in": "query",
@@ -9080,7 +9060,7 @@
             "description": "\n",
             "name": "page_key",
             "required": false,
-            "type": "Time"
+            "type": "string"
           }
         ],
         "responses": {
@@ -9291,7 +9271,7 @@
             "description": "<p>Config for branding. Will be merged with the default config in the branding</p>\n",
             "name": "branding_config",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -9775,7 +9755,7 @@
             "description": "<p>Custom variables</p>\n",
             "name": "variables",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -9930,7 +9910,7 @@
             "description": "<p>Additional acquirer specific params</p>\n",
             "name": "extras",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -10048,14 +10028,14 @@
             "description": "<p>Apple Pay payment-token</p>\n",
             "name": "card[apple_pay_token]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
             "description": "<p>MobilePay Online payment-token</p>\n",
             "name": "card[mobilepay_online_token]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -10218,7 +10198,7 @@
             "description": "<p>Additional acquirer specific params</p>\n",
             "name": "extras",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -10307,7 +10287,7 @@
             "description": "<p>Additional acquirer specific params</p>\n",
             "name": "extras",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -10400,7 +10380,7 @@
             "description": "<p>Additional acquirer specific params</p>\n",
             "name": "extras",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -10851,14 +10831,14 @@
             "description": "<p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>\n",
             "name": "min_time",
             "required": false,
-            "type": "Time"
+            "type": "string"
           },
           {
             "in": "query",
             "description": "<p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>\n",
             "name": "max_time",
             "required": false,
-            "type": "Time"
+            "type": "string"
           },
           {
             "in": "query",
@@ -11024,7 +11004,7 @@
             "description": "<p>Custom variables</p>\n",
             "name": "variables",
             "required": false,
-            "type": "object",
+            "type": "string",
             "default": {}
           },
           {
@@ -11183,7 +11163,7 @@
             "description": "<p>Config for branding. Will be merged with the default config in the branding</p>\n",
             "name": "branding_config",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -11345,7 +11325,7 @@
             "description": "<p>Custom variables</p>\n",
             "name": "variables",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -11463,14 +11443,14 @@
             "description": "<p>Apple Pay payment-token</p>\n",
             "name": "card[apple_pay_token]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
             "description": "<p>MobilePay Online payment-token</p>\n",
             "name": "card[mobilepay_online_token]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -11619,7 +11599,7 @@
             "description": "<p>Additional acquirer specific params</p>\n",
             "name": "extras",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -12168,14 +12148,14 @@
             "description": "<p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>\n",
             "name": "min_time",
             "required": false,
-            "type": "Time"
+            "type": "string"
           },
           {
             "in": "query",
             "description": "<p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>\n",
             "name": "max_time",
             "required": false,
-            "type": "Time"
+            "type": "string"
           },
           {
             "in": "query",
@@ -12311,7 +12291,7 @@
             "description": "\n",
             "name": "page_key",
             "required": false,
-            "type": "Time"
+            "type": "string"
           }
         ],
         "responses": {
@@ -12561,7 +12541,7 @@
             "description": "<p>Custom variables</p>\n",
             "name": "variables",
             "required": false,
-            "type": "object",
+            "type": "string",
             "default": {}
           },
           {
@@ -12587,18 +12567,11 @@
             "format": "int32"
           },
           {
-            "in": "body",
+            "in": "formData",
             "description": "<p>Ids of subscription groups</p>\n",
             "name": "group_ids",
             "required": false,
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "integer",
-                "format": "int32"
-              },
-              "default": []
-            }
+            "type": "string"
           },
           {
             "in": "formData",
@@ -12785,7 +12758,7 @@
             "description": "<p>Config for branding. Will be merged with the default config in the branding</p>\n",
             "name": "branding_config",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -12972,17 +12945,11 @@
             "format": "date-time"
           },
           {
-            "in": "body",
+            "in": "formData",
             "description": "<p>Ids of subscription groups</p>\n",
             "name": "group_ids",
             "required": false,
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "integer",
-                "format": "int32"
-              }
-            }
+            "type": "string"
           },
           {
             "in": "formData",
@@ -13192,7 +13159,7 @@
             "description": "<p>Custom variables</p>\n",
             "name": "variables",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -13304,7 +13271,7 @@
             "description": "<p>Additional acquirer specific params</p>\n",
             "name": "extras",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
@@ -13422,14 +13389,14 @@
             "description": "<p>Apple Pay payment-token</p>\n",
             "name": "card[apple_pay_token]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
             "description": "<p>MobilePay Online payment-token</p>\n",
             "name": "card[mobilepay_online_token]",
             "required": false,
-            "type": "object"
+            "type": "string"
           },
           {
             "in": "formData",
@@ -13578,7 +13545,7 @@
             "description": "<p>Additional acquirer specific params</p>\n",
             "name": "extras",
             "required": false,
-            "type": "object"
+            "type": "string"
           }
         ],
         "responses": {
