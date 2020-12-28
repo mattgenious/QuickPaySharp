@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.3-alpha</Version>
+    <Version>0.0.4-alpha</Version>
     <Authors>Matt Luccas Phaure Minet</Authors>
     <Company>Matt Luccas Phaure Minet</Company>
     <Description>A modern dotnet client library for the QuickPay API</Description>
@@ -12,8 +12,9 @@
     <RepositoryUrl>https://github.com/mattgenious/QuickPaySharp</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>C#, .NET, ecommerce, quickpay, quickpay.net, payment</PackageTags>
-    <PackageReleaseNotes>Fixed erroneous basepath</PackageReleaseNotes>
+    <PackageReleaseNotes>Get that icon on</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +28,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\RechargeSharp\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
