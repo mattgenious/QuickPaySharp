@@ -260,7 +260,7 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
         /// <returns></returns>
-        void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, object _file);
+        void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, ModelFile _file);
 
         /// <summary>
         /// Replace certificate
@@ -274,7 +274,7 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, object _file);
+        ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, ModelFile _file);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -513,7 +513,7 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, object _file);
+        System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, ModelFile _file);
 
         /// <summary>
         /// Replace certificate
@@ -527,7 +527,7 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, object _file);
+        System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, ModelFile _file);
         #endregion Asynchronous Operations
     }
 
@@ -2041,7 +2041,7 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
         /// <returns></returns>
-        public void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, object _file)
+        public void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, ModelFile _file)
         {
              PUTCryptographyKeysIdCertificateFormatWithHttpInfo(acceptVersion, authorization, id, _file);
         }
@@ -2055,7 +2055,7 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, object _file)
+        public ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, ModelFile _file)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2135,7 +2135,7 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, object _file)
+        public async System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, ModelFile _file)
         {
              await PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo(acceptVersion, authorization, id, _file);
 
@@ -2150,7 +2150,7 @@ namespace IO.Swagger.Api
         /// <param name="id"> </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, object _file)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, ModelFile _file)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)

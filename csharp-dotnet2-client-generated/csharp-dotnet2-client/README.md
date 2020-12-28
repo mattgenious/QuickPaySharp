@@ -71,7 +71,7 @@ namespace Example
 <a name="documentation-for-api-endpoints"></a>
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://api.quickpay.net/docs/v10/merchant*
+All URIs are relative to *https://api.quickpay.net/docs/v10/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

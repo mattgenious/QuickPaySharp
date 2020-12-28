@@ -37,12 +37,11 @@ namespace IO.Swagger.Model {
     public int? Balance { get; set; }
 
     /// <summary>
-    /// Order items
+    /// Gets or Sets Basket
     /// </summary>
-    /// <value>Order items</value>
     [DataMember(Name="basket", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "basket")]
-    public Basket Basket { get; set; }
+    public List<Basket> Basket { get; set; }
 
     /// <summary>
     /// Branding id

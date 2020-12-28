@@ -1,6 +1,6 @@
 # IO.Swagger.Api.FeesApi
 
-All URIs are relative to *https://api.quickpay.net/docs/v10/merchant*
+All URIs are relative to *https://api.quickpay.net/docs/v10/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

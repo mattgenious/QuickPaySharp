@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Accepted** | **bool?** | Accepted by acquirer | [optional] 
 **Acquirer** | **string** | Acquirer that processed the transaction | [optional] 
 **Balance** | **int?** | Balance | [optional] 
-**Basket** | [**Basket**](Basket.md) | Order items | [optional] 
+**Basket** | [**List&lt;Basket&gt;**](Basket.md) |  | [optional] 
 **BrandingId** | **int?** | Branding id | 
 **CreatedAt** | **DateTime?** | Timestamp of creation | [optional] 
 **Currency** | **string** | Currency | [optional] 

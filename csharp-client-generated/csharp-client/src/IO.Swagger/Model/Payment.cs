@@ -86,7 +86,7 @@ namespace IO.Swagger.Model
         /// <param name="accepted">Accepted by acquirer.</param>
         /// <param name="acquirer">Acquirer that processed the transaction.</param>
         /// <param name="balance">Balance.</param>
-        /// <param name="basket">Order items.</param>
+        /// <param name="basket">basket.</param>
         /// <param name="brandingId">Branding id (required).</param>
         /// <param name="createdAt">Timestamp of creation.</param>
         /// <param name="currency">Currency.</param>
@@ -110,7 +110,7 @@ namespace IO.Swagger.Model
         /// <param name="type">transaction type.</param>
         /// <param name="updatedAt">Timestamp of last updated.</param>
         /// <param name="variables">Custom variables (required).</param>
-        public Payment(bool? accepted = default(bool?), string acquirer = default(string), int? balance = default(int?), Basket basket = default(Basket), int? brandingId = default(int?), DateTime? createdAt = default(DateTime?), string currency = default(string), DateTime? deadlineAt = default(DateTime?), string facilitator = default(string), int? fee = default(int?), int? id = default(int?), OptionalAddress invoiceAddress = default(OptionalAddress), PaymentLink link = default(PaymentLink), int? merchantId = default(int?), Metadata metadata = default(Metadata), List<Operation> operations = default(List<Operation>), string orderId = default(string), DateTime? retentedAt = default(DateTime?), Shipping shipping = default(Shipping), OptionalAddress shippingAddress = default(OptionalAddress), StateEnum? state = default(StateEnum?), int? subscriptionId = default(int?), bool? testMode = default(bool?), string textOnStatement = default(string), string type = default(string), DateTime? updatedAt = default(DateTime?), Dictionary<string, string> variables = default(Dictionary<string, string>))
+        public Payment(bool? accepted = default(bool?), string acquirer = default(string), int? balance = default(int?), List<Basket> basket = default(List<Basket>), int? brandingId = default(int?), DateTime? createdAt = default(DateTime?), string currency = default(string), DateTime? deadlineAt = default(DateTime?), string facilitator = default(string), int? fee = default(int?), int? id = default(int?), OptionalAddress invoiceAddress = default(OptionalAddress), PaymentLink link = default(PaymentLink), int? merchantId = default(int?), Metadata metadata = default(Metadata), List<Operation> operations = default(List<Operation>), string orderId = default(string), DateTime? retentedAt = default(DateTime?), Shipping shipping = default(Shipping), OptionalAddress shippingAddress = default(OptionalAddress), StateEnum? state = default(StateEnum?), int? subscriptionId = default(int?), bool? testMode = default(bool?), string textOnStatement = default(string), string type = default(string), DateTime? updatedAt = default(DateTime?), Dictionary<string, string> variables = default(Dictionary<string, string>))
         {
             // to ensure "brandingId" is required (not null)
             if (brandingId == null)
@@ -179,11 +179,10 @@ namespace IO.Swagger.Model
         public int? Balance { get; set; }
 
         /// <summary>
-        /// Order items
+        /// Gets or Sets Basket
         /// </summary>
-        /// <value>Order items</value>
         [DataMember(Name="basket", EmitDefaultValue=false)]
-        public Basket Basket { get; set; }
+        public List<Basket> Basket { get; set; }
 
         /// <summary>
         /// Branding id
@@ -426,8 +425,8 @@ namespace IO.Swagger.Model
                 ) && 
                 (
                     this.Basket == input.Basket ||
-                    (this.Basket != null &&
-                    this.Basket.Equals(input.Basket))
+                    this.Basket != null &&
+                    this.Basket.SequenceEqual(input.Basket)
                 ) && 
                 (
                     this.BrandingId == input.BrandingId ||

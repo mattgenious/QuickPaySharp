@@ -311,54 +311,9 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="payment">Payment</param>
         /// <returns>Payment</returns>
-        Payment POSTPaymentsFormat (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null);
+        Payment POSTPaymentsFormat (string acceptVersion, string authorization, Payment payment);
 
         /// <summary>
         /// Create payment
@@ -369,54 +324,9 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="payment">Payment</param>
         /// <returns>ApiResponse of Payment</returns>
-        ApiResponse<Payment> POSTPaymentsFormatWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null);
+        ApiResponse<Payment> POSTPaymentsFormatWithHttpInfo (string acceptVersion, string authorization, Payment payment);
         /// <summary>
         /// Authorize payment
         /// </summary>
@@ -1054,54 +964,9 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="payment">Payment</param>
         /// <returns>Task of Payment</returns>
-        System.Threading.Tasks.Task<Payment> POSTPaymentsFormatAsync (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null);
+        System.Threading.Tasks.Task<Payment> POSTPaymentsFormatAsync (string acceptVersion, string authorization, Payment payment);
 
         /// <summary>
         /// Create payment
@@ -1112,54 +977,9 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="payment">Payment</param>
         /// <returns>Task of ApiResponse (Payment)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Payment>> POSTPaymentsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null);
+        System.Threading.Tasks.Task<ApiResponse<Payment>> POSTPaymentsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Payment payment);
         /// <summary>
         /// Authorize payment
         /// </summary>
@@ -3020,56 +2840,11 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="payment">Payment</param>
         /// <returns>Payment</returns>
-        public Payment POSTPaymentsFormat (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null)
+        public Payment POSTPaymentsFormat (string acceptVersion, string authorization, Payment payment)
         {
-             ApiResponse<Payment> localVarResponse = POSTPaymentsFormatWithHttpInfo(acceptVersion, authorization, currency, orderId, basketQty, basketItemNo, basketItemName, basketItemPrice, basketVatRate, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, brandingId, shippingMethod, shippingCompany, shippingAmount, shippingVatRate, shippingTrackingNumber, shippingTrackingUrl, shopsystemName, shopsystemVersion, variables, textOnStatement);
+             ApiResponse<Payment> localVarResponse = POSTPaymentsFormatWithHttpInfo(acceptVersion, authorization, payment);
              return localVarResponse.Data;
         }
 
@@ -3079,54 +2854,9 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="payment">Payment</param>
         /// <returns>ApiResponse of Payment</returns>
-        public ApiResponse< Payment > POSTPaymentsFormatWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null)
+        public ApiResponse< Payment > POSTPaymentsFormatWithHttpInfo (string acceptVersion, string authorization, Payment payment)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3134,27 +2864,9 @@ namespace IO.Swagger.Api
             // verify the required parameter 'authorization' is set
             if (authorization == null)
                 throw new ApiException(400, "Missing required parameter 'authorization' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'currency' is set
-            if (currency == null)
-                throw new ApiException(400, "Missing required parameter 'currency' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'orderId' is set
-            if (orderId == null)
-                throw new ApiException(400, "Missing required parameter 'orderId' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketQty' is set
-            if (basketQty == null)
-                throw new ApiException(400, "Missing required parameter 'basketQty' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketItemNo' is set
-            if (basketItemNo == null)
-                throw new ApiException(400, "Missing required parameter 'basketItemNo' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketItemName' is set
-            if (basketItemName == null)
-                throw new ApiException(400, "Missing required parameter 'basketItemName' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketItemPrice' is set
-            if (basketItemPrice == null)
-                throw new ApiException(400, "Missing required parameter 'basketItemPrice' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketVatRate' is set
-            if (basketVatRate == null)
-                throw new ApiException(400, "Missing required parameter 'basketVatRate' when calling PaymentsApi->POSTPaymentsFormat");
+            // verify the required parameter 'payment' is set
+            if (payment == null)
+                throw new ApiException(400, "Missing required parameter 'payment' when calling PaymentsApi->POSTPaymentsFormat");
 
             var localVarPath = "/payments";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3166,16 +2878,13 @@ namespace IO.Swagger.Api
 
             // to determine the Content-Type header
             String[] localVarHttpContentTypes = new String[] {
-                "application/x-www-form-urlencoded"
+                "application/json"
             };
             String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "application/xml",
-                "application/json",
-                "application/octet-stream",
-                "text/plain"
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3183,52 +2892,14 @@ namespace IO.Swagger.Api
 
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (currency != null) localVarFormParams.Add("currency", this.Configuration.ApiClient.ParameterToString(currency)); // form parameter
-            if (orderId != null) localVarFormParams.Add("order_id", this.Configuration.ApiClient.ParameterToString(orderId)); // form parameter
-            if (invoiceAddressName != null) localVarFormParams.Add("invoice_address[name]", this.Configuration.ApiClient.ParameterToString(invoiceAddressName)); // form parameter
-            if (invoiceAddressAtt != null) localVarFormParams.Add("invoice_address[att]", this.Configuration.ApiClient.ParameterToString(invoiceAddressAtt)); // form parameter
-            if (invoiceAddressCompanyName != null) localVarFormParams.Add("invoice_address[company_name]", this.Configuration.ApiClient.ParameterToString(invoiceAddressCompanyName)); // form parameter
-            if (invoiceAddressStreet != null) localVarFormParams.Add("invoice_address[street]", this.Configuration.ApiClient.ParameterToString(invoiceAddressStreet)); // form parameter
-            if (invoiceAddressHouseNumber != null) localVarFormParams.Add("invoice_address[house_number]", this.Configuration.ApiClient.ParameterToString(invoiceAddressHouseNumber)); // form parameter
-            if (invoiceAddressHouseExtension != null) localVarFormParams.Add("invoice_address[house_extension]", this.Configuration.ApiClient.ParameterToString(invoiceAddressHouseExtension)); // form parameter
-            if (invoiceAddressCity != null) localVarFormParams.Add("invoice_address[city]", this.Configuration.ApiClient.ParameterToString(invoiceAddressCity)); // form parameter
-            if (invoiceAddressZipCode != null) localVarFormParams.Add("invoice_address[zip_code]", this.Configuration.ApiClient.ParameterToString(invoiceAddressZipCode)); // form parameter
-            if (invoiceAddressRegion != null) localVarFormParams.Add("invoice_address[region]", this.Configuration.ApiClient.ParameterToString(invoiceAddressRegion)); // form parameter
-            if (invoiceAddressCountryCode != null) localVarFormParams.Add("invoice_address[country_code]", this.Configuration.ApiClient.ParameterToString(invoiceAddressCountryCode)); // form parameter
-            if (invoiceAddressVatNo != null) localVarFormParams.Add("invoice_address[vat_no]", this.Configuration.ApiClient.ParameterToString(invoiceAddressVatNo)); // form parameter
-            if (invoiceAddressPhoneNumber != null) localVarFormParams.Add("invoice_address[phone_number]", this.Configuration.ApiClient.ParameterToString(invoiceAddressPhoneNumber)); // form parameter
-            if (invoiceAddressMobileNumber != null) localVarFormParams.Add("invoice_address[mobile_number]", this.Configuration.ApiClient.ParameterToString(invoiceAddressMobileNumber)); // form parameter
-            if (invoiceAddressEmail != null) localVarFormParams.Add("invoice_address[email]", this.Configuration.ApiClient.ParameterToString(invoiceAddressEmail)); // form parameter
-            if (shippingAddressName != null) localVarFormParams.Add("shipping_address[name]", this.Configuration.ApiClient.ParameterToString(shippingAddressName)); // form parameter
-            if (shippingAddressAtt != null) localVarFormParams.Add("shipping_address[att]", this.Configuration.ApiClient.ParameterToString(shippingAddressAtt)); // form parameter
-            if (shippingAddressCompanyName != null) localVarFormParams.Add("shipping_address[company_name]", this.Configuration.ApiClient.ParameterToString(shippingAddressCompanyName)); // form parameter
-            if (shippingAddressStreet != null) localVarFormParams.Add("shipping_address[street]", this.Configuration.ApiClient.ParameterToString(shippingAddressStreet)); // form parameter
-            if (shippingAddressHouseNumber != null) localVarFormParams.Add("shipping_address[house_number]", this.Configuration.ApiClient.ParameterToString(shippingAddressHouseNumber)); // form parameter
-            if (shippingAddressHouseExtension != null) localVarFormParams.Add("shipping_address[house_extension]", this.Configuration.ApiClient.ParameterToString(shippingAddressHouseExtension)); // form parameter
-            if (shippingAddressCity != null) localVarFormParams.Add("shipping_address[city]", this.Configuration.ApiClient.ParameterToString(shippingAddressCity)); // form parameter
-            if (shippingAddressZipCode != null) localVarFormParams.Add("shipping_address[zip_code]", this.Configuration.ApiClient.ParameterToString(shippingAddressZipCode)); // form parameter
-            if (shippingAddressRegion != null) localVarFormParams.Add("shipping_address[region]", this.Configuration.ApiClient.ParameterToString(shippingAddressRegion)); // form parameter
-            if (shippingAddressCountryCode != null) localVarFormParams.Add("shipping_address[country_code]", this.Configuration.ApiClient.ParameterToString(shippingAddressCountryCode)); // form parameter
-            if (shippingAddressVatNo != null) localVarFormParams.Add("shipping_address[vat_no]", this.Configuration.ApiClient.ParameterToString(shippingAddressVatNo)); // form parameter
-            if (shippingAddressPhoneNumber != null) localVarFormParams.Add("shipping_address[phone_number]", this.Configuration.ApiClient.ParameterToString(shippingAddressPhoneNumber)); // form parameter
-            if (shippingAddressMobileNumber != null) localVarFormParams.Add("shipping_address[mobile_number]", this.Configuration.ApiClient.ParameterToString(shippingAddressMobileNumber)); // form parameter
-            if (shippingAddressEmail != null) localVarFormParams.Add("shipping_address[email]", this.Configuration.ApiClient.ParameterToString(shippingAddressEmail)); // form parameter
-            if (brandingId != null) localVarFormParams.Add("branding_id", this.Configuration.ApiClient.ParameterToString(brandingId)); // form parameter
-            if (basketQty != null) localVarFormParams.Add("basket[][qty]", this.Configuration.ApiClient.ParameterToString(basketQty)); // form parameter
-            if (basketItemNo != null) localVarFormParams.Add("basket[][item_no]", this.Configuration.ApiClient.ParameterToString(basketItemNo)); // form parameter
-            if (basketItemName != null) localVarFormParams.Add("basket[][item_name]", this.Configuration.ApiClient.ParameterToString(basketItemName)); // form parameter
-            if (basketItemPrice != null) localVarFormParams.Add("basket[][item_price]", this.Configuration.ApiClient.ParameterToString(basketItemPrice)); // form parameter
-            if (basketVatRate != null) localVarFormParams.Add("basket[][vat_rate]", this.Configuration.ApiClient.ParameterToString(basketVatRate)); // form parameter
-            if (shippingMethod != null) localVarFormParams.Add("shipping[method]", this.Configuration.ApiClient.ParameterToString(shippingMethod)); // form parameter
-            if (shippingCompany != null) localVarFormParams.Add("shipping[company]", this.Configuration.ApiClient.ParameterToString(shippingCompany)); // form parameter
-            if (shippingAmount != null) localVarFormParams.Add("shipping[amount]", this.Configuration.ApiClient.ParameterToString(shippingAmount)); // form parameter
-            if (shippingVatRate != null) localVarFormParams.Add("shipping[vat_rate]", this.Configuration.ApiClient.ParameterToString(shippingVatRate)); // form parameter
-            if (shippingTrackingNumber != null) localVarFormParams.Add("shipping[tracking_number]", this.Configuration.ApiClient.ParameterToString(shippingTrackingNumber)); // form parameter
-            if (shippingTrackingUrl != null) localVarFormParams.Add("shipping[tracking_url]", this.Configuration.ApiClient.ParameterToString(shippingTrackingUrl)); // form parameter
-            if (shopsystemName != null) localVarFormParams.Add("shopsystem[name]", this.Configuration.ApiClient.ParameterToString(shopsystemName)); // form parameter
-            if (shopsystemVersion != null) localVarFormParams.Add("shopsystem[version]", this.Configuration.ApiClient.ParameterToString(shopsystemVersion)); // form parameter
-            if (variables != null) localVarFormParams.Add("variables", this.Configuration.ApiClient.ParameterToString(variables)); // form parameter
-            if (textOnStatement != null) localVarFormParams.Add("text_on_statement", this.Configuration.ApiClient.ParameterToString(textOnStatement)); // form parameter
+            if (payment != null && payment.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(payment); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = payment; // byte array
+            }
 
 
             // make the HTTP request
@@ -3255,56 +2926,11 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="payment">Payment</param>
         /// <returns>Task of Payment</returns>
-        public async System.Threading.Tasks.Task<Payment> POSTPaymentsFormatAsync (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null)
+        public async System.Threading.Tasks.Task<Payment> POSTPaymentsFormatAsync (string acceptVersion, string authorization, Payment payment)
         {
-             ApiResponse<Payment> localVarResponse = await POSTPaymentsFormatAsyncWithHttpInfo(acceptVersion, authorization, currency, orderId, basketQty, basketItemNo, basketItemName, basketItemPrice, basketVatRate, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, brandingId, shippingMethod, shippingCompany, shippingAmount, shippingVatRate, shippingTrackingNumber, shippingTrackingUrl, shopsystemName, shopsystemVersion, variables, textOnStatement);
+             ApiResponse<Payment> localVarResponse = await POSTPaymentsFormatAsyncWithHttpInfo(acceptVersion, authorization, payment);
              return localVarResponse.Data;
 
         }
@@ -3315,54 +2941,9 @@ namespace IO.Swagger.Api
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt;  (optional)</param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt;  (optional)</param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="payment">Payment</param>
         /// <returns>Task of ApiResponse (Payment)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Payment>> POSTPaymentsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Payment>> POSTPaymentsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Payment payment)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3370,27 +2951,9 @@ namespace IO.Swagger.Api
             // verify the required parameter 'authorization' is set
             if (authorization == null)
                 throw new ApiException(400, "Missing required parameter 'authorization' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'currency' is set
-            if (currency == null)
-                throw new ApiException(400, "Missing required parameter 'currency' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'orderId' is set
-            if (orderId == null)
-                throw new ApiException(400, "Missing required parameter 'orderId' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketQty' is set
-            if (basketQty == null)
-                throw new ApiException(400, "Missing required parameter 'basketQty' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketItemNo' is set
-            if (basketItemNo == null)
-                throw new ApiException(400, "Missing required parameter 'basketItemNo' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketItemName' is set
-            if (basketItemName == null)
-                throw new ApiException(400, "Missing required parameter 'basketItemName' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketItemPrice' is set
-            if (basketItemPrice == null)
-                throw new ApiException(400, "Missing required parameter 'basketItemPrice' when calling PaymentsApi->POSTPaymentsFormat");
-            // verify the required parameter 'basketVatRate' is set
-            if (basketVatRate == null)
-                throw new ApiException(400, "Missing required parameter 'basketVatRate' when calling PaymentsApi->POSTPaymentsFormat");
+            // verify the required parameter 'payment' is set
+            if (payment == null)
+                throw new ApiException(400, "Missing required parameter 'payment' when calling PaymentsApi->POSTPaymentsFormat");
 
             var localVarPath = "/payments";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3402,16 +2965,13 @@ namespace IO.Swagger.Api
 
             // to determine the Content-Type header
             String[] localVarHttpContentTypes = new String[] {
-                "application/x-www-form-urlencoded"
+                "application/json"
             };
             String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "application/xml",
-                "application/json",
-                "application/octet-stream",
-                "text/plain"
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3419,52 +2979,14 @@ namespace IO.Swagger.Api
 
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (currency != null) localVarFormParams.Add("currency", this.Configuration.ApiClient.ParameterToString(currency)); // form parameter
-            if (orderId != null) localVarFormParams.Add("order_id", this.Configuration.ApiClient.ParameterToString(orderId)); // form parameter
-            if (invoiceAddressName != null) localVarFormParams.Add("invoice_address[name]", this.Configuration.ApiClient.ParameterToString(invoiceAddressName)); // form parameter
-            if (invoiceAddressAtt != null) localVarFormParams.Add("invoice_address[att]", this.Configuration.ApiClient.ParameterToString(invoiceAddressAtt)); // form parameter
-            if (invoiceAddressCompanyName != null) localVarFormParams.Add("invoice_address[company_name]", this.Configuration.ApiClient.ParameterToString(invoiceAddressCompanyName)); // form parameter
-            if (invoiceAddressStreet != null) localVarFormParams.Add("invoice_address[street]", this.Configuration.ApiClient.ParameterToString(invoiceAddressStreet)); // form parameter
-            if (invoiceAddressHouseNumber != null) localVarFormParams.Add("invoice_address[house_number]", this.Configuration.ApiClient.ParameterToString(invoiceAddressHouseNumber)); // form parameter
-            if (invoiceAddressHouseExtension != null) localVarFormParams.Add("invoice_address[house_extension]", this.Configuration.ApiClient.ParameterToString(invoiceAddressHouseExtension)); // form parameter
-            if (invoiceAddressCity != null) localVarFormParams.Add("invoice_address[city]", this.Configuration.ApiClient.ParameterToString(invoiceAddressCity)); // form parameter
-            if (invoiceAddressZipCode != null) localVarFormParams.Add("invoice_address[zip_code]", this.Configuration.ApiClient.ParameterToString(invoiceAddressZipCode)); // form parameter
-            if (invoiceAddressRegion != null) localVarFormParams.Add("invoice_address[region]", this.Configuration.ApiClient.ParameterToString(invoiceAddressRegion)); // form parameter
-            if (invoiceAddressCountryCode != null) localVarFormParams.Add("invoice_address[country_code]", this.Configuration.ApiClient.ParameterToString(invoiceAddressCountryCode)); // form parameter
-            if (invoiceAddressVatNo != null) localVarFormParams.Add("invoice_address[vat_no]", this.Configuration.ApiClient.ParameterToString(invoiceAddressVatNo)); // form parameter
-            if (invoiceAddressPhoneNumber != null) localVarFormParams.Add("invoice_address[phone_number]", this.Configuration.ApiClient.ParameterToString(invoiceAddressPhoneNumber)); // form parameter
-            if (invoiceAddressMobileNumber != null) localVarFormParams.Add("invoice_address[mobile_number]", this.Configuration.ApiClient.ParameterToString(invoiceAddressMobileNumber)); // form parameter
-            if (invoiceAddressEmail != null) localVarFormParams.Add("invoice_address[email]", this.Configuration.ApiClient.ParameterToString(invoiceAddressEmail)); // form parameter
-            if (shippingAddressName != null) localVarFormParams.Add("shipping_address[name]", this.Configuration.ApiClient.ParameterToString(shippingAddressName)); // form parameter
-            if (shippingAddressAtt != null) localVarFormParams.Add("shipping_address[att]", this.Configuration.ApiClient.ParameterToString(shippingAddressAtt)); // form parameter
-            if (shippingAddressCompanyName != null) localVarFormParams.Add("shipping_address[company_name]", this.Configuration.ApiClient.ParameterToString(shippingAddressCompanyName)); // form parameter
-            if (shippingAddressStreet != null) localVarFormParams.Add("shipping_address[street]", this.Configuration.ApiClient.ParameterToString(shippingAddressStreet)); // form parameter
-            if (shippingAddressHouseNumber != null) localVarFormParams.Add("shipping_address[house_number]", this.Configuration.ApiClient.ParameterToString(shippingAddressHouseNumber)); // form parameter
-            if (shippingAddressHouseExtension != null) localVarFormParams.Add("shipping_address[house_extension]", this.Configuration.ApiClient.ParameterToString(shippingAddressHouseExtension)); // form parameter
-            if (shippingAddressCity != null) localVarFormParams.Add("shipping_address[city]", this.Configuration.ApiClient.ParameterToString(shippingAddressCity)); // form parameter
-            if (shippingAddressZipCode != null) localVarFormParams.Add("shipping_address[zip_code]", this.Configuration.ApiClient.ParameterToString(shippingAddressZipCode)); // form parameter
-            if (shippingAddressRegion != null) localVarFormParams.Add("shipping_address[region]", this.Configuration.ApiClient.ParameterToString(shippingAddressRegion)); // form parameter
-            if (shippingAddressCountryCode != null) localVarFormParams.Add("shipping_address[country_code]", this.Configuration.ApiClient.ParameterToString(shippingAddressCountryCode)); // form parameter
-            if (shippingAddressVatNo != null) localVarFormParams.Add("shipping_address[vat_no]", this.Configuration.ApiClient.ParameterToString(shippingAddressVatNo)); // form parameter
-            if (shippingAddressPhoneNumber != null) localVarFormParams.Add("shipping_address[phone_number]", this.Configuration.ApiClient.ParameterToString(shippingAddressPhoneNumber)); // form parameter
-            if (shippingAddressMobileNumber != null) localVarFormParams.Add("shipping_address[mobile_number]", this.Configuration.ApiClient.ParameterToString(shippingAddressMobileNumber)); // form parameter
-            if (shippingAddressEmail != null) localVarFormParams.Add("shipping_address[email]", this.Configuration.ApiClient.ParameterToString(shippingAddressEmail)); // form parameter
-            if (brandingId != null) localVarFormParams.Add("branding_id", this.Configuration.ApiClient.ParameterToString(brandingId)); // form parameter
-            if (basketQty != null) localVarFormParams.Add("basket[][qty]", this.Configuration.ApiClient.ParameterToString(basketQty)); // form parameter
-            if (basketItemNo != null) localVarFormParams.Add("basket[][item_no]", this.Configuration.ApiClient.ParameterToString(basketItemNo)); // form parameter
-            if (basketItemName != null) localVarFormParams.Add("basket[][item_name]", this.Configuration.ApiClient.ParameterToString(basketItemName)); // form parameter
-            if (basketItemPrice != null) localVarFormParams.Add("basket[][item_price]", this.Configuration.ApiClient.ParameterToString(basketItemPrice)); // form parameter
-            if (basketVatRate != null) localVarFormParams.Add("basket[][vat_rate]", this.Configuration.ApiClient.ParameterToString(basketVatRate)); // form parameter
-            if (shippingMethod != null) localVarFormParams.Add("shipping[method]", this.Configuration.ApiClient.ParameterToString(shippingMethod)); // form parameter
-            if (shippingCompany != null) localVarFormParams.Add("shipping[company]", this.Configuration.ApiClient.ParameterToString(shippingCompany)); // form parameter
-            if (shippingAmount != null) localVarFormParams.Add("shipping[amount]", this.Configuration.ApiClient.ParameterToString(shippingAmount)); // form parameter
-            if (shippingVatRate != null) localVarFormParams.Add("shipping[vat_rate]", this.Configuration.ApiClient.ParameterToString(shippingVatRate)); // form parameter
-            if (shippingTrackingNumber != null) localVarFormParams.Add("shipping[tracking_number]", this.Configuration.ApiClient.ParameterToString(shippingTrackingNumber)); // form parameter
-            if (shippingTrackingUrl != null) localVarFormParams.Add("shipping[tracking_url]", this.Configuration.ApiClient.ParameterToString(shippingTrackingUrl)); // form parameter
-            if (shopsystemName != null) localVarFormParams.Add("shopsystem[name]", this.Configuration.ApiClient.ParameterToString(shopsystemName)); // form parameter
-            if (shopsystemVersion != null) localVarFormParams.Add("shopsystem[version]", this.Configuration.ApiClient.ParameterToString(shopsystemVersion)); // form parameter
-            if (variables != null) localVarFormParams.Add("variables", this.Configuration.ApiClient.ParameterToString(variables)); // form parameter
-            if (textOnStatement != null) localVarFormParams.Add("text_on_statement", this.Configuration.ApiClient.ParameterToString(textOnStatement)); // form parameter
+            if (payment != null && payment.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(payment); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = payment; // byte array
+            }
 
 
             // make the HTTP request

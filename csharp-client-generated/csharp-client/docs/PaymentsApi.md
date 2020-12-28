@@ -1,6 +1,6 @@
 # IO.Swagger.Api.PaymentsApi
 
-All URIs are relative to *https://api.quickpay.net/docs/v10/merchant*
+All URIs are relative to *https://api.quickpay.net/docs/v10/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -540,7 +540,7 @@ No authorization required
 
 <a name="postpaymentsformat"></a>
 # **POSTPaymentsFormat**
-> Payment POSTPaymentsFormat (string acceptVersion, string authorization, string currency, string orderId, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, int? brandingId = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string shopsystemName = null, string shopsystemVersion = null, Dictionary<string, string> variables = null, string textOnStatement = null)
+> Payment POSTPaymentsFormat (string acceptVersion, string authorization, Payment payment)
 
 Create payment
 
@@ -563,57 +563,12 @@ namespace Example
             var apiInstance = new PaymentsApi();
             var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
             var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var currency = currency_example;  // string | <p>Currency</p> 
-            var orderId = orderId_example;  // string | <p>Unique order id(must be between 4-20 characters)</p> 
-            var basketQty = 56;  // int? | <p>Quantity</p> 
-            var basketItemNo = basketItemNo_example;  // string | <p>Item reference number</p> 
-            var basketItemName = basketItemName_example;  // string | <p>Item name</p> 
-            var basketItemPrice = 56;  // int? | <p>Per item price (incl. VAT)</p> 
-            var basketVatRate = 3.4;  // float? | <p>VAT rate</p> 
-            var invoiceAddressName = invoiceAddressName_example;  // string | <p>Name</p>  (optional) 
-            var invoiceAddressAtt = invoiceAddressAtt_example;  // string | <p>Att</p>  (optional) 
-            var invoiceAddressCompanyName = invoiceAddressCompanyName_example;  // string | <p>Company name</p>  (optional) 
-            var invoiceAddressStreet = invoiceAddressStreet_example;  // string | <p>Street</p>  (optional) 
-            var invoiceAddressHouseNumber = invoiceAddressHouseNumber_example;  // string | <p>House number</p>  (optional) 
-            var invoiceAddressHouseExtension = invoiceAddressHouseExtension_example;  // string | <p>House extension</p>  (optional) 
-            var invoiceAddressCity = invoiceAddressCity_example;  // string | <p>City</p>  (optional) 
-            var invoiceAddressZipCode = invoiceAddressZipCode_example;  // string | <p>Zip code</p>  (optional) 
-            var invoiceAddressRegion = invoiceAddressRegion_example;  // string | <p>Region</p>  (optional) 
-            var invoiceAddressCountryCode = invoiceAddressCountryCode_example;  // string | <p>Three letter country code according to ISO 3166-1 Alpha-3</p>  (optional) 
-            var invoiceAddressVatNo = invoiceAddressVatNo_example;  // string | <p>VAT registration number</p>  (optional) 
-            var invoiceAddressPhoneNumber = invoiceAddressPhoneNumber_example;  // string | <p>Phone number</p>  (optional) 
-            var invoiceAddressMobileNumber = invoiceAddressMobileNumber_example;  // string | <p>Mobile number</p>  (optional) 
-            var invoiceAddressEmail = invoiceAddressEmail_example;  // string | <p>Email address</p>  (optional) 
-            var shippingAddressName = shippingAddressName_example;  // string | <p>Name</p>  (optional) 
-            var shippingAddressAtt = shippingAddressAtt_example;  // string | <p>Att</p>  (optional) 
-            var shippingAddressCompanyName = shippingAddressCompanyName_example;  // string | <p>Company name</p>  (optional) 
-            var shippingAddressStreet = shippingAddressStreet_example;  // string | <p>Street</p>  (optional) 
-            var shippingAddressHouseNumber = shippingAddressHouseNumber_example;  // string | <p>House number</p>  (optional) 
-            var shippingAddressHouseExtension = shippingAddressHouseExtension_example;  // string | <p>House extension</p>  (optional) 
-            var shippingAddressCity = shippingAddressCity_example;  // string | <p>City</p>  (optional) 
-            var shippingAddressZipCode = shippingAddressZipCode_example;  // string | <p>Zip code</p>  (optional) 
-            var shippingAddressRegion = shippingAddressRegion_example;  // string | <p>Region</p>  (optional) 
-            var shippingAddressCountryCode = shippingAddressCountryCode_example;  // string | <p>Three letter country code according to ISO 3166-1 Alpha-3</p>  (optional) 
-            var shippingAddressVatNo = shippingAddressVatNo_example;  // string | <p>VAT registration number</p>  (optional) 
-            var shippingAddressPhoneNumber = shippingAddressPhoneNumber_example;  // string | <p>Phone number</p>  (optional) 
-            var shippingAddressMobileNumber = shippingAddressMobileNumber_example;  // string | <p>Mobile number</p>  (optional) 
-            var shippingAddressEmail = shippingAddressEmail_example;  // string | <p>Email address</p>  (optional) 
-            var brandingId = 56;  // int? | <p>Used branding id</p>  (optional) 
-            var shippingMethod = shippingMethod_example;  // string | <p>Shipping method</p>  (optional) 
-            var shippingCompany = shippingCompany_example;  // string | <p>Shipping company</p>  (optional) 
-            var shippingAmount = 56;  // int? | <p>Shipping price (incl. VAT)</p>  (optional) 
-            var shippingVatRate = 3.4;  // float? | <p>VAT rate</p>  (optional) 
-            var shippingTrackingNumber = shippingTrackingNumber_example;  // string | <p>Shipping tracking number</p>  (optional) 
-            var shippingTrackingUrl = shippingTrackingUrl_example;  // string | <p>Shipping tracking url</p>  (optional) 
-            var shopsystemName = shopsystemName_example;  // string | <p>Shop system module name</p>  (optional) 
-            var shopsystemVersion = shopsystemVersion_example;  // string | <p>Shop system module version</p>  (optional) 
-            var variables = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Custom variables</p>  (optional)  (default to {})
-            var textOnStatement = textOnStatement_example;  // string | <p>Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.</p>  (optional) 
+            var payment = new Payment(); // Payment | Payment
 
             try
             {
                 // Create payment
-                Payment result = apiInstance.POSTPaymentsFormat(acceptVersion, authorization, currency, orderId, basketQty, basketItemNo, basketItemName, basketItemPrice, basketVatRate, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, brandingId, shippingMethod, shippingCompany, shippingAmount, shippingVatRate, shippingTrackingNumber, shippingTrackingUrl, shopsystemName, shopsystemVersion, variables, textOnStatement);
+                Payment result = apiInstance.POSTPaymentsFormat(acceptVersion, authorization, payment);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -631,52 +586,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
  **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **currency** | **string**| &lt;p&gt;Currency&lt;/p&gt;  | 
- **orderId** | **string**| &lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt;  | 
- **basketQty** | **int?**| &lt;p&gt;Quantity&lt;/p&gt;  | 
- **basketItemNo** | **string**| &lt;p&gt;Item reference number&lt;/p&gt;  | 
- **basketItemName** | **string**| &lt;p&gt;Item name&lt;/p&gt;  | 
- **basketItemPrice** | **int?**| &lt;p&gt;Per item price (incl. VAT)&lt;/p&gt;  | 
- **basketVatRate** | **float?**| &lt;p&gt;VAT rate&lt;/p&gt;  | 
- **invoiceAddressName** | **string**| &lt;p&gt;Name&lt;/p&gt;  | [optional] 
- **invoiceAddressAtt** | **string**| &lt;p&gt;Att&lt;/p&gt;  | [optional] 
- **invoiceAddressCompanyName** | **string**| &lt;p&gt;Company name&lt;/p&gt;  | [optional] 
- **invoiceAddressStreet** | **string**| &lt;p&gt;Street&lt;/p&gt;  | [optional] 
- **invoiceAddressHouseNumber** | **string**| &lt;p&gt;House number&lt;/p&gt;  | [optional] 
- **invoiceAddressHouseExtension** | **string**| &lt;p&gt;House extension&lt;/p&gt;  | [optional] 
- **invoiceAddressCity** | **string**| &lt;p&gt;City&lt;/p&gt;  | [optional] 
- **invoiceAddressZipCode** | **string**| &lt;p&gt;Zip code&lt;/p&gt;  | [optional] 
- **invoiceAddressRegion** | **string**| &lt;p&gt;Region&lt;/p&gt;  | [optional] 
- **invoiceAddressCountryCode** | **string**| &lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  | [optional] 
- **invoiceAddressVatNo** | **string**| &lt;p&gt;VAT registration number&lt;/p&gt;  | [optional] 
- **invoiceAddressPhoneNumber** | **string**| &lt;p&gt;Phone number&lt;/p&gt;  | [optional] 
- **invoiceAddressMobileNumber** | **string**| &lt;p&gt;Mobile number&lt;/p&gt;  | [optional] 
- **invoiceAddressEmail** | **string**| &lt;p&gt;Email address&lt;/p&gt;  | [optional] 
- **shippingAddressName** | **string**| &lt;p&gt;Name&lt;/p&gt;  | [optional] 
- **shippingAddressAtt** | **string**| &lt;p&gt;Att&lt;/p&gt;  | [optional] 
- **shippingAddressCompanyName** | **string**| &lt;p&gt;Company name&lt;/p&gt;  | [optional] 
- **shippingAddressStreet** | **string**| &lt;p&gt;Street&lt;/p&gt;  | [optional] 
- **shippingAddressHouseNumber** | **string**| &lt;p&gt;House number&lt;/p&gt;  | [optional] 
- **shippingAddressHouseExtension** | **string**| &lt;p&gt;House extension&lt;/p&gt;  | [optional] 
- **shippingAddressCity** | **string**| &lt;p&gt;City&lt;/p&gt;  | [optional] 
- **shippingAddressZipCode** | **string**| &lt;p&gt;Zip code&lt;/p&gt;  | [optional] 
- **shippingAddressRegion** | **string**| &lt;p&gt;Region&lt;/p&gt;  | [optional] 
- **shippingAddressCountryCode** | **string**| &lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  | [optional] 
- **shippingAddressVatNo** | **string**| &lt;p&gt;VAT registration number&lt;/p&gt;  | [optional] 
- **shippingAddressPhoneNumber** | **string**| &lt;p&gt;Phone number&lt;/p&gt;  | [optional] 
- **shippingAddressMobileNumber** | **string**| &lt;p&gt;Mobile number&lt;/p&gt;  | [optional] 
- **shippingAddressEmail** | **string**| &lt;p&gt;Email address&lt;/p&gt;  | [optional] 
- **brandingId** | **int?**| &lt;p&gt;Used branding id&lt;/p&gt;  | [optional] 
- **shippingMethod** | **string**| &lt;p&gt;Shipping method&lt;/p&gt;  | [optional] 
- **shippingCompany** | **string**| &lt;p&gt;Shipping company&lt;/p&gt;  | [optional] 
- **shippingAmount** | **int?**| &lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  | [optional] 
- **shippingVatRate** | **float?**| &lt;p&gt;VAT rate&lt;/p&gt;  | [optional] 
- **shippingTrackingNumber** | **string**| &lt;p&gt;Shipping tracking number&lt;/p&gt;  | [optional] 
- **shippingTrackingUrl** | **string**| &lt;p&gt;Shipping tracking url&lt;/p&gt;  | [optional] 
- **shopsystemName** | **string**| &lt;p&gt;Shop system module name&lt;/p&gt;  | [optional] 
- **shopsystemVersion** | **string**| &lt;p&gt;Shop system module version&lt;/p&gt;  | [optional] 
- **variables** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;Custom variables&lt;/p&gt;  | [optional] [default to {}]
- **textOnStatement** | **string**| &lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  | [optional] 
+ **payment** | [**Payment**](Payment.md)| Payment | 
 
 ### Return type
 
@@ -688,8 +598,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
- - **Accept**: application/xml, application/json, application/octet-stream, text/plain
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

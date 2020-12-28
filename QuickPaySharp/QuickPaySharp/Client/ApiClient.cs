@@ -53,12 +53,12 @@ namespace QuickPaySharp.Client
         public ApiClient()
         {
             Configuration = QuickPaySharp.Client.Configuration.Default;
-            RestClient = new RestClient("https://api.quickpay.net/docs/v10");
+            RestClient = new RestClient("https://api.quickpay.net/docs/v10/");
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (https://api.quickpay.net/docs/v10).
+        /// with default base path (https://api.quickpay.net/docs/v10/).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config)
@@ -73,7 +73,7 @@ namespace QuickPaySharp.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "https://api.quickpay.net/docs/v10")
+        public ApiClient(String basePath = "https://api.quickpay.net/docs/v10/")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");
