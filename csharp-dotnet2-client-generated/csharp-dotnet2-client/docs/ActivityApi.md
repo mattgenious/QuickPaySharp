@@ -32,16 +32,16 @@ namespace Example
         {
             
             var apiInstance = new ActivityApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var userId = 56;  // int? | <p>Limit to activity by user_id</p>  (optional) 
-            var targetType = targetType_example;  // string | <p>Filter by target type, e.g. ‘Payment’</p>  (optional) 
-            var targetId = 56;  // int? | <p>Filter by target id, e.g. id of payment</p>  (optional) 
-            var support = true;  // bool? | <p>Filter by whether a support user made the activity</p>  (optional) 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
-            var sortBy = sortBy_example;  // string | <p>Property to sort by</p>  (optional)  (default to created_at)
-            var sortDir = sortDir_example;  // string | <p>Sort direction</p>  (optional)  (default to desc)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var userId = 56;  // int? | Limit to activity by user_id  (optional) 
+            var targetType = targetType_example;  // string | Filter by target type, e.g. ‘Payment’  (optional) 
+            var targetId = 56;  // int? | Filter by target id, e.g. id of payment  (optional) 
+            var support = true;  // bool? | Filter by whether a support user made the activity  (optional) 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
+            var sortBy = sortBy_example;  // string | Property to sort by  (optional)  (default to created_at)
+            var sortDir = sortDir_example;  // string | Sort direction  (optional)  (default to desc)
             var pageKey = pageKey_example;  // string |   (optional) 
 
             try
@@ -63,16 +63,16 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **userId** | **int?**| &lt;p&gt;Limit to activity by user_id&lt;/p&gt;  | [optional] 
- **targetType** | **string**| &lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  | [optional] 
- **targetId** | **int?**| &lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  | [optional] 
- **support** | **bool?**| &lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  | [optional] 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
- **sortBy** | **string**| &lt;p&gt;Property to sort by&lt;/p&gt;  | [optional] [default to created_at]
- **sortDir** | **string**| &lt;p&gt;Sort direction&lt;/p&gt;  | [optional] [default to desc]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **userId** | **int?**| Limit to activity by user_id  | [optional] 
+ **targetType** | **string**| Filter by target type, e.g. ‘Payment’  | [optional] 
+ **targetId** | **int?**| Filter by target id, e.g. id of payment  | [optional] 
+ **support** | **bool?**| Filter by whether a support user made the activity  | [optional] 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
+ **sortBy** | **string**| Property to sort by  | [optional] [default to created_at]
+ **sortDir** | **string**| Sort direction  | [optional] [default to desc]
  **pageKey** | **string**|   | [optional] 
 
 ### Return type
@@ -114,9 +114,9 @@ namespace Example
         {
             
             var apiInstance = new ActivityApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = id_example;  // string | <p>Activity entry id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = id_example;  // string | Activity entry id 
 
             try
             {
@@ -137,9 +137,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **string**| &lt;p&gt;Activity entry id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **string**| Activity entry id  | 
 
 ### Return type
 

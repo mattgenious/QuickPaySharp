@@ -14,51 +14,51 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete ruleset  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get custom defined fraud rulesets  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get ruleset by id  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Update a ruleset  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name, string action, string combinator);
         /// <summary>
         /// Create a custom fraud ruleset  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
     }
@@ -119,9 +119,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete ruleset  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Ruleset id </param> 
         /// <returns>FraudRuleset</returns>            
         public FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -166,8 +166,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get custom defined fraud rulesets  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>FraudRuleset</returns>            
         public FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization)
         {
@@ -208,9 +208,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get ruleset by id  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Ruleset id </param> 
         /// <returns>FraudRuleset</returns>            
         public FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -255,15 +255,15 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Update a ruleset  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param> 
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param> 
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param> 
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param> 
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param> 
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param> 
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Ruleset id </param> 
+        /// <param name="filterRulesMetricName">Name af variable metric </param> 
+        /// <param name="filterRulesOperator">Operator </param> 
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param> 
+        /// <param name="name">Descriptive name </param> 
+        /// <param name="action">Action to take when ruleset triggers </param> 
+        /// <param name="combinator">Method to combine filter rules </param> 
         /// <returns>FraudRuleset</returns>            
         public FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name, string action, string combinator)
         {
@@ -323,14 +323,14 @@ if (combinator != null) formParams.Add("combinator", ApiClient.ParameterToString
         /// <summary>
         /// Create a custom fraud ruleset  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param> 
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param> 
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param> 
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param> 
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param> 
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="name">Descriptive name </param> 
+        /// <param name="filterRulesMetricName">Name af variable metric </param> 
+        /// <param name="filterRulesOperator">Operator </param> 
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param> 
+        /// <param name="action">Action to take when ruleset triggers </param> 
+        /// <param name="combinator">Method to combine filter rules </param> 
         /// <returns>FraudRuleset</returns>            
         public FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {

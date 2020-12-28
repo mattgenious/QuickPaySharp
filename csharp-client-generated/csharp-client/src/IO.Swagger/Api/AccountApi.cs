@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,8 +31,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Zero4PlatformSettings</returns>
         Zero4PlatformSettings DELETEAccount04PlatformFormat (string acceptVersion, string authorization);
 
@@ -43,8 +43,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of Zero4PlatformSettings</returns>
         ApiResponse<Zero4PlatformSettings> DELETEAccount04PlatformFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -54,8 +54,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns></returns>
         void DELETEAccountFormat (string acceptVersion, string authorization);
 
@@ -66,8 +66,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETEAccountFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -77,9 +77,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns></returns>
         void DELETEAccountLogoFormat (string acceptVersion, string authorization, string logoType = null);
 
@@ -90,9 +90,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETEAccountLogoFormatWithHttpInfo (string acceptVersion, string authorization, string logoType = null);
         /// <summary>
@@ -102,8 +102,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Zero4PlatformSettings</returns>
         Zero4PlatformSettings GETAccount04PlatformFormat (string acceptVersion, string authorization);
 
@@ -114,8 +114,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of Zero4PlatformSettings</returns>
         ApiResponse<Zero4PlatformSettings> GETAccount04PlatformFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -125,8 +125,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Merchant</returns>
         Merchant GETAccountFormat (string acceptVersion, string authorization);
 
@@ -137,8 +137,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of Merchant</returns>
         ApiResponse<Merchant> GETAccountFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -148,9 +148,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns></returns>
         void GETAccountLogoFormat (string acceptVersion, string authorization, string logoType = null);
 
@@ -161,9 +161,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> GETAccountLogoFormatWithHttpInfo (string acceptVersion, string authorization, string logoType = null);
         /// <summary>
@@ -173,8 +173,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>PrivateKey</returns>
         PrivateKey GETAccountPrivateKeyFormat (string acceptVersion, string authorization);
 
@@ -185,8 +185,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of PrivateKey</returns>
         ApiResponse<PrivateKey> GETAccountPrivateKeyFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -196,173 +196,173 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="customerAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Callback url&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraActive">&lt;p&gt;Enable Bambora payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraBusinessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausActive">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausPayout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApplePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonActive">&lt;p&gt;Enable Elavon payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonBusinessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenActive">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenBusinessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaActive">&lt;p&gt;Enable Klarna payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaEid">&lt;p&gt;Klarna merchant ID&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaSharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayActive">&lt;p&gt;Enable MobilePay payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  (optional, default to 0)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsActive">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsBusinessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsFbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecuredByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsAmericanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsDinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecurepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsNetsVisaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsMastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalActive">&lt;p&gt;Enable PayPal payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalRecurring">&lt;p&gt;Enable recurring payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalCreditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalToken">&lt;p&gt;Authentication token&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalTokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalScope">&lt;p&gt;Authentication scope&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortActive">&lt;p&gt;Enable Sofort payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortCustomerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortProjectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortApiKey">&lt;p&gt;Sofort API key&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortGateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsSofortIdeal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankActive">&lt;p&gt;Enable Swedbank payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankBusinessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerActive">&lt;p&gt;Enable Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerBusinessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerSecurepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerVisaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorActive">&lt;p&gt;Enable Valitor payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorBusinessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillActive">&lt;p&gt;Enable ViaBill payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillApiKey">&lt;p&gt;ViaBill API key&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicActive">&lt;p&gt;Enable e-conomic integration&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreement">&lt;p&gt;e-conomic agreement no.&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreementToken">&lt;p&gt;economic agreement grant token&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqA">&lt;p&gt;Enable SAQ A&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqAEp">&lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqB">&lt;p&gt;Enable SAQ B&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqBIp">&lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqC">&lt;p&gt;Enable SAQ C&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqCVt">&lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDMerchant">&lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDServiceProvider">&lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqP2peHw">&lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  (optional)</param>
-        /// <param name="autofee">&lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentMethods">&lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrl">&lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrls">&lt;p&gt;Shop URLs&lt;/p&gt;  (optional)</param>
-        /// <param name="contactEmail">&lt;p&gt;Contact email&lt;/p&gt;  (optional)</param>
-        /// <param name="shopName">&lt;p&gt;Shop name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystem">&lt;p&gt;Shop system&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="customerAddressName">Name  (optional)</param>
+        /// <param name="customerAddressAtt">Att  (optional)</param>
+        /// <param name="customerAddressStreet">Street  (optional)</param>
+        /// <param name="customerAddressCity">City  (optional)</param>
+        /// <param name="customerAddressZipCode">Zip code  (optional)</param>
+        /// <param name="customerAddressRegion">Region  (optional)</param>
+        /// <param name="customerAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="customerAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="billingAddressName">Name  (optional)</param>
+        /// <param name="billingAddressAtt">Att  (optional)</param>
+        /// <param name="billingAddressStreet">Street  (optional)</param>
+        /// <param name="billingAddressCity">City  (optional)</param>
+        /// <param name="billingAddressZipCode">Zip code  (optional)</param>
+        /// <param name="billingAddressRegion">Region  (optional)</param>
+        /// <param name="billingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="billingAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="callbackUrl">Callback url  (optional)</param>
+        /// <param name="acquirerSettingsBamboraActive">Enable Bambora payments  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCode">Bambora identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">Bambora international identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraBusinessCode">Business code (assigned by Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraRecurring">Enable recurring payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraAmericanexpress">Enable AMEX payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraDinersclub">Enable Diners Club payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsClearhausActive">Enable ClearHaus payments  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApiKey">Clearhaus API key (is required but may be left empty)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausRecurring">Enable recurring payments (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausPayout">Enable payouts (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApplePay">Enable Apple Pay (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsElavonActive">Enable Elavon payments  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCode">Elavon identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCodeInt">Elavon international identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonBusinessCode">Business code (assigned by Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonRecurring">Enable recurring payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonAmericanexpress">Enable AMEX payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonDinersclub">Enable Diners Club payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenActive">Enable Handelsbanken payments  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">Handelsbanken identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">Handelsbanken international identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenBusinessCode">Business code (assigned by Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenRecurring">Enable recurring payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">Enable AMEX payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenDinersclub">Enable Diners Club payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaActive">Enable Klarna payments  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaEid">Klarna merchant ID  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaSharedSecret">Klarna shared secret  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayActive">Enable MobilePay payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">Enable MobilePay Subscriptions payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">Verifies received code challenge  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">Unix Timestamp of last time the tokens were refreshed  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">Associate client sessions with ID Tokens to mitigate replay attacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional, default to 0)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">The provider / sales-place chosen by the merchant  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">Token to refresh access token for up to 1 year  (optional)</param>
+        /// <param name="acquirerSettingsNetsActive">Enable Nets/Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCode">Nets TOF number  (optional)</param>
+        /// <param name="acquirerSettingsNetsBusinessCode">Business code (assigned by Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsRecurring">Enable recurring payments (requires agreement with Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsFbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecuredByNets">Enable SecuredByNets fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCodeInt">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsAmericanexpress">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsDinersclub">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecurepay">(Depricated; use Teller acquirer)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsNetsVisaBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsMastercardBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalActive">Enable PayPal payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalRecurring">Enable recurring payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalCreditCard">Allow credit-card payments. (Only for US/CA/UK merchants)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalToken">Authentication token  (optional)</param>
+        /// <param name="acquirerSettingsPaypalTokenSecret">Authentication token secret  (optional)</param>
+        /// <param name="acquirerSettingsPaypalScope">Authentication scope  (optional)</param>
+        /// <param name="acquirerSettingsSofortActive">Enable Sofort payments  (optional)</param>
+        /// <param name="acquirerSettingsSofortCustomerNumber">Sofort customer number  (optional)</param>
+        /// <param name="acquirerSettingsSofortProjectId">Sofort Gateway project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortApiKey">Sofort API key  (optional)</param>
+        /// <param name="acquirerSettingsSofortGateway">Enable Sofort Gateway feature  (optional, default to true)</param>
+        /// <param name="acquirerSettingsSofortIdeal">Enable Sofort iDeal feature  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectId">Sofort iDeal project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectPassword">Sofort iDeal project password  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealNotificationPassword">Sofort iDeal notification password  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankActive">Enable Swedbank payments  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCode">Swedbank identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">Swedbank international identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankBusinessCode">Business code (assigned by Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankRecurring">Enable recurring payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankAmericanexpress">Enable AMEX payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankDinersclub">Enable Diners Club payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerActive">Enable Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCode">Teller TOF number  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCodeInt">Teller international identification number  (optional)</param>
+        /// <param name="acquirerSettingsTellerBusinessCode">Business code (assigned by Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerRecurring">Enable recurring payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerAmericanexpress">Enable AMEX payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerDinersclub">Enable Diners Club payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerSecurepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerVisaBin">Teller VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardBin">Teller Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorActive">Enable Valitor payments  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCode">Valitor identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCodeInt">Valitor international identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorBusinessCode">Business code (assigned by Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorRecurring">Enable recurring payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorAmericanexpress">Enable AMEX payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorDinersclub">Enable Diners Club payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsViabillActive">Enable ViaBill payments  (optional)</param>
+        /// <param name="acquirerSettingsViabillApiKey">ViaBill API key  (optional)</param>
+        /// <param name="integrationSettingsEconomicActive">Enable e-conomic integration  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreement">e-conomic agreement no.  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreementToken">economic agreement grant token  (optional)</param>
+        /// <param name="pciSaqA">Enable SAQ A  (optional)</param>
+        /// <param name="pciSaqAEp">Enable SAQ A-EP  (optional)</param>
+        /// <param name="pciSaqB">Enable SAQ B  (optional)</param>
+        /// <param name="pciSaqBIp">Enable SAQ B-IP  (optional)</param>
+        /// <param name="pciSaqC">Enable SAQ C  (optional)</param>
+        /// <param name="pciSaqCVt">Enable SAQ C-VT  (optional)</param>
+        /// <param name="pciSaqDMerchant">Enable SAQ D Merchant  (optional)</param>
+        /// <param name="pciSaqDServiceProvider">Enable SAQ D Service Provider  (optional)</param>
+        /// <param name="pciSaqP2peHw">Enable SAQ P2PE-HW  (optional)</param>
+        /// <param name="autofee">Add automatic fee on all payments  (optional)</param>
+        /// <param name="defaultPaymentMethods">Comma separated list of default payment methods  (optional)</param>
+        /// <param name="shopUrl">Shop URL (deprecated, use shop_urls instead)  (optional)</param>
+        /// <param name="shopUrls">Shop URLs  (optional)</param>
+        /// <param name="contactEmail">Contact email  (optional)</param>
+        /// <param name="shopName">Shop name  (optional)</param>
+        /// <param name="shopsystem">Shop system  (optional)</param>
         /// <param name="timezone">&lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  (optional)</param>
-        /// <param name="locale">&lt;p&gt;Locale as a two letter language code&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingId">&lt;p&gt;Id of default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="loggingStopsAt">&lt;p&gt;Timestamp when logging is active&lt;/p&gt;  (optional)</param>
-        /// <param name="allowTestTransactions">&lt;p&gt;Allow test transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentLanguage">&lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultTextOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingConfig">&lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  (optional)</param>
+        /// <param name="locale">Locale as a two letter language code  (optional)</param>
+        /// <param name="defaultBrandingId">Id of default branding  (optional)</param>
+        /// <param name="loggingStopsAt">Timestamp when logging is active  (optional)</param>
+        /// <param name="allowTestTransactions">Allow test transactions  (optional)</param>
+        /// <param name="defaultPaymentLanguage">Default payment language (Two letter language code, ISO-639-1)  (optional)</param>
+        /// <param name="defaultTextOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
+        /// <param name="defaultBrandingConfig">Default branding config. Can be overwritten in branding or in request to payment window  (optional)</param>
         /// <returns>Merchant</returns>
-        Merchant PATCHAccountFormat (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null);
+        Merchant PATCHAccountFormat (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, string acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, string acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, string shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, string defaultBrandingConfig = null);
 
         /// <summary>
         /// Update merchant account
@@ -371,173 +371,173 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="customerAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Callback url&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraActive">&lt;p&gt;Enable Bambora payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraBusinessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausActive">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausPayout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApplePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonActive">&lt;p&gt;Enable Elavon payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonBusinessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenActive">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenBusinessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaActive">&lt;p&gt;Enable Klarna payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaEid">&lt;p&gt;Klarna merchant ID&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaSharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayActive">&lt;p&gt;Enable MobilePay payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  (optional, default to 0)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsActive">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsBusinessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsFbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecuredByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsAmericanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsDinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecurepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsNetsVisaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsMastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalActive">&lt;p&gt;Enable PayPal payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalRecurring">&lt;p&gt;Enable recurring payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalCreditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalToken">&lt;p&gt;Authentication token&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalTokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalScope">&lt;p&gt;Authentication scope&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortActive">&lt;p&gt;Enable Sofort payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortCustomerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortProjectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortApiKey">&lt;p&gt;Sofort API key&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortGateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsSofortIdeal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankActive">&lt;p&gt;Enable Swedbank payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankBusinessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerActive">&lt;p&gt;Enable Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerBusinessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerSecurepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerVisaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorActive">&lt;p&gt;Enable Valitor payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorBusinessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillActive">&lt;p&gt;Enable ViaBill payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillApiKey">&lt;p&gt;ViaBill API key&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicActive">&lt;p&gt;Enable e-conomic integration&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreement">&lt;p&gt;e-conomic agreement no.&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreementToken">&lt;p&gt;economic agreement grant token&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqA">&lt;p&gt;Enable SAQ A&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqAEp">&lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqB">&lt;p&gt;Enable SAQ B&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqBIp">&lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqC">&lt;p&gt;Enable SAQ C&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqCVt">&lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDMerchant">&lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDServiceProvider">&lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqP2peHw">&lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  (optional)</param>
-        /// <param name="autofee">&lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentMethods">&lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrl">&lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrls">&lt;p&gt;Shop URLs&lt;/p&gt;  (optional)</param>
-        /// <param name="contactEmail">&lt;p&gt;Contact email&lt;/p&gt;  (optional)</param>
-        /// <param name="shopName">&lt;p&gt;Shop name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystem">&lt;p&gt;Shop system&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="customerAddressName">Name  (optional)</param>
+        /// <param name="customerAddressAtt">Att  (optional)</param>
+        /// <param name="customerAddressStreet">Street  (optional)</param>
+        /// <param name="customerAddressCity">City  (optional)</param>
+        /// <param name="customerAddressZipCode">Zip code  (optional)</param>
+        /// <param name="customerAddressRegion">Region  (optional)</param>
+        /// <param name="customerAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="customerAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="billingAddressName">Name  (optional)</param>
+        /// <param name="billingAddressAtt">Att  (optional)</param>
+        /// <param name="billingAddressStreet">Street  (optional)</param>
+        /// <param name="billingAddressCity">City  (optional)</param>
+        /// <param name="billingAddressZipCode">Zip code  (optional)</param>
+        /// <param name="billingAddressRegion">Region  (optional)</param>
+        /// <param name="billingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="billingAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="callbackUrl">Callback url  (optional)</param>
+        /// <param name="acquirerSettingsBamboraActive">Enable Bambora payments  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCode">Bambora identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">Bambora international identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraBusinessCode">Business code (assigned by Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraRecurring">Enable recurring payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraAmericanexpress">Enable AMEX payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraDinersclub">Enable Diners Club payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsClearhausActive">Enable ClearHaus payments  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApiKey">Clearhaus API key (is required but may be left empty)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausRecurring">Enable recurring payments (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausPayout">Enable payouts (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApplePay">Enable Apple Pay (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsElavonActive">Enable Elavon payments  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCode">Elavon identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCodeInt">Elavon international identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonBusinessCode">Business code (assigned by Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonRecurring">Enable recurring payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonAmericanexpress">Enable AMEX payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonDinersclub">Enable Diners Club payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenActive">Enable Handelsbanken payments  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">Handelsbanken identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">Handelsbanken international identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenBusinessCode">Business code (assigned by Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenRecurring">Enable recurring payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">Enable AMEX payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenDinersclub">Enable Diners Club payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaActive">Enable Klarna payments  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaEid">Klarna merchant ID  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaSharedSecret">Klarna shared secret  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayActive">Enable MobilePay payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">Enable MobilePay Subscriptions payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">Verifies received code challenge  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">Unix Timestamp of last time the tokens were refreshed  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">Associate client sessions with ID Tokens to mitigate replay attacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional, default to 0)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">The provider / sales-place chosen by the merchant  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">Token to refresh access token for up to 1 year  (optional)</param>
+        /// <param name="acquirerSettingsNetsActive">Enable Nets/Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCode">Nets TOF number  (optional)</param>
+        /// <param name="acquirerSettingsNetsBusinessCode">Business code (assigned by Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsRecurring">Enable recurring payments (requires agreement with Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsFbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecuredByNets">Enable SecuredByNets fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCodeInt">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsAmericanexpress">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsDinersclub">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecurepay">(Depricated; use Teller acquirer)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsNetsVisaBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsMastercardBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalActive">Enable PayPal payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalRecurring">Enable recurring payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalCreditCard">Allow credit-card payments. (Only for US/CA/UK merchants)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalToken">Authentication token  (optional)</param>
+        /// <param name="acquirerSettingsPaypalTokenSecret">Authentication token secret  (optional)</param>
+        /// <param name="acquirerSettingsPaypalScope">Authentication scope  (optional)</param>
+        /// <param name="acquirerSettingsSofortActive">Enable Sofort payments  (optional)</param>
+        /// <param name="acquirerSettingsSofortCustomerNumber">Sofort customer number  (optional)</param>
+        /// <param name="acquirerSettingsSofortProjectId">Sofort Gateway project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortApiKey">Sofort API key  (optional)</param>
+        /// <param name="acquirerSettingsSofortGateway">Enable Sofort Gateway feature  (optional, default to true)</param>
+        /// <param name="acquirerSettingsSofortIdeal">Enable Sofort iDeal feature  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectId">Sofort iDeal project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectPassword">Sofort iDeal project password  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealNotificationPassword">Sofort iDeal notification password  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankActive">Enable Swedbank payments  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCode">Swedbank identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">Swedbank international identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankBusinessCode">Business code (assigned by Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankRecurring">Enable recurring payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankAmericanexpress">Enable AMEX payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankDinersclub">Enable Diners Club payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerActive">Enable Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCode">Teller TOF number  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCodeInt">Teller international identification number  (optional)</param>
+        /// <param name="acquirerSettingsTellerBusinessCode">Business code (assigned by Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerRecurring">Enable recurring payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerAmericanexpress">Enable AMEX payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerDinersclub">Enable Diners Club payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerSecurepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerVisaBin">Teller VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardBin">Teller Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorActive">Enable Valitor payments  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCode">Valitor identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCodeInt">Valitor international identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorBusinessCode">Business code (assigned by Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorRecurring">Enable recurring payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorAmericanexpress">Enable AMEX payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorDinersclub">Enable Diners Club payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsViabillActive">Enable ViaBill payments  (optional)</param>
+        /// <param name="acquirerSettingsViabillApiKey">ViaBill API key  (optional)</param>
+        /// <param name="integrationSettingsEconomicActive">Enable e-conomic integration  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreement">e-conomic agreement no.  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreementToken">economic agreement grant token  (optional)</param>
+        /// <param name="pciSaqA">Enable SAQ A  (optional)</param>
+        /// <param name="pciSaqAEp">Enable SAQ A-EP  (optional)</param>
+        /// <param name="pciSaqB">Enable SAQ B  (optional)</param>
+        /// <param name="pciSaqBIp">Enable SAQ B-IP  (optional)</param>
+        /// <param name="pciSaqC">Enable SAQ C  (optional)</param>
+        /// <param name="pciSaqCVt">Enable SAQ C-VT  (optional)</param>
+        /// <param name="pciSaqDMerchant">Enable SAQ D Merchant  (optional)</param>
+        /// <param name="pciSaqDServiceProvider">Enable SAQ D Service Provider  (optional)</param>
+        /// <param name="pciSaqP2peHw">Enable SAQ P2PE-HW  (optional)</param>
+        /// <param name="autofee">Add automatic fee on all payments  (optional)</param>
+        /// <param name="defaultPaymentMethods">Comma separated list of default payment methods  (optional)</param>
+        /// <param name="shopUrl">Shop URL (deprecated, use shop_urls instead)  (optional)</param>
+        /// <param name="shopUrls">Shop URLs  (optional)</param>
+        /// <param name="contactEmail">Contact email  (optional)</param>
+        /// <param name="shopName">Shop name  (optional)</param>
+        /// <param name="shopsystem">Shop system  (optional)</param>
         /// <param name="timezone">&lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  (optional)</param>
-        /// <param name="locale">&lt;p&gt;Locale as a two letter language code&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingId">&lt;p&gt;Id of default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="loggingStopsAt">&lt;p&gt;Timestamp when logging is active&lt;/p&gt;  (optional)</param>
-        /// <param name="allowTestTransactions">&lt;p&gt;Allow test transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentLanguage">&lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultTextOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingConfig">&lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  (optional)</param>
+        /// <param name="locale">Locale as a two letter language code  (optional)</param>
+        /// <param name="defaultBrandingId">Id of default branding  (optional)</param>
+        /// <param name="loggingStopsAt">Timestamp when logging is active  (optional)</param>
+        /// <param name="allowTestTransactions">Allow test transactions  (optional)</param>
+        /// <param name="defaultPaymentLanguage">Default payment language (Two letter language code, ISO-639-1)  (optional)</param>
+        /// <param name="defaultTextOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
+        /// <param name="defaultBrandingConfig">Default branding config. Can be overwritten in branding or in request to payment window  (optional)</param>
         /// <returns>ApiResponse of Merchant</returns>
-        ApiResponse<Merchant> PATCHAccountFormatWithHttpInfo (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null);
+        ApiResponse<Merchant> PATCHAccountFormatWithHttpInfo (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, string acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, string acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, string shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, string defaultBrandingConfig = null);
         /// <summary>
         /// Regenerates the private key of the merchant
         /// </summary>
@@ -545,8 +545,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>PrivateKey</returns>
         PrivateKey PATCHAccountPrivateKeyFormat (string acceptVersion, string authorization);
 
@@ -557,8 +557,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of PrivateKey</returns>
         ApiResponse<PrivateKey> PATCHAccountPrivateKeyFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -568,10 +568,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="_file">The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns></returns>
         void PUTAccountLogoFormat (string acceptVersion, string authorization, string _file, string logoType = null);
 
@@ -582,10 +582,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="_file">The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> PUTAccountLogoFormatWithHttpInfo (string acceptVersion, string authorization, string _file, string logoType = null);
         #endregion Synchronous Operations
@@ -597,8 +597,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of Zero4PlatformSettings</returns>
         System.Threading.Tasks.Task<Zero4PlatformSettings> DELETEAccount04PlatformFormatAsync (string acceptVersion, string authorization);
 
@@ -609,8 +609,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (Zero4PlatformSettings)</returns>
         System.Threading.Tasks.Task<ApiResponse<Zero4PlatformSettings>> DELETEAccount04PlatformFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -620,8 +620,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETEAccountFormatAsync (string acceptVersion, string authorization);
 
@@ -632,8 +632,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETEAccountFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -643,9 +643,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETEAccountLogoFormatAsync (string acceptVersion, string authorization, string logoType = null);
 
@@ -656,9 +656,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETEAccountLogoFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string logoType = null);
         /// <summary>
@@ -668,8 +668,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of Zero4PlatformSettings</returns>
         System.Threading.Tasks.Task<Zero4PlatformSettings> GETAccount04PlatformFormatAsync (string acceptVersion, string authorization);
 
@@ -680,8 +680,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (Zero4PlatformSettings)</returns>
         System.Threading.Tasks.Task<ApiResponse<Zero4PlatformSettings>> GETAccount04PlatformFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -691,8 +691,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of Merchant</returns>
         System.Threading.Tasks.Task<Merchant> GETAccountFormatAsync (string acceptVersion, string authorization);
 
@@ -703,8 +703,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (Merchant)</returns>
         System.Threading.Tasks.Task<ApiResponse<Merchant>> GETAccountFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -714,9 +714,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task GETAccountLogoFormatAsync (string acceptVersion, string authorization, string logoType = null);
 
@@ -727,9 +727,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> GETAccountLogoFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string logoType = null);
         /// <summary>
@@ -739,8 +739,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of PrivateKey</returns>
         System.Threading.Tasks.Task<PrivateKey> GETAccountPrivateKeyFormatAsync (string acceptVersion, string authorization);
 
@@ -751,8 +751,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (PrivateKey)</returns>
         System.Threading.Tasks.Task<ApiResponse<PrivateKey>> GETAccountPrivateKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -762,173 +762,173 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="customerAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Callback url&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraActive">&lt;p&gt;Enable Bambora payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraBusinessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausActive">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausPayout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApplePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonActive">&lt;p&gt;Enable Elavon payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonBusinessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenActive">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenBusinessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaActive">&lt;p&gt;Enable Klarna payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaEid">&lt;p&gt;Klarna merchant ID&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaSharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayActive">&lt;p&gt;Enable MobilePay payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  (optional, default to 0)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsActive">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsBusinessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsFbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecuredByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsAmericanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsDinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecurepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsNetsVisaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsMastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalActive">&lt;p&gt;Enable PayPal payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalRecurring">&lt;p&gt;Enable recurring payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalCreditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalToken">&lt;p&gt;Authentication token&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalTokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalScope">&lt;p&gt;Authentication scope&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortActive">&lt;p&gt;Enable Sofort payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortCustomerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortProjectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortApiKey">&lt;p&gt;Sofort API key&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortGateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsSofortIdeal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankActive">&lt;p&gt;Enable Swedbank payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankBusinessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerActive">&lt;p&gt;Enable Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerBusinessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerSecurepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerVisaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorActive">&lt;p&gt;Enable Valitor payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorBusinessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillActive">&lt;p&gt;Enable ViaBill payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillApiKey">&lt;p&gt;ViaBill API key&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicActive">&lt;p&gt;Enable e-conomic integration&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreement">&lt;p&gt;e-conomic agreement no.&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreementToken">&lt;p&gt;economic agreement grant token&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqA">&lt;p&gt;Enable SAQ A&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqAEp">&lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqB">&lt;p&gt;Enable SAQ B&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqBIp">&lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqC">&lt;p&gt;Enable SAQ C&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqCVt">&lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDMerchant">&lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDServiceProvider">&lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqP2peHw">&lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  (optional)</param>
-        /// <param name="autofee">&lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentMethods">&lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrl">&lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrls">&lt;p&gt;Shop URLs&lt;/p&gt;  (optional)</param>
-        /// <param name="contactEmail">&lt;p&gt;Contact email&lt;/p&gt;  (optional)</param>
-        /// <param name="shopName">&lt;p&gt;Shop name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystem">&lt;p&gt;Shop system&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="customerAddressName">Name  (optional)</param>
+        /// <param name="customerAddressAtt">Att  (optional)</param>
+        /// <param name="customerAddressStreet">Street  (optional)</param>
+        /// <param name="customerAddressCity">City  (optional)</param>
+        /// <param name="customerAddressZipCode">Zip code  (optional)</param>
+        /// <param name="customerAddressRegion">Region  (optional)</param>
+        /// <param name="customerAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="customerAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="billingAddressName">Name  (optional)</param>
+        /// <param name="billingAddressAtt">Att  (optional)</param>
+        /// <param name="billingAddressStreet">Street  (optional)</param>
+        /// <param name="billingAddressCity">City  (optional)</param>
+        /// <param name="billingAddressZipCode">Zip code  (optional)</param>
+        /// <param name="billingAddressRegion">Region  (optional)</param>
+        /// <param name="billingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="billingAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="callbackUrl">Callback url  (optional)</param>
+        /// <param name="acquirerSettingsBamboraActive">Enable Bambora payments  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCode">Bambora identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">Bambora international identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraBusinessCode">Business code (assigned by Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraRecurring">Enable recurring payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraAmericanexpress">Enable AMEX payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraDinersclub">Enable Diners Club payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsClearhausActive">Enable ClearHaus payments  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApiKey">Clearhaus API key (is required but may be left empty)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausRecurring">Enable recurring payments (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausPayout">Enable payouts (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApplePay">Enable Apple Pay (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsElavonActive">Enable Elavon payments  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCode">Elavon identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCodeInt">Elavon international identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonBusinessCode">Business code (assigned by Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonRecurring">Enable recurring payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonAmericanexpress">Enable AMEX payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonDinersclub">Enable Diners Club payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenActive">Enable Handelsbanken payments  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">Handelsbanken identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">Handelsbanken international identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenBusinessCode">Business code (assigned by Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenRecurring">Enable recurring payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">Enable AMEX payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenDinersclub">Enable Diners Club payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaActive">Enable Klarna payments  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaEid">Klarna merchant ID  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaSharedSecret">Klarna shared secret  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayActive">Enable MobilePay payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">Enable MobilePay Subscriptions payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">Verifies received code challenge  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">Unix Timestamp of last time the tokens were refreshed  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">Associate client sessions with ID Tokens to mitigate replay attacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional, default to 0)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">The provider / sales-place chosen by the merchant  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">Token to refresh access token for up to 1 year  (optional)</param>
+        /// <param name="acquirerSettingsNetsActive">Enable Nets/Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCode">Nets TOF number  (optional)</param>
+        /// <param name="acquirerSettingsNetsBusinessCode">Business code (assigned by Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsRecurring">Enable recurring payments (requires agreement with Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsFbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecuredByNets">Enable SecuredByNets fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCodeInt">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsAmericanexpress">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsDinersclub">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecurepay">(Depricated; use Teller acquirer)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsNetsVisaBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsMastercardBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalActive">Enable PayPal payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalRecurring">Enable recurring payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalCreditCard">Allow credit-card payments. (Only for US/CA/UK merchants)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalToken">Authentication token  (optional)</param>
+        /// <param name="acquirerSettingsPaypalTokenSecret">Authentication token secret  (optional)</param>
+        /// <param name="acquirerSettingsPaypalScope">Authentication scope  (optional)</param>
+        /// <param name="acquirerSettingsSofortActive">Enable Sofort payments  (optional)</param>
+        /// <param name="acquirerSettingsSofortCustomerNumber">Sofort customer number  (optional)</param>
+        /// <param name="acquirerSettingsSofortProjectId">Sofort Gateway project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortApiKey">Sofort API key  (optional)</param>
+        /// <param name="acquirerSettingsSofortGateway">Enable Sofort Gateway feature  (optional, default to true)</param>
+        /// <param name="acquirerSettingsSofortIdeal">Enable Sofort iDeal feature  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectId">Sofort iDeal project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectPassword">Sofort iDeal project password  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealNotificationPassword">Sofort iDeal notification password  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankActive">Enable Swedbank payments  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCode">Swedbank identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">Swedbank international identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankBusinessCode">Business code (assigned by Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankRecurring">Enable recurring payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankAmericanexpress">Enable AMEX payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankDinersclub">Enable Diners Club payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerActive">Enable Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCode">Teller TOF number  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCodeInt">Teller international identification number  (optional)</param>
+        /// <param name="acquirerSettingsTellerBusinessCode">Business code (assigned by Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerRecurring">Enable recurring payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerAmericanexpress">Enable AMEX payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerDinersclub">Enable Diners Club payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerSecurepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerVisaBin">Teller VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardBin">Teller Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorActive">Enable Valitor payments  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCode">Valitor identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCodeInt">Valitor international identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorBusinessCode">Business code (assigned by Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorRecurring">Enable recurring payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorAmericanexpress">Enable AMEX payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorDinersclub">Enable Diners Club payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsViabillActive">Enable ViaBill payments  (optional)</param>
+        /// <param name="acquirerSettingsViabillApiKey">ViaBill API key  (optional)</param>
+        /// <param name="integrationSettingsEconomicActive">Enable e-conomic integration  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreement">e-conomic agreement no.  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreementToken">economic agreement grant token  (optional)</param>
+        /// <param name="pciSaqA">Enable SAQ A  (optional)</param>
+        /// <param name="pciSaqAEp">Enable SAQ A-EP  (optional)</param>
+        /// <param name="pciSaqB">Enable SAQ B  (optional)</param>
+        /// <param name="pciSaqBIp">Enable SAQ B-IP  (optional)</param>
+        /// <param name="pciSaqC">Enable SAQ C  (optional)</param>
+        /// <param name="pciSaqCVt">Enable SAQ C-VT  (optional)</param>
+        /// <param name="pciSaqDMerchant">Enable SAQ D Merchant  (optional)</param>
+        /// <param name="pciSaqDServiceProvider">Enable SAQ D Service Provider  (optional)</param>
+        /// <param name="pciSaqP2peHw">Enable SAQ P2PE-HW  (optional)</param>
+        /// <param name="autofee">Add automatic fee on all payments  (optional)</param>
+        /// <param name="defaultPaymentMethods">Comma separated list of default payment methods  (optional)</param>
+        /// <param name="shopUrl">Shop URL (deprecated, use shop_urls instead)  (optional)</param>
+        /// <param name="shopUrls">Shop URLs  (optional)</param>
+        /// <param name="contactEmail">Contact email  (optional)</param>
+        /// <param name="shopName">Shop name  (optional)</param>
+        /// <param name="shopsystem">Shop system  (optional)</param>
         /// <param name="timezone">&lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  (optional)</param>
-        /// <param name="locale">&lt;p&gt;Locale as a two letter language code&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingId">&lt;p&gt;Id of default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="loggingStopsAt">&lt;p&gt;Timestamp when logging is active&lt;/p&gt;  (optional)</param>
-        /// <param name="allowTestTransactions">&lt;p&gt;Allow test transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentLanguage">&lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultTextOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingConfig">&lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  (optional)</param>
+        /// <param name="locale">Locale as a two letter language code  (optional)</param>
+        /// <param name="defaultBrandingId">Id of default branding  (optional)</param>
+        /// <param name="loggingStopsAt">Timestamp when logging is active  (optional)</param>
+        /// <param name="allowTestTransactions">Allow test transactions  (optional)</param>
+        /// <param name="defaultPaymentLanguage">Default payment language (Two letter language code, ISO-639-1)  (optional)</param>
+        /// <param name="defaultTextOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
+        /// <param name="defaultBrandingConfig">Default branding config. Can be overwritten in branding or in request to payment window  (optional)</param>
         /// <returns>Task of Merchant</returns>
-        System.Threading.Tasks.Task<Merchant> PATCHAccountFormatAsync (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null);
+        System.Threading.Tasks.Task<Merchant> PATCHAccountFormatAsync (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, string acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, string acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, string shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, string defaultBrandingConfig = null);
 
         /// <summary>
         /// Update merchant account
@@ -937,173 +937,173 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="customerAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Callback url&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraActive">&lt;p&gt;Enable Bambora payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraBusinessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausActive">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausPayout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApplePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonActive">&lt;p&gt;Enable Elavon payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonBusinessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenActive">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenBusinessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaActive">&lt;p&gt;Enable Klarna payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaEid">&lt;p&gt;Klarna merchant ID&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaSharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayActive">&lt;p&gt;Enable MobilePay payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  (optional, default to 0)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsActive">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsBusinessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsFbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecuredByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsAmericanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsDinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecurepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsNetsVisaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsMastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalActive">&lt;p&gt;Enable PayPal payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalRecurring">&lt;p&gt;Enable recurring payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalCreditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalToken">&lt;p&gt;Authentication token&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalTokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalScope">&lt;p&gt;Authentication scope&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortActive">&lt;p&gt;Enable Sofort payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortCustomerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortProjectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortApiKey">&lt;p&gt;Sofort API key&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortGateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsSofortIdeal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankActive">&lt;p&gt;Enable Swedbank payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankBusinessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerActive">&lt;p&gt;Enable Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerBusinessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerSecurepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerVisaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorActive">&lt;p&gt;Enable Valitor payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorBusinessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillActive">&lt;p&gt;Enable ViaBill payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillApiKey">&lt;p&gt;ViaBill API key&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicActive">&lt;p&gt;Enable e-conomic integration&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreement">&lt;p&gt;e-conomic agreement no.&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreementToken">&lt;p&gt;economic agreement grant token&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqA">&lt;p&gt;Enable SAQ A&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqAEp">&lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqB">&lt;p&gt;Enable SAQ B&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqBIp">&lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqC">&lt;p&gt;Enable SAQ C&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqCVt">&lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDMerchant">&lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDServiceProvider">&lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqP2peHw">&lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  (optional)</param>
-        /// <param name="autofee">&lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentMethods">&lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrl">&lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrls">&lt;p&gt;Shop URLs&lt;/p&gt;  (optional)</param>
-        /// <param name="contactEmail">&lt;p&gt;Contact email&lt;/p&gt;  (optional)</param>
-        /// <param name="shopName">&lt;p&gt;Shop name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystem">&lt;p&gt;Shop system&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="customerAddressName">Name  (optional)</param>
+        /// <param name="customerAddressAtt">Att  (optional)</param>
+        /// <param name="customerAddressStreet">Street  (optional)</param>
+        /// <param name="customerAddressCity">City  (optional)</param>
+        /// <param name="customerAddressZipCode">Zip code  (optional)</param>
+        /// <param name="customerAddressRegion">Region  (optional)</param>
+        /// <param name="customerAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="customerAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="billingAddressName">Name  (optional)</param>
+        /// <param name="billingAddressAtt">Att  (optional)</param>
+        /// <param name="billingAddressStreet">Street  (optional)</param>
+        /// <param name="billingAddressCity">City  (optional)</param>
+        /// <param name="billingAddressZipCode">Zip code  (optional)</param>
+        /// <param name="billingAddressRegion">Region  (optional)</param>
+        /// <param name="billingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="billingAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="callbackUrl">Callback url  (optional)</param>
+        /// <param name="acquirerSettingsBamboraActive">Enable Bambora payments  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCode">Bambora identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">Bambora international identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraBusinessCode">Business code (assigned by Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraRecurring">Enable recurring payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraAmericanexpress">Enable AMEX payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraDinersclub">Enable Diners Club payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsClearhausActive">Enable ClearHaus payments  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApiKey">Clearhaus API key (is required but may be left empty)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausRecurring">Enable recurring payments (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausPayout">Enable payouts (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApplePay">Enable Apple Pay (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsElavonActive">Enable Elavon payments  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCode">Elavon identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCodeInt">Elavon international identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonBusinessCode">Business code (assigned by Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonRecurring">Enable recurring payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonAmericanexpress">Enable AMEX payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonDinersclub">Enable Diners Club payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenActive">Enable Handelsbanken payments  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">Handelsbanken identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">Handelsbanken international identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenBusinessCode">Business code (assigned by Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenRecurring">Enable recurring payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">Enable AMEX payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenDinersclub">Enable Diners Club payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaActive">Enable Klarna payments  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaEid">Klarna merchant ID  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaSharedSecret">Klarna shared secret  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayActive">Enable MobilePay payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">Enable MobilePay Subscriptions payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">Verifies received code challenge  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">Unix Timestamp of last time the tokens were refreshed  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">Associate client sessions with ID Tokens to mitigate replay attacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional, default to 0)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">The provider / sales-place chosen by the merchant  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">Token to refresh access token for up to 1 year  (optional)</param>
+        /// <param name="acquirerSettingsNetsActive">Enable Nets/Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCode">Nets TOF number  (optional)</param>
+        /// <param name="acquirerSettingsNetsBusinessCode">Business code (assigned by Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsRecurring">Enable recurring payments (requires agreement with Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsFbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecuredByNets">Enable SecuredByNets fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCodeInt">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsAmericanexpress">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsDinersclub">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecurepay">(Depricated; use Teller acquirer)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsNetsVisaBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsMastercardBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalActive">Enable PayPal payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalRecurring">Enable recurring payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalCreditCard">Allow credit-card payments. (Only for US/CA/UK merchants)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalToken">Authentication token  (optional)</param>
+        /// <param name="acquirerSettingsPaypalTokenSecret">Authentication token secret  (optional)</param>
+        /// <param name="acquirerSettingsPaypalScope">Authentication scope  (optional)</param>
+        /// <param name="acquirerSettingsSofortActive">Enable Sofort payments  (optional)</param>
+        /// <param name="acquirerSettingsSofortCustomerNumber">Sofort customer number  (optional)</param>
+        /// <param name="acquirerSettingsSofortProjectId">Sofort Gateway project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortApiKey">Sofort API key  (optional)</param>
+        /// <param name="acquirerSettingsSofortGateway">Enable Sofort Gateway feature  (optional, default to true)</param>
+        /// <param name="acquirerSettingsSofortIdeal">Enable Sofort iDeal feature  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectId">Sofort iDeal project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectPassword">Sofort iDeal project password  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealNotificationPassword">Sofort iDeal notification password  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankActive">Enable Swedbank payments  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCode">Swedbank identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">Swedbank international identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankBusinessCode">Business code (assigned by Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankRecurring">Enable recurring payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankAmericanexpress">Enable AMEX payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankDinersclub">Enable Diners Club payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerActive">Enable Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCode">Teller TOF number  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCodeInt">Teller international identification number  (optional)</param>
+        /// <param name="acquirerSettingsTellerBusinessCode">Business code (assigned by Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerRecurring">Enable recurring payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerAmericanexpress">Enable AMEX payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerDinersclub">Enable Diners Club payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerSecurepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerVisaBin">Teller VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardBin">Teller Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorActive">Enable Valitor payments  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCode">Valitor identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCodeInt">Valitor international identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorBusinessCode">Business code (assigned by Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorRecurring">Enable recurring payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorAmericanexpress">Enable AMEX payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorDinersclub">Enable Diners Club payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsViabillActive">Enable ViaBill payments  (optional)</param>
+        /// <param name="acquirerSettingsViabillApiKey">ViaBill API key  (optional)</param>
+        /// <param name="integrationSettingsEconomicActive">Enable e-conomic integration  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreement">e-conomic agreement no.  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreementToken">economic agreement grant token  (optional)</param>
+        /// <param name="pciSaqA">Enable SAQ A  (optional)</param>
+        /// <param name="pciSaqAEp">Enable SAQ A-EP  (optional)</param>
+        /// <param name="pciSaqB">Enable SAQ B  (optional)</param>
+        /// <param name="pciSaqBIp">Enable SAQ B-IP  (optional)</param>
+        /// <param name="pciSaqC">Enable SAQ C  (optional)</param>
+        /// <param name="pciSaqCVt">Enable SAQ C-VT  (optional)</param>
+        /// <param name="pciSaqDMerchant">Enable SAQ D Merchant  (optional)</param>
+        /// <param name="pciSaqDServiceProvider">Enable SAQ D Service Provider  (optional)</param>
+        /// <param name="pciSaqP2peHw">Enable SAQ P2PE-HW  (optional)</param>
+        /// <param name="autofee">Add automatic fee on all payments  (optional)</param>
+        /// <param name="defaultPaymentMethods">Comma separated list of default payment methods  (optional)</param>
+        /// <param name="shopUrl">Shop URL (deprecated, use shop_urls instead)  (optional)</param>
+        /// <param name="shopUrls">Shop URLs  (optional)</param>
+        /// <param name="contactEmail">Contact email  (optional)</param>
+        /// <param name="shopName">Shop name  (optional)</param>
+        /// <param name="shopsystem">Shop system  (optional)</param>
         /// <param name="timezone">&lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  (optional)</param>
-        /// <param name="locale">&lt;p&gt;Locale as a two letter language code&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingId">&lt;p&gt;Id of default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="loggingStopsAt">&lt;p&gt;Timestamp when logging is active&lt;/p&gt;  (optional)</param>
-        /// <param name="allowTestTransactions">&lt;p&gt;Allow test transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentLanguage">&lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultTextOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingConfig">&lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  (optional)</param>
+        /// <param name="locale">Locale as a two letter language code  (optional)</param>
+        /// <param name="defaultBrandingId">Id of default branding  (optional)</param>
+        /// <param name="loggingStopsAt">Timestamp when logging is active  (optional)</param>
+        /// <param name="allowTestTransactions">Allow test transactions  (optional)</param>
+        /// <param name="defaultPaymentLanguage">Default payment language (Two letter language code, ISO-639-1)  (optional)</param>
+        /// <param name="defaultTextOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
+        /// <param name="defaultBrandingConfig">Default branding config. Can be overwritten in branding or in request to payment window  (optional)</param>
         /// <returns>Task of ApiResponse (Merchant)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Merchant>> PATCHAccountFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null);
+        System.Threading.Tasks.Task<ApiResponse<Merchant>> PATCHAccountFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, string acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, string acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, string shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, string defaultBrandingConfig = null);
         /// <summary>
         /// Regenerates the private key of the merchant
         /// </summary>
@@ -1111,8 +1111,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of PrivateKey</returns>
         System.Threading.Tasks.Task<PrivateKey> PATCHAccountPrivateKeyFormatAsync (string acceptVersion, string authorization);
 
@@ -1123,8 +1123,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (PrivateKey)</returns>
         System.Threading.Tasks.Task<ApiResponse<PrivateKey>> PATCHAccountPrivateKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -1134,10 +1134,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="_file">The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task PUTAccountLogoFormatAsync (string acceptVersion, string authorization, string _file, string logoType = null);
 
@@ -1148,10 +1148,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="_file">The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> PUTAccountLogoFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string _file, string logoType = null);
         #endregion Asynchronous Operations
@@ -1258,8 +1258,8 @@ namespace IO.Swagger.Api
         /// Delete 04 platform settings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Zero4PlatformSettings</returns>
         public Zero4PlatformSettings DELETEAccount04PlatformFormat (string acceptVersion, string authorization)
         {
@@ -1271,8 +1271,8 @@ namespace IO.Swagger.Api
         /// Delete 04 platform settings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of Zero4PlatformSettings</returns>
         public ApiResponse< Zero4PlatformSettings > DELETEAccount04PlatformFormatWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -1333,8 +1333,8 @@ namespace IO.Swagger.Api
         /// Delete 04 platform settings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of Zero4PlatformSettings</returns>
         public async System.Threading.Tasks.Task<Zero4PlatformSettings> DELETEAccount04PlatformFormatAsync (string acceptVersion, string authorization)
         {
@@ -1347,8 +1347,8 @@ namespace IO.Swagger.Api
         /// Delete 04 platform settings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (Zero4PlatformSettings)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Zero4PlatformSettings>> DELETEAccount04PlatformFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -1409,8 +1409,8 @@ namespace IO.Swagger.Api
         /// Delete merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns></returns>
         public void DELETEAccountFormat (string acceptVersion, string authorization)
         {
@@ -1421,8 +1421,8 @@ namespace IO.Swagger.Api
         /// Delete merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETEAccountFormatWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -1483,8 +1483,8 @@ namespace IO.Swagger.Api
         /// Delete merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETEAccountFormatAsync (string acceptVersion, string authorization)
         {
@@ -1496,8 +1496,8 @@ namespace IO.Swagger.Api
         /// Delete merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEAccountFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -1558,9 +1558,9 @@ namespace IO.Swagger.Api
         /// Deletes the current merchant logo  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns></returns>
         public void DELETEAccountLogoFormat (string acceptVersion, string authorization, string logoType = null)
         {
@@ -1571,9 +1571,9 @@ namespace IO.Swagger.Api
         /// Deletes the current merchant logo  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETEAccountLogoFormatWithHttpInfo (string acceptVersion, string authorization, string logoType = null)
         {
@@ -1635,9 +1635,9 @@ namespace IO.Swagger.Api
         /// Deletes the current merchant logo  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETEAccountLogoFormatAsync (string acceptVersion, string authorization, string logoType = null)
         {
@@ -1649,9 +1649,9 @@ namespace IO.Swagger.Api
         /// Deletes the current merchant logo  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEAccountLogoFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string logoType = null)
         {
@@ -1713,8 +1713,8 @@ namespace IO.Swagger.Api
         /// Get 04 platform settings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Zero4PlatformSettings</returns>
         public Zero4PlatformSettings GETAccount04PlatformFormat (string acceptVersion, string authorization)
         {
@@ -1726,8 +1726,8 @@ namespace IO.Swagger.Api
         /// Get 04 platform settings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of Zero4PlatformSettings</returns>
         public ApiResponse< Zero4PlatformSettings > GETAccount04PlatformFormatWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -1788,8 +1788,8 @@ namespace IO.Swagger.Api
         /// Get 04 platform settings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of Zero4PlatformSettings</returns>
         public async System.Threading.Tasks.Task<Zero4PlatformSettings> GETAccount04PlatformFormatAsync (string acceptVersion, string authorization)
         {
@@ -1802,8 +1802,8 @@ namespace IO.Swagger.Api
         /// Get 04 platform settings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (Zero4PlatformSettings)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Zero4PlatformSettings>> GETAccount04PlatformFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -1864,8 +1864,8 @@ namespace IO.Swagger.Api
         /// Get merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Merchant</returns>
         public Merchant GETAccountFormat (string acceptVersion, string authorization)
         {
@@ -1877,8 +1877,8 @@ namespace IO.Swagger.Api
         /// Get merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of Merchant</returns>
         public ApiResponse< Merchant > GETAccountFormatWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -1939,8 +1939,8 @@ namespace IO.Swagger.Api
         /// Get merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of Merchant</returns>
         public async System.Threading.Tasks.Task<Merchant> GETAccountFormatAsync (string acceptVersion, string authorization)
         {
@@ -1953,8 +1953,8 @@ namespace IO.Swagger.Api
         /// Get merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (Merchant)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Merchant>> GETAccountFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -2015,9 +2015,9 @@ namespace IO.Swagger.Api
         /// Gets the merchant logo as a raw download or a 404 if none exists  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns></returns>
         public void GETAccountLogoFormat (string acceptVersion, string authorization, string logoType = null)
         {
@@ -2028,9 +2028,9 @@ namespace IO.Swagger.Api
         /// Gets the merchant logo as a raw download or a 404 if none exists  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> GETAccountLogoFormatWithHttpInfo (string acceptVersion, string authorization, string logoType = null)
         {
@@ -2092,9 +2092,9 @@ namespace IO.Swagger.Api
         /// Gets the merchant logo as a raw download or a 404 if none exists  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task GETAccountLogoFormatAsync (string acceptVersion, string authorization, string logoType = null)
         {
@@ -2106,9 +2106,9 @@ namespace IO.Swagger.Api
         /// Gets the merchant logo as a raw download or a 404 if none exists  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> GETAccountLogoFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string logoType = null)
         {
@@ -2170,8 +2170,8 @@ namespace IO.Swagger.Api
         /// Gets the private key of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>PrivateKey</returns>
         public PrivateKey GETAccountPrivateKeyFormat (string acceptVersion, string authorization)
         {
@@ -2183,8 +2183,8 @@ namespace IO.Swagger.Api
         /// Gets the private key of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of PrivateKey</returns>
         public ApiResponse< PrivateKey > GETAccountPrivateKeyFormatWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -2245,8 +2245,8 @@ namespace IO.Swagger.Api
         /// Gets the private key of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of PrivateKey</returns>
         public async System.Threading.Tasks.Task<PrivateKey> GETAccountPrivateKeyFormatAsync (string acceptVersion, string authorization)
         {
@@ -2259,8 +2259,8 @@ namespace IO.Swagger.Api
         /// Gets the private key of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (PrivateKey)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<PrivateKey>> GETAccountPrivateKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -2321,173 +2321,173 @@ namespace IO.Swagger.Api
         /// Update merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="customerAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Callback url&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraActive">&lt;p&gt;Enable Bambora payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraBusinessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausActive">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausPayout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApplePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonActive">&lt;p&gt;Enable Elavon payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonBusinessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenActive">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenBusinessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaActive">&lt;p&gt;Enable Klarna payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaEid">&lt;p&gt;Klarna merchant ID&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaSharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayActive">&lt;p&gt;Enable MobilePay payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  (optional, default to 0)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsActive">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsBusinessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsFbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecuredByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsAmericanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsDinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecurepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsNetsVisaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsMastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalActive">&lt;p&gt;Enable PayPal payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalRecurring">&lt;p&gt;Enable recurring payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalCreditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalToken">&lt;p&gt;Authentication token&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalTokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalScope">&lt;p&gt;Authentication scope&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortActive">&lt;p&gt;Enable Sofort payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortCustomerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortProjectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortApiKey">&lt;p&gt;Sofort API key&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortGateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsSofortIdeal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankActive">&lt;p&gt;Enable Swedbank payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankBusinessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerActive">&lt;p&gt;Enable Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerBusinessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerSecurepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerVisaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorActive">&lt;p&gt;Enable Valitor payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorBusinessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillActive">&lt;p&gt;Enable ViaBill payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillApiKey">&lt;p&gt;ViaBill API key&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicActive">&lt;p&gt;Enable e-conomic integration&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreement">&lt;p&gt;e-conomic agreement no.&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreementToken">&lt;p&gt;economic agreement grant token&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqA">&lt;p&gt;Enable SAQ A&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqAEp">&lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqB">&lt;p&gt;Enable SAQ B&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqBIp">&lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqC">&lt;p&gt;Enable SAQ C&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqCVt">&lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDMerchant">&lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDServiceProvider">&lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqP2peHw">&lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  (optional)</param>
-        /// <param name="autofee">&lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentMethods">&lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrl">&lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrls">&lt;p&gt;Shop URLs&lt;/p&gt;  (optional)</param>
-        /// <param name="contactEmail">&lt;p&gt;Contact email&lt;/p&gt;  (optional)</param>
-        /// <param name="shopName">&lt;p&gt;Shop name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystem">&lt;p&gt;Shop system&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="customerAddressName">Name  (optional)</param>
+        /// <param name="customerAddressAtt">Att  (optional)</param>
+        /// <param name="customerAddressStreet">Street  (optional)</param>
+        /// <param name="customerAddressCity">City  (optional)</param>
+        /// <param name="customerAddressZipCode">Zip code  (optional)</param>
+        /// <param name="customerAddressRegion">Region  (optional)</param>
+        /// <param name="customerAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="customerAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="billingAddressName">Name  (optional)</param>
+        /// <param name="billingAddressAtt">Att  (optional)</param>
+        /// <param name="billingAddressStreet">Street  (optional)</param>
+        /// <param name="billingAddressCity">City  (optional)</param>
+        /// <param name="billingAddressZipCode">Zip code  (optional)</param>
+        /// <param name="billingAddressRegion">Region  (optional)</param>
+        /// <param name="billingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="billingAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="callbackUrl">Callback url  (optional)</param>
+        /// <param name="acquirerSettingsBamboraActive">Enable Bambora payments  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCode">Bambora identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">Bambora international identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraBusinessCode">Business code (assigned by Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraRecurring">Enable recurring payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraAmericanexpress">Enable AMEX payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraDinersclub">Enable Diners Club payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsClearhausActive">Enable ClearHaus payments  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApiKey">Clearhaus API key (is required but may be left empty)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausRecurring">Enable recurring payments (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausPayout">Enable payouts (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApplePay">Enable Apple Pay (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsElavonActive">Enable Elavon payments  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCode">Elavon identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCodeInt">Elavon international identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonBusinessCode">Business code (assigned by Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonRecurring">Enable recurring payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonAmericanexpress">Enable AMEX payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonDinersclub">Enable Diners Club payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenActive">Enable Handelsbanken payments  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">Handelsbanken identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">Handelsbanken international identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenBusinessCode">Business code (assigned by Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenRecurring">Enable recurring payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">Enable AMEX payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenDinersclub">Enable Diners Club payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaActive">Enable Klarna payments  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaEid">Klarna merchant ID  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaSharedSecret">Klarna shared secret  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayActive">Enable MobilePay payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">Enable MobilePay Subscriptions payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">Verifies received code challenge  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">Unix Timestamp of last time the tokens were refreshed  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">Associate client sessions with ID Tokens to mitigate replay attacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional, default to 0)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">The provider / sales-place chosen by the merchant  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">Token to refresh access token for up to 1 year  (optional)</param>
+        /// <param name="acquirerSettingsNetsActive">Enable Nets/Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCode">Nets TOF number  (optional)</param>
+        /// <param name="acquirerSettingsNetsBusinessCode">Business code (assigned by Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsRecurring">Enable recurring payments (requires agreement with Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsFbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecuredByNets">Enable SecuredByNets fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCodeInt">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsAmericanexpress">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsDinersclub">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecurepay">(Depricated; use Teller acquirer)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsNetsVisaBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsMastercardBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalActive">Enable PayPal payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalRecurring">Enable recurring payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalCreditCard">Allow credit-card payments. (Only for US/CA/UK merchants)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalToken">Authentication token  (optional)</param>
+        /// <param name="acquirerSettingsPaypalTokenSecret">Authentication token secret  (optional)</param>
+        /// <param name="acquirerSettingsPaypalScope">Authentication scope  (optional)</param>
+        /// <param name="acquirerSettingsSofortActive">Enable Sofort payments  (optional)</param>
+        /// <param name="acquirerSettingsSofortCustomerNumber">Sofort customer number  (optional)</param>
+        /// <param name="acquirerSettingsSofortProjectId">Sofort Gateway project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortApiKey">Sofort API key  (optional)</param>
+        /// <param name="acquirerSettingsSofortGateway">Enable Sofort Gateway feature  (optional, default to true)</param>
+        /// <param name="acquirerSettingsSofortIdeal">Enable Sofort iDeal feature  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectId">Sofort iDeal project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectPassword">Sofort iDeal project password  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealNotificationPassword">Sofort iDeal notification password  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankActive">Enable Swedbank payments  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCode">Swedbank identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">Swedbank international identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankBusinessCode">Business code (assigned by Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankRecurring">Enable recurring payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankAmericanexpress">Enable AMEX payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankDinersclub">Enable Diners Club payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerActive">Enable Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCode">Teller TOF number  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCodeInt">Teller international identification number  (optional)</param>
+        /// <param name="acquirerSettingsTellerBusinessCode">Business code (assigned by Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerRecurring">Enable recurring payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerAmericanexpress">Enable AMEX payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerDinersclub">Enable Diners Club payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerSecurepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerVisaBin">Teller VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardBin">Teller Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorActive">Enable Valitor payments  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCode">Valitor identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCodeInt">Valitor international identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorBusinessCode">Business code (assigned by Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorRecurring">Enable recurring payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorAmericanexpress">Enable AMEX payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorDinersclub">Enable Diners Club payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsViabillActive">Enable ViaBill payments  (optional)</param>
+        /// <param name="acquirerSettingsViabillApiKey">ViaBill API key  (optional)</param>
+        /// <param name="integrationSettingsEconomicActive">Enable e-conomic integration  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreement">e-conomic agreement no.  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreementToken">economic agreement grant token  (optional)</param>
+        /// <param name="pciSaqA">Enable SAQ A  (optional)</param>
+        /// <param name="pciSaqAEp">Enable SAQ A-EP  (optional)</param>
+        /// <param name="pciSaqB">Enable SAQ B  (optional)</param>
+        /// <param name="pciSaqBIp">Enable SAQ B-IP  (optional)</param>
+        /// <param name="pciSaqC">Enable SAQ C  (optional)</param>
+        /// <param name="pciSaqCVt">Enable SAQ C-VT  (optional)</param>
+        /// <param name="pciSaqDMerchant">Enable SAQ D Merchant  (optional)</param>
+        /// <param name="pciSaqDServiceProvider">Enable SAQ D Service Provider  (optional)</param>
+        /// <param name="pciSaqP2peHw">Enable SAQ P2PE-HW  (optional)</param>
+        /// <param name="autofee">Add automatic fee on all payments  (optional)</param>
+        /// <param name="defaultPaymentMethods">Comma separated list of default payment methods  (optional)</param>
+        /// <param name="shopUrl">Shop URL (deprecated, use shop_urls instead)  (optional)</param>
+        /// <param name="shopUrls">Shop URLs  (optional)</param>
+        /// <param name="contactEmail">Contact email  (optional)</param>
+        /// <param name="shopName">Shop name  (optional)</param>
+        /// <param name="shopsystem">Shop system  (optional)</param>
         /// <param name="timezone">&lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  (optional)</param>
-        /// <param name="locale">&lt;p&gt;Locale as a two letter language code&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingId">&lt;p&gt;Id of default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="loggingStopsAt">&lt;p&gt;Timestamp when logging is active&lt;/p&gt;  (optional)</param>
-        /// <param name="allowTestTransactions">&lt;p&gt;Allow test transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentLanguage">&lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultTextOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingConfig">&lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  (optional)</param>
+        /// <param name="locale">Locale as a two letter language code  (optional)</param>
+        /// <param name="defaultBrandingId">Id of default branding  (optional)</param>
+        /// <param name="loggingStopsAt">Timestamp when logging is active  (optional)</param>
+        /// <param name="allowTestTransactions">Allow test transactions  (optional)</param>
+        /// <param name="defaultPaymentLanguage">Default payment language (Two letter language code, ISO-639-1)  (optional)</param>
+        /// <param name="defaultTextOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
+        /// <param name="defaultBrandingConfig">Default branding config. Can be overwritten in branding or in request to payment window  (optional)</param>
         /// <returns>Merchant</returns>
-        public Merchant PATCHAccountFormat (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null)
+        public Merchant PATCHAccountFormat (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, string acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, string acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, string shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, string defaultBrandingConfig = null)
         {
              ApiResponse<Merchant> localVarResponse = PATCHAccountFormatWithHttpInfo(acceptVersion, authorization, customerAddressName, customerAddressAtt, customerAddressStreet, customerAddressCity, customerAddressZipCode, customerAddressRegion, customerAddressCountryCode, customerAddressVatNo, billingAddressName, billingAddressAtt, billingAddressStreet, billingAddressCity, billingAddressZipCode, billingAddressRegion, billingAddressCountryCode, billingAddressVatNo, callbackUrl, acquirerSettingsBamboraActive, acquirerSettingsBamboraIdentificationCode, acquirerSettingsBamboraIdentificationCodeInt, acquirerSettingsBamboraBusinessCode, acquirerSettingsBamboraRecurring, acquirerSettingsBamboraAmericanexpress, acquirerSettingsBamboraDinersclub, acquirerSettingsBamboraSecurepay, acquirerSettingsBamboraVisaMpiMerchantId, acquirerSettingsBamboraMastercardMpiMerchantId, acquirerSettingsBamboraVisaBin, acquirerSettingsBamboraMastercardBin, acquirerSettingsClearhausActive, acquirerSettingsClearhausApiKey, acquirerSettingsClearhausRecurring, acquirerSettingsClearhausPayout, acquirerSettingsClearhausApplePay, acquirerSettingsElavonActive, acquirerSettingsElavonIdentificationCode, acquirerSettingsElavonIdentificationCodeInt, acquirerSettingsElavonBusinessCode, acquirerSettingsElavonRecurring, acquirerSettingsElavonAmericanexpress, acquirerSettingsElavonDinersclub, acquirerSettingsElavonSecurepay, acquirerSettingsElavonVisaMpiMerchantId, acquirerSettingsElavonMastercardMpiMerchantId, acquirerSettingsElavonVisaBin, acquirerSettingsElavonMastercardBin, acquirerSettingsHandelsbankenActive, acquirerSettingsHandelsbankenIdentificationCode, acquirerSettingsHandelsbankenIdentificationCodeInt, acquirerSettingsHandelsbankenBusinessCode, acquirerSettingsHandelsbankenRecurring, acquirerSettingsHandelsbankenAmericanexpress, acquirerSettingsHandelsbankenDinersclub, acquirerSettingsHandelsbankenSecurepay, acquirerSettingsHandelsbankenVisaMpiMerchantId, acquirerSettingsHandelsbankenMastercardMpiMerchantId, acquirerSettingsHandelsbankenVisaBin, acquirerSettingsHandelsbankenMastercardBin, acquirerSettingsKlarnaActive, acquirerSettingsKlarnaEid, acquirerSettingsKlarnaSharedSecret, acquirerSettingsMobilepayActive, acquirerSettingsMobilepayDeliveryLimitedTo, acquirerSettingsMobilepaysubscriptionsActive, acquirerSettingsMobilepaysubscriptionsAuthState, acquirerSettingsMobilepaysubscriptionsCodeVerifier, acquirerSettingsMobilepaysubscriptionsLastTokenRefresh, acquirerSettingsMobilepaysubscriptionsNonce, acquirerSettingsMobilepaysubscriptionsPendingStatus, acquirerSettingsMobilepaysubscriptionsProvider, acquirerSettingsMobilepaysubscriptionsRefreshToken, acquirerSettingsNetsActive, acquirerSettingsNetsIdentificationCode, acquirerSettingsNetsBusinessCode, acquirerSettingsNetsRecurring, acquirerSettingsNetsFbg1886, acquirerSettingsNetsSecuredByNets, acquirerSettingsNetsIdentificationCodeInt, acquirerSettingsNetsAmericanexpress, acquirerSettingsNetsDinersclub, acquirerSettingsNetsSecurepay, acquirerSettingsNetsVisaBin, acquirerSettingsNetsMastercardBin, acquirerSettingsPaypalActive, acquirerSettingsPaypalRecurring, acquirerSettingsPaypalCreditCard, acquirerSettingsPaypalToken, acquirerSettingsPaypalTokenSecret, acquirerSettingsPaypalScope, acquirerSettingsSofortActive, acquirerSettingsSofortCustomerNumber, acquirerSettingsSofortProjectId, acquirerSettingsSofortApiKey, acquirerSettingsSofortGateway, acquirerSettingsSofortIdeal, acquirerSettingsSofortIdealProjectId, acquirerSettingsSofortIdealProjectPassword, acquirerSettingsSofortIdealNotificationPassword, acquirerSettingsSwedbankActive, acquirerSettingsSwedbankIdentificationCode, acquirerSettingsSwedbankIdentificationCodeInt, acquirerSettingsSwedbankBusinessCode, acquirerSettingsSwedbankRecurring, acquirerSettingsSwedbankAmericanexpress, acquirerSettingsSwedbankDinersclub, acquirerSettingsSwedbankSecurepay, acquirerSettingsSwedbankVisaMpiMerchantId, acquirerSettingsSwedbankMastercardMpiMerchantId, acquirerSettingsSwedbankVisaBin, acquirerSettingsSwedbankMastercardBin, acquirerSettingsTellerActive, acquirerSettingsTellerIdentificationCode, acquirerSettingsTellerIdentificationCodeInt, acquirerSettingsTellerBusinessCode, acquirerSettingsTellerRecurring, acquirerSettingsTellerAmericanexpress, acquirerSettingsTellerDinersclub, acquirerSettingsTellerSecurepay, acquirerSettingsTellerVisaMpiMerchantId, acquirerSettingsTellerMastercardMpiMerchantId, acquirerSettingsTellerVisaBin, acquirerSettingsTellerMastercardBin, acquirerSettingsValitorActive, acquirerSettingsValitorIdentificationCode, acquirerSettingsValitorIdentificationCodeInt, acquirerSettingsValitorBusinessCode, acquirerSettingsValitorRecurring, acquirerSettingsValitorAmericanexpress, acquirerSettingsValitorDinersclub, acquirerSettingsValitorSecurepay, acquirerSettingsValitorVisaMpiMerchantId, acquirerSettingsValitorMastercardMpiMerchantId, acquirerSettingsValitorVisaBin, acquirerSettingsValitorMastercardBin, acquirerSettingsViabillActive, acquirerSettingsViabillApiKey, integrationSettingsEconomicActive, integrationSettingsEconomicAgreement, integrationSettingsEconomicAgreementToken, pciSaqA, pciSaqAEp, pciSaqB, pciSaqBIp, pciSaqC, pciSaqCVt, pciSaqDMerchant, pciSaqDServiceProvider, pciSaqP2peHw, autofee, defaultPaymentMethods, shopUrl, shopUrls, contactEmail, shopName, shopsystem, timezone, locale, defaultBrandingId, loggingStopsAt, allowTestTransactions, defaultPaymentLanguage, defaultTextOnStatement, defaultBrandingConfig);
              return localVarResponse.Data;
@@ -2497,173 +2497,173 @@ namespace IO.Swagger.Api
         /// Update merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="customerAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Callback url&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraActive">&lt;p&gt;Enable Bambora payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraBusinessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausActive">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausPayout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApplePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonActive">&lt;p&gt;Enable Elavon payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonBusinessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenActive">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenBusinessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaActive">&lt;p&gt;Enable Klarna payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaEid">&lt;p&gt;Klarna merchant ID&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaSharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayActive">&lt;p&gt;Enable MobilePay payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  (optional, default to 0)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsActive">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsBusinessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsFbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecuredByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsAmericanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsDinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecurepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsNetsVisaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsMastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalActive">&lt;p&gt;Enable PayPal payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalRecurring">&lt;p&gt;Enable recurring payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalCreditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalToken">&lt;p&gt;Authentication token&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalTokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalScope">&lt;p&gt;Authentication scope&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortActive">&lt;p&gt;Enable Sofort payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortCustomerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortProjectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortApiKey">&lt;p&gt;Sofort API key&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortGateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsSofortIdeal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankActive">&lt;p&gt;Enable Swedbank payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankBusinessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerActive">&lt;p&gt;Enable Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerBusinessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerSecurepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerVisaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorActive">&lt;p&gt;Enable Valitor payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorBusinessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillActive">&lt;p&gt;Enable ViaBill payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillApiKey">&lt;p&gt;ViaBill API key&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicActive">&lt;p&gt;Enable e-conomic integration&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreement">&lt;p&gt;e-conomic agreement no.&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreementToken">&lt;p&gt;economic agreement grant token&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqA">&lt;p&gt;Enable SAQ A&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqAEp">&lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqB">&lt;p&gt;Enable SAQ B&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqBIp">&lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqC">&lt;p&gt;Enable SAQ C&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqCVt">&lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDMerchant">&lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDServiceProvider">&lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqP2peHw">&lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  (optional)</param>
-        /// <param name="autofee">&lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentMethods">&lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrl">&lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrls">&lt;p&gt;Shop URLs&lt;/p&gt;  (optional)</param>
-        /// <param name="contactEmail">&lt;p&gt;Contact email&lt;/p&gt;  (optional)</param>
-        /// <param name="shopName">&lt;p&gt;Shop name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystem">&lt;p&gt;Shop system&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="customerAddressName">Name  (optional)</param>
+        /// <param name="customerAddressAtt">Att  (optional)</param>
+        /// <param name="customerAddressStreet">Street  (optional)</param>
+        /// <param name="customerAddressCity">City  (optional)</param>
+        /// <param name="customerAddressZipCode">Zip code  (optional)</param>
+        /// <param name="customerAddressRegion">Region  (optional)</param>
+        /// <param name="customerAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="customerAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="billingAddressName">Name  (optional)</param>
+        /// <param name="billingAddressAtt">Att  (optional)</param>
+        /// <param name="billingAddressStreet">Street  (optional)</param>
+        /// <param name="billingAddressCity">City  (optional)</param>
+        /// <param name="billingAddressZipCode">Zip code  (optional)</param>
+        /// <param name="billingAddressRegion">Region  (optional)</param>
+        /// <param name="billingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="billingAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="callbackUrl">Callback url  (optional)</param>
+        /// <param name="acquirerSettingsBamboraActive">Enable Bambora payments  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCode">Bambora identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">Bambora international identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraBusinessCode">Business code (assigned by Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraRecurring">Enable recurring payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraAmericanexpress">Enable AMEX payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraDinersclub">Enable Diners Club payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsClearhausActive">Enable ClearHaus payments  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApiKey">Clearhaus API key (is required but may be left empty)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausRecurring">Enable recurring payments (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausPayout">Enable payouts (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApplePay">Enable Apple Pay (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsElavonActive">Enable Elavon payments  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCode">Elavon identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCodeInt">Elavon international identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonBusinessCode">Business code (assigned by Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonRecurring">Enable recurring payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonAmericanexpress">Enable AMEX payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonDinersclub">Enable Diners Club payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenActive">Enable Handelsbanken payments  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">Handelsbanken identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">Handelsbanken international identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenBusinessCode">Business code (assigned by Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenRecurring">Enable recurring payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">Enable AMEX payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenDinersclub">Enable Diners Club payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaActive">Enable Klarna payments  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaEid">Klarna merchant ID  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaSharedSecret">Klarna shared secret  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayActive">Enable MobilePay payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">Enable MobilePay Subscriptions payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">Verifies received code challenge  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">Unix Timestamp of last time the tokens were refreshed  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">Associate client sessions with ID Tokens to mitigate replay attacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional, default to 0)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">The provider / sales-place chosen by the merchant  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">Token to refresh access token for up to 1 year  (optional)</param>
+        /// <param name="acquirerSettingsNetsActive">Enable Nets/Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCode">Nets TOF number  (optional)</param>
+        /// <param name="acquirerSettingsNetsBusinessCode">Business code (assigned by Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsRecurring">Enable recurring payments (requires agreement with Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsFbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecuredByNets">Enable SecuredByNets fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCodeInt">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsAmericanexpress">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsDinersclub">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecurepay">(Depricated; use Teller acquirer)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsNetsVisaBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsMastercardBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalActive">Enable PayPal payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalRecurring">Enable recurring payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalCreditCard">Allow credit-card payments. (Only for US/CA/UK merchants)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalToken">Authentication token  (optional)</param>
+        /// <param name="acquirerSettingsPaypalTokenSecret">Authentication token secret  (optional)</param>
+        /// <param name="acquirerSettingsPaypalScope">Authentication scope  (optional)</param>
+        /// <param name="acquirerSettingsSofortActive">Enable Sofort payments  (optional)</param>
+        /// <param name="acquirerSettingsSofortCustomerNumber">Sofort customer number  (optional)</param>
+        /// <param name="acquirerSettingsSofortProjectId">Sofort Gateway project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortApiKey">Sofort API key  (optional)</param>
+        /// <param name="acquirerSettingsSofortGateway">Enable Sofort Gateway feature  (optional, default to true)</param>
+        /// <param name="acquirerSettingsSofortIdeal">Enable Sofort iDeal feature  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectId">Sofort iDeal project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectPassword">Sofort iDeal project password  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealNotificationPassword">Sofort iDeal notification password  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankActive">Enable Swedbank payments  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCode">Swedbank identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">Swedbank international identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankBusinessCode">Business code (assigned by Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankRecurring">Enable recurring payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankAmericanexpress">Enable AMEX payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankDinersclub">Enable Diners Club payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerActive">Enable Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCode">Teller TOF number  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCodeInt">Teller international identification number  (optional)</param>
+        /// <param name="acquirerSettingsTellerBusinessCode">Business code (assigned by Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerRecurring">Enable recurring payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerAmericanexpress">Enable AMEX payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerDinersclub">Enable Diners Club payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerSecurepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerVisaBin">Teller VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardBin">Teller Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorActive">Enable Valitor payments  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCode">Valitor identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCodeInt">Valitor international identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorBusinessCode">Business code (assigned by Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorRecurring">Enable recurring payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorAmericanexpress">Enable AMEX payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorDinersclub">Enable Diners Club payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsViabillActive">Enable ViaBill payments  (optional)</param>
+        /// <param name="acquirerSettingsViabillApiKey">ViaBill API key  (optional)</param>
+        /// <param name="integrationSettingsEconomicActive">Enable e-conomic integration  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreement">e-conomic agreement no.  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreementToken">economic agreement grant token  (optional)</param>
+        /// <param name="pciSaqA">Enable SAQ A  (optional)</param>
+        /// <param name="pciSaqAEp">Enable SAQ A-EP  (optional)</param>
+        /// <param name="pciSaqB">Enable SAQ B  (optional)</param>
+        /// <param name="pciSaqBIp">Enable SAQ B-IP  (optional)</param>
+        /// <param name="pciSaqC">Enable SAQ C  (optional)</param>
+        /// <param name="pciSaqCVt">Enable SAQ C-VT  (optional)</param>
+        /// <param name="pciSaqDMerchant">Enable SAQ D Merchant  (optional)</param>
+        /// <param name="pciSaqDServiceProvider">Enable SAQ D Service Provider  (optional)</param>
+        /// <param name="pciSaqP2peHw">Enable SAQ P2PE-HW  (optional)</param>
+        /// <param name="autofee">Add automatic fee on all payments  (optional)</param>
+        /// <param name="defaultPaymentMethods">Comma separated list of default payment methods  (optional)</param>
+        /// <param name="shopUrl">Shop URL (deprecated, use shop_urls instead)  (optional)</param>
+        /// <param name="shopUrls">Shop URLs  (optional)</param>
+        /// <param name="contactEmail">Contact email  (optional)</param>
+        /// <param name="shopName">Shop name  (optional)</param>
+        /// <param name="shopsystem">Shop system  (optional)</param>
         /// <param name="timezone">&lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  (optional)</param>
-        /// <param name="locale">&lt;p&gt;Locale as a two letter language code&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingId">&lt;p&gt;Id of default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="loggingStopsAt">&lt;p&gt;Timestamp when logging is active&lt;/p&gt;  (optional)</param>
-        /// <param name="allowTestTransactions">&lt;p&gt;Allow test transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentLanguage">&lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultTextOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingConfig">&lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  (optional)</param>
+        /// <param name="locale">Locale as a two letter language code  (optional)</param>
+        /// <param name="defaultBrandingId">Id of default branding  (optional)</param>
+        /// <param name="loggingStopsAt">Timestamp when logging is active  (optional)</param>
+        /// <param name="allowTestTransactions">Allow test transactions  (optional)</param>
+        /// <param name="defaultPaymentLanguage">Default payment language (Two letter language code, ISO-639-1)  (optional)</param>
+        /// <param name="defaultTextOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
+        /// <param name="defaultBrandingConfig">Default branding config. Can be overwritten in branding or in request to payment window  (optional)</param>
         /// <returns>ApiResponse of Merchant</returns>
-        public ApiResponse< Merchant > PATCHAccountFormatWithHttpInfo (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null)
+        public ApiResponse< Merchant > PATCHAccountFormatWithHttpInfo (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, string acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, string acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, string shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, string defaultBrandingConfig = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2787,6 +2787,7 @@ namespace IO.Swagger.Api
             if (acquirerSettingsPaypalCreditCard != null) localVarFormParams.Add("acquirer_settings[paypal][credit_card]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsPaypalCreditCard)); // form parameter
             if (acquirerSettingsPaypalToken != null) localVarFormParams.Add("acquirer_settings[paypal][token]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsPaypalToken)); // form parameter
             if (acquirerSettingsPaypalTokenSecret != null) localVarFormParams.Add("acquirer_settings[paypal][token_secret]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsPaypalTokenSecret)); // form parameter
+            if (acquirerSettingsPaypalScope != null) localVarFormParams.Add("acquirer_settings[paypal][scope]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsPaypalScope)); // form parameter
             if (acquirerSettingsSofortActive != null) localVarFormParams.Add("acquirer_settings[sofort][active]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsSofortActive)); // form parameter
             if (acquirerSettingsSofortCustomerNumber != null) localVarFormParams.Add("acquirer_settings[sofort][customer_number]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsSofortCustomerNumber)); // form parameter
             if (acquirerSettingsSofortProjectId != null) localVarFormParams.Add("acquirer_settings[sofort][project_id]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsSofortProjectId)); // form parameter
@@ -2849,6 +2850,7 @@ namespace IO.Swagger.Api
             if (autofee != null) localVarFormParams.Add("autofee", this.Configuration.ApiClient.ParameterToString(autofee)); // form parameter
             if (defaultPaymentMethods != null) localVarFormParams.Add("default_payment_methods", this.Configuration.ApiClient.ParameterToString(defaultPaymentMethods)); // form parameter
             if (shopUrl != null) localVarFormParams.Add("shop_url", this.Configuration.ApiClient.ParameterToString(shopUrl)); // form parameter
+            if (shopUrls != null) localVarFormParams.Add("shop_urls", this.Configuration.ApiClient.ParameterToString(shopUrls)); // form parameter
             if (contactEmail != null) localVarFormParams.Add("contact_email", this.Configuration.ApiClient.ParameterToString(contactEmail)); // form parameter
             if (shopName != null) localVarFormParams.Add("shop_name", this.Configuration.ApiClient.ParameterToString(shopName)); // form parameter
             if (shopsystem != null) localVarFormParams.Add("shopsystem", this.Configuration.ApiClient.ParameterToString(shopsystem)); // form parameter
@@ -2860,14 +2862,6 @@ namespace IO.Swagger.Api
             if (defaultPaymentLanguage != null) localVarFormParams.Add("default_payment_language", this.Configuration.ApiClient.ParameterToString(defaultPaymentLanguage)); // form parameter
             if (defaultTextOnStatement != null) localVarFormParams.Add("default_text_on_statement", this.Configuration.ApiClient.ParameterToString(defaultTextOnStatement)); // form parameter
             if (defaultBrandingConfig != null) localVarFormParams.Add("default_branding_config", this.Configuration.ApiClient.ParameterToString(defaultBrandingConfig)); // form parameter
-            if (shopUrls != null && shopUrls.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(shopUrls); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = shopUrls; // byte array
-            }
 
 
             // make the HTTP request
@@ -2892,173 +2886,173 @@ namespace IO.Swagger.Api
         /// Update merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="customerAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Callback url&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraActive">&lt;p&gt;Enable Bambora payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraBusinessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausActive">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausPayout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApplePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonActive">&lt;p&gt;Enable Elavon payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonBusinessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenActive">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenBusinessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaActive">&lt;p&gt;Enable Klarna payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaEid">&lt;p&gt;Klarna merchant ID&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaSharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayActive">&lt;p&gt;Enable MobilePay payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  (optional, default to 0)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsActive">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsBusinessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsFbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecuredByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsAmericanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsDinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecurepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsNetsVisaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsMastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalActive">&lt;p&gt;Enable PayPal payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalRecurring">&lt;p&gt;Enable recurring payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalCreditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalToken">&lt;p&gt;Authentication token&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalTokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalScope">&lt;p&gt;Authentication scope&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortActive">&lt;p&gt;Enable Sofort payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortCustomerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortProjectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortApiKey">&lt;p&gt;Sofort API key&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortGateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsSofortIdeal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankActive">&lt;p&gt;Enable Swedbank payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankBusinessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerActive">&lt;p&gt;Enable Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerBusinessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerSecurepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerVisaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorActive">&lt;p&gt;Enable Valitor payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorBusinessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillActive">&lt;p&gt;Enable ViaBill payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillApiKey">&lt;p&gt;ViaBill API key&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicActive">&lt;p&gt;Enable e-conomic integration&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreement">&lt;p&gt;e-conomic agreement no.&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreementToken">&lt;p&gt;economic agreement grant token&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqA">&lt;p&gt;Enable SAQ A&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqAEp">&lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqB">&lt;p&gt;Enable SAQ B&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqBIp">&lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqC">&lt;p&gt;Enable SAQ C&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqCVt">&lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDMerchant">&lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDServiceProvider">&lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqP2peHw">&lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  (optional)</param>
-        /// <param name="autofee">&lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentMethods">&lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrl">&lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrls">&lt;p&gt;Shop URLs&lt;/p&gt;  (optional)</param>
-        /// <param name="contactEmail">&lt;p&gt;Contact email&lt;/p&gt;  (optional)</param>
-        /// <param name="shopName">&lt;p&gt;Shop name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystem">&lt;p&gt;Shop system&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="customerAddressName">Name  (optional)</param>
+        /// <param name="customerAddressAtt">Att  (optional)</param>
+        /// <param name="customerAddressStreet">Street  (optional)</param>
+        /// <param name="customerAddressCity">City  (optional)</param>
+        /// <param name="customerAddressZipCode">Zip code  (optional)</param>
+        /// <param name="customerAddressRegion">Region  (optional)</param>
+        /// <param name="customerAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="customerAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="billingAddressName">Name  (optional)</param>
+        /// <param name="billingAddressAtt">Att  (optional)</param>
+        /// <param name="billingAddressStreet">Street  (optional)</param>
+        /// <param name="billingAddressCity">City  (optional)</param>
+        /// <param name="billingAddressZipCode">Zip code  (optional)</param>
+        /// <param name="billingAddressRegion">Region  (optional)</param>
+        /// <param name="billingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="billingAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="callbackUrl">Callback url  (optional)</param>
+        /// <param name="acquirerSettingsBamboraActive">Enable Bambora payments  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCode">Bambora identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">Bambora international identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraBusinessCode">Business code (assigned by Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraRecurring">Enable recurring payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraAmericanexpress">Enable AMEX payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraDinersclub">Enable Diners Club payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsClearhausActive">Enable ClearHaus payments  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApiKey">Clearhaus API key (is required but may be left empty)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausRecurring">Enable recurring payments (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausPayout">Enable payouts (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApplePay">Enable Apple Pay (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsElavonActive">Enable Elavon payments  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCode">Elavon identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCodeInt">Elavon international identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonBusinessCode">Business code (assigned by Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonRecurring">Enable recurring payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonAmericanexpress">Enable AMEX payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonDinersclub">Enable Diners Club payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenActive">Enable Handelsbanken payments  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">Handelsbanken identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">Handelsbanken international identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenBusinessCode">Business code (assigned by Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenRecurring">Enable recurring payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">Enable AMEX payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenDinersclub">Enable Diners Club payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaActive">Enable Klarna payments  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaEid">Klarna merchant ID  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaSharedSecret">Klarna shared secret  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayActive">Enable MobilePay payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">Enable MobilePay Subscriptions payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">Verifies received code challenge  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">Unix Timestamp of last time the tokens were refreshed  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">Associate client sessions with ID Tokens to mitigate replay attacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional, default to 0)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">The provider / sales-place chosen by the merchant  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">Token to refresh access token for up to 1 year  (optional)</param>
+        /// <param name="acquirerSettingsNetsActive">Enable Nets/Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCode">Nets TOF number  (optional)</param>
+        /// <param name="acquirerSettingsNetsBusinessCode">Business code (assigned by Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsRecurring">Enable recurring payments (requires agreement with Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsFbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecuredByNets">Enable SecuredByNets fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCodeInt">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsAmericanexpress">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsDinersclub">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecurepay">(Depricated; use Teller acquirer)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsNetsVisaBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsMastercardBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalActive">Enable PayPal payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalRecurring">Enable recurring payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalCreditCard">Allow credit-card payments. (Only for US/CA/UK merchants)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalToken">Authentication token  (optional)</param>
+        /// <param name="acquirerSettingsPaypalTokenSecret">Authentication token secret  (optional)</param>
+        /// <param name="acquirerSettingsPaypalScope">Authentication scope  (optional)</param>
+        /// <param name="acquirerSettingsSofortActive">Enable Sofort payments  (optional)</param>
+        /// <param name="acquirerSettingsSofortCustomerNumber">Sofort customer number  (optional)</param>
+        /// <param name="acquirerSettingsSofortProjectId">Sofort Gateway project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortApiKey">Sofort API key  (optional)</param>
+        /// <param name="acquirerSettingsSofortGateway">Enable Sofort Gateway feature  (optional, default to true)</param>
+        /// <param name="acquirerSettingsSofortIdeal">Enable Sofort iDeal feature  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectId">Sofort iDeal project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectPassword">Sofort iDeal project password  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealNotificationPassword">Sofort iDeal notification password  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankActive">Enable Swedbank payments  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCode">Swedbank identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">Swedbank international identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankBusinessCode">Business code (assigned by Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankRecurring">Enable recurring payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankAmericanexpress">Enable AMEX payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankDinersclub">Enable Diners Club payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerActive">Enable Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCode">Teller TOF number  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCodeInt">Teller international identification number  (optional)</param>
+        /// <param name="acquirerSettingsTellerBusinessCode">Business code (assigned by Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerRecurring">Enable recurring payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerAmericanexpress">Enable AMEX payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerDinersclub">Enable Diners Club payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerSecurepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerVisaBin">Teller VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardBin">Teller Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorActive">Enable Valitor payments  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCode">Valitor identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCodeInt">Valitor international identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorBusinessCode">Business code (assigned by Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorRecurring">Enable recurring payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorAmericanexpress">Enable AMEX payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorDinersclub">Enable Diners Club payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsViabillActive">Enable ViaBill payments  (optional)</param>
+        /// <param name="acquirerSettingsViabillApiKey">ViaBill API key  (optional)</param>
+        /// <param name="integrationSettingsEconomicActive">Enable e-conomic integration  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreement">e-conomic agreement no.  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreementToken">economic agreement grant token  (optional)</param>
+        /// <param name="pciSaqA">Enable SAQ A  (optional)</param>
+        /// <param name="pciSaqAEp">Enable SAQ A-EP  (optional)</param>
+        /// <param name="pciSaqB">Enable SAQ B  (optional)</param>
+        /// <param name="pciSaqBIp">Enable SAQ B-IP  (optional)</param>
+        /// <param name="pciSaqC">Enable SAQ C  (optional)</param>
+        /// <param name="pciSaqCVt">Enable SAQ C-VT  (optional)</param>
+        /// <param name="pciSaqDMerchant">Enable SAQ D Merchant  (optional)</param>
+        /// <param name="pciSaqDServiceProvider">Enable SAQ D Service Provider  (optional)</param>
+        /// <param name="pciSaqP2peHw">Enable SAQ P2PE-HW  (optional)</param>
+        /// <param name="autofee">Add automatic fee on all payments  (optional)</param>
+        /// <param name="defaultPaymentMethods">Comma separated list of default payment methods  (optional)</param>
+        /// <param name="shopUrl">Shop URL (deprecated, use shop_urls instead)  (optional)</param>
+        /// <param name="shopUrls">Shop URLs  (optional)</param>
+        /// <param name="contactEmail">Contact email  (optional)</param>
+        /// <param name="shopName">Shop name  (optional)</param>
+        /// <param name="shopsystem">Shop system  (optional)</param>
         /// <param name="timezone">&lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  (optional)</param>
-        /// <param name="locale">&lt;p&gt;Locale as a two letter language code&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingId">&lt;p&gt;Id of default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="loggingStopsAt">&lt;p&gt;Timestamp when logging is active&lt;/p&gt;  (optional)</param>
-        /// <param name="allowTestTransactions">&lt;p&gt;Allow test transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentLanguage">&lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultTextOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingConfig">&lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  (optional)</param>
+        /// <param name="locale">Locale as a two letter language code  (optional)</param>
+        /// <param name="defaultBrandingId">Id of default branding  (optional)</param>
+        /// <param name="loggingStopsAt">Timestamp when logging is active  (optional)</param>
+        /// <param name="allowTestTransactions">Allow test transactions  (optional)</param>
+        /// <param name="defaultPaymentLanguage">Default payment language (Two letter language code, ISO-639-1)  (optional)</param>
+        /// <param name="defaultTextOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
+        /// <param name="defaultBrandingConfig">Default branding config. Can be overwritten in branding or in request to payment window  (optional)</param>
         /// <returns>Task of Merchant</returns>
-        public async System.Threading.Tasks.Task<Merchant> PATCHAccountFormatAsync (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null)
+        public async System.Threading.Tasks.Task<Merchant> PATCHAccountFormatAsync (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, string acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, string acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, string shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, string defaultBrandingConfig = null)
         {
              ApiResponse<Merchant> localVarResponse = await PATCHAccountFormatAsyncWithHttpInfo(acceptVersion, authorization, customerAddressName, customerAddressAtt, customerAddressStreet, customerAddressCity, customerAddressZipCode, customerAddressRegion, customerAddressCountryCode, customerAddressVatNo, billingAddressName, billingAddressAtt, billingAddressStreet, billingAddressCity, billingAddressZipCode, billingAddressRegion, billingAddressCountryCode, billingAddressVatNo, callbackUrl, acquirerSettingsBamboraActive, acquirerSettingsBamboraIdentificationCode, acquirerSettingsBamboraIdentificationCodeInt, acquirerSettingsBamboraBusinessCode, acquirerSettingsBamboraRecurring, acquirerSettingsBamboraAmericanexpress, acquirerSettingsBamboraDinersclub, acquirerSettingsBamboraSecurepay, acquirerSettingsBamboraVisaMpiMerchantId, acquirerSettingsBamboraMastercardMpiMerchantId, acquirerSettingsBamboraVisaBin, acquirerSettingsBamboraMastercardBin, acquirerSettingsClearhausActive, acquirerSettingsClearhausApiKey, acquirerSettingsClearhausRecurring, acquirerSettingsClearhausPayout, acquirerSettingsClearhausApplePay, acquirerSettingsElavonActive, acquirerSettingsElavonIdentificationCode, acquirerSettingsElavonIdentificationCodeInt, acquirerSettingsElavonBusinessCode, acquirerSettingsElavonRecurring, acquirerSettingsElavonAmericanexpress, acquirerSettingsElavonDinersclub, acquirerSettingsElavonSecurepay, acquirerSettingsElavonVisaMpiMerchantId, acquirerSettingsElavonMastercardMpiMerchantId, acquirerSettingsElavonVisaBin, acquirerSettingsElavonMastercardBin, acquirerSettingsHandelsbankenActive, acquirerSettingsHandelsbankenIdentificationCode, acquirerSettingsHandelsbankenIdentificationCodeInt, acquirerSettingsHandelsbankenBusinessCode, acquirerSettingsHandelsbankenRecurring, acquirerSettingsHandelsbankenAmericanexpress, acquirerSettingsHandelsbankenDinersclub, acquirerSettingsHandelsbankenSecurepay, acquirerSettingsHandelsbankenVisaMpiMerchantId, acquirerSettingsHandelsbankenMastercardMpiMerchantId, acquirerSettingsHandelsbankenVisaBin, acquirerSettingsHandelsbankenMastercardBin, acquirerSettingsKlarnaActive, acquirerSettingsKlarnaEid, acquirerSettingsKlarnaSharedSecret, acquirerSettingsMobilepayActive, acquirerSettingsMobilepayDeliveryLimitedTo, acquirerSettingsMobilepaysubscriptionsActive, acquirerSettingsMobilepaysubscriptionsAuthState, acquirerSettingsMobilepaysubscriptionsCodeVerifier, acquirerSettingsMobilepaysubscriptionsLastTokenRefresh, acquirerSettingsMobilepaysubscriptionsNonce, acquirerSettingsMobilepaysubscriptionsPendingStatus, acquirerSettingsMobilepaysubscriptionsProvider, acquirerSettingsMobilepaysubscriptionsRefreshToken, acquirerSettingsNetsActive, acquirerSettingsNetsIdentificationCode, acquirerSettingsNetsBusinessCode, acquirerSettingsNetsRecurring, acquirerSettingsNetsFbg1886, acquirerSettingsNetsSecuredByNets, acquirerSettingsNetsIdentificationCodeInt, acquirerSettingsNetsAmericanexpress, acquirerSettingsNetsDinersclub, acquirerSettingsNetsSecurepay, acquirerSettingsNetsVisaBin, acquirerSettingsNetsMastercardBin, acquirerSettingsPaypalActive, acquirerSettingsPaypalRecurring, acquirerSettingsPaypalCreditCard, acquirerSettingsPaypalToken, acquirerSettingsPaypalTokenSecret, acquirerSettingsPaypalScope, acquirerSettingsSofortActive, acquirerSettingsSofortCustomerNumber, acquirerSettingsSofortProjectId, acquirerSettingsSofortApiKey, acquirerSettingsSofortGateway, acquirerSettingsSofortIdeal, acquirerSettingsSofortIdealProjectId, acquirerSettingsSofortIdealProjectPassword, acquirerSettingsSofortIdealNotificationPassword, acquirerSettingsSwedbankActive, acquirerSettingsSwedbankIdentificationCode, acquirerSettingsSwedbankIdentificationCodeInt, acquirerSettingsSwedbankBusinessCode, acquirerSettingsSwedbankRecurring, acquirerSettingsSwedbankAmericanexpress, acquirerSettingsSwedbankDinersclub, acquirerSettingsSwedbankSecurepay, acquirerSettingsSwedbankVisaMpiMerchantId, acquirerSettingsSwedbankMastercardMpiMerchantId, acquirerSettingsSwedbankVisaBin, acquirerSettingsSwedbankMastercardBin, acquirerSettingsTellerActive, acquirerSettingsTellerIdentificationCode, acquirerSettingsTellerIdentificationCodeInt, acquirerSettingsTellerBusinessCode, acquirerSettingsTellerRecurring, acquirerSettingsTellerAmericanexpress, acquirerSettingsTellerDinersclub, acquirerSettingsTellerSecurepay, acquirerSettingsTellerVisaMpiMerchantId, acquirerSettingsTellerMastercardMpiMerchantId, acquirerSettingsTellerVisaBin, acquirerSettingsTellerMastercardBin, acquirerSettingsValitorActive, acquirerSettingsValitorIdentificationCode, acquirerSettingsValitorIdentificationCodeInt, acquirerSettingsValitorBusinessCode, acquirerSettingsValitorRecurring, acquirerSettingsValitorAmericanexpress, acquirerSettingsValitorDinersclub, acquirerSettingsValitorSecurepay, acquirerSettingsValitorVisaMpiMerchantId, acquirerSettingsValitorMastercardMpiMerchantId, acquirerSettingsValitorVisaBin, acquirerSettingsValitorMastercardBin, acquirerSettingsViabillActive, acquirerSettingsViabillApiKey, integrationSettingsEconomicActive, integrationSettingsEconomicAgreement, integrationSettingsEconomicAgreementToken, pciSaqA, pciSaqAEp, pciSaqB, pciSaqBIp, pciSaqC, pciSaqCVt, pciSaqDMerchant, pciSaqDServiceProvider, pciSaqP2peHw, autofee, defaultPaymentMethods, shopUrl, shopUrls, contactEmail, shopName, shopsystem, timezone, locale, defaultBrandingId, loggingStopsAt, allowTestTransactions, defaultPaymentLanguage, defaultTextOnStatement, defaultBrandingConfig);
              return localVarResponse.Data;
@@ -3069,173 +3063,173 @@ namespace IO.Swagger.Api
         /// Update merchant account  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="customerAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="customerAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressName">&lt;p&gt;Name&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressAtt">&lt;p&gt;Att&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressStreet">&lt;p&gt;Street&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCity">&lt;p&gt;City&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressRegion">&lt;p&gt;Region&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  (optional)</param>
-        /// <param name="billingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Callback url&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraActive">&lt;p&gt;Enable Bambora payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraBusinessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsBamboraMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausActive">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausPayout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsClearhausApplePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonActive">&lt;p&gt;Enable Elavon payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonIdentificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonBusinessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsElavonMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenActive">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenBusinessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsHandelsbankenMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaActive">&lt;p&gt;Enable Klarna payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaEid">&lt;p&gt;Klarna merchant ID&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsKlarnaSharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayActive">&lt;p&gt;Enable MobilePay payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  (optional, default to 0)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsActive">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsBusinessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsFbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecuredByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsIdentificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsAmericanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsDinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsSecurepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsNetsVisaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsNetsMastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalActive">&lt;p&gt;Enable PayPal payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalRecurring">&lt;p&gt;Enable recurring payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalCreditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalToken">&lt;p&gt;Authentication token&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalTokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsPaypalScope">&lt;p&gt;Authentication scope&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortActive">&lt;p&gt;Enable Sofort payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortCustomerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortProjectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortApiKey">&lt;p&gt;Sofort API key&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortGateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsSofortIdeal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSofortIdealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankActive">&lt;p&gt;Enable Swedbank payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankBusinessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsSwedbankMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerActive">&lt;p&gt;Enable Teller payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerIdentificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerBusinessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerSecurepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  (optional, default to true)</param>
-        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerVisaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsTellerMastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorActive">&lt;p&gt;Enable Valitor payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorIdentificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorBusinessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorRecurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorAmericanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorDinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorSecurepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorVisaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsValitorMastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillActive">&lt;p&gt;Enable ViaBill payments&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirerSettingsViabillApiKey">&lt;p&gt;ViaBill API key&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicActive">&lt;p&gt;Enable e-conomic integration&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreement">&lt;p&gt;e-conomic agreement no.&lt;/p&gt;  (optional)</param>
-        /// <param name="integrationSettingsEconomicAgreementToken">&lt;p&gt;economic agreement grant token&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqA">&lt;p&gt;Enable SAQ A&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqAEp">&lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqB">&lt;p&gt;Enable SAQ B&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqBIp">&lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqC">&lt;p&gt;Enable SAQ C&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqCVt">&lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDMerchant">&lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqDServiceProvider">&lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  (optional)</param>
-        /// <param name="pciSaqP2peHw">&lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  (optional)</param>
-        /// <param name="autofee">&lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentMethods">&lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrl">&lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  (optional)</param>
-        /// <param name="shopUrls">&lt;p&gt;Shop URLs&lt;/p&gt;  (optional)</param>
-        /// <param name="contactEmail">&lt;p&gt;Contact email&lt;/p&gt;  (optional)</param>
-        /// <param name="shopName">&lt;p&gt;Shop name&lt;/p&gt;  (optional)</param>
-        /// <param name="shopsystem">&lt;p&gt;Shop system&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="customerAddressName">Name  (optional)</param>
+        /// <param name="customerAddressAtt">Att  (optional)</param>
+        /// <param name="customerAddressStreet">Street  (optional)</param>
+        /// <param name="customerAddressCity">City  (optional)</param>
+        /// <param name="customerAddressZipCode">Zip code  (optional)</param>
+        /// <param name="customerAddressRegion">Region  (optional)</param>
+        /// <param name="customerAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="customerAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="billingAddressName">Name  (optional)</param>
+        /// <param name="billingAddressAtt">Att  (optional)</param>
+        /// <param name="billingAddressStreet">Street  (optional)</param>
+        /// <param name="billingAddressCity">City  (optional)</param>
+        /// <param name="billingAddressZipCode">Zip code  (optional)</param>
+        /// <param name="billingAddressRegion">Region  (optional)</param>
+        /// <param name="billingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3  (optional)</param>
+        /// <param name="billingAddressVatNo">VAT registration number  (optional)</param>
+        /// <param name="callbackUrl">Callback url  (optional)</param>
+        /// <param name="acquirerSettingsBamboraActive">Enable Bambora payments  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCode">Bambora identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraIdentificationCodeInt">Bambora international identification number  (optional)</param>
+        /// <param name="acquirerSettingsBamboraBusinessCode">Business code (assigned by Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraRecurring">Enable recurring payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraAmericanexpress">Enable AMEX payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraDinersclub">Enable Diners Club payments (requires agreement with Bambora)  (optional)</param>
+        /// <param name="acquirerSettingsBamboraSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsBamboraVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsBamboraMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsClearhausActive">Enable ClearHaus payments  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApiKey">Clearhaus API key (is required but may be left empty)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausRecurring">Enable recurring payments (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausPayout">Enable payouts (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsClearhausApplePay">Enable Apple Pay (requires agreement with Clearhaus)  (optional)</param>
+        /// <param name="acquirerSettingsElavonActive">Enable Elavon payments  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCode">Elavon identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonIdentificationCodeInt">Elavon international identification number  (optional)</param>
+        /// <param name="acquirerSettingsElavonBusinessCode">Business code (assigned by Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonRecurring">Enable recurring payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonAmericanexpress">Enable AMEX payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonDinersclub">Enable Diners Club payments (requires agreement with Elavon)  (optional)</param>
+        /// <param name="acquirerSettingsElavonSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsElavonVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsElavonMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenActive">Enable Handelsbanken payments  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCode">Handelsbanken identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenIdentificationCodeInt">Handelsbanken international identification number  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenBusinessCode">Business code (assigned by Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenRecurring">Enable recurring payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenAmericanexpress">Enable AMEX payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenDinersclub">Enable Diners Club payments (requires agreement with Handelsbanken)  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsHandelsbankenMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaActive">Enable Klarna payments  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaEid">Klarna merchant ID  (optional)</param>
+        /// <param name="acquirerSettingsKlarnaSharedSecret">Klarna shared secret  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayActive">Enable MobilePay payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepayDeliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsActive">Enable MobilePay Subscriptions payments  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsAuthState">Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsCodeVerifier">Verifies received code challenge  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsLastTokenRefresh">Unix Timestamp of last time the tokens were refreshed  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsNonce">Associate client sessions with ID Tokens to mitigate replay attacks  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsPendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional, default to 0)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsProvider">The provider / sales-place chosen by the merchant  (optional)</param>
+        /// <param name="acquirerSettingsMobilepaysubscriptionsRefreshToken">Token to refresh access token for up to 1 year  (optional)</param>
+        /// <param name="acquirerSettingsNetsActive">Enable Nets/Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCode">Nets TOF number  (optional)</param>
+        /// <param name="acquirerSettingsNetsBusinessCode">Business code (assigned by Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsRecurring">Enable recurring payments (requires agreement with Nets)  (optional)</param>
+        /// <param name="acquirerSettingsNetsFbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecuredByNets">Enable SecuredByNets fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsNetsIdentificationCodeInt">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsAmericanexpress">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsDinersclub">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsSecurepay">(Depricated; use Teller acquirer)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsNetsVisaBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsNetsMastercardBin">(Depricated; use Teller acquirer)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalActive">Enable PayPal payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalRecurring">Enable recurring payments  (optional)</param>
+        /// <param name="acquirerSettingsPaypalCreditCard">Allow credit-card payments. (Only for US/CA/UK merchants)  (optional)</param>
+        /// <param name="acquirerSettingsPaypalToken">Authentication token  (optional)</param>
+        /// <param name="acquirerSettingsPaypalTokenSecret">Authentication token secret  (optional)</param>
+        /// <param name="acquirerSettingsPaypalScope">Authentication scope  (optional)</param>
+        /// <param name="acquirerSettingsSofortActive">Enable Sofort payments  (optional)</param>
+        /// <param name="acquirerSettingsSofortCustomerNumber">Sofort customer number  (optional)</param>
+        /// <param name="acquirerSettingsSofortProjectId">Sofort Gateway project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortApiKey">Sofort API key  (optional)</param>
+        /// <param name="acquirerSettingsSofortGateway">Enable Sofort Gateway feature  (optional, default to true)</param>
+        /// <param name="acquirerSettingsSofortIdeal">Enable Sofort iDeal feature  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectId">Sofort iDeal project id  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealProjectPassword">Sofort iDeal project password  (optional)</param>
+        /// <param name="acquirerSettingsSofortIdealNotificationPassword">Sofort iDeal notification password  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankActive">Enable Swedbank payments  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCode">Swedbank identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankIdentificationCodeInt">Swedbank international identification number  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankBusinessCode">Business code (assigned by Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankRecurring">Enable recurring payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankAmericanexpress">Enable AMEX payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankDinersclub">Enable Diners Club payments (requires agreement with Swedbank)  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsSwedbankMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerActive">Enable Teller payments  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCode">Teller TOF number  (optional)</param>
+        /// <param name="acquirerSettingsTellerIdentificationCodeInt">Teller international identification number  (optional)</param>
+        /// <param name="acquirerSettingsTellerBusinessCode">Business code (assigned by Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerRecurring">Enable recurring payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerAmericanexpress">Enable AMEX payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerDinersclub">Enable Diners Club payments (requires agreement with Teller)  (optional)</param>
+        /// <param name="acquirerSettingsTellerSecurepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional, default to true)</param>
+        /// <param name="acquirerSettingsTellerVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsTellerVisaBin">Teller VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsTellerMastercardBin">Teller Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorActive">Enable Valitor payments  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCode">Valitor identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorIdentificationCodeInt">Valitor international identification number  (optional)</param>
+        /// <param name="acquirerSettingsValitorBusinessCode">Business code (assigned by Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorRecurring">Enable recurring payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorAmericanexpress">Enable AMEX payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorDinersclub">Enable Diners Club payments (requires agreement with Valitor)  (optional)</param>
+        /// <param name="acquirerSettingsValitorSecurepay">Enable SecurePay fraud protection.  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions  (optional)</param>
+        /// <param name="acquirerSettingsValitorVisaBin">VISA acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsValitorMastercardBin">Mastercard acquirer bin used for 3D Secure  (optional)</param>
+        /// <param name="acquirerSettingsViabillActive">Enable ViaBill payments  (optional)</param>
+        /// <param name="acquirerSettingsViabillApiKey">ViaBill API key  (optional)</param>
+        /// <param name="integrationSettingsEconomicActive">Enable e-conomic integration  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreement">e-conomic agreement no.  (optional)</param>
+        /// <param name="integrationSettingsEconomicAgreementToken">economic agreement grant token  (optional)</param>
+        /// <param name="pciSaqA">Enable SAQ A  (optional)</param>
+        /// <param name="pciSaqAEp">Enable SAQ A-EP  (optional)</param>
+        /// <param name="pciSaqB">Enable SAQ B  (optional)</param>
+        /// <param name="pciSaqBIp">Enable SAQ B-IP  (optional)</param>
+        /// <param name="pciSaqC">Enable SAQ C  (optional)</param>
+        /// <param name="pciSaqCVt">Enable SAQ C-VT  (optional)</param>
+        /// <param name="pciSaqDMerchant">Enable SAQ D Merchant  (optional)</param>
+        /// <param name="pciSaqDServiceProvider">Enable SAQ D Service Provider  (optional)</param>
+        /// <param name="pciSaqP2peHw">Enable SAQ P2PE-HW  (optional)</param>
+        /// <param name="autofee">Add automatic fee on all payments  (optional)</param>
+        /// <param name="defaultPaymentMethods">Comma separated list of default payment methods  (optional)</param>
+        /// <param name="shopUrl">Shop URL (deprecated, use shop_urls instead)  (optional)</param>
+        /// <param name="shopUrls">Shop URLs  (optional)</param>
+        /// <param name="contactEmail">Contact email  (optional)</param>
+        /// <param name="shopName">Shop name  (optional)</param>
+        /// <param name="shopsystem">Shop system  (optional)</param>
         /// <param name="timezone">&lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  (optional)</param>
-        /// <param name="locale">&lt;p&gt;Locale as a two letter language code&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingId">&lt;p&gt;Id of default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="loggingStopsAt">&lt;p&gt;Timestamp when logging is active&lt;/p&gt;  (optional)</param>
-        /// <param name="allowTestTransactions">&lt;p&gt;Allow test transactions&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultPaymentLanguage">&lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultTextOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
-        /// <param name="defaultBrandingConfig">&lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  (optional)</param>
+        /// <param name="locale">Locale as a two letter language code  (optional)</param>
+        /// <param name="defaultBrandingId">Id of default branding  (optional)</param>
+        /// <param name="loggingStopsAt">Timestamp when logging is active  (optional)</param>
+        /// <param name="allowTestTransactions">Allow test transactions  (optional)</param>
+        /// <param name="defaultPaymentLanguage">Default payment language (Two letter language code, ISO-639-1)  (optional)</param>
+        /// <param name="defaultTextOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
+        /// <param name="defaultBrandingConfig">Default branding config. Can be overwritten in branding or in request to payment window  (optional)</param>
         /// <returns>Task of ApiResponse (Merchant)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Merchant>> PATCHAccountFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, List<string> acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, List<string> shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, Dictionary<string, string> defaultBrandingConfig = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Merchant>> PATCHAccountFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string customerAddressName = null, string customerAddressAtt = null, string customerAddressStreet = null, string customerAddressCity = null, string customerAddressZipCode = null, string customerAddressRegion = null, string customerAddressCountryCode = null, string customerAddressVatNo = null, string billingAddressName = null, string billingAddressAtt = null, string billingAddressStreet = null, string billingAddressCity = null, string billingAddressZipCode = null, string billingAddressRegion = null, string billingAddressCountryCode = null, string billingAddressVatNo = null, string callbackUrl = null, bool? acquirerSettingsBamboraActive = null, string acquirerSettingsBamboraIdentificationCode = null, string acquirerSettingsBamboraIdentificationCodeInt = null, string acquirerSettingsBamboraBusinessCode = null, bool? acquirerSettingsBamboraRecurring = null, bool? acquirerSettingsBamboraAmericanexpress = null, bool? acquirerSettingsBamboraDinersclub = null, bool? acquirerSettingsBamboraSecurepay = null, string acquirerSettingsBamboraVisaMpiMerchantId = null, string acquirerSettingsBamboraMastercardMpiMerchantId = null, string acquirerSettingsBamboraVisaBin = null, string acquirerSettingsBamboraMastercardBin = null, bool? acquirerSettingsClearhausActive = null, string acquirerSettingsClearhausApiKey = null, bool? acquirerSettingsClearhausRecurring = null, bool? acquirerSettingsClearhausPayout = null, bool? acquirerSettingsClearhausApplePay = null, bool? acquirerSettingsElavonActive = null, string acquirerSettingsElavonIdentificationCode = null, string acquirerSettingsElavonIdentificationCodeInt = null, string acquirerSettingsElavonBusinessCode = null, bool? acquirerSettingsElavonRecurring = null, bool? acquirerSettingsElavonAmericanexpress = null, bool? acquirerSettingsElavonDinersclub = null, bool? acquirerSettingsElavonSecurepay = null, string acquirerSettingsElavonVisaMpiMerchantId = null, string acquirerSettingsElavonMastercardMpiMerchantId = null, string acquirerSettingsElavonVisaBin = null, string acquirerSettingsElavonMastercardBin = null, bool? acquirerSettingsHandelsbankenActive = null, string acquirerSettingsHandelsbankenIdentificationCode = null, string acquirerSettingsHandelsbankenIdentificationCodeInt = null, string acquirerSettingsHandelsbankenBusinessCode = null, bool? acquirerSettingsHandelsbankenRecurring = null, bool? acquirerSettingsHandelsbankenAmericanexpress = null, bool? acquirerSettingsHandelsbankenDinersclub = null, bool? acquirerSettingsHandelsbankenSecurepay = null, string acquirerSettingsHandelsbankenVisaMpiMerchantId = null, string acquirerSettingsHandelsbankenMastercardMpiMerchantId = null, string acquirerSettingsHandelsbankenVisaBin = null, string acquirerSettingsHandelsbankenMastercardBin = null, bool? acquirerSettingsKlarnaActive = null, int? acquirerSettingsKlarnaEid = null, string acquirerSettingsKlarnaSharedSecret = null, bool? acquirerSettingsMobilepayActive = null, string acquirerSettingsMobilepayDeliveryLimitedTo = null, bool? acquirerSettingsMobilepaysubscriptionsActive = null, string acquirerSettingsMobilepaysubscriptionsAuthState = null, string acquirerSettingsMobilepaysubscriptionsCodeVerifier = null, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null, string acquirerSettingsMobilepaysubscriptionsNonce = null, int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null, string acquirerSettingsMobilepaysubscriptionsProvider = null, string acquirerSettingsMobilepaysubscriptionsRefreshToken = null, bool? acquirerSettingsNetsActive = null, string acquirerSettingsNetsIdentificationCode = null, string acquirerSettingsNetsBusinessCode = null, bool? acquirerSettingsNetsRecurring = null, bool? acquirerSettingsNetsFbg1886 = null, bool? acquirerSettingsNetsSecuredByNets = null, string acquirerSettingsNetsIdentificationCodeInt = null, bool? acquirerSettingsNetsAmericanexpress = null, bool? acquirerSettingsNetsDinersclub = null, bool? acquirerSettingsNetsSecurepay = null, string acquirerSettingsNetsVisaBin = null, string acquirerSettingsNetsMastercardBin = null, bool? acquirerSettingsPaypalActive = null, bool? acquirerSettingsPaypalRecurring = null, bool? acquirerSettingsPaypalCreditCard = null, string acquirerSettingsPaypalToken = null, string acquirerSettingsPaypalTokenSecret = null, string acquirerSettingsPaypalScope = null, bool? acquirerSettingsSofortActive = null, int? acquirerSettingsSofortCustomerNumber = null, int? acquirerSettingsSofortProjectId = null, string acquirerSettingsSofortApiKey = null, bool? acquirerSettingsSofortGateway = null, bool? acquirerSettingsSofortIdeal = null, int? acquirerSettingsSofortIdealProjectId = null, string acquirerSettingsSofortIdealProjectPassword = null, string acquirerSettingsSofortIdealNotificationPassword = null, bool? acquirerSettingsSwedbankActive = null, string acquirerSettingsSwedbankIdentificationCode = null, string acquirerSettingsSwedbankIdentificationCodeInt = null, string acquirerSettingsSwedbankBusinessCode = null, bool? acquirerSettingsSwedbankRecurring = null, bool? acquirerSettingsSwedbankAmericanexpress = null, bool? acquirerSettingsSwedbankDinersclub = null, bool? acquirerSettingsSwedbankSecurepay = null, string acquirerSettingsSwedbankVisaMpiMerchantId = null, string acquirerSettingsSwedbankMastercardMpiMerchantId = null, string acquirerSettingsSwedbankVisaBin = null, string acquirerSettingsSwedbankMastercardBin = null, bool? acquirerSettingsTellerActive = null, string acquirerSettingsTellerIdentificationCode = null, string acquirerSettingsTellerIdentificationCodeInt = null, string acquirerSettingsTellerBusinessCode = null, bool? acquirerSettingsTellerRecurring = null, bool? acquirerSettingsTellerAmericanexpress = null, bool? acquirerSettingsTellerDinersclub = null, bool? acquirerSettingsTellerSecurepay = null, string acquirerSettingsTellerVisaMpiMerchantId = null, string acquirerSettingsTellerMastercardMpiMerchantId = null, string acquirerSettingsTellerVisaBin = null, string acquirerSettingsTellerMastercardBin = null, bool? acquirerSettingsValitorActive = null, string acquirerSettingsValitorIdentificationCode = null, string acquirerSettingsValitorIdentificationCodeInt = null, string acquirerSettingsValitorBusinessCode = null, bool? acquirerSettingsValitorRecurring = null, bool? acquirerSettingsValitorAmericanexpress = null, bool? acquirerSettingsValitorDinersclub = null, bool? acquirerSettingsValitorSecurepay = null, string acquirerSettingsValitorVisaMpiMerchantId = null, string acquirerSettingsValitorMastercardMpiMerchantId = null, string acquirerSettingsValitorVisaBin = null, string acquirerSettingsValitorMastercardBin = null, bool? acquirerSettingsViabillActive = null, string acquirerSettingsViabillApiKey = null, bool? integrationSettingsEconomicActive = null, string integrationSettingsEconomicAgreement = null, string integrationSettingsEconomicAgreementToken = null, bool? pciSaqA = null, bool? pciSaqAEp = null, bool? pciSaqB = null, bool? pciSaqBIp = null, bool? pciSaqC = null, bool? pciSaqCVt = null, bool? pciSaqDMerchant = null, bool? pciSaqDServiceProvider = null, bool? pciSaqP2peHw = null, bool? autofee = null, string defaultPaymentMethods = null, string shopUrl = null, string shopUrls = null, string contactEmail = null, string shopName = null, string shopsystem = null, string timezone = null, string locale = null, int? defaultBrandingId = null, string loggingStopsAt = null, bool? allowTestTransactions = null, string defaultPaymentLanguage = null, string defaultTextOnStatement = null, string defaultBrandingConfig = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -3359,6 +3353,7 @@ namespace IO.Swagger.Api
             if (acquirerSettingsPaypalCreditCard != null) localVarFormParams.Add("acquirer_settings[paypal][credit_card]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsPaypalCreditCard)); // form parameter
             if (acquirerSettingsPaypalToken != null) localVarFormParams.Add("acquirer_settings[paypal][token]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsPaypalToken)); // form parameter
             if (acquirerSettingsPaypalTokenSecret != null) localVarFormParams.Add("acquirer_settings[paypal][token_secret]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsPaypalTokenSecret)); // form parameter
+            if (acquirerSettingsPaypalScope != null) localVarFormParams.Add("acquirer_settings[paypal][scope]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsPaypalScope)); // form parameter
             if (acquirerSettingsSofortActive != null) localVarFormParams.Add("acquirer_settings[sofort][active]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsSofortActive)); // form parameter
             if (acquirerSettingsSofortCustomerNumber != null) localVarFormParams.Add("acquirer_settings[sofort][customer_number]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsSofortCustomerNumber)); // form parameter
             if (acquirerSettingsSofortProjectId != null) localVarFormParams.Add("acquirer_settings[sofort][project_id]", this.Configuration.ApiClient.ParameterToString(acquirerSettingsSofortProjectId)); // form parameter
@@ -3421,6 +3416,7 @@ namespace IO.Swagger.Api
             if (autofee != null) localVarFormParams.Add("autofee", this.Configuration.ApiClient.ParameterToString(autofee)); // form parameter
             if (defaultPaymentMethods != null) localVarFormParams.Add("default_payment_methods", this.Configuration.ApiClient.ParameterToString(defaultPaymentMethods)); // form parameter
             if (shopUrl != null) localVarFormParams.Add("shop_url", this.Configuration.ApiClient.ParameterToString(shopUrl)); // form parameter
+            if (shopUrls != null) localVarFormParams.Add("shop_urls", this.Configuration.ApiClient.ParameterToString(shopUrls)); // form parameter
             if (contactEmail != null) localVarFormParams.Add("contact_email", this.Configuration.ApiClient.ParameterToString(contactEmail)); // form parameter
             if (shopName != null) localVarFormParams.Add("shop_name", this.Configuration.ApiClient.ParameterToString(shopName)); // form parameter
             if (shopsystem != null) localVarFormParams.Add("shopsystem", this.Configuration.ApiClient.ParameterToString(shopsystem)); // form parameter
@@ -3432,14 +3428,6 @@ namespace IO.Swagger.Api
             if (defaultPaymentLanguage != null) localVarFormParams.Add("default_payment_language", this.Configuration.ApiClient.ParameterToString(defaultPaymentLanguage)); // form parameter
             if (defaultTextOnStatement != null) localVarFormParams.Add("default_text_on_statement", this.Configuration.ApiClient.ParameterToString(defaultTextOnStatement)); // form parameter
             if (defaultBrandingConfig != null) localVarFormParams.Add("default_branding_config", this.Configuration.ApiClient.ParameterToString(defaultBrandingConfig)); // form parameter
-            if (shopUrls != null && shopUrls.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(shopUrls); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = shopUrls; // byte array
-            }
 
 
             // make the HTTP request
@@ -3464,8 +3452,8 @@ namespace IO.Swagger.Api
         /// Regenerates the private key of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>PrivateKey</returns>
         public PrivateKey PATCHAccountPrivateKeyFormat (string acceptVersion, string authorization)
         {
@@ -3477,8 +3465,8 @@ namespace IO.Swagger.Api
         /// Regenerates the private key of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of PrivateKey</returns>
         public ApiResponse< PrivateKey > PATCHAccountPrivateKeyFormatWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -3539,8 +3527,8 @@ namespace IO.Swagger.Api
         /// Regenerates the private key of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of PrivateKey</returns>
         public async System.Threading.Tasks.Task<PrivateKey> PATCHAccountPrivateKeyFormatAsync (string acceptVersion, string authorization)
         {
@@ -3553,8 +3541,8 @@ namespace IO.Swagger.Api
         /// Regenerates the private key of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (PrivateKey)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<PrivateKey>> PATCHAccountPrivateKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -3615,10 +3603,10 @@ namespace IO.Swagger.Api
         /// Creates or replaces the current merchant logo  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="_file">The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns></returns>
         public void PUTAccountLogoFormat (string acceptVersion, string authorization, string _file, string logoType = null)
         {
@@ -3629,10 +3617,10 @@ namespace IO.Swagger.Api
         /// Creates or replaces the current merchant logo  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="_file">The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> PUTAccountLogoFormatWithHttpInfo (string acceptVersion, string authorization, string _file, string logoType = null)
         {
@@ -3699,10 +3687,10 @@ namespace IO.Swagger.Api
         /// Creates or replaces the current merchant logo  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="_file">The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task PUTAccountLogoFormatAsync (string acceptVersion, string authorization, string _file, string logoType = null)
         {
@@ -3714,10 +3702,10 @@ namespace IO.Swagger.Api
         /// Creates or replaces the current merchant logo  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt; </param>
-        /// <param name="logoType">&lt;p&gt;Type of logo&lt;/p&gt;  (optional, default to payment_window)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="_file">The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file </param>
+        /// <param name="logoType">Type of logo  (optional, default to payment_window)</param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> PUTAccountLogoFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string _file, string logoType = null)
         {

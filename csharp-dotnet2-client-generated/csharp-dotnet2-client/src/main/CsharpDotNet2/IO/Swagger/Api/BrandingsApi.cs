@@ -14,82 +14,82 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete a branding  
         /// </summary>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns></returns>
         void DELETEBrandingsIdFormat (int? id);
         /// <summary>
         /// Deletes a branding resource  
         /// </summary>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName"> </param>
         /// <returns></returns>
         void DELETEBrandingsIdresourceNameFormat (int? id, string resourceName);
         /// <summary>
         /// Get brandings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt; </param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’ </param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default) </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
         /// <returns>Branding</returns>
         Branding GETBrandingsFormat (string acceptVersion, string authorization, string except, string only, int? page, int? pageSize, string sortBy, string sortDir);
         /// <summary>
         /// Get a branding  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt; </param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’ </param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default) </param>
         /// <returns>Branding</returns>
         Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except, string only);
         /// <summary>
         /// Gets a branding resource as a file  
         /// </summary>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName"> </param>
         /// <returns></returns>
         void GETBrandingsIdresourceNameFormat (int? id, string resourceName);
         /// <summary>
         /// Update a branding  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt; </param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’ </param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default) </param>
         /// <returns>Branding</returns>
         Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name, string except, string only);
         /// <summary>
         /// Create a branding  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>Branding</returns>
         Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name);
         /// <summary>
         /// Copies branding and returns the new branding  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt; </param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’ </param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default) </param>
         /// <returns>Branding</returns>
         Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except, string only);
         /// <summary>
         /// Uploads a file and creates or replaces a resource  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName"> </param>
         /// <returns></returns>
         void PUTBrandingsIdresourceNameFormat (string acceptVersion, string authorization, int? id, string _file, string resourceName);
@@ -151,7 +151,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete a branding  
         /// </summary>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param> 
+        /// <param name="id">Branding id </param> 
         /// <returns></returns>            
         public void DELETEBrandingsIdFormat (int? id)
         {
@@ -188,7 +188,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Deletes a branding resource  
         /// </summary>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param> 
+        /// <param name="id">Branding id </param> 
         /// <param name="resourceName"> </param> 
         /// <returns></returns>            
         public void DELETEBrandingsIdresourceNameFormat (int? id, string resourceName)
@@ -227,14 +227,14 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get brandings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt; </param> 
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’ </param> 
+        /// <param name="only">Specifies which attributes to include. (Overrides except default) </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
         /// <returns>Branding</returns>            
         public Branding GETBrandingsFormat (string acceptVersion, string authorization, string except, string only, int? page, int? pageSize, string sortBy, string sortDir)
         {
@@ -281,11 +281,11 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get a branding  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param> 
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt; </param> 
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Branding id </param> 
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’ </param> 
+        /// <param name="only">Specifies which attributes to include. (Overrides except default) </param> 
         /// <returns>Branding</returns>            
         public Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except, string only)
         {
@@ -332,7 +332,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Gets a branding resource as a file  
         /// </summary>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param> 
+        /// <param name="id">Branding id </param> 
         /// <param name="resourceName"> </param> 
         /// <returns></returns>            
         public void GETBrandingsIdresourceNameFormat (int? id, string resourceName)
@@ -371,12 +371,12 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Update a branding  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param> 
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param> 
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt; </param> 
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Branding id </param> 
+        /// <param name="name">Descriptive name of the branding </param> 
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’ </param> 
+        /// <param name="only">Specifies which attributes to include. (Overrides except default) </param> 
         /// <returns>Branding</returns>            
         public Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name, string except, string only)
         {
@@ -424,9 +424,9 @@ if (only != null) formParams.Add("only", ApiClient.ParameterToString(only)); // 
         /// <summary>
         /// Create a branding  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="name">Descriptive name of the branding </param> 
         /// <returns>Branding</returns>            
         public Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name)
         {
@@ -471,11 +471,11 @@ if (only != null) formParams.Add("only", ApiClient.ParameterToString(only)); // 
         /// <summary>
         /// Copies branding and returns the new branding  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param> 
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt; </param> 
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Branding id </param> 
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’ </param> 
+        /// <param name="only">Specifies which attributes to include. (Overrides except default) </param> 
         /// <returns>Branding</returns>            
         public Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except, string only)
         {
@@ -522,10 +522,10 @@ if (only != null) formParams.Add("only", ApiClient.ParameterToString(only)); // 
         /// <summary>
         /// Uploads a file and creates or replaces a resource  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param> 
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Branding id </param> 
+        /// <param name="_file">The file send as multipart </param> 
         /// <param name="resourceName"> </param> 
         /// <returns></returns>            
         public void PUTBrandingsIdresourceNameFormat (string acceptVersion, string authorization, int? id, string _file, string resourceName)

@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,9 +31,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns></returns>
         void DELETEAgreementsIdFormat (string acceptVersion, string authorization, int? id);
 
@@ -44,9 +44,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETEAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -56,17 +56,17 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  (optional)</param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
+        /// <param name="support">Return only or filter out support agreements  (optional)</param>
+        /// <param name="service">Filter by system agreement service name  (optional)</param>
+        /// <param name="me">If set, only show the agreement of the caller  (optional)</param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access.  (optional)</param>
         /// <returns>Agreement</returns>
         Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
 
@@ -77,17 +77,17 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  (optional)</param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
+        /// <param name="support">Return only or filter out support agreements  (optional)</param>
+        /// <param name="service">Filter by system agreement service name  (optional)</param>
+        /// <param name="me">If set, only show the agreement of the caller  (optional)</param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access.  (optional)</param>
         /// <returns>ApiResponse of Agreement</returns>
         ApiResponse<Agreement> GETAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
         /// <summary>
@@ -97,13 +97,13 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Activity</returns>
         Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
@@ -114,13 +114,13 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>ApiResponse of Activity</returns>
         ApiResponse<Activity> GETAgreementsIdActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
@@ -130,9 +130,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Agreement</returns>
         Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id);
 
@@ -143,9 +143,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>ApiResponse of Agreement</returns>
         ApiResponse<Agreement> GETAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -155,9 +155,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Agreement</returns>
         Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id);
 
@@ -168,9 +168,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>ApiResponse of Agreement</returns>
         ApiResponse<Agreement> PATCHAgreementsIdApiKeyFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -180,12 +180,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
         /// <returns>Agreement</returns>
         Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
 
@@ -196,12 +196,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
         /// <returns>ApiResponse of Agreement</returns>
         ApiResponse<Agreement> PATCHAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
         /// <summary>
@@ -211,19 +211,19 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="owner">Is account owner. Default is false  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Agreement</returns>
         Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
 
@@ -234,19 +234,19 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="owner">Is account owner. Default is false  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>ApiResponse of Agreement</returns>
         ApiResponse<Agreement> POSTAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
         /// <summary>
@@ -256,18 +256,18 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Agreement</returns>
         Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
 
@@ -278,18 +278,18 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>ApiResponse of Agreement</returns>
         ApiResponse<Agreement> PUTAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
         #endregion Synchronous Operations
@@ -301,9 +301,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETEAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
@@ -314,9 +314,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETEAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -326,17 +326,17 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  (optional)</param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
+        /// <param name="support">Return only or filter out support agreements  (optional)</param>
+        /// <param name="service">Filter by system agreement service name  (optional)</param>
+        /// <param name="me">If set, only show the agreement of the caller  (optional)</param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access.  (optional)</param>
         /// <returns>Task of Agreement</returns>
         System.Threading.Tasks.Task<Agreement> GETAgreementsFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
 
@@ -347,17 +347,17 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  (optional)</param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
+        /// <param name="support">Return only or filter out support agreements  (optional)</param>
+        /// <param name="service">Filter by system agreement service name  (optional)</param>
+        /// <param name="me">If set, only show the agreement of the caller  (optional)</param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access.  (optional)</param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         System.Threading.Tasks.Task<ApiResponse<Agreement>> GETAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null);
         /// <summary>
@@ -367,13 +367,13 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of Activity</returns>
         System.Threading.Tasks.Task<Activity> GETAgreementsIdActivityFormatAsync (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
@@ -384,13 +384,13 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (Activity)</returns>
         System.Threading.Tasks.Task<ApiResponse<Activity>> GETAgreementsIdActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
@@ -400,9 +400,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of Agreement</returns>
         System.Threading.Tasks.Task<Agreement> GETAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
@@ -413,9 +413,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         System.Threading.Tasks.Task<ApiResponse<Agreement>> GETAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -425,9 +425,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of Agreement</returns>
         System.Threading.Tasks.Task<Agreement> PATCHAgreementsIdApiKeyFormatAsync (string acceptVersion, string authorization, int? id);
 
@@ -438,9 +438,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         System.Threading.Tasks.Task<ApiResponse<Agreement>> PATCHAgreementsIdApiKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -450,12 +450,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
         /// <returns>Task of Agreement</returns>
         System.Threading.Tasks.Task<Agreement> PATCHAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
 
@@ -466,12 +466,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         System.Threading.Tasks.Task<ApiResponse<Agreement>> PATCHAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null);
         /// <summary>
@@ -481,19 +481,19 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="owner">Is account owner. Default is false  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Task of Agreement</returns>
         System.Threading.Tasks.Task<Agreement> POSTAgreementsFormatAsync (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
 
@@ -504,19 +504,19 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="owner">Is account owner. Default is false  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         System.Threading.Tasks.Task<ApiResponse<Agreement>> POSTAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
         /// <summary>
@@ -526,18 +526,18 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Task of Agreement</returns>
         System.Threading.Tasks.Task<Agreement> PUTAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
 
@@ -548,18 +548,18 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         System.Threading.Tasks.Task<ApiResponse<Agreement>> PUTAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null);
         #endregion Asynchronous Operations
@@ -666,9 +666,9 @@ namespace IO.Swagger.Api
         /// Delete agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns></returns>
         public void DELETEAgreementsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -679,9 +679,9 @@ namespace IO.Swagger.Api
         /// Delete agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETEAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -746,9 +746,9 @@ namespace IO.Swagger.Api
         /// Delete agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETEAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
@@ -760,9 +760,9 @@ namespace IO.Swagger.Api
         /// Delete agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -827,17 +827,17 @@ namespace IO.Swagger.Api
         /// Get agreements  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  (optional)</param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
+        /// <param name="support">Return only or filter out support agreements  (optional)</param>
+        /// <param name="service">Filter by system agreement service name  (optional)</param>
+        /// <param name="me">If set, only show the agreement of the caller  (optional)</param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access.  (optional)</param>
         /// <returns>Agreement</returns>
         public Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
         {
@@ -849,17 +849,17 @@ namespace IO.Swagger.Api
         /// Get agreements  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  (optional)</param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
+        /// <param name="support">Return only or filter out support agreements  (optional)</param>
+        /// <param name="service">Filter by system agreement service name  (optional)</param>
+        /// <param name="me">If set, only show the agreement of the caller  (optional)</param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access.  (optional)</param>
         /// <returns>ApiResponse of Agreement</returns>
         public ApiResponse< Agreement > GETAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
         {
@@ -929,17 +929,17 @@ namespace IO.Swagger.Api
         /// Get agreements  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  (optional)</param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
+        /// <param name="support">Return only or filter out support agreements  (optional)</param>
+        /// <param name="service">Filter by system agreement service name  (optional)</param>
+        /// <param name="me">If set, only show the agreement of the caller  (optional)</param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access.  (optional)</param>
         /// <returns>Task of Agreement</returns>
         public async System.Threading.Tasks.Task<Agreement> GETAgreementsFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
         {
@@ -952,17 +952,17 @@ namespace IO.Swagger.Api
         /// Get agreements  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  (optional)</param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt;  (optional)</param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  (optional)</param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  (optional)</param>
+        /// <param name="support">Return only or filter out support agreements  (optional)</param>
+        /// <param name="service">Filter by system agreement service name  (optional)</param>
+        /// <param name="me">If set, only show the agreement of the caller  (optional)</param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access.  (optional)</param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Agreement>> GETAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null, bool? support = null, string service = null, bool? me = null, int? accountId = null)
         {
@@ -1032,13 +1032,13 @@ namespace IO.Swagger.Api
         /// Get agreement activity  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Activity</returns>
         public Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1050,13 +1050,13 @@ namespace IO.Swagger.Api
         /// Get agreement activity  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>ApiResponse of Activity</returns>
         public ApiResponse< Activity > GETAgreementsIdActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1125,13 +1125,13 @@ namespace IO.Swagger.Api
         /// Get agreement activity  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of Activity</returns>
         public async System.Threading.Tasks.Task<Activity> GETAgreementsIdActivityFormatAsync (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1144,13 +1144,13 @@ namespace IO.Swagger.Api
         /// Get agreement activity  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (Activity)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Activity>> GETAgreementsIdActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1219,9 +1219,9 @@ namespace IO.Swagger.Api
         /// Get agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Agreement</returns>
         public Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -1233,9 +1233,9 @@ namespace IO.Swagger.Api
         /// Get agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>ApiResponse of Agreement</returns>
         public ApiResponse< Agreement > GETAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -1300,9 +1300,9 @@ namespace IO.Swagger.Api
         /// Get agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of Agreement</returns>
         public async System.Threading.Tasks.Task<Agreement> GETAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
@@ -1315,9 +1315,9 @@ namespace IO.Swagger.Api
         /// Get agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Agreement>> GETAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -1382,9 +1382,9 @@ namespace IO.Swagger.Api
         /// Regenerate the API key for this agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Agreement</returns>
         public Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id)
         {
@@ -1396,9 +1396,9 @@ namespace IO.Swagger.Api
         /// Regenerate the API key for this agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>ApiResponse of Agreement</returns>
         public ApiResponse< Agreement > PATCHAgreementsIdApiKeyFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -1463,9 +1463,9 @@ namespace IO.Swagger.Api
         /// Regenerate the API key for this agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of Agreement</returns>
         public async System.Threading.Tasks.Task<Agreement> PATCHAgreementsIdApiKeyFormatAsync (string acceptVersion, string authorization, int? id)
         {
@@ -1478,9 +1478,9 @@ namespace IO.Swagger.Api
         /// Regenerate the API key for this agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Agreement>> PATCHAgreementsIdApiKeyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -1545,12 +1545,12 @@ namespace IO.Swagger.Api
         /// Update agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
         /// <returns>Agreement</returns>
         public Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
         {
@@ -1562,12 +1562,12 @@ namespace IO.Swagger.Api
         /// Update agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
         /// <returns>ApiResponse of Agreement</returns>
         public ApiResponse< Agreement > PATCHAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
         {
@@ -1639,12 +1639,12 @@ namespace IO.Swagger.Api
         /// Update agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
         /// <returns>Task of Agreement</returns>
         public async System.Threading.Tasks.Task<Agreement> PATCHAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
         {
@@ -1657,12 +1657,12 @@ namespace IO.Swagger.Api
         /// Update agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Agreement>> PATCHAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner = null, string description = null)
         {
@@ -1734,19 +1734,19 @@ namespace IO.Swagger.Api
         /// Create agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="owner">Is account owner. Default is false  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Agreement</returns>
         public Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
@@ -1758,19 +1758,19 @@ namespace IO.Swagger.Api
         /// Create agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="owner">Is account owner. Default is false  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>ApiResponse of Agreement</returns>
         public ApiResponse< Agreement > POSTAgreementsFormatWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
@@ -1849,19 +1849,19 @@ namespace IO.Swagger.Api
         /// Create agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="owner">Is account owner. Default is false  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Task of Agreement</returns>
         public async System.Threading.Tasks.Task<Agreement> POSTAgreementsFormatAsync (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
@@ -1874,19 +1874,19 @@ namespace IO.Swagger.Api
         /// Create agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  (optional)</param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional)</param>
+        /// <param name="owner">Is account owner. Default is false  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Agreement>> POSTAgreementsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail = null, string systemUser = null, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
@@ -1965,18 +1965,18 @@ namespace IO.Swagger.Api
         /// Replace agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Agreement</returns>
         public Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
@@ -1988,18 +1988,18 @@ namespace IO.Swagger.Api
         /// Replace agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>ApiResponse of Agreement</returns>
         public ApiResponse< Agreement > PUTAgreementsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
@@ -2080,18 +2080,18 @@ namespace IO.Swagger.Api
         /// Replace agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Task of Agreement</returns>
         public async System.Threading.Tasks.Task<Agreement> PUTAgreementsIdFormatAsync (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {
@@ -2104,18 +2104,18 @@ namespace IO.Swagger.Api
         /// Replace agreement  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt;  (optional)</param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner  (optional)</param>
+        /// <param name="description">Description of the account  (optional)</param>
+        /// <param name="aclPermissionsGet">Allow GET  (optional)</param>
+        /// <param name="aclPermissionsPost">Allow POST  (optional)</param>
+        /// <param name="aclPermissionsPut">Allow PUT  (optional)</param>
+        /// <param name="aclPermissionsDelete">Allow DELETE  (optional)</param>
+        /// <param name="aclPermissionsPatch">Allow PATCH  (optional)</param>
         /// <returns>Task of ApiResponse (Agreement)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Agreement>> PUTAgreementsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner = null, string description = null, bool? aclPermissionsGet = null, bool? aclPermissionsPost = null, bool? aclPermissionsPut = null, bool? aclPermissionsDelete = null, bool? aclPermissionsPatch = null)
         {

@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,9 +31,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
         /// <returns></returns>
         void DELETEPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id);
 
@@ -44,9 +44,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETEPayoutsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -56,26 +56,26 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt;  (optional)</param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payouts&lt;/p&gt;  (optional)</param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt;  (optional)</param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt;  (optional)</param>
-        /// <param name="id">&lt;p&gt;Find by payout id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year  (optional)</param>
+        /// <param name="dateMonth">Month  (optional)</param>
+        /// <param name="dateDay">Day of the month  (optional)</param>
+        /// <param name="dateHour">Hour of the day  (optional)</param>
+        /// <param name="dateMinute">Minute of the hour  (optional)</param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
+        /// <param name="accepted">Return accepted payouts  (optional)</param>
+        /// <param name="orderId">Find by order_id  (optional)</param>
+        /// <param name="state">Find by state  (optional)</param>
+        /// <param name="id">Find by payout id  (optional)</param>
+        /// <param name="acquirer">Filter by acquirer  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Payout</returns>
         Payout GETPayoutsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
@@ -86,26 +86,26 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt;  (optional)</param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payouts&lt;/p&gt;  (optional)</param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt;  (optional)</param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt;  (optional)</param>
-        /// <param name="id">&lt;p&gt;Find by payout id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year  (optional)</param>
+        /// <param name="dateMonth">Month  (optional)</param>
+        /// <param name="dateDay">Day of the month  (optional)</param>
+        /// <param name="dateHour">Hour of the day  (optional)</param>
+        /// <param name="dateMinute">Minute of the hour  (optional)</param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
+        /// <param name="accepted">Return accepted payouts  (optional)</param>
+        /// <param name="orderId">Find by order_id  (optional)</param>
+        /// <param name="state">Find by state  (optional)</param>
+        /// <param name="id">Find by payout id  (optional)</param>
+        /// <param name="acquirer">Filter by acquirer  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>ApiResponse of Payout</returns>
         ApiResponse<Payout> GETPayoutsFormatWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
@@ -115,10 +115,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
         /// <returns>Payout</returns>
         Payout GETPayoutsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null);
 
@@ -129,10 +129,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
         /// <returns>ApiResponse of Payout</returns>
         ApiResponse<Payout> GETPayoutsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null);
         /// <summary>
@@ -142,10 +142,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>Operation</returns>
         Operation GETPayoutsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId);
 
@@ -156,10 +156,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>ApiResponse of Operation</returns>
         ApiResponse<Operation> GETPayoutsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId);
         /// <summary>
@@ -169,12 +169,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Payout</returns>
-        Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null);
+        Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, string variables = null);
 
         /// <summary>
         /// Update payout
@@ -183,12 +183,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>ApiResponse of Payout</returns>
-        ApiResponse<Payout> PATCHPayoutsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null);
+        ApiResponse<Payout> PATCHPayoutsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string variables = null);
         /// <summary>
         /// Create payout
         /// </summary>
@@ -196,14 +196,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
         /// <returns>Payout</returns>
-        Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null);
+        Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, string variables = null, string textOnStatement = null);
 
         /// <summary>
         /// Create payout
@@ -212,14 +212,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
         /// <returns>ApiResponse of Payout</returns>
-        ApiResponse<Payout> POSTPayoutsFormatWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null);
+        ApiResponse<Payout> POSTPayoutsFormatWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, string variables = null, string textOnStatement = null);
         /// <summary>
         /// Authorize a payout
         /// </summary>
@@ -227,37 +227,37 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt;  (optional)</param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt;  (optional)</param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt;  (optional)</param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  (optional)</param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt;  (optional)</param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt;  (optional)</param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt;  (optional)</param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="vatRate">Vate rate  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardExpiration">Expiration date (YYMM)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="cardStatus">3D-Secure status  (optional)</param>
+        /// <param name="cardEci">3D-Secure eci  (optional)</param>
+        /// <param name="cardXav">3D-Secure xav  (optional)</param>
+        /// <param name="cardCavv">3D-Secure cavv  (optional)</param>
+        /// <param name="mobileNumber">Mobile number  (optional)</param>
+        /// <param name="ninNumber">Customer NIN Number  (optional)</param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3)  (optional)</param>
+        /// <param name="ninGender">Customer gender  (optional)</param>
+        /// <param name="personFirstName">Person first name  (optional)</param>
+        /// <param name="personLastName">Person last name  (optional)</param>
+        /// <param name="personEmail">Person email  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Payout</returns>
-        Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, string extras = null);
 
         /// <summary>
         /// Authorize a payout
@@ -266,37 +266,37 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt;  (optional)</param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt;  (optional)</param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt;  (optional)</param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  (optional)</param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt;  (optional)</param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt;  (optional)</param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt;  (optional)</param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="vatRate">Vate rate  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardExpiration">Expiration date (YYMM)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="cardStatus">3D-Secure status  (optional)</param>
+        /// <param name="cardEci">3D-Secure eci  (optional)</param>
+        /// <param name="cardXav">3D-Secure xav  (optional)</param>
+        /// <param name="cardCavv">3D-Secure cavv  (optional)</param>
+        /// <param name="mobileNumber">Mobile number  (optional)</param>
+        /// <param name="ninNumber">Customer NIN Number  (optional)</param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3)  (optional)</param>
+        /// <param name="ninGender">Customer gender  (optional)</param>
+        /// <param name="personFirstName">Person first name  (optional)</param>
+        /// <param name="personLastName">Person last name  (optional)</param>
+        /// <param name="personEmail">Person email  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>ApiResponse of Payout</returns>
-        ApiResponse<Payout> POSTPayoutsIdCreditFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        ApiResponse<Payout> POSTPayoutsIdCreditFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, string extras = null);
         /// <summary>
         /// Create or update a payout link
         /// </summary>
@@ -304,24 +304,24 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to credit&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after credit&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount to credit </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after credit  (optional)</param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackUrl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>PaymentLinkUrl</returns>
-        PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null);
 
         /// <summary>
         /// Create or update a payout link
@@ -330,24 +330,24 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to credit&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after credit&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount to credit </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after credit  (optional)</param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackUrl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>ApiResponse of PaymentLinkUrl</returns>
-        ApiResponse<PaymentLinkUrl> PUTPayoutsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        ApiResponse<PaymentLinkUrl> PUTPayoutsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -357,9 +357,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETEPayoutsIdLinkFormatAsync (string acceptVersion, string authorization, int? id);
 
@@ -370,9 +370,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETEPayoutsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -382,26 +382,26 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt;  (optional)</param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payouts&lt;/p&gt;  (optional)</param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt;  (optional)</param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt;  (optional)</param>
-        /// <param name="id">&lt;p&gt;Find by payout id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year  (optional)</param>
+        /// <param name="dateMonth">Month  (optional)</param>
+        /// <param name="dateDay">Day of the month  (optional)</param>
+        /// <param name="dateHour">Hour of the day  (optional)</param>
+        /// <param name="dateMinute">Minute of the hour  (optional)</param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
+        /// <param name="accepted">Return accepted payouts  (optional)</param>
+        /// <param name="orderId">Find by order_id  (optional)</param>
+        /// <param name="state">Find by state  (optional)</param>
+        /// <param name="id">Find by payout id  (optional)</param>
+        /// <param name="acquirer">Filter by acquirer  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of Payout</returns>
         System.Threading.Tasks.Task<Payout> GETPayoutsFormatAsync (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
@@ -412,26 +412,26 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt;  (optional)</param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payouts&lt;/p&gt;  (optional)</param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt;  (optional)</param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt;  (optional)</param>
-        /// <param name="id">&lt;p&gt;Find by payout id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year  (optional)</param>
+        /// <param name="dateMonth">Month  (optional)</param>
+        /// <param name="dateDay">Day of the month  (optional)</param>
+        /// <param name="dateHour">Hour of the day  (optional)</param>
+        /// <param name="dateMinute">Minute of the hour  (optional)</param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
+        /// <param name="accepted">Return accepted payouts  (optional)</param>
+        /// <param name="orderId">Find by order_id  (optional)</param>
+        /// <param name="state">Find by state  (optional)</param>
+        /// <param name="id">Find by payout id  (optional)</param>
+        /// <param name="acquirer">Filter by acquirer  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
         System.Threading.Tasks.Task<ApiResponse<Payout>> GETPayoutsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
@@ -441,10 +441,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
         /// <returns>Task of Payout</returns>
         System.Threading.Tasks.Task<Payout> GETPayoutsIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationsSize = null);
 
@@ -455,10 +455,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
         System.Threading.Tasks.Task<ApiResponse<Payout>> GETPayoutsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null);
         /// <summary>
@@ -468,10 +468,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>Task of Operation</returns>
         System.Threading.Tasks.Task<Operation> GETPayoutsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId);
 
@@ -482,10 +482,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>Task of ApiResponse (Operation)</returns>
         System.Threading.Tasks.Task<ApiResponse<Operation>> GETPayoutsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId);
         /// <summary>
@@ -495,12 +495,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Task of Payout</returns>
-        System.Threading.Tasks.Task<Payout> PATCHPayoutsIdFormatAsync (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null);
+        System.Threading.Tasks.Task<Payout> PATCHPayoutsIdFormatAsync (string acceptVersion, string authorization, int? id, string variables = null);
 
         /// <summary>
         /// Update payout
@@ -509,12 +509,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Payout>> PATCHPayoutsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null);
+        System.Threading.Tasks.Task<ApiResponse<Payout>> PATCHPayoutsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string variables = null);
         /// <summary>
         /// Create payout
         /// </summary>
@@ -522,14 +522,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
         /// <returns>Task of Payout</returns>
-        System.Threading.Tasks.Task<Payout> POSTPayoutsFormatAsync (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null);
+        System.Threading.Tasks.Task<Payout> POSTPayoutsFormatAsync (string acceptVersion, string authorization, string currency, string orderId, string variables = null, string textOnStatement = null);
 
         /// <summary>
         /// Create payout
@@ -538,14 +538,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Payout>> POSTPayoutsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null);
+        System.Threading.Tasks.Task<ApiResponse<Payout>> POSTPayoutsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, string variables = null, string textOnStatement = null);
         /// <summary>
         /// Authorize a payout
         /// </summary>
@@ -553,37 +553,37 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt;  (optional)</param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt;  (optional)</param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt;  (optional)</param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  (optional)</param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt;  (optional)</param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt;  (optional)</param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt;  (optional)</param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="vatRate">Vate rate  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardExpiration">Expiration date (YYMM)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="cardStatus">3D-Secure status  (optional)</param>
+        /// <param name="cardEci">3D-Secure eci  (optional)</param>
+        /// <param name="cardXav">3D-Secure xav  (optional)</param>
+        /// <param name="cardCavv">3D-Secure cavv  (optional)</param>
+        /// <param name="mobileNumber">Mobile number  (optional)</param>
+        /// <param name="ninNumber">Customer NIN Number  (optional)</param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3)  (optional)</param>
+        /// <param name="ninGender">Customer gender  (optional)</param>
+        /// <param name="personFirstName">Person first name  (optional)</param>
+        /// <param name="personLastName">Person last name  (optional)</param>
+        /// <param name="personEmail">Person email  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Task of Payout</returns>
-        System.Threading.Tasks.Task<Payout> POSTPayoutsIdCreditFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        System.Threading.Tasks.Task<Payout> POSTPayoutsIdCreditFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, string extras = null);
 
         /// <summary>
         /// Authorize a payout
@@ -592,37 +592,37 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt;  (optional)</param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt;  (optional)</param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt;  (optional)</param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  (optional)</param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt;  (optional)</param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt;  (optional)</param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt;  (optional)</param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="vatRate">Vate rate  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardExpiration">Expiration date (YYMM)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="cardStatus">3D-Secure status  (optional)</param>
+        /// <param name="cardEci">3D-Secure eci  (optional)</param>
+        /// <param name="cardXav">3D-Secure xav  (optional)</param>
+        /// <param name="cardCavv">3D-Secure cavv  (optional)</param>
+        /// <param name="mobileNumber">Mobile number  (optional)</param>
+        /// <param name="ninNumber">Customer NIN Number  (optional)</param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3)  (optional)</param>
+        /// <param name="ninGender">Customer gender  (optional)</param>
+        /// <param name="personFirstName">Person first name  (optional)</param>
+        /// <param name="personLastName">Person last name  (optional)</param>
+        /// <param name="personEmail">Person email  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Payout>> POSTPayoutsIdCreditFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        System.Threading.Tasks.Task<ApiResponse<Payout>> POSTPayoutsIdCreditFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, string extras = null);
         /// <summary>
         /// Create or update a payout link
         /// </summary>
@@ -630,24 +630,24 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to credit&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after credit&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount to credit </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after credit  (optional)</param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackUrl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>Task of PaymentLinkUrl</returns>
-        System.Threading.Tasks.Task<PaymentLinkUrl> PUTPayoutsIdLinkFormatAsync (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        System.Threading.Tasks.Task<PaymentLinkUrl> PUTPayoutsIdLinkFormatAsync (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null);
 
         /// <summary>
         /// Create or update a payout link
@@ -656,24 +656,24 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to credit&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after credit&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount to credit </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after credit  (optional)</param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackUrl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>Task of ApiResponse (PaymentLinkUrl)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PaymentLinkUrl>> PUTPayoutsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        System.Threading.Tasks.Task<ApiResponse<PaymentLinkUrl>> PUTPayoutsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null);
         #endregion Asynchronous Operations
     }
 
@@ -778,9 +778,9 @@ namespace IO.Swagger.Api
         /// Delete payout link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
         /// <returns></returns>
         public void DELETEPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id)
         {
@@ -791,9 +791,9 @@ namespace IO.Swagger.Api
         /// Delete payout link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETEPayoutsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -858,9 +858,9 @@ namespace IO.Swagger.Api
         /// Delete payout link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETEPayoutsIdLinkFormatAsync (string acceptVersion, string authorization, int? id)
         {
@@ -872,9 +872,9 @@ namespace IO.Swagger.Api
         /// Delete payout link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEPayoutsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -939,26 +939,26 @@ namespace IO.Swagger.Api
         /// Get payouts  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt;  (optional)</param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payouts&lt;/p&gt;  (optional)</param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt;  (optional)</param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt;  (optional)</param>
-        /// <param name="id">&lt;p&gt;Find by payout id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year  (optional)</param>
+        /// <param name="dateMonth">Month  (optional)</param>
+        /// <param name="dateDay">Day of the month  (optional)</param>
+        /// <param name="dateHour">Hour of the day  (optional)</param>
+        /// <param name="dateMinute">Minute of the hour  (optional)</param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
+        /// <param name="accepted">Return accepted payouts  (optional)</param>
+        /// <param name="orderId">Find by order_id  (optional)</param>
+        /// <param name="state">Find by state  (optional)</param>
+        /// <param name="id">Find by payout id  (optional)</param>
+        /// <param name="acquirer">Filter by acquirer  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Payout</returns>
         public Payout GETPayoutsFormat (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -970,26 +970,26 @@ namespace IO.Swagger.Api
         /// Get payouts  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt;  (optional)</param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payouts&lt;/p&gt;  (optional)</param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt;  (optional)</param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt;  (optional)</param>
-        /// <param name="id">&lt;p&gt;Find by payout id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year  (optional)</param>
+        /// <param name="dateMonth">Month  (optional)</param>
+        /// <param name="dateDay">Day of the month  (optional)</param>
+        /// <param name="dateHour">Hour of the day  (optional)</param>
+        /// <param name="dateMinute">Minute of the hour  (optional)</param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
+        /// <param name="accepted">Return accepted payouts  (optional)</param>
+        /// <param name="orderId">Find by order_id  (optional)</param>
+        /// <param name="state">Find by state  (optional)</param>
+        /// <param name="id">Find by payout id  (optional)</param>
+        /// <param name="acquirer">Filter by acquirer  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>ApiResponse of Payout</returns>
         public ApiResponse< Payout > GETPayoutsFormatWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1068,26 +1068,26 @@ namespace IO.Swagger.Api
         /// Get payouts  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt;  (optional)</param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payouts&lt;/p&gt;  (optional)</param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt;  (optional)</param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt;  (optional)</param>
-        /// <param name="id">&lt;p&gt;Find by payout id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year  (optional)</param>
+        /// <param name="dateMonth">Month  (optional)</param>
+        /// <param name="dateDay">Day of the month  (optional)</param>
+        /// <param name="dateHour">Hour of the day  (optional)</param>
+        /// <param name="dateMinute">Minute of the hour  (optional)</param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
+        /// <param name="accepted">Return accepted payouts  (optional)</param>
+        /// <param name="orderId">Find by order_id  (optional)</param>
+        /// <param name="state">Find by state  (optional)</param>
+        /// <param name="id">Find by payout id  (optional)</param>
+        /// <param name="acquirer">Filter by acquirer  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of Payout</returns>
         public async System.Threading.Tasks.Task<Payout> GETPayoutsFormatAsync (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1100,26 +1100,26 @@ namespace IO.Swagger.Api
         /// Get payouts  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt;  (optional)</param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt;  (optional)</param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt;  (optional)</param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payouts&lt;/p&gt;  (optional)</param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt;  (optional)</param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt;  (optional)</param>
-        /// <param name="id">&lt;p&gt;Find by payout id&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year  (optional)</param>
+        /// <param name="dateMonth">Month  (optional)</param>
+        /// <param name="dateDay">Day of the month  (optional)</param>
+        /// <param name="dateHour">Hour of the day  (optional)</param>
+        /// <param name="dateMinute">Minute of the hour  (optional)</param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
+        /// <param name="accepted">Return accepted payouts  (optional)</param>
+        /// <param name="orderId">Find by order_id  (optional)</param>
+        /// <param name="state">Find by state  (optional)</param>
+        /// <param name="id">Find by payout id  (optional)</param>
+        /// <param name="acquirer">Filter by acquirer  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Payout>> GETPayoutsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? dateYear = null, int? dateMonth = null, int? dateDay = null, int? dateHour = null, int? dateMinute = null, string timestamp = null, string minTime = null, string maxTime = null, int? operationsSize = null, bool? accepted = null, string orderId = null, string state = null, int? id = null, string acquirer = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1198,10 +1198,10 @@ namespace IO.Swagger.Api
         /// Get payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
         /// <returns>Payout</returns>
         public Payout GETPayoutsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize = null)
         {
@@ -1213,10 +1213,10 @@ namespace IO.Swagger.Api
         /// Get payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
         /// <returns>ApiResponse of Payout</returns>
         public ApiResponse< Payout > GETPayoutsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null)
         {
@@ -1282,10 +1282,10 @@ namespace IO.Swagger.Api
         /// Get payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
         /// <returns>Task of Payout</returns>
         public async System.Threading.Tasks.Task<Payout> GETPayoutsIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationsSize = null)
         {
@@ -1298,10 +1298,10 @@ namespace IO.Swagger.Api
         /// Get payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve  (optional)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Payout>> GETPayoutsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationsSize = null)
         {
@@ -1367,10 +1367,10 @@ namespace IO.Swagger.Api
         /// Get Operation  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>Operation</returns>
         public Operation GETPayoutsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
         {
@@ -1382,10 +1382,10 @@ namespace IO.Swagger.Api
         /// Get Operation  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>ApiResponse of Operation</returns>
         public ApiResponse< Operation > GETPayoutsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId)
         {
@@ -1454,10 +1454,10 @@ namespace IO.Swagger.Api
         /// Get Operation  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>Task of Operation</returns>
         public async System.Threading.Tasks.Task<Operation> GETPayoutsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? id, int? operationId)
         {
@@ -1470,10 +1470,10 @@ namespace IO.Swagger.Api
         /// Get Operation  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>Task of ApiResponse (Operation)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Operation>> GETPayoutsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? operationId)
         {
@@ -1542,12 +1542,12 @@ namespace IO.Swagger.Api
         /// Update payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Payout</returns>
-        public Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null)
+        public Payout PATCHPayoutsIdFormat (string acceptVersion, string authorization, int? id, string variables = null)
         {
              ApiResponse<Payout> localVarResponse = PATCHPayoutsIdFormatWithHttpInfo(acceptVersion, authorization, id, variables);
              return localVarResponse.Data;
@@ -1557,12 +1557,12 @@ namespace IO.Swagger.Api
         /// Update payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>ApiResponse of Payout</returns>
-        public ApiResponse< Payout > PATCHPayoutsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null)
+        public ApiResponse< Payout > PATCHPayoutsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1627,12 +1627,12 @@ namespace IO.Swagger.Api
         /// Update payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Task of Payout</returns>
-        public async System.Threading.Tasks.Task<Payout> PATCHPayoutsIdFormatAsync (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null)
+        public async System.Threading.Tasks.Task<Payout> PATCHPayoutsIdFormatAsync (string acceptVersion, string authorization, int? id, string variables = null)
         {
              ApiResponse<Payout> localVarResponse = await PATCHPayoutsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, variables);
              return localVarResponse.Data;
@@ -1643,12 +1643,12 @@ namespace IO.Swagger.Api
         /// Update payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Payout>> PATCHPayoutsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, Dictionary<string, string> variables = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Payout>> PATCHPayoutsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1713,14 +1713,14 @@ namespace IO.Swagger.Api
         /// Create payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
         /// <returns>Payout</returns>
-        public Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null)
+        public Payout POSTPayoutsFormat (string acceptVersion, string authorization, string currency, string orderId, string variables = null, string textOnStatement = null)
         {
              ApiResponse<Payout> localVarResponse = POSTPayoutsFormatWithHttpInfo(acceptVersion, authorization, currency, orderId, variables, textOnStatement);
              return localVarResponse.Data;
@@ -1730,14 +1730,14 @@ namespace IO.Swagger.Api
         /// Create payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
         /// <returns>ApiResponse of Payout</returns>
-        public ApiResponse< Payout > POSTPayoutsFormatWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null)
+        public ApiResponse< Payout > POSTPayoutsFormatWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, string variables = null, string textOnStatement = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1807,14 +1807,14 @@ namespace IO.Swagger.Api
         /// Create payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
         /// <returns>Task of Payout</returns>
-        public async System.Threading.Tasks.Task<Payout> POSTPayoutsFormatAsync (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null)
+        public async System.Threading.Tasks.Task<Payout> POSTPayoutsFormatAsync (string acceptVersion, string authorization, string currency, string orderId, string variables = null, string textOnStatement = null)
         {
              ApiResponse<Payout> localVarResponse = await POSTPayoutsFormatAsyncWithHttpInfo(acceptVersion, authorization, currency, orderId, variables, textOnStatement);
              return localVarResponse.Data;
@@ -1825,14 +1825,14 @@ namespace IO.Swagger.Api
         /// Create payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Payout>> POSTPayoutsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, Dictionary<string, string> variables = null, string textOnStatement = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Payout>> POSTPayoutsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string currency, string orderId, string variables = null, string textOnStatement = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1902,37 +1902,37 @@ namespace IO.Swagger.Api
         /// Authorize a payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt;  (optional)</param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt;  (optional)</param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt;  (optional)</param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  (optional)</param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt;  (optional)</param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt;  (optional)</param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt;  (optional)</param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="vatRate">Vate rate  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardExpiration">Expiration date (YYMM)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="cardStatus">3D-Secure status  (optional)</param>
+        /// <param name="cardEci">3D-Secure eci  (optional)</param>
+        /// <param name="cardXav">3D-Secure xav  (optional)</param>
+        /// <param name="cardCavv">3D-Secure cavv  (optional)</param>
+        /// <param name="mobileNumber">Mobile number  (optional)</param>
+        /// <param name="ninNumber">Customer NIN Number  (optional)</param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3)  (optional)</param>
+        /// <param name="ninGender">Customer gender  (optional)</param>
+        /// <param name="personFirstName">Person first name  (optional)</param>
+        /// <param name="personLastName">Person last name  (optional)</param>
+        /// <param name="personEmail">Person email  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Payout</returns>
-        public Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        public Payout POSTPayoutsIdCreditFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, string extras = null)
         {
              ApiResponse<Payout> localVarResponse = POSTPayoutsIdCreditFormatWithHttpInfo(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
              return localVarResponse.Data;
@@ -1942,37 +1942,37 @@ namespace IO.Swagger.Api
         /// Authorize a payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt;  (optional)</param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt;  (optional)</param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt;  (optional)</param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  (optional)</param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt;  (optional)</param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt;  (optional)</param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt;  (optional)</param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="vatRate">Vate rate  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardExpiration">Expiration date (YYMM)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="cardStatus">3D-Secure status  (optional)</param>
+        /// <param name="cardEci">3D-Secure eci  (optional)</param>
+        /// <param name="cardXav">3D-Secure xav  (optional)</param>
+        /// <param name="cardCavv">3D-Secure cavv  (optional)</param>
+        /// <param name="mobileNumber">Mobile number  (optional)</param>
+        /// <param name="ninNumber">Customer NIN Number  (optional)</param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3)  (optional)</param>
+        /// <param name="ninGender">Customer gender  (optional)</param>
+        /// <param name="personFirstName">Person first name  (optional)</param>
+        /// <param name="personLastName">Person last name  (optional)</param>
+        /// <param name="personEmail">Person email  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>ApiResponse of Payout</returns>
-        public ApiResponse< Payout > POSTPayoutsIdCreditFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        public ApiResponse< Payout > POSTPayoutsIdCreditFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, string extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2065,37 +2065,37 @@ namespace IO.Swagger.Api
         /// Authorize a payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt;  (optional)</param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt;  (optional)</param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt;  (optional)</param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  (optional)</param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt;  (optional)</param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt;  (optional)</param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt;  (optional)</param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="vatRate">Vate rate  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardExpiration">Expiration date (YYMM)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="cardStatus">3D-Secure status  (optional)</param>
+        /// <param name="cardEci">3D-Secure eci  (optional)</param>
+        /// <param name="cardXav">3D-Secure xav  (optional)</param>
+        /// <param name="cardCavv">3D-Secure cavv  (optional)</param>
+        /// <param name="mobileNumber">Mobile number  (optional)</param>
+        /// <param name="ninNumber">Customer NIN Number  (optional)</param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3)  (optional)</param>
+        /// <param name="ninGender">Customer gender  (optional)</param>
+        /// <param name="personFirstName">Person first name  (optional)</param>
+        /// <param name="personLastName">Person last name  (optional)</param>
+        /// <param name="personEmail">Person email  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Task of Payout</returns>
-        public async System.Threading.Tasks.Task<Payout> POSTPayoutsIdCreditFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        public async System.Threading.Tasks.Task<Payout> POSTPayoutsIdCreditFormatAsync (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, string extras = null)
         {
              ApiResponse<Payout> localVarResponse = await POSTPayoutsIdCreditFormatAsyncWithHttpInfo(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
              return localVarResponse.Data;
@@ -2106,37 +2106,37 @@ namespace IO.Swagger.Api
         /// Authorize a payout  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt;  (optional)</param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt;  (optional)</param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt;  (optional)</param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt;  (optional)</param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  (optional)</param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt;  (optional)</param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt;  (optional)</param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt;  (optional)</param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="vatRate">Vate rate  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardExpiration">Expiration date (YYMM)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="cardStatus">3D-Secure status  (optional)</param>
+        /// <param name="cardEci">3D-Secure eci  (optional)</param>
+        /// <param name="cardXav">3D-Secure xav  (optional)</param>
+        /// <param name="cardCavv">3D-Secure cavv  (optional)</param>
+        /// <param name="mobileNumber">Mobile number  (optional)</param>
+        /// <param name="ninNumber">Customer NIN Number  (optional)</param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3)  (optional)</param>
+        /// <param name="ninGender">Customer gender  (optional)</param>
+        /// <param name="personFirstName">Person first name  (optional)</param>
+        /// <param name="personLastName">Person last name  (optional)</param>
+        /// <param name="personEmail">Person email  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Task of ApiResponse (Payout)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Payout>> POSTPayoutsIdCreditFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Payout>> POSTPayoutsIdCreditFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, string acquirer = null, string customerIp = null, string extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2229,24 +2229,24 @@ namespace IO.Swagger.Api
         /// Create or update a payout link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to credit&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after credit&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount to credit </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after credit  (optional)</param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackUrl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>PaymentLinkUrl</returns>
-        public PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        public PaymentLinkUrl PUTPayoutsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null)
         {
              ApiResponse<PaymentLinkUrl> localVarResponse = PUTPayoutsIdLinkFormatWithHttpInfo(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
              return localVarResponse.Data;
@@ -2256,24 +2256,24 @@ namespace IO.Swagger.Api
         /// Create or update a payout link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to credit&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after credit&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount to credit </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after credit  (optional)</param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackUrl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>ApiResponse of PaymentLinkUrl</returns>
-        public ApiResponse< PaymentLinkUrl > PUTPayoutsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        public ApiResponse< PaymentLinkUrl > PUTPayoutsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2353,24 +2353,24 @@ namespace IO.Swagger.Api
         /// Create or update a payout link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to credit&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after credit&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount to credit </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after credit  (optional)</param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackUrl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>Task of PaymentLinkUrl</returns>
-        public async System.Threading.Tasks.Task<PaymentLinkUrl> PUTPayoutsIdLinkFormatAsync (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        public async System.Threading.Tasks.Task<PaymentLinkUrl> PUTPayoutsIdLinkFormatAsync (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null)
         {
              ApiResponse<PaymentLinkUrl> localVarResponse = await PUTPayoutsIdLinkFormatAsyncWithHttpInfo(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
              return localVarResponse.Data;
@@ -2381,24 +2381,24 @@ namespace IO.Swagger.Api
         /// Create or update a payout link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payout id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to credit&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after credit&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payout id </param>
+        /// <param name="amount">Amount to credit </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after credit  (optional)</param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackUrl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>Task of ApiResponse (PaymentLinkUrl)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<PaymentLinkUrl>> PUTPayoutsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        public async System.Threading.Tasks.Task<ApiResponse<PaymentLinkUrl>> PUTPayoutsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)

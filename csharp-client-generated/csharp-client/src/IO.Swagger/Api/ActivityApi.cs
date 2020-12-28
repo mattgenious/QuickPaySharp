@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,16 +31,16 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="userId">&lt;p&gt;Limit to activity by user_id&lt;/p&gt;  (optional)</param>
-        /// <param name="targetType">&lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  (optional)</param>
-        /// <param name="targetId">&lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  (optional)</param>
-        /// <param name="support">&lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="userId">Limit to activity by user_id  (optional)</param>
+        /// <param name="targetType">Filter by target type, e.g. ‘Payment’  (optional)</param>
+        /// <param name="targetId">Filter by target id, e.g. id of payment  (optional)</param>
+        /// <param name="support">Filter by whether a support user made the activity  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Activity</returns>
         Activity GETActivityFormat (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
@@ -52,16 +52,16 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="userId">&lt;p&gt;Limit to activity by user_id&lt;/p&gt;  (optional)</param>
-        /// <param name="targetType">&lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  (optional)</param>
-        /// <param name="targetId">&lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  (optional)</param>
-        /// <param name="support">&lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="userId">Limit to activity by user_id  (optional)</param>
+        /// <param name="targetType">Filter by target type, e.g. ‘Payment’  (optional)</param>
+        /// <param name="targetId">Filter by target id, e.g. id of payment  (optional)</param>
+        /// <param name="support">Filter by whether a support user made the activity  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>ApiResponse of Activity</returns>
         ApiResponse<Activity> GETActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
@@ -72,9 +72,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Activity entry id </param>
         /// <returns>Activity</returns>
         Activity GETActivityIdFormat (string acceptVersion, string authorization, string id);
 
@@ -85,9 +85,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Activity entry id </param>
         /// <returns>ApiResponse of Activity</returns>
         ApiResponse<Activity> GETActivityIdFormatWithHttpInfo (string acceptVersion, string authorization, string id);
         #endregion Synchronous Operations
@@ -99,16 +99,16 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="userId">&lt;p&gt;Limit to activity by user_id&lt;/p&gt;  (optional)</param>
-        /// <param name="targetType">&lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  (optional)</param>
-        /// <param name="targetId">&lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  (optional)</param>
-        /// <param name="support">&lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="userId">Limit to activity by user_id  (optional)</param>
+        /// <param name="targetType">Filter by target type, e.g. ‘Payment’  (optional)</param>
+        /// <param name="targetId">Filter by target id, e.g. id of payment  (optional)</param>
+        /// <param name="support">Filter by whether a support user made the activity  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of Activity</returns>
         System.Threading.Tasks.Task<Activity> GETActivityFormatAsync (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
@@ -120,16 +120,16 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="userId">&lt;p&gt;Limit to activity by user_id&lt;/p&gt;  (optional)</param>
-        /// <param name="targetType">&lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  (optional)</param>
-        /// <param name="targetId">&lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  (optional)</param>
-        /// <param name="support">&lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="userId">Limit to activity by user_id  (optional)</param>
+        /// <param name="targetType">Filter by target type, e.g. ‘Payment’  (optional)</param>
+        /// <param name="targetId">Filter by target id, e.g. id of payment  (optional)</param>
+        /// <param name="support">Filter by whether a support user made the activity  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of ApiResponse (Activity)</returns>
         System.Threading.Tasks.Task<ApiResponse<Activity>> GETActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null);
@@ -140,9 +140,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Activity entry id </param>
         /// <returns>Task of Activity</returns>
         System.Threading.Tasks.Task<Activity> GETActivityIdFormatAsync (string acceptVersion, string authorization, string id);
 
@@ -153,9 +153,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Activity entry id </param>
         /// <returns>Task of ApiResponse (Activity)</returns>
         System.Threading.Tasks.Task<ApiResponse<Activity>> GETActivityIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
         #endregion Asynchronous Operations
@@ -262,16 +262,16 @@ namespace IO.Swagger.Api
         /// Get activity  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="userId">&lt;p&gt;Limit to activity by user_id&lt;/p&gt;  (optional)</param>
-        /// <param name="targetType">&lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  (optional)</param>
-        /// <param name="targetId">&lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  (optional)</param>
-        /// <param name="support">&lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="userId">Limit to activity by user_id  (optional)</param>
+        /// <param name="targetType">Filter by target type, e.g. ‘Payment’  (optional)</param>
+        /// <param name="targetId">Filter by target id, e.g. id of payment  (optional)</param>
+        /// <param name="support">Filter by whether a support user made the activity  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Activity</returns>
         public Activity GETActivityFormat (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
@@ -284,16 +284,16 @@ namespace IO.Swagger.Api
         /// Get activity  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="userId">&lt;p&gt;Limit to activity by user_id&lt;/p&gt;  (optional)</param>
-        /// <param name="targetType">&lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  (optional)</param>
-        /// <param name="targetId">&lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  (optional)</param>
-        /// <param name="support">&lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="userId">Limit to activity by user_id  (optional)</param>
+        /// <param name="targetType">Filter by target type, e.g. ‘Payment’  (optional)</param>
+        /// <param name="targetId">Filter by target id, e.g. id of payment  (optional)</param>
+        /// <param name="support">Filter by whether a support user made the activity  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>ApiResponse of Activity</returns>
         public ApiResponse< Activity > GETActivityFormatWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
@@ -364,16 +364,16 @@ namespace IO.Swagger.Api
         /// Get activity  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="userId">&lt;p&gt;Limit to activity by user_id&lt;/p&gt;  (optional)</param>
-        /// <param name="targetType">&lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  (optional)</param>
-        /// <param name="targetId">&lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  (optional)</param>
-        /// <param name="support">&lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="userId">Limit to activity by user_id  (optional)</param>
+        /// <param name="targetType">Filter by target type, e.g. ‘Payment’  (optional)</param>
+        /// <param name="targetId">Filter by target id, e.g. id of payment  (optional)</param>
+        /// <param name="support">Filter by whether a support user made the activity  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of Activity</returns>
         public async System.Threading.Tasks.Task<Activity> GETActivityFormatAsync (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
@@ -387,16 +387,16 @@ namespace IO.Swagger.Api
         /// Get activity  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="userId">&lt;p&gt;Limit to activity by user_id&lt;/p&gt;  (optional)</param>
-        /// <param name="targetType">&lt;p&gt;Filter by target type, e.g. ‘Payment’&lt;/p&gt;  (optional)</param>
-        /// <param name="targetId">&lt;p&gt;Filter by target id, e.g. id of payment&lt;/p&gt;  (optional)</param>
-        /// <param name="support">&lt;p&gt;Filter by whether a support user made the activity&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="userId">Limit to activity by user_id  (optional)</param>
+        /// <param name="targetType">Filter by target type, e.g. ‘Payment’  (optional)</param>
+        /// <param name="targetId">Filter by target id, e.g. id of payment  (optional)</param>
+        /// <param name="support">Filter by whether a support user made the activity  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to created_at)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of ApiResponse (Activity)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Activity>> GETActivityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? userId = null, string targetType = null, int? targetId = null, bool? support = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, string pageKey = null)
@@ -467,9 +467,9 @@ namespace IO.Swagger.Api
         /// Get a single activity entry  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Activity entry id </param>
         /// <returns>Activity</returns>
         public Activity GETActivityIdFormat (string acceptVersion, string authorization, string id)
         {
@@ -481,9 +481,9 @@ namespace IO.Swagger.Api
         /// Get a single activity entry  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Activity entry id </param>
         /// <returns>ApiResponse of Activity</returns>
         public ApiResponse< Activity > GETActivityIdFormatWithHttpInfo (string acceptVersion, string authorization, string id)
         {
@@ -548,9 +548,9 @@ namespace IO.Swagger.Api
         /// Get a single activity entry  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Activity entry id </param>
         /// <returns>Task of Activity</returns>
         public async System.Threading.Tasks.Task<Activity> GETActivityIdFormatAsync (string acceptVersion, string authorization, string id)
         {
@@ -563,9 +563,9 @@ namespace IO.Swagger.Api
         /// Get a single activity entry  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Activity entry id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Activity entry id </param>
         /// <returns>Task of ApiResponse (Activity)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Activity>> GETActivityIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
         {

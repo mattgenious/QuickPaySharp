@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,8 +31,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         void DELETECryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id);
@@ -44,8 +44,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETECryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
@@ -56,8 +56,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         void DELETECryptographyKeysIdFormat (string acceptVersion, string authorization, int? id);
@@ -69,8 +69,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETECryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
@@ -81,13 +81,13 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type">  (optional)</param>
         /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>MerchantCryptographyKey</returns>
         MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
@@ -99,13 +99,13 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type">  (optional)</param>
         /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>ApiResponse of MerchantCryptographyKey</returns>
         ApiResponse<MerchantCryptographyKey> GETCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
@@ -116,8 +116,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         void GETCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id);
@@ -129,8 +129,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> GETCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
@@ -141,8 +141,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>MerchantCryptographyKey</returns>
         MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id);
@@ -154,8 +154,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of MerchantCryptographyKey</returns>
         ApiResponse<MerchantCryptographyKey> GETCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
@@ -166,8 +166,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
         /// <returns>MerchantCryptographyKey</returns>
@@ -180,8 +180,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
         /// <returns>ApiResponse of MerchantCryptographyKey</returns>
@@ -193,8 +193,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -209,8 +209,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -224,8 +224,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -240,8 +240,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -255,12 +255,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns></returns>
-        void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, ModelFile _file);
+        void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, System.IO.Stream _file);
 
         /// <summary>
         /// Replace certificate
@@ -269,12 +269,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, ModelFile _file);
+        ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, System.IO.Stream _file);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -284,8 +284,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETECryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id);
@@ -297,8 +297,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETECryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
@@ -309,8 +309,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETECryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id);
@@ -322,8 +322,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETECryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
@@ -334,13 +334,13 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type">  (optional)</param>
         /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of MerchantCryptographyKey</returns>
         System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
@@ -352,13 +352,13 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type">  (optional)</param>
         /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
         System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
@@ -369,8 +369,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task GETCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id);
@@ -382,8 +382,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> GETCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
@@ -394,8 +394,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of MerchantCryptographyKey</returns>
         System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id);
@@ -407,8 +407,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
         System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
@@ -419,8 +419,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
         /// <returns>Task of MerchantCryptographyKey</returns>
@@ -433,8 +433,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
         /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
@@ -446,8 +446,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -462,8 +462,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -477,8 +477,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -493,8 +493,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -508,12 +508,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, ModelFile _file);
+        System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, System.IO.Stream _file);
 
         /// <summary>
         /// Replace certificate
@@ -522,12 +522,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, ModelFile _file);
+        System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, System.IO.Stream _file);
         #endregion Asynchronous Operations
     }
 
@@ -632,8 +632,8 @@ namespace IO.Swagger.Api
         /// Delete certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         public void DELETECryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id)
@@ -645,8 +645,8 @@ namespace IO.Swagger.Api
         /// Delete certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETECryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
@@ -712,8 +712,8 @@ namespace IO.Swagger.Api
         /// Delete certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETECryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id)
@@ -726,8 +726,8 @@ namespace IO.Swagger.Api
         /// Delete certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETECryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
@@ -793,8 +793,8 @@ namespace IO.Swagger.Api
         /// Delete key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         public void DELETECryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
@@ -806,8 +806,8 @@ namespace IO.Swagger.Api
         /// Delete key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETECryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
@@ -873,8 +873,8 @@ namespace IO.Swagger.Api
         /// Delete key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETECryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id)
@@ -887,8 +887,8 @@ namespace IO.Swagger.Api
         /// Delete key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETECryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
@@ -954,13 +954,13 @@ namespace IO.Swagger.Api
         /// Get keys  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type">  (optional)</param>
         /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>MerchantCryptographyKey</returns>
         public MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
@@ -973,13 +973,13 @@ namespace IO.Swagger.Api
         /// Get keys  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type">  (optional)</param>
         /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>ApiResponse of MerchantCryptographyKey</returns>
         public ApiResponse< MerchantCryptographyKey > GETCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
@@ -1047,13 +1047,13 @@ namespace IO.Swagger.Api
         /// Get keys  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type">  (optional)</param>
         /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of MerchantCryptographyKey</returns>
         public async System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
@@ -1067,13 +1067,13 @@ namespace IO.Swagger.Api
         /// Get keys  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type">  (optional)</param>
         /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
@@ -1141,8 +1141,8 @@ namespace IO.Swagger.Api
         /// Get certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         public void GETCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id)
@@ -1154,8 +1154,8 @@ namespace IO.Swagger.Api
         /// Get certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> GETCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
@@ -1221,8 +1221,8 @@ namespace IO.Swagger.Api
         /// Get certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task GETCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id)
@@ -1235,8 +1235,8 @@ namespace IO.Swagger.Api
         /// Get certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> GETCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
@@ -1302,8 +1302,8 @@ namespace IO.Swagger.Api
         /// Get key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>MerchantCryptographyKey</returns>
         public MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
@@ -1316,8 +1316,8 @@ namespace IO.Swagger.Api
         /// Get key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of MerchantCryptographyKey</returns>
         public ApiResponse< MerchantCryptographyKey > GETCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
@@ -1383,8 +1383,8 @@ namespace IO.Swagger.Api
         /// Get key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of MerchantCryptographyKey</returns>
         public async System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id)
@@ -1398,8 +1398,8 @@ namespace IO.Swagger.Api
         /// Get key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
@@ -1465,8 +1465,8 @@ namespace IO.Swagger.Api
         /// update key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
         /// <returns>MerchantCryptographyKey</returns>
@@ -1480,8 +1480,8 @@ namespace IO.Swagger.Api
         /// update key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
         /// <returns>ApiResponse of MerchantCryptographyKey</returns>
@@ -1550,8 +1550,8 @@ namespace IO.Swagger.Api
         /// update key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
         /// <returns>Task of MerchantCryptographyKey</returns>
@@ -1566,8 +1566,8 @@ namespace IO.Swagger.Api
         /// update key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription">  (optional)</param>
         /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
@@ -1636,8 +1636,8 @@ namespace IO.Swagger.Api
         /// Create key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -1653,8 +1653,8 @@ namespace IO.Swagger.Api
         /// Create key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -1736,8 +1736,8 @@ namespace IO.Swagger.Api
         /// Create key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -1754,8 +1754,8 @@ namespace IO.Swagger.Api
         /// Create key  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -1837,8 +1837,8 @@ namespace IO.Swagger.Api
         /// Create certificate request (CSR)  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -1853,8 +1853,8 @@ namespace IO.Swagger.Api
         /// Create certificate request (CSR)  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -1936,8 +1936,8 @@ namespace IO.Swagger.Api
         /// Create certificate request (CSR)  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -1953,8 +1953,8 @@ namespace IO.Swagger.Api
         /// Create certificate request (CSR)  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -2036,12 +2036,12 @@ namespace IO.Swagger.Api
         /// Replace certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns></returns>
-        public void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, ModelFile _file)
+        public void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, System.IO.Stream _file)
         {
              PUTCryptographyKeysIdCertificateFormatWithHttpInfo(acceptVersion, authorization, id, _file);
         }
@@ -2050,12 +2050,12 @@ namespace IO.Swagger.Api
         /// Replace certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, ModelFile _file)
+        public ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, System.IO.Stream _file)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2098,14 +2098,7 @@ namespace IO.Swagger.Api
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (_file != null && _file.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(_file); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = _file; // byte array
-            }
+            if (_file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", _file));
 
 
             // make the HTTP request
@@ -2130,12 +2123,12 @@ namespace IO.Swagger.Api
         /// Replace certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, ModelFile _file)
+        public async System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, System.IO.Stream _file)
         {
              await PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo(acceptVersion, authorization, id, _file);
 
@@ -2145,12 +2138,12 @@ namespace IO.Swagger.Api
         /// Replace certificate  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, ModelFile _file)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, System.IO.Stream _file)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2193,14 +2186,7 @@ namespace IO.Swagger.Api
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (_file != null && _file.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(_file); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = _file; // byte array
-            }
+            if (_file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", _file));
 
 
             // make the HTTP request

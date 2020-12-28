@@ -37,10 +37,10 @@ namespace Example
         {
             
             var apiInstance = new FeesApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var acquirer = acquirer_example;  // string | <p>Name of acquirer</p> 
-            var paymentMethod = paymentMethod_example;  // string | <p>Payment method</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var acquirer = acquirer_example;  // string | Name of acquirer 
+            var paymentMethod = paymentMethod_example;  // string | Payment method 
 
             try
             {
@@ -60,10 +60,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **acquirer** | **string**| &lt;p&gt;Name of acquirer&lt;/p&gt;  | 
- **paymentMethod** | **string**| &lt;p&gt;Payment method&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **acquirer** | **string**| Name of acquirer  | 
+ **paymentMethod** | **string**| Payment method  | 
 
 ### Return type
 
@@ -104,9 +104,9 @@ namespace Example
         {
             
             var apiInstance = new FeesApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var acquirer = acquirer_example;  // string | <p>Name of acquirer</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var acquirer = acquirer_example;  // string | Name of acquirer 
 
             try
             {
@@ -127,9 +127,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **acquirer** | **string**| &lt;p&gt;Name of acquirer&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **acquirer** | **string**| Name of acquirer  | 
 
 ### Return type
 
@@ -170,10 +170,10 @@ namespace Example
         {
             
             var apiInstance = new FeesApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var acquirer = acquirer_example;  // string | <p>Name of acquirer</p> 
-            var paymentMethod = paymentMethod_example;  // string | <p>Payment method</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var acquirer = acquirer_example;  // string | Name of acquirer 
+            var paymentMethod = paymentMethod_example;  // string | Payment method 
 
             try
             {
@@ -194,10 +194,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **acquirer** | **string**| &lt;p&gt;Name of acquirer&lt;/p&gt;  | 
- **paymentMethod** | **string**| &lt;p&gt;Payment method&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **acquirer** | **string**| Name of acquirer  | 
+ **paymentMethod** | **string**| Payment method  | 
 
 ### Return type
 
@@ -238,10 +238,10 @@ namespace Example
         {
             
             var apiInstance = new FeesApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
 
             try
             {
@@ -262,10 +262,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
 
 ### Return type
 
@@ -306,11 +306,11 @@ namespace Example
         {
             
             var apiInstance = new FeesApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var acquirer = acquirer_example;  // string | <p>Name of acquirer</p> 
-            var paymentMethod = paymentMethod_example;  // string | <p>Payment method</p> 
-            var formula = formula_example;  // string | <p>The formula</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var acquirer = acquirer_example;  // string | Name of acquirer 
+            var paymentMethod = paymentMethod_example;  // string | Payment method 
+            var formula = formula_example;  // string | The formula  (optional) 
 
             try
             {
@@ -331,11 +331,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **acquirer** | **string**| &lt;p&gt;Name of acquirer&lt;/p&gt;  | 
- **paymentMethod** | **string**| &lt;p&gt;Payment method&lt;/p&gt;  | 
- **formula** | **string**| &lt;p&gt;The formula&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **acquirer** | **string**| Name of acquirer  | 
+ **paymentMethod** | **string**| Payment method  | 
+ **formula** | **string**| The formula  | [optional] 
 
 ### Return type
 
@@ -376,11 +376,11 @@ namespace Example
         {
             
             var apiInstance = new FeesApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var acquirer = acquirer_example;  // string | <p>Name of acquirer</p> 
-            var paymentMethod = paymentMethod_example;  // string | <p>Payment method</p> 
-            var amount = 56;  // int? | <p>Amount specified in smallest unit</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var acquirer = acquirer_example;  // string | Name of acquirer 
+            var paymentMethod = paymentMethod_example;  // string | Payment method 
+            var amount = 56;  // int? | Amount specified in smallest unit 
 
             try
             {
@@ -401,11 +401,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **acquirer** | **string**| &lt;p&gt;Name of acquirer&lt;/p&gt;  | 
- **paymentMethod** | **string**| &lt;p&gt;Payment method&lt;/p&gt;  | 
- **amount** | **int?**| &lt;p&gt;Amount specified in smallest unit&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **acquirer** | **string**| Name of acquirer  | 
+ **paymentMethod** | **string**| Payment method  | 
+ **amount** | **int?**| Amount specified in smallest unit  | 
 
 ### Return type
 
@@ -424,7 +424,7 @@ No authorization required
 
 <a name="postfeesformat"></a>
 # **POSTFeesFormat**
-> CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer)
+> CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, string cardApplePayToken, string cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer)
 
 Calculate fee for auth params. Requires one of card[number] or card[token]
 
@@ -446,16 +446,16 @@ namespace Example
         {
             
             var apiInstance = new FeesApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var amount = 56;  // int? | <p>Amount specified in smallest unit</p> 
-            var currency = currency_example;  // string | <p>Currency</p>  (optional) 
-            var cardApplePayToken = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Apple Pay payment-token</p>  (optional) 
-            var cardMobilepayOnlineToken = new Dictionary<string, string>(); // Dictionary<string, string> | <p>MobilePay Online payment-token</p>  (optional) 
-            var cardToken = cardToken_example;  // string | <p>Card token</p>  (optional) 
-            var cardNumber = cardNumber_example;  // string | <p>Card number</p>  (optional) 
-            var cardBrand = cardBrand_example;  // string | <p>Brand to use on multi-brand card</p>  (optional) 
-            var acquirer = acquirer_example;  // string | <p>If set, will force the use of this acquirer</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var amount = 56;  // int? | Amount specified in smallest unit 
+            var currency = currency_example;  // string | Currency  (optional) 
+            var cardApplePayToken = cardApplePayToken_example;  // string | Apple Pay payment-token  (optional) 
+            var cardMobilepayOnlineToken = cardMobilepayOnlineToken_example;  // string | MobilePay Online payment-token  (optional) 
+            var cardToken = cardToken_example;  // string | Card token  (optional) 
+            var cardNumber = cardNumber_example;  // string | Card number  (optional) 
+            var cardBrand = cardBrand_example;  // string | Brand to use on multi-brand card  (optional) 
+            var acquirer = acquirer_example;  // string | If set, will force the use of this acquirer  (optional) 
 
             try
             {
@@ -476,16 +476,16 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **amount** | **int?**| &lt;p&gt;Amount specified in smallest unit&lt;/p&gt;  | 
- **currency** | **string**| &lt;p&gt;Currency&lt;/p&gt;  | [optional] 
- **cardApplePayToken** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;Apple Pay payment-token&lt;/p&gt;  | [optional] 
- **cardMobilepayOnlineToken** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  | [optional] 
- **cardToken** | **string**| &lt;p&gt;Card token&lt;/p&gt;  | [optional] 
- **cardNumber** | **string**| &lt;p&gt;Card number&lt;/p&gt;  | [optional] 
- **cardBrand** | **string**| &lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  | [optional] 
- **acquirer** | **string**| &lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **amount** | **int?**| Amount specified in smallest unit  | 
+ **currency** | **string**| Currency  | [optional] 
+ **cardApplePayToken** | **string**| Apple Pay payment-token  | [optional] 
+ **cardMobilepayOnlineToken** | **string**| MobilePay Online payment-token  | [optional] 
+ **cardToken** | **string**| Card token  | [optional] 
+ **cardNumber** | **string**| Card number  | [optional] 
+ **cardBrand** | **string**| Brand to use on multi-brand card  | [optional] 
+ **acquirer** | **string**| If set, will force the use of this acquirer  | [optional] 
 
 ### Return type
 

@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,8 +31,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         void DELETECardsIdLinkFormat (string acceptVersion, string authorization, string id);
@@ -44,8 +44,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETECardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id);
@@ -56,16 +56,16 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="fraudSuspected">Filter by suspected fraud  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Card</returns>
         Card GETCardsFormat (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
@@ -77,16 +77,16 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="fraudSuspected">Filter by suspected fraud  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>ApiResponse of Card</returns>
         ApiResponse<Card> GETCardsFormatWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
@@ -97,8 +97,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Card</returns>
         Card GETCardsIdFormat (string acceptVersion, string authorization, string id);
@@ -110,8 +110,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Card</returns>
         ApiResponse<Card> GETCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id);
@@ -122,9 +122,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>CardOperation</returns>
         CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id);
@@ -136,9 +136,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of CardOperation</returns>
         ApiResponse<CardOperation> GETCardsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id);
@@ -149,12 +149,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Card</returns>
-        Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
+        Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, string variables = null);
 
         /// <summary>
         /// Update saved card
@@ -163,12 +163,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>ApiResponse of Card</returns>
-        ApiResponse<Card> PATCHCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
+        ApiResponse<Card> PATCHCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id, string variables = null);
         /// <summary>
         /// Create saved card
         /// </summary>
@@ -176,11 +176,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
         /// <returns>Card</returns>
-        Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
+        Card POSTCardsFormat (string acceptVersion, string authorization, string variables = null);
 
         /// <summary>
         /// Create saved card
@@ -189,11 +189,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
         /// <returns>ApiResponse of Card</returns>
-        ApiResponse<Card> POSTCardsFormatWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
+        ApiResponse<Card> POSTCardsFormatWithHttpInfo (string acceptVersion, string authorization, string variables = null);
         /// <summary>
         /// Authorize saved card
         /// </summary>
@@ -201,20 +201,20 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Card</returns>
-        Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, string extras = null);
 
         /// <summary>
         /// Authorize saved card
@@ -223,20 +223,20 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>ApiResponse of Card</returns>
-        ApiResponse<Card> POSTCardsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        ApiResponse<Card> POSTCardsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, string extras = null);
         /// <summary>
         /// Cancel saved card
         /// </summary>
@@ -244,10 +244,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
         /// <returns>Card</returns>
         Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized = null);
 
@@ -258,10 +258,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
         /// <returns>ApiResponse of Card</returns>
         ApiResponse<Card> POSTCardsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null);
         /// <summary>
@@ -271,10 +271,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
         /// <param name="description">  (optional)</param>
         /// <returns>FraudReport</returns>
         FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
@@ -286,10 +286,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
         /// <param name="description">  (optional)</param>
         /// <returns>ApiResponse of FraudReport</returns>
         ApiResponse<FraudReport> POSTCardsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
@@ -300,8 +300,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>CardToken</returns>
         CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id);
@@ -313,8 +313,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of CardToken</returns>
         ApiResponse<CardToken> POSTCardsIdTokensFormatWithHttpInfo (string acceptVersion, string authorization, string id);
@@ -325,23 +325,23 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional, default to creditcard)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize  (optional)</param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackurl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional, default to creditcard)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>CardLinkUrl</returns>
-        CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null);
 
         /// <summary>
         /// Create or update a card link
@@ -350,23 +350,23 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional, default to creditcard)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize  (optional)</param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackurl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional, default to creditcard)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>ApiResponse of CardLinkUrl</returns>
-        ApiResponse<CardLinkUrl> PUTCardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        ApiResponse<CardLinkUrl> PUTCardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -376,8 +376,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETECardsIdLinkFormatAsync (string acceptVersion, string authorization, string id);
@@ -389,8 +389,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETECardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
@@ -401,16 +401,16 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="fraudSuspected">Filter by suspected fraud  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of Card</returns>
         System.Threading.Tasks.Task<Card> GETCardsFormatAsync (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
@@ -422,16 +422,16 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="fraudSuspected">Filter by suspected fraud  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of ApiResponse (Card)</returns>
         System.Threading.Tasks.Task<ApiResponse<Card>> GETCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null);
@@ -442,8 +442,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of Card</returns>
         System.Threading.Tasks.Task<Card> GETCardsIdFormatAsync (string acceptVersion, string authorization, string id);
@@ -455,8 +455,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse (Card)</returns>
         System.Threading.Tasks.Task<ApiResponse<Card>> GETCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
@@ -467,9 +467,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>Task of CardOperation</returns>
         System.Threading.Tasks.Task<CardOperation> GETCardsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? operationId, string id);
@@ -481,9 +481,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse (CardOperation)</returns>
         System.Threading.Tasks.Task<ApiResponse<CardOperation>> GETCardsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id);
@@ -494,12 +494,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Task of Card</returns>
-        System.Threading.Tasks.Task<Card> PATCHCardsIdFormatAsync (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
+        System.Threading.Tasks.Task<Card> PATCHCardsIdFormatAsync (string acceptVersion, string authorization, string id, string variables = null);
 
         /// <summary>
         /// Update saved card
@@ -508,12 +508,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Task of ApiResponse (Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Card>> PATCHCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null);
+        System.Threading.Tasks.Task<ApiResponse<Card>> PATCHCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, string variables = null);
         /// <summary>
         /// Create saved card
         /// </summary>
@@ -521,11 +521,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
         /// <returns>Task of Card</returns>
-        System.Threading.Tasks.Task<Card> POSTCardsFormatAsync (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
+        System.Threading.Tasks.Task<Card> POSTCardsFormatAsync (string acceptVersion, string authorization, string variables = null);
 
         /// <summary>
         /// Create saved card
@@ -534,11 +534,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
         /// <returns>Task of ApiResponse (Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null);
+        System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string variables = null);
         /// <summary>
         /// Authorize saved card
         /// </summary>
@@ -546,20 +546,20 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Task of Card</returns>
-        System.Threading.Tasks.Task<Card> POSTCardsIdAuthorizeFormatAsync (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        System.Threading.Tasks.Task<Card> POSTCardsIdAuthorizeFormatAsync (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, string extras = null);
 
         /// <summary>
         /// Authorize saved card
@@ -568,20 +568,20 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Task of ApiResponse (Card)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null);
+        System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, string extras = null);
         /// <summary>
         /// Cancel saved card
         /// </summary>
@@ -589,10 +589,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
         /// <returns>Task of Card</returns>
         System.Threading.Tasks.Task<Card> POSTCardsIdCancelFormatAsync (string acceptVersion, string authorization, string id, bool? synchronized = null);
 
@@ -603,10 +603,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
         /// <returns>Task of ApiResponse (Card)</returns>
         System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null);
         /// <summary>
@@ -616,10 +616,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
         /// <param name="description">  (optional)</param>
         /// <returns>Task of FraudReport</returns>
         System.Threading.Tasks.Task<FraudReport> POSTCardsIdFraudReportFormatAsync (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
@@ -631,10 +631,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
         /// <param name="description">  (optional)</param>
         /// <returns>Task of ApiResponse (FraudReport)</returns>
         System.Threading.Tasks.Task<ApiResponse<FraudReport>> POSTCardsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null);
@@ -645,8 +645,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of CardToken</returns>
         System.Threading.Tasks.Task<CardToken> POSTCardsIdTokensFormatAsync (string acceptVersion, string authorization, string id);
@@ -658,8 +658,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse (CardToken)</returns>
         System.Threading.Tasks.Task<ApiResponse<CardToken>> POSTCardsIdTokensFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id);
@@ -670,23 +670,23 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional, default to creditcard)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize  (optional)</param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackurl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional, default to creditcard)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>Task of CardLinkUrl</returns>
-        System.Threading.Tasks.Task<CardLinkUrl> PUTCardsIdLinkFormatAsync (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        System.Threading.Tasks.Task<CardLinkUrl> PUTCardsIdLinkFormatAsync (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null);
 
         /// <summary>
         /// Create or update a card link
@@ -695,23 +695,23 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional, default to creditcard)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize  (optional)</param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackurl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional, default to creditcard)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>Task of ApiResponse (CardLinkUrl)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CardLinkUrl>> PUTCardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null);
+        System.Threading.Tasks.Task<ApiResponse<CardLinkUrl>> PUTCardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null);
         #endregion Asynchronous Operations
     }
 
@@ -816,8 +816,8 @@ namespace IO.Swagger.Api
         /// Delete card link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         public void DELETECardsIdLinkFormat (string acceptVersion, string authorization, string id)
@@ -829,8 +829,8 @@ namespace IO.Swagger.Api
         /// Delete card link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETECardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id)
@@ -896,8 +896,8 @@ namespace IO.Swagger.Api
         /// Delete card link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETECardsIdLinkFormatAsync (string acceptVersion, string authorization, string id)
@@ -910,8 +910,8 @@ namespace IO.Swagger.Api
         /// Delete card link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETECardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
@@ -977,16 +977,16 @@ namespace IO.Swagger.Api
         /// Get saved cards  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="fraudSuspected">Filter by suspected fraud  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Card</returns>
         public Card GETCardsFormat (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
@@ -999,16 +999,16 @@ namespace IO.Swagger.Api
         /// Get saved cards  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="fraudSuspected">Filter by suspected fraud  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>ApiResponse of Card</returns>
         public ApiResponse< Card > GETCardsFormatWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
@@ -1079,16 +1079,16 @@ namespace IO.Swagger.Api
         /// Get saved cards  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="fraudSuspected">Filter by suspected fraud  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of Card</returns>
         public async System.Threading.Tasks.Task<Card> GETCardsFormatAsync (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
@@ -1102,16 +1102,16 @@ namespace IO.Swagger.Api
         /// Get saved cards  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt;  (optional, default to created_at)</param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  (optional)</param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field  (optional, default to created_at)</param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional)</param>
+        /// <param name="fraudSuspected">Filter by suspected fraud  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <param name="pageKey">  (optional)</param>
         /// <returns>Task of ApiResponse (Card)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Card>> GETCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string timestamp = null, string minTime = null, string maxTime = null, bool? fraudSuspected = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null, int? pageKey = null)
@@ -1182,8 +1182,8 @@ namespace IO.Swagger.Api
         /// Get saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Card</returns>
         public Card GETCardsIdFormat (string acceptVersion, string authorization, string id)
@@ -1196,8 +1196,8 @@ namespace IO.Swagger.Api
         /// Get saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of Card</returns>
         public ApiResponse< Card > GETCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id)
@@ -1263,8 +1263,8 @@ namespace IO.Swagger.Api
         /// Get saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of Card</returns>
         public async System.Threading.Tasks.Task<Card> GETCardsIdFormatAsync (string acceptVersion, string authorization, string id)
@@ -1278,8 +1278,8 @@ namespace IO.Swagger.Api
         /// Get saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse (Card)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Card>> GETCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
@@ -1345,9 +1345,9 @@ namespace IO.Swagger.Api
         /// Get Operation  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>CardOperation</returns>
         public CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id)
@@ -1360,9 +1360,9 @@ namespace IO.Swagger.Api
         /// Get Operation  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of CardOperation</returns>
         public ApiResponse< CardOperation > GETCardsIdOperationsOperationIdFormatWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id)
@@ -1432,9 +1432,9 @@ namespace IO.Swagger.Api
         /// Get Operation  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>Task of CardOperation</returns>
         public async System.Threading.Tasks.Task<CardOperation> GETCardsIdOperationsOperationIdFormatAsync (string acceptVersion, string authorization, int? operationId, string id)
@@ -1448,9 +1448,9 @@ namespace IO.Swagger.Api
         /// Get Operation  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse (CardOperation)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<CardOperation>> GETCardsIdOperationsOperationIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? operationId, string id)
@@ -1520,12 +1520,12 @@ namespace IO.Swagger.Api
         /// Update saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Card</returns>
-        public Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
+        public Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, string variables = null)
         {
              ApiResponse<Card> localVarResponse = PATCHCardsIdFormatWithHttpInfo(acceptVersion, authorization, id, variables);
              return localVarResponse.Data;
@@ -1535,12 +1535,12 @@ namespace IO.Swagger.Api
         /// Update saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>ApiResponse of Card</returns>
-        public ApiResponse< Card > PATCHCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
+        public ApiResponse< Card > PATCHCardsIdFormatWithHttpInfo (string acceptVersion, string authorization, string id, string variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1605,12 +1605,12 @@ namespace IO.Swagger.Api
         /// Update saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Task of Card</returns>
-        public async System.Threading.Tasks.Task<Card> PATCHCardsIdFormatAsync (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
+        public async System.Threading.Tasks.Task<Card> PATCHCardsIdFormatAsync (string acceptVersion, string authorization, string id, string variables = null)
         {
              ApiResponse<Card> localVarResponse = await PATCHCardsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, variables);
              return localVarResponse.Data;
@@ -1621,12 +1621,12 @@ namespace IO.Swagger.Api
         /// Update saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional)</param>
+        /// <param name="variables">Custom variables  (optional)</param>
         /// <returns>Task of ApiResponse (Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Card>> PATCHCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, Dictionary<string, string> variables = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> PATCHCardsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, string variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1691,11 +1691,11 @@ namespace IO.Swagger.Api
         /// Create saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
         /// <returns>Card</returns>
-        public Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
+        public Card POSTCardsFormat (string acceptVersion, string authorization, string variables = null)
         {
              ApiResponse<Card> localVarResponse = POSTCardsFormatWithHttpInfo(acceptVersion, authorization, variables);
              return localVarResponse.Data;
@@ -1705,11 +1705,11 @@ namespace IO.Swagger.Api
         /// Create saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
         /// <returns>ApiResponse of Card</returns>
-        public ApiResponse< Card > POSTCardsFormatWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
+        public ApiResponse< Card > POSTCardsFormatWithHttpInfo (string acceptVersion, string authorization, string variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1770,11 +1770,11 @@ namespace IO.Swagger.Api
         /// Create saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
         /// <returns>Task of Card</returns>
-        public async System.Threading.Tasks.Task<Card> POSTCardsFormatAsync (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
+        public async System.Threading.Tasks.Task<Card> POSTCardsFormatAsync (string acceptVersion, string authorization, string variables = null)
         {
              ApiResponse<Card> localVarResponse = await POSTCardsFormatAsyncWithHttpInfo(acceptVersion, authorization, variables);
              return localVarResponse.Data;
@@ -1785,11 +1785,11 @@ namespace IO.Swagger.Api
         /// Create saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt;  (optional, default to {})</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables  (optional, default to {})</param>
         /// <returns>Task of ApiResponse (Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> variables = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string variables = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1850,20 +1850,20 @@ namespace IO.Swagger.Api
         /// Authorize saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Card</returns>
-        public Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        public Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, string extras = null)
         {
              ApiResponse<Card> localVarResponse = POSTCardsIdAuthorizeFormatWithHttpInfo(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
              return localVarResponse.Data;
@@ -1873,20 +1873,20 @@ namespace IO.Swagger.Api
         /// Authorize saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>ApiResponse of Card</returns>
-        public ApiResponse< Card > POSTCardsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        public ApiResponse< Card > POSTCardsIdAuthorizeFormatWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, string extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1965,20 +1965,20 @@ namespace IO.Swagger.Api
         /// Authorize saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Task of Card</returns>
-        public async System.Threading.Tasks.Task<Card> POSTCardsIdAuthorizeFormatAsync (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        public async System.Threading.Tasks.Task<Card> POSTCardsIdAuthorizeFormatAsync (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, string extras = null)
         {
              ApiResponse<Card> localVarResponse = await POSTCardsIdAuthorizeFormatAsyncWithHttpInfo(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
              return localVarResponse.Data;
@@ -1989,20 +1989,20 @@ namespace IO.Swagger.Api
         /// Authorize saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt;  (optional)</param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt;  (optional)</param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
+        /// <param name="cardCvd">CVD/CVV  (optional)</param>
+        /// <param name="cardIssuedTo">Card holder name  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
+        /// <param name="customerIp">Customer IP  (optional)</param>
+        /// <param name="extras">Additional acquirer specific params  (optional)</param>
         /// <returns>Task of ApiResponse (Card)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, Dictionary<string, string> extras = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdAuthorizeFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized = null, string cardCvd = null, string cardIssuedTo = null, string cardBrand = null, string acquirer = null, string customerIp = null, string extras = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2081,10 +2081,10 @@ namespace IO.Swagger.Api
         /// Cancel saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
         /// <returns>Card</returns>
         public Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized = null)
         {
@@ -2096,10 +2096,10 @@ namespace IO.Swagger.Api
         /// Cancel saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
         /// <returns>ApiResponse of Card</returns>
         public ApiResponse< Card > POSTCardsIdCancelFormatWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null)
         {
@@ -2165,10 +2165,10 @@ namespace IO.Swagger.Api
         /// Cancel saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
         /// <returns>Task of Card</returns>
         public async System.Threading.Tasks.Task<Card> POSTCardsIdCancelFormatAsync (string acceptVersion, string authorization, string id, bool? synchronized = null)
         {
@@ -2181,10 +2181,10 @@ namespace IO.Swagger.Api
         /// Cancel saved card  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  (optional)</param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional)</param>
         /// <returns>Task of ApiResponse (Card)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Card>> POSTCardsIdCancelFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, bool? synchronized = null)
         {
@@ -2250,10 +2250,10 @@ namespace IO.Swagger.Api
         /// Create fraud confirmation report  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
         /// <param name="description">  (optional)</param>
         /// <returns>FraudReport</returns>
         public FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
@@ -2266,10 +2266,10 @@ namespace IO.Swagger.Api
         /// Create fraud confirmation report  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
         /// <param name="description">  (optional)</param>
         /// <returns>ApiResponse of FraudReport</returns>
         public ApiResponse< FraudReport > POSTCardsIdFraudReportFormatWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
@@ -2338,10 +2338,10 @@ namespace IO.Swagger.Api
         /// Create fraud confirmation report  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
         /// <param name="description">  (optional)</param>
         /// <returns>Task of FraudReport</returns>
         public async System.Threading.Tasks.Task<FraudReport> POSTCardsIdFraudReportFormatAsync (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
@@ -2355,10 +2355,10 @@ namespace IO.Swagger.Api
         /// Create fraud confirmation report  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  (optional)</param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url)  (optional)</param>
         /// <param name="description">  (optional)</param>
         /// <returns>Task of ApiResponse (FraudReport)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FraudReport>> POSTCardsIdFraudReportFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, string quickPayCallbackUrl = null, string description = null)
@@ -2427,8 +2427,8 @@ namespace IO.Swagger.Api
         /// Create card token  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>CardToken</returns>
         public CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id)
@@ -2441,8 +2441,8 @@ namespace IO.Swagger.Api
         /// Create card token  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>ApiResponse of CardToken</returns>
         public ApiResponse< CardToken > POSTCardsIdTokensFormatWithHttpInfo (string acceptVersion, string authorization, string id)
@@ -2508,8 +2508,8 @@ namespace IO.Swagger.Api
         /// Create card token  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of CardToken</returns>
         public async System.Threading.Tasks.Task<CardToken> POSTCardsIdTokensFormatAsync (string acceptVersion, string authorization, string id)
@@ -2523,8 +2523,8 @@ namespace IO.Swagger.Api
         /// Create card token  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Task of ApiResponse (CardToken)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<CardToken>> POSTCardsIdTokensFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id)
@@ -2590,23 +2590,23 @@ namespace IO.Swagger.Api
         /// Create or update a card link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional, default to creditcard)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize  (optional)</param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackurl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional, default to creditcard)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>CardLinkUrl</returns>
-        public CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        public CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null)
         {
              ApiResponse<CardLinkUrl> localVarResponse = PUTCardsIdLinkFormatWithHttpInfo(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
              return localVarResponse.Data;
@@ -2616,23 +2616,23 @@ namespace IO.Swagger.Api
         /// Create or update a card link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional, default to creditcard)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize  (optional)</param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackurl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional, default to creditcard)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>ApiResponse of CardLinkUrl</returns>
-        public ApiResponse< CardLinkUrl > PUTCardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        public ApiResponse< CardLinkUrl > PUTCardsIdLinkFormatWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -2708,23 +2708,23 @@ namespace IO.Swagger.Api
         /// Create or update a card link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional, default to creditcard)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize  (optional)</param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackurl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional, default to creditcard)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>Task of CardLinkUrl</returns>
-        public async System.Threading.Tasks.Task<CardLinkUrl> PUTCardsIdLinkFormatAsync (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        public async System.Threading.Tasks.Task<CardLinkUrl> PUTCardsIdLinkFormatAsync (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null)
         {
              ApiResponse<CardLinkUrl> localVarResponse = await PUTCardsIdLinkFormatAsyncWithHttpInfo(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
              return localVarResponse.Data;
@@ -2735,23 +2735,23 @@ namespace IO.Swagger.Api
         /// Create or update a card link  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  (optional)</param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt;  (optional, default to en)</param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  (optional)</param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  (optional)</param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt;  (optional)</param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt;  (optional, default to creditcard)</param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  (optional)</param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt;  (optional)</param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement  (optional)</param>
+        /// <param name="language">Language  (optional, default to en)</param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize  (optional)</param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation  (optional)</param>
+        /// <param name="callbackurl">Endpoint for async callback  (optional)</param>
+        /// <param name="paymentMethods">Limit payment methods  (optional, default to creditcard)</param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding  (optional)</param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics  (optional)</param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics  (optional)</param>
+        /// <param name="acquirer">Force usage of the given acquirer  (optional)</param>
+        /// <param name="framed">Allow opening in iframe  (optional)</param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding  (optional)</param>
         /// <returns>Task of ApiResponse (CardLinkUrl)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CardLinkUrl>> PUTCardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, Dictionary<string, string> brandingConfig = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CardLinkUrl>> PUTCardsIdLinkFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string id, int? agreementId = null, string language = null, string continueurl = null, string cancelurl = null, string callbackurl = null, string paymentMethods = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, bool? framed = null, string brandingConfig = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)

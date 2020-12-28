@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,9 +31,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id);
 
@@ -44,9 +44,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         ApiResponse<SubscriptionGroup> DELETESubscriptionGroupsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -56,12 +56,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
@@ -72,12 +72,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         ApiResponse<SubscriptionGroup> GETSubscriptionGroupsFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
@@ -87,9 +87,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id);
 
@@ -100,9 +100,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         ApiResponse<SubscriptionGroup> GETSubscriptionGroupsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -112,12 +112,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt;  (optional)</param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group  (optional)</param>
+        /// <param name="amount">Amount to capture on each recurring capture  (optional)</param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name = null, int? amount = null, string description = null);
 
@@ -128,12 +128,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt;  (optional)</param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group  (optional)</param>
+        /// <param name="amount">Amount to capture on each recurring capture  (optional)</param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         ApiResponse<SubscriptionGroup> PATCHSubscriptionGroupsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, int? amount = null, string description = null);
         /// <summary>
@@ -143,12 +143,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description = null);
 
@@ -159,12 +159,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         ApiResponse<SubscriptionGroup> POSTSubscriptionGroupsFormatWithHttpInfo (string acceptVersion, string authorization, string name, int? amount, string currency, string description = null);
         /// <summary>
@@ -174,10 +174,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>SubscriptionGroupResult</returns>
         SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix);
 
@@ -188,10 +188,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>ApiResponse of SubscriptionGroupResult</returns>
         ApiResponse<SubscriptionGroupResult> POSTSubscriptionGroupsIdCaptureFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string orderIdPrefix);
         #endregion Synchronous Operations
@@ -203,9 +203,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>Task of SubscriptionGroup</returns>
         System.Threading.Tasks.Task<SubscriptionGroup> DELETESubscriptionGroupsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
@@ -216,9 +216,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> DELETESubscriptionGroupsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -228,12 +228,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of SubscriptionGroup</returns>
         System.Threading.Tasks.Task<SubscriptionGroup> GETSubscriptionGroupsFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
@@ -244,12 +244,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> GETSubscriptionGroupsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
@@ -259,9 +259,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>Task of SubscriptionGroup</returns>
         System.Threading.Tasks.Task<SubscriptionGroup> GETSubscriptionGroupsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
@@ -272,9 +272,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> GETSubscriptionGroupsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -284,12 +284,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt;  (optional)</param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group  (optional)</param>
+        /// <param name="amount">Amount to capture on each recurring capture  (optional)</param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>Task of SubscriptionGroup</returns>
         System.Threading.Tasks.Task<SubscriptionGroup> PATCHSubscriptionGroupsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, int? amount = null, string description = null);
 
@@ -300,12 +300,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt;  (optional)</param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group  (optional)</param>
+        /// <param name="amount">Amount to capture on each recurring capture  (optional)</param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> PATCHSubscriptionGroupsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, int? amount = null, string description = null);
         /// <summary>
@@ -315,12 +315,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>Task of SubscriptionGroup</returns>
         System.Threading.Tasks.Task<SubscriptionGroup> POSTSubscriptionGroupsFormatAsync (string acceptVersion, string authorization, string name, int? amount, string currency, string description = null);
 
@@ -331,12 +331,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> POSTSubscriptionGroupsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name, int? amount, string currency, string description = null);
         /// <summary>
@@ -346,10 +346,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>Task of SubscriptionGroupResult</returns>
         System.Threading.Tasks.Task<SubscriptionGroupResult> POSTSubscriptionGroupsIdCaptureFormatAsync (string acceptVersion, string authorization, int? id, string orderIdPrefix);
 
@@ -360,10 +360,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>Task of ApiResponse (SubscriptionGroupResult)</returns>
         System.Threading.Tasks.Task<ApiResponse<SubscriptionGroupResult>> POSTSubscriptionGroupsIdCaptureFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string orderIdPrefix);
         #endregion Asynchronous Operations
@@ -470,9 +470,9 @@ namespace IO.Swagger.Api
         /// Delete subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>SubscriptionGroup</returns>
         public SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -484,9 +484,9 @@ namespace IO.Swagger.Api
         /// Delete subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         public ApiResponse< SubscriptionGroup > DELETESubscriptionGroupsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -551,9 +551,9 @@ namespace IO.Swagger.Api
         /// Delete subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>Task of SubscriptionGroup</returns>
         public async System.Threading.Tasks.Task<SubscriptionGroup> DELETESubscriptionGroupsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
@@ -566,9 +566,9 @@ namespace IO.Swagger.Api
         /// Delete subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> DELETESubscriptionGroupsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -633,12 +633,12 @@ namespace IO.Swagger.Api
         /// Get all subscription groups  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>SubscriptionGroup</returns>
         public SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -650,12 +650,12 @@ namespace IO.Swagger.Api
         /// Get all subscription groups  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         public ApiResponse< SubscriptionGroup > GETSubscriptionGroupsFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -720,12 +720,12 @@ namespace IO.Swagger.Api
         /// Get all subscription groups  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of SubscriptionGroup</returns>
         public async System.Threading.Tasks.Task<SubscriptionGroup> GETSubscriptionGroupsFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -738,12 +738,12 @@ namespace IO.Swagger.Api
         /// Get all subscription groups  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to id)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to desc)</param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> GETSubscriptionGroupsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -808,9 +808,9 @@ namespace IO.Swagger.Api
         /// Find subscription group by id  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>SubscriptionGroup</returns>
         public SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -822,9 +822,9 @@ namespace IO.Swagger.Api
         /// Find subscription group by id  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         public ApiResponse< SubscriptionGroup > GETSubscriptionGroupsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -889,9 +889,9 @@ namespace IO.Swagger.Api
         /// Find subscription group by id  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>Task of SubscriptionGroup</returns>
         public async System.Threading.Tasks.Task<SubscriptionGroup> GETSubscriptionGroupsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
@@ -904,9 +904,9 @@ namespace IO.Swagger.Api
         /// Find subscription group by id  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> GETSubscriptionGroupsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -971,12 +971,12 @@ namespace IO.Swagger.Api
         /// Update subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt;  (optional)</param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group  (optional)</param>
+        /// <param name="amount">Amount to capture on each recurring capture  (optional)</param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>SubscriptionGroup</returns>
         public SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name = null, int? amount = null, string description = null)
         {
@@ -988,12 +988,12 @@ namespace IO.Swagger.Api
         /// Update subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt;  (optional)</param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group  (optional)</param>
+        /// <param name="amount">Amount to capture on each recurring capture  (optional)</param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         public ApiResponse< SubscriptionGroup > PATCHSubscriptionGroupsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, int? amount = null, string description = null)
         {
@@ -1062,12 +1062,12 @@ namespace IO.Swagger.Api
         /// Update subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt;  (optional)</param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group  (optional)</param>
+        /// <param name="amount">Amount to capture on each recurring capture  (optional)</param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>Task of SubscriptionGroup</returns>
         public async System.Threading.Tasks.Task<SubscriptionGroup> PATCHSubscriptionGroupsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, int? amount = null, string description = null)
         {
@@ -1080,12 +1080,12 @@ namespace IO.Swagger.Api
         /// Update subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt;  (optional)</param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  (optional)</param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group  (optional)</param>
+        /// <param name="amount">Amount to capture on each recurring capture  (optional)</param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> PATCHSubscriptionGroupsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, int? amount = null, string description = null)
         {
@@ -1154,12 +1154,12 @@ namespace IO.Swagger.Api
         /// Create subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>SubscriptionGroup</returns>
         public SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description = null)
         {
@@ -1171,12 +1171,12 @@ namespace IO.Swagger.Api
         /// Create subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>ApiResponse of SubscriptionGroup</returns>
         public ApiResponse< SubscriptionGroup > POSTSubscriptionGroupsFormatWithHttpInfo (string acceptVersion, string authorization, string name, int? amount, string currency, string description = null)
         {
@@ -1251,12 +1251,12 @@ namespace IO.Swagger.Api
         /// Create subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>Task of SubscriptionGroup</returns>
         public async System.Threading.Tasks.Task<SubscriptionGroup> POSTSubscriptionGroupsFormatAsync (string acceptVersion, string authorization, string name, int? amount, string currency, string description = null)
         {
@@ -1269,12 +1269,12 @@ namespace IO.Swagger.Api
         /// Create subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text  (optional)</param>
         /// <returns>Task of ApiResponse (SubscriptionGroup)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SubscriptionGroup>> POSTSubscriptionGroupsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name, int? amount, string currency, string description = null)
         {
@@ -1349,10 +1349,10 @@ namespace IO.Swagger.Api
         /// Create recurring payments on subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>SubscriptionGroupResult</returns>
         public SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix)
         {
@@ -1364,10 +1364,10 @@ namespace IO.Swagger.Api
         /// Create recurring payments on subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>ApiResponse of SubscriptionGroupResult</returns>
         public ApiResponse< SubscriptionGroupResult > POSTSubscriptionGroupsIdCaptureFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string orderIdPrefix)
         {
@@ -1437,10 +1437,10 @@ namespace IO.Swagger.Api
         /// Create recurring payments on subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>Task of SubscriptionGroupResult</returns>
         public async System.Threading.Tasks.Task<SubscriptionGroupResult> POSTSubscriptionGroupsIdCaptureFormatAsync (string acceptVersion, string authorization, int? id, string orderIdPrefix)
         {
@@ -1453,10 +1453,10 @@ namespace IO.Swagger.Api
         /// Create recurring payments on subscription group  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>Task of ApiResponse (SubscriptionGroupResult)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<SubscriptionGroupResult>> POSTSubscriptionGroupsIdCaptureFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string orderIdPrefix)
         {

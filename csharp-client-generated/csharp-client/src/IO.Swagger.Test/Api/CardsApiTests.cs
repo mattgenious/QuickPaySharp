@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -139,7 +139,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //string id = null;
-            //Dictionary<string, string> variables = null;
+            //string variables = null;
             //var response = instance.PATCHCardsIdFormat(acceptVersion, authorization, id, variables);
             //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
@@ -153,7 +153,7 @@ namespace IO.Swagger.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string acceptVersion = null;
             //string authorization = null;
-            //Dictionary<string, string> variables = null;
+            //string variables = null;
             //var response = instance.POSTCardsFormat(acceptVersion, authorization, variables);
             //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
@@ -176,7 +176,7 @@ namespace IO.Swagger.Test
             //string cardBrand = null;
             //string acquirer = null;
             //string customerIp = null;
-            //Dictionary<string, string> extras = null;
+            //string extras = null;
             //var response = instance.POSTCardsIdAuthorizeFormat(acceptVersion, authorization, cardNumber, cardExpiration, id, synchronized, cardCvd, cardIssuedTo, cardBrand, acquirer, customerIp, extras);
             //Assert.IsInstanceOf<Card> (response, "response is Card");
         }
@@ -247,7 +247,7 @@ namespace IO.Swagger.Test
             //string googleAnalyticsClientId = null;
             //string acquirer = null;
             //bool? framed = null;
-            //Dictionary<string, string> brandingConfig = null;
+            //string brandingConfig = null;
             //var response = instance.PUTCardsIdLinkFormat(acceptVersion, authorization, id, agreementId, language, continueurl, cancelurl, callbackurl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
             //Assert.IsInstanceOf<CardLinkUrl> (response, "response is CardLinkUrl");
         }

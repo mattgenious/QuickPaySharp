@@ -31,8 +31,8 @@ namespace Example
         public void main()
         {
             var apiInstance = new PingApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API  (optional) 
 
             try
             {
@@ -53,8 +53,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | [optional] 
 
 ### Return type
 
@@ -94,8 +94,8 @@ namespace Example
         public void main()
         {
             var apiInstance = new PingApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API  (optional) 
 
             try
             {
@@ -116,8 +116,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | [optional] 
 
 ### Return type
 

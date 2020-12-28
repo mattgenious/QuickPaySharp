@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -551,7 +551,7 @@ namespace IO.Swagger.Test
             //int? lastTokenRefresh = null;
             //string nonce = null;
             //int? pendingStatus = null;
-            //Dictionary<string, string> provider = null;
+            //string provider = null;
             //string refreshToken = null;
             //var response = instance.PATCHAcquirersMobilepaysubscriptionsFormat(acceptVersion, authorization, active, authState, codeVerifier, lastTokenRefresh, nonce, pendingStatus, provider, refreshToken);
             //Assert.IsInstanceOf<AcquirerSettingsMobilePaySubscriptions> (response, "response is AcquirerSettingsMobilePaySubscriptions");
@@ -596,7 +596,7 @@ namespace IO.Swagger.Test
             //bool? creditCard = null;
             //string token = null;
             //string tokenSecret = null;
-            //List<string> scope = null;
+            //string scope = null;
             //var response = instance.PATCHAcquirersPaypalFormat(acceptVersion, authorization, active, recurring, creditCard, token, tokenSecret, scope);
             //Assert.IsInstanceOf<AcquirerSettingsPayPal> (response, "response is AcquirerSettingsPayPal");
         }
@@ -613,7 +613,7 @@ namespace IO.Swagger.Test
             //bool? active = null;
             //string username = null;
             //string password = null;
-            //List<Object> currencies = null;
+            //string currencies = null;
             //var response = instance.PATCHAcquirersPaysafecardFormat(acceptVersion, authorization, active, username, password, currencies);
             //Assert.IsInstanceOf<AcquirerSettingsPaysafecard> (response, "response is AcquirerSettingsPaysafecard");
         }

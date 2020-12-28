@@ -35,9 +35,9 @@ namespace Example
         {
             
             var apiInstance = new FraudRulesetsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Ruleset id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Ruleset id 
 
             try
             {
@@ -58,9 +58,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Ruleset id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Ruleset id  | 
 
 ### Return type
 
@@ -101,8 +101,8 @@ namespace Example
         {
             
             var apiInstance = new FraudRulesetsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -123,8 +123,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -165,9 +165,9 @@ namespace Example
         {
             
             var apiInstance = new FraudRulesetsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Ruleset id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Ruleset id 
 
             try
             {
@@ -188,9 +188,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Ruleset id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Ruleset id  | 
 
 ### Return type
 
@@ -231,15 +231,15 @@ namespace Example
         {
             
             var apiInstance = new FraudRulesetsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Ruleset id</p> 
-            var filterRulesMetricName = filterRulesMetricName_example;  // string | <p>Name af variable metric</p> 
-            var filterRulesOperator = filterRulesOperator_example;  // string | <p>Operator</p> 
-            var filterRulesValue = filterRulesValue_example;  // string | <p>String representation of the value to compare to the metric</p> 
-            var name = name_example;  // string | <p>Descriptive name</p>  (optional) 
-            var action = action_example;  // string | <p>Action to take when ruleset triggers</p>  (optional) 
-            var combinator = combinator_example;  // string | <p>Method to combine filter rules</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Ruleset id 
+            var filterRulesMetricName = filterRulesMetricName_example;  // string | Name af variable metric 
+            var filterRulesOperator = filterRulesOperator_example;  // string | Operator 
+            var filterRulesValue = filterRulesValue_example;  // string | String representation of the value to compare to the metric 
+            var name = name_example;  // string | Descriptive name  (optional) 
+            var action = action_example;  // string | Action to take when ruleset triggers  (optional) 
+            var combinator = combinator_example;  // string | Method to combine filter rules  (optional) 
 
             try
             {
@@ -260,15 +260,15 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Ruleset id&lt;/p&gt;  | 
- **filterRulesMetricName** | **string**| &lt;p&gt;Name af variable metric&lt;/p&gt;  | 
- **filterRulesOperator** | **string**| &lt;p&gt;Operator&lt;/p&gt;  | 
- **filterRulesValue** | **string**| &lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt;  | 
- **name** | **string**| &lt;p&gt;Descriptive name&lt;/p&gt;  | [optional] 
- **action** | **string**| &lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  | [optional] 
- **combinator** | **string**| &lt;p&gt;Method to combine filter rules&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Ruleset id  | 
+ **filterRulesMetricName** | **string**| Name af variable metric  | 
+ **filterRulesOperator** | **string**| Operator  | 
+ **filterRulesValue** | **string**| String representation of the value to compare to the metric  | 
+ **name** | **string**| Descriptive name  | [optional] 
+ **action** | **string**| Action to take when ruleset triggers  | [optional] 
+ **combinator** | **string**| Method to combine filter rules  | [optional] 
 
 ### Return type
 
@@ -309,14 +309,14 @@ namespace Example
         {
             
             var apiInstance = new FraudRulesetsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var name = name_example;  // string | <p>Descriptive name</p> 
-            var filterRulesMetricName = filterRulesMetricName_example;  // string | <p>Name af variable metric</p> 
-            var filterRulesOperator = filterRulesOperator_example;  // string | <p>Operator</p> 
-            var filterRulesValue = filterRulesValue_example;  // string | <p>String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’</p> 
-            var action = action_example;  // string | <p>Action to take when ruleset triggers</p> 
-            var combinator = combinator_example;  // string | <p>Method to combine filter rules</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var name = name_example;  // string | Descriptive name 
+            var filterRulesMetricName = filterRulesMetricName_example;  // string | Name af variable metric 
+            var filterRulesOperator = filterRulesOperator_example;  // string | Operator 
+            var filterRulesValue = filterRulesValue_example;  // string | String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ 
+            var action = action_example;  // string | Action to take when ruleset triggers 
+            var combinator = combinator_example;  // string | Method to combine filter rules 
 
             try
             {
@@ -337,14 +337,14 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **name** | **string**| &lt;p&gt;Descriptive name&lt;/p&gt;  | 
- **filterRulesMetricName** | **string**| &lt;p&gt;Name af variable metric&lt;/p&gt;  | 
- **filterRulesOperator** | **string**| &lt;p&gt;Operator&lt;/p&gt;  | 
- **filterRulesValue** | **string**| &lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt;  | 
- **action** | **string**| &lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  | 
- **combinator** | **string**| &lt;p&gt;Method to combine filter rules&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **name** | **string**| Descriptive name  | 
+ **filterRulesMetricName** | **string**| Name af variable metric  | 
+ **filterRulesOperator** | **string**| Operator  | 
+ **filterRulesValue** | **string**| String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’  | 
+ **action** | **string**| Action to take when ruleset triggers  | 
+ **combinator** | **string**| Method to combine filter rules  | 
 
 ### Return type
 

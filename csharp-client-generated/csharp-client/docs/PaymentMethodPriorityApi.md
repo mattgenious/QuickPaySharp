@@ -31,8 +31,8 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentMethodPriorityApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -53,8 +53,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -73,7 +73,7 @@ No authorization required
 
 <a name="postpaymentmethodpriorityformat"></a>
 # **POSTPaymentMethodPriorityFormat**
-> void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority)
+> void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, string paymentMethodPriority)
 
 Replaces the payment method priority of the merchant
 
@@ -94,9 +94,9 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentMethodPriorityApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var paymentMethodPriority = new Dictionary<string, string>(); // Dictionary<string, string> | <p>A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var paymentMethodPriority = paymentMethodPriority_example;  // string | A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } 
 
             try
             {
@@ -116,9 +116,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **paymentMethodPriority** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **paymentMethodPriority** | **string**| A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }  | 
 
 ### Return type
 

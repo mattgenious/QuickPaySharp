@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,9 +31,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id);
 
@@ -44,9 +44,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         ApiResponse<FraudRuleset> DELETEFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -56,8 +56,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization);
 
@@ -68,8 +68,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         ApiResponse<FraudRuleset> GETFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -79,9 +79,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id);
 
@@ -92,9 +92,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         ApiResponse<FraudRuleset> GETFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -104,15 +104,15 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name  (optional)</param>
+        /// <param name="action">Action to take when ruleset triggers  (optional)</param>
+        /// <param name="combinator">Method to combine filter rules  (optional)</param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
 
@@ -123,15 +123,15 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name  (optional)</param>
+        /// <param name="action">Action to take when ruleset triggers  (optional)</param>
+        /// <param name="combinator">Method to combine filter rules  (optional)</param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         ApiResponse<FraudRuleset> PATCHFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
         /// <summary>
@@ -141,14 +141,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>FraudRuleset</returns>
         FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
 
@@ -159,14 +159,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         ApiResponse<FraudRuleset> POSTFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
         #endregion Synchronous Operations
@@ -178,9 +178,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>Task of FraudRuleset</returns>
         System.Threading.Tasks.Task<FraudRuleset> DELETEFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
@@ -191,9 +191,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> DELETEFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -203,8 +203,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of FraudRuleset</returns>
         System.Threading.Tasks.Task<FraudRuleset> GETFraudRulesetsFormatAsync (string acceptVersion, string authorization);
 
@@ -215,8 +215,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> GETFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -226,9 +226,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>Task of FraudRuleset</returns>
         System.Threading.Tasks.Task<FraudRuleset> GETFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id);
 
@@ -239,9 +239,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> GETFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
         /// <summary>
@@ -251,15 +251,15 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name  (optional)</param>
+        /// <param name="action">Action to take when ruleset triggers  (optional)</param>
+        /// <param name="combinator">Method to combine filter rules  (optional)</param>
         /// <returns>Task of FraudRuleset</returns>
         System.Threading.Tasks.Task<FraudRuleset> PATCHFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
 
@@ -270,15 +270,15 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name  (optional)</param>
+        /// <param name="action">Action to take when ruleset triggers  (optional)</param>
+        /// <param name="combinator">Method to combine filter rules  (optional)</param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> PATCHFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null);
         /// <summary>
@@ -288,14 +288,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>Task of FraudRuleset</returns>
         System.Threading.Tasks.Task<FraudRuleset> POSTFraudRulesetsFormatAsync (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
 
@@ -306,14 +306,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> POSTFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator);
         #endregion Asynchronous Operations
@@ -420,9 +420,9 @@ namespace IO.Swagger.Api
         /// Delete ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>FraudRuleset</returns>
         public FraudRuleset DELETEFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -434,9 +434,9 @@ namespace IO.Swagger.Api
         /// Delete ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         public ApiResponse< FraudRuleset > DELETEFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -501,9 +501,9 @@ namespace IO.Swagger.Api
         /// Delete ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>Task of FraudRuleset</returns>
         public async System.Threading.Tasks.Task<FraudRuleset> DELETEFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
@@ -516,9 +516,9 @@ namespace IO.Swagger.Api
         /// Delete ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> DELETEFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -583,8 +583,8 @@ namespace IO.Swagger.Api
         /// Get custom defined fraud rulesets  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>FraudRuleset</returns>
         public FraudRuleset GETFraudRulesetsFormat (string acceptVersion, string authorization)
         {
@@ -596,8 +596,8 @@ namespace IO.Swagger.Api
         /// Get custom defined fraud rulesets  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         public ApiResponse< FraudRuleset > GETFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -658,8 +658,8 @@ namespace IO.Swagger.Api
         /// Get custom defined fraud rulesets  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of FraudRuleset</returns>
         public async System.Threading.Tasks.Task<FraudRuleset> GETFraudRulesetsFormatAsync (string acceptVersion, string authorization)
         {
@@ -672,8 +672,8 @@ namespace IO.Swagger.Api
         /// Get custom defined fraud rulesets  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> GETFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -734,9 +734,9 @@ namespace IO.Swagger.Api
         /// Get ruleset by id  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>FraudRuleset</returns>
         public FraudRuleset GETFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -748,9 +748,9 @@ namespace IO.Swagger.Api
         /// Get ruleset by id  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         public ApiResponse< FraudRuleset > GETFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -815,9 +815,9 @@ namespace IO.Swagger.Api
         /// Get ruleset by id  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>Task of FraudRuleset</returns>
         public async System.Threading.Tasks.Task<FraudRuleset> GETFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id)
         {
@@ -830,9 +830,9 @@ namespace IO.Swagger.Api
         /// Get ruleset by id  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> GETFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
         {
@@ -897,15 +897,15 @@ namespace IO.Swagger.Api
         /// Update a ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name  (optional)</param>
+        /// <param name="action">Action to take when ruleset triggers  (optional)</param>
+        /// <param name="combinator">Method to combine filter rules  (optional)</param>
         /// <returns>FraudRuleset</returns>
         public FraudRuleset PATCHFraudRulesetsIdFormat (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
         {
@@ -917,15 +917,15 @@ namespace IO.Swagger.Api
         /// Update a ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name  (optional)</param>
+        /// <param name="action">Action to take when ruleset triggers  (optional)</param>
+        /// <param name="combinator">Method to combine filter rules  (optional)</param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         public ApiResponse< FraudRuleset > PATCHFraudRulesetsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
         {
@@ -1006,15 +1006,15 @@ namespace IO.Swagger.Api
         /// Update a ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name  (optional)</param>
+        /// <param name="action">Action to take when ruleset triggers  (optional)</param>
+        /// <param name="combinator">Method to combine filter rules  (optional)</param>
         /// <returns>Task of FraudRuleset</returns>
         public async System.Threading.Tasks.Task<FraudRuleset> PATCHFraudRulesetsIdFormatAsync (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
         {
@@ -1027,15 +1027,15 @@ namespace IO.Swagger.Api
         /// Update a ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Ruleset id&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt;  (optional)</param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt;  (optional)</param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Ruleset id </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric </param>
+        /// <param name="name">Descriptive name  (optional)</param>
+        /// <param name="action">Action to take when ruleset triggers  (optional)</param>
+        /// <param name="combinator">Method to combine filter rules  (optional)</param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> PATCHFraudRulesetsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string name = null, string action = null, string combinator = null)
         {
@@ -1116,14 +1116,14 @@ namespace IO.Swagger.Api
         /// Create a custom fraud ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>FraudRuleset</returns>
         public FraudRuleset POSTFraudRulesetsFormat (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {
@@ -1135,14 +1135,14 @@ namespace IO.Swagger.Api
         /// Create a custom fraud ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>ApiResponse of FraudRuleset</returns>
         public ApiResponse< FraudRuleset > POSTFraudRulesetsFormatWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {
@@ -1228,14 +1228,14 @@ namespace IO.Swagger.Api
         /// Create a custom fraud ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>Task of FraudRuleset</returns>
         public async System.Threading.Tasks.Task<FraudRuleset> POSTFraudRulesetsFormatAsync (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {
@@ -1248,14 +1248,14 @@ namespace IO.Swagger.Api
         /// Create a custom fraud ruleset  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name&lt;/p&gt; </param>
-        /// <param name="filterRulesMetricName">&lt;p&gt;Name af variable metric&lt;/p&gt; </param>
-        /// <param name="filterRulesOperator">&lt;p&gt;Operator&lt;/p&gt; </param>
-        /// <param name="filterRulesValue">&lt;p&gt;String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’&lt;/p&gt; </param>
-        /// <param name="action">&lt;p&gt;Action to take when ruleset triggers&lt;/p&gt; </param>
-        /// <param name="combinator">&lt;p&gt;Method to combine filter rules&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name </param>
+        /// <param name="filterRulesMetricName">Name af variable metric </param>
+        /// <param name="filterRulesOperator">Operator </param>
+        /// <param name="filterRulesValue">String representation of the value to compare to the metric, e.g. ‘DNK’, ‘42’ or ‘DNK, DEU’ </param>
+        /// <param name="action">Action to take when ruleset triggers </param>
+        /// <param name="combinator">Method to combine filter rules </param>
         /// <returns>Task of ApiResponse (FraudRuleset)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FraudRuleset>> POSTFraudRulesetsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name, string filterRulesMetricName, string filterRulesOperator, string filterRulesValue, string action, string combinator)
         {

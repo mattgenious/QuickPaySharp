@@ -14,73 +14,73 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Reset a formula to default  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns></returns>
         void DELETEFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
         /// Get fee formulas  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>FeeFormula</returns>
         FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer);
         /// <summary>
         /// Get fee formula  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>FeeFormula</returns>
         FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
         /// Get all fee formulas  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
         /// <returns>FeeFormula</returns>
         FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page, int? pageSize);
         /// <summary>
         /// Update a fee formula  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula </param>
         /// <returns>FeeFormula</returns>
         FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula);
         /// <summary>
         /// Calculate fee  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>CalculatedFee</returns>
         CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt; </param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt; </param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token </param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token </param>
+        /// <param name="cardToken">Card token </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardBrand">Brand to use on multi-brand card </param>
+        /// <param name="acquirer">If set, will force the use of this acquirer </param>
         /// <returns>CalculatedFee</returns>
-        CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer);
+        CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, string cardApplePayToken, string cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer);
     }
   
     /// <summary>
@@ -139,10 +139,10 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Reset a formula to default  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="acquirer">Name of acquirer </param> 
+        /// <param name="paymentMethod">Payment method </param> 
         /// <returns></returns>            
         public void DELETEFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -191,9 +191,9 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <summary>
         /// Get fee formulas  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="acquirer">Name of acquirer </param> 
         /// <returns>FeeFormula</returns>            
         public FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer)
         {
@@ -238,10 +238,10 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <summary>
         /// Get fee formula  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="acquirer">Name of acquirer </param> 
+        /// <param name="paymentMethod">Payment method </param> 
         /// <returns>FeeFormula</returns>            
         public FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -290,10 +290,10 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <summary>
         /// Get all fee formulas  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
         /// <returns>FeeFormula</returns>            
         public FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page, int? pageSize)
         {
@@ -336,11 +336,11 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <summary>
         /// Update a fee formula  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param> 
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="acquirer">Name of acquirer </param> 
+        /// <param name="paymentMethod">Payment method </param> 
+        /// <param name="formula">The formula </param> 
         /// <returns>FeeFormula</returns>            
         public FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula)
         {
@@ -390,11 +390,11 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <summary>
         /// Calculate fee  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param> 
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="acquirer">Name of acquirer </param> 
+        /// <param name="paymentMethod">Payment method </param> 
+        /// <param name="amount">Amount specified in smallest unit </param> 
         /// <returns>CalculatedFee</returns>            
         public CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
@@ -447,18 +447,18 @@ path = path.Replace("{" + "payment_method" + "}", ApiClient.ParameterToString(pa
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param> 
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param> 
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt; </param> 
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt; </param> 
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt; </param> 
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param> 
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="amount">Amount specified in smallest unit </param> 
+        /// <param name="currency">Currency </param> 
+        /// <param name="cardApplePayToken">Apple Pay payment-token </param> 
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token </param> 
+        /// <param name="cardToken">Card token </param> 
+        /// <param name="cardNumber">Card number </param> 
+        /// <param name="cardBrand">Brand to use on multi-brand card </param> 
+        /// <param name="acquirer">If set, will force the use of this acquirer </param> 
         /// <returns>CalculatedFee</returns>            
-        public CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer)
+        public CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency, string cardApplePayToken, string cardMobilepayOnlineToken, string cardToken, string cardNumber, string cardBrand, string acquirer)
         {
             
             // verify the required parameter 'acceptVersion' is set

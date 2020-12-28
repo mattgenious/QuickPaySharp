@@ -30,10 +30,10 @@ namespace Example
         public void main()
         {
             var apiInstance = new AclResourcesApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p>  (optional) 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API  (optional) 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
 
             try
             {
@@ -54,10 +54,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | [optional] 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | [optional] 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
 
 ### Return type
 

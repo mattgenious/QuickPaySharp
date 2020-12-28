@@ -39,7 +39,7 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var id = 56;  // int? | <p>Branding id</p> 
+            var id = 56;  // int? | Branding id 
 
             try
             {
@@ -59,7 +59,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int?**| &lt;p&gt;Branding id&lt;/p&gt;  | 
+ **id** | **int?**| Branding id  | 
 
 ### Return type
 
@@ -100,7 +100,7 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var id = 56;  // int? | <p>Branding id</p> 
+            var id = 56;  // int? | Branding id 
             var resourceName = resourceName_example;  // string |   (optional) 
 
             try
@@ -121,7 +121,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int?**| &lt;p&gt;Branding id&lt;/p&gt;  | 
+ **id** | **int?**| Branding id  | 
  **resourceName** | **string**|   | [optional] 
 
 ### Return type
@@ -163,14 +163,14 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var except = except_example;  // string | <p>Specifies which attributes to skip. Default is ‘resources.data’</p>  (optional) 
-            var only = only_example;  // string | <p>Specifies which attributes to include. (Overrides except default)</p>  (optional) 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
-            var sortBy = sortBy_example;  // string | <p>Property to sort by</p>  (optional)  (default to name)
-            var sortDir = sortDir_example;  // string | <p>Sort direction</p>  (optional)  (default to asc)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var except = except_example;  // string | Specifies which attributes to skip. Default is ‘resources.data’  (optional) 
+            var only = only_example;  // string | Specifies which attributes to include. (Overrides except default)  (optional) 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
+            var sortBy = sortBy_example;  // string | Property to sort by  (optional)  (default to name)
+            var sortDir = sortDir_example;  // string | Sort direction  (optional)  (default to asc)
 
             try
             {
@@ -191,14 +191,14 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **except** | **string**| &lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  | [optional] 
- **only** | **string**| &lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  | [optional] 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
- **sortBy** | **string**| &lt;p&gt;Property to sort by&lt;/p&gt;  | [optional] [default to name]
- **sortDir** | **string**| &lt;p&gt;Sort direction&lt;/p&gt;  | [optional] [default to asc]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **except** | **string**| Specifies which attributes to skip. Default is ‘resources.data’  | [optional] 
+ **only** | **string**| Specifies which attributes to include. (Overrides except default)  | [optional] 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
+ **sortBy** | **string**| Property to sort by  | [optional] [default to name]
+ **sortDir** | **string**| Sort direction  | [optional] [default to asc]
 
 ### Return type
 
@@ -239,11 +239,11 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Branding id</p> 
-            var except = except_example;  // string | <p>Specifies which attributes to skip. Default is ‘resources.data’</p>  (optional) 
-            var only = only_example;  // string | <p>Specifies which attributes to include. (Overrides except default)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Branding id 
+            var except = except_example;  // string | Specifies which attributes to skip. Default is ‘resources.data’  (optional) 
+            var only = only_example;  // string | Specifies which attributes to include. (Overrides except default)  (optional) 
 
             try
             {
@@ -264,11 +264,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Branding id&lt;/p&gt;  | 
- **except** | **string**| &lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  | [optional] 
- **only** | **string**| &lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Branding id  | 
+ **except** | **string**| Specifies which attributes to skip. Default is ‘resources.data’  | [optional] 
+ **only** | **string**| Specifies which attributes to include. (Overrides except default)  | [optional] 
 
 ### Return type
 
@@ -309,7 +309,7 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var id = 56;  // int? | <p>Branding id</p> 
+            var id = 56;  // int? | Branding id 
             var resourceName = resourceName_example;  // string |   (optional) 
 
             try
@@ -330,7 +330,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int?**| &lt;p&gt;Branding id&lt;/p&gt;  | 
+ **id** | **int?**| Branding id  | 
  **resourceName** | **string**|   | [optional] 
 
 ### Return type
@@ -372,12 +372,12 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Branding id</p> 
-            var name = name_example;  // string | <p>Descriptive name of the branding</p>  (optional) 
-            var except = except_example;  // string | <p>Specifies which attributes to skip. Default is ‘resources.data’</p>  (optional) 
-            var only = only_example;  // string | <p>Specifies which attributes to include. (Overrides except default)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Branding id 
+            var name = name_example;  // string | Descriptive name of the branding  (optional) 
+            var except = except_example;  // string | Specifies which attributes to skip. Default is ‘resources.data’  (optional) 
+            var only = only_example;  // string | Specifies which attributes to include. (Overrides except default)  (optional) 
 
             try
             {
@@ -398,12 +398,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Branding id&lt;/p&gt;  | 
- **name** | **string**| &lt;p&gt;Descriptive name of the branding&lt;/p&gt;  | [optional] 
- **except** | **string**| &lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  | [optional] 
- **only** | **string**| &lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Branding id  | 
+ **name** | **string**| Descriptive name of the branding  | [optional] 
+ **except** | **string**| Specifies which attributes to skip. Default is ‘resources.data’  | [optional] 
+ **only** | **string**| Specifies which attributes to include. (Overrides except default)  | [optional] 
 
 ### Return type
 
@@ -444,9 +444,9 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var name = name_example;  // string | <p>Descriptive name of the branding</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var name = name_example;  // string | Descriptive name of the branding 
 
             try
             {
@@ -467,9 +467,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **name** | **string**| &lt;p&gt;Descriptive name of the branding&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **name** | **string**| Descriptive name of the branding  | 
 
 ### Return type
 
@@ -510,11 +510,11 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Branding id</p> 
-            var except = except_example;  // string | <p>Specifies which attributes to skip. Default is ‘resources.data’</p>  (optional) 
-            var only = only_example;  // string | <p>Specifies which attributes to include. (Overrides except default)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Branding id 
+            var except = except_example;  // string | Specifies which attributes to skip. Default is ‘resources.data’  (optional) 
+            var only = only_example;  // string | Specifies which attributes to include. (Overrides except default)  (optional) 
 
             try
             {
@@ -535,11 +535,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Branding id&lt;/p&gt;  | 
- **except** | **string**| &lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  | [optional] 
- **only** | **string**| &lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Branding id  | 
+ **except** | **string**| Specifies which attributes to skip. Default is ‘resources.data’  | [optional] 
+ **only** | **string**| Specifies which attributes to include. (Overrides except default)  | [optional] 
 
 ### Return type
 
@@ -580,10 +580,10 @@ namespace Example
         {
             
             var apiInstance = new BrandingsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Branding id</p> 
-            var _file = _file_example;  // string | <p>The file send as multipart</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Branding id 
+            var _file = _file_example;  // string | The file send as multipart 
             var resourceName = resourceName_example;  // string |   (optional) 
 
             try
@@ -604,10 +604,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Branding id&lt;/p&gt;  | 
- **_file** | **string**| &lt;p&gt;The file send as multipart&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Branding id  | 
+ **_file** | **string**| The file send as multipart  | 
  **resourceName** | **string**|   | [optional] 
 
 ### Return type

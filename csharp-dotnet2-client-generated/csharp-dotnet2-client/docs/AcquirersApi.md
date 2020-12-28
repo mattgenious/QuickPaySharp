@@ -76,8 +76,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -98,8 +98,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -140,8 +140,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -162,8 +162,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -204,8 +204,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -226,8 +226,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -268,8 +268,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -290,8 +290,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -332,8 +332,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -354,8 +354,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -396,8 +396,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -418,8 +418,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -460,8 +460,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -482,8 +482,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -524,8 +524,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -546,8 +546,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -588,8 +588,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -610,8 +610,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -652,8 +652,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -674,8 +674,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -716,8 +716,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -738,8 +738,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -780,8 +780,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -802,8 +802,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -844,8 +844,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -866,8 +866,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -908,8 +908,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -930,8 +930,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -972,8 +972,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -994,8 +994,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1036,8 +1036,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -1058,8 +1058,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1100,8 +1100,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -1122,8 +1122,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1164,8 +1164,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -1186,8 +1186,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1228,8 +1228,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -1250,8 +1250,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1292,8 +1292,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -1314,8 +1314,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1356,8 +1356,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -1378,8 +1378,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1420,8 +1420,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -1442,8 +1442,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1484,8 +1484,8 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -1506,8 +1506,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -1548,20 +1548,20 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Bambora payments</p> 
-            var identificationCode = identificationCode_example;  // string | <p>Bambora identification number</p> 
-            var businessCode = businessCode_example;  // string | <p>Business code (assigned by Bambora)</p> 
-            var identificationCodeInt = identificationCodeInt_example;  // string | <p>Bambora international identification number</p>  (optional) 
-            var recurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Bambora)</p>  (optional) 
-            var americanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Bambora)</p>  (optional) 
-            var dinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Bambora)</p>  (optional) 
-            var securepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var visaBin = visaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var mastercardBin = mastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Bambora payments 
+            var identificationCode = identificationCode_example;  // string | Bambora identification number 
+            var businessCode = businessCode_example;  // string | Business code (assigned by Bambora) 
+            var identificationCodeInt = identificationCodeInt_example;  // string | Bambora international identification number  (optional) 
+            var recurring = true;  // bool? | Enable recurring payments (requires agreement with Bambora)  (optional) 
+            var americanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Bambora)  (optional) 
+            var dinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Bambora)  (optional) 
+            var securepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var visaBin = visaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var mastercardBin = mastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
 
             try
             {
@@ -1582,20 +1582,20 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Bambora payments&lt;/p&gt;  | 
- **identificationCode** | **string**| &lt;p&gt;Bambora identification number&lt;/p&gt;  | 
- **businessCode** | **string**| &lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  | 
- **identificationCodeInt** | **string**| &lt;p&gt;Bambora international identification number&lt;/p&gt;  | [optional] 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  | [optional] 
- **americanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  | [optional] 
- **dinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  | [optional] 
- **securepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **visaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **mastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **visaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **mastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Bambora payments  | 
+ **identificationCode** | **string**| Bambora identification number  | 
+ **businessCode** | **string**| Business code (assigned by Bambora)  | 
+ **identificationCodeInt** | **string**| Bambora international identification number  | [optional] 
+ **recurring** | **bool?**| Enable recurring payments (requires agreement with Bambora)  | [optional] 
+ **americanexpress** | **bool?**| Enable AMEX payments (requires agreement with Bambora)  | [optional] 
+ **dinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Bambora)  | [optional] 
+ **securepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **visaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **mastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **visaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **mastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
 
 ### Return type
 
@@ -1636,13 +1636,13 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable ClearHaus payments</p> 
-            var apiKey = apiKey_example;  // string | <p>Clearhaus API key (is required but may be left empty)</p> 
-            var recurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Clearhaus)</p>  (optional) 
-            var payout = true;  // bool? | <p>Enable payouts (requires agreement with Clearhaus)</p>  (optional) 
-            var applePay = true;  // bool? | <p>Enable Apple Pay (requires agreement with Clearhaus)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable ClearHaus payments 
+            var apiKey = apiKey_example;  // string | Clearhaus API key (is required but may be left empty) 
+            var recurring = true;  // bool? | Enable recurring payments (requires agreement with Clearhaus)  (optional) 
+            var payout = true;  // bool? | Enable payouts (requires agreement with Clearhaus)  (optional) 
+            var applePay = true;  // bool? | Enable Apple Pay (requires agreement with Clearhaus)  (optional) 
 
             try
             {
@@ -1663,13 +1663,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  | 
- **apiKey** | **string**| &lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  | 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  | [optional] 
- **payout** | **bool?**| &lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  | [optional] 
- **applePay** | **bool?**| &lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable ClearHaus payments  | 
+ **apiKey** | **string**| Clearhaus API key (is required but may be left empty)  | 
+ **recurring** | **bool?**| Enable recurring payments (requires agreement with Clearhaus)  | [optional] 
+ **payout** | **bool?**| Enable payouts (requires agreement with Clearhaus)  | [optional] 
+ **applePay** | **bool?**| Enable Apple Pay (requires agreement with Clearhaus)  | [optional] 
 
 ### Return type
 
@@ -1710,12 +1710,12 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Coinify Bitcoin payments</p> 
-            var apiKey = apiKey_example;  // string | <p>Coinify API key</p> 
-            var apiSecret = apiSecret_example;  // string | <p>Coinify API secret</p> 
-            var ipnSecret = ipnSecret_example;  // string | <p>Coinify IPN secret (recommended)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Coinify Bitcoin payments 
+            var apiKey = apiKey_example;  // string | Coinify API key 
+            var apiSecret = apiSecret_example;  // string | Coinify API secret 
+            var ipnSecret = ipnSecret_example;  // string | Coinify IPN secret (recommended)  (optional) 
 
             try
             {
@@ -1736,12 +1736,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Coinify Bitcoin payments&lt;/p&gt;  | 
- **apiKey** | **string**| &lt;p&gt;Coinify API key&lt;/p&gt;  | 
- **apiSecret** | **string**| &lt;p&gt;Coinify API secret&lt;/p&gt;  | 
- **ipnSecret** | **string**| &lt;p&gt;Coinify IPN secret (recommended)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Coinify Bitcoin payments  | 
+ **apiKey** | **string**| Coinify API key  | 
+ **apiSecret** | **string**| Coinify API secret  | 
+ **ipnSecret** | **string**| Coinify IPN secret (recommended)  | [optional] 
 
 ### Return type
 
@@ -1782,20 +1782,20 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Elavon payments</p> 
-            var identificationCode = identificationCode_example;  // string | <p>Elavon identification number</p> 
-            var businessCode = businessCode_example;  // string | <p>Business code (assigned by Elavon)</p> 
-            var identificationCodeInt = identificationCodeInt_example;  // string | <p>Elavon international identification number</p>  (optional) 
-            var recurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Elavon)</p>  (optional) 
-            var americanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Elavon)</p>  (optional) 
-            var dinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Elavon)</p>  (optional) 
-            var securepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var visaBin = visaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var mastercardBin = mastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Elavon payments 
+            var identificationCode = identificationCode_example;  // string | Elavon identification number 
+            var businessCode = businessCode_example;  // string | Business code (assigned by Elavon) 
+            var identificationCodeInt = identificationCodeInt_example;  // string | Elavon international identification number  (optional) 
+            var recurring = true;  // bool? | Enable recurring payments (requires agreement with Elavon)  (optional) 
+            var americanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Elavon)  (optional) 
+            var dinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Elavon)  (optional) 
+            var securepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var visaBin = visaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var mastercardBin = mastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
 
             try
             {
@@ -1816,20 +1816,20 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Elavon payments&lt;/p&gt;  | 
- **identificationCode** | **string**| &lt;p&gt;Elavon identification number&lt;/p&gt;  | 
- **businessCode** | **string**| &lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  | 
- **identificationCodeInt** | **string**| &lt;p&gt;Elavon international identification number&lt;/p&gt;  | [optional] 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  | [optional] 
- **americanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  | [optional] 
- **dinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  | [optional] 
- **securepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **visaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **mastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **visaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **mastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Elavon payments  | 
+ **identificationCode** | **string**| Elavon identification number  | 
+ **businessCode** | **string**| Business code (assigned by Elavon)  | 
+ **identificationCodeInt** | **string**| Elavon international identification number  | [optional] 
+ **recurring** | **bool?**| Enable recurring payments (requires agreement with Elavon)  | [optional] 
+ **americanexpress** | **bool?**| Enable AMEX payments (requires agreement with Elavon)  | [optional] 
+ **dinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Elavon)  | [optional] 
+ **securepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **visaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **mastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **visaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **mastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
 
 ### Return type
 
@@ -1870,20 +1870,20 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Handelsbanken payments</p> 
-            var identificationCode = identificationCode_example;  // string | <p>Handelsbanken identification number</p> 
-            var businessCode = businessCode_example;  // string | <p>Business code (assigned by Handelsbanken)</p> 
-            var identificationCodeInt = identificationCodeInt_example;  // string | <p>Handelsbanken international identification number</p>  (optional) 
-            var recurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Handelsbanken)</p>  (optional) 
-            var americanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Handelsbanken)</p>  (optional) 
-            var dinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Handelsbanken)</p>  (optional) 
-            var securepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var visaBin = visaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var mastercardBin = mastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Handelsbanken payments 
+            var identificationCode = identificationCode_example;  // string | Handelsbanken identification number 
+            var businessCode = businessCode_example;  // string | Business code (assigned by Handelsbanken) 
+            var identificationCodeInt = identificationCodeInt_example;  // string | Handelsbanken international identification number  (optional) 
+            var recurring = true;  // bool? | Enable recurring payments (requires agreement with Handelsbanken)  (optional) 
+            var americanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Handelsbanken)  (optional) 
+            var dinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Handelsbanken)  (optional) 
+            var securepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var visaBin = visaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var mastercardBin = mastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
 
             try
             {
@@ -1904,20 +1904,20 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  | 
- **identificationCode** | **string**| &lt;p&gt;Handelsbanken identification number&lt;/p&gt;  | 
- **businessCode** | **string**| &lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  | 
- **identificationCodeInt** | **string**| &lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  | [optional] 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  | [optional] 
- **americanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  | [optional] 
- **dinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  | [optional] 
- **securepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **visaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **mastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **visaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **mastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Handelsbanken payments  | 
+ **identificationCode** | **string**| Handelsbanken identification number  | 
+ **businessCode** | **string**| Business code (assigned by Handelsbanken)  | 
+ **identificationCodeInt** | **string**| Handelsbanken international identification number  | [optional] 
+ **recurring** | **bool?**| Enable recurring payments (requires agreement with Handelsbanken)  | [optional] 
+ **americanexpress** | **bool?**| Enable AMEX payments (requires agreement with Handelsbanken)  | [optional] 
+ **dinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Handelsbanken)  | [optional] 
+ **securepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **visaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **mastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **visaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **mastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
 
 ### Return type
 
@@ -1958,11 +1958,11 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Klarna payments</p> 
-            var eid = 56;  // int? | <p>Klarna merchant ID</p> 
-            var sharedSecret = sharedSecret_example;  // string | <p>Klarna shared secret</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Klarna payments 
+            var eid = 56;  // int? | Klarna merchant ID 
+            var sharedSecret = sharedSecret_example;  // string | Klarna shared secret 
 
             try
             {
@@ -1983,11 +1983,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Klarna payments&lt;/p&gt;  | 
- **eid** | **int?**| &lt;p&gt;Klarna merchant ID&lt;/p&gt;  | 
- **sharedSecret** | **string**| &lt;p&gt;Klarna shared secret&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Klarna payments  | 
+ **eid** | **int?**| Klarna merchant ID  | 
+ **sharedSecret** | **string**| Klarna shared secret  | 
 
 ### Return type
 
@@ -2028,11 +2028,11 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Klarna payments</p> 
-            var uid = uid_example;  // string | <p>Klarna username</p> 
-            var password = password_example;  // string | <p>Klarna password</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Klarna payments 
+            var uid = uid_example;  // string | Klarna username 
+            var password = password_example;  // string | Klarna password 
 
             try
             {
@@ -2053,11 +2053,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Klarna payments&lt;/p&gt;  | 
- **uid** | **string**| &lt;p&gt;Klarna username&lt;/p&gt;  | 
- **password** | **string**| &lt;p&gt;Klarna password&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Klarna payments  | 
+ **uid** | **string**| Klarna username  | 
+ **password** | **string**| Klarna password  | 
 
 ### Return type
 
@@ -2098,10 +2098,10 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable MobilePay payments</p> 
-            var deliveryLimitedTo = deliveryLimitedTo_example;  // string | <p>Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable MobilePay payments 
+            var deliveryLimitedTo = deliveryLimitedTo_example;  // string | Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional) 
 
             try
             {
@@ -2122,10 +2122,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable MobilePay payments&lt;/p&gt;  | 
- **deliveryLimitedTo** | **string**| &lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable MobilePay payments  | 
+ **deliveryLimitedTo** | **string**| Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  | [optional] 
 
 ### Return type
 
@@ -2166,11 +2166,11 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable MobilePay Online payments</p> 
-            var merchantId = 56;  // int? | <p>Id for the merchant</p>  (optional) 
-            var deliveryLimitedTo = deliveryLimitedTo_example;  // string | <p>Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable MobilePay Online payments 
+            var merchantId = 56;  // int? | Id for the merchant  (optional) 
+            var deliveryLimitedTo = deliveryLimitedTo_example;  // string | Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional) 
 
             try
             {
@@ -2191,11 +2191,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable MobilePay Online payments&lt;/p&gt;  | 
- **merchantId** | **int?**| &lt;p&gt;Id for the merchant&lt;/p&gt;  | [optional] 
- **deliveryLimitedTo** | **string**| &lt;p&gt;Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable MobilePay Online payments  | 
+ **merchantId** | **int?**| Id for the merchant  | [optional] 
+ **deliveryLimitedTo** | **string**| Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  | [optional] 
 
 ### Return type
 
@@ -2214,7 +2214,7 @@ No authorization required
 
 <a name="patchacquirersmobilepaysubscriptionsformat"></a>
 # **PATCHAcquirersMobilepaysubscriptionsFormat**
-> AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken)
+> AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, string provider, string refreshToken)
 
 Update MobilePaySubscriptions acquirer settings
 
@@ -2236,16 +2236,16 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable MobilePay Subscriptions payments</p> 
-            var authState = authState_example;  // string | <p>Identifier MobilePay Subscriptions uses to link requests to callbacks</p>  (optional) 
-            var codeVerifier = codeVerifier_example;  // string | <p>Verifies received code challenge</p>  (optional) 
-            var lastTokenRefresh = 56;  // int? | <p>Unix Timestamp of last time the tokens were refreshed</p>  (optional) 
-            var nonce = nonce_example;  // string | <p>Associate client sessions with ID Tokens to mitigate replay attacks</p>  (optional) 
-            var pendingStatus = 56;  // int? | <p>0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed</p>  (optional)  (default to 0)
-            var provider = new Dictionary<string, string>(); // Dictionary<string, string> | <p>The provider / sales-place chosen by the merchant</p>  (optional) 
-            var refreshToken = refreshToken_example;  // string | <p>Token to refresh access token for up to 1 year</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable MobilePay Subscriptions payments 
+            var authState = authState_example;  // string | Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional) 
+            var codeVerifier = codeVerifier_example;  // string | Verifies received code challenge  (optional) 
+            var lastTokenRefresh = 56;  // int? | Unix Timestamp of last time the tokens were refreshed  (optional) 
+            var nonce = nonce_example;  // string | Associate client sessions with ID Tokens to mitigate replay attacks  (optional) 
+            var pendingStatus = 56;  // int? | 0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional)  (default to 0)
+            var provider = provider_example;  // string | The provider / sales-place chosen by the merchant  (optional) 
+            var refreshToken = refreshToken_example;  // string | Token to refresh access token for up to 1 year  (optional) 
 
             try
             {
@@ -2266,16 +2266,16 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  | 
- **authState** | **string**| &lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  | [optional] 
- **codeVerifier** | **string**| &lt;p&gt;Verifies received code challenge&lt;/p&gt;  | [optional] 
- **lastTokenRefresh** | **int?**| &lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  | [optional] 
- **nonce** | **string**| &lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  | [optional] 
- **pendingStatus** | **int?**| &lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  | [optional] [default to 0]
- **provider** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  | [optional] 
- **refreshToken** | **string**| &lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable MobilePay Subscriptions payments  | 
+ **authState** | **string**| Identifier MobilePay Subscriptions uses to link requests to callbacks  | [optional] 
+ **codeVerifier** | **string**| Verifies received code challenge  | [optional] 
+ **lastTokenRefresh** | **int?**| Unix Timestamp of last time the tokens were refreshed  | [optional] 
+ **nonce** | **string**| Associate client sessions with ID Tokens to mitigate replay attacks  | [optional] 
+ **pendingStatus** | **int?**| 0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  | [optional] [default to 0]
+ **provider** | **string**| The provider / sales-place chosen by the merchant  | [optional] 
+ **refreshToken** | **string**| Token to refresh access token for up to 1 year  | [optional] 
 
 ### Return type
 
@@ -2316,20 +2316,20 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Nets/Teller payments</p> 
-            var identificationCode = identificationCode_example;  // string | <p>Nets TOF number</p> 
-            var businessCode = businessCode_example;  // string | <p>Business code (assigned by Nets)</p> 
-            var recurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Nets)</p>  (optional) 
-            var fbg1886 = true;  // bool? | <p>Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)</p>  (optional) 
-            var securedByNets = true;  // bool? | <p>Enable SecuredByNets fraud protection.</p>  (optional) 
-            var identificationCodeInt = identificationCodeInt_example;  // string | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var americanexpress = true;  // bool? | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var dinersclub = true;  // bool? | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var securepay = true;  // bool? | <p>(Depricated; use Teller acquirer)</p>  (optional)  (default to true)
-            var visaBin = visaBin_example;  // string | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var mastercardBin = mastercardBin_example;  // string | <p>(Depricated; use Teller acquirer)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Nets/Teller payments 
+            var identificationCode = identificationCode_example;  // string | Nets TOF number 
+            var businessCode = businessCode_example;  // string | Business code (assigned by Nets) 
+            var recurring = true;  // bool? | Enable recurring payments (requires agreement with Nets)  (optional) 
+            var fbg1886 = true;  // bool? | Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional) 
+            var securedByNets = true;  // bool? | Enable SecuredByNets fraud protection.  (optional) 
+            var identificationCodeInt = identificationCodeInt_example;  // string | (Depricated; use Teller acquirer)  (optional) 
+            var americanexpress = true;  // bool? | (Depricated; use Teller acquirer)  (optional) 
+            var dinersclub = true;  // bool? | (Depricated; use Teller acquirer)  (optional) 
+            var securepay = true;  // bool? | (Depricated; use Teller acquirer)  (optional)  (default to true)
+            var visaBin = visaBin_example;  // string | (Depricated; use Teller acquirer)  (optional) 
+            var mastercardBin = mastercardBin_example;  // string | (Depricated; use Teller acquirer)  (optional) 
 
             try
             {
@@ -2350,20 +2350,20 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  | 
- **identificationCode** | **string**| &lt;p&gt;Nets TOF number&lt;/p&gt;  | 
- **businessCode** | **string**| &lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  | 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  | [optional] 
- **fbg1886** | **bool?**| &lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  | [optional] 
- **securedByNets** | **bool?**| &lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  | [optional] 
- **identificationCodeInt** | **string**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **americanexpress** | **bool?**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **dinersclub** | **bool?**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **securepay** | **bool?**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] [default to true]
- **visaBin** | **string**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **mastercardBin** | **string**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Nets/Teller payments  | 
+ **identificationCode** | **string**| Nets TOF number  | 
+ **businessCode** | **string**| Business code (assigned by Nets)  | 
+ **recurring** | **bool?**| Enable recurring payments (requires agreement with Nets)  | [optional] 
+ **fbg1886** | **bool?**| Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  | [optional] 
+ **securedByNets** | **bool?**| Enable SecuredByNets fraud protection.  | [optional] 
+ **identificationCodeInt** | **string**| (Depricated; use Teller acquirer)  | [optional] 
+ **americanexpress** | **bool?**| (Depricated; use Teller acquirer)  | [optional] 
+ **dinersclub** | **bool?**| (Depricated; use Teller acquirer)  | [optional] 
+ **securepay** | **bool?**| (Depricated; use Teller acquirer)  | [optional] [default to true]
+ **visaBin** | **string**| (Depricated; use Teller acquirer)  | [optional] 
+ **mastercardBin** | **string**| (Depricated; use Teller acquirer)  | [optional] 
 
 ### Return type
 
@@ -2382,7 +2382,7 @@ No authorization required
 
 <a name="patchacquirerspaypalformat"></a>
 # **PATCHAcquirersPaypalFormat**
-> AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope)
+> AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, string scope)
 
 Update PayPal acquirer settings
 
@@ -2404,14 +2404,14 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable PayPal payments</p> 
-            var recurring = true;  // bool? | <p>Enable recurring payments</p>  (optional) 
-            var creditCard = true;  // bool? | <p>Allow credit-card payments. (Only for US/CA/UK merchants)</p>  (optional) 
-            var token = token_example;  // string | <p>Authentication token</p>  (optional) 
-            var tokenSecret = tokenSecret_example;  // string | <p>Authentication token secret</p>  (optional) 
-            var scope = ;  // List<string> | <p>Authentication scope</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable PayPal payments 
+            var recurring = true;  // bool? | Enable recurring payments  (optional) 
+            var creditCard = true;  // bool? | Allow credit-card payments. (Only for US/CA/UK merchants)  (optional) 
+            var token = token_example;  // string | Authentication token  (optional) 
+            var tokenSecret = tokenSecret_example;  // string | Authentication token secret  (optional) 
+            var scope = scope_example;  // string | Authentication scope  (optional) 
 
             try
             {
@@ -2432,14 +2432,14 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable PayPal payments&lt;/p&gt;  | 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments&lt;/p&gt;  | [optional] 
- **creditCard** | **bool?**| &lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  | [optional] 
- **token** | **string**| &lt;p&gt;Authentication token&lt;/p&gt;  | [optional] 
- **tokenSecret** | **string**| &lt;p&gt;Authentication token secret&lt;/p&gt;  | [optional] 
- **scope** | **List<string>**| &lt;p&gt;Authentication scope&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable PayPal payments  | 
+ **recurring** | **bool?**| Enable recurring payments  | [optional] 
+ **creditCard** | **bool?**| Allow credit-card payments. (Only for US/CA/UK merchants)  | [optional] 
+ **token** | **string**| Authentication token  | [optional] 
+ **tokenSecret** | **string**| Authentication token secret  | [optional] 
+ **scope** | **string**| Authentication scope  | [optional] 
 
 ### Return type
 
@@ -2458,7 +2458,7 @@ No authorization required
 
 <a name="patchacquirerspaysafecardformat"></a>
 # **PATCHAcquirersPaysafecardFormat**
-> AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies)
+> AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, string currencies)
 
 Update Paysafecard acquirer settings
 
@@ -2480,12 +2480,12 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Paysafecard payments</p> 
-            var username = username_example;  // string | <p>Paysafecard username</p> 
-            var password = password_example;  // string | <p>Paysafecard password</p> 
-            var currencies = ;  // List<Object> | <p>Paysafecard currencies (Paysafecard requires agreement per currency)</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Paysafecard payments 
+            var username = username_example;  // string | Paysafecard username 
+            var password = password_example;  // string | Paysafecard password 
+            var currencies = currencies_example;  // string | Paysafecard currencies (Paysafecard requires agreement per currency) 
 
             try
             {
@@ -2506,12 +2506,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Paysafecard payments&lt;/p&gt;  | 
- **username** | **string**| &lt;p&gt;Paysafecard username&lt;/p&gt;  | 
- **password** | **string**| &lt;p&gt;Paysafecard password&lt;/p&gt;  | 
- **currencies** | **List<Object>**| &lt;p&gt;Paysafecard currencies (Paysafecard requires agreement per currency)&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Paysafecard payments  | 
+ **username** | **string**| Paysafecard username  | 
+ **password** | **string**| Paysafecard password  | 
+ **currencies** | **string**| Paysafecard currencies (Paysafecard requires agreement per currency)  | 
 
 ### Return type
 
@@ -2552,11 +2552,11 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Resurs payments</p> 
-            var customerId = customerId_example;  // string | <p>Resurs customer ID</p> 
-            var customerPassword = customerPassword_example;  // string | <p>Resurs password</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Resurs payments 
+            var customerId = customerId_example;  // string | Resurs customer ID 
+            var customerPassword = customerPassword_example;  // string | Resurs password 
 
             try
             {
@@ -2577,11 +2577,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Resurs payments&lt;/p&gt;  | 
- **customerId** | **string**| &lt;p&gt;Resurs customer ID&lt;/p&gt;  | 
- **customerPassword** | **string**| &lt;p&gt;Resurs password&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Resurs payments  | 
+ **customerId** | **string**| Resurs customer ID  | 
+ **customerPassword** | **string**| Resurs password  | 
 
 ### Return type
 
@@ -2622,17 +2622,17 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Sofort payments</p> 
-            var customerNumber = 56;  // int? | <p>Sofort customer number</p> 
-            var projectId = 56;  // int? | <p>Sofort Gateway project id</p> 
-            var apiKey = apiKey_example;  // string | <p>Sofort API key</p> 
-            var gateway = true;  // bool? | <p>Enable Sofort Gateway feature</p>  (optional)  (default to true)
-            var ideal = true;  // bool? | <p>Enable Sofort iDeal feature</p>  (optional) 
-            var idealProjectId = 56;  // int? | <p>Sofort iDeal project id</p>  (optional) 
-            var idealProjectPassword = idealProjectPassword_example;  // string | <p>Sofort iDeal project password</p>  (optional) 
-            var idealNotificationPassword = idealNotificationPassword_example;  // string | <p>Sofort iDeal notification password</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Sofort payments 
+            var customerNumber = 56;  // int? | Sofort customer number 
+            var projectId = 56;  // int? | Sofort Gateway project id 
+            var apiKey = apiKey_example;  // string | Sofort API key 
+            var gateway = true;  // bool? | Enable Sofort Gateway feature  (optional)  (default to true)
+            var ideal = true;  // bool? | Enable Sofort iDeal feature  (optional) 
+            var idealProjectId = 56;  // int? | Sofort iDeal project id  (optional) 
+            var idealProjectPassword = idealProjectPassword_example;  // string | Sofort iDeal project password  (optional) 
+            var idealNotificationPassword = idealNotificationPassword_example;  // string | Sofort iDeal notification password  (optional) 
 
             try
             {
@@ -2653,17 +2653,17 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Sofort payments&lt;/p&gt;  | 
- **customerNumber** | **int?**| &lt;p&gt;Sofort customer number&lt;/p&gt;  | 
- **projectId** | **int?**| &lt;p&gt;Sofort Gateway project id&lt;/p&gt;  | 
- **apiKey** | **string**| &lt;p&gt;Sofort API key&lt;/p&gt;  | 
- **gateway** | **bool?**| &lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  | [optional] [default to true]
- **ideal** | **bool?**| &lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  | [optional] 
- **idealProjectId** | **int?**| &lt;p&gt;Sofort iDeal project id&lt;/p&gt;  | [optional] 
- **idealProjectPassword** | **string**| &lt;p&gt;Sofort iDeal project password&lt;/p&gt;  | [optional] 
- **idealNotificationPassword** | **string**| &lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Sofort payments  | 
+ **customerNumber** | **int?**| Sofort customer number  | 
+ **projectId** | **int?**| Sofort Gateway project id  | 
+ **apiKey** | **string**| Sofort API key  | 
+ **gateway** | **bool?**| Enable Sofort Gateway feature  | [optional] [default to true]
+ **ideal** | **bool?**| Enable Sofort iDeal feature  | [optional] 
+ **idealProjectId** | **int?**| Sofort iDeal project id  | [optional] 
+ **idealProjectPassword** | **string**| Sofort iDeal project password  | [optional] 
+ **idealNotificationPassword** | **string**| Sofort iDeal notification password  | [optional] 
 
 ### Return type
 
@@ -2704,20 +2704,20 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Swedbank payments</p> 
-            var identificationCode = identificationCode_example;  // string | <p>Swedbank identification number</p> 
-            var businessCode = businessCode_example;  // string | <p>Business code (assigned by Swedbank)</p> 
-            var identificationCodeInt = identificationCodeInt_example;  // string | <p>Swedbank international identification number</p>  (optional) 
-            var recurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Swedbank)</p>  (optional) 
-            var americanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Swedbank)</p>  (optional) 
-            var dinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Swedbank)</p>  (optional) 
-            var securepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var visaBin = visaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var mastercardBin = mastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Swedbank payments 
+            var identificationCode = identificationCode_example;  // string | Swedbank identification number 
+            var businessCode = businessCode_example;  // string | Business code (assigned by Swedbank) 
+            var identificationCodeInt = identificationCodeInt_example;  // string | Swedbank international identification number  (optional) 
+            var recurring = true;  // bool? | Enable recurring payments (requires agreement with Swedbank)  (optional) 
+            var americanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Swedbank)  (optional) 
+            var dinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Swedbank)  (optional) 
+            var securepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var visaBin = visaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var mastercardBin = mastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
 
             try
             {
@@ -2738,20 +2738,20 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Swedbank payments&lt;/p&gt;  | 
- **identificationCode** | **string**| &lt;p&gt;Swedbank identification number&lt;/p&gt;  | 
- **businessCode** | **string**| &lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  | 
- **identificationCodeInt** | **string**| &lt;p&gt;Swedbank international identification number&lt;/p&gt;  | [optional] 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  | [optional] 
- **americanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  | [optional] 
- **dinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  | [optional] 
- **securepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **visaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **mastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **visaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **mastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Swedbank payments  | 
+ **identificationCode** | **string**| Swedbank identification number  | 
+ **businessCode** | **string**| Business code (assigned by Swedbank)  | 
+ **identificationCodeInt** | **string**| Swedbank international identification number  | [optional] 
+ **recurring** | **bool?**| Enable recurring payments (requires agreement with Swedbank)  | [optional] 
+ **americanexpress** | **bool?**| Enable AMEX payments (requires agreement with Swedbank)  | [optional] 
+ **dinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Swedbank)  | [optional] 
+ **securepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **visaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **mastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **visaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **mastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
 
 ### Return type
 
@@ -2792,11 +2792,11 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Swish payments</p> 
-            var merchantId = merchantId_example;  // string | <p>Swish merchant id</p> 
-            var cryptographyKeyId = 56;  // int? | <p>Swish certificate and private-key from Cryptography store</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Swish payments 
+            var merchantId = merchantId_example;  // string | Swish merchant id 
+            var cryptographyKeyId = 56;  // int? | Swish certificate and private-key from Cryptography store  (optional) 
 
             try
             {
@@ -2817,11 +2817,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Swish payments&lt;/p&gt;  | 
- **merchantId** | **string**| &lt;p&gt;Swish merchant id&lt;/p&gt;  | 
- **cryptographyKeyId** | **int?**| &lt;p&gt;Swish certificate and private-key from Cryptography store&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Swish payments  | 
+ **merchantId** | **string**| Swish merchant id  | 
+ **cryptographyKeyId** | **int?**| Swish certificate and private-key from Cryptography store  | [optional] 
 
 ### Return type
 
@@ -2862,20 +2862,20 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Teller payments</p> 
-            var identificationCode = identificationCode_example;  // string | <p>Teller TOF number</p> 
-            var businessCode = businessCode_example;  // string | <p>Business code (assigned by Teller)</p> 
-            var identificationCodeInt = identificationCodeInt_example;  // string | <p>Teller international identification number</p>  (optional) 
-            var recurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Teller)</p>  (optional) 
-            var americanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Teller)</p>  (optional) 
-            var dinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Teller)</p>  (optional) 
-            var securepay = true;  // bool? | <p>Enable SecurePay fraud protection. (disabling requires agreement with Teller)</p>  (optional)  (default to true)
-            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var visaBin = visaBin_example;  // string | <p>Teller VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var mastercardBin = mastercardBin_example;  // string | <p>Teller Mastercard acquirer bin used for 3D Secure</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Teller payments 
+            var identificationCode = identificationCode_example;  // string | Teller TOF number 
+            var businessCode = businessCode_example;  // string | Business code (assigned by Teller) 
+            var identificationCodeInt = identificationCodeInt_example;  // string | Teller international identification number  (optional) 
+            var recurring = true;  // bool? | Enable recurring payments (requires agreement with Teller)  (optional) 
+            var americanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Teller)  (optional) 
+            var dinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Teller)  (optional) 
+            var securepay = true;  // bool? | Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional)  (default to true)
+            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var visaBin = visaBin_example;  // string | Teller VISA acquirer bin used for 3D Secure  (optional) 
+            var mastercardBin = mastercardBin_example;  // string | Teller Mastercard acquirer bin used for 3D Secure  (optional) 
 
             try
             {
@@ -2896,20 +2896,20 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Teller payments&lt;/p&gt;  | 
- **identificationCode** | **string**| &lt;p&gt;Teller TOF number&lt;/p&gt;  | 
- **businessCode** | **string**| &lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  | 
- **identificationCodeInt** | **string**| &lt;p&gt;Teller international identification number&lt;/p&gt;  | [optional] 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  | [optional] 
- **americanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  | [optional] 
- **dinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  | [optional] 
- **securepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  | [optional] [default to true]
- **visaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **mastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **visaBin** | **string**| &lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **mastercardBin** | **string**| &lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Teller payments  | 
+ **identificationCode** | **string**| Teller TOF number  | 
+ **businessCode** | **string**| Business code (assigned by Teller)  | 
+ **identificationCodeInt** | **string**| Teller international identification number  | [optional] 
+ **recurring** | **bool?**| Enable recurring payments (requires agreement with Teller)  | [optional] 
+ **americanexpress** | **bool?**| Enable AMEX payments (requires agreement with Teller)  | [optional] 
+ **dinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Teller)  | [optional] 
+ **securepay** | **bool?**| Enable SecurePay fraud protection. (disabling requires agreement with Teller)  | [optional] [default to true]
+ **visaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **mastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **visaBin** | **string**| Teller VISA acquirer bin used for 3D Secure  | [optional] 
+ **mastercardBin** | **string**| Teller Mastercard acquirer bin used for 3D Secure  | [optional] 
 
 ### Return type
 
@@ -2950,12 +2950,12 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Trustly payments</p> 
-            var ideal = true;  // bool? | <p>Enable iDeal payments</p> 
-            var username = username_example;  // string | <p>Trustly API username</p> 
-            var password = password_example;  // string | <p>Trustly API password</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Trustly payments 
+            var ideal = true;  // bool? | Enable iDeal payments 
+            var username = username_example;  // string | Trustly API username 
+            var password = password_example;  // string | Trustly API password 
 
             try
             {
@@ -2976,12 +2976,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Trustly payments&lt;/p&gt;  | 
- **ideal** | **bool?**| &lt;p&gt;Enable iDeal payments&lt;/p&gt;  | 
- **username** | **string**| &lt;p&gt;Trustly API username&lt;/p&gt;  | 
- **password** | **string**| &lt;p&gt;Trustly API password&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Trustly payments  | 
+ **ideal** | **bool?**| Enable iDeal payments  | 
+ **username** | **string**| Trustly API username  | 
+ **password** | **string**| Trustly API password  | 
 
 ### Return type
 
@@ -3022,20 +3022,20 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Valitor payments</p> 
-            var identificationCode = identificationCode_example;  // string | <p>Valitor identification number</p> 
-            var businessCode = businessCode_example;  // string | <p>Business code (assigned by Valitor)</p> 
-            var identificationCodeInt = identificationCodeInt_example;  // string | <p>Valitor international identification number</p>  (optional) 
-            var recurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Valitor)</p>  (optional) 
-            var americanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Valitor)</p>  (optional) 
-            var dinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Valitor)</p>  (optional) 
-            var securepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var visaBin = visaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var mastercardBin = mastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Valitor payments 
+            var identificationCode = identificationCode_example;  // string | Valitor identification number 
+            var businessCode = businessCode_example;  // string | Business code (assigned by Valitor) 
+            var identificationCodeInt = identificationCodeInt_example;  // string | Valitor international identification number  (optional) 
+            var recurring = true;  // bool? | Enable recurring payments (requires agreement with Valitor)  (optional) 
+            var americanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Valitor)  (optional) 
+            var dinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Valitor)  (optional) 
+            var securepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var visaMpiMerchantId = visaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var mastercardMpiMerchantId = mastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var visaBin = visaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var mastercardBin = mastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
 
             try
             {
@@ -3056,20 +3056,20 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Valitor payments&lt;/p&gt;  | 
- **identificationCode** | **string**| &lt;p&gt;Valitor identification number&lt;/p&gt;  | 
- **businessCode** | **string**| &lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  | 
- **identificationCodeInt** | **string**| &lt;p&gt;Valitor international identification number&lt;/p&gt;  | [optional] 
- **recurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  | [optional] 
- **americanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  | [optional] 
- **dinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  | [optional] 
- **securepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **visaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **mastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **visaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **mastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Valitor payments  | 
+ **identificationCode** | **string**| Valitor identification number  | 
+ **businessCode** | **string**| Business code (assigned by Valitor)  | 
+ **identificationCodeInt** | **string**| Valitor international identification number  | [optional] 
+ **recurring** | **bool?**| Enable recurring payments (requires agreement with Valitor)  | [optional] 
+ **americanexpress** | **bool?**| Enable AMEX payments (requires agreement with Valitor)  | [optional] 
+ **dinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Valitor)  | [optional] 
+ **securepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **visaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **mastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **visaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **mastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
 
 ### Return type
 
@@ -3110,10 +3110,10 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable ViaBill payments</p> 
-            var apiKey = apiKey_example;  // string | <p>ViaBill API key</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable ViaBill payments 
+            var apiKey = apiKey_example;  // string | ViaBill API key 
 
             try
             {
@@ -3134,10 +3134,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable ViaBill payments&lt;/p&gt;  | 
- **apiKey** | **string**| &lt;p&gt;ViaBill API key&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable ViaBill payments  | 
+ **apiKey** | **string**| ViaBill API key  | 
 
 ### Return type
 
@@ -3178,15 +3178,15 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var active = true;  // bool? | <p>Enable Vipps payments</p> 
-            var clientId = clientId_example;  // string | <p>Vipps OAuth Client ID</p> 
-            var clientSecret = clientSecret_example;  // string | <p>Vipps OAuth Client Secret</p> 
-            var serialNumber = serialNumber_example;  // string | <p>Vipps agreement serial</p> 
-            var accessTokenSubscriptionKey = accessTokenSubscriptionKey_example;  // string | <p>Vipps Access-Token Subscription Key</p> 
-            var ecommerceSubscriptionKey = ecommerceSubscriptionKey_example;  // string | <p>Vipps eCommerce Subscription Key</p> 
-            var orgno = orgno_example;  // string | <p>Vipps companys organization number</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var active = true;  // bool? | Enable Vipps payments 
+            var clientId = clientId_example;  // string | Vipps OAuth Client ID 
+            var clientSecret = clientSecret_example;  // string | Vipps OAuth Client Secret 
+            var serialNumber = serialNumber_example;  // string | Vipps agreement serial 
+            var accessTokenSubscriptionKey = accessTokenSubscriptionKey_example;  // string | Vipps Access-Token Subscription Key 
+            var ecommerceSubscriptionKey = ecommerceSubscriptionKey_example;  // string | Vipps eCommerce Subscription Key 
+            var orgno = orgno_example;  // string | Vipps companys organization number  (optional) 
 
             try
             {
@@ -3207,15 +3207,15 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **active** | **bool?**| &lt;p&gt;Enable Vipps payments&lt;/p&gt;  | 
- **clientId** | **string**| &lt;p&gt;Vipps OAuth Client ID&lt;/p&gt;  | 
- **clientSecret** | **string**| &lt;p&gt;Vipps OAuth Client Secret&lt;/p&gt;  | 
- **serialNumber** | **string**| &lt;p&gt;Vipps agreement serial&lt;/p&gt;  | 
- **accessTokenSubscriptionKey** | **string**| &lt;p&gt;Vipps Access-Token Subscription Key&lt;/p&gt;  | 
- **ecommerceSubscriptionKey** | **string**| &lt;p&gt;Vipps eCommerce Subscription Key&lt;/p&gt;  | 
- **orgno** | **string**| &lt;p&gt;Vipps companys organization number&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **active** | **bool?**| Enable Vipps payments  | 
+ **clientId** | **string**| Vipps OAuth Client ID  | 
+ **clientSecret** | **string**| Vipps OAuth Client Secret  | 
+ **serialNumber** | **string**| Vipps agreement serial  | 
+ **accessTokenSubscriptionKey** | **string**| Vipps Access-Token Subscription Key  | 
+ **ecommerceSubscriptionKey** | **string**| Vipps eCommerce Subscription Key  | 
+ **orgno** | **string**| Vipps companys organization number  | [optional] 
 
 ### Return type
 
@@ -3256,9 +3256,9 @@ namespace Example
         {
             
             var apiInstance = new AcquirersApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var acquirer = acquirer_example;  // string | <p>Acquirer name</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var acquirer = acquirer_example;  // string | Acquirer name 
 
             try
             {
@@ -3279,9 +3279,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **acquirer** | **string**| &lt;p&gt;Acquirer name&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **acquirer** | **string**| Acquirer name  | 
 
 ### Return type
 

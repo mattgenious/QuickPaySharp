@@ -38,9 +38,9 @@ namespace Example
         {
             
             var apiInstance = new AgreementsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Agreement id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Agreement id 
 
             try
             {
@@ -60,9 +60,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Agreement id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Agreement id  | 
 
 ### Return type
 
@@ -103,17 +103,17 @@ namespace Example
         {
             
             var apiInstance = new AgreementsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
-            var sortBy = sortBy_example;  // string | <p>Property to sort by</p>  (optional)  (default to id)
-            var sortDir = sortDir_example;  // string | <p>Sort direction</p>  (optional)  (default to desc)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
+            var sortBy = sortBy_example;  // string | Property to sort by  (optional)  (default to id)
+            var sortDir = sortDir_example;  // string | Sort direction  (optional)  (default to desc)
             var pageKey = 56;  // int? |   (optional) 
-            var support = true;  // bool? | <p>Return only or filter out support agreements</p>  (optional) 
-            var service = service_example;  // string | <p>Filter by system agreement service name</p>  (optional) 
-            var me = true;  // bool? | <p>If set, only show the agreement of the caller</p>  (optional) 
-            var accountId = 56;  // int? | <p>If set, shows agreements for another account if current account has access.</p>  (optional) 
+            var support = true;  // bool? | Return only or filter out support agreements  (optional) 
+            var service = service_example;  // string | Filter by system agreement service name  (optional) 
+            var me = true;  // bool? | If set, only show the agreement of the caller  (optional) 
+            var accountId = 56;  // int? | If set, shows agreements for another account if current account has access.  (optional) 
 
             try
             {
@@ -134,17 +134,17 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
- **sortBy** | **string**| &lt;p&gt;Property to sort by&lt;/p&gt;  | [optional] [default to id]
- **sortDir** | **string**| &lt;p&gt;Sort direction&lt;/p&gt;  | [optional] [default to desc]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
+ **sortBy** | **string**| Property to sort by  | [optional] [default to id]
+ **sortDir** | **string**| Sort direction  | [optional] [default to desc]
  **pageKey** | **int?**|   | [optional] 
- **support** | **bool?**| &lt;p&gt;Return only or filter out support agreements&lt;/p&gt;  | [optional] 
- **service** | **string**| &lt;p&gt;Filter by system agreement service name&lt;/p&gt;  | [optional] 
- **me** | **bool?**| &lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt;  | [optional] 
- **accountId** | **int?**| &lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt;  | [optional] 
+ **support** | **bool?**| Return only or filter out support agreements  | [optional] 
+ **service** | **string**| Filter by system agreement service name  | [optional] 
+ **me** | **bool?**| If set, only show the agreement of the caller  | [optional] 
+ **accountId** | **int?**| If set, shows agreements for another account if current account has access.  | [optional] 
 
 ### Return type
 
@@ -185,13 +185,13 @@ namespace Example
         {
             
             var apiInstance = new AgreementsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Agreement id</p> 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
-            var sortBy = sortBy_example;  // string | <p>Property to sort by</p>  (optional)  (default to created_at)
-            var sortDir = sortDir_example;  // string | <p>Sort direction</p>  (optional)  (default to desc)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Agreement id 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
+            var sortBy = sortBy_example;  // string | Property to sort by  (optional)  (default to created_at)
+            var sortDir = sortDir_example;  // string | Sort direction  (optional)  (default to desc)
 
             try
             {
@@ -212,13 +212,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Agreement id&lt;/p&gt;  | 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
- **sortBy** | **string**| &lt;p&gt;Property to sort by&lt;/p&gt;  | [optional] [default to created_at]
- **sortDir** | **string**| &lt;p&gt;Sort direction&lt;/p&gt;  | [optional] [default to desc]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Agreement id  | 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
+ **sortBy** | **string**| Property to sort by  | [optional] [default to created_at]
+ **sortDir** | **string**| Sort direction  | [optional] [default to desc]
 
 ### Return type
 
@@ -259,9 +259,9 @@ namespace Example
         {
             
             var apiInstance = new AgreementsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Agreement id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Agreement id 
 
             try
             {
@@ -282,9 +282,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Agreement id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Agreement id  | 
 
 ### Return type
 
@@ -325,9 +325,9 @@ namespace Example
         {
             
             var apiInstance = new AgreementsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Agreement id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Agreement id 
 
             try
             {
@@ -348,9 +348,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Agreement id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Agreement id  | 
 
 ### Return type
 
@@ -391,12 +391,12 @@ namespace Example
         {
             
             var apiInstance = new AgreementsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Agreement id</p> 
-            var ipRestrictionAddress = ipRestrictionAddress_example;  // string | <p>IP address</p> 
-            var owner = true;  // bool? | <p>Is account owner</p>  (optional) 
-            var description = description_example;  // string | <p>Description of the account</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Agreement id 
+            var ipRestrictionAddress = ipRestrictionAddress_example;  // string | IP address 
+            var owner = true;  // bool? | Is account owner  (optional) 
+            var description = description_example;  // string | Description of the account  (optional) 
 
             try
             {
@@ -417,12 +417,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Agreement id&lt;/p&gt;  | 
- **ipRestrictionAddress** | **string**| &lt;p&gt;IP address&lt;/p&gt;  | 
- **owner** | **bool?**| &lt;p&gt;Is account owner&lt;/p&gt;  | [optional] 
- **description** | **string**| &lt;p&gt;Description of the account&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Agreement id  | 
+ **ipRestrictionAddress** | **string**| IP address  | 
+ **owner** | **bool?**| Is account owner  | [optional] 
+ **description** | **string**| Description of the account  | [optional] 
 
 ### Return type
 
@@ -463,19 +463,19 @@ namespace Example
         {
             
             var apiInstance = new AgreementsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var aclPermissionsResource = aclPermissionsResource_example;  // string | <p>Resource uri</p> 
-            var ipRestrictionAddress = ipRestrictionAddress_example;  // string | <p>IP address</p> 
-            var userEmail = userEmail_example;  // string | <p>Email of the user to invite to this account. Only one of user_email and system_user can be specified.</p>  (optional) 
-            var systemUser = systemUser_example;  // string | <p>Create a new system user with this name. Only one of user_email and system_user can be specified.</p>  (optional) 
-            var owner = true;  // bool? | <p>Is account owner. Default is false</p>  (optional) 
-            var description = description_example;  // string | <p>Description of the account</p>  (optional) 
-            var aclPermissionsGet = true;  // bool? | <p>Allow GET</p>  (optional) 
-            var aclPermissionsPost = true;  // bool? | <p>Allow POST</p>  (optional) 
-            var aclPermissionsPut = true;  // bool? | <p>Allow PUT</p>  (optional) 
-            var aclPermissionsDelete = true;  // bool? | <p>Allow DELETE</p>  (optional) 
-            var aclPermissionsPatch = true;  // bool? | <p>Allow PATCH</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var aclPermissionsResource = aclPermissionsResource_example;  // string | Resource uri 
+            var ipRestrictionAddress = ipRestrictionAddress_example;  // string | IP address 
+            var userEmail = userEmail_example;  // string | Email of the user to invite to this account. Only one of user_email and system_user can be specified.  (optional) 
+            var systemUser = systemUser_example;  // string | Create a new system user with this name. Only one of user_email and system_user can be specified.  (optional) 
+            var owner = true;  // bool? | Is account owner. Default is false  (optional) 
+            var description = description_example;  // string | Description of the account  (optional) 
+            var aclPermissionsGet = true;  // bool? | Allow GET  (optional) 
+            var aclPermissionsPost = true;  // bool? | Allow POST  (optional) 
+            var aclPermissionsPut = true;  // bool? | Allow PUT  (optional) 
+            var aclPermissionsDelete = true;  // bool? | Allow DELETE  (optional) 
+            var aclPermissionsPatch = true;  // bool? | Allow PATCH  (optional) 
 
             try
             {
@@ -496,19 +496,19 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **aclPermissionsResource** | **string**| &lt;p&gt;Resource uri&lt;/p&gt;  | 
- **ipRestrictionAddress** | **string**| &lt;p&gt;IP address&lt;/p&gt;  | 
- **userEmail** | **string**| &lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt;  | [optional] 
- **systemUser** | **string**| &lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt;  | [optional] 
- **owner** | **bool?**| &lt;p&gt;Is account owner. Default is false&lt;/p&gt;  | [optional] 
- **description** | **string**| &lt;p&gt;Description of the account&lt;/p&gt;  | [optional] 
- **aclPermissionsGet** | **bool?**| &lt;p&gt;Allow GET&lt;/p&gt;  | [optional] 
- **aclPermissionsPost** | **bool?**| &lt;p&gt;Allow POST&lt;/p&gt;  | [optional] 
- **aclPermissionsPut** | **bool?**| &lt;p&gt;Allow PUT&lt;/p&gt;  | [optional] 
- **aclPermissionsDelete** | **bool?**| &lt;p&gt;Allow DELETE&lt;/p&gt;  | [optional] 
- **aclPermissionsPatch** | **bool?**| &lt;p&gt;Allow PATCH&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **aclPermissionsResource** | **string**| Resource uri  | 
+ **ipRestrictionAddress** | **string**| IP address  | 
+ **userEmail** | **string**| Email of the user to invite to this account. Only one of user_email and system_user can be specified.  | [optional] 
+ **systemUser** | **string**| Create a new system user with this name. Only one of user_email and system_user can be specified.  | [optional] 
+ **owner** | **bool?**| Is account owner. Default is false  | [optional] 
+ **description** | **string**| Description of the account  | [optional] 
+ **aclPermissionsGet** | **bool?**| Allow GET  | [optional] 
+ **aclPermissionsPost** | **bool?**| Allow POST  | [optional] 
+ **aclPermissionsPut** | **bool?**| Allow PUT  | [optional] 
+ **aclPermissionsDelete** | **bool?**| Allow DELETE  | [optional] 
+ **aclPermissionsPatch** | **bool?**| Allow PATCH  | [optional] 
 
 ### Return type
 
@@ -549,18 +549,18 @@ namespace Example
         {
             
             var apiInstance = new AgreementsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Agreement id</p> 
-            var aclPermissionsResource = aclPermissionsResource_example;  // string | <p>Resource uri</p> 
-            var ipRestrictionAddress = ipRestrictionAddress_example;  // string | <p>IP address</p> 
-            var owner = true;  // bool? | <p>Is account owner</p>  (optional) 
-            var description = description_example;  // string | <p>Description of the account</p>  (optional) 
-            var aclPermissionsGet = true;  // bool? | <p>Allow GET</p>  (optional) 
-            var aclPermissionsPost = true;  // bool? | <p>Allow POST</p>  (optional) 
-            var aclPermissionsPut = true;  // bool? | <p>Allow PUT</p>  (optional) 
-            var aclPermissionsDelete = true;  // bool? | <p>Allow DELETE</p>  (optional) 
-            var aclPermissionsPatch = true;  // bool? | <p>Allow PATCH</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Agreement id 
+            var aclPermissionsResource = aclPermissionsResource_example;  // string | Resource uri 
+            var ipRestrictionAddress = ipRestrictionAddress_example;  // string | IP address 
+            var owner = true;  // bool? | Is account owner  (optional) 
+            var description = description_example;  // string | Description of the account  (optional) 
+            var aclPermissionsGet = true;  // bool? | Allow GET  (optional) 
+            var aclPermissionsPost = true;  // bool? | Allow POST  (optional) 
+            var aclPermissionsPut = true;  // bool? | Allow PUT  (optional) 
+            var aclPermissionsDelete = true;  // bool? | Allow DELETE  (optional) 
+            var aclPermissionsPatch = true;  // bool? | Allow PATCH  (optional) 
 
             try
             {
@@ -581,18 +581,18 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Agreement id&lt;/p&gt;  | 
- **aclPermissionsResource** | **string**| &lt;p&gt;Resource uri&lt;/p&gt;  | 
- **ipRestrictionAddress** | **string**| &lt;p&gt;IP address&lt;/p&gt;  | 
- **owner** | **bool?**| &lt;p&gt;Is account owner&lt;/p&gt;  | [optional] 
- **description** | **string**| &lt;p&gt;Description of the account&lt;/p&gt;  | [optional] 
- **aclPermissionsGet** | **bool?**| &lt;p&gt;Allow GET&lt;/p&gt;  | [optional] 
- **aclPermissionsPost** | **bool?**| &lt;p&gt;Allow POST&lt;/p&gt;  | [optional] 
- **aclPermissionsPut** | **bool?**| &lt;p&gt;Allow PUT&lt;/p&gt;  | [optional] 
- **aclPermissionsDelete** | **bool?**| &lt;p&gt;Allow DELETE&lt;/p&gt;  | [optional] 
- **aclPermissionsPatch** | **bool?**| &lt;p&gt;Allow PATCH&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Agreement id  | 
+ **aclPermissionsResource** | **string**| Resource uri  | 
+ **ipRestrictionAddress** | **string**| IP address  | 
+ **owner** | **bool?**| Is account owner  | [optional] 
+ **description** | **string**| Description of the account  | [optional] 
+ **aclPermissionsGet** | **bool?**| Allow GET  | [optional] 
+ **aclPermissionsPost** | **bool?**| Allow POST  | [optional] 
+ **aclPermissionsPut** | **bool?**| Allow PUT  | [optional] 
+ **aclPermissionsDelete** | **bool?**| Allow DELETE  | [optional] 
+ **aclPermissionsPatch** | **bool?**| Allow PATCH  | [optional] 
 
 ### Return type
 

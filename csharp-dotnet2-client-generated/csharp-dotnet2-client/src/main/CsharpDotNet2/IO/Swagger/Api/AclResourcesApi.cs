@@ -14,10 +14,10 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get acl resources  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
         /// <returns>AclResource</returns>
         AclResource GETAclResourcesFormat (string acceptVersion, string authorization, int? page, int? pageSize);
     }
@@ -78,10 +78,10 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get acl resources  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
         /// <returns>AclResource</returns>            
         public AclResource GETAclResourcesFormat (string acceptVersion, string authorization, int? page, int? pageSize)
         {

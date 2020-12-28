@@ -14,99 +14,99 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns></returns>
         void DELETEAgreementsIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get agreements  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
         /// <param name="pageKey"> </param>
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt; </param>
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt; </param>
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt; </param>
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt; </param>
+        /// <param name="support">Return only or filter out support agreements </param>
+        /// <param name="service">Filter by system agreement service name </param>
+        /// <param name="me">If set, only show the agreement of the caller </param>
+        /// <param name="accountId">If set, shows agreements for another account if current account has access. </param>
         /// <returns>Agreement</returns>
         Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey, bool? support, string service, bool? me, int? accountId);
         /// <summary>
         /// Get agreement activity  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
         /// <returns>Activity</returns>
         Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page, int? pageSize, string sortBy, string sortDir);
         /// <summary>
         /// Get agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Agreement</returns>
         Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Regenerate the API key for this agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
         /// <returns>Agreement</returns>
         Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Update agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner </param>
+        /// <param name="description">Description of the account </param>
         /// <returns>Agreement</returns>
         Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner, string description);
         /// <summary>
         /// Create agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt; </param>
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt; </param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt; </param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt; </param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt; </param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt; </param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified. </param>
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified. </param>
+        /// <param name="owner">Is account owner. Default is false </param>
+        /// <param name="description">Description of the account </param>
+        /// <param name="aclPermissionsGet">Allow GET </param>
+        /// <param name="aclPermissionsPost">Allow POST </param>
+        /// <param name="aclPermissionsPut">Allow PUT </param>
+        /// <param name="aclPermissionsDelete">Allow DELETE </param>
+        /// <param name="aclPermissionsPatch">Allow PATCH </param>
         /// <returns>Agreement</returns>
         Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail, string systemUser, bool? owner, string description, bool? aclPermissionsGet, bool? aclPermissionsPost, bool? aclPermissionsPut, bool? aclPermissionsDelete, bool? aclPermissionsPatch);
         /// <summary>
         /// Replace agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param>
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param>
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param>
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt; </param>
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt; </param>
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt; </param>
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt; </param>
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt; </param>
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Agreement id </param>
+        /// <param name="aclPermissionsResource">Resource uri </param>
+        /// <param name="ipRestrictionAddress">IP address </param>
+        /// <param name="owner">Is account owner </param>
+        /// <param name="description">Description of the account </param>
+        /// <param name="aclPermissionsGet">Allow GET </param>
+        /// <param name="aclPermissionsPost">Allow POST </param>
+        /// <param name="aclPermissionsPut">Allow PUT </param>
+        /// <param name="aclPermissionsDelete">Allow DELETE </param>
+        /// <param name="aclPermissionsPatch">Allow PATCH </param>
         /// <returns>Agreement</returns>
         Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner, string description, bool? aclPermissionsGet, bool? aclPermissionsPost, bool? aclPermissionsPut, bool? aclPermissionsDelete, bool? aclPermissionsPatch);
     }
@@ -167,9 +167,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Agreement id </param> 
         /// <returns></returns>            
         public void DELETEAgreementsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -214,17 +214,17 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get agreements  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
         /// <param name="pageKey"> </param> 
-        /// <param name="support">&lt;p&gt;Return only or filter out support agreements&lt;/p&gt; </param> 
-        /// <param name="service">&lt;p&gt;Filter by system agreement service name&lt;/p&gt; </param> 
-        /// <param name="me">&lt;p&gt;If set, only show the agreement of the caller&lt;/p&gt; </param> 
-        /// <param name="accountId">&lt;p&gt;If set, shows agreements for another account if current account has access.&lt;/p&gt; </param> 
+        /// <param name="support">Return only or filter out support agreements </param> 
+        /// <param name="service">Filter by system agreement service name </param> 
+        /// <param name="me">If set, only show the agreement of the caller </param> 
+        /// <param name="accountId">If set, shows agreements for another account if current account has access. </param> 
         /// <returns>Agreement</returns>            
         public Agreement GETAgreementsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey, bool? support, string service, bool? me, int? accountId)
         {
@@ -274,13 +274,13 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get agreement activity  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Agreement id </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
         /// <returns>Activity</returns>            
         public Activity GETAgreementsIdActivityFormat (string acceptVersion, string authorization, int? id, int? page, int? pageSize, string sortBy, string sortDir)
         {
@@ -329,9 +329,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Agreement id </param> 
         /// <returns>Agreement</returns>            
         public Agreement GETAgreementsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -376,9 +376,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Regenerate the API key for this agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Agreement id </param> 
         /// <returns>Agreement</returns>            
         public Agreement PATCHAgreementsIdApiKeyFormat (string acceptVersion, string authorization, int? id)
         {
@@ -423,12 +423,12 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Update agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param> 
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param> 
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt; </param> 
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Agreement id </param> 
+        /// <param name="ipRestrictionAddress">IP address </param> 
+        /// <param name="owner">Is account owner </param> 
+        /// <param name="description">Description of the account </param> 
         /// <returns>Agreement</returns>            
         public Agreement PATCHAgreementsIdFormat (string acceptVersion, string authorization, int? id, string ipRestrictionAddress, bool? owner, string description)
         {
@@ -479,19 +479,19 @@ if (ipRestrictionAddress != null) formParams.Add("ip_restriction[][address]", Ap
         /// <summary>
         /// Create agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param> 
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param> 
-        /// <param name="userEmail">&lt;p&gt;Email of the user to invite to this account. Only one of user_email and system_user can be specified.&lt;/p&gt; </param> 
-        /// <param name="systemUser">&lt;p&gt;Create a new system user with this name. Only one of user_email and system_user can be specified.&lt;/p&gt; </param> 
-        /// <param name="owner">&lt;p&gt;Is account owner. Default is false&lt;/p&gt; </param> 
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="aclPermissionsResource">Resource uri </param> 
+        /// <param name="ipRestrictionAddress">IP address </param> 
+        /// <param name="userEmail">Email of the user to invite to this account. Only one of user_email and system_user can be specified. </param> 
+        /// <param name="systemUser">Create a new system user with this name. Only one of user_email and system_user can be specified. </param> 
+        /// <param name="owner">Is account owner. Default is false </param> 
+        /// <param name="description">Description of the account </param> 
+        /// <param name="aclPermissionsGet">Allow GET </param> 
+        /// <param name="aclPermissionsPost">Allow POST </param> 
+        /// <param name="aclPermissionsPut">Allow PUT </param> 
+        /// <param name="aclPermissionsDelete">Allow DELETE </param> 
+        /// <param name="aclPermissionsPatch">Allow PATCH </param> 
         /// <returns>Agreement</returns>            
         public Agreement POSTAgreementsFormat (string acceptVersion, string authorization, string aclPermissionsResource, string ipRestrictionAddress, string userEmail, string systemUser, bool? owner, string description, bool? aclPermissionsGet, bool? aclPermissionsPost, bool? aclPermissionsPut, bool? aclPermissionsDelete, bool? aclPermissionsPatch)
         {
@@ -549,18 +549,18 @@ if (ipRestrictionAddress != null) formParams.Add("ip_restriction[][address]", Ap
         /// <summary>
         /// Replace agreement  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Agreement id&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsResource">&lt;p&gt;Resource uri&lt;/p&gt; </param> 
-        /// <param name="ipRestrictionAddress">&lt;p&gt;IP address&lt;/p&gt; </param> 
-        /// <param name="owner">&lt;p&gt;Is account owner&lt;/p&gt; </param> 
-        /// <param name="description">&lt;p&gt;Description of the account&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsGet">&lt;p&gt;Allow GET&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsPost">&lt;p&gt;Allow POST&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsPut">&lt;p&gt;Allow PUT&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsDelete">&lt;p&gt;Allow DELETE&lt;/p&gt; </param> 
-        /// <param name="aclPermissionsPatch">&lt;p&gt;Allow PATCH&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Agreement id </param> 
+        /// <param name="aclPermissionsResource">Resource uri </param> 
+        /// <param name="ipRestrictionAddress">IP address </param> 
+        /// <param name="owner">Is account owner </param> 
+        /// <param name="description">Description of the account </param> 
+        /// <param name="aclPermissionsGet">Allow GET </param> 
+        /// <param name="aclPermissionsPost">Allow POST </param> 
+        /// <param name="aclPermissionsPut">Allow PUT </param> 
+        /// <param name="aclPermissionsDelete">Allow DELETE </param> 
+        /// <param name="aclPermissionsPatch">Allow PATCH </param> 
         /// <returns>Agreement</returns>            
         public Agreement PUTAgreementsIdFormat (string acceptVersion, string authorization, int? id, string aclPermissionsResource, string ipRestrictionAddress, bool? owner, string description, bool? aclPermissionsGet, bool? aclPermissionsPost, bool? aclPermissionsPut, bool? aclPermissionsDelete, bool? aclPermissionsPatch)
         {

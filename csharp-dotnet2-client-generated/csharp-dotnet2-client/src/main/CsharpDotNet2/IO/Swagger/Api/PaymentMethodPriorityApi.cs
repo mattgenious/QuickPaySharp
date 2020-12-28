@@ -14,18 +14,18 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get merchant payment method priority  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>PaymentMethodPriority</returns>
         PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Replaces the payment method priority of the merchant  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns></returns>
-        void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority);
+        void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, string paymentMethodPriority);
     }
   
     /// <summary>
@@ -84,8 +84,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get merchant payment method priority  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>PaymentMethodPriority</returns>            
         public PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization)
         {
@@ -126,11 +126,11 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Replaces the payment method priority of the merchant  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param> 
         /// <returns></returns>            
-        public void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority)
+        public void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, string paymentMethodPriority)
         {
             
             // verify the required parameter 'acceptVersion' is set

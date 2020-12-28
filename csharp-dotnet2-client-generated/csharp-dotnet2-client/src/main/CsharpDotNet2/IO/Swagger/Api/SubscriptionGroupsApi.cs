@@ -14,59 +14,59 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete subscription group  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get all subscription groups  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir);
         /// <summary>
         /// Find subscription group by id  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Update subscription group  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="description">Descriptive text </param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name, int? amount, string description);
         /// <summary>
         /// Create subscription group  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Name of the group </param>
+        /// <param name="amount">Amount to capture on each recurring capture </param>
+        /// <param name="currency">Currency for the amount </param>
+        /// <param name="description">Descriptive text </param>
         /// <returns>SubscriptionGroup</returns>
         SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description);
         /// <summary>
         /// Create recurring payments on subscription group  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param>
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription-group id </param>
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param>
         /// <returns>SubscriptionGroupResult</returns>
         SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix);
     }
@@ -127,9 +127,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete subscription group  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription-group id </param> 
         /// <returns>SubscriptionGroup</returns>            
         public SubscriptionGroup DELETESubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -174,12 +174,12 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get all subscription groups  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
         /// <returns>SubscriptionGroup</returns>            
         public SubscriptionGroup GETSubscriptionGroupsFormat (string acceptVersion, string authorization, int? page, int? pageSize, string sortBy, string sortDir)
         {
@@ -224,9 +224,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Find subscription group by id  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription-group id </param> 
         /// <returns>SubscriptionGroup</returns>            
         public SubscriptionGroup GETSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id)
         {
@@ -271,12 +271,12 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Update subscription group  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param> 
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param> 
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription-group id </param> 
+        /// <param name="name">Name of the group </param> 
+        /// <param name="amount">Amount to capture on each recurring capture </param> 
+        /// <param name="description">Descriptive text </param> 
         /// <returns>SubscriptionGroup</returns>            
         public SubscriptionGroup PATCHSubscriptionGroupsIdFormat (string acceptVersion, string authorization, int? id, string name, int? amount, string description)
         {
@@ -324,12 +324,12 @@ if (description != null) formParams.Add("description", ApiClient.ParameterToStri
         /// <summary>
         /// Create subscription group  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="name">&lt;p&gt;Name of the group&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt; </param> 
-        /// <param name="currency">&lt;p&gt;Currency for the amount&lt;/p&gt; </param> 
-        /// <param name="description">&lt;p&gt;Descriptive text&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="name">Name of the group </param> 
+        /// <param name="amount">Amount to capture on each recurring capture </param> 
+        /// <param name="currency">Currency for the amount </param> 
+        /// <param name="description">Descriptive text </param> 
         /// <returns>SubscriptionGroup</returns>            
         public SubscriptionGroup POSTSubscriptionGroupsFormat (string acceptVersion, string authorization, string name, int? amount, string currency, string description)
         {
@@ -383,10 +383,10 @@ if (description != null) formParams.Add("description", ApiClient.ParameterToStri
         /// <summary>
         /// Create recurring payments on subscription group  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription-group id&lt;/p&gt; </param> 
-        /// <param name="orderIdPrefix">&lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription-group id </param> 
+        /// <param name="orderIdPrefix">Unique prefix for the order id of the recurring payments </param> 
         /// <returns>SubscriptionGroupResult</returns>            
         public SubscriptionGroupResult POSTSubscriptionGroupsIdCaptureFormat (string acceptVersion, string authorization, int? id, string orderIdPrefix)
         {

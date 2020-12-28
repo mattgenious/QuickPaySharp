@@ -14,53 +14,53 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete certificate  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         void DELETECryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Delete key  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         void DELETECryptographyKeysIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get keys  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="query"> </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
         /// <param name="pageKey"> </param>
         /// <returns>MerchantCryptographyKey</returns>
         MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type, string query, string sortBy, string sortDir, int? pageSize, int? pageKey);
         /// <summary>
         /// Get certificate  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         void GETCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get key  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>MerchantCryptographyKey</returns>
         MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// update key  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="shortDescription"> </param>
         /// <returns>MerchantCryptographyKey</returns>
@@ -68,8 +68,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create key  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="type"> </param>
         /// <param name="shortDescription"> </param>
         /// <param name="keySize"> </param>
@@ -79,8 +79,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create certificate request (CSR)  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <param name="subjectKey"> </param>
         /// <param name="subjectValue"> </param>
@@ -90,12 +90,12 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Replace certificate  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <returns></returns>
-        void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, ModelFile _file);
+        void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, System.IO.Stream _file);
     }
   
     /// <summary>
@@ -154,8 +154,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete certificate  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <returns></returns>            
         public void DELETECryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id)
@@ -201,8 +201,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete key  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <returns></returns>            
         public void DELETECryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
@@ -248,13 +248,13 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get keys  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="type"> </param> 
         /// <param name="query"> </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
         /// <param name="pageKey"> </param> 
         /// <returns>MerchantCryptographyKey</returns>            
         public MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type, string query, string sortBy, string sortDir, int? pageSize, int? pageKey)
@@ -302,8 +302,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get certificate  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <returns></returns>            
         public void GETCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id)
@@ -349,8 +349,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get key  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <returns>MerchantCryptographyKey</returns>            
         public MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
@@ -396,8 +396,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// update key  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <param name="shortDescription"> </param> 
         /// <returns>MerchantCryptographyKey</returns>            
@@ -445,8 +445,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create key  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="type"> </param> 
         /// <param name="shortDescription"> </param> 
         /// <param name="keySize"> </param> 
@@ -507,8 +507,8 @@ if (curve != null) formParams.Add("curve", ApiClient.ParameterToString(curve)); 
         /// <summary>
         /// Create certificate request (CSR)  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <param name="subjectKey"> </param> 
         /// <param name="subjectValue"> </param> 
@@ -569,12 +569,12 @@ if (subjectEncoding != null) formParams.Add("subject[][encoding]", ApiClient.Par
         /// <summary>
         /// Replace certificate  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param> 
+        /// <param name="_file">The file send as multipart </param> 
         /// <returns></returns>            
-        public void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, ModelFile _file)
+        public void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, System.IO.Stream _file)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -602,8 +602,8 @@ if (subjectEncoding != null) formParams.Add("subject[][encoding]", ApiClient.Par
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
  if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
-                        postBody = ApiClient.Serialize(_file); // http body (model) parameter
-    
+            if (_file != null) fileParams.Add("file", ApiClient.ParameterToFile("file", _file));
+                
             // authentication setting, if any
             String[] authSettings = new String[] {  };
     

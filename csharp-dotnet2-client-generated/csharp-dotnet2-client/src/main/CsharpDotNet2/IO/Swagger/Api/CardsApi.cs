@@ -14,125 +14,125 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete card link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns></returns>
         void DELETECardsIdLinkFormat (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Get saved cards  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt; </param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="timestamp">Timestamp field </param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param>
+        /// <param name="fraudSuspected">Filter by suspected fraud </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
         /// <param name="pageKey"> </param>
         /// <returns>Card</returns>
         Card GETCardsFormat (string acceptVersion, string authorization, string timestamp, string minTime, string maxTime, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey);
         /// <summary>
         /// Get saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>Card</returns>
         Card GETCardsIdFormat (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Get Operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="operationId">Operations id </param>
         /// <param name="id"> </param>
         /// <returns>CardOperation</returns>
         CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id);
         /// <summary>
         /// Update saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
+        /// <param name="variables">Custom variables </param>
         /// <returns>Card</returns>
-        Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables);
+        Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, string variables);
         /// <summary>
         /// Create saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="variables">Custom variables </param>
         /// <returns>Card</returns>
-        Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables);
+        Card POSTCardsFormat (string acceptVersion, string authorization, string variables);
         /// <summary>
         /// Authorize saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt; </param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt; </param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
+        /// <param name="cardCvd">CVD/CVV </param>
+        /// <param name="cardIssuedTo">Card holder name </param>
+        /// <param name="cardBrand">Brand to use on multi-brand card </param>
+        /// <param name="acquirer">If set, will force the use of this acquirer </param>
+        /// <param name="customerIp">Customer IP </param>
+        /// <param name="extras">Additional acquirer specific params </param>
         /// <returns>Card</returns>
-        Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras);
+        Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, string extras);
         /// <summary>
         /// Cancel saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
         /// <returns>Card</returns>
         Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized);
         /// <summary>
         /// Create fraud confirmation report  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
         /// <param name="description"> </param>
         /// <returns>FraudReport</returns>
         FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl, string description);
         /// <summary>
         /// Create card token  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
         /// <returns>CardToken</returns>
         CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id);
         /// <summary>
         /// Create or update a card link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="id"> </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt; </param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt; </param>
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt; </param>
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt; </param>
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt; </param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt; </param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt; </param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement </param>
+        /// <param name="language">Language </param>
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize </param>
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation </param>
+        /// <param name="callbackurl">Endpoint for async callback </param>
+        /// <param name="paymentMethods">Limit payment methods </param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding </param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics </param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics </param>
+        /// <param name="acquirer">Force usage of the given acquirer </param>
+        /// <param name="framed">Allow opening in iframe </param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding </param>
         /// <returns>CardLinkUrl</returns>
-        CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig);
+        CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, string brandingConfig);
     }
   
     /// <summary>
@@ -191,8 +191,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete card link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <returns></returns>            
         public void DELETECardsIdLinkFormat (string acceptVersion, string authorization, string id)
@@ -238,16 +238,16 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get saved cards  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt; </param> 
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param> 
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param> 
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="timestamp">Timestamp field </param> 
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param> 
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param> 
+        /// <param name="fraudSuspected">Filter by suspected fraud </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
         /// <param name="pageKey"> </param> 
         /// <returns>Card</returns>            
         public Card GETCardsFormat (string acceptVersion, string authorization, string timestamp, string minTime, string maxTime, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, int? pageKey)
@@ -298,8 +298,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <returns>Card</returns>            
         public Card GETCardsIdFormat (string acceptVersion, string authorization, string id)
@@ -345,9 +345,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="operationId">Operations id </param> 
         /// <param name="id"> </param> 
         /// <returns>CardOperation</returns>            
         public CardOperation GETCardsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? operationId, string id)
@@ -397,12 +397,12 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
         /// <summary>
         /// Update saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
+        /// <param name="variables">Custom variables </param> 
         /// <returns>Card</returns>            
-        public Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables)
+        public Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, string variables)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -446,11 +446,11 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
         /// <summary>
         /// Create saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="variables">Custom variables </param> 
         /// <returns>Card</returns>            
-        public Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables)
+        public Card POSTCardsFormat (string acceptVersion, string authorization, string variables)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -490,20 +490,20 @@ path = path.Replace("{" + "id" + "}", ApiClient.ParameterToString(id));
         /// <summary>
         /// Authorize saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param> 
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="cardNumber">Card number </param> 
+        /// <param name="cardExpiration">Expiration date (YYMM) </param> 
         /// <param name="id"> </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt; </param> 
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt; </param> 
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param> 
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
+        /// <param name="cardCvd">CVD/CVV </param> 
+        /// <param name="cardIssuedTo">Card holder name </param> 
+        /// <param name="cardBrand">Brand to use on multi-brand card </param> 
+        /// <param name="acquirer">If set, will force the use of this acquirer </param> 
+        /// <param name="customerIp">Customer IP </param> 
+        /// <param name="extras">Additional acquirer specific params </param> 
         /// <returns>Card</returns>            
-        public Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras)
+        public Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, string extras)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -561,10 +561,10 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Cancel saved card  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
         /// <returns>Card</returns>            
         public Card POSTCardsIdCancelFormat (string acceptVersion, string authorization, string id, bool? synchronized)
         {
@@ -610,10 +610,10 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create fraud confirmation report  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
         /// <param name="description"> </param> 
         /// <returns>FraudReport</returns>            
         public FraudReport POSTCardsIdFraudReportFormat (string acceptVersion, string authorization, string id, string quickPayCallbackUrl, string description)
@@ -661,8 +661,8 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create card token  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
         /// <returns>CardToken</returns>            
         public CardToken POSTCardsIdTokensFormat (string acceptVersion, string authorization, string id)
@@ -708,23 +708,23 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create or update a card link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="id"> </param> 
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt; </param> 
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt; </param> 
-        /// <param name="continueurl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt; </param> 
-        /// <param name="cancelurl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt; </param> 
-        /// <param name="callbackurl">&lt;p&gt;Endpoint for async callback&lt;/p&gt; </param> 
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt; </param> 
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt; </param> 
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param> 
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param> 
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param> 
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param> 
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement </param> 
+        /// <param name="language">Language </param> 
+        /// <param name="continueurl">Url that cardholder is redirected to after authorize </param> 
+        /// <param name="cancelurl">Url that cardholder is redirected to after cancelation </param> 
+        /// <param name="callbackurl">Endpoint for async callback </param> 
+        /// <param name="paymentMethods">Limit payment methods </param> 
+        /// <param name="brandingId">Override branding. Default is merchant default branding </param> 
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics </param> 
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics </param> 
+        /// <param name="acquirer">Force usage of the given acquirer </param> 
+        /// <param name="framed">Allow opening in iframe </param> 
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding </param> 
         /// <returns>CardLinkUrl</returns>            
-        public CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig)
+        public CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, string brandingConfig)
         {
             
             // verify the required parameter 'acceptVersion' is set

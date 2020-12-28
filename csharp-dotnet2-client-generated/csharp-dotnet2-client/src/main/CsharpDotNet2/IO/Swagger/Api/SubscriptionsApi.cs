@@ -14,279 +14,279 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete payment link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Transaction id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Transaction id </param>
         /// <returns></returns>
         void DELETESubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get subscriptions  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt; </param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt; </param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt; </param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt; </param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt; </param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param>
-        /// <param name="accepted">&lt;p&gt;Return accepted subscriptions&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt; </param>
-        /// <param name="state">&lt;p&gt;Filter by state&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Find by subscription id&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt; </param>
-        /// <param name="groupId">&lt;p&gt;Filter by subscription group&lt;/p&gt; </param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt; </param>
-        /// <param name="expired">&lt;p&gt;Filter by expiration&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year </param>
+        /// <param name="dateMonth">Month </param>
+        /// <param name="dateDay">Day of the month </param>
+        /// <param name="dateHour">Hour of the day </param>
+        /// <param name="dateMinute">Minute of the hour </param>
+        /// <param name="timestamp">Timestamp field </param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve </param>
+        /// <param name="accepted">Return accepted subscriptions </param>
+        /// <param name="orderId">Find by order_id </param>
+        /// <param name="state">Filter by state </param>
+        /// <param name="id">Find by subscription id </param>
+        /// <param name="acquirer">Filter by acquirer </param>
+        /// <param name="groupId">Filter by subscription group </param>
+        /// <param name="fraudSuspected">Filter by suspected fraud </param>
+        /// <param name="expired">Filter by expiration </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
         /// <param name="pageKey"> </param>
         /// <returns>Subscription</returns>
         Subscription GETSubscriptionsFormat (string acceptVersion, string authorization, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, string timestamp, string minTime, string maxTime, int? operationsSize, bool? accepted, string orderId, string state, int? id, string acquirer, int? groupId, bool? fraudSuspected, bool? expired, int? page, int? pageSize, string sortBy, string sortDir, string pageKey);
         /// <summary>
         /// Get subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve </param>
         /// <returns>Subscription</returns>
         Subscription GETSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize);
         /// <summary>
         /// Get Operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>Operation</returns>
         Operation GETSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId);
         /// <summary>
         /// Get all subscription payments  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payments&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt; </param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt; </param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt; </param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt; </param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="accepted">Return accepted payments </param>
+        /// <param name="dateYear">Year </param>
+        /// <param name="dateMonth">Month </param>
+        /// <param name="dateDay">Day of the month </param>
+        /// <param name="dateHour">Hour of the day </param>
+        /// <param name="dateMinute">Minute of the hour </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
         /// <returns>Payment</returns>
         Payment GETSubscriptionsIdPaymentsFormat (string acceptVersion, string authorization, int? id, bool? accepted, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, int? page, int? pageSize, string sortBy, string sortDir);
         /// <summary>
         /// Update subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="deadlineAt">&lt;p&gt;Subscription must be authorized before this time&lt;/p&gt; </param>
-        /// <param name="groupIds">&lt;p&gt;Ids of subscription groups&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Subscription description&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt; </param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt; </param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt; </param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt; </param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="deadlineAt">Subscription must be authorized before this time </param>
+        /// <param name="groupIds">Ids of subscription groups </param>
+        /// <param name="description">Subscription description </param>
+        /// <param name="invoiceAddressName">Name </param>
+        /// <param name="invoiceAddressAtt">Att </param>
+        /// <param name="invoiceAddressCompanyName">Company name </param>
+        /// <param name="invoiceAddressStreet">Street </param>
+        /// <param name="invoiceAddressHouseNumber">House number </param>
+        /// <param name="invoiceAddressHouseExtension">House extension </param>
+        /// <param name="invoiceAddressCity">City </param>
+        /// <param name="invoiceAddressZipCode">Zip code </param>
+        /// <param name="invoiceAddressRegion">Region </param>
+        /// <param name="invoiceAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param>
+        /// <param name="invoiceAddressVatNo">VAT registration number </param>
+        /// <param name="invoiceAddressPhoneNumber">Phone number </param>
+        /// <param name="invoiceAddressMobileNumber">Mobile number </param>
+        /// <param name="invoiceAddressEmail">Email address </param>
+        /// <param name="shippingAddressName">Name </param>
+        /// <param name="shippingAddressAtt">Att </param>
+        /// <param name="shippingAddressCompanyName">Company name </param>
+        /// <param name="shippingAddressStreet">Street </param>
+        /// <param name="shippingAddressHouseNumber">House number </param>
+        /// <param name="shippingAddressHouseExtension">House extension </param>
+        /// <param name="shippingAddressCity">City </param>
+        /// <param name="shippingAddressZipCode">Zip code </param>
+        /// <param name="shippingAddressRegion">Region </param>
+        /// <param name="shippingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param>
+        /// <param name="shippingAddressVatNo">VAT registration number </param>
+        /// <param name="shippingAddressPhoneNumber">Phone number </param>
+        /// <param name="shippingAddressMobileNumber">Mobile number </param>
+        /// <param name="shippingAddressEmail">Email address </param>
+        /// <param name="variables">Custom variables </param>
         /// <returns>Subscription</returns>
-        Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt, List<int?> groupIds, string description, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, Dictionary<string, string> variables);
+        Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt, string groupIds, string description, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, string variables);
         /// <summary>
         /// Update operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="operationId">Operations id </param>
+        /// <param name="pending">Aborts the operation. Only possible on cancel operations (false is the only allowed value) </param>
         /// <returns>Operation</returns>
         Operation PATCHSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
         /// <summary>
         /// Create subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param>
-        /// <param name="description">&lt;p&gt;Subscription description&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt; </param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt; </param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt; </param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt; </param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt; </param>
-        /// <param name="groupIds">&lt;p&gt;Ids of subscription groups&lt;/p&gt; </param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt; </param>
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt; </param>
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="currency">Currency </param>
+        /// <param name="description">Subscription description </param>
+        /// <param name="invoiceAddressName">Name </param>
+        /// <param name="invoiceAddressAtt">Att </param>
+        /// <param name="invoiceAddressCompanyName">Company name </param>
+        /// <param name="invoiceAddressStreet">Street </param>
+        /// <param name="invoiceAddressHouseNumber">House number </param>
+        /// <param name="invoiceAddressHouseExtension">House extension </param>
+        /// <param name="invoiceAddressCity">City </param>
+        /// <param name="invoiceAddressZipCode">Zip code </param>
+        /// <param name="invoiceAddressRegion">Region </param>
+        /// <param name="invoiceAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param>
+        /// <param name="invoiceAddressVatNo">VAT registration number </param>
+        /// <param name="invoiceAddressPhoneNumber">Phone number </param>
+        /// <param name="invoiceAddressMobileNumber">Mobile number </param>
+        /// <param name="invoiceAddressEmail">Email address </param>
+        /// <param name="shippingAddressName">Name </param>
+        /// <param name="shippingAddressAtt">Att </param>
+        /// <param name="shippingAddressCompanyName">Company name </param>
+        /// <param name="shippingAddressStreet">Street </param>
+        /// <param name="shippingAddressHouseNumber">House number </param>
+        /// <param name="shippingAddressHouseExtension">House extension </param>
+        /// <param name="shippingAddressCity">City </param>
+        /// <param name="shippingAddressZipCode">Zip code </param>
+        /// <param name="shippingAddressRegion">Region </param>
+        /// <param name="shippingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param>
+        /// <param name="shippingAddressVatNo">VAT registration number </param>
+        /// <param name="shippingAddressPhoneNumber">Phone number </param>
+        /// <param name="shippingAddressMobileNumber">Mobile number </param>
+        /// <param name="shippingAddressEmail">Email address </param>
+        /// <param name="variables">Custom variables </param>
+        /// <param name="brandingId">Used branding id </param>
+        /// <param name="groupIds">Ids of subscription groups </param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only. </param>
+        /// <param name="shopsystemName">Shop system module name </param>
+        /// <param name="shopsystemVersion">Shop system module version </param>
         /// <returns>Subscription</returns>
-        Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, Dictionary<string, string> variables, int? brandingId, List<int?> groupIds, string textOnStatement, string shopsystemName, string shopsystemVersion);
+        Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, string variables, int? brandingId, string groupIds, string textOnStatement, string shopsystemName, string shopsystemVersion);
         /// <summary>
         /// Authorize a subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt; </param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt; </param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt; </param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt; </param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt; </param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt; </param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt; </param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt; </param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt; </param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt; </param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt; </param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt; </param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt; </param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt; </param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
+        /// <param name="vatRate">Vate rate </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
+        /// <param name="cardCvd">CVD/CVV </param>
+        /// <param name="cardToken">Card token </param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token </param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token </param>
+        /// <param name="cardIssuedTo">Card holder name </param>
+        /// <param name="cardBrand">Brand to use on multi-brand card </param>
+        /// <param name="cardStatus">3D-Secure status </param>
+        /// <param name="cardEci">3D-Secure eci </param>
+        /// <param name="cardXav">3D-Secure xav </param>
+        /// <param name="cardCavv">3D-Secure cavv </param>
+        /// <param name="mobileNumber">Mobile number </param>
+        /// <param name="ninNumber">Customer NIN Number </param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3) </param>
+        /// <param name="ninGender">Customer gender </param>
+        /// <param name="personFirstName">Person first name </param>
+        /// <param name="personLastName">Person last name </param>
+        /// <param name="personEmail">Person email </param>
+        /// <param name="acquirer">If set, will force the use of this acquirer </param>
+        /// <param name="customerIp">Customer IP </param>
+        /// <param name="extras">Additional acquirer specific params </param>
         /// <returns>Subscription</returns>
-        Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, string acquirer, string customerIp, Dictionary<string, string> extras);
+        Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, string cardApplePayToken, string cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, string acquirer, string customerIp, string extras);
         /// <summary>
         /// Cancel subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
         /// <returns>Subscription</returns>
         Subscription POSTSubscriptionsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, bool? synchronized);
         /// <summary>
         /// Create fraud confirmation report  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
         /// <param name="description"> </param>
         /// <returns>FraudReport</returns>
         FraudReport POSTSubscriptionsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, string description);
         /// <summary>
         /// Create subscription recurring payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;DEPRECATED: it will be removed in v11. Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
-        /// <param name="autoCapture">&lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt; </param>
-        /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt; </param>
-        /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt; </param>
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">DEPRECATED: it will be removed in v11. Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
+        /// <param name="autoCapture">When true, payment is captured after authorization. Default is false </param>
+        /// <param name="autofee">When true, fee is calculated and added to the given amount. Default is merchant autofee </param>
+        /// <param name="zeroAuth">(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false </param>
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only. </param>
         /// <returns>Payment</returns>
         Payment POSTSubscriptionsIdRecurringFormat (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl, bool? synchronized, bool? autoCapture, bool? autofee, bool? zeroAuth, string textOnStatement);
         /// <summary>
         /// Create subscription session  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
-        /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt; </param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Subscription id </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="acquirer">If set, will force the use of this acquirer </param>
+        /// <param name="autofee">When true, fee is calculated and added to the given amount. Default is merchant autofee </param>
+        /// <param name="customerIp">Customer IP </param>
+        /// <param name="extras">Additional acquirer specific params </param>
         /// <returns>Subscription</returns>
-        Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, string acquirer, bool? autofee, string customerIp, Dictionary<string, string> extras);
+        Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, string acquirer, bool? autofee, string customerIp, string extras);
         /// <summary>
         /// Create or update a payment link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Transaction id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to authorize&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt; </param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt; </param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt; </param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt; </param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt; </param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt; </param>
-        /// <param name="autoFee">&lt;p&gt;Add acquirer fee to amount. Default is merchant autofee&lt;/p&gt; </param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt; </param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param>
-        /// <param name="deadline">&lt;p&gt;Set a deadline in seconds for the cardholder to complete&lt;/p&gt; </param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param>
-        /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt; </param>
-        /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt; </param>
-        /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Transaction id </param>
+        /// <param name="amount">Amount to authorize </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement </param>
+        /// <param name="language">Language </param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after authorize </param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation </param>
+        /// <param name="callbackUrl">Endpoint for async callback </param>
+        /// <param name="paymentMethods">Limit payment methods </param>
+        /// <param name="autoFee">Add acquirer fee to amount. Default is merchant autofee </param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding </param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics </param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics </param>
+        /// <param name="acquirer">Force usage of the given acquirer </param>
+        /// <param name="deadline">Set a deadline in seconds for the cardholder to complete </param>
+        /// <param name="framed">Allow opening in iframe </param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding </param>
+        /// <param name="customerEmail">Required for PayPal. Email of customer. </param>
+        /// <param name="invoiceAddressSelection">Get customer invoice address via acquirer (Currently MobilePay and PayPal only) </param>
+        /// <param name="shippingAddressSelection">Get customer shipping address via acquirer (Currently MobilePay and PayPal only) </param>
         /// <returns>PaymentLinkUrl</returns>
-        PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, bool? autoFee, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, int? deadline, bool? framed, Dictionary<string, string> brandingConfig, string customerEmail, bool? invoiceAddressSelection, bool? shippingAddressSelection);
+        PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, bool? autoFee, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, int? deadline, bool? framed, string brandingConfig, string customerEmail, bool? invoiceAddressSelection, bool? shippingAddressSelection);
     }
   
     /// <summary>
@@ -345,9 +345,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete payment link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Transaction id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Transaction id </param> 
         /// <returns></returns>            
         public void DELETESubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id)
         {
@@ -392,29 +392,29 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get subscriptions  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt; </param> 
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt; </param> 
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt; </param> 
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt; </param> 
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt; </param> 
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt; </param> 
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param> 
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param> 
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param> 
-        /// <param name="accepted">&lt;p&gt;Return accepted subscriptions&lt;/p&gt; </param> 
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt; </param> 
-        /// <param name="state">&lt;p&gt;Filter by state&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Find by subscription id&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt; </param> 
-        /// <param name="groupId">&lt;p&gt;Filter by subscription group&lt;/p&gt; </param> 
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt; </param> 
-        /// <param name="expired">&lt;p&gt;Filter by expiration&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="dateYear">Year </param> 
+        /// <param name="dateMonth">Month </param> 
+        /// <param name="dateDay">Day of the month </param> 
+        /// <param name="dateHour">Hour of the day </param> 
+        /// <param name="dateMinute">Minute of the hour </param> 
+        /// <param name="timestamp">Timestamp field </param> 
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param> 
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param> 
+        /// <param name="operationsSize">Maximum number of operations to retrieve </param> 
+        /// <param name="accepted">Return accepted subscriptions </param> 
+        /// <param name="orderId">Find by order_id </param> 
+        /// <param name="state">Filter by state </param> 
+        /// <param name="id">Find by subscription id </param> 
+        /// <param name="acquirer">Filter by acquirer </param> 
+        /// <param name="groupId">Filter by subscription group </param> 
+        /// <param name="fraudSuspected">Filter by suspected fraud </param> 
+        /// <param name="expired">Filter by expiration </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
         /// <param name="pageKey"> </param> 
         /// <returns>Subscription</returns>            
         public Subscription GETSubscriptionsFormat (string acceptVersion, string authorization, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, string timestamp, string minTime, string maxTime, int? operationsSize, bool? accepted, string orderId, string state, int? id, string acquirer, int? groupId, bool? fraudSuspected, bool? expired, int? page, int? pageSize, string sortBy, string sortDir, string pageKey)
@@ -478,10 +478,10 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="operationsSize">Maximum number of operations to retrieve </param> 
         /// <returns>Subscription</returns>            
         public Subscription GETSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize)
         {
@@ -527,10 +527,10 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="operationId">Operations id </param> 
         /// <returns>Operation</returns>            
         public Operation GETSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
         {
@@ -579,19 +579,19 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
         /// <summary>
         /// Get all subscription payments  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="accepted">&lt;p&gt;Return accepted payments&lt;/p&gt; </param> 
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt; </param> 
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt; </param> 
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt; </param> 
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt; </param> 
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="accepted">Return accepted payments </param> 
+        /// <param name="dateYear">Year </param> 
+        /// <param name="dateMonth">Month </param> 
+        /// <param name="dateDay">Day of the month </param> 
+        /// <param name="dateHour">Hour of the day </param> 
+        /// <param name="dateMinute">Minute of the hour </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
         /// <returns>Payment</returns>            
         public Payment GETSubscriptionsIdPaymentsFormat (string acceptVersion, string authorization, int? id, bool? accepted, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, int? page, int? pageSize, string sortBy, string sortDir)
         {
@@ -646,43 +646,43 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
         /// <summary>
         /// Update subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="deadlineAt">&lt;p&gt;Subscription must be authorized before this time&lt;/p&gt; </param> 
-        /// <param name="groupIds">&lt;p&gt;Ids of subscription groups&lt;/p&gt; </param> 
-        /// <param name="description">&lt;p&gt;Subscription description&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param> 
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt; </param> 
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param> 
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param> 
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt; </param> 
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param> 
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param> 
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param> 
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="deadlineAt">Subscription must be authorized before this time </param> 
+        /// <param name="groupIds">Ids of subscription groups </param> 
+        /// <param name="description">Subscription description </param> 
+        /// <param name="invoiceAddressName">Name </param> 
+        /// <param name="invoiceAddressAtt">Att </param> 
+        /// <param name="invoiceAddressCompanyName">Company name </param> 
+        /// <param name="invoiceAddressStreet">Street </param> 
+        /// <param name="invoiceAddressHouseNumber">House number </param> 
+        /// <param name="invoiceAddressHouseExtension">House extension </param> 
+        /// <param name="invoiceAddressCity">City </param> 
+        /// <param name="invoiceAddressZipCode">Zip code </param> 
+        /// <param name="invoiceAddressRegion">Region </param> 
+        /// <param name="invoiceAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param> 
+        /// <param name="invoiceAddressVatNo">VAT registration number </param> 
+        /// <param name="invoiceAddressPhoneNumber">Phone number </param> 
+        /// <param name="invoiceAddressMobileNumber">Mobile number </param> 
+        /// <param name="invoiceAddressEmail">Email address </param> 
+        /// <param name="shippingAddressName">Name </param> 
+        /// <param name="shippingAddressAtt">Att </param> 
+        /// <param name="shippingAddressCompanyName">Company name </param> 
+        /// <param name="shippingAddressStreet">Street </param> 
+        /// <param name="shippingAddressHouseNumber">House number </param> 
+        /// <param name="shippingAddressHouseExtension">House extension </param> 
+        /// <param name="shippingAddressCity">City </param> 
+        /// <param name="shippingAddressZipCode">Zip code </param> 
+        /// <param name="shippingAddressRegion">Region </param> 
+        /// <param name="shippingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param> 
+        /// <param name="shippingAddressVatNo">VAT registration number </param> 
+        /// <param name="shippingAddressPhoneNumber">Phone number </param> 
+        /// <param name="shippingAddressMobileNumber">Mobile number </param> 
+        /// <param name="shippingAddressEmail">Email address </param> 
+        /// <param name="variables">Custom variables </param> 
         /// <returns>Subscription</returns>            
-        public Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt, List<int?> groupIds, string description, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, Dictionary<string, string> variables)
+        public Subscription PATCHSubscriptionsIdFormat (string acceptVersion, string authorization, int? id, DateTime? deadlineAt, string groupIds, string description, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, string variables)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -708,6 +708,7 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
  if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
             if (deadlineAt != null) formParams.Add("deadline_at", ApiClient.ParameterToString(deadlineAt)); // form parameter
+if (groupIds != null) formParams.Add("group_ids", ApiClient.ParameterToString(groupIds)); // form parameter
 if (description != null) formParams.Add("description", ApiClient.ParameterToString(description)); // form parameter
 if (invoiceAddressName != null) formParams.Add("invoice_address[name]", ApiClient.ParameterToString(invoiceAddressName)); // form parameter
 if (invoiceAddressAtt != null) formParams.Add("invoice_address[att]", ApiClient.ParameterToString(invoiceAddressAtt)); // form parameter
@@ -738,8 +739,7 @@ if (shippingAddressPhoneNumber != null) formParams.Add("shipping_address[phone_n
 if (shippingAddressMobileNumber != null) formParams.Add("shipping_address[mobile_number]", ApiClient.ParameterToString(shippingAddressMobileNumber)); // form parameter
 if (shippingAddressEmail != null) formParams.Add("shipping_address[email]", ApiClient.ParameterToString(shippingAddressEmail)); // form parameter
 if (variables != null) formParams.Add("variables", ApiClient.ParameterToString(variables)); // form parameter
-            postBody = ApiClient.Serialize(groupIds); // http body (model) parameter
-    
+                
             // authentication setting, if any
             String[] authSettings = new String[] {  };
     
@@ -757,11 +757,11 @@ if (variables != null) formParams.Add("variables", ApiClient.ParameterToString(v
         /// <summary>
         /// Update operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param> 
-        /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on cancel operations (false is the only allowed value)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="operationId">Operations id </param> 
+        /// <param name="pending">Aborts the operation. Only possible on cancel operations (false is the only allowed value) </param> 
         /// <returns>Operation</returns>            
         public Operation PATCHSubscriptionsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
         {
@@ -814,47 +814,47 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
         /// <summary>
         /// Create subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param> 
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt; </param> 
-        /// <param name="description">&lt;p&gt;Subscription description&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param> 
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt; </param> 
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param> 
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param> 
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt; </param> 
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param> 
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param> 
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param> 
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
-        /// <param name="brandingId">&lt;p&gt;Used branding id&lt;/p&gt; </param> 
-        /// <param name="groupIds">&lt;p&gt;Ids of subscription groups&lt;/p&gt; </param> 
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt; </param> 
-        /// <param name="shopsystemName">&lt;p&gt;Shop system module name&lt;/p&gt; </param> 
-        /// <param name="shopsystemVersion">&lt;p&gt;Shop system module version&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param> 
+        /// <param name="currency">Currency </param> 
+        /// <param name="description">Subscription description </param> 
+        /// <param name="invoiceAddressName">Name </param> 
+        /// <param name="invoiceAddressAtt">Att </param> 
+        /// <param name="invoiceAddressCompanyName">Company name </param> 
+        /// <param name="invoiceAddressStreet">Street </param> 
+        /// <param name="invoiceAddressHouseNumber">House number </param> 
+        /// <param name="invoiceAddressHouseExtension">House extension </param> 
+        /// <param name="invoiceAddressCity">City </param> 
+        /// <param name="invoiceAddressZipCode">Zip code </param> 
+        /// <param name="invoiceAddressRegion">Region </param> 
+        /// <param name="invoiceAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param> 
+        /// <param name="invoiceAddressVatNo">VAT registration number </param> 
+        /// <param name="invoiceAddressPhoneNumber">Phone number </param> 
+        /// <param name="invoiceAddressMobileNumber">Mobile number </param> 
+        /// <param name="invoiceAddressEmail">Email address </param> 
+        /// <param name="shippingAddressName">Name </param> 
+        /// <param name="shippingAddressAtt">Att </param> 
+        /// <param name="shippingAddressCompanyName">Company name </param> 
+        /// <param name="shippingAddressStreet">Street </param> 
+        /// <param name="shippingAddressHouseNumber">House number </param> 
+        /// <param name="shippingAddressHouseExtension">House extension </param> 
+        /// <param name="shippingAddressCity">City </param> 
+        /// <param name="shippingAddressZipCode">Zip code </param> 
+        /// <param name="shippingAddressRegion">Region </param> 
+        /// <param name="shippingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param> 
+        /// <param name="shippingAddressVatNo">VAT registration number </param> 
+        /// <param name="shippingAddressPhoneNumber">Phone number </param> 
+        /// <param name="shippingAddressMobileNumber">Mobile number </param> 
+        /// <param name="shippingAddressEmail">Email address </param> 
+        /// <param name="variables">Custom variables </param> 
+        /// <param name="brandingId">Used branding id </param> 
+        /// <param name="groupIds">Ids of subscription groups </param> 
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only. </param> 
+        /// <param name="shopsystemName">Shop system module name </param> 
+        /// <param name="shopsystemVersion">Shop system module version </param> 
         /// <returns>Subscription</returns>            
-        public Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, Dictionary<string, string> variables, int? brandingId, List<int?> groupIds, string textOnStatement, string shopsystemName, string shopsystemVersion)
+        public Subscription POSTSubscriptionsFormat (string acceptVersion, string authorization, string orderId, string currency, string description, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, string variables, int? brandingId, string groupIds, string textOnStatement, string shopsystemName, string shopsystemVersion)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -917,11 +917,11 @@ if (variables != null) formParams.Add("variables", ApiClient.ParameterToString(v
 if (currency != null) formParams.Add("currency", ApiClient.ParameterToString(currency)); // form parameter
 if (description != null) formParams.Add("description", ApiClient.ParameterToString(description)); // form parameter
 if (brandingId != null) formParams.Add("branding_id", ApiClient.ParameterToString(brandingId)); // form parameter
+if (groupIds != null) formParams.Add("group_ids", ApiClient.ParameterToString(groupIds)); // form parameter
 if (textOnStatement != null) formParams.Add("text_on_statement", ApiClient.ParameterToString(textOnStatement)); // form parameter
 if (shopsystemName != null) formParams.Add("shopsystem[name]", ApiClient.ParameterToString(shopsystemName)); // form parameter
 if (shopsystemVersion != null) formParams.Add("shopsystem[version]", ApiClient.ParameterToString(shopsystemVersion)); // form parameter
-            postBody = ApiClient.Serialize(groupIds); // http body (model) parameter
-    
+                
             // authentication setting, if any
             String[] authSettings = new String[] {  };
     
@@ -939,37 +939,37 @@ if (shopsystemVersion != null) formParams.Add("shopsystem[version]", ApiClient.P
         /// <summary>
         /// Authorize a subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt; </param> 
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param> 
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param> 
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt; </param> 
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt; </param> 
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt; </param> 
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt; </param> 
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt; </param> 
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param> 
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt; </param> 
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt; </param> 
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt; </param> 
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt; </param> 
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param> 
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt; </param> 
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt; </param> 
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt; </param> 
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt; </param> 
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt; </param> 
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param> 
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="amount">Amount </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
+        /// <param name="vatRate">Vate rate </param> 
+        /// <param name="cardNumber">Card number </param> 
+        /// <param name="cardExpiration">Expiration date (YYMM) </param> 
+        /// <param name="cardCvd">CVD/CVV </param> 
+        /// <param name="cardToken">Card token </param> 
+        /// <param name="cardApplePayToken">Apple Pay payment-token </param> 
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token </param> 
+        /// <param name="cardIssuedTo">Card holder name </param> 
+        /// <param name="cardBrand">Brand to use on multi-brand card </param> 
+        /// <param name="cardStatus">3D-Secure status </param> 
+        /// <param name="cardEci">3D-Secure eci </param> 
+        /// <param name="cardXav">3D-Secure xav </param> 
+        /// <param name="cardCavv">3D-Secure cavv </param> 
+        /// <param name="mobileNumber">Mobile number </param> 
+        /// <param name="ninNumber">Customer NIN Number </param> 
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3) </param> 
+        /// <param name="ninGender">Customer gender </param> 
+        /// <param name="personFirstName">Person first name </param> 
+        /// <param name="personLastName">Person last name </param> 
+        /// <param name="personEmail">Person email </param> 
+        /// <param name="acquirer">If set, will force the use of this acquirer </param> 
+        /// <param name="customerIp">Customer IP </param> 
+        /// <param name="extras">Additional acquirer specific params </param> 
         /// <returns>Subscription</returns>            
-        public Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, string acquirer, string customerIp, Dictionary<string, string> extras)
+        public Subscription POSTSubscriptionsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, string cardApplePayToken, string cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, string acquirer, string customerIp, string extras)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1041,11 +1041,11 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Cancel subscription  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
         /// <returns>Subscription</returns>            
         public Subscription POSTSubscriptionsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, bool? synchronized)
         {
@@ -1092,10 +1092,10 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create fraud confirmation report  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
         /// <param name="description"> </param> 
         /// <returns>FraudReport</returns>            
         public FraudReport POSTSubscriptionsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, string description)
@@ -1143,17 +1143,17 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create subscription recurring payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param> 
-        /// <param name="orderId">&lt;p&gt;Unique order id(must be between 4-20 characters)&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;DEPRECATED: it will be removed in v11. Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
-        /// <param name="autoCapture">&lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt; </param> 
-        /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt; </param> 
-        /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt; </param> 
-        /// <param name="textOnStatement">&lt;p&gt;Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="amount">Amount </param> 
+        /// <param name="orderId">Unique order id(must be between 4-20 characters) </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">DEPRECATED: it will be removed in v11. Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
+        /// <param name="autoCapture">When true, payment is captured after authorization. Default is false </param> 
+        /// <param name="autofee">When true, fee is calculated and added to the given amount. Default is merchant autofee </param> 
+        /// <param name="zeroAuth">(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false </param> 
+        /// <param name="textOnStatement">Text to be displayed on cardholder’s statement. This overrides text_on_statement on authorize. Max 22 ASCII chars. Currently supported by Clearhaus only. </param> 
         /// <returns>Payment</returns>            
         public Payment POSTSubscriptionsIdRecurringFormat (string acceptVersion, string authorization, int? id, int? amount, string orderId, string quickPayCallbackUrl, bool? synchronized, bool? autoCapture, bool? autofee, bool? zeroAuth, string textOnStatement)
         {
@@ -1212,16 +1212,16 @@ if (textOnStatement != null) formParams.Add("text_on_statement", ApiClient.Param
         /// <summary>
         /// Create subscription session  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Subscription id&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
-        /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt; </param> 
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param> 
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Subscription id </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="acquirer">If set, will force the use of this acquirer </param> 
+        /// <param name="autofee">When true, fee is calculated and added to the given amount. Default is merchant autofee </param> 
+        /// <param name="customerIp">Customer IP </param> 
+        /// <param name="extras">Additional acquirer specific params </param> 
         /// <returns>Subscription</returns>            
-        public Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, string acquirer, bool? autofee, string customerIp, Dictionary<string, string> extras)
+        public Subscription POSTSubscriptionsIdSessionFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, string acquirer, bool? autofee, string customerIp, string extras)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1269,29 +1269,29 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create or update a payment link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Transaction id&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount to authorize&lt;/p&gt; </param> 
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt; </param> 
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt; </param> 
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt; </param> 
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt; </param> 
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt; </param> 
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt; </param> 
-        /// <param name="autoFee">&lt;p&gt;Add acquirer fee to amount. Default is merchant autofee&lt;/p&gt; </param> 
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt; </param> 
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param> 
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param> 
-        /// <param name="deadline">&lt;p&gt;Set a deadline in seconds for the cardholder to complete&lt;/p&gt; </param> 
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param> 
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param> 
-        /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt; </param> 
-        /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Transaction id </param> 
+        /// <param name="amount">Amount to authorize </param> 
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement </param> 
+        /// <param name="language">Language </param> 
+        /// <param name="continueUrl">Url that cardholder is redirected to after authorize </param> 
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation </param> 
+        /// <param name="callbackUrl">Endpoint for async callback </param> 
+        /// <param name="paymentMethods">Limit payment methods </param> 
+        /// <param name="autoFee">Add acquirer fee to amount. Default is merchant autofee </param> 
+        /// <param name="brandingId">Override branding. Default is merchant default branding </param> 
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics </param> 
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics </param> 
+        /// <param name="acquirer">Force usage of the given acquirer </param> 
+        /// <param name="deadline">Set a deadline in seconds for the cardholder to complete </param> 
+        /// <param name="framed">Allow opening in iframe </param> 
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding </param> 
+        /// <param name="customerEmail">Required for PayPal. Email of customer. </param> 
+        /// <param name="invoiceAddressSelection">Get customer invoice address via acquirer (Currently MobilePay and PayPal only) </param> 
+        /// <param name="shippingAddressSelection">Get customer shipping address via acquirer (Currently MobilePay and PayPal only) </param> 
         /// <returns>PaymentLinkUrl</returns>            
-        public PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, bool? autoFee, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, int? deadline, bool? framed, Dictionary<string, string> brandingConfig, string customerEmail, bool? invoiceAddressSelection, bool? shippingAddressSelection)
+        public PaymentLinkUrl PUTSubscriptionsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, bool? autoFee, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, int? deadline, bool? framed, string brandingConfig, string customerEmail, bool? invoiceAddressSelection, bool? shippingAddressSelection)
         {
             
             // verify the required parameter 'acceptVersion' is set

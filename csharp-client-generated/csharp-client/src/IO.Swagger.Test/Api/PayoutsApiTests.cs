@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -149,7 +149,7 @@ namespace IO.Swagger.Test
             //string acceptVersion = null;
             //string authorization = null;
             //int? id = null;
-            //Dictionary<string, string> variables = null;
+            //string variables = null;
             //var response = instance.PATCHPayoutsIdFormat(acceptVersion, authorization, id, variables);
             //Assert.IsInstanceOf<Payout> (response, "response is Payout");
         }
@@ -165,7 +165,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //string currency = null;
             //string orderId = null;
-            //Dictionary<string, string> variables = null;
+            //string variables = null;
             //string textOnStatement = null;
             //var response = instance.POSTPayoutsFormat(acceptVersion, authorization, currency, orderId, variables, textOnStatement);
             //Assert.IsInstanceOf<Payout> (response, "response is Payout");
@@ -189,8 +189,8 @@ namespace IO.Swagger.Test
             //string cardExpiration = null;
             //string cardCvd = null;
             //string cardToken = null;
-            //Dictionary<string, string> cardApplePayToken = null;
-            //Dictionary<string, string> cardMobilepayOnlineToken = null;
+            //string cardApplePayToken = null;
+            //string cardMobilepayOnlineToken = null;
             //string cardIssuedTo = null;
             //string cardBrand = null;
             //string cardStatus = null;
@@ -206,7 +206,7 @@ namespace IO.Swagger.Test
             //string personEmail = null;
             //string acquirer = null;
             //string customerIp = null;
-            //Dictionary<string, string> extras = null;
+            //string extras = null;
             //var response = instance.POSTPayoutsIdCreditFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
             //Assert.IsInstanceOf<Payout> (response, "response is Payout");
         }
@@ -233,7 +233,7 @@ namespace IO.Swagger.Test
             //string googleAnalyticsClientId = null;
             //string acquirer = null;
             //bool? framed = null;
-            //Dictionary<string, string> brandingConfig = null;
+            //string brandingConfig = null;
             //var response = instance.PUTPayoutsIdLinkFormat(acceptVersion, authorization, id, amount, agreementId, language, continueUrl, cancelUrl, callbackUrl, paymentMethods, brandingId, googleAnalyticsTrackingId, googleAnalyticsClientId, acquirer, framed, brandingConfig);
             //Assert.IsInstanceOf<PaymentLinkUrl> (response, "response is PaymentLinkUrl");
         }

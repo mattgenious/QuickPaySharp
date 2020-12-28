@@ -13,8 +13,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get the QuickPay API Changelog  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns></returns>
         void GETChangelogFormat (string acceptVersion, string authorization);
     }
@@ -75,8 +75,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get the QuickPay API Changelog  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns></returns>            
         public void GETChangelogFormat (string acceptVersion, string authorization)
         {

@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -178,7 +178,7 @@ namespace IO.Swagger.Test
             //string authorization = null;
             //int? id = null;
             //DateTime? deadlineAt = null;
-            //List<int?> groupIds = null;
+            //string groupIds = null;
             //string description = null;
             //string invoiceAddressName = null;
             //string invoiceAddressAtt = null;
@@ -208,7 +208,7 @@ namespace IO.Swagger.Test
             //string shippingAddressPhoneNumber = null;
             //string shippingAddressMobileNumber = null;
             //string shippingAddressEmail = null;
-            //Dictionary<string, string> variables = null;
+            //string variables = null;
             //var response = instance.PATCHSubscriptionsIdFormat(acceptVersion, authorization, id, deadlineAt, groupIds, description, invoiceAddressName, invoiceAddressAtt, invoiceAddressCompanyName, invoiceAddressStreet, invoiceAddressHouseNumber, invoiceAddressHouseExtension, invoiceAddressCity, invoiceAddressZipCode, invoiceAddressRegion, invoiceAddressCountryCode, invoiceAddressVatNo, invoiceAddressPhoneNumber, invoiceAddressMobileNumber, invoiceAddressEmail, shippingAddressName, shippingAddressAtt, shippingAddressCompanyName, shippingAddressStreet, shippingAddressHouseNumber, shippingAddressHouseExtension, shippingAddressCity, shippingAddressZipCode, shippingAddressRegion, shippingAddressCountryCode, shippingAddressVatNo, shippingAddressPhoneNumber, shippingAddressMobileNumber, shippingAddressEmail, variables);
             //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
@@ -269,9 +269,9 @@ namespace IO.Swagger.Test
             //string shippingAddressPhoneNumber = null;
             //string shippingAddressMobileNumber = null;
             //string shippingAddressEmail = null;
-            //Dictionary<string, string> variables = null;
+            //string variables = null;
             //int? brandingId = null;
-            //List<int?> groupIds = null;
+            //string groupIds = null;
             //string textOnStatement = null;
             //string shopsystemName = null;
             //string shopsystemVersion = null;
@@ -297,8 +297,8 @@ namespace IO.Swagger.Test
             //string cardExpiration = null;
             //string cardCvd = null;
             //string cardToken = null;
-            //Dictionary<string, string> cardApplePayToken = null;
-            //Dictionary<string, string> cardMobilepayOnlineToken = null;
+            //string cardApplePayToken = null;
+            //string cardMobilepayOnlineToken = null;
             //string cardIssuedTo = null;
             //string cardBrand = null;
             //string cardStatus = null;
@@ -314,7 +314,7 @@ namespace IO.Swagger.Test
             //string personEmail = null;
             //string acquirer = null;
             //string customerIp = null;
-            //Dictionary<string, string> extras = null;
+            //string extras = null;
             //var response = instance.POSTSubscriptionsIdAuthorizeFormat(acceptVersion, authorization, id, amount, quickPayCallbackUrl, synchronized, vatRate, cardNumber, cardExpiration, cardCvd, cardToken, cardApplePayToken, cardMobilepayOnlineToken, cardIssuedTo, cardBrand, cardStatus, cardEci, cardXav, cardCavv, mobileNumber, ninNumber, ninCountryCode, ninGender, personFirstName, personLastName, personEmail, acquirer, customerIp, extras);
             //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
@@ -387,7 +387,7 @@ namespace IO.Swagger.Test
             //string acquirer = null;
             //bool? autofee = null;
             //string customerIp = null;
-            //Dictionary<string, string> extras = null;
+            //string extras = null;
             //var response = instance.POSTSubscriptionsIdSessionFormat(acceptVersion, authorization, id, quickPayCallbackUrl, acquirer, autofee, customerIp, extras);
             //Assert.IsInstanceOf<Subscription> (response, "response is Subscription");
         }
@@ -416,7 +416,7 @@ namespace IO.Swagger.Test
             //string acquirer = null;
             //int? deadline = null;
             //bool? framed = null;
-            //Dictionary<string, string> brandingConfig = null;
+            //string brandingConfig = null;
             //string customerEmail = null;
             //bool? invoiceAddressSelection = null;
             //bool? shippingAddressSelection = null;

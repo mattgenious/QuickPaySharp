@@ -14,474 +14,474 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Bambora acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsBambora</returns>
         AcquirerSettingsBambora GETAcquirersBamboraFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Clearhaus acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsClearhaus</returns>
         AcquirerSettingsClearhaus GETAcquirersClearhausFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Coinify acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsCoinify</returns>
         AcquirerSettingsCoinify GETAcquirersCoinifyFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Elavon acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsElavon</returns>
         AcquirerSettingsElavon GETAcquirersElavonFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Fetch acquirers  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettings</returns>
         AcquirerSettings GETAcquirersFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Handelsbanken acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsHandelsbanken</returns>
         AcquirerSettingsHandelsbanken GETAcquirersHandelsbankenFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Klarna acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsKlarna</returns>
         AcquirerSettingsKlarna GETAcquirersKlarnaFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get KlarnaPayments acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsKlarnaPayments</returns>
         AcquirerSettingsKlarnaPayments GETAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get MobilePay acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsMobilePay</returns>
         AcquirerSettingsMobilePay GETAcquirersMobilepayFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get MobilePayOnline acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsMobilePayOnline</returns>
         AcquirerSettingsMobilePayOnline GETAcquirersMobilepayonlineFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get MobilePaySubscriptions acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsMobilePaySubscriptions</returns>
         AcquirerSettingsMobilePaySubscriptions GETAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Nets acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsNets</returns>
         AcquirerSettingsNets GETAcquirersNetsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get PayPal acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsPayPal</returns>
         AcquirerSettingsPayPal GETAcquirersPaypalFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Paysafecard acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsPaysafecard</returns>
         AcquirerSettingsPaysafecard GETAcquirersPaysafecardFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Resurs acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsResurs</returns>
         AcquirerSettingsResurs GETAcquirersResursFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Sofort acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsSofort</returns>
         AcquirerSettingsSofort GETAcquirersSofortFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Swedbank acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsSwedbank</returns>
         AcquirerSettingsSwedbank GETAcquirersSwedbankFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Swish acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsSwish</returns>
         AcquirerSettingsSwish GETAcquirersSwishFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Teller acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsTeller</returns>
         AcquirerSettingsTeller GETAcquirersTellerFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Trustly acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsTrustly</returns>
         AcquirerSettingsTrustly GETAcquirersTrustlyFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Valitor acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsValitor</returns>
         AcquirerSettingsValitor GETAcquirersValitorFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get ViaBill acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsViaBill</returns>
         AcquirerSettingsViaBill GETAcquirersViabillFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Get Vipps acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>AcquirerSettingsVipps</returns>
         AcquirerSettingsVipps GETAcquirersVippsFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Update Bambora acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Bambora payments&lt;/p&gt; </param>
-        /// <param name="identificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt; </param>
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt; </param>
-        /// <param name="identificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt; </param>
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt; </param>
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt; </param>
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param>
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Bambora payments </param>
+        /// <param name="identificationCode">Bambora identification number </param>
+        /// <param name="businessCode">Business code (assigned by Bambora) </param>
+        /// <param name="identificationCodeInt">Bambora international identification number </param>
+        /// <param name="recurring">Enable recurring payments (requires agreement with Bambora) </param>
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Bambora) </param>
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Bambora) </param>
+        /// <param name="securepay">Enable SecurePay fraud protection. </param>
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param>
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param>
         /// <returns>AcquirerSettingsBambora</returns>
         AcquirerSettingsBambora PATCHAcquirersBamboraFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Clearhaus acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt; </param>
-        /// <param name="apiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt; </param>
-        /// <param name="payout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt; </param>
-        /// <param name="applePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable ClearHaus payments </param>
+        /// <param name="apiKey">Clearhaus API key (is required but may be left empty) </param>
+        /// <param name="recurring">Enable recurring payments (requires agreement with Clearhaus) </param>
+        /// <param name="payout">Enable payouts (requires agreement with Clearhaus) </param>
+        /// <param name="applePay">Enable Apple Pay (requires agreement with Clearhaus) </param>
         /// <returns>AcquirerSettingsClearhaus</returns>
         AcquirerSettingsClearhaus PATCHAcquirersClearhausFormat (string acceptVersion, string authorization, bool? active, string apiKey, bool? recurring, bool? payout, bool? applePay);
         /// <summary>
         /// Update Coinify acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Coinify Bitcoin payments&lt;/p&gt; </param>
-        /// <param name="apiKey">&lt;p&gt;Coinify API key&lt;/p&gt; </param>
-        /// <param name="apiSecret">&lt;p&gt;Coinify API secret&lt;/p&gt; </param>
-        /// <param name="ipnSecret">&lt;p&gt;Coinify IPN secret (recommended)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Coinify Bitcoin payments </param>
+        /// <param name="apiKey">Coinify API key </param>
+        /// <param name="apiSecret">Coinify API secret </param>
+        /// <param name="ipnSecret">Coinify IPN secret (recommended) </param>
         /// <returns>AcquirerSettingsCoinify</returns>
         AcquirerSettingsCoinify PATCHAcquirersCoinifyFormat (string acceptVersion, string authorization, bool? active, string apiKey, string apiSecret, string ipnSecret);
         /// <summary>
         /// Update Elavon acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Elavon payments&lt;/p&gt; </param>
-        /// <param name="identificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt; </param>
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt; </param>
-        /// <param name="identificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt; </param>
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt; </param>
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt; </param>
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param>
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Elavon payments </param>
+        /// <param name="identificationCode">Elavon identification number </param>
+        /// <param name="businessCode">Business code (assigned by Elavon) </param>
+        /// <param name="identificationCodeInt">Elavon international identification number </param>
+        /// <param name="recurring">Enable recurring payments (requires agreement with Elavon) </param>
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Elavon) </param>
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Elavon) </param>
+        /// <param name="securepay">Enable SecurePay fraud protection. </param>
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param>
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param>
         /// <returns>AcquirerSettingsElavon</returns>
         AcquirerSettingsElavon PATCHAcquirersElavonFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Handelsbanken acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt; </param>
-        /// <param name="identificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt; </param>
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt; </param>
-        /// <param name="identificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt; </param>
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt; </param>
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt; </param>
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param>
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Handelsbanken payments </param>
+        /// <param name="identificationCode">Handelsbanken identification number </param>
+        /// <param name="businessCode">Business code (assigned by Handelsbanken) </param>
+        /// <param name="identificationCodeInt">Handelsbanken international identification number </param>
+        /// <param name="recurring">Enable recurring payments (requires agreement with Handelsbanken) </param>
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Handelsbanken) </param>
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Handelsbanken) </param>
+        /// <param name="securepay">Enable SecurePay fraud protection. </param>
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param>
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param>
         /// <returns>AcquirerSettingsHandelsbanken</returns>
         AcquirerSettingsHandelsbanken PATCHAcquirersHandelsbankenFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Klarna acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Klarna payments&lt;/p&gt; </param>
-        /// <param name="eid">&lt;p&gt;Klarna merchant ID&lt;/p&gt; </param>
-        /// <param name="sharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Klarna payments </param>
+        /// <param name="eid">Klarna merchant ID </param>
+        /// <param name="sharedSecret">Klarna shared secret </param>
         /// <returns>AcquirerSettingsKlarna</returns>
         AcquirerSettingsKlarna PATCHAcquirersKlarnaFormat (string acceptVersion, string authorization, bool? active, int? eid, string sharedSecret);
         /// <summary>
         /// Update KlarnaPayments acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Klarna payments&lt;/p&gt; </param>
-        /// <param name="uid">&lt;p&gt;Klarna username&lt;/p&gt; </param>
-        /// <param name="password">&lt;p&gt;Klarna password&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Klarna payments </param>
+        /// <param name="uid">Klarna username </param>
+        /// <param name="password">Klarna password </param>
         /// <returns>AcquirerSettingsKlarnaPayments</returns>
         AcquirerSettingsKlarnaPayments PATCHAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization, bool? active, string uid, string password);
         /// <summary>
         /// Update MobilePay acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable MobilePay payments&lt;/p&gt; </param>
-        /// <param name="deliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable MobilePay payments </param>
+        /// <param name="deliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI) </param>
         /// <returns>AcquirerSettingsMobilePay</returns>
         AcquirerSettingsMobilePay PATCHAcquirersMobilepayFormat (string acceptVersion, string authorization, bool? active, string deliveryLimitedTo);
         /// <summary>
         /// Update MobilePayOnline acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable MobilePay Online payments&lt;/p&gt; </param>
-        /// <param name="merchantId">&lt;p&gt;Id for the merchant&lt;/p&gt; </param>
-        /// <param name="deliveryLimitedTo">&lt;p&gt;Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable MobilePay Online payments </param>
+        /// <param name="merchantId">Id for the merchant </param>
+        /// <param name="deliveryLimitedTo">Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI) </param>
         /// <returns>AcquirerSettingsMobilePayOnline</returns>
         AcquirerSettingsMobilePayOnline PATCHAcquirersMobilepayonlineFormat (string acceptVersion, string authorization, bool? active, int? merchantId, string deliveryLimitedTo);
         /// <summary>
         /// Update MobilePaySubscriptions acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt; </param>
-        /// <param name="authState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt; </param>
-        /// <param name="codeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt; </param>
-        /// <param name="lastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt; </param>
-        /// <param name="nonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt; </param>
-        /// <param name="pendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt; </param>
-        /// <param name="provider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt; </param>
-        /// <param name="refreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable MobilePay Subscriptions payments </param>
+        /// <param name="authState">Identifier MobilePay Subscriptions uses to link requests to callbacks </param>
+        /// <param name="codeVerifier">Verifies received code challenge </param>
+        /// <param name="lastTokenRefresh">Unix Timestamp of last time the tokens were refreshed </param>
+        /// <param name="nonce">Associate client sessions with ID Tokens to mitigate replay attacks </param>
+        /// <param name="pendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed </param>
+        /// <param name="provider">The provider / sales-place chosen by the merchant </param>
+        /// <param name="refreshToken">Token to refresh access token for up to 1 year </param>
         /// <returns>AcquirerSettingsMobilePaySubscriptions</returns>
-        AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken);
+        AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, string provider, string refreshToken);
         /// <summary>
         /// Update Nets acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt; </param>
-        /// <param name="identificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt; </param>
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt; </param>
-        /// <param name="fbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt; </param>
-        /// <param name="securedByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt; </param>
-        /// <param name="identificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
-        /// <param name="americanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
-        /// <param name="dinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
-        /// <param name="securepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
-        /// <param name="visaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
-        /// <param name="mastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Nets/Teller payments </param>
+        /// <param name="identificationCode">Nets TOF number </param>
+        /// <param name="businessCode">Business code (assigned by Nets) </param>
+        /// <param name="recurring">Enable recurring payments (requires agreement with Nets) </param>
+        /// <param name="fbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen) </param>
+        /// <param name="securedByNets">Enable SecuredByNets fraud protection. </param>
+        /// <param name="identificationCodeInt">(Depricated; use Teller acquirer) </param>
+        /// <param name="americanexpress">(Depricated; use Teller acquirer) </param>
+        /// <param name="dinersclub">(Depricated; use Teller acquirer) </param>
+        /// <param name="securepay">(Depricated; use Teller acquirer) </param>
+        /// <param name="visaBin">(Depricated; use Teller acquirer) </param>
+        /// <param name="mastercardBin">(Depricated; use Teller acquirer) </param>
         /// <returns>AcquirerSettingsNets</returns>
         AcquirerSettingsNets PATCHAcquirersNetsFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, bool? recurring, bool? fbg1886, bool? securedByNets, string identificationCodeInt, bool? americanexpress, bool? dinersclub, bool? securepay, string visaBin, string mastercardBin);
         /// <summary>
         /// Update PayPal acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable PayPal payments&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments&lt;/p&gt; </param>
-        /// <param name="creditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt; </param>
-        /// <param name="token">&lt;p&gt;Authentication token&lt;/p&gt; </param>
-        /// <param name="tokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt; </param>
-        /// <param name="scope">&lt;p&gt;Authentication scope&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable PayPal payments </param>
+        /// <param name="recurring">Enable recurring payments </param>
+        /// <param name="creditCard">Allow credit-card payments. (Only for US/CA/UK merchants) </param>
+        /// <param name="token">Authentication token </param>
+        /// <param name="tokenSecret">Authentication token secret </param>
+        /// <param name="scope">Authentication scope </param>
         /// <returns>AcquirerSettingsPayPal</returns>
-        AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope);
+        AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, string scope);
         /// <summary>
         /// Update Paysafecard acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Paysafecard payments&lt;/p&gt; </param>
-        /// <param name="username">&lt;p&gt;Paysafecard username&lt;/p&gt; </param>
-        /// <param name="password">&lt;p&gt;Paysafecard password&lt;/p&gt; </param>
-        /// <param name="currencies">&lt;p&gt;Paysafecard currencies (Paysafecard requires agreement per currency)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Paysafecard payments </param>
+        /// <param name="username">Paysafecard username </param>
+        /// <param name="password">Paysafecard password </param>
+        /// <param name="currencies">Paysafecard currencies (Paysafecard requires agreement per currency) </param>
         /// <returns>AcquirerSettingsPaysafecard</returns>
-        AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies);
+        AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, string currencies);
         /// <summary>
         /// Update Resurs acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Resurs payments&lt;/p&gt; </param>
-        /// <param name="customerId">&lt;p&gt;Resurs customer ID&lt;/p&gt; </param>
-        /// <param name="customerPassword">&lt;p&gt;Resurs password&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Resurs payments </param>
+        /// <param name="customerId">Resurs customer ID </param>
+        /// <param name="customerPassword">Resurs password </param>
         /// <returns>AcquirerSettingsResurs</returns>
         AcquirerSettingsResurs PATCHAcquirersResursFormat (string acceptVersion, string authorization, bool? active, string customerId, string customerPassword);
         /// <summary>
         /// Update Sofort acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Sofort payments&lt;/p&gt; </param>
-        /// <param name="customerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt; </param>
-        /// <param name="projectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt; </param>
-        /// <param name="apiKey">&lt;p&gt;Sofort API key&lt;/p&gt; </param>
-        /// <param name="gateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt; </param>
-        /// <param name="ideal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt; </param>
-        /// <param name="idealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt; </param>
-        /// <param name="idealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt; </param>
-        /// <param name="idealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Sofort payments </param>
+        /// <param name="customerNumber">Sofort customer number </param>
+        /// <param name="projectId">Sofort Gateway project id </param>
+        /// <param name="apiKey">Sofort API key </param>
+        /// <param name="gateway">Enable Sofort Gateway feature </param>
+        /// <param name="ideal">Enable Sofort iDeal feature </param>
+        /// <param name="idealProjectId">Sofort iDeal project id </param>
+        /// <param name="idealProjectPassword">Sofort iDeal project password </param>
+        /// <param name="idealNotificationPassword">Sofort iDeal notification password </param>
         /// <returns>AcquirerSettingsSofort</returns>
         AcquirerSettingsSofort PATCHAcquirersSofortFormat (string acceptVersion, string authorization, bool? active, int? customerNumber, int? projectId, string apiKey, bool? gateway, bool? ideal, int? idealProjectId, string idealProjectPassword, string idealNotificationPassword);
         /// <summary>
         /// Update Swedbank acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Swedbank payments&lt;/p&gt; </param>
-        /// <param name="identificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt; </param>
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt; </param>
-        /// <param name="identificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt; </param>
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt; </param>
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt; </param>
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param>
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Swedbank payments </param>
+        /// <param name="identificationCode">Swedbank identification number </param>
+        /// <param name="businessCode">Business code (assigned by Swedbank) </param>
+        /// <param name="identificationCodeInt">Swedbank international identification number </param>
+        /// <param name="recurring">Enable recurring payments (requires agreement with Swedbank) </param>
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Swedbank) </param>
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Swedbank) </param>
+        /// <param name="securepay">Enable SecurePay fraud protection. </param>
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param>
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param>
         /// <returns>AcquirerSettingsSwedbank</returns>
         AcquirerSettingsSwedbank PATCHAcquirersSwedbankFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Swish acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Swish payments&lt;/p&gt; </param>
-        /// <param name="merchantId">&lt;p&gt;Swish merchant id&lt;/p&gt; </param>
-        /// <param name="cryptographyKeyId">&lt;p&gt;Swish certificate and private-key from Cryptography store&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Swish payments </param>
+        /// <param name="merchantId">Swish merchant id </param>
+        /// <param name="cryptographyKeyId">Swish certificate and private-key from Cryptography store </param>
         /// <returns>AcquirerSettingsSwish</returns>
         AcquirerSettingsSwish PATCHAcquirersSwishFormat (string acceptVersion, string authorization, bool? active, string merchantId, int? cryptographyKeyId);
         /// <summary>
         /// Update Teller acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Teller payments&lt;/p&gt; </param>
-        /// <param name="identificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt; </param>
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt; </param>
-        /// <param name="identificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt; </param>
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt; </param>
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt; </param>
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt; </param>
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="visaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <param name="mastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Teller payments </param>
+        /// <param name="identificationCode">Teller TOF number </param>
+        /// <param name="businessCode">Business code (assigned by Teller) </param>
+        /// <param name="identificationCodeInt">Teller international identification number </param>
+        /// <param name="recurring">Enable recurring payments (requires agreement with Teller) </param>
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Teller) </param>
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Teller) </param>
+        /// <param name="securepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller) </param>
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="visaBin">Teller VISA acquirer bin used for 3D Secure </param>
+        /// <param name="mastercardBin">Teller Mastercard acquirer bin used for 3D Secure </param>
         /// <returns>AcquirerSettingsTeller</returns>
         AcquirerSettingsTeller PATCHAcquirersTellerFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update Trustly acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Trustly payments&lt;/p&gt; </param>
-        /// <param name="ideal">&lt;p&gt;Enable iDeal payments&lt;/p&gt; </param>
-        /// <param name="username">&lt;p&gt;Trustly API username&lt;/p&gt; </param>
-        /// <param name="password">&lt;p&gt;Trustly API password&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Trustly payments </param>
+        /// <param name="ideal">Enable iDeal payments </param>
+        /// <param name="username">Trustly API username </param>
+        /// <param name="password">Trustly API password </param>
         /// <returns>AcquirerSettingsTrustly</returns>
         AcquirerSettingsTrustly PATCHAcquirersTrustlyFormat (string acceptVersion, string authorization, bool? active, bool? ideal, string username, string password);
         /// <summary>
         /// Update Valitor acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Valitor payments&lt;/p&gt; </param>
-        /// <param name="identificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt; </param>
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt; </param>
-        /// <param name="identificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt; </param>
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt; </param>
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt; </param>
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt; </param>
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param>
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param>
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param>
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Valitor payments </param>
+        /// <param name="identificationCode">Valitor identification number </param>
+        /// <param name="businessCode">Business code (assigned by Valitor) </param>
+        /// <param name="identificationCodeInt">Valitor international identification number </param>
+        /// <param name="recurring">Enable recurring payments (requires agreement with Valitor) </param>
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Valitor) </param>
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Valitor) </param>
+        /// <param name="securepay">Enable SecurePay fraud protection. </param>
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param>
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param>
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param>
         /// <returns>AcquirerSettingsValitor</returns>
         AcquirerSettingsValitor PATCHAcquirersValitorFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin);
         /// <summary>
         /// Update ViaBill acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable ViaBill payments&lt;/p&gt; </param>
-        /// <param name="apiKey">&lt;p&gt;ViaBill API key&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable ViaBill payments </param>
+        /// <param name="apiKey">ViaBill API key </param>
         /// <returns>AcquirerSettingsViaBill</returns>
         AcquirerSettingsViaBill PATCHAcquirersViabillFormat (string acceptVersion, string authorization, bool? active, string apiKey);
         /// <summary>
         /// Update Vipps acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="active">&lt;p&gt;Enable Vipps payments&lt;/p&gt; </param>
-        /// <param name="clientId">&lt;p&gt;Vipps OAuth Client ID&lt;/p&gt; </param>
-        /// <param name="clientSecret">&lt;p&gt;Vipps OAuth Client Secret&lt;/p&gt; </param>
-        /// <param name="serialNumber">&lt;p&gt;Vipps agreement serial&lt;/p&gt; </param>
-        /// <param name="accessTokenSubscriptionKey">&lt;p&gt;Vipps Access-Token Subscription Key&lt;/p&gt; </param>
-        /// <param name="ecommerceSubscriptionKey">&lt;p&gt;Vipps eCommerce Subscription Key&lt;/p&gt; </param>
-        /// <param name="orgno">&lt;p&gt;Vipps companys organization number&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="active">Enable Vipps payments </param>
+        /// <param name="clientId">Vipps OAuth Client ID </param>
+        /// <param name="clientSecret">Vipps OAuth Client Secret </param>
+        /// <param name="serialNumber">Vipps agreement serial </param>
+        /// <param name="accessTokenSubscriptionKey">Vipps Access-Token Subscription Key </param>
+        /// <param name="ecommerceSubscriptionKey">Vipps eCommerce Subscription Key </param>
+        /// <param name="orgno">Vipps companys organization number </param>
         /// <returns>AcquirerSettingsVipps</returns>
         AcquirerSettingsVipps PATCHAcquirersVippsFormat (string acceptVersion, string authorization, bool? active, string clientId, string clientSecret, string serialNumber, string accessTokenSubscriptionKey, string ecommerceSubscriptionKey, string orgno);
         /// <summary>
         /// Test payments via acquirer  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Acquirer name&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Acquirer name </param>
         /// <returns>AcquirerTest</returns>
         AcquirerTest POSTAcquirersAcquirerTestFormat (string acceptVersion, string authorization, string acquirer);
     }
@@ -542,8 +542,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Bambora acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsBambora</returns>            
         public AcquirerSettingsBambora GETAcquirersBamboraFormat (string acceptVersion, string authorization)
         {
@@ -584,8 +584,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Clearhaus acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsClearhaus</returns>            
         public AcquirerSettingsClearhaus GETAcquirersClearhausFormat (string acceptVersion, string authorization)
         {
@@ -626,8 +626,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Coinify acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsCoinify</returns>            
         public AcquirerSettingsCoinify GETAcquirersCoinifyFormat (string acceptVersion, string authorization)
         {
@@ -668,8 +668,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Elavon acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsElavon</returns>            
         public AcquirerSettingsElavon GETAcquirersElavonFormat (string acceptVersion, string authorization)
         {
@@ -710,8 +710,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Fetch acquirers  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettings</returns>            
         public AcquirerSettings GETAcquirersFormat (string acceptVersion, string authorization)
         {
@@ -752,8 +752,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Handelsbanken acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsHandelsbanken</returns>            
         public AcquirerSettingsHandelsbanken GETAcquirersHandelsbankenFormat (string acceptVersion, string authorization)
         {
@@ -794,8 +794,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Klarna acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsKlarna</returns>            
         public AcquirerSettingsKlarna GETAcquirersKlarnaFormat (string acceptVersion, string authorization)
         {
@@ -836,8 +836,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get KlarnaPayments acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsKlarnaPayments</returns>            
         public AcquirerSettingsKlarnaPayments GETAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization)
         {
@@ -878,8 +878,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get MobilePay acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsMobilePay</returns>            
         public AcquirerSettingsMobilePay GETAcquirersMobilepayFormat (string acceptVersion, string authorization)
         {
@@ -920,8 +920,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get MobilePayOnline acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsMobilePayOnline</returns>            
         public AcquirerSettingsMobilePayOnline GETAcquirersMobilepayonlineFormat (string acceptVersion, string authorization)
         {
@@ -962,8 +962,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get MobilePaySubscriptions acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsMobilePaySubscriptions</returns>            
         public AcquirerSettingsMobilePaySubscriptions GETAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization)
         {
@@ -1004,8 +1004,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Nets acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsNets</returns>            
         public AcquirerSettingsNets GETAcquirersNetsFormat (string acceptVersion, string authorization)
         {
@@ -1046,8 +1046,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get PayPal acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsPayPal</returns>            
         public AcquirerSettingsPayPal GETAcquirersPaypalFormat (string acceptVersion, string authorization)
         {
@@ -1088,8 +1088,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Paysafecard acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsPaysafecard</returns>            
         public AcquirerSettingsPaysafecard GETAcquirersPaysafecardFormat (string acceptVersion, string authorization)
         {
@@ -1130,8 +1130,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Resurs acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsResurs</returns>            
         public AcquirerSettingsResurs GETAcquirersResursFormat (string acceptVersion, string authorization)
         {
@@ -1172,8 +1172,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Sofort acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsSofort</returns>            
         public AcquirerSettingsSofort GETAcquirersSofortFormat (string acceptVersion, string authorization)
         {
@@ -1214,8 +1214,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Swedbank acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsSwedbank</returns>            
         public AcquirerSettingsSwedbank GETAcquirersSwedbankFormat (string acceptVersion, string authorization)
         {
@@ -1256,8 +1256,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Swish acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsSwish</returns>            
         public AcquirerSettingsSwish GETAcquirersSwishFormat (string acceptVersion, string authorization)
         {
@@ -1298,8 +1298,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Teller acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsTeller</returns>            
         public AcquirerSettingsTeller GETAcquirersTellerFormat (string acceptVersion, string authorization)
         {
@@ -1340,8 +1340,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Trustly acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsTrustly</returns>            
         public AcquirerSettingsTrustly GETAcquirersTrustlyFormat (string acceptVersion, string authorization)
         {
@@ -1382,8 +1382,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Valitor acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsValitor</returns>            
         public AcquirerSettingsValitor GETAcquirersValitorFormat (string acceptVersion, string authorization)
         {
@@ -1424,8 +1424,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get ViaBill acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsViaBill</returns>            
         public AcquirerSettingsViaBill GETAcquirersViabillFormat (string acceptVersion, string authorization)
         {
@@ -1466,8 +1466,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Vipps acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>AcquirerSettingsVipps</returns>            
         public AcquirerSettingsVipps GETAcquirersVippsFormat (string acceptVersion, string authorization)
         {
@@ -1508,20 +1508,20 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Update Bambora acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Bambora payments&lt;/p&gt; </param> 
-        /// <param name="identificationCode">&lt;p&gt;Bambora identification number&lt;/p&gt; </param> 
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt; </param> 
-        /// <param name="identificationCodeInt">&lt;p&gt;Bambora international identification number&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt; </param> 
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt; </param> 
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt; </param> 
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param> 
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Bambora payments </param> 
+        /// <param name="identificationCode">Bambora identification number </param> 
+        /// <param name="businessCode">Business code (assigned by Bambora) </param> 
+        /// <param name="identificationCodeInt">Bambora international identification number </param> 
+        /// <param name="recurring">Enable recurring payments (requires agreement with Bambora) </param> 
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Bambora) </param> 
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Bambora) </param> 
+        /// <param name="securepay">Enable SecurePay fraud protection. </param> 
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param> 
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param> 
         /// <returns>AcquirerSettingsBambora</returns>            
         public AcquirerSettingsBambora PATCHAcquirersBamboraFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
@@ -1583,13 +1583,13 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <summary>
         /// Update Clearhaus acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable ClearHaus payments&lt;/p&gt; </param> 
-        /// <param name="apiKey">&lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt; </param> 
-        /// <param name="payout">&lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt; </param> 
-        /// <param name="applePay">&lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable ClearHaus payments </param> 
+        /// <param name="apiKey">Clearhaus API key (is required but may be left empty) </param> 
+        /// <param name="recurring">Enable recurring payments (requires agreement with Clearhaus) </param> 
+        /// <param name="payout">Enable payouts (requires agreement with Clearhaus) </param> 
+        /// <param name="applePay">Enable Apple Pay (requires agreement with Clearhaus) </param> 
         /// <returns>AcquirerSettingsClearhaus</returns>            
         public AcquirerSettingsClearhaus PATCHAcquirersClearhausFormat (string acceptVersion, string authorization, bool? active, string apiKey, bool? recurring, bool? payout, bool? applePay)
         {
@@ -1641,12 +1641,12 @@ if (applePay != null) formParams.Add("apple_pay", ApiClient.ParameterToString(ap
         /// <summary>
         /// Update Coinify acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Coinify Bitcoin payments&lt;/p&gt; </param> 
-        /// <param name="apiKey">&lt;p&gt;Coinify API key&lt;/p&gt; </param> 
-        /// <param name="apiSecret">&lt;p&gt;Coinify API secret&lt;/p&gt; </param> 
-        /// <param name="ipnSecret">&lt;p&gt;Coinify IPN secret (recommended)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Coinify Bitcoin payments </param> 
+        /// <param name="apiKey">Coinify API key </param> 
+        /// <param name="apiSecret">Coinify API secret </param> 
+        /// <param name="ipnSecret">Coinify IPN secret (recommended) </param> 
         /// <returns>AcquirerSettingsCoinify</returns>            
         public AcquirerSettingsCoinify PATCHAcquirersCoinifyFormat (string acceptVersion, string authorization, bool? active, string apiKey, string apiSecret, string ipnSecret)
         {
@@ -1700,20 +1700,20 @@ if (ipnSecret != null) formParams.Add("ipn_secret", ApiClient.ParameterToString(
         /// <summary>
         /// Update Elavon acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Elavon payments&lt;/p&gt; </param> 
-        /// <param name="identificationCode">&lt;p&gt;Elavon identification number&lt;/p&gt; </param> 
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt; </param> 
-        /// <param name="identificationCodeInt">&lt;p&gt;Elavon international identification number&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt; </param> 
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt; </param> 
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt; </param> 
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param> 
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Elavon payments </param> 
+        /// <param name="identificationCode">Elavon identification number </param> 
+        /// <param name="businessCode">Business code (assigned by Elavon) </param> 
+        /// <param name="identificationCodeInt">Elavon international identification number </param> 
+        /// <param name="recurring">Enable recurring payments (requires agreement with Elavon) </param> 
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Elavon) </param> 
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Elavon) </param> 
+        /// <param name="securepay">Enable SecurePay fraud protection. </param> 
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param> 
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param> 
         /// <returns>AcquirerSettingsElavon</returns>            
         public AcquirerSettingsElavon PATCHAcquirersElavonFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
@@ -1775,20 +1775,20 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <summary>
         /// Update Handelsbanken acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Handelsbanken payments&lt;/p&gt; </param> 
-        /// <param name="identificationCode">&lt;p&gt;Handelsbanken identification number&lt;/p&gt; </param> 
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt; </param> 
-        /// <param name="identificationCodeInt">&lt;p&gt;Handelsbanken international identification number&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt; </param> 
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt; </param> 
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt; </param> 
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param> 
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Handelsbanken payments </param> 
+        /// <param name="identificationCode">Handelsbanken identification number </param> 
+        /// <param name="businessCode">Business code (assigned by Handelsbanken) </param> 
+        /// <param name="identificationCodeInt">Handelsbanken international identification number </param> 
+        /// <param name="recurring">Enable recurring payments (requires agreement with Handelsbanken) </param> 
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Handelsbanken) </param> 
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Handelsbanken) </param> 
+        /// <param name="securepay">Enable SecurePay fraud protection. </param> 
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param> 
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param> 
         /// <returns>AcquirerSettingsHandelsbanken</returns>            
         public AcquirerSettingsHandelsbanken PATCHAcquirersHandelsbankenFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
@@ -1850,11 +1850,11 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <summary>
         /// Update Klarna acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Klarna payments&lt;/p&gt; </param> 
-        /// <param name="eid">&lt;p&gt;Klarna merchant ID&lt;/p&gt; </param> 
-        /// <param name="sharedSecret">&lt;p&gt;Klarna shared secret&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Klarna payments </param> 
+        /// <param name="eid">Klarna merchant ID </param> 
+        /// <param name="sharedSecret">Klarna shared secret </param> 
         /// <returns>AcquirerSettingsKlarna</returns>            
         public AcquirerSettingsKlarna PATCHAcquirersKlarnaFormat (string acceptVersion, string authorization, bool? active, int? eid, string sharedSecret)
         {
@@ -1907,11 +1907,11 @@ if (sharedSecret != null) formParams.Add("shared_secret", ApiClient.ParameterToS
         /// <summary>
         /// Update KlarnaPayments acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Klarna payments&lt;/p&gt; </param> 
-        /// <param name="uid">&lt;p&gt;Klarna username&lt;/p&gt; </param> 
-        /// <param name="password">&lt;p&gt;Klarna password&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Klarna payments </param> 
+        /// <param name="uid">Klarna username </param> 
+        /// <param name="password">Klarna password </param> 
         /// <returns>AcquirerSettingsKlarnaPayments</returns>            
         public AcquirerSettingsKlarnaPayments PATCHAcquirersKlarnapaymentsFormat (string acceptVersion, string authorization, bool? active, string uid, string password)
         {
@@ -1964,10 +1964,10 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
         /// <summary>
         /// Update MobilePay acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable MobilePay payments&lt;/p&gt; </param> 
-        /// <param name="deliveryLimitedTo">&lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable MobilePay payments </param> 
+        /// <param name="deliveryLimitedTo">Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI) </param> 
         /// <returns>AcquirerSettingsMobilePay</returns>            
         public AcquirerSettingsMobilePay PATCHAcquirersMobilepayFormat (string acceptVersion, string authorization, bool? active, string deliveryLimitedTo)
         {
@@ -2013,11 +2013,11 @@ if (deliveryLimitedTo != null) formParams.Add("delivery_limited_to", ApiClient.P
         /// <summary>
         /// Update MobilePayOnline acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable MobilePay Online payments&lt;/p&gt; </param> 
-        /// <param name="merchantId">&lt;p&gt;Id for the merchant&lt;/p&gt; </param> 
-        /// <param name="deliveryLimitedTo">&lt;p&gt;Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable MobilePay Online payments </param> 
+        /// <param name="merchantId">Id for the merchant </param> 
+        /// <param name="deliveryLimitedTo">Limit MobilePay Online delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI) </param> 
         /// <returns>AcquirerSettingsMobilePayOnline</returns>            
         public AcquirerSettingsMobilePayOnline PATCHAcquirersMobilepayonlineFormat (string acceptVersion, string authorization, bool? active, int? merchantId, string deliveryLimitedTo)
         {
@@ -2064,18 +2064,18 @@ if (deliveryLimitedTo != null) formParams.Add("delivery_limited_to", ApiClient.P
         /// <summary>
         /// Update MobilePaySubscriptions acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt; </param> 
-        /// <param name="authState">&lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt; </param> 
-        /// <param name="codeVerifier">&lt;p&gt;Verifies received code challenge&lt;/p&gt; </param> 
-        /// <param name="lastTokenRefresh">&lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt; </param> 
-        /// <param name="nonce">&lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt; </param> 
-        /// <param name="pendingStatus">&lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt; </param> 
-        /// <param name="provider">&lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt; </param> 
-        /// <param name="refreshToken">&lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable MobilePay Subscriptions payments </param> 
+        /// <param name="authState">Identifier MobilePay Subscriptions uses to link requests to callbacks </param> 
+        /// <param name="codeVerifier">Verifies received code challenge </param> 
+        /// <param name="lastTokenRefresh">Unix Timestamp of last time the tokens were refreshed </param> 
+        /// <param name="nonce">Associate client sessions with ID Tokens to mitigate replay attacks </param> 
+        /// <param name="pendingStatus">0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed </param> 
+        /// <param name="provider">The provider / sales-place chosen by the merchant </param> 
+        /// <param name="refreshToken">Token to refresh access token for up to 1 year </param> 
         /// <returns>AcquirerSettingsMobilePaySubscriptions</returns>            
-        public AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, Dictionary<string, string> provider, string refreshToken)
+        public AcquirerSettingsMobilePaySubscriptions PATCHAcquirersMobilepaysubscriptionsFormat (string acceptVersion, string authorization, bool? active, string authState, string codeVerifier, int? lastTokenRefresh, string nonce, int? pendingStatus, string provider, string refreshToken)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2125,20 +2125,20 @@ if (refreshToken != null) formParams.Add("refresh_token", ApiClient.ParameterToS
         /// <summary>
         /// Update Nets acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Nets/Teller payments&lt;/p&gt; </param> 
-        /// <param name="identificationCode">&lt;p&gt;Nets TOF number&lt;/p&gt; </param> 
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Nets)&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt; </param> 
-        /// <param name="fbg1886">&lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt; </param> 
-        /// <param name="securedByNets">&lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt; </param> 
-        /// <param name="identificationCodeInt">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
-        /// <param name="americanexpress">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
-        /// <param name="dinersclub">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
-        /// <param name="securepay">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
-        /// <param name="visaBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
-        /// <param name="mastercardBin">&lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Nets/Teller payments </param> 
+        /// <param name="identificationCode">Nets TOF number </param> 
+        /// <param name="businessCode">Business code (assigned by Nets) </param> 
+        /// <param name="recurring">Enable recurring payments (requires agreement with Nets) </param> 
+        /// <param name="fbg1886">Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen) </param> 
+        /// <param name="securedByNets">Enable SecuredByNets fraud protection. </param> 
+        /// <param name="identificationCodeInt">(Depricated; use Teller acquirer) </param> 
+        /// <param name="americanexpress">(Depricated; use Teller acquirer) </param> 
+        /// <param name="dinersclub">(Depricated; use Teller acquirer) </param> 
+        /// <param name="securepay">(Depricated; use Teller acquirer) </param> 
+        /// <param name="visaBin">(Depricated; use Teller acquirer) </param> 
+        /// <param name="mastercardBin">(Depricated; use Teller acquirer) </param> 
         /// <returns>AcquirerSettingsNets</returns>            
         public AcquirerSettingsNets PATCHAcquirersNetsFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, bool? recurring, bool? fbg1886, bool? securedByNets, string identificationCodeInt, bool? americanexpress, bool? dinersclub, bool? securepay, string visaBin, string mastercardBin)
         {
@@ -2200,16 +2200,16 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <summary>
         /// Update PayPal acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable PayPal payments&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments&lt;/p&gt; </param> 
-        /// <param name="creditCard">&lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt; </param> 
-        /// <param name="token">&lt;p&gt;Authentication token&lt;/p&gt; </param> 
-        /// <param name="tokenSecret">&lt;p&gt;Authentication token secret&lt;/p&gt; </param> 
-        /// <param name="scope">&lt;p&gt;Authentication scope&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable PayPal payments </param> 
+        /// <param name="recurring">Enable recurring payments </param> 
+        /// <param name="creditCard">Allow credit-card payments. (Only for US/CA/UK merchants) </param> 
+        /// <param name="token">Authentication token </param> 
+        /// <param name="tokenSecret">Authentication token secret </param> 
+        /// <param name="scope">Authentication scope </param> 
         /// <returns>AcquirerSettingsPayPal</returns>            
-        public AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, List<string> scope)
+        public AcquirerSettingsPayPal PATCHAcquirersPaypalFormat (string acceptVersion, string authorization, bool? active, bool? recurring, bool? creditCard, string token, string tokenSecret, string scope)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2238,8 +2238,8 @@ if (recurring != null) formParams.Add("recurring", ApiClient.ParameterToString(r
 if (creditCard != null) formParams.Add("credit_card", ApiClient.ParameterToString(creditCard)); // form parameter
 if (token != null) formParams.Add("token", ApiClient.ParameterToString(token)); // form parameter
 if (tokenSecret != null) formParams.Add("token_secret", ApiClient.ParameterToString(tokenSecret)); // form parameter
-            postBody = ApiClient.Serialize(scope); // http body (model) parameter
-    
+if (scope != null) formParams.Add("scope", ApiClient.ParameterToString(scope)); // form parameter
+                
             // authentication setting, if any
             String[] authSettings = new String[] {  };
     
@@ -2257,14 +2257,14 @@ if (tokenSecret != null) formParams.Add("token_secret", ApiClient.ParameterToStr
         /// <summary>
         /// Update Paysafecard acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Paysafecard payments&lt;/p&gt; </param> 
-        /// <param name="username">&lt;p&gt;Paysafecard username&lt;/p&gt; </param> 
-        /// <param name="password">&lt;p&gt;Paysafecard password&lt;/p&gt; </param> 
-        /// <param name="currencies">&lt;p&gt;Paysafecard currencies (Paysafecard requires agreement per currency)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Paysafecard payments </param> 
+        /// <param name="username">Paysafecard username </param> 
+        /// <param name="password">Paysafecard password </param> 
+        /// <param name="currencies">Paysafecard currencies (Paysafecard requires agreement per currency) </param> 
         /// <returns>AcquirerSettingsPaysafecard</returns>            
-        public AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, List<Object> currencies)
+        public AcquirerSettingsPaysafecard PATCHAcquirersPaysafecardFormat (string acceptVersion, string authorization, bool? active, string username, string password, string currencies)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -2300,8 +2300,8 @@ if (tokenSecret != null) formParams.Add("token_secret", ApiClient.ParameterToStr
             if (active != null) formParams.Add("active", ApiClient.ParameterToString(active)); // form parameter
 if (username != null) formParams.Add("username", ApiClient.ParameterToString(username)); // form parameter
 if (password != null) formParams.Add("password", ApiClient.ParameterToString(password)); // form parameter
-            postBody = ApiClient.Serialize(currencies); // http body (model) parameter
-    
+if (currencies != null) formParams.Add("currencies", ApiClient.ParameterToString(currencies)); // form parameter
+                
             // authentication setting, if any
             String[] authSettings = new String[] {  };
     
@@ -2319,11 +2319,11 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
         /// <summary>
         /// Update Resurs acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Resurs payments&lt;/p&gt; </param> 
-        /// <param name="customerId">&lt;p&gt;Resurs customer ID&lt;/p&gt; </param> 
-        /// <param name="customerPassword">&lt;p&gt;Resurs password&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Resurs payments </param> 
+        /// <param name="customerId">Resurs customer ID </param> 
+        /// <param name="customerPassword">Resurs password </param> 
         /// <returns>AcquirerSettingsResurs</returns>            
         public AcquirerSettingsResurs PATCHAcquirersResursFormat (string acceptVersion, string authorization, bool? active, string customerId, string customerPassword)
         {
@@ -2376,17 +2376,17 @@ if (customerPassword != null) formParams.Add("customer_password", ApiClient.Para
         /// <summary>
         /// Update Sofort acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Sofort payments&lt;/p&gt; </param> 
-        /// <param name="customerNumber">&lt;p&gt;Sofort customer number&lt;/p&gt; </param> 
-        /// <param name="projectId">&lt;p&gt;Sofort Gateway project id&lt;/p&gt; </param> 
-        /// <param name="apiKey">&lt;p&gt;Sofort API key&lt;/p&gt; </param> 
-        /// <param name="gateway">&lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt; </param> 
-        /// <param name="ideal">&lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt; </param> 
-        /// <param name="idealProjectId">&lt;p&gt;Sofort iDeal project id&lt;/p&gt; </param> 
-        /// <param name="idealProjectPassword">&lt;p&gt;Sofort iDeal project password&lt;/p&gt; </param> 
-        /// <param name="idealNotificationPassword">&lt;p&gt;Sofort iDeal notification password&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Sofort payments </param> 
+        /// <param name="customerNumber">Sofort customer number </param> 
+        /// <param name="projectId">Sofort Gateway project id </param> 
+        /// <param name="apiKey">Sofort API key </param> 
+        /// <param name="gateway">Enable Sofort Gateway feature </param> 
+        /// <param name="ideal">Enable Sofort iDeal feature </param> 
+        /// <param name="idealProjectId">Sofort iDeal project id </param> 
+        /// <param name="idealProjectPassword">Sofort iDeal project password </param> 
+        /// <param name="idealNotificationPassword">Sofort iDeal notification password </param> 
         /// <returns>AcquirerSettingsSofort</returns>            
         public AcquirerSettingsSofort PATCHAcquirersSofortFormat (string acceptVersion, string authorization, bool? active, int? customerNumber, int? projectId, string apiKey, bool? gateway, bool? ideal, int? idealProjectId, string idealProjectPassword, string idealNotificationPassword)
         {
@@ -2448,20 +2448,20 @@ if (idealNotificationPassword != null) formParams.Add("ideal_notification_passwo
         /// <summary>
         /// Update Swedbank acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Swedbank payments&lt;/p&gt; </param> 
-        /// <param name="identificationCode">&lt;p&gt;Swedbank identification number&lt;/p&gt; </param> 
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt; </param> 
-        /// <param name="identificationCodeInt">&lt;p&gt;Swedbank international identification number&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt; </param> 
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt; </param> 
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt; </param> 
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param> 
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Swedbank payments </param> 
+        /// <param name="identificationCode">Swedbank identification number </param> 
+        /// <param name="businessCode">Business code (assigned by Swedbank) </param> 
+        /// <param name="identificationCodeInt">Swedbank international identification number </param> 
+        /// <param name="recurring">Enable recurring payments (requires agreement with Swedbank) </param> 
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Swedbank) </param> 
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Swedbank) </param> 
+        /// <param name="securepay">Enable SecurePay fraud protection. </param> 
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param> 
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param> 
         /// <returns>AcquirerSettingsSwedbank</returns>            
         public AcquirerSettingsSwedbank PATCHAcquirersSwedbankFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
@@ -2523,11 +2523,11 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <summary>
         /// Update Swish acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Swish payments&lt;/p&gt; </param> 
-        /// <param name="merchantId">&lt;p&gt;Swish merchant id&lt;/p&gt; </param> 
-        /// <param name="cryptographyKeyId">&lt;p&gt;Swish certificate and private-key from Cryptography store&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Swish payments </param> 
+        /// <param name="merchantId">Swish merchant id </param> 
+        /// <param name="cryptographyKeyId">Swish certificate and private-key from Cryptography store </param> 
         /// <returns>AcquirerSettingsSwish</returns>            
         public AcquirerSettingsSwish PATCHAcquirersSwishFormat (string acceptVersion, string authorization, bool? active, string merchantId, int? cryptographyKeyId)
         {
@@ -2577,20 +2577,20 @@ if (cryptographyKeyId != null) formParams.Add("cryptography_key_id", ApiClient.P
         /// <summary>
         /// Update Teller acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Teller payments&lt;/p&gt; </param> 
-        /// <param name="identificationCode">&lt;p&gt;Teller TOF number&lt;/p&gt; </param> 
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Teller)&lt;/p&gt; </param> 
-        /// <param name="identificationCodeInt">&lt;p&gt;Teller international identification number&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt; </param> 
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt; </param> 
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt; </param> 
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt; </param> 
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="visaBin">&lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <param name="mastercardBin">&lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Teller payments </param> 
+        /// <param name="identificationCode">Teller TOF number </param> 
+        /// <param name="businessCode">Business code (assigned by Teller) </param> 
+        /// <param name="identificationCodeInt">Teller international identification number </param> 
+        /// <param name="recurring">Enable recurring payments (requires agreement with Teller) </param> 
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Teller) </param> 
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Teller) </param> 
+        /// <param name="securepay">Enable SecurePay fraud protection. (disabling requires agreement with Teller) </param> 
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="visaBin">Teller VISA acquirer bin used for 3D Secure </param> 
+        /// <param name="mastercardBin">Teller Mastercard acquirer bin used for 3D Secure </param> 
         /// <returns>AcquirerSettingsTeller</returns>            
         public AcquirerSettingsTeller PATCHAcquirersTellerFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
@@ -2652,12 +2652,12 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <summary>
         /// Update Trustly acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Trustly payments&lt;/p&gt; </param> 
-        /// <param name="ideal">&lt;p&gt;Enable iDeal payments&lt;/p&gt; </param> 
-        /// <param name="username">&lt;p&gt;Trustly API username&lt;/p&gt; </param> 
-        /// <param name="password">&lt;p&gt;Trustly API password&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Trustly payments </param> 
+        /// <param name="ideal">Enable iDeal payments </param> 
+        /// <param name="username">Trustly API username </param> 
+        /// <param name="password">Trustly API password </param> 
         /// <returns>AcquirerSettingsTrustly</returns>            
         public AcquirerSettingsTrustly PATCHAcquirersTrustlyFormat (string acceptVersion, string authorization, bool? active, bool? ideal, string username, string password)
         {
@@ -2714,20 +2714,20 @@ if (password != null) formParams.Add("password", ApiClient.ParameterToString(pas
         /// <summary>
         /// Update Valitor acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Valitor payments&lt;/p&gt; </param> 
-        /// <param name="identificationCode">&lt;p&gt;Valitor identification number&lt;/p&gt; </param> 
-        /// <param name="businessCode">&lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt; </param> 
-        /// <param name="identificationCodeInt">&lt;p&gt;Valitor international identification number&lt;/p&gt; </param> 
-        /// <param name="recurring">&lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt; </param> 
-        /// <param name="americanexpress">&lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt; </param> 
-        /// <param name="dinersclub">&lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt; </param> 
-        /// <param name="securepay">&lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt; </param> 
-        /// <param name="visaMpiMerchantId">&lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="mastercardMpiMerchantId">&lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt; </param> 
-        /// <param name="visaBin">&lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt; </param> 
-        /// <param name="mastercardBin">&lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Valitor payments </param> 
+        /// <param name="identificationCode">Valitor identification number </param> 
+        /// <param name="businessCode">Business code (assigned by Valitor) </param> 
+        /// <param name="identificationCodeInt">Valitor international identification number </param> 
+        /// <param name="recurring">Enable recurring payments (requires agreement with Valitor) </param> 
+        /// <param name="americanexpress">Enable AMEX payments (requires agreement with Valitor) </param> 
+        /// <param name="dinersclub">Enable Diners Club payments (requires agreement with Valitor) </param> 
+        /// <param name="securepay">Enable SecurePay fraud protection. </param> 
+        /// <param name="visaMpiMerchantId">VISA MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="mastercardMpiMerchantId">Mastercard MPI merchant id. Used for 3D secure transactions </param> 
+        /// <param name="visaBin">VISA acquirer bin used for 3D Secure </param> 
+        /// <param name="mastercardBin">Mastercard acquirer bin used for 3D Secure </param> 
         /// <returns>AcquirerSettingsValitor</returns>            
         public AcquirerSettingsValitor PATCHAcquirersValitorFormat (string acceptVersion, string authorization, bool? active, string identificationCode, string businessCode, string identificationCodeInt, bool? recurring, bool? americanexpress, bool? dinersclub, bool? securepay, string visaMpiMerchantId, string mastercardMpiMerchantId, string visaBin, string mastercardBin)
         {
@@ -2789,10 +2789,10 @@ if (mastercardBin != null) formParams.Add("mastercard_bin", ApiClient.ParameterT
         /// <summary>
         /// Update ViaBill acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable ViaBill payments&lt;/p&gt; </param> 
-        /// <param name="apiKey">&lt;p&gt;ViaBill API key&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable ViaBill payments </param> 
+        /// <param name="apiKey">ViaBill API key </param> 
         /// <returns>AcquirerSettingsViaBill</returns>            
         public AcquirerSettingsViaBill PATCHAcquirersViabillFormat (string acceptVersion, string authorization, bool? active, string apiKey)
         {
@@ -2841,15 +2841,15 @@ if (apiKey != null) formParams.Add("api_key", ApiClient.ParameterToString(apiKey
         /// <summary>
         /// Update Vipps acquirer settings  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="active">&lt;p&gt;Enable Vipps payments&lt;/p&gt; </param> 
-        /// <param name="clientId">&lt;p&gt;Vipps OAuth Client ID&lt;/p&gt; </param> 
-        /// <param name="clientSecret">&lt;p&gt;Vipps OAuth Client Secret&lt;/p&gt; </param> 
-        /// <param name="serialNumber">&lt;p&gt;Vipps agreement serial&lt;/p&gt; </param> 
-        /// <param name="accessTokenSubscriptionKey">&lt;p&gt;Vipps Access-Token Subscription Key&lt;/p&gt; </param> 
-        /// <param name="ecommerceSubscriptionKey">&lt;p&gt;Vipps eCommerce Subscription Key&lt;/p&gt; </param> 
-        /// <param name="orgno">&lt;p&gt;Vipps companys organization number&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="active">Enable Vipps payments </param> 
+        /// <param name="clientId">Vipps OAuth Client ID </param> 
+        /// <param name="clientSecret">Vipps OAuth Client Secret </param> 
+        /// <param name="serialNumber">Vipps agreement serial </param> 
+        /// <param name="accessTokenSubscriptionKey">Vipps Access-Token Subscription Key </param> 
+        /// <param name="ecommerceSubscriptionKey">Vipps eCommerce Subscription Key </param> 
+        /// <param name="orgno">Vipps companys organization number </param> 
         /// <returns>AcquirerSettingsVipps</returns>            
         public AcquirerSettingsVipps PATCHAcquirersVippsFormat (string acceptVersion, string authorization, bool? active, string clientId, string clientSecret, string serialNumber, string accessTokenSubscriptionKey, string ecommerceSubscriptionKey, string orgno)
         {
@@ -2915,9 +2915,9 @@ if (orgno != null) formParams.Add("orgno", ApiClient.ParameterToString(orgno)); 
         /// <summary>
         /// Test payments via acquirer  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Acquirer name&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="acquirer">Acquirer name </param> 
         /// <returns>AcquirerTest</returns>            
         public AcquirerTest POSTAcquirersAcquirerTestFormat (string acceptVersion, string authorization, string acquirer)
         {

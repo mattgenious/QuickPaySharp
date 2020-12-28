@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,10 +31,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns></returns>
         void DELETEFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod);
 
@@ -45,10 +45,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETEFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
@@ -58,9 +58,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>FeeFormula</returns>
         FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer);
 
@@ -71,9 +71,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>ApiResponse of FeeFormula</returns>
         ApiResponse<FeeFormula> GETFeesFormulasAcquirerFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer);
         /// <summary>
@@ -83,10 +83,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>FeeFormula</returns>
         FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod);
 
@@ -97,10 +97,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>ApiResponse of FeeFormula</returns>
         ApiResponse<FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
@@ -110,10 +110,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <returns>FeeFormula</returns>
         FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
 
@@ -124,10 +124,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <returns>ApiResponse of FeeFormula</returns>
         ApiResponse<FeeFormula> GETFeesFormulasFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
         /// <summary>
@@ -137,11 +137,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula  (optional)</param>
         /// <returns>FeeFormula</returns>
         FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
 
@@ -152,11 +152,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula  (optional)</param>
         /// <returns>ApiResponse of FeeFormula</returns>
         ApiResponse<FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
         /// <summary>
@@ -166,11 +166,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>CalculatedFee</returns>
         CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
 
@@ -181,11 +181,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>ApiResponse of CalculatedFee</returns>
         ApiResponse<CalculatedFee> POSTFeesAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
         /// <summary>
@@ -195,18 +195,18 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
         /// <returns>CalculatedFee</returns>
-        CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
+        CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
 
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]
@@ -215,18 +215,18 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
         /// <returns>ApiResponse of CalculatedFee</returns>
-        ApiResponse<CalculatedFee> POSTFeesFormatWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
+        ApiResponse<CalculatedFee> POSTFeesFormatWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -236,10 +236,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETEFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod);
 
@@ -250,10 +250,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETEFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
@@ -263,9 +263,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>Task of FeeFormula</returns>
         System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasAcquirerFormatAsync (string acceptVersion, string authorization, string acquirer);
 
@@ -276,9 +276,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>Task of ApiResponse (FeeFormula)</returns>
         System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasAcquirerFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer);
         /// <summary>
@@ -288,10 +288,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>Task of FeeFormula</returns>
         System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod);
 
@@ -302,10 +302,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>Task of ApiResponse (FeeFormula)</returns>
         System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod);
         /// <summary>
@@ -315,10 +315,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <returns>Task of FeeFormula</returns>
         System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
 
@@ -329,10 +329,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <returns>Task of ApiResponse (FeeFormula)</returns>
         System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null);
         /// <summary>
@@ -342,11 +342,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula  (optional)</param>
         /// <returns>Task of FeeFormula</returns>
         System.Threading.Tasks.Task<FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
 
@@ -357,11 +357,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula  (optional)</param>
         /// <returns>Task of ApiResponse (FeeFormula)</returns>
         System.Threading.Tasks.Task<ApiResponse<FeeFormula>> PATCHFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null);
         /// <summary>
@@ -371,11 +371,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>Task of CalculatedFee</returns>
         System.Threading.Tasks.Task<CalculatedFee> POSTFeesAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
 
@@ -386,11 +386,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>Task of ApiResponse (CalculatedFee)</returns>
         System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount);
         /// <summary>
@@ -400,18 +400,18 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
         /// <returns>Task of CalculatedFee</returns>
-        System.Threading.Tasks.Task<CalculatedFee> POSTFeesFormatAsync (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
+        System.Threading.Tasks.Task<CalculatedFee> POSTFeesFormatAsync (string acceptVersion, string authorization, int? amount, string currency = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
 
         /// <summary>
         /// Calculate fee for auth params. Requires one of card[number] or card[token]
@@ -420,18 +420,18 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
         /// <returns>Task of ApiResponse (CalculatedFee)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
+        System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null);
         #endregion Asynchronous Operations
     }
 
@@ -536,10 +536,10 @@ namespace IO.Swagger.Api
         /// Reset a formula to default  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns></returns>
         public void DELETEFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -550,10 +550,10 @@ namespace IO.Swagger.Api
         /// Reset a formula to default  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETEFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -622,10 +622,10 @@ namespace IO.Swagger.Api
         /// Reset a formula to default  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETEFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -637,10 +637,10 @@ namespace IO.Swagger.Api
         /// Reset a formula to default  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -709,9 +709,9 @@ namespace IO.Swagger.Api
         /// Get fee formulas  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>FeeFormula</returns>
         public FeeFormula GETFeesFormulasAcquirerFormat (string acceptVersion, string authorization, string acquirer)
         {
@@ -723,9 +723,9 @@ namespace IO.Swagger.Api
         /// Get fee formulas  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>ApiResponse of FeeFormula</returns>
         public ApiResponse< FeeFormula > GETFeesFormulasAcquirerFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer)
         {
@@ -790,9 +790,9 @@ namespace IO.Swagger.Api
         /// Get fee formulas  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>Task of FeeFormula</returns>
         public async System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasAcquirerFormatAsync (string acceptVersion, string authorization, string acquirer)
         {
@@ -805,9 +805,9 @@ namespace IO.Swagger.Api
         /// Get fee formulas  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
         /// <returns>Task of ApiResponse (FeeFormula)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasAcquirerFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer)
         {
@@ -872,10 +872,10 @@ namespace IO.Swagger.Api
         /// Get fee formula  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>FeeFormula</returns>
         public FeeFormula GETFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -887,10 +887,10 @@ namespace IO.Swagger.Api
         /// Get fee formula  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>ApiResponse of FeeFormula</returns>
         public ApiResponse< FeeFormula > GETFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -959,10 +959,10 @@ namespace IO.Swagger.Api
         /// Get fee formula  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>Task of FeeFormula</returns>
         public async System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -975,10 +975,10 @@ namespace IO.Swagger.Api
         /// Get fee formula  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
         /// <returns>Task of ApiResponse (FeeFormula)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod)
         {
@@ -1047,10 +1047,10 @@ namespace IO.Swagger.Api
         /// Get all fee formulas  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <returns>FeeFormula</returns>
         public FeeFormula GETFeesFormulasFormat (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
         {
@@ -1062,10 +1062,10 @@ namespace IO.Swagger.Api
         /// Get all fee formulas  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <returns>ApiResponse of FeeFormula</returns>
         public ApiResponse< FeeFormula > GETFeesFormulasFormatWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
         {
@@ -1128,10 +1128,10 @@ namespace IO.Swagger.Api
         /// Get all fee formulas  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <returns>Task of FeeFormula</returns>
         public async System.Threading.Tasks.Task<FeeFormula> GETFeesFormulasFormatAsync (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
         {
@@ -1144,10 +1144,10 @@ namespace IO.Swagger.Api
         /// Get all fee formulas  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
         /// <returns>Task of ApiResponse (FeeFormula)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FeeFormula>> GETFeesFormulasFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? page = null, int? pageSize = null)
         {
@@ -1210,11 +1210,11 @@ namespace IO.Swagger.Api
         /// Update a fee formula  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula  (optional)</param>
         /// <returns>FeeFormula</returns>
         public FeeFormula PATCHFeesFormulasAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
         {
@@ -1226,11 +1226,11 @@ namespace IO.Swagger.Api
         /// Update a fee formula  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula  (optional)</param>
         /// <returns>ApiResponse of FeeFormula</returns>
         public ApiResponse< FeeFormula > PATCHFeesFormulasAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
         {
@@ -1301,11 +1301,11 @@ namespace IO.Swagger.Api
         /// Update a fee formula  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula  (optional)</param>
         /// <returns>Task of FeeFormula</returns>
         public async System.Threading.Tasks.Task<FeeFormula> PATCHFeesFormulasAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
         {
@@ -1318,11 +1318,11 @@ namespace IO.Swagger.Api
         /// Update a fee formula  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="formula">&lt;p&gt;The formula&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="formula">The formula  (optional)</param>
         /// <returns>Task of ApiResponse (FeeFormula)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FeeFormula>> PATCHFeesFormulasAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, string formula = null)
         {
@@ -1393,11 +1393,11 @@ namespace IO.Swagger.Api
         /// Calculate fee  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>CalculatedFee</returns>
         public CalculatedFee POSTFeesAcquirerPaymentMethodFormat (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
@@ -1409,11 +1409,11 @@ namespace IO.Swagger.Api
         /// Calculate fee  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>ApiResponse of CalculatedFee</returns>
         public ApiResponse< CalculatedFee > POSTFeesAcquirerPaymentMethodFormatWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
@@ -1487,11 +1487,11 @@ namespace IO.Swagger.Api
         /// Calculate fee  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>Task of CalculatedFee</returns>
         public async System.Threading.Tasks.Task<CalculatedFee> POSTFeesAcquirerPaymentMethodFormatAsync (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
@@ -1504,11 +1504,11 @@ namespace IO.Swagger.Api
         /// Calculate fee  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Name of acquirer&lt;/p&gt; </param>
-        /// <param name="paymentMethod">&lt;p&gt;Payment method&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="acquirer">Name of acquirer </param>
+        /// <param name="paymentMethod">Payment method </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
         /// <returns>Task of ApiResponse (CalculatedFee)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesAcquirerPaymentMethodFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string acquirer, string paymentMethod, int? amount)
         {
@@ -1582,18 +1582,18 @@ namespace IO.Swagger.Api
         /// Calculate fee for auth params. Requires one of card[number] or card[token]  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
         /// <returns>CalculatedFee</returns>
-        public CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
+        public CalculatedFee POSTFeesFormat (string acceptVersion, string authorization, int? amount, string currency = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
         {
              ApiResponse<CalculatedFee> localVarResponse = POSTFeesFormatWithHttpInfo(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
              return localVarResponse.Data;
@@ -1603,18 +1603,18 @@ namespace IO.Swagger.Api
         /// Calculate fee for auth params. Requires one of card[number] or card[token]  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
         /// <returns>ApiResponse of CalculatedFee</returns>
-        public ApiResponse< CalculatedFee > POSTFeesFormatWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
+        public ApiResponse< CalculatedFee > POSTFeesFormatWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -1685,18 +1685,18 @@ namespace IO.Swagger.Api
         /// Calculate fee for auth params. Requires one of card[number] or card[token]  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
         /// <returns>Task of CalculatedFee</returns>
-        public async System.Threading.Tasks.Task<CalculatedFee> POSTFeesFormatAsync (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
+        public async System.Threading.Tasks.Task<CalculatedFee> POSTFeesFormatAsync (string acceptVersion, string authorization, int? amount, string currency = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
         {
              ApiResponse<CalculatedFee> localVarResponse = await POSTFeesFormatAsyncWithHttpInfo(acceptVersion, authorization, amount, currency, cardApplePayToken, cardMobilepayOnlineToken, cardToken, cardNumber, cardBrand, acquirer);
              return localVarResponse.Data;
@@ -1707,18 +1707,18 @@ namespace IO.Swagger.Api
         /// Calculate fee for auth params. Requires one of card[number] or card[token]  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount specified in smallest unit&lt;/p&gt; </param>
-        /// <param name="currency">&lt;p&gt;Currency&lt;/p&gt;  (optional)</param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt;  (optional)</param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt;  (optional)</param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  (optional)</param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="amount">Amount specified in smallest unit </param>
+        /// <param name="currency">Currency  (optional)</param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token  (optional)</param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token  (optional)</param>
+        /// <param name="cardToken">Card token  (optional)</param>
+        /// <param name="cardNumber">Card number  (optional)</param>
+        /// <param name="cardBrand">Brand to use on multi-brand card  (optional)</param>
+        /// <param name="acquirer">If set, will force the use of this acquirer  (optional)</param>
         /// <returns>Task of ApiResponse (CalculatedFee)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
+        public async System.Threading.Tasks.Task<ApiResponse<CalculatedFee>> POSTFeesFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? amount, string currency = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardToken = null, string cardNumber = null, string cardBrand = null, string acquirer = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)

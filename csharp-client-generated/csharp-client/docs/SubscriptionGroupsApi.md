@@ -35,9 +35,9 @@ namespace Example
         public void main()
         {
             var apiInstance = new SubscriptionGroupsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Subscription-group id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Subscription-group id 
 
             try
             {
@@ -58,9 +58,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Subscription-group id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Subscription-group id  | 
 
 ### Return type
 
@@ -100,12 +100,12 @@ namespace Example
         public void main()
         {
             var apiInstance = new SubscriptionGroupsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
-            var sortBy = sortBy_example;  // string | <p>Property to sort by</p>  (optional)  (default to id)
-            var sortDir = sortDir_example;  // string | <p>Sort direction</p>  (optional)  (default to desc)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
+            var sortBy = sortBy_example;  // string | Property to sort by  (optional)  (default to id)
+            var sortDir = sortDir_example;  // string | Sort direction  (optional)  (default to desc)
 
             try
             {
@@ -126,12 +126,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
- **sortBy** | **string**| &lt;p&gt;Property to sort by&lt;/p&gt;  | [optional] [default to id]
- **sortDir** | **string**| &lt;p&gt;Sort direction&lt;/p&gt;  | [optional] [default to desc]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
+ **sortBy** | **string**| Property to sort by  | [optional] [default to id]
+ **sortDir** | **string**| Sort direction  | [optional] [default to desc]
 
 ### Return type
 
@@ -171,9 +171,9 @@ namespace Example
         public void main()
         {
             var apiInstance = new SubscriptionGroupsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Subscription-group id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Subscription-group id 
 
             try
             {
@@ -194,9 +194,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Subscription-group id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Subscription-group id  | 
 
 ### Return type
 
@@ -236,12 +236,12 @@ namespace Example
         public void main()
         {
             var apiInstance = new SubscriptionGroupsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Subscription-group id</p> 
-            var name = name_example;  // string | <p>Name of the group</p>  (optional) 
-            var amount = 56;  // int? | <p>Amount to capture on each recurring capture</p>  (optional) 
-            var description = description_example;  // string | <p>Descriptive text</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Subscription-group id 
+            var name = name_example;  // string | Name of the group  (optional) 
+            var amount = 56;  // int? | Amount to capture on each recurring capture  (optional) 
+            var description = description_example;  // string | Descriptive text  (optional) 
 
             try
             {
@@ -262,12 +262,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Subscription-group id&lt;/p&gt;  | 
- **name** | **string**| &lt;p&gt;Name of the group&lt;/p&gt;  | [optional] 
- **amount** | **int?**| &lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  | [optional] 
- **description** | **string**| &lt;p&gt;Descriptive text&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Subscription-group id  | 
+ **name** | **string**| Name of the group  | [optional] 
+ **amount** | **int?**| Amount to capture on each recurring capture  | [optional] 
+ **description** | **string**| Descriptive text  | [optional] 
 
 ### Return type
 
@@ -307,12 +307,12 @@ namespace Example
         public void main()
         {
             var apiInstance = new SubscriptionGroupsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var name = name_example;  // string | <p>Name of the group</p> 
-            var amount = 56;  // int? | <p>Amount to capture on each recurring capture</p> 
-            var currency = currency_example;  // string | <p>Currency for the amount</p> 
-            var description = description_example;  // string | <p>Descriptive text</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var name = name_example;  // string | Name of the group 
+            var amount = 56;  // int? | Amount to capture on each recurring capture 
+            var currency = currency_example;  // string | Currency for the amount 
+            var description = description_example;  // string | Descriptive text  (optional) 
 
             try
             {
@@ -333,12 +333,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **name** | **string**| &lt;p&gt;Name of the group&lt;/p&gt;  | 
- **amount** | **int?**| &lt;p&gt;Amount to capture on each recurring capture&lt;/p&gt;  | 
- **currency** | **string**| &lt;p&gt;Currency for the amount&lt;/p&gt;  | 
- **description** | **string**| &lt;p&gt;Descriptive text&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **name** | **string**| Name of the group  | 
+ **amount** | **int?**| Amount to capture on each recurring capture  | 
+ **currency** | **string**| Currency for the amount  | 
+ **description** | **string**| Descriptive text  | [optional] 
 
 ### Return type
 
@@ -378,10 +378,10 @@ namespace Example
         public void main()
         {
             var apiInstance = new SubscriptionGroupsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Subscription-group id</p> 
-            var orderIdPrefix = orderIdPrefix_example;  // string | <p>Unique prefix for the order id of the recurring payments</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Subscription-group id 
+            var orderIdPrefix = orderIdPrefix_example;  // string | Unique prefix for the order id of the recurring payments 
 
             try
             {
@@ -402,10 +402,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Subscription-group id&lt;/p&gt;  | 
- **orderIdPrefix** | **string**| &lt;p&gt;Unique prefix for the order id of the recurring payments&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Subscription-group id  | 
+ **orderIdPrefix** | **string**| Unique prefix for the order id of the recurring payments  | 
 
 ### Return type
 

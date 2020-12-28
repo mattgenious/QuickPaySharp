@@ -39,8 +39,8 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = 56;  // int? |  
 
             try
@@ -61,8 +61,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **int?**|   | 
 
 ### Return type
@@ -104,8 +104,8 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = 56;  // int? |  
 
             try
@@ -126,8 +126,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **int?**|   | 
 
 ### Return type
@@ -169,13 +169,13 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var type = type_example;  // string |   (optional) 
             var query = query_example;  // string |   (optional) 
-            var sortBy = sortBy_example;  // string | <p>Property to sort by</p>  (optional)  (default to id)
-            var sortDir = sortDir_example;  // string | <p>Sort direction</p>  (optional)  (default to desc)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
+            var sortBy = sortBy_example;  // string | Property to sort by  (optional)  (default to id)
+            var sortDir = sortDir_example;  // string | Sort direction  (optional)  (default to desc)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
             var pageKey = 56;  // int? |   (optional) 
 
             try
@@ -197,13 +197,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **type** | **string**|   | [optional] 
  **query** | **string**|   | [optional] 
- **sortBy** | **string**| &lt;p&gt;Property to sort by&lt;/p&gt;  | [optional] [default to id]
- **sortDir** | **string**| &lt;p&gt;Sort direction&lt;/p&gt;  | [optional] [default to desc]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
+ **sortBy** | **string**| Property to sort by  | [optional] [default to id]
+ **sortDir** | **string**| Sort direction  | [optional] [default to desc]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
  **pageKey** | **int?**|   | [optional] 
 
 ### Return type
@@ -245,8 +245,8 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = 56;  // int? |  
 
             try
@@ -267,8 +267,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **int?**|   | 
 
 ### Return type
@@ -310,8 +310,8 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = 56;  // int? |  
 
             try
@@ -333,8 +333,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **int?**|   | 
 
 ### Return type
@@ -376,8 +376,8 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = 56;  // int? |  
             var shortDescription = shortDescription_example;  // string |   (optional) 
 
@@ -400,8 +400,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **int?**|   | 
  **shortDescription** | **string**|   | [optional] 
 
@@ -444,8 +444,8 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var type = type_example;  // string |  
             var shortDescription = shortDescription_example;  // string |  
             var keySize = 56;  // int? |  
@@ -470,8 +470,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **type** | **string**|   | 
  **shortDescription** | **string**|   | 
  **keySize** | **int?**|   | 
@@ -516,8 +516,8 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = 56;  // int? |  
             var subjectKey = subjectKey_example;  // string |  
             var subjectValue = subjectValue_example;  // string |  
@@ -541,8 +541,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **int?**|   | 
  **subjectKey** | **string**|   | 
  **subjectValue** | **string**|   | 
@@ -565,7 +565,7 @@ No authorization required
 
 <a name="putcryptographykeysidcertificateformat"></a>
 # **PUTCryptographyKeysIdCertificateFormat**
-> void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, ModelFile _file)
+> void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, System.IO.Stream _file)
 
 Replace certificate
 
@@ -587,10 +587,10 @@ namespace Example
         {
             
             var apiInstance = new CryptographyApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = 56;  // int? |  
-            var _file = new ModelFile(); // ModelFile | <p>The file send as multipart</p> 
+            var _file = new System.IO.Stream(); // System.IO.Stream | The file send as multipart 
 
             try
             {
@@ -610,10 +610,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **int?**|   | 
- **_file** | **ModelFile**| &lt;p&gt;The file send as multipart&lt;/p&gt;  | 
+ **_file** | **System.IO.Stream**| The file send as multipart  | 
 
 ### Return type
 

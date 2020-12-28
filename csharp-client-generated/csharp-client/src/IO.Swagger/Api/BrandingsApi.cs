@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,7 +31,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns></returns>
         void DELETEBrandingsIdFormat (int? id);
 
@@ -42,7 +42,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETEBrandingsIdFormatWithHttpInfo (int? id);
         /// <summary>
@@ -52,7 +52,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
         void DELETEBrandingsIdresourceNameFormat (int? id, string resourceName = null);
@@ -64,7 +64,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DELETEBrandingsIdresourceNameFormatWithHttpInfo (int? id, string resourceName = null);
@@ -75,14 +75,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to name)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to asc)</param>
         /// <returns>Branding</returns>
         Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
@@ -93,14 +93,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to name)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to asc)</param>
         /// <returns>ApiResponse of Branding</returns>
         ApiResponse<Branding> GETBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
@@ -110,11 +110,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Branding</returns>
         Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
@@ -125,11 +125,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>ApiResponse of Branding</returns>
         ApiResponse<Branding> GETBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
@@ -139,7 +139,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
         void GETBrandingsIdresourceNameFormat (int? id, string resourceName = null);
@@ -151,7 +151,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> GETBrandingsIdresourceNameFormatWithHttpInfo (int? id, string resourceName = null);
@@ -162,12 +162,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding  (optional)</param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Branding</returns>
         Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
 
@@ -178,12 +178,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding  (optional)</param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>ApiResponse of Branding</returns>
         ApiResponse<Branding> PATCHBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
         /// <summary>
@@ -193,9 +193,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>Branding</returns>
         Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name);
 
@@ -206,9 +206,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>ApiResponse of Branding</returns>
         ApiResponse<Branding> POSTBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string name);
         /// <summary>
@@ -218,11 +218,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Branding</returns>
         Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
@@ -233,11 +233,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>ApiResponse of Branding</returns>
         ApiResponse<Branding> POSTBrandingsIdCopyFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
@@ -247,10 +247,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
         void PUTBrandingsIdresourceNameFormat (string acceptVersion, string authorization, int? id, string _file, string resourceName = null);
@@ -262,10 +262,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> PUTBrandingsIdresourceNameFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string _file, string resourceName = null);
@@ -278,7 +278,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETEBrandingsIdFormatAsync (int? id);
 
@@ -289,7 +289,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETEBrandingsIdFormatAsyncWithHttpInfo (int? id);
         /// <summary>
@@ -299,7 +299,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DELETEBrandingsIdresourceNameFormatAsync (int? id, string resourceName = null);
@@ -311,7 +311,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DELETEBrandingsIdresourceNameFormatAsyncWithHttpInfo (int? id, string resourceName = null);
@@ -322,14 +322,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to name)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to asc)</param>
         /// <returns>Task of Branding</returns>
         System.Threading.Tasks.Task<Branding> GETBrandingsFormatAsync (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
@@ -340,14 +340,14 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to name)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to asc)</param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
@@ -357,11 +357,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of Branding</returns>
         System.Threading.Tasks.Task<Branding> GETBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
@@ -372,11 +372,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
@@ -386,7 +386,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task GETBrandingsIdresourceNameFormatAsync (int? id, string resourceName = null);
@@ -398,7 +398,7 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> GETBrandingsIdresourceNameFormatAsyncWithHttpInfo (int? id, string resourceName = null);
@@ -409,12 +409,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding  (optional)</param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of Branding</returns>
         System.Threading.Tasks.Task<Branding> PATCHBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
 
@@ -425,12 +425,12 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding  (optional)</param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         System.Threading.Tasks.Task<ApiResponse<Branding>> PATCHBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
         /// <summary>
@@ -440,9 +440,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>Task of Branding</returns>
         System.Threading.Tasks.Task<Branding> POSTBrandingsFormatAsync (string acceptVersion, string authorization, string name);
 
@@ -453,9 +453,9 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name);
         /// <summary>
@@ -465,11 +465,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of Branding</returns>
         System.Threading.Tasks.Task<Branding> POSTBrandingsIdCopyFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
@@ -480,11 +480,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsIdCopyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
@@ -494,10 +494,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task PUTBrandingsIdresourceNameFormatAsync (string acceptVersion, string authorization, int? id, string _file, string resourceName = null);
@@ -509,10 +509,10 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> PUTBrandingsIdresourceNameFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string _file, string resourceName = null);
@@ -620,7 +620,7 @@ namespace IO.Swagger.Api
         /// Delete a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns></returns>
         public void DELETEBrandingsIdFormat (int? id)
         {
@@ -631,7 +631,7 @@ namespace IO.Swagger.Api
         /// Delete a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETEBrandingsIdFormatWithHttpInfo (int? id)
         {
@@ -688,7 +688,7 @@ namespace IO.Swagger.Api
         /// Delete a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETEBrandingsIdFormatAsync (int? id)
         {
@@ -700,7 +700,7 @@ namespace IO.Swagger.Api
         /// Delete a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEBrandingsIdFormatAsyncWithHttpInfo (int? id)
         {
@@ -757,7 +757,7 @@ namespace IO.Swagger.Api
         /// Deletes a branding resource  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
         public void DELETEBrandingsIdresourceNameFormat (int? id, string resourceName = null)
@@ -769,7 +769,7 @@ namespace IO.Swagger.Api
         /// Deletes a branding resource  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DELETEBrandingsIdresourceNameFormatWithHttpInfo (int? id, string resourceName = null)
@@ -828,7 +828,7 @@ namespace IO.Swagger.Api
         /// Deletes a branding resource  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DELETEBrandingsIdresourceNameFormatAsync (int? id, string resourceName = null)
@@ -841,7 +841,7 @@ namespace IO.Swagger.Api
         /// Deletes a branding resource  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEBrandingsIdresourceNameFormatAsyncWithHttpInfo (int? id, string resourceName = null)
@@ -900,14 +900,14 @@ namespace IO.Swagger.Api
         /// Get brandings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to name)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to asc)</param>
         /// <returns>Branding</returns>
         public Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -919,14 +919,14 @@ namespace IO.Swagger.Api
         /// Get brandings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to name)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to asc)</param>
         /// <returns>ApiResponse of Branding</returns>
         public ApiResponse< Branding > GETBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -993,14 +993,14 @@ namespace IO.Swagger.Api
         /// Get brandings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to name)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to asc)</param>
         /// <returns>Task of Branding</returns>
         public async System.Threading.Tasks.Task<Branding> GETBrandingsFormatAsync (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1013,14 +1013,14 @@ namespace IO.Swagger.Api
         /// Get brandings  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
+        /// <param name="page">Pagination page. Default is 1  (optional, default to 1)</param>
+        /// <param name="pageSize">Items per page. Default is 20  (optional, default to 20)</param>
+        /// <param name="sortBy">Property to sort by  (optional, default to name)</param>
+        /// <param name="sortDir">Sort direction  (optional, default to asc)</param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
@@ -1087,11 +1087,11 @@ namespace IO.Swagger.Api
         /// Get a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Branding</returns>
         public Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
@@ -1103,11 +1103,11 @@ namespace IO.Swagger.Api
         /// Get a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>ApiResponse of Branding</returns>
         public ApiResponse< Branding > GETBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
@@ -1174,11 +1174,11 @@ namespace IO.Swagger.Api
         /// Get a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of Branding</returns>
         public async System.Threading.Tasks.Task<Branding> GETBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
@@ -1191,11 +1191,11 @@ namespace IO.Swagger.Api
         /// Get a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
@@ -1262,7 +1262,7 @@ namespace IO.Swagger.Api
         /// Gets a branding resource as a file  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
         public void GETBrandingsIdresourceNameFormat (int? id, string resourceName = null)
@@ -1274,7 +1274,7 @@ namespace IO.Swagger.Api
         /// Gets a branding resource as a file  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> GETBrandingsIdresourceNameFormatWithHttpInfo (int? id, string resourceName = null)
@@ -1333,7 +1333,7 @@ namespace IO.Swagger.Api
         /// Gets a branding resource as a file  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task GETBrandingsIdresourceNameFormatAsync (int? id, string resourceName = null)
@@ -1346,7 +1346,7 @@ namespace IO.Swagger.Api
         /// Gets a branding resource as a file  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="id">Branding id </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> GETBrandingsIdresourceNameFormatAsyncWithHttpInfo (int? id, string resourceName = null)
@@ -1405,12 +1405,12 @@ namespace IO.Swagger.Api
         /// Update a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding  (optional)</param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Branding</returns>
         public Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
@@ -1422,12 +1422,12 @@ namespace IO.Swagger.Api
         /// Update a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding  (optional)</param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>ApiResponse of Branding</returns>
         public ApiResponse< Branding > PATCHBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
@@ -1496,12 +1496,12 @@ namespace IO.Swagger.Api
         /// Update a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding  (optional)</param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of Branding</returns>
         public async System.Threading.Tasks.Task<Branding> PATCHBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
@@ -1514,12 +1514,12 @@ namespace IO.Swagger.Api
         /// Update a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="name">Descriptive name of the branding  (optional)</param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Branding>> PATCHBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
@@ -1588,9 +1588,9 @@ namespace IO.Swagger.Api
         /// Create a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>Branding</returns>
         public Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name)
         {
@@ -1602,9 +1602,9 @@ namespace IO.Swagger.Api
         /// Create a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>ApiResponse of Branding</returns>
         public ApiResponse< Branding > POSTBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string name)
         {
@@ -1670,9 +1670,9 @@ namespace IO.Swagger.Api
         /// Create a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>Task of Branding</returns>
         public async System.Threading.Tasks.Task<Branding> POSTBrandingsFormatAsync (string acceptVersion, string authorization, string name)
         {
@@ -1685,9 +1685,9 @@ namespace IO.Swagger.Api
         /// Create a branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="name">Descriptive name of the branding </param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name)
         {
@@ -1753,11 +1753,11 @@ namespace IO.Swagger.Api
         /// Copies branding and returns the new branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Branding</returns>
         public Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
@@ -1769,11 +1769,11 @@ namespace IO.Swagger.Api
         /// Copies branding and returns the new branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>ApiResponse of Branding</returns>
         public ApiResponse< Branding > POSTBrandingsIdCopyFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
@@ -1841,11 +1841,11 @@ namespace IO.Swagger.Api
         /// Copies branding and returns the new branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of Branding</returns>
         public async System.Threading.Tasks.Task<Branding> POSTBrandingsIdCopyFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
@@ -1858,11 +1858,11 @@ namespace IO.Swagger.Api
         /// Copies branding and returns the new branding  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
-        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="except">Specifies which attributes to skip. Default is ‘resources.data’  (optional)</param>
+        /// <param name="only">Specifies which attributes to include. (Overrides except default)  (optional)</param>
         /// <returns>Task of ApiResponse (Branding)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsIdCopyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
@@ -1930,10 +1930,10 @@ namespace IO.Swagger.Api
         /// Uploads a file and creates or replaces a resource  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
         public void PUTBrandingsIdresourceNameFormat (string acceptVersion, string authorization, int? id, string _file, string resourceName = null)
@@ -1945,10 +1945,10 @@ namespace IO.Swagger.Api
         /// Uploads a file and creates or replaces a resource  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> PUTBrandingsIdresourceNameFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string _file, string resourceName = null)
@@ -2020,10 +2020,10 @@ namespace IO.Swagger.Api
         /// Uploads a file and creates or replaces a resource  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task PUTBrandingsIdresourceNameFormatAsync (string acceptVersion, string authorization, int? id, string _file, string resourceName = null)
@@ -2036,10 +2036,10 @@ namespace IO.Swagger.Api
         /// Uploads a file and creates or replaces a resource  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
-        /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Branding id </param>
+        /// <param name="_file">The file send as multipart </param>
         /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> PUTBrandingsIdresourceNameFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string _file, string resourceName = null)

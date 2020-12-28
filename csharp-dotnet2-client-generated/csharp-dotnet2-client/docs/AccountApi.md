@@ -40,8 +40,8 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -62,8 +62,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -104,8 +104,8 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -125,8 +125,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -167,9 +167,9 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var logoType = logoType_example;  // string | <p>Type of logo</p>  (optional)  (default to payment_window)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var logoType = logoType_example;  // string | Type of logo  (optional)  (default to payment_window)
 
             try
             {
@@ -189,9 +189,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **logoType** | **string**| &lt;p&gt;Type of logo&lt;/p&gt;  | [optional] [default to payment_window]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **logoType** | **string**| Type of logo  | [optional] [default to payment_window]
 
 ### Return type
 
@@ -232,8 +232,8 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -254,8 +254,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -296,8 +296,8 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -318,8 +318,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -360,9 +360,9 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var logoType = logoType_example;  // string | <p>Type of logo</p>  (optional)  (default to payment_window)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var logoType = logoType_example;  // string | Type of logo  (optional)  (default to payment_window)
 
             try
             {
@@ -382,9 +382,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **logoType** | **string**| &lt;p&gt;Type of logo&lt;/p&gt;  | [optional] [default to payment_window]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **logoType** | **string**| Type of logo  | [optional] [default to payment_window]
 
 ### Return type
 
@@ -425,8 +425,8 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -447,8 +447,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -467,7 +467,7 @@ No authorization required
 
 <a name="patchaccountformat"></a>
 # **PATCHAccountFormat**
-> Merchant PATCHAccountFormat (string acceptVersion, string authorization, string customerAddressName, string customerAddressAtt, string customerAddressStreet, string customerAddressCity, string customerAddressZipCode, string customerAddressRegion, string customerAddressCountryCode, string customerAddressVatNo, string billingAddressName, string billingAddressAtt, string billingAddressStreet, string billingAddressCity, string billingAddressZipCode, string billingAddressRegion, string billingAddressCountryCode, string billingAddressVatNo, string callbackUrl, bool? acquirerSettingsBamboraActive, string acquirerSettingsBamboraIdentificationCode, string acquirerSettingsBamboraIdentificationCodeInt, string acquirerSettingsBamboraBusinessCode, bool? acquirerSettingsBamboraRecurring, bool? acquirerSettingsBamboraAmericanexpress, bool? acquirerSettingsBamboraDinersclub, bool? acquirerSettingsBamboraSecurepay, string acquirerSettingsBamboraVisaMpiMerchantId, string acquirerSettingsBamboraMastercardMpiMerchantId, string acquirerSettingsBamboraVisaBin, string acquirerSettingsBamboraMastercardBin, bool? acquirerSettingsClearhausActive, string acquirerSettingsClearhausApiKey, bool? acquirerSettingsClearhausRecurring, bool? acquirerSettingsClearhausPayout, bool? acquirerSettingsClearhausApplePay, bool? acquirerSettingsElavonActive, string acquirerSettingsElavonIdentificationCode, string acquirerSettingsElavonIdentificationCodeInt, string acquirerSettingsElavonBusinessCode, bool? acquirerSettingsElavonRecurring, bool? acquirerSettingsElavonAmericanexpress, bool? acquirerSettingsElavonDinersclub, bool? acquirerSettingsElavonSecurepay, string acquirerSettingsElavonVisaMpiMerchantId, string acquirerSettingsElavonMastercardMpiMerchantId, string acquirerSettingsElavonVisaBin, string acquirerSettingsElavonMastercardBin, bool? acquirerSettingsHandelsbankenActive, string acquirerSettingsHandelsbankenIdentificationCode, string acquirerSettingsHandelsbankenIdentificationCodeInt, string acquirerSettingsHandelsbankenBusinessCode, bool? acquirerSettingsHandelsbankenRecurring, bool? acquirerSettingsHandelsbankenAmericanexpress, bool? acquirerSettingsHandelsbankenDinersclub, bool? acquirerSettingsHandelsbankenSecurepay, string acquirerSettingsHandelsbankenVisaMpiMerchantId, string acquirerSettingsHandelsbankenMastercardMpiMerchantId, string acquirerSettingsHandelsbankenVisaBin, string acquirerSettingsHandelsbankenMastercardBin, bool? acquirerSettingsKlarnaActive, int? acquirerSettingsKlarnaEid, string acquirerSettingsKlarnaSharedSecret, bool? acquirerSettingsMobilepayActive, string acquirerSettingsMobilepayDeliveryLimitedTo, bool? acquirerSettingsMobilepaysubscriptionsActive, string acquirerSettingsMobilepaysubscriptionsAuthState, string acquirerSettingsMobilepaysubscriptionsCodeVerifier, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh, string acquirerSettingsMobilepaysubscriptionsNonce, int? acquirerSettingsMobilepaysubscriptionsPendingStatus, Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider, string acquirerSettingsMobilepaysubscriptionsRefreshToken, bool? acquirerSettingsNetsActive, string acquirerSettingsNetsIdentificationCode, string acquirerSettingsNetsBusinessCode, bool? acquirerSettingsNetsRecurring, bool? acquirerSettingsNetsFbg1886, bool? acquirerSettingsNetsSecuredByNets, string acquirerSettingsNetsIdentificationCodeInt, bool? acquirerSettingsNetsAmericanexpress, bool? acquirerSettingsNetsDinersclub, bool? acquirerSettingsNetsSecurepay, string acquirerSettingsNetsVisaBin, string acquirerSettingsNetsMastercardBin, bool? acquirerSettingsPaypalActive, bool? acquirerSettingsPaypalRecurring, bool? acquirerSettingsPaypalCreditCard, string acquirerSettingsPaypalToken, string acquirerSettingsPaypalTokenSecret, List<string> acquirerSettingsPaypalScope, bool? acquirerSettingsSofortActive, int? acquirerSettingsSofortCustomerNumber, int? acquirerSettingsSofortProjectId, string acquirerSettingsSofortApiKey, bool? acquirerSettingsSofortGateway, bool? acquirerSettingsSofortIdeal, int? acquirerSettingsSofortIdealProjectId, string acquirerSettingsSofortIdealProjectPassword, string acquirerSettingsSofortIdealNotificationPassword, bool? acquirerSettingsSwedbankActive, string acquirerSettingsSwedbankIdentificationCode, string acquirerSettingsSwedbankIdentificationCodeInt, string acquirerSettingsSwedbankBusinessCode, bool? acquirerSettingsSwedbankRecurring, bool? acquirerSettingsSwedbankAmericanexpress, bool? acquirerSettingsSwedbankDinersclub, bool? acquirerSettingsSwedbankSecurepay, string acquirerSettingsSwedbankVisaMpiMerchantId, string acquirerSettingsSwedbankMastercardMpiMerchantId, string acquirerSettingsSwedbankVisaBin, string acquirerSettingsSwedbankMastercardBin, bool? acquirerSettingsTellerActive, string acquirerSettingsTellerIdentificationCode, string acquirerSettingsTellerIdentificationCodeInt, string acquirerSettingsTellerBusinessCode, bool? acquirerSettingsTellerRecurring, bool? acquirerSettingsTellerAmericanexpress, bool? acquirerSettingsTellerDinersclub, bool? acquirerSettingsTellerSecurepay, string acquirerSettingsTellerVisaMpiMerchantId, string acquirerSettingsTellerMastercardMpiMerchantId, string acquirerSettingsTellerVisaBin, string acquirerSettingsTellerMastercardBin, bool? acquirerSettingsValitorActive, string acquirerSettingsValitorIdentificationCode, string acquirerSettingsValitorIdentificationCodeInt, string acquirerSettingsValitorBusinessCode, bool? acquirerSettingsValitorRecurring, bool? acquirerSettingsValitorAmericanexpress, bool? acquirerSettingsValitorDinersclub, bool? acquirerSettingsValitorSecurepay, string acquirerSettingsValitorVisaMpiMerchantId, string acquirerSettingsValitorMastercardMpiMerchantId, string acquirerSettingsValitorVisaBin, string acquirerSettingsValitorMastercardBin, bool? acquirerSettingsViabillActive, string acquirerSettingsViabillApiKey, bool? integrationSettingsEconomicActive, string integrationSettingsEconomicAgreement, string integrationSettingsEconomicAgreementToken, bool? pciSaqA, bool? pciSaqAEp, bool? pciSaqB, bool? pciSaqBIp, bool? pciSaqC, bool? pciSaqCVt, bool? pciSaqDMerchant, bool? pciSaqDServiceProvider, bool? pciSaqP2peHw, bool? autofee, string defaultPaymentMethods, string shopUrl, List<string> shopUrls, string contactEmail, string shopName, string shopsystem, string timezone, string locale, int? defaultBrandingId, string loggingStopsAt, bool? allowTestTransactions, string defaultPaymentLanguage, string defaultTextOnStatement, Dictionary<string, string> defaultBrandingConfig)
+> Merchant PATCHAccountFormat (string acceptVersion, string authorization, string customerAddressName, string customerAddressAtt, string customerAddressStreet, string customerAddressCity, string customerAddressZipCode, string customerAddressRegion, string customerAddressCountryCode, string customerAddressVatNo, string billingAddressName, string billingAddressAtt, string billingAddressStreet, string billingAddressCity, string billingAddressZipCode, string billingAddressRegion, string billingAddressCountryCode, string billingAddressVatNo, string callbackUrl, bool? acquirerSettingsBamboraActive, string acquirerSettingsBamboraIdentificationCode, string acquirerSettingsBamboraIdentificationCodeInt, string acquirerSettingsBamboraBusinessCode, bool? acquirerSettingsBamboraRecurring, bool? acquirerSettingsBamboraAmericanexpress, bool? acquirerSettingsBamboraDinersclub, bool? acquirerSettingsBamboraSecurepay, string acquirerSettingsBamboraVisaMpiMerchantId, string acquirerSettingsBamboraMastercardMpiMerchantId, string acquirerSettingsBamboraVisaBin, string acquirerSettingsBamboraMastercardBin, bool? acquirerSettingsClearhausActive, string acquirerSettingsClearhausApiKey, bool? acquirerSettingsClearhausRecurring, bool? acquirerSettingsClearhausPayout, bool? acquirerSettingsClearhausApplePay, bool? acquirerSettingsElavonActive, string acquirerSettingsElavonIdentificationCode, string acquirerSettingsElavonIdentificationCodeInt, string acquirerSettingsElavonBusinessCode, bool? acquirerSettingsElavonRecurring, bool? acquirerSettingsElavonAmericanexpress, bool? acquirerSettingsElavonDinersclub, bool? acquirerSettingsElavonSecurepay, string acquirerSettingsElavonVisaMpiMerchantId, string acquirerSettingsElavonMastercardMpiMerchantId, string acquirerSettingsElavonVisaBin, string acquirerSettingsElavonMastercardBin, bool? acquirerSettingsHandelsbankenActive, string acquirerSettingsHandelsbankenIdentificationCode, string acquirerSettingsHandelsbankenIdentificationCodeInt, string acquirerSettingsHandelsbankenBusinessCode, bool? acquirerSettingsHandelsbankenRecurring, bool? acquirerSettingsHandelsbankenAmericanexpress, bool? acquirerSettingsHandelsbankenDinersclub, bool? acquirerSettingsHandelsbankenSecurepay, string acquirerSettingsHandelsbankenVisaMpiMerchantId, string acquirerSettingsHandelsbankenMastercardMpiMerchantId, string acquirerSettingsHandelsbankenVisaBin, string acquirerSettingsHandelsbankenMastercardBin, bool? acquirerSettingsKlarnaActive, int? acquirerSettingsKlarnaEid, string acquirerSettingsKlarnaSharedSecret, bool? acquirerSettingsMobilepayActive, string acquirerSettingsMobilepayDeliveryLimitedTo, bool? acquirerSettingsMobilepaysubscriptionsActive, string acquirerSettingsMobilepaysubscriptionsAuthState, string acquirerSettingsMobilepaysubscriptionsCodeVerifier, int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh, string acquirerSettingsMobilepaysubscriptionsNonce, int? acquirerSettingsMobilepaysubscriptionsPendingStatus, string acquirerSettingsMobilepaysubscriptionsProvider, string acquirerSettingsMobilepaysubscriptionsRefreshToken, bool? acquirerSettingsNetsActive, string acquirerSettingsNetsIdentificationCode, string acquirerSettingsNetsBusinessCode, bool? acquirerSettingsNetsRecurring, bool? acquirerSettingsNetsFbg1886, bool? acquirerSettingsNetsSecuredByNets, string acquirerSettingsNetsIdentificationCodeInt, bool? acquirerSettingsNetsAmericanexpress, bool? acquirerSettingsNetsDinersclub, bool? acquirerSettingsNetsSecurepay, string acquirerSettingsNetsVisaBin, string acquirerSettingsNetsMastercardBin, bool? acquirerSettingsPaypalActive, bool? acquirerSettingsPaypalRecurring, bool? acquirerSettingsPaypalCreditCard, string acquirerSettingsPaypalToken, string acquirerSettingsPaypalTokenSecret, string acquirerSettingsPaypalScope, bool? acquirerSettingsSofortActive, int? acquirerSettingsSofortCustomerNumber, int? acquirerSettingsSofortProjectId, string acquirerSettingsSofortApiKey, bool? acquirerSettingsSofortGateway, bool? acquirerSettingsSofortIdeal, int? acquirerSettingsSofortIdealProjectId, string acquirerSettingsSofortIdealProjectPassword, string acquirerSettingsSofortIdealNotificationPassword, bool? acquirerSettingsSwedbankActive, string acquirerSettingsSwedbankIdentificationCode, string acquirerSettingsSwedbankIdentificationCodeInt, string acquirerSettingsSwedbankBusinessCode, bool? acquirerSettingsSwedbankRecurring, bool? acquirerSettingsSwedbankAmericanexpress, bool? acquirerSettingsSwedbankDinersclub, bool? acquirerSettingsSwedbankSecurepay, string acquirerSettingsSwedbankVisaMpiMerchantId, string acquirerSettingsSwedbankMastercardMpiMerchantId, string acquirerSettingsSwedbankVisaBin, string acquirerSettingsSwedbankMastercardBin, bool? acquirerSettingsTellerActive, string acquirerSettingsTellerIdentificationCode, string acquirerSettingsTellerIdentificationCodeInt, string acquirerSettingsTellerBusinessCode, bool? acquirerSettingsTellerRecurring, bool? acquirerSettingsTellerAmericanexpress, bool? acquirerSettingsTellerDinersclub, bool? acquirerSettingsTellerSecurepay, string acquirerSettingsTellerVisaMpiMerchantId, string acquirerSettingsTellerMastercardMpiMerchantId, string acquirerSettingsTellerVisaBin, string acquirerSettingsTellerMastercardBin, bool? acquirerSettingsValitorActive, string acquirerSettingsValitorIdentificationCode, string acquirerSettingsValitorIdentificationCodeInt, string acquirerSettingsValitorBusinessCode, bool? acquirerSettingsValitorRecurring, bool? acquirerSettingsValitorAmericanexpress, bool? acquirerSettingsValitorDinersclub, bool? acquirerSettingsValitorSecurepay, string acquirerSettingsValitorVisaMpiMerchantId, string acquirerSettingsValitorMastercardMpiMerchantId, string acquirerSettingsValitorVisaBin, string acquirerSettingsValitorMastercardBin, bool? acquirerSettingsViabillActive, string acquirerSettingsViabillApiKey, bool? integrationSettingsEconomicActive, string integrationSettingsEconomicAgreement, string integrationSettingsEconomicAgreementToken, bool? pciSaqA, bool? pciSaqAEp, bool? pciSaqB, bool? pciSaqBIp, bool? pciSaqC, bool? pciSaqCVt, bool? pciSaqDMerchant, bool? pciSaqDServiceProvider, bool? pciSaqP2peHw, bool? autofee, string defaultPaymentMethods, string shopUrl, string shopUrls, string contactEmail, string shopName, string shopsystem, string timezone, string locale, int? defaultBrandingId, string loggingStopsAt, bool? allowTestTransactions, string defaultPaymentLanguage, string defaultTextOnStatement, string defaultBrandingConfig)
 
 Update merchant account
 
@@ -489,171 +489,171 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var customerAddressName = customerAddressName_example;  // string | <p>Name</p>  (optional) 
-            var customerAddressAtt = customerAddressAtt_example;  // string | <p>Att</p>  (optional) 
-            var customerAddressStreet = customerAddressStreet_example;  // string | <p>Street</p>  (optional) 
-            var customerAddressCity = customerAddressCity_example;  // string | <p>City</p>  (optional) 
-            var customerAddressZipCode = customerAddressZipCode_example;  // string | <p>Zip code</p>  (optional) 
-            var customerAddressRegion = customerAddressRegion_example;  // string | <p>Region</p>  (optional) 
-            var customerAddressCountryCode = customerAddressCountryCode_example;  // string | <p>Three letter country code according to ISO 3166-1 Alpha-3</p>  (optional) 
-            var customerAddressVatNo = customerAddressVatNo_example;  // string | <p>VAT registration number</p>  (optional) 
-            var billingAddressName = billingAddressName_example;  // string | <p>Name</p>  (optional) 
-            var billingAddressAtt = billingAddressAtt_example;  // string | <p>Att</p>  (optional) 
-            var billingAddressStreet = billingAddressStreet_example;  // string | <p>Street</p>  (optional) 
-            var billingAddressCity = billingAddressCity_example;  // string | <p>City</p>  (optional) 
-            var billingAddressZipCode = billingAddressZipCode_example;  // string | <p>Zip code</p>  (optional) 
-            var billingAddressRegion = billingAddressRegion_example;  // string | <p>Region</p>  (optional) 
-            var billingAddressCountryCode = billingAddressCountryCode_example;  // string | <p>Three letter country code according to ISO 3166-1 Alpha-3</p>  (optional) 
-            var billingAddressVatNo = billingAddressVatNo_example;  // string | <p>VAT registration number</p>  (optional) 
-            var callbackUrl = callbackUrl_example;  // string | <p>Callback url</p>  (optional) 
-            var acquirerSettingsBamboraActive = true;  // bool? | <p>Enable Bambora payments</p>  (optional) 
-            var acquirerSettingsBamboraIdentificationCode = acquirerSettingsBamboraIdentificationCode_example;  // string | <p>Bambora identification number</p>  (optional) 
-            var acquirerSettingsBamboraIdentificationCodeInt = acquirerSettingsBamboraIdentificationCodeInt_example;  // string | <p>Bambora international identification number</p>  (optional) 
-            var acquirerSettingsBamboraBusinessCode = acquirerSettingsBamboraBusinessCode_example;  // string | <p>Business code (assigned by Bambora)</p>  (optional) 
-            var acquirerSettingsBamboraRecurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Bambora)</p>  (optional) 
-            var acquirerSettingsBamboraAmericanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Bambora)</p>  (optional) 
-            var acquirerSettingsBamboraDinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Bambora)</p>  (optional) 
-            var acquirerSettingsBamboraSecurepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var acquirerSettingsBamboraVisaMpiMerchantId = acquirerSettingsBamboraVisaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsBamboraMastercardMpiMerchantId = acquirerSettingsBamboraMastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsBamboraVisaBin = acquirerSettingsBamboraVisaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsBamboraMastercardBin = acquirerSettingsBamboraMastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsClearhausActive = true;  // bool? | <p>Enable ClearHaus payments</p>  (optional) 
-            var acquirerSettingsClearhausApiKey = acquirerSettingsClearhausApiKey_example;  // string | <p>Clearhaus API key (is required but may be left empty)</p>  (optional) 
-            var acquirerSettingsClearhausRecurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Clearhaus)</p>  (optional) 
-            var acquirerSettingsClearhausPayout = true;  // bool? | <p>Enable payouts (requires agreement with Clearhaus)</p>  (optional) 
-            var acquirerSettingsClearhausApplePay = true;  // bool? | <p>Enable Apple Pay (requires agreement with Clearhaus)</p>  (optional) 
-            var acquirerSettingsElavonActive = true;  // bool? | <p>Enable Elavon payments</p>  (optional) 
-            var acquirerSettingsElavonIdentificationCode = acquirerSettingsElavonIdentificationCode_example;  // string | <p>Elavon identification number</p>  (optional) 
-            var acquirerSettingsElavonIdentificationCodeInt = acquirerSettingsElavonIdentificationCodeInt_example;  // string | <p>Elavon international identification number</p>  (optional) 
-            var acquirerSettingsElavonBusinessCode = acquirerSettingsElavonBusinessCode_example;  // string | <p>Business code (assigned by Elavon)</p>  (optional) 
-            var acquirerSettingsElavonRecurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Elavon)</p>  (optional) 
-            var acquirerSettingsElavonAmericanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Elavon)</p>  (optional) 
-            var acquirerSettingsElavonDinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Elavon)</p>  (optional) 
-            var acquirerSettingsElavonSecurepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var acquirerSettingsElavonVisaMpiMerchantId = acquirerSettingsElavonVisaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsElavonMastercardMpiMerchantId = acquirerSettingsElavonMastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsElavonVisaBin = acquirerSettingsElavonVisaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsElavonMastercardBin = acquirerSettingsElavonMastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsHandelsbankenActive = true;  // bool? | <p>Enable Handelsbanken payments</p>  (optional) 
-            var acquirerSettingsHandelsbankenIdentificationCode = acquirerSettingsHandelsbankenIdentificationCode_example;  // string | <p>Handelsbanken identification number</p>  (optional) 
-            var acquirerSettingsHandelsbankenIdentificationCodeInt = acquirerSettingsHandelsbankenIdentificationCodeInt_example;  // string | <p>Handelsbanken international identification number</p>  (optional) 
-            var acquirerSettingsHandelsbankenBusinessCode = acquirerSettingsHandelsbankenBusinessCode_example;  // string | <p>Business code (assigned by Handelsbanken)</p>  (optional) 
-            var acquirerSettingsHandelsbankenRecurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Handelsbanken)</p>  (optional) 
-            var acquirerSettingsHandelsbankenAmericanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Handelsbanken)</p>  (optional) 
-            var acquirerSettingsHandelsbankenDinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Handelsbanken)</p>  (optional) 
-            var acquirerSettingsHandelsbankenSecurepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var acquirerSettingsHandelsbankenVisaMpiMerchantId = acquirerSettingsHandelsbankenVisaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsHandelsbankenMastercardMpiMerchantId = acquirerSettingsHandelsbankenMastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsHandelsbankenVisaBin = acquirerSettingsHandelsbankenVisaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsHandelsbankenMastercardBin = acquirerSettingsHandelsbankenMastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsKlarnaActive = true;  // bool? | <p>Enable Klarna payments</p>  (optional) 
-            var acquirerSettingsKlarnaEid = 56;  // int? | <p>Klarna merchant ID</p>  (optional) 
-            var acquirerSettingsKlarnaSharedSecret = acquirerSettingsKlarnaSharedSecret_example;  // string | <p>Klarna shared secret</p>  (optional) 
-            var acquirerSettingsMobilepayActive = true;  // bool? | <p>Enable MobilePay payments</p>  (optional) 
-            var acquirerSettingsMobilepayDeliveryLimitedTo = acquirerSettingsMobilepayDeliveryLimitedTo_example;  // string | <p>Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)</p>  (optional) 
-            var acquirerSettingsMobilepaysubscriptionsActive = true;  // bool? | <p>Enable MobilePay Subscriptions payments</p>  (optional) 
-            var acquirerSettingsMobilepaysubscriptionsAuthState = acquirerSettingsMobilepaysubscriptionsAuthState_example;  // string | <p>Identifier MobilePay Subscriptions uses to link requests to callbacks</p>  (optional) 
-            var acquirerSettingsMobilepaysubscriptionsCodeVerifier = acquirerSettingsMobilepaysubscriptionsCodeVerifier_example;  // string | <p>Verifies received code challenge</p>  (optional) 
-            var acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = 56;  // int? | <p>Unix Timestamp of last time the tokens were refreshed</p>  (optional) 
-            var acquirerSettingsMobilepaysubscriptionsNonce = acquirerSettingsMobilepaysubscriptionsNonce_example;  // string | <p>Associate client sessions with ID Tokens to mitigate replay attacks</p>  (optional) 
-            var acquirerSettingsMobilepaysubscriptionsPendingStatus = 56;  // int? | <p>0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed</p>  (optional)  (default to 0)
-            var acquirerSettingsMobilepaysubscriptionsProvider = new Dictionary<string, string>(); // Dictionary<string, string> | <p>The provider / sales-place chosen by the merchant</p>  (optional) 
-            var acquirerSettingsMobilepaysubscriptionsRefreshToken = acquirerSettingsMobilepaysubscriptionsRefreshToken_example;  // string | <p>Token to refresh access token for up to 1 year</p>  (optional) 
-            var acquirerSettingsNetsActive = true;  // bool? | <p>Enable Nets/Teller payments</p>  (optional) 
-            var acquirerSettingsNetsIdentificationCode = acquirerSettingsNetsIdentificationCode_example;  // string | <p>Nets TOF number</p>  (optional) 
-            var acquirerSettingsNetsBusinessCode = acquirerSettingsNetsBusinessCode_example;  // string | <p>Business code (assigned by Nets)</p>  (optional) 
-            var acquirerSettingsNetsRecurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Nets)</p>  (optional) 
-            var acquirerSettingsNetsFbg1886 = true;  // bool? | <p>Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)</p>  (optional) 
-            var acquirerSettingsNetsSecuredByNets = true;  // bool? | <p>Enable SecuredByNets fraud protection.</p>  (optional) 
-            var acquirerSettingsNetsIdentificationCodeInt = acquirerSettingsNetsIdentificationCodeInt_example;  // string | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var acquirerSettingsNetsAmericanexpress = true;  // bool? | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var acquirerSettingsNetsDinersclub = true;  // bool? | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var acquirerSettingsNetsSecurepay = true;  // bool? | <p>(Depricated; use Teller acquirer)</p>  (optional)  (default to true)
-            var acquirerSettingsNetsVisaBin = acquirerSettingsNetsVisaBin_example;  // string | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var acquirerSettingsNetsMastercardBin = acquirerSettingsNetsMastercardBin_example;  // string | <p>(Depricated; use Teller acquirer)</p>  (optional) 
-            var acquirerSettingsPaypalActive = true;  // bool? | <p>Enable PayPal payments</p>  (optional) 
-            var acquirerSettingsPaypalRecurring = true;  // bool? | <p>Enable recurring payments</p>  (optional) 
-            var acquirerSettingsPaypalCreditCard = true;  // bool? | <p>Allow credit-card payments. (Only for US/CA/UK merchants)</p>  (optional) 
-            var acquirerSettingsPaypalToken = acquirerSettingsPaypalToken_example;  // string | <p>Authentication token</p>  (optional) 
-            var acquirerSettingsPaypalTokenSecret = acquirerSettingsPaypalTokenSecret_example;  // string | <p>Authentication token secret</p>  (optional) 
-            var acquirerSettingsPaypalScope = ;  // List<string> | <p>Authentication scope</p>  (optional) 
-            var acquirerSettingsSofortActive = true;  // bool? | <p>Enable Sofort payments</p>  (optional) 
-            var acquirerSettingsSofortCustomerNumber = 56;  // int? | <p>Sofort customer number</p>  (optional) 
-            var acquirerSettingsSofortProjectId = 56;  // int? | <p>Sofort Gateway project id</p>  (optional) 
-            var acquirerSettingsSofortApiKey = acquirerSettingsSofortApiKey_example;  // string | <p>Sofort API key</p>  (optional) 
-            var acquirerSettingsSofortGateway = true;  // bool? | <p>Enable Sofort Gateway feature</p>  (optional)  (default to true)
-            var acquirerSettingsSofortIdeal = true;  // bool? | <p>Enable Sofort iDeal feature</p>  (optional) 
-            var acquirerSettingsSofortIdealProjectId = 56;  // int? | <p>Sofort iDeal project id</p>  (optional) 
-            var acquirerSettingsSofortIdealProjectPassword = acquirerSettingsSofortIdealProjectPassword_example;  // string | <p>Sofort iDeal project password</p>  (optional) 
-            var acquirerSettingsSofortIdealNotificationPassword = acquirerSettingsSofortIdealNotificationPassword_example;  // string | <p>Sofort iDeal notification password</p>  (optional) 
-            var acquirerSettingsSwedbankActive = true;  // bool? | <p>Enable Swedbank payments</p>  (optional) 
-            var acquirerSettingsSwedbankIdentificationCode = acquirerSettingsSwedbankIdentificationCode_example;  // string | <p>Swedbank identification number</p>  (optional) 
-            var acquirerSettingsSwedbankIdentificationCodeInt = acquirerSettingsSwedbankIdentificationCodeInt_example;  // string | <p>Swedbank international identification number</p>  (optional) 
-            var acquirerSettingsSwedbankBusinessCode = acquirerSettingsSwedbankBusinessCode_example;  // string | <p>Business code (assigned by Swedbank)</p>  (optional) 
-            var acquirerSettingsSwedbankRecurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Swedbank)</p>  (optional) 
-            var acquirerSettingsSwedbankAmericanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Swedbank)</p>  (optional) 
-            var acquirerSettingsSwedbankDinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Swedbank)</p>  (optional) 
-            var acquirerSettingsSwedbankSecurepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var acquirerSettingsSwedbankVisaMpiMerchantId = acquirerSettingsSwedbankVisaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsSwedbankMastercardMpiMerchantId = acquirerSettingsSwedbankMastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsSwedbankVisaBin = acquirerSettingsSwedbankVisaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsSwedbankMastercardBin = acquirerSettingsSwedbankMastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsTellerActive = true;  // bool? | <p>Enable Teller payments</p>  (optional) 
-            var acquirerSettingsTellerIdentificationCode = acquirerSettingsTellerIdentificationCode_example;  // string | <p>Teller TOF number</p>  (optional) 
-            var acquirerSettingsTellerIdentificationCodeInt = acquirerSettingsTellerIdentificationCodeInt_example;  // string | <p>Teller international identification number</p>  (optional) 
-            var acquirerSettingsTellerBusinessCode = acquirerSettingsTellerBusinessCode_example;  // string | <p>Business code (assigned by Teller)</p>  (optional) 
-            var acquirerSettingsTellerRecurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Teller)</p>  (optional) 
-            var acquirerSettingsTellerAmericanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Teller)</p>  (optional) 
-            var acquirerSettingsTellerDinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Teller)</p>  (optional) 
-            var acquirerSettingsTellerSecurepay = true;  // bool? | <p>Enable SecurePay fraud protection. (disabling requires agreement with Teller)</p>  (optional)  (default to true)
-            var acquirerSettingsTellerVisaMpiMerchantId = acquirerSettingsTellerVisaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsTellerMastercardMpiMerchantId = acquirerSettingsTellerMastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsTellerVisaBin = acquirerSettingsTellerVisaBin_example;  // string | <p>Teller VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsTellerMastercardBin = acquirerSettingsTellerMastercardBin_example;  // string | <p>Teller Mastercard acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsValitorActive = true;  // bool? | <p>Enable Valitor payments</p>  (optional) 
-            var acquirerSettingsValitorIdentificationCode = acquirerSettingsValitorIdentificationCode_example;  // string | <p>Valitor identification number</p>  (optional) 
-            var acquirerSettingsValitorIdentificationCodeInt = acquirerSettingsValitorIdentificationCodeInt_example;  // string | <p>Valitor international identification number</p>  (optional) 
-            var acquirerSettingsValitorBusinessCode = acquirerSettingsValitorBusinessCode_example;  // string | <p>Business code (assigned by Valitor)</p>  (optional) 
-            var acquirerSettingsValitorRecurring = true;  // bool? | <p>Enable recurring payments (requires agreement with Valitor)</p>  (optional) 
-            var acquirerSettingsValitorAmericanexpress = true;  // bool? | <p>Enable AMEX payments (requires agreement with Valitor)</p>  (optional) 
-            var acquirerSettingsValitorDinersclub = true;  // bool? | <p>Enable Diners Club payments (requires agreement with Valitor)</p>  (optional) 
-            var acquirerSettingsValitorSecurepay = true;  // bool? | <p>Enable SecurePay fraud protection.</p>  (optional) 
-            var acquirerSettingsValitorVisaMpiMerchantId = acquirerSettingsValitorVisaMpiMerchantId_example;  // string | <p>VISA MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsValitorMastercardMpiMerchantId = acquirerSettingsValitorMastercardMpiMerchantId_example;  // string | <p>Mastercard MPI merchant id. Used for 3D secure transactions</p>  (optional) 
-            var acquirerSettingsValitorVisaBin = acquirerSettingsValitorVisaBin_example;  // string | <p>VISA acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsValitorMastercardBin = acquirerSettingsValitorMastercardBin_example;  // string | <p>Mastercard acquirer bin used for 3D Secure</p>  (optional) 
-            var acquirerSettingsViabillActive = true;  // bool? | <p>Enable ViaBill payments</p>  (optional) 
-            var acquirerSettingsViabillApiKey = acquirerSettingsViabillApiKey_example;  // string | <p>ViaBill API key</p>  (optional) 
-            var integrationSettingsEconomicActive = true;  // bool? | <p>Enable e-conomic integration</p>  (optional) 
-            var integrationSettingsEconomicAgreement = integrationSettingsEconomicAgreement_example;  // string | <p>e-conomic agreement no.</p>  (optional) 
-            var integrationSettingsEconomicAgreementToken = integrationSettingsEconomicAgreementToken_example;  // string | <p>economic agreement grant token</p>  (optional) 
-            var pciSaqA = true;  // bool? | <p>Enable SAQ A</p>  (optional) 
-            var pciSaqAEp = true;  // bool? | <p>Enable SAQ A-EP</p>  (optional) 
-            var pciSaqB = true;  // bool? | <p>Enable SAQ B</p>  (optional) 
-            var pciSaqBIp = true;  // bool? | <p>Enable SAQ B-IP</p>  (optional) 
-            var pciSaqC = true;  // bool? | <p>Enable SAQ C</p>  (optional) 
-            var pciSaqCVt = true;  // bool? | <p>Enable SAQ C-VT</p>  (optional) 
-            var pciSaqDMerchant = true;  // bool? | <p>Enable SAQ D Merchant</p>  (optional) 
-            var pciSaqDServiceProvider = true;  // bool? | <p>Enable SAQ D Service Provider</p>  (optional) 
-            var pciSaqP2peHw = true;  // bool? | <p>Enable SAQ P2PE-HW</p>  (optional) 
-            var autofee = true;  // bool? | <p>Add automatic fee on all payments</p>  (optional) 
-            var defaultPaymentMethods = defaultPaymentMethods_example;  // string | <p>Comma separated list of default payment methods</p>  (optional) 
-            var shopUrl = shopUrl_example;  // string | <p>Shop URL (deprecated, use shop_urls instead)</p>  (optional) 
-            var shopUrls = ;  // List<string> | <p>Shop URLs</p>  (optional) 
-            var contactEmail = contactEmail_example;  // string | <p>Contact email</p>  (optional) 
-            var shopName = shopName_example;  // string | <p>Shop name</p>  (optional) 
-            var shopsystem = shopsystem_example;  // string | <p>Shop system</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var customerAddressName = customerAddressName_example;  // string | Name  (optional) 
+            var customerAddressAtt = customerAddressAtt_example;  // string | Att  (optional) 
+            var customerAddressStreet = customerAddressStreet_example;  // string | Street  (optional) 
+            var customerAddressCity = customerAddressCity_example;  // string | City  (optional) 
+            var customerAddressZipCode = customerAddressZipCode_example;  // string | Zip code  (optional) 
+            var customerAddressRegion = customerAddressRegion_example;  // string | Region  (optional) 
+            var customerAddressCountryCode = customerAddressCountryCode_example;  // string | Three letter country code according to ISO 3166-1 Alpha-3  (optional) 
+            var customerAddressVatNo = customerAddressVatNo_example;  // string | VAT registration number  (optional) 
+            var billingAddressName = billingAddressName_example;  // string | Name  (optional) 
+            var billingAddressAtt = billingAddressAtt_example;  // string | Att  (optional) 
+            var billingAddressStreet = billingAddressStreet_example;  // string | Street  (optional) 
+            var billingAddressCity = billingAddressCity_example;  // string | City  (optional) 
+            var billingAddressZipCode = billingAddressZipCode_example;  // string | Zip code  (optional) 
+            var billingAddressRegion = billingAddressRegion_example;  // string | Region  (optional) 
+            var billingAddressCountryCode = billingAddressCountryCode_example;  // string | Three letter country code according to ISO 3166-1 Alpha-3  (optional) 
+            var billingAddressVatNo = billingAddressVatNo_example;  // string | VAT registration number  (optional) 
+            var callbackUrl = callbackUrl_example;  // string | Callback url  (optional) 
+            var acquirerSettingsBamboraActive = true;  // bool? | Enable Bambora payments  (optional) 
+            var acquirerSettingsBamboraIdentificationCode = acquirerSettingsBamboraIdentificationCode_example;  // string | Bambora identification number  (optional) 
+            var acquirerSettingsBamboraIdentificationCodeInt = acquirerSettingsBamboraIdentificationCodeInt_example;  // string | Bambora international identification number  (optional) 
+            var acquirerSettingsBamboraBusinessCode = acquirerSettingsBamboraBusinessCode_example;  // string | Business code (assigned by Bambora)  (optional) 
+            var acquirerSettingsBamboraRecurring = true;  // bool? | Enable recurring payments (requires agreement with Bambora)  (optional) 
+            var acquirerSettingsBamboraAmericanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Bambora)  (optional) 
+            var acquirerSettingsBamboraDinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Bambora)  (optional) 
+            var acquirerSettingsBamboraSecurepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var acquirerSettingsBamboraVisaMpiMerchantId = acquirerSettingsBamboraVisaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsBamboraMastercardMpiMerchantId = acquirerSettingsBamboraMastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsBamboraVisaBin = acquirerSettingsBamboraVisaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsBamboraMastercardBin = acquirerSettingsBamboraMastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsClearhausActive = true;  // bool? | Enable ClearHaus payments  (optional) 
+            var acquirerSettingsClearhausApiKey = acquirerSettingsClearhausApiKey_example;  // string | Clearhaus API key (is required but may be left empty)  (optional) 
+            var acquirerSettingsClearhausRecurring = true;  // bool? | Enable recurring payments (requires agreement with Clearhaus)  (optional) 
+            var acquirerSettingsClearhausPayout = true;  // bool? | Enable payouts (requires agreement with Clearhaus)  (optional) 
+            var acquirerSettingsClearhausApplePay = true;  // bool? | Enable Apple Pay (requires agreement with Clearhaus)  (optional) 
+            var acquirerSettingsElavonActive = true;  // bool? | Enable Elavon payments  (optional) 
+            var acquirerSettingsElavonIdentificationCode = acquirerSettingsElavonIdentificationCode_example;  // string | Elavon identification number  (optional) 
+            var acquirerSettingsElavonIdentificationCodeInt = acquirerSettingsElavonIdentificationCodeInt_example;  // string | Elavon international identification number  (optional) 
+            var acquirerSettingsElavonBusinessCode = acquirerSettingsElavonBusinessCode_example;  // string | Business code (assigned by Elavon)  (optional) 
+            var acquirerSettingsElavonRecurring = true;  // bool? | Enable recurring payments (requires agreement with Elavon)  (optional) 
+            var acquirerSettingsElavonAmericanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Elavon)  (optional) 
+            var acquirerSettingsElavonDinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Elavon)  (optional) 
+            var acquirerSettingsElavonSecurepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var acquirerSettingsElavonVisaMpiMerchantId = acquirerSettingsElavonVisaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsElavonMastercardMpiMerchantId = acquirerSettingsElavonMastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsElavonVisaBin = acquirerSettingsElavonVisaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsElavonMastercardBin = acquirerSettingsElavonMastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsHandelsbankenActive = true;  // bool? | Enable Handelsbanken payments  (optional) 
+            var acquirerSettingsHandelsbankenIdentificationCode = acquirerSettingsHandelsbankenIdentificationCode_example;  // string | Handelsbanken identification number  (optional) 
+            var acquirerSettingsHandelsbankenIdentificationCodeInt = acquirerSettingsHandelsbankenIdentificationCodeInt_example;  // string | Handelsbanken international identification number  (optional) 
+            var acquirerSettingsHandelsbankenBusinessCode = acquirerSettingsHandelsbankenBusinessCode_example;  // string | Business code (assigned by Handelsbanken)  (optional) 
+            var acquirerSettingsHandelsbankenRecurring = true;  // bool? | Enable recurring payments (requires agreement with Handelsbanken)  (optional) 
+            var acquirerSettingsHandelsbankenAmericanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Handelsbanken)  (optional) 
+            var acquirerSettingsHandelsbankenDinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Handelsbanken)  (optional) 
+            var acquirerSettingsHandelsbankenSecurepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var acquirerSettingsHandelsbankenVisaMpiMerchantId = acquirerSettingsHandelsbankenVisaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsHandelsbankenMastercardMpiMerchantId = acquirerSettingsHandelsbankenMastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsHandelsbankenVisaBin = acquirerSettingsHandelsbankenVisaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsHandelsbankenMastercardBin = acquirerSettingsHandelsbankenMastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsKlarnaActive = true;  // bool? | Enable Klarna payments  (optional) 
+            var acquirerSettingsKlarnaEid = 56;  // int? | Klarna merchant ID  (optional) 
+            var acquirerSettingsKlarnaSharedSecret = acquirerSettingsKlarnaSharedSecret_example;  // string | Klarna shared secret  (optional) 
+            var acquirerSettingsMobilepayActive = true;  // bool? | Enable MobilePay payments  (optional) 
+            var acquirerSettingsMobilepayDeliveryLimitedTo = acquirerSettingsMobilepayDeliveryLimitedTo_example;  // string | Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  (optional) 
+            var acquirerSettingsMobilepaysubscriptionsActive = true;  // bool? | Enable MobilePay Subscriptions payments  (optional) 
+            var acquirerSettingsMobilepaysubscriptionsAuthState = acquirerSettingsMobilepaysubscriptionsAuthState_example;  // string | Identifier MobilePay Subscriptions uses to link requests to callbacks  (optional) 
+            var acquirerSettingsMobilepaysubscriptionsCodeVerifier = acquirerSettingsMobilepaysubscriptionsCodeVerifier_example;  // string | Verifies received code challenge  (optional) 
+            var acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = 56;  // int? | Unix Timestamp of last time the tokens were refreshed  (optional) 
+            var acquirerSettingsMobilepaysubscriptionsNonce = acquirerSettingsMobilepaysubscriptionsNonce_example;  // string | Associate client sessions with ID Tokens to mitigate replay attacks  (optional) 
+            var acquirerSettingsMobilepaysubscriptionsPendingStatus = 56;  // int? | 0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  (optional)  (default to 0)
+            var acquirerSettingsMobilepaysubscriptionsProvider = acquirerSettingsMobilepaysubscriptionsProvider_example;  // string | The provider / sales-place chosen by the merchant  (optional) 
+            var acquirerSettingsMobilepaysubscriptionsRefreshToken = acquirerSettingsMobilepaysubscriptionsRefreshToken_example;  // string | Token to refresh access token for up to 1 year  (optional) 
+            var acquirerSettingsNetsActive = true;  // bool? | Enable Nets/Teller payments  (optional) 
+            var acquirerSettingsNetsIdentificationCode = acquirerSettingsNetsIdentificationCode_example;  // string | Nets TOF number  (optional) 
+            var acquirerSettingsNetsBusinessCode = acquirerSettingsNetsBusinessCode_example;  // string | Business code (assigned by Nets)  (optional) 
+            var acquirerSettingsNetsRecurring = true;  // bool? | Enable recurring payments (requires agreement with Nets)  (optional) 
+            var acquirerSettingsNetsFbg1886 = true;  // bool? | Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  (optional) 
+            var acquirerSettingsNetsSecuredByNets = true;  // bool? | Enable SecuredByNets fraud protection.  (optional) 
+            var acquirerSettingsNetsIdentificationCodeInt = acquirerSettingsNetsIdentificationCodeInt_example;  // string | (Depricated; use Teller acquirer)  (optional) 
+            var acquirerSettingsNetsAmericanexpress = true;  // bool? | (Depricated; use Teller acquirer)  (optional) 
+            var acquirerSettingsNetsDinersclub = true;  // bool? | (Depricated; use Teller acquirer)  (optional) 
+            var acquirerSettingsNetsSecurepay = true;  // bool? | (Depricated; use Teller acquirer)  (optional)  (default to true)
+            var acquirerSettingsNetsVisaBin = acquirerSettingsNetsVisaBin_example;  // string | (Depricated; use Teller acquirer)  (optional) 
+            var acquirerSettingsNetsMastercardBin = acquirerSettingsNetsMastercardBin_example;  // string | (Depricated; use Teller acquirer)  (optional) 
+            var acquirerSettingsPaypalActive = true;  // bool? | Enable PayPal payments  (optional) 
+            var acquirerSettingsPaypalRecurring = true;  // bool? | Enable recurring payments  (optional) 
+            var acquirerSettingsPaypalCreditCard = true;  // bool? | Allow credit-card payments. (Only for US/CA/UK merchants)  (optional) 
+            var acquirerSettingsPaypalToken = acquirerSettingsPaypalToken_example;  // string | Authentication token  (optional) 
+            var acquirerSettingsPaypalTokenSecret = acquirerSettingsPaypalTokenSecret_example;  // string | Authentication token secret  (optional) 
+            var acquirerSettingsPaypalScope = acquirerSettingsPaypalScope_example;  // string | Authentication scope  (optional) 
+            var acquirerSettingsSofortActive = true;  // bool? | Enable Sofort payments  (optional) 
+            var acquirerSettingsSofortCustomerNumber = 56;  // int? | Sofort customer number  (optional) 
+            var acquirerSettingsSofortProjectId = 56;  // int? | Sofort Gateway project id  (optional) 
+            var acquirerSettingsSofortApiKey = acquirerSettingsSofortApiKey_example;  // string | Sofort API key  (optional) 
+            var acquirerSettingsSofortGateway = true;  // bool? | Enable Sofort Gateway feature  (optional)  (default to true)
+            var acquirerSettingsSofortIdeal = true;  // bool? | Enable Sofort iDeal feature  (optional) 
+            var acquirerSettingsSofortIdealProjectId = 56;  // int? | Sofort iDeal project id  (optional) 
+            var acquirerSettingsSofortIdealProjectPassword = acquirerSettingsSofortIdealProjectPassword_example;  // string | Sofort iDeal project password  (optional) 
+            var acquirerSettingsSofortIdealNotificationPassword = acquirerSettingsSofortIdealNotificationPassword_example;  // string | Sofort iDeal notification password  (optional) 
+            var acquirerSettingsSwedbankActive = true;  // bool? | Enable Swedbank payments  (optional) 
+            var acquirerSettingsSwedbankIdentificationCode = acquirerSettingsSwedbankIdentificationCode_example;  // string | Swedbank identification number  (optional) 
+            var acquirerSettingsSwedbankIdentificationCodeInt = acquirerSettingsSwedbankIdentificationCodeInt_example;  // string | Swedbank international identification number  (optional) 
+            var acquirerSettingsSwedbankBusinessCode = acquirerSettingsSwedbankBusinessCode_example;  // string | Business code (assigned by Swedbank)  (optional) 
+            var acquirerSettingsSwedbankRecurring = true;  // bool? | Enable recurring payments (requires agreement with Swedbank)  (optional) 
+            var acquirerSettingsSwedbankAmericanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Swedbank)  (optional) 
+            var acquirerSettingsSwedbankDinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Swedbank)  (optional) 
+            var acquirerSettingsSwedbankSecurepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var acquirerSettingsSwedbankVisaMpiMerchantId = acquirerSettingsSwedbankVisaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsSwedbankMastercardMpiMerchantId = acquirerSettingsSwedbankMastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsSwedbankVisaBin = acquirerSettingsSwedbankVisaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsSwedbankMastercardBin = acquirerSettingsSwedbankMastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsTellerActive = true;  // bool? | Enable Teller payments  (optional) 
+            var acquirerSettingsTellerIdentificationCode = acquirerSettingsTellerIdentificationCode_example;  // string | Teller TOF number  (optional) 
+            var acquirerSettingsTellerIdentificationCodeInt = acquirerSettingsTellerIdentificationCodeInt_example;  // string | Teller international identification number  (optional) 
+            var acquirerSettingsTellerBusinessCode = acquirerSettingsTellerBusinessCode_example;  // string | Business code (assigned by Teller)  (optional) 
+            var acquirerSettingsTellerRecurring = true;  // bool? | Enable recurring payments (requires agreement with Teller)  (optional) 
+            var acquirerSettingsTellerAmericanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Teller)  (optional) 
+            var acquirerSettingsTellerDinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Teller)  (optional) 
+            var acquirerSettingsTellerSecurepay = true;  // bool? | Enable SecurePay fraud protection. (disabling requires agreement with Teller)  (optional)  (default to true)
+            var acquirerSettingsTellerVisaMpiMerchantId = acquirerSettingsTellerVisaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsTellerMastercardMpiMerchantId = acquirerSettingsTellerMastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsTellerVisaBin = acquirerSettingsTellerVisaBin_example;  // string | Teller VISA acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsTellerMastercardBin = acquirerSettingsTellerMastercardBin_example;  // string | Teller Mastercard acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsValitorActive = true;  // bool? | Enable Valitor payments  (optional) 
+            var acquirerSettingsValitorIdentificationCode = acquirerSettingsValitorIdentificationCode_example;  // string | Valitor identification number  (optional) 
+            var acquirerSettingsValitorIdentificationCodeInt = acquirerSettingsValitorIdentificationCodeInt_example;  // string | Valitor international identification number  (optional) 
+            var acquirerSettingsValitorBusinessCode = acquirerSettingsValitorBusinessCode_example;  // string | Business code (assigned by Valitor)  (optional) 
+            var acquirerSettingsValitorRecurring = true;  // bool? | Enable recurring payments (requires agreement with Valitor)  (optional) 
+            var acquirerSettingsValitorAmericanexpress = true;  // bool? | Enable AMEX payments (requires agreement with Valitor)  (optional) 
+            var acquirerSettingsValitorDinersclub = true;  // bool? | Enable Diners Club payments (requires agreement with Valitor)  (optional) 
+            var acquirerSettingsValitorSecurepay = true;  // bool? | Enable SecurePay fraud protection.  (optional) 
+            var acquirerSettingsValitorVisaMpiMerchantId = acquirerSettingsValitorVisaMpiMerchantId_example;  // string | VISA MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsValitorMastercardMpiMerchantId = acquirerSettingsValitorMastercardMpiMerchantId_example;  // string | Mastercard MPI merchant id. Used for 3D secure transactions  (optional) 
+            var acquirerSettingsValitorVisaBin = acquirerSettingsValitorVisaBin_example;  // string | VISA acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsValitorMastercardBin = acquirerSettingsValitorMastercardBin_example;  // string | Mastercard acquirer bin used for 3D Secure  (optional) 
+            var acquirerSettingsViabillActive = true;  // bool? | Enable ViaBill payments  (optional) 
+            var acquirerSettingsViabillApiKey = acquirerSettingsViabillApiKey_example;  // string | ViaBill API key  (optional) 
+            var integrationSettingsEconomicActive = true;  // bool? | Enable e-conomic integration  (optional) 
+            var integrationSettingsEconomicAgreement = integrationSettingsEconomicAgreement_example;  // string | e-conomic agreement no.  (optional) 
+            var integrationSettingsEconomicAgreementToken = integrationSettingsEconomicAgreementToken_example;  // string | economic agreement grant token  (optional) 
+            var pciSaqA = true;  // bool? | Enable SAQ A  (optional) 
+            var pciSaqAEp = true;  // bool? | Enable SAQ A-EP  (optional) 
+            var pciSaqB = true;  // bool? | Enable SAQ B  (optional) 
+            var pciSaqBIp = true;  // bool? | Enable SAQ B-IP  (optional) 
+            var pciSaqC = true;  // bool? | Enable SAQ C  (optional) 
+            var pciSaqCVt = true;  // bool? | Enable SAQ C-VT  (optional) 
+            var pciSaqDMerchant = true;  // bool? | Enable SAQ D Merchant  (optional) 
+            var pciSaqDServiceProvider = true;  // bool? | Enable SAQ D Service Provider  (optional) 
+            var pciSaqP2peHw = true;  // bool? | Enable SAQ P2PE-HW  (optional) 
+            var autofee = true;  // bool? | Add automatic fee on all payments  (optional) 
+            var defaultPaymentMethods = defaultPaymentMethods_example;  // string | Comma separated list of default payment methods  (optional) 
+            var shopUrl = shopUrl_example;  // string | Shop URL (deprecated, use shop_urls instead)  (optional) 
+            var shopUrls = shopUrls_example;  // string | Shop URLs  (optional) 
+            var contactEmail = contactEmail_example;  // string | Contact email  (optional) 
+            var shopName = shopName_example;  // string | Shop name  (optional) 
+            var shopsystem = shopsystem_example;  // string | Shop system  (optional) 
             var timezone = timezone_example;  // string | <table>   <tbody>     <tr>       <td>Timezone UTC offsets in Zulu (+</td>       <td>-)hh:mm</td>     </tr>   </tbody> </table>  (optional) 
-            var locale = locale_example;  // string | <p>Locale as a two letter language code</p>  (optional) 
-            var defaultBrandingId = 56;  // int? | <p>Id of default branding</p>  (optional) 
-            var loggingStopsAt = loggingStopsAt_example;  // string | <p>Timestamp when logging is active</p>  (optional) 
-            var allowTestTransactions = true;  // bool? | <p>Allow test transactions</p>  (optional) 
-            var defaultPaymentLanguage = defaultPaymentLanguage_example;  // string | <p>Default payment language (Two letter language code, ISO-639-1)</p>  (optional) 
-            var defaultTextOnStatement = defaultTextOnStatement_example;  // string | <p>Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.</p>  (optional) 
-            var defaultBrandingConfig = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Default branding config. Can be overwritten in branding or in request to payment window</p>  (optional) 
+            var locale = locale_example;  // string | Locale as a two letter language code  (optional) 
+            var defaultBrandingId = 56;  // int? | Id of default branding  (optional) 
+            var loggingStopsAt = loggingStopsAt_example;  // string | Timestamp when logging is active  (optional) 
+            var allowTestTransactions = true;  // bool? | Allow test transactions  (optional) 
+            var defaultPaymentLanguage = defaultPaymentLanguage_example;  // string | Default payment language (Two letter language code, ISO-639-1)  (optional) 
+            var defaultTextOnStatement = defaultTextOnStatement_example;  // string | Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  (optional) 
+            var defaultBrandingConfig = defaultBrandingConfig_example;  // string | Default branding config. Can be overwritten in branding or in request to payment window  (optional) 
 
             try
             {
@@ -674,171 +674,171 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **customerAddressName** | **string**| &lt;p&gt;Name&lt;/p&gt;  | [optional] 
- **customerAddressAtt** | **string**| &lt;p&gt;Att&lt;/p&gt;  | [optional] 
- **customerAddressStreet** | **string**| &lt;p&gt;Street&lt;/p&gt;  | [optional] 
- **customerAddressCity** | **string**| &lt;p&gt;City&lt;/p&gt;  | [optional] 
- **customerAddressZipCode** | **string**| &lt;p&gt;Zip code&lt;/p&gt;  | [optional] 
- **customerAddressRegion** | **string**| &lt;p&gt;Region&lt;/p&gt;  | [optional] 
- **customerAddressCountryCode** | **string**| &lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  | [optional] 
- **customerAddressVatNo** | **string**| &lt;p&gt;VAT registration number&lt;/p&gt;  | [optional] 
- **billingAddressName** | **string**| &lt;p&gt;Name&lt;/p&gt;  | [optional] 
- **billingAddressAtt** | **string**| &lt;p&gt;Att&lt;/p&gt;  | [optional] 
- **billingAddressStreet** | **string**| &lt;p&gt;Street&lt;/p&gt;  | [optional] 
- **billingAddressCity** | **string**| &lt;p&gt;City&lt;/p&gt;  | [optional] 
- **billingAddressZipCode** | **string**| &lt;p&gt;Zip code&lt;/p&gt;  | [optional] 
- **billingAddressRegion** | **string**| &lt;p&gt;Region&lt;/p&gt;  | [optional] 
- **billingAddressCountryCode** | **string**| &lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  | [optional] 
- **billingAddressVatNo** | **string**| &lt;p&gt;VAT registration number&lt;/p&gt;  | [optional] 
- **callbackUrl** | **string**| &lt;p&gt;Callback url&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraActive** | **bool?**| &lt;p&gt;Enable Bambora payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraIdentificationCode** | **string**| &lt;p&gt;Bambora identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraIdentificationCodeInt** | **string**| &lt;p&gt;Bambora international identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraBusinessCode** | **string**| &lt;p&gt;Business code (assigned by Bambora)&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraRecurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Bambora)&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraAmericanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Bambora)&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraDinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Bambora)&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraSecurepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraVisaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraMastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraVisaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsBamboraMastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsClearhausActive** | **bool?**| &lt;p&gt;Enable ClearHaus payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsClearhausApiKey** | **string**| &lt;p&gt;Clearhaus API key (is required but may be left empty)&lt;/p&gt;  | [optional] 
- **acquirerSettingsClearhausRecurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Clearhaus)&lt;/p&gt;  | [optional] 
- **acquirerSettingsClearhausPayout** | **bool?**| &lt;p&gt;Enable payouts (requires agreement with Clearhaus)&lt;/p&gt;  | [optional] 
- **acquirerSettingsClearhausApplePay** | **bool?**| &lt;p&gt;Enable Apple Pay (requires agreement with Clearhaus)&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonActive** | **bool?**| &lt;p&gt;Enable Elavon payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonIdentificationCode** | **string**| &lt;p&gt;Elavon identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonIdentificationCodeInt** | **string**| &lt;p&gt;Elavon international identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonBusinessCode** | **string**| &lt;p&gt;Business code (assigned by Elavon)&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonRecurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Elavon)&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonAmericanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Elavon)&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonDinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Elavon)&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonSecurepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonVisaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonMastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonVisaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsElavonMastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenActive** | **bool?**| &lt;p&gt;Enable Handelsbanken payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenIdentificationCode** | **string**| &lt;p&gt;Handelsbanken identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenIdentificationCodeInt** | **string**| &lt;p&gt;Handelsbanken international identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenBusinessCode** | **string**| &lt;p&gt;Business code (assigned by Handelsbanken)&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenRecurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Handelsbanken)&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenAmericanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Handelsbanken)&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenDinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Handelsbanken)&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenSecurepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenVisaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenMastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenVisaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsHandelsbankenMastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsKlarnaActive** | **bool?**| &lt;p&gt;Enable Klarna payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsKlarnaEid** | **int?**| &lt;p&gt;Klarna merchant ID&lt;/p&gt;  | [optional] 
- **acquirerSettingsKlarnaSharedSecret** | **string**| &lt;p&gt;Klarna shared secret&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepayActive** | **bool?**| &lt;p&gt;Enable MobilePay payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepayDeliveryLimitedTo** | **string**| &lt;p&gt;Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepaysubscriptionsActive** | **bool?**| &lt;p&gt;Enable MobilePay Subscriptions payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepaysubscriptionsAuthState** | **string**| &lt;p&gt;Identifier MobilePay Subscriptions uses to link requests to callbacks&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepaysubscriptionsCodeVerifier** | **string**| &lt;p&gt;Verifies received code challenge&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepaysubscriptionsLastTokenRefresh** | **int?**| &lt;p&gt;Unix Timestamp of last time the tokens were refreshed&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepaysubscriptionsNonce** | **string**| &lt;p&gt;Associate client sessions with ID Tokens to mitigate replay attacks&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepaysubscriptionsPendingStatus** | **int?**| &lt;p&gt;0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed&lt;/p&gt;  | [optional] [default to 0]
- **acquirerSettingsMobilepaysubscriptionsProvider** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;The provider / sales-place chosen by the merchant&lt;/p&gt;  | [optional] 
- **acquirerSettingsMobilepaysubscriptionsRefreshToken** | **string**| &lt;p&gt;Token to refresh access token for up to 1 year&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsActive** | **bool?**| &lt;p&gt;Enable Nets/Teller payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsIdentificationCode** | **string**| &lt;p&gt;Nets TOF number&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsBusinessCode** | **string**| &lt;p&gt;Business code (assigned by Nets)&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsRecurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Nets)&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsFbg1886** | **bool?**| &lt;p&gt;Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsSecuredByNets** | **bool?**| &lt;p&gt;Enable SecuredByNets fraud protection.&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsIdentificationCodeInt** | **string**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsAmericanexpress** | **bool?**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsDinersclub** | **bool?**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsSecurepay** | **bool?**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] [default to true]
- **acquirerSettingsNetsVisaBin** | **string**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **acquirerSettingsNetsMastercardBin** | **string**| &lt;p&gt;(Depricated; use Teller acquirer)&lt;/p&gt;  | [optional] 
- **acquirerSettingsPaypalActive** | **bool?**| &lt;p&gt;Enable PayPal payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsPaypalRecurring** | **bool?**| &lt;p&gt;Enable recurring payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsPaypalCreditCard** | **bool?**| &lt;p&gt;Allow credit-card payments. (Only for US/CA/UK merchants)&lt;/p&gt;  | [optional] 
- **acquirerSettingsPaypalToken** | **string**| &lt;p&gt;Authentication token&lt;/p&gt;  | [optional] 
- **acquirerSettingsPaypalTokenSecret** | **string**| &lt;p&gt;Authentication token secret&lt;/p&gt;  | [optional] 
- **acquirerSettingsPaypalScope** | **List<string>**| &lt;p&gt;Authentication scope&lt;/p&gt;  | [optional] 
- **acquirerSettingsSofortActive** | **bool?**| &lt;p&gt;Enable Sofort payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsSofortCustomerNumber** | **int?**| &lt;p&gt;Sofort customer number&lt;/p&gt;  | [optional] 
- **acquirerSettingsSofortProjectId** | **int?**| &lt;p&gt;Sofort Gateway project id&lt;/p&gt;  | [optional] 
- **acquirerSettingsSofortApiKey** | **string**| &lt;p&gt;Sofort API key&lt;/p&gt;  | [optional] 
- **acquirerSettingsSofortGateway** | **bool?**| &lt;p&gt;Enable Sofort Gateway feature&lt;/p&gt;  | [optional] [default to true]
- **acquirerSettingsSofortIdeal** | **bool?**| &lt;p&gt;Enable Sofort iDeal feature&lt;/p&gt;  | [optional] 
- **acquirerSettingsSofortIdealProjectId** | **int?**| &lt;p&gt;Sofort iDeal project id&lt;/p&gt;  | [optional] 
- **acquirerSettingsSofortIdealProjectPassword** | **string**| &lt;p&gt;Sofort iDeal project password&lt;/p&gt;  | [optional] 
- **acquirerSettingsSofortIdealNotificationPassword** | **string**| &lt;p&gt;Sofort iDeal notification password&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankActive** | **bool?**| &lt;p&gt;Enable Swedbank payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankIdentificationCode** | **string**| &lt;p&gt;Swedbank identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankIdentificationCodeInt** | **string**| &lt;p&gt;Swedbank international identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankBusinessCode** | **string**| &lt;p&gt;Business code (assigned by Swedbank)&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankRecurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Swedbank)&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankAmericanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Swedbank)&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankDinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Swedbank)&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankSecurepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankVisaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankMastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankVisaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsSwedbankMastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerActive** | **bool?**| &lt;p&gt;Enable Teller payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerIdentificationCode** | **string**| &lt;p&gt;Teller TOF number&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerIdentificationCodeInt** | **string**| &lt;p&gt;Teller international identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerBusinessCode** | **string**| &lt;p&gt;Business code (assigned by Teller)&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerRecurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Teller)&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerAmericanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Teller)&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerDinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Teller)&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerSecurepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection. (disabling requires agreement with Teller)&lt;/p&gt;  | [optional] [default to true]
- **acquirerSettingsTellerVisaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerMastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerVisaBin** | **string**| &lt;p&gt;Teller VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsTellerMastercardBin** | **string**| &lt;p&gt;Teller Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorActive** | **bool?**| &lt;p&gt;Enable Valitor payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorIdentificationCode** | **string**| &lt;p&gt;Valitor identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorIdentificationCodeInt** | **string**| &lt;p&gt;Valitor international identification number&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorBusinessCode** | **string**| &lt;p&gt;Business code (assigned by Valitor)&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorRecurring** | **bool?**| &lt;p&gt;Enable recurring payments (requires agreement with Valitor)&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorAmericanexpress** | **bool?**| &lt;p&gt;Enable AMEX payments (requires agreement with Valitor)&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorDinersclub** | **bool?**| &lt;p&gt;Enable Diners Club payments (requires agreement with Valitor)&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorSecurepay** | **bool?**| &lt;p&gt;Enable SecurePay fraud protection.&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorVisaMpiMerchantId** | **string**| &lt;p&gt;VISA MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorMastercardMpiMerchantId** | **string**| &lt;p&gt;Mastercard MPI merchant id. Used for 3D secure transactions&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorVisaBin** | **string**| &lt;p&gt;VISA acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsValitorMastercardBin** | **string**| &lt;p&gt;Mastercard acquirer bin used for 3D Secure&lt;/p&gt;  | [optional] 
- **acquirerSettingsViabillActive** | **bool?**| &lt;p&gt;Enable ViaBill payments&lt;/p&gt;  | [optional] 
- **acquirerSettingsViabillApiKey** | **string**| &lt;p&gt;ViaBill API key&lt;/p&gt;  | [optional] 
- **integrationSettingsEconomicActive** | **bool?**| &lt;p&gt;Enable e-conomic integration&lt;/p&gt;  | [optional] 
- **integrationSettingsEconomicAgreement** | **string**| &lt;p&gt;e-conomic agreement no.&lt;/p&gt;  | [optional] 
- **integrationSettingsEconomicAgreementToken** | **string**| &lt;p&gt;economic agreement grant token&lt;/p&gt;  | [optional] 
- **pciSaqA** | **bool?**| &lt;p&gt;Enable SAQ A&lt;/p&gt;  | [optional] 
- **pciSaqAEp** | **bool?**| &lt;p&gt;Enable SAQ A-EP&lt;/p&gt;  | [optional] 
- **pciSaqB** | **bool?**| &lt;p&gt;Enable SAQ B&lt;/p&gt;  | [optional] 
- **pciSaqBIp** | **bool?**| &lt;p&gt;Enable SAQ B-IP&lt;/p&gt;  | [optional] 
- **pciSaqC** | **bool?**| &lt;p&gt;Enable SAQ C&lt;/p&gt;  | [optional] 
- **pciSaqCVt** | **bool?**| &lt;p&gt;Enable SAQ C-VT&lt;/p&gt;  | [optional] 
- **pciSaqDMerchant** | **bool?**| &lt;p&gt;Enable SAQ D Merchant&lt;/p&gt;  | [optional] 
- **pciSaqDServiceProvider** | **bool?**| &lt;p&gt;Enable SAQ D Service Provider&lt;/p&gt;  | [optional] 
- **pciSaqP2peHw** | **bool?**| &lt;p&gt;Enable SAQ P2PE-HW&lt;/p&gt;  | [optional] 
- **autofee** | **bool?**| &lt;p&gt;Add automatic fee on all payments&lt;/p&gt;  | [optional] 
- **defaultPaymentMethods** | **string**| &lt;p&gt;Comma separated list of default payment methods&lt;/p&gt;  | [optional] 
- **shopUrl** | **string**| &lt;p&gt;Shop URL (deprecated, use shop_urls instead)&lt;/p&gt;  | [optional] 
- **shopUrls** | **List<string>**| &lt;p&gt;Shop URLs&lt;/p&gt;  | [optional] 
- **contactEmail** | **string**| &lt;p&gt;Contact email&lt;/p&gt;  | [optional] 
- **shopName** | **string**| &lt;p&gt;Shop name&lt;/p&gt;  | [optional] 
- **shopsystem** | **string**| &lt;p&gt;Shop system&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **customerAddressName** | **string**| Name  | [optional] 
+ **customerAddressAtt** | **string**| Att  | [optional] 
+ **customerAddressStreet** | **string**| Street  | [optional] 
+ **customerAddressCity** | **string**| City  | [optional] 
+ **customerAddressZipCode** | **string**| Zip code  | [optional] 
+ **customerAddressRegion** | **string**| Region  | [optional] 
+ **customerAddressCountryCode** | **string**| Three letter country code according to ISO 3166-1 Alpha-3  | [optional] 
+ **customerAddressVatNo** | **string**| VAT registration number  | [optional] 
+ **billingAddressName** | **string**| Name  | [optional] 
+ **billingAddressAtt** | **string**| Att  | [optional] 
+ **billingAddressStreet** | **string**| Street  | [optional] 
+ **billingAddressCity** | **string**| City  | [optional] 
+ **billingAddressZipCode** | **string**| Zip code  | [optional] 
+ **billingAddressRegion** | **string**| Region  | [optional] 
+ **billingAddressCountryCode** | **string**| Three letter country code according to ISO 3166-1 Alpha-3  | [optional] 
+ **billingAddressVatNo** | **string**| VAT registration number  | [optional] 
+ **callbackUrl** | **string**| Callback url  | [optional] 
+ **acquirerSettingsBamboraActive** | **bool?**| Enable Bambora payments  | [optional] 
+ **acquirerSettingsBamboraIdentificationCode** | **string**| Bambora identification number  | [optional] 
+ **acquirerSettingsBamboraIdentificationCodeInt** | **string**| Bambora international identification number  | [optional] 
+ **acquirerSettingsBamboraBusinessCode** | **string**| Business code (assigned by Bambora)  | [optional] 
+ **acquirerSettingsBamboraRecurring** | **bool?**| Enable recurring payments (requires agreement with Bambora)  | [optional] 
+ **acquirerSettingsBamboraAmericanexpress** | **bool?**| Enable AMEX payments (requires agreement with Bambora)  | [optional] 
+ **acquirerSettingsBamboraDinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Bambora)  | [optional] 
+ **acquirerSettingsBamboraSecurepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **acquirerSettingsBamboraVisaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsBamboraMastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsBamboraVisaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsBamboraMastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsClearhausActive** | **bool?**| Enable ClearHaus payments  | [optional] 
+ **acquirerSettingsClearhausApiKey** | **string**| Clearhaus API key (is required but may be left empty)  | [optional] 
+ **acquirerSettingsClearhausRecurring** | **bool?**| Enable recurring payments (requires agreement with Clearhaus)  | [optional] 
+ **acquirerSettingsClearhausPayout** | **bool?**| Enable payouts (requires agreement with Clearhaus)  | [optional] 
+ **acquirerSettingsClearhausApplePay** | **bool?**| Enable Apple Pay (requires agreement with Clearhaus)  | [optional] 
+ **acquirerSettingsElavonActive** | **bool?**| Enable Elavon payments  | [optional] 
+ **acquirerSettingsElavonIdentificationCode** | **string**| Elavon identification number  | [optional] 
+ **acquirerSettingsElavonIdentificationCodeInt** | **string**| Elavon international identification number  | [optional] 
+ **acquirerSettingsElavonBusinessCode** | **string**| Business code (assigned by Elavon)  | [optional] 
+ **acquirerSettingsElavonRecurring** | **bool?**| Enable recurring payments (requires agreement with Elavon)  | [optional] 
+ **acquirerSettingsElavonAmericanexpress** | **bool?**| Enable AMEX payments (requires agreement with Elavon)  | [optional] 
+ **acquirerSettingsElavonDinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Elavon)  | [optional] 
+ **acquirerSettingsElavonSecurepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **acquirerSettingsElavonVisaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsElavonMastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsElavonVisaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsElavonMastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsHandelsbankenActive** | **bool?**| Enable Handelsbanken payments  | [optional] 
+ **acquirerSettingsHandelsbankenIdentificationCode** | **string**| Handelsbanken identification number  | [optional] 
+ **acquirerSettingsHandelsbankenIdentificationCodeInt** | **string**| Handelsbanken international identification number  | [optional] 
+ **acquirerSettingsHandelsbankenBusinessCode** | **string**| Business code (assigned by Handelsbanken)  | [optional] 
+ **acquirerSettingsHandelsbankenRecurring** | **bool?**| Enable recurring payments (requires agreement with Handelsbanken)  | [optional] 
+ **acquirerSettingsHandelsbankenAmericanexpress** | **bool?**| Enable AMEX payments (requires agreement with Handelsbanken)  | [optional] 
+ **acquirerSettingsHandelsbankenDinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Handelsbanken)  | [optional] 
+ **acquirerSettingsHandelsbankenSecurepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **acquirerSettingsHandelsbankenVisaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsHandelsbankenMastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsHandelsbankenVisaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsHandelsbankenMastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsKlarnaActive** | **bool?**| Enable Klarna payments  | [optional] 
+ **acquirerSettingsKlarnaEid** | **int?**| Klarna merchant ID  | [optional] 
+ **acquirerSettingsKlarnaSharedSecret** | **string**| Klarna shared secret  | [optional] 
+ **acquirerSettingsMobilepayActive** | **bool?**| Enable MobilePay payments  | [optional] 
+ **acquirerSettingsMobilepayDeliveryLimitedTo** | **string**| Limit MobilePay delivery address selection to theses countries. (ISO 3166-1 alpha-2 without delimiter ‘DKNOSEFI’) (Valid options are DK,NO,SE,FI)  | [optional] 
+ **acquirerSettingsMobilepaysubscriptionsActive** | **bool?**| Enable MobilePay Subscriptions payments  | [optional] 
+ **acquirerSettingsMobilepaysubscriptionsAuthState** | **string**| Identifier MobilePay Subscriptions uses to link requests to callbacks  | [optional] 
+ **acquirerSettingsMobilepaysubscriptionsCodeVerifier** | **string**| Verifies received code challenge  | [optional] 
+ **acquirerSettingsMobilepaysubscriptionsLastTokenRefresh** | **int?**| Unix Timestamp of last time the tokens were refreshed  | [optional] 
+ **acquirerSettingsMobilepaysubscriptionsNonce** | **string**| Associate client sessions with ID Tokens to mitigate replay attacks  | [optional] 
+ **acquirerSettingsMobilepaysubscriptionsPendingStatus** | **int?**| 0: agreement inactive, 1: flow initialised, 2: tokens received, 3: flow completed  | [optional] [default to 0]
+ **acquirerSettingsMobilepaysubscriptionsProvider** | **string**| The provider / sales-place chosen by the merchant  | [optional] 
+ **acquirerSettingsMobilepaysubscriptionsRefreshToken** | **string**| Token to refresh access token for up to 1 year  | [optional] 
+ **acquirerSettingsNetsActive** | **bool?**| Enable Nets/Teller payments  | [optional] 
+ **acquirerSettingsNetsIdentificationCode** | **string**| Nets TOF number  | [optional] 
+ **acquirerSettingsNetsBusinessCode** | **string**| Business code (assigned by Nets)  | [optional] 
+ **acquirerSettingsNetsRecurring** | **bool?**| Enable recurring payments (requires agreement with Nets)  | [optional] 
+ **acquirerSettingsNetsFbg1886** | **bool?**| Enable Forbrugsforeningen payments (requires agreement with Nets and Forbrugsforeningen)  | [optional] 
+ **acquirerSettingsNetsSecuredByNets** | **bool?**| Enable SecuredByNets fraud protection.  | [optional] 
+ **acquirerSettingsNetsIdentificationCodeInt** | **string**| (Depricated; use Teller acquirer)  | [optional] 
+ **acquirerSettingsNetsAmericanexpress** | **bool?**| (Depricated; use Teller acquirer)  | [optional] 
+ **acquirerSettingsNetsDinersclub** | **bool?**| (Depricated; use Teller acquirer)  | [optional] 
+ **acquirerSettingsNetsSecurepay** | **bool?**| (Depricated; use Teller acquirer)  | [optional] [default to true]
+ **acquirerSettingsNetsVisaBin** | **string**| (Depricated; use Teller acquirer)  | [optional] 
+ **acquirerSettingsNetsMastercardBin** | **string**| (Depricated; use Teller acquirer)  | [optional] 
+ **acquirerSettingsPaypalActive** | **bool?**| Enable PayPal payments  | [optional] 
+ **acquirerSettingsPaypalRecurring** | **bool?**| Enable recurring payments  | [optional] 
+ **acquirerSettingsPaypalCreditCard** | **bool?**| Allow credit-card payments. (Only for US/CA/UK merchants)  | [optional] 
+ **acquirerSettingsPaypalToken** | **string**| Authentication token  | [optional] 
+ **acquirerSettingsPaypalTokenSecret** | **string**| Authentication token secret  | [optional] 
+ **acquirerSettingsPaypalScope** | **string**| Authentication scope  | [optional] 
+ **acquirerSettingsSofortActive** | **bool?**| Enable Sofort payments  | [optional] 
+ **acquirerSettingsSofortCustomerNumber** | **int?**| Sofort customer number  | [optional] 
+ **acquirerSettingsSofortProjectId** | **int?**| Sofort Gateway project id  | [optional] 
+ **acquirerSettingsSofortApiKey** | **string**| Sofort API key  | [optional] 
+ **acquirerSettingsSofortGateway** | **bool?**| Enable Sofort Gateway feature  | [optional] [default to true]
+ **acquirerSettingsSofortIdeal** | **bool?**| Enable Sofort iDeal feature  | [optional] 
+ **acquirerSettingsSofortIdealProjectId** | **int?**| Sofort iDeal project id  | [optional] 
+ **acquirerSettingsSofortIdealProjectPassword** | **string**| Sofort iDeal project password  | [optional] 
+ **acquirerSettingsSofortIdealNotificationPassword** | **string**| Sofort iDeal notification password  | [optional] 
+ **acquirerSettingsSwedbankActive** | **bool?**| Enable Swedbank payments  | [optional] 
+ **acquirerSettingsSwedbankIdentificationCode** | **string**| Swedbank identification number  | [optional] 
+ **acquirerSettingsSwedbankIdentificationCodeInt** | **string**| Swedbank international identification number  | [optional] 
+ **acquirerSettingsSwedbankBusinessCode** | **string**| Business code (assigned by Swedbank)  | [optional] 
+ **acquirerSettingsSwedbankRecurring** | **bool?**| Enable recurring payments (requires agreement with Swedbank)  | [optional] 
+ **acquirerSettingsSwedbankAmericanexpress** | **bool?**| Enable AMEX payments (requires agreement with Swedbank)  | [optional] 
+ **acquirerSettingsSwedbankDinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Swedbank)  | [optional] 
+ **acquirerSettingsSwedbankSecurepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **acquirerSettingsSwedbankVisaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsSwedbankMastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsSwedbankVisaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsSwedbankMastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsTellerActive** | **bool?**| Enable Teller payments  | [optional] 
+ **acquirerSettingsTellerIdentificationCode** | **string**| Teller TOF number  | [optional] 
+ **acquirerSettingsTellerIdentificationCodeInt** | **string**| Teller international identification number  | [optional] 
+ **acquirerSettingsTellerBusinessCode** | **string**| Business code (assigned by Teller)  | [optional] 
+ **acquirerSettingsTellerRecurring** | **bool?**| Enable recurring payments (requires agreement with Teller)  | [optional] 
+ **acquirerSettingsTellerAmericanexpress** | **bool?**| Enable AMEX payments (requires agreement with Teller)  | [optional] 
+ **acquirerSettingsTellerDinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Teller)  | [optional] 
+ **acquirerSettingsTellerSecurepay** | **bool?**| Enable SecurePay fraud protection. (disabling requires agreement with Teller)  | [optional] [default to true]
+ **acquirerSettingsTellerVisaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsTellerMastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsTellerVisaBin** | **string**| Teller VISA acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsTellerMastercardBin** | **string**| Teller Mastercard acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsValitorActive** | **bool?**| Enable Valitor payments  | [optional] 
+ **acquirerSettingsValitorIdentificationCode** | **string**| Valitor identification number  | [optional] 
+ **acquirerSettingsValitorIdentificationCodeInt** | **string**| Valitor international identification number  | [optional] 
+ **acquirerSettingsValitorBusinessCode** | **string**| Business code (assigned by Valitor)  | [optional] 
+ **acquirerSettingsValitorRecurring** | **bool?**| Enable recurring payments (requires agreement with Valitor)  | [optional] 
+ **acquirerSettingsValitorAmericanexpress** | **bool?**| Enable AMEX payments (requires agreement with Valitor)  | [optional] 
+ **acquirerSettingsValitorDinersclub** | **bool?**| Enable Diners Club payments (requires agreement with Valitor)  | [optional] 
+ **acquirerSettingsValitorSecurepay** | **bool?**| Enable SecurePay fraud protection.  | [optional] 
+ **acquirerSettingsValitorVisaMpiMerchantId** | **string**| VISA MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsValitorMastercardMpiMerchantId** | **string**| Mastercard MPI merchant id. Used for 3D secure transactions  | [optional] 
+ **acquirerSettingsValitorVisaBin** | **string**| VISA acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsValitorMastercardBin** | **string**| Mastercard acquirer bin used for 3D Secure  | [optional] 
+ **acquirerSettingsViabillActive** | **bool?**| Enable ViaBill payments  | [optional] 
+ **acquirerSettingsViabillApiKey** | **string**| ViaBill API key  | [optional] 
+ **integrationSettingsEconomicActive** | **bool?**| Enable e-conomic integration  | [optional] 
+ **integrationSettingsEconomicAgreement** | **string**| e-conomic agreement no.  | [optional] 
+ **integrationSettingsEconomicAgreementToken** | **string**| economic agreement grant token  | [optional] 
+ **pciSaqA** | **bool?**| Enable SAQ A  | [optional] 
+ **pciSaqAEp** | **bool?**| Enable SAQ A-EP  | [optional] 
+ **pciSaqB** | **bool?**| Enable SAQ B  | [optional] 
+ **pciSaqBIp** | **bool?**| Enable SAQ B-IP  | [optional] 
+ **pciSaqC** | **bool?**| Enable SAQ C  | [optional] 
+ **pciSaqCVt** | **bool?**| Enable SAQ C-VT  | [optional] 
+ **pciSaqDMerchant** | **bool?**| Enable SAQ D Merchant  | [optional] 
+ **pciSaqDServiceProvider** | **bool?**| Enable SAQ D Service Provider  | [optional] 
+ **pciSaqP2peHw** | **bool?**| Enable SAQ P2PE-HW  | [optional] 
+ **autofee** | **bool?**| Add automatic fee on all payments  | [optional] 
+ **defaultPaymentMethods** | **string**| Comma separated list of default payment methods  | [optional] 
+ **shopUrl** | **string**| Shop URL (deprecated, use shop_urls instead)  | [optional] 
+ **shopUrls** | **string**| Shop URLs  | [optional] 
+ **contactEmail** | **string**| Contact email  | [optional] 
+ **shopName** | **string**| Shop name  | [optional] 
+ **shopsystem** | **string**| Shop system  | [optional] 
  **timezone** | **string**| &lt;table&gt;   &lt;tbody&gt;     &lt;tr&gt;       &lt;td&gt;Timezone UTC offsets in Zulu (+&lt;/td&gt;       &lt;td&gt;-)hh:mm&lt;/td&gt;     &lt;/tr&gt;   &lt;/tbody&gt; &lt;/table&gt;  | [optional] 
- **locale** | **string**| &lt;p&gt;Locale as a two letter language code&lt;/p&gt;  | [optional] 
- **defaultBrandingId** | **int?**| &lt;p&gt;Id of default branding&lt;/p&gt;  | [optional] 
- **loggingStopsAt** | **string**| &lt;p&gt;Timestamp when logging is active&lt;/p&gt;  | [optional] 
- **allowTestTransactions** | **bool?**| &lt;p&gt;Allow test transactions&lt;/p&gt;  | [optional] 
- **defaultPaymentLanguage** | **string**| &lt;p&gt;Default payment language (Two letter language code, ISO-639-1)&lt;/p&gt;  | [optional] 
- **defaultTextOnStatement** | **string**| &lt;p&gt;Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.&lt;/p&gt;  | [optional] 
- **defaultBrandingConfig** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;Default branding config. Can be overwritten in branding or in request to payment window&lt;/p&gt;  | [optional] 
+ **locale** | **string**| Locale as a two letter language code  | [optional] 
+ **defaultBrandingId** | **int?**| Id of default branding  | [optional] 
+ **loggingStopsAt** | **string**| Timestamp when logging is active  | [optional] 
+ **allowTestTransactions** | **bool?**| Allow test transactions  | [optional] 
+ **defaultPaymentLanguage** | **string**| Default payment language (Two letter language code, ISO-639-1)  | [optional] 
+ **defaultTextOnStatement** | **string**| Text to be displayed on cardholder’s statement. Max 22 ASCII chars. Currently supported by Clearhaus only.  | [optional] 
+ **defaultBrandingConfig** | **string**| Default branding config. Can be overwritten in branding or in request to payment window  | [optional] 
 
 ### Return type
 
@@ -879,8 +879,8 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
 
             try
             {
@@ -901,8 +901,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
 
 ### Return type
 
@@ -943,10 +943,10 @@ namespace Example
         {
             
             var apiInstance = new AccountApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var _file = _file_example;  // string | <p>The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file</p> 
-            var logoType = logoType_example;  // string | <p>Type of logo</p>  (optional)  (default to payment_window)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var _file = _file_example;  // string | The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file 
+            var logoType = logoType_example;  // string | Type of logo  (optional)  (default to payment_window)
 
             try
             {
@@ -966,10 +966,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **_file** | **string**| &lt;p&gt;The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file&lt;/p&gt;  | 
- **logoType** | **string**| &lt;p&gt;Type of logo&lt;/p&gt;  | [optional] [default to payment_window]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **_file** | **string**| The logo as a multipart file. If the logo_type is ‘mobilepay’, the logo must be a 250px x 250px PNG file  | 
+ **logoType** | **string**| Type of logo  | [optional] [default to payment_window]
 
 ### Return type
 

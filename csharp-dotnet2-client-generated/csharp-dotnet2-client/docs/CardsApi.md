@@ -41,8 +41,8 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = id_example;  // string |  
 
             try
@@ -63,8 +63,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **string**|   | 
 
 ### Return type
@@ -106,16 +106,16 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var timestamp = timestamp_example;  // string | <p>Timestamp field</p>  (optional)  (default to created_at)
-            var minTime = minTime_example;  // string | <p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>  (optional) 
-            var maxTime = maxTime_example;  // string | <p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>  (optional) 
-            var fraudSuspected = true;  // bool? | <p>Filter by suspected fraud</p>  (optional) 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
-            var sortBy = sortBy_example;  // string | <p>Property to sort by</p>  (optional)  (default to id)
-            var sortDir = sortDir_example;  // string | <p>Sort direction</p>  (optional)  (default to desc)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var timestamp = timestamp_example;  // string | Timestamp field  (optional)  (default to created_at)
+            var minTime = minTime_example;  // string | Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional) 
+            var maxTime = maxTime_example;  // string | Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional) 
+            var fraudSuspected = true;  // bool? | Filter by suspected fraud  (optional) 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
+            var sortBy = sortBy_example;  // string | Property to sort by  (optional)  (default to id)
+            var sortDir = sortDir_example;  // string | Sort direction  (optional)  (default to desc)
             var pageKey = 56;  // int? |   (optional) 
 
             try
@@ -137,16 +137,16 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **timestamp** | **string**| &lt;p&gt;Timestamp field&lt;/p&gt;  | [optional] [default to created_at]
- **minTime** | **string**| &lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  | [optional] 
- **maxTime** | **string**| &lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  | [optional] 
- **fraudSuspected** | **bool?**| &lt;p&gt;Filter by suspected fraud&lt;/p&gt;  | [optional] 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
- **sortBy** | **string**| &lt;p&gt;Property to sort by&lt;/p&gt;  | [optional] [default to id]
- **sortDir** | **string**| &lt;p&gt;Sort direction&lt;/p&gt;  | [optional] [default to desc]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **timestamp** | **string**| Timestamp field  | [optional] [default to created_at]
+ **minTime** | **string**| Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  | [optional] 
+ **maxTime** | **string**| Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  | [optional] 
+ **fraudSuspected** | **bool?**| Filter by suspected fraud  | [optional] 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
+ **sortBy** | **string**| Property to sort by  | [optional] [default to id]
+ **sortDir** | **string**| Sort direction  | [optional] [default to desc]
  **pageKey** | **int?**|   | [optional] 
 
 ### Return type
@@ -188,8 +188,8 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = id_example;  // string |  
 
             try
@@ -211,8 +211,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **string**|   | 
 
 ### Return type
@@ -254,9 +254,9 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var operationId = 56;  // int? | <p>Operations id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var operationId = 56;  // int? | Operations id 
             var id = id_example;  // string |  
 
             try
@@ -278,9 +278,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **operationId** | **int?**| &lt;p&gt;Operations id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **operationId** | **int?**| Operations id  | 
  **id** | **string**|   | 
 
 ### Return type
@@ -300,7 +300,7 @@ No authorization required
 
 <a name="patchcardsidformat"></a>
 # **PATCHCardsIdFormat**
-> Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, Dictionary<string, string> variables)
+> Card PATCHCardsIdFormat (string acceptVersion, string authorization, string id, string variables)
 
 Update saved card
 
@@ -322,10 +322,10 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = id_example;  // string |  
-            var variables = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Custom variables</p>  (optional) 
+            var variables = variables_example;  // string | Custom variables  (optional) 
 
             try
             {
@@ -346,10 +346,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **string**|   | 
- **variables** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;Custom variables&lt;/p&gt;  | [optional] 
+ **variables** | **string**| Custom variables  | [optional] 
 
 ### Return type
 
@@ -368,7 +368,7 @@ No authorization required
 
 <a name="postcardsformat"></a>
 # **POSTCardsFormat**
-> Card POSTCardsFormat (string acceptVersion, string authorization, Dictionary<string, string> variables)
+> Card POSTCardsFormat (string acceptVersion, string authorization, string variables)
 
 Create saved card
 
@@ -390,9 +390,9 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var variables = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Custom variables</p>  (optional)  (default to {})
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var variables = variables_example;  // string | Custom variables  (optional)  (default to {})
 
             try
             {
@@ -413,9 +413,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **variables** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;Custom variables&lt;/p&gt;  | [optional] [default to {}]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **variables** | **string**| Custom variables  | [optional] [default to {}]
 
 ### Return type
 
@@ -434,7 +434,7 @@ No authorization required
 
 <a name="postcardsidauthorizeformat"></a>
 # **POSTCardsIdAuthorizeFormat**
-> Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, Dictionary<string, string> extras)
+> Card POSTCardsIdAuthorizeFormat (string acceptVersion, string authorization, string cardNumber, string cardExpiration, string id, bool? synchronized, string cardCvd, string cardIssuedTo, string cardBrand, string acquirer, string customerIp, string extras)
 
 Authorize saved card
 
@@ -456,18 +456,18 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var cardNumber = cardNumber_example;  // string | <p>Card number</p> 
-            var cardExpiration = cardExpiration_example;  // string | <p>Expiration date (YYMM)</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var cardNumber = cardNumber_example;  // string | Card number 
+            var cardExpiration = cardExpiration_example;  // string | Expiration date (YYMM) 
             var id = id_example;  // string |  
-            var synchronized = true;  // bool? | <p>Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)</p>  (optional) 
-            var cardCvd = cardCvd_example;  // string | <p>CVD/CVV</p>  (optional) 
-            var cardIssuedTo = cardIssuedTo_example;  // string | <p>Card holder name</p>  (optional) 
-            var cardBrand = cardBrand_example;  // string | <p>Brand to use on multi-brand card</p>  (optional) 
-            var acquirer = acquirer_example;  // string | <p>If set, will force the use of this acquirer</p>  (optional) 
-            var customerIp = customerIp_example;  // string | <p>Customer IP</p>  (optional) 
-            var extras = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Additional acquirer specific params</p>  (optional) 
+            var synchronized = true;  // bool? | Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional) 
+            var cardCvd = cardCvd_example;  // string | CVD/CVV  (optional) 
+            var cardIssuedTo = cardIssuedTo_example;  // string | Card holder name  (optional) 
+            var cardBrand = cardBrand_example;  // string | Brand to use on multi-brand card  (optional) 
+            var acquirer = acquirer_example;  // string | If set, will force the use of this acquirer  (optional) 
+            var customerIp = customerIp_example;  // string | Customer IP  (optional) 
+            var extras = extras_example;  // string | Additional acquirer specific params  (optional) 
 
             try
             {
@@ -488,18 +488,18 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **cardNumber** | **string**| &lt;p&gt;Card number&lt;/p&gt;  | 
- **cardExpiration** | **string**| &lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **cardNumber** | **string**| Card number  | 
+ **cardExpiration** | **string**| Expiration date (YYMM)  | 
  **id** | **string**|   | 
- **synchronized** | **bool?**| &lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  | [optional] 
- **cardCvd** | **string**| &lt;p&gt;CVD/CVV&lt;/p&gt;  | [optional] 
- **cardIssuedTo** | **string**| &lt;p&gt;Card holder name&lt;/p&gt;  | [optional] 
- **cardBrand** | **string**| &lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  | [optional] 
- **acquirer** | **string**| &lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  | [optional] 
- **customerIp** | **string**| &lt;p&gt;Customer IP&lt;/p&gt;  | [optional] 
- **extras** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;Additional acquirer specific params&lt;/p&gt;  | [optional] 
+ **synchronized** | **bool?**| Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  | [optional] 
+ **cardCvd** | **string**| CVD/CVV  | [optional] 
+ **cardIssuedTo** | **string**| Card holder name  | [optional] 
+ **cardBrand** | **string**| Brand to use on multi-brand card  | [optional] 
+ **acquirer** | **string**| If set, will force the use of this acquirer  | [optional] 
+ **customerIp** | **string**| Customer IP  | [optional] 
+ **extras** | **string**| Additional acquirer specific params  | [optional] 
 
 ### Return type
 
@@ -540,10 +540,10 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = id_example;  // string |  
-            var synchronized = true;  // bool? | <p>Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)</p>  (optional) 
+            var synchronized = true;  // bool? | Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional) 
 
             try
             {
@@ -564,10 +564,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **string**|   | 
- **synchronized** | **bool?**| &lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  | [optional] 
+ **synchronized** | **bool?**| Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  | [optional] 
 
 ### Return type
 
@@ -608,10 +608,10 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = id_example;  // string |  
-            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | <p>Specify the callback url (overrides merchant default callback-url)</p>  (optional) 
+            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | Specify the callback url (overrides merchant default callback-url)  (optional) 
             var description = description_example;  // string |   (optional) 
 
             try
@@ -633,10 +633,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **string**|   | 
- **quickPayCallbackUrl** | **string**| &lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  | [optional] 
+ **quickPayCallbackUrl** | **string**| Specify the callback url (overrides merchant default callback-url)  | [optional] 
  **description** | **string**|   | [optional] 
 
 ### Return type
@@ -678,8 +678,8 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = id_example;  // string |  
 
             try
@@ -701,8 +701,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **string**|   | 
 
 ### Return type
@@ -722,7 +722,7 @@ No authorization required
 
 <a name="putcardsidlinkformat"></a>
 # **PUTCardsIdLinkFormat**
-> CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, Dictionary<string, string> brandingConfig)
+> CardLinkUrl PUTCardsIdLinkFormat (string acceptVersion, string authorization, string id, int? agreementId, string language, string continueurl, string cancelurl, string callbackurl, string paymentMethods, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, bool? framed, string brandingConfig)
 
 Create or update a card link
 
@@ -744,21 +744,21 @@ namespace Example
         {
             
             var apiInstance = new CardsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var id = id_example;  // string |  
-            var agreementId = 56;  // int? | <p>Agreement to use. Defaults to the Payment Window agreement</p>  (optional) 
-            var language = language_example;  // string | <p>Language</p>  (optional)  (default to en)
-            var continueurl = continueurl_example;  // string | <p>Url that cardholder is redirected to after authorize</p>  (optional) 
-            var cancelurl = cancelurl_example;  // string | <p>Url that cardholder is redirected to after cancelation</p>  (optional) 
-            var callbackurl = callbackurl_example;  // string | <p>Endpoint for async callback</p>  (optional) 
-            var paymentMethods = paymentMethods_example;  // string | <p>Limit payment methods</p>  (optional)  (default to creditcard)
-            var brandingId = 56;  // int? | <p>Override branding. Default is merchant default branding</p>  (optional) 
-            var googleAnalyticsTrackingId = googleAnalyticsTrackingId_example;  // string | <p>Send events to Google Analytics</p>  (optional) 
-            var googleAnalyticsClientId = googleAnalyticsClientId_example;  // string | <p>Send events to Google Analytics</p>  (optional) 
-            var acquirer = acquirer_example;  // string | <p>Force usage of the given acquirer</p>  (optional) 
-            var framed = true;  // bool? | <p>Allow opening in iframe</p>  (optional) 
-            var brandingConfig = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Config for branding. Will be merged with the default config in the branding</p>  (optional) 
+            var agreementId = 56;  // int? | Agreement to use. Defaults to the Payment Window agreement  (optional) 
+            var language = language_example;  // string | Language  (optional)  (default to en)
+            var continueurl = continueurl_example;  // string | Url that cardholder is redirected to after authorize  (optional) 
+            var cancelurl = cancelurl_example;  // string | Url that cardholder is redirected to after cancelation  (optional) 
+            var callbackurl = callbackurl_example;  // string | Endpoint for async callback  (optional) 
+            var paymentMethods = paymentMethods_example;  // string | Limit payment methods  (optional)  (default to creditcard)
+            var brandingId = 56;  // int? | Override branding. Default is merchant default branding  (optional) 
+            var googleAnalyticsTrackingId = googleAnalyticsTrackingId_example;  // string | Send events to Google Analytics  (optional) 
+            var googleAnalyticsClientId = googleAnalyticsClientId_example;  // string | Send events to Google Analytics  (optional) 
+            var acquirer = acquirer_example;  // string | Force usage of the given acquirer  (optional) 
+            var framed = true;  // bool? | Allow opening in iframe  (optional) 
+            var brandingConfig = brandingConfig_example;  // string | Config for branding. Will be merged with the default config in the branding  (optional) 
 
             try
             {
@@ -779,21 +779,21 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **id** | **string**|   | 
- **agreementId** | **int?**| &lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  | [optional] 
- **language** | **string**| &lt;p&gt;Language&lt;/p&gt;  | [optional] [default to en]
- **continueurl** | **string**| &lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  | [optional] 
- **cancelurl** | **string**| &lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  | [optional] 
- **callbackurl** | **string**| &lt;p&gt;Endpoint for async callback&lt;/p&gt;  | [optional] 
- **paymentMethods** | **string**| &lt;p&gt;Limit payment methods&lt;/p&gt;  | [optional] [default to creditcard]
- **brandingId** | **int?**| &lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  | [optional] 
- **googleAnalyticsTrackingId** | **string**| &lt;p&gt;Send events to Google Analytics&lt;/p&gt;  | [optional] 
- **googleAnalyticsClientId** | **string**| &lt;p&gt;Send events to Google Analytics&lt;/p&gt;  | [optional] 
- **acquirer** | **string**| &lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  | [optional] 
- **framed** | **bool?**| &lt;p&gt;Allow opening in iframe&lt;/p&gt;  | [optional] 
- **brandingConfig** | [**Dictionary<string, string>**](string.md)| &lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  | [optional] 
+ **agreementId** | **int?**| Agreement to use. Defaults to the Payment Window agreement  | [optional] 
+ **language** | **string**| Language  | [optional] [default to en]
+ **continueurl** | **string**| Url that cardholder is redirected to after authorize  | [optional] 
+ **cancelurl** | **string**| Url that cardholder is redirected to after cancelation  | [optional] 
+ **callbackurl** | **string**| Endpoint for async callback  | [optional] 
+ **paymentMethods** | **string**| Limit payment methods  | [optional] [default to creditcard]
+ **brandingId** | **int?**| Override branding. Default is merchant default branding  | [optional] 
+ **googleAnalyticsTrackingId** | **string**| Send events to Google Analytics  | [optional] 
+ **googleAnalyticsClientId** | **string**| Send events to Google Analytics  | [optional] 
+ **acquirer** | **string**| Force usage of the given acquirer  | [optional] 
+ **framed** | **bool?**| Allow opening in iframe  | [optional] 
+ **brandingConfig** | **string**| Config for branding. Will be merged with the default config in the branding  | [optional] 
 
 ### Return type
 

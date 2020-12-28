@@ -14,261 +14,261 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete payment link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Transaction id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Transaction id </param>
         /// <returns></returns>
         void DELETEPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id);
         /// <summary>
         /// Get all payments  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt; </param>
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt; </param>
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt; </param>
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt; </param>
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt; </param>
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt; </param>
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param>
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param>
-        /// <param name="accepted">&lt;p&gt;Return accepted payments&lt;/p&gt; </param>
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt; </param>
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Find by transaction id&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt; </param>
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt; </param>
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param>
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="dateYear">Year </param>
+        /// <param name="dateMonth">Month </param>
+        /// <param name="dateDay">Day of the month </param>
+        /// <param name="dateHour">Hour of the day </param>
+        /// <param name="dateMinute">Minute of the hour </param>
+        /// <param name="timestamp">Timestamp field </param>
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param>
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve </param>
+        /// <param name="accepted">Return accepted payments </param>
+        /// <param name="orderId">Find by order_id </param>
+        /// <param name="state">Find by state </param>
+        /// <param name="id">Find by transaction id </param>
+        /// <param name="acquirer">Filter by acquirer </param>
+        /// <param name="fraudSuspected">Filter by suspected fraud </param>
+        /// <param name="page">Pagination page. Default is 1 </param>
+        /// <param name="pageSize">Items per page. Default is 20 </param>
+        /// <param name="sortBy">Property to sort by </param>
+        /// <param name="sortDir">Sort direction </param>
         /// <param name="pageKey"> </param>
         /// <returns>List&lt;Payment&gt;</returns>
         List<Payment> GETPaymentsFormat (string acceptVersion, string authorization, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, string timestamp, string minTime, string maxTime, int? operationsSize, bool? accepted, string orderId, string state, int? id, string acquirer, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, string pageKey);
         /// <summary>
         /// Get payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="operationsSize">Maximum number of operations to retrieve </param>
         /// <returns>Payment</returns>
         Payment GETPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize);
         /// <summary>
         /// Get Operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="operationId">Operations id </param>
         /// <returns>Operation</returns>
         Operation GETPaymentsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId);
         /// <summary>
         /// Update payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param>
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param>
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param>
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="deadlineAt">&lt;p&gt;Payment must be authorized before this time&lt;/p&gt; </param>
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt; </param>
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param>
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param>
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt; </param>
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param>
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param>
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param>
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param>
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param>
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt; </param>
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param>
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param>
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param>
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param>
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param>
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt; </param>
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param>
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param>
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param>
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param>
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param>
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param>
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param>
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt; </param>
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt; </param>
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt; </param>
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param>
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt; </param>
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt; </param>
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="basketQty">Quantity </param>
+        /// <param name="basketItemNo">Item reference number </param>
+        /// <param name="basketItemName">Item name </param>
+        /// <param name="basketItemPrice">Per item price (incl. VAT) </param>
+        /// <param name="basketVatRate">VAT rate </param>
+        /// <param name="deadlineAt">Payment must be authorized before this time </param>
+        /// <param name="invoiceAddressName">Name </param>
+        /// <param name="invoiceAddressAtt">Att </param>
+        /// <param name="invoiceAddressCompanyName">Company name </param>
+        /// <param name="invoiceAddressStreet">Street </param>
+        /// <param name="invoiceAddressHouseNumber">House number </param>
+        /// <param name="invoiceAddressHouseExtension">House extension </param>
+        /// <param name="invoiceAddressCity">City </param>
+        /// <param name="invoiceAddressZipCode">Zip code </param>
+        /// <param name="invoiceAddressRegion">Region </param>
+        /// <param name="invoiceAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param>
+        /// <param name="invoiceAddressVatNo">VAT registration number </param>
+        /// <param name="invoiceAddressPhoneNumber">Phone number </param>
+        /// <param name="invoiceAddressMobileNumber">Mobile number </param>
+        /// <param name="invoiceAddressEmail">Email address </param>
+        /// <param name="shippingAddressName">Name </param>
+        /// <param name="shippingAddressAtt">Att </param>
+        /// <param name="shippingAddressCompanyName">Company name </param>
+        /// <param name="shippingAddressStreet">Street </param>
+        /// <param name="shippingAddressHouseNumber">House number </param>
+        /// <param name="shippingAddressHouseExtension">House extension </param>
+        /// <param name="shippingAddressCity">City </param>
+        /// <param name="shippingAddressZipCode">Zip code </param>
+        /// <param name="shippingAddressRegion">Region </param>
+        /// <param name="shippingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param>
+        /// <param name="shippingAddressVatNo">VAT registration number </param>
+        /// <param name="shippingAddressPhoneNumber">Phone number </param>
+        /// <param name="shippingAddressMobileNumber">Mobile number </param>
+        /// <param name="shippingAddressEmail">Email address </param>
+        /// <param name="shippingMethod">Shipping method </param>
+        /// <param name="shippingCompany">Shipping company </param>
+        /// <param name="shippingAmount">Shipping price (incl. VAT) </param>
+        /// <param name="shippingVatRate">VAT rate </param>
+        /// <param name="shippingTrackingNumber">Shipping tracking number </param>
+        /// <param name="shippingTrackingUrl">Shipping tracking url </param>
+        /// <param name="variables">Custom variables </param>
         /// <returns>Payment</returns>
-        Payment PATCHPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, DateTime? deadlineAt, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, string shippingMethod, string shippingCompany, int? shippingAmount, float? shippingVatRate, string shippingTrackingNumber, string shippingTrackingUrl, Dictionary<string, string> variables);
+        Payment PATCHPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, DateTime? deadlineAt, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, string shippingMethod, string shippingCompany, int? shippingAmount, float? shippingVatRate, string shippingTrackingNumber, string shippingTrackingUrl, string variables);
         /// <summary>
         /// Update operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param>
-        /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="operationId">Operations id </param>
+        /// <param name="pending">Aborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value) </param>
         /// <returns>Operation</returns>
         Operation PATCHPaymentsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending);
         /// <summary>
         /// Create payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <param name="payment">Payment</param>
         /// <returns>Payment</returns>
         Payment POSTPaymentsFormat (string acceptVersion, string authorization, Payment payment);
         /// <summary>
         /// Authorize payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt; </param>
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param>
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param>
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt; </param>
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt; </param>
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt; </param>
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt; </param>
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt; </param>
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param>
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt; </param>
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt; </param>
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt; </param>
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt; </param>
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param>
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt; </param>
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt; </param>
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt; </param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt; </param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt; </param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt; </param>
-        /// <param name="autoCapture">&lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
-        /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt; </param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
-        /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
+        /// <param name="vatRate">Vate rate </param>
+        /// <param name="cardNumber">Card number </param>
+        /// <param name="cardExpiration">Expiration date (YYMM) </param>
+        /// <param name="cardCvd">CVD/CVV </param>
+        /// <param name="cardToken">Card token </param>
+        /// <param name="cardApplePayToken">Apple Pay payment-token </param>
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token </param>
+        /// <param name="cardIssuedTo">Card holder name </param>
+        /// <param name="cardBrand">Brand to use on multi-brand card </param>
+        /// <param name="cardStatus">3D-Secure status </param>
+        /// <param name="cardEci">3D-Secure eci </param>
+        /// <param name="cardXav">3D-Secure xav </param>
+        /// <param name="cardCavv">3D-Secure cavv </param>
+        /// <param name="mobileNumber">Mobile number </param>
+        /// <param name="ninNumber">Customer NIN Number </param>
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3) </param>
+        /// <param name="ninGender">Customer gender </param>
+        /// <param name="personFirstName">Person first name </param>
+        /// <param name="personLastName">Person last name </param>
+        /// <param name="personEmail">Person email </param>
+        /// <param name="autoCapture">When true, payment is captured after authorization. Default is false </param>
+        /// <param name="acquirer">If set, will force the use of this acquirer </param>
+        /// <param name="autofee">When true, fee is calculated and added to the given amount. Default is merchant autofee </param>
+        /// <param name="customerIp">Customer IP </param>
+        /// <param name="extras">Additional acquirer specific params </param>
+        /// <param name="zeroAuth">(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false </param>
         /// <returns>Payment</returns>
-        Payment POSTPaymentsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, bool? autoCapture, string acquirer, bool? autofee, string customerIp, Dictionary<string, string> extras, bool? zeroAuth);
+        Payment POSTPaymentsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, string cardApplePayToken, string cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, bool? autoCapture, string acquirer, bool? autofee, string customerIp, string extras, bool? zeroAuth);
         /// <summary>
         /// Cancel payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
         /// <returns>Payment</returns>
         Payment POSTPaymentsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, bool? synchronized);
         /// <summary>
         /// Capture payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
+        /// <param name="extras">Additional acquirer specific params </param>
         /// <returns>Payment</returns>
-        Payment POSTPaymentsIdCaptureFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, Dictionary<string, string> extras);
+        Payment POSTPaymentsIdCaptureFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, string extras);
         /// <summary>
         /// Create fraud confirmation report  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
         /// <param name="description"> </param>
         /// <returns>FraudReport</returns>
         FraudReport POSTPaymentsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, string description);
         /// <summary>
         /// Refund payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt; </param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
+        /// <param name="vatRate">Vate rate </param>
+        /// <param name="extras">Additional acquirer specific params </param>
         /// <returns>Payment</returns>
-        Payment POSTPaymentsIdRefundFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, Dictionary<string, string> extras);
+        Payment POSTPaymentsIdRefundFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string extras);
         /// <summary>
         /// Renew authorization  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
         /// <returns>Payment</returns>
         Payment POSTPaymentsIdRenewFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, bool? synchronized);
         /// <summary>
         /// Create payment session  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param>
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param>
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param>
-        /// <param name="autoCapture">&lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param>
-        /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt; </param>
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param>
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt; </param>
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt; </param>
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt; </param>
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Payment id </param>
+        /// <param name="amount">Amount </param>
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param>
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param>
+        /// <param name="autoCapture">When true, payment is captured after authorization. Default is false </param>
+        /// <param name="acquirer">If set, will force the use of this acquirer </param>
+        /// <param name="autofee">When true, fee is calculated and added to the given amount. Default is merchant autofee </param>
+        /// <param name="customerIp">Customer IP </param>
+        /// <param name="personFirstName">Person first name </param>
+        /// <param name="personLastName">Person last name </param>
+        /// <param name="personEmail">Person email </param>
+        /// <param name="extras">Additional acquirer specific params </param>
         /// <returns>Payment</returns>
-        Payment POSTPaymentsIdSessionFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, bool? autoCapture, string acquirer, bool? autofee, string customerIp, string personFirstName, string personLastName, string personEmail, Dictionary<string, string> extras);
+        Payment POSTPaymentsIdSessionFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, bool? autoCapture, string acquirer, bool? autofee, string customerIp, string personFirstName, string personLastName, string personEmail, string extras);
         /// <summary>
         /// Create or update a payment link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id">&lt;p&gt;Transaction id&lt;/p&gt; </param>
-        /// <param name="amount">&lt;p&gt;Amount to authorize&lt;/p&gt; </param>
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt; </param>
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt; </param>
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt; </param>
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt; </param>
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt; </param>
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt; </param>
-        /// <param name="autoFee">&lt;p&gt;Add acquirer fee to amount. Default is merchant autofee&lt;/p&gt; </param>
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt; </param>
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param>
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param>
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param>
-        /// <param name="deadline">&lt;p&gt;Set a deadline in seconds for the cardholder to complete&lt;/p&gt; </param>
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param>
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param>
-        /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt; </param>
-        /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt; </param>
-        /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt; </param>
-        /// <param name="autoCapture">&lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="id">Transaction id </param>
+        /// <param name="amount">Amount to authorize </param>
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement </param>
+        /// <param name="language">Language </param>
+        /// <param name="continueUrl">Url that cardholder is redirected to after authorize </param>
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation </param>
+        /// <param name="callbackUrl">Endpoint for async callback </param>
+        /// <param name="paymentMethods">Limit payment methods </param>
+        /// <param name="autoFee">Add acquirer fee to amount. Default is merchant autofee </param>
+        /// <param name="brandingId">Override branding. Default is merchant default branding </param>
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics </param>
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics </param>
+        /// <param name="acquirer">Force usage of the given acquirer </param>
+        /// <param name="deadline">Set a deadline in seconds for the cardholder to complete </param>
+        /// <param name="framed">Allow opening in iframe </param>
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding </param>
+        /// <param name="customerEmail">Required for PayPal. Email of customer. </param>
+        /// <param name="invoiceAddressSelection">Get customer invoice address via acquirer (Currently MobilePay and PayPal only) </param>
+        /// <param name="shippingAddressSelection">Get customer shipping address via acquirer (Currently MobilePay and PayPal only) </param>
+        /// <param name="autoCapture">When true, payment is captured after authorization. Default is false </param>
         /// <returns>PaymentLinkUrl</returns>
-        PaymentLinkUrl PUTPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, bool? autoFee, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, int? deadline, bool? framed, Dictionary<string, string> brandingConfig, string customerEmail, bool? invoiceAddressSelection, bool? shippingAddressSelection, bool? autoCapture);
+        PaymentLinkUrl PUTPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, bool? autoFee, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, int? deadline, bool? framed, string brandingConfig, string customerEmail, bool? invoiceAddressSelection, bool? shippingAddressSelection, bool? autoCapture);
     }
   
     /// <summary>
@@ -327,9 +327,9 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete payment link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Transaction id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Transaction id </param> 
         /// <returns></returns>            
         public void DELETEPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id)
         {
@@ -374,27 +374,27 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get all payments  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="dateYear">&lt;p&gt;Year&lt;/p&gt; </param> 
-        /// <param name="dateMonth">&lt;p&gt;Month&lt;/p&gt; </param> 
-        /// <param name="dateDay">&lt;p&gt;Day of the month&lt;/p&gt; </param> 
-        /// <param name="dateHour">&lt;p&gt;Hour of the day&lt;/p&gt; </param> 
-        /// <param name="dateMinute">&lt;p&gt;Minute of the hour&lt;/p&gt; </param> 
-        /// <param name="timestamp">&lt;p&gt;Timestamp field&lt;/p&gt; </param> 
-        /// <param name="minTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param> 
-        /// <param name="maxTime">&lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt; </param> 
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param> 
-        /// <param name="accepted">&lt;p&gt;Return accepted payments&lt;/p&gt; </param> 
-        /// <param name="orderId">&lt;p&gt;Find by order_id&lt;/p&gt; </param> 
-        /// <param name="state">&lt;p&gt;Find by state&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Find by transaction id&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Filter by acquirer&lt;/p&gt; </param> 
-        /// <param name="fraudSuspected">&lt;p&gt;Filter by suspected fraud&lt;/p&gt; </param> 
-        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt; </param> 
-        /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt; </param> 
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt; </param> 
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="dateYear">Year </param> 
+        /// <param name="dateMonth">Month </param> 
+        /// <param name="dateDay">Day of the month </param> 
+        /// <param name="dateHour">Hour of the day </param> 
+        /// <param name="dateMinute">Minute of the hour </param> 
+        /// <param name="timestamp">Timestamp field </param> 
+        /// <param name="minTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param> 
+        /// <param name="maxTime">Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z” </param> 
+        /// <param name="operationsSize">Maximum number of operations to retrieve </param> 
+        /// <param name="accepted">Return accepted payments </param> 
+        /// <param name="orderId">Find by order_id </param> 
+        /// <param name="state">Find by state </param> 
+        /// <param name="id">Find by transaction id </param> 
+        /// <param name="acquirer">Filter by acquirer </param> 
+        /// <param name="fraudSuspected">Filter by suspected fraud </param> 
+        /// <param name="page">Pagination page. Default is 1 </param> 
+        /// <param name="pageSize">Items per page. Default is 20 </param> 
+        /// <param name="sortBy">Property to sort by </param> 
+        /// <param name="sortDir">Sort direction </param> 
         /// <param name="pageKey"> </param> 
         /// <returns>List&lt;Payment&gt;</returns>            
         public List<Payment> GETPaymentsFormat (string acceptVersion, string authorization, int? dateYear, int? dateMonth, int? dateDay, int? dateHour, int? dateMinute, string timestamp, string minTime, string maxTime, int? operationsSize, bool? accepted, string orderId, string state, int? id, string acquirer, bool? fraudSuspected, int? page, int? pageSize, string sortBy, string sortDir, string pageKey)
@@ -456,10 +456,10 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="operationsSize">&lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="operationsSize">Maximum number of operations to retrieve </param> 
         /// <returns>Payment</returns>            
         public Payment GETPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? operationsSize)
         {
@@ -505,10 +505,10 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get Operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="operationId">Operations id </param> 
         /// <returns>Operation</returns>            
         public Operation GETPaymentsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId)
         {
@@ -557,52 +557,52 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
         /// <summary>
         /// Update payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="basketQty">&lt;p&gt;Quantity&lt;/p&gt; </param> 
-        /// <param name="basketItemNo">&lt;p&gt;Item reference number&lt;/p&gt; </param> 
-        /// <param name="basketItemName">&lt;p&gt;Item name&lt;/p&gt; </param> 
-        /// <param name="basketItemPrice">&lt;p&gt;Per item price (incl. VAT)&lt;/p&gt; </param> 
-        /// <param name="basketVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param> 
-        /// <param name="deadlineAt">&lt;p&gt;Payment must be authorized before this time&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressName">&lt;p&gt;Name&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCity">&lt;p&gt;City&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param> 
-        /// <param name="shippingAddressName">&lt;p&gt;Name&lt;/p&gt; </param> 
-        /// <param name="shippingAddressAtt">&lt;p&gt;Att&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCompanyName">&lt;p&gt;Company name&lt;/p&gt; </param> 
-        /// <param name="shippingAddressStreet">&lt;p&gt;Street&lt;/p&gt; </param> 
-        /// <param name="shippingAddressHouseNumber">&lt;p&gt;House number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressHouseExtension">&lt;p&gt;House extension&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCity">&lt;p&gt;City&lt;/p&gt; </param> 
-        /// <param name="shippingAddressZipCode">&lt;p&gt;Zip code&lt;/p&gt; </param> 
-        /// <param name="shippingAddressRegion">&lt;p&gt;Region&lt;/p&gt; </param> 
-        /// <param name="shippingAddressCountryCode">&lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt; </param> 
-        /// <param name="shippingAddressVatNo">&lt;p&gt;VAT registration number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressPhoneNumber">&lt;p&gt;Phone number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressMobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param> 
-        /// <param name="shippingAddressEmail">&lt;p&gt;Email address&lt;/p&gt; </param> 
-        /// <param name="shippingMethod">&lt;p&gt;Shipping method&lt;/p&gt; </param> 
-        /// <param name="shippingCompany">&lt;p&gt;Shipping company&lt;/p&gt; </param> 
-        /// <param name="shippingAmount">&lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt; </param> 
-        /// <param name="shippingVatRate">&lt;p&gt;VAT rate&lt;/p&gt; </param> 
-        /// <param name="shippingTrackingNumber">&lt;p&gt;Shipping tracking number&lt;/p&gt; </param> 
-        /// <param name="shippingTrackingUrl">&lt;p&gt;Shipping tracking url&lt;/p&gt; </param> 
-        /// <param name="variables">&lt;p&gt;Custom variables&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="basketQty">Quantity </param> 
+        /// <param name="basketItemNo">Item reference number </param> 
+        /// <param name="basketItemName">Item name </param> 
+        /// <param name="basketItemPrice">Per item price (incl. VAT) </param> 
+        /// <param name="basketVatRate">VAT rate </param> 
+        /// <param name="deadlineAt">Payment must be authorized before this time </param> 
+        /// <param name="invoiceAddressName">Name </param> 
+        /// <param name="invoiceAddressAtt">Att </param> 
+        /// <param name="invoiceAddressCompanyName">Company name </param> 
+        /// <param name="invoiceAddressStreet">Street </param> 
+        /// <param name="invoiceAddressHouseNumber">House number </param> 
+        /// <param name="invoiceAddressHouseExtension">House extension </param> 
+        /// <param name="invoiceAddressCity">City </param> 
+        /// <param name="invoiceAddressZipCode">Zip code </param> 
+        /// <param name="invoiceAddressRegion">Region </param> 
+        /// <param name="invoiceAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param> 
+        /// <param name="invoiceAddressVatNo">VAT registration number </param> 
+        /// <param name="invoiceAddressPhoneNumber">Phone number </param> 
+        /// <param name="invoiceAddressMobileNumber">Mobile number </param> 
+        /// <param name="invoiceAddressEmail">Email address </param> 
+        /// <param name="shippingAddressName">Name </param> 
+        /// <param name="shippingAddressAtt">Att </param> 
+        /// <param name="shippingAddressCompanyName">Company name </param> 
+        /// <param name="shippingAddressStreet">Street </param> 
+        /// <param name="shippingAddressHouseNumber">House number </param> 
+        /// <param name="shippingAddressHouseExtension">House extension </param> 
+        /// <param name="shippingAddressCity">City </param> 
+        /// <param name="shippingAddressZipCode">Zip code </param> 
+        /// <param name="shippingAddressRegion">Region </param> 
+        /// <param name="shippingAddressCountryCode">Three letter country code according to ISO 3166-1 Alpha-3 </param> 
+        /// <param name="shippingAddressVatNo">VAT registration number </param> 
+        /// <param name="shippingAddressPhoneNumber">Phone number </param> 
+        /// <param name="shippingAddressMobileNumber">Mobile number </param> 
+        /// <param name="shippingAddressEmail">Email address </param> 
+        /// <param name="shippingMethod">Shipping method </param> 
+        /// <param name="shippingCompany">Shipping company </param> 
+        /// <param name="shippingAmount">Shipping price (incl. VAT) </param> 
+        /// <param name="shippingVatRate">VAT rate </param> 
+        /// <param name="shippingTrackingNumber">Shipping tracking number </param> 
+        /// <param name="shippingTrackingUrl">Shipping tracking url </param> 
+        /// <param name="variables">Custom variables </param> 
         /// <returns>Payment</returns>            
-        public Payment PATCHPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, DateTime? deadlineAt, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, string shippingMethod, string shippingCompany, int? shippingAmount, float? shippingVatRate, string shippingTrackingNumber, string shippingTrackingUrl, Dictionary<string, string> variables)
+        public Payment PATCHPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, DateTime? deadlineAt, string invoiceAddressName, string invoiceAddressAtt, string invoiceAddressCompanyName, string invoiceAddressStreet, string invoiceAddressHouseNumber, string invoiceAddressHouseExtension, string invoiceAddressCity, string invoiceAddressZipCode, string invoiceAddressRegion, string invoiceAddressCountryCode, string invoiceAddressVatNo, string invoiceAddressPhoneNumber, string invoiceAddressMobileNumber, string invoiceAddressEmail, string shippingAddressName, string shippingAddressAtt, string shippingAddressCompanyName, string shippingAddressStreet, string shippingAddressHouseNumber, string shippingAddressHouseExtension, string shippingAddressCity, string shippingAddressZipCode, string shippingAddressRegion, string shippingAddressCountryCode, string shippingAddressVatNo, string shippingAddressPhoneNumber, string shippingAddressMobileNumber, string shippingAddressEmail, string shippingMethod, string shippingCompany, int? shippingAmount, float? shippingVatRate, string shippingTrackingNumber, string shippingTrackingUrl, string variables)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -701,11 +701,11 @@ if (variables != null) formParams.Add("variables", ApiClient.ParameterToString(v
         /// <summary>
         /// Update operation  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="operationId">&lt;p&gt;Operations id&lt;/p&gt; </param> 
-        /// <param name="pending">&lt;p&gt;Aborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="operationId">Operations id </param> 
+        /// <param name="pending">Aborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value) </param> 
         /// <returns>Operation</returns>            
         public Operation PATCHPaymentsIdOperationsOperationIdFormat (string acceptVersion, string authorization, int? id, int? operationId, bool? pending)
         {
@@ -758,8 +758,8 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
         /// <summary>
         /// Create payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <param name="payment">Payment</param> 
         /// <returns>Payment</returns>            
         public Payment POSTPaymentsFormat (string acceptVersion, string authorization, Payment payment)
@@ -805,40 +805,40 @@ path = path.Replace("{" + "operation_id" + "}", ApiClient.ParameterToString(oper
         /// <summary>
         /// Authorize payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt; </param> 
-        /// <param name="cardNumber">&lt;p&gt;Card number&lt;/p&gt; </param> 
-        /// <param name="cardExpiration">&lt;p&gt;Expiration date (YYMM)&lt;/p&gt; </param> 
-        /// <param name="cardCvd">&lt;p&gt;CVD/CVV&lt;/p&gt; </param> 
-        /// <param name="cardToken">&lt;p&gt;Card token&lt;/p&gt; </param> 
-        /// <param name="cardApplePayToken">&lt;p&gt;Apple Pay payment-token&lt;/p&gt; </param> 
-        /// <param name="cardMobilepayOnlineToken">&lt;p&gt;MobilePay Online payment-token&lt;/p&gt; </param> 
-        /// <param name="cardIssuedTo">&lt;p&gt;Card holder name&lt;/p&gt; </param> 
-        /// <param name="cardBrand">&lt;p&gt;Brand to use on multi-brand card&lt;/p&gt; </param> 
-        /// <param name="cardStatus">&lt;p&gt;3D-Secure status&lt;/p&gt; </param> 
-        /// <param name="cardEci">&lt;p&gt;3D-Secure eci&lt;/p&gt; </param> 
-        /// <param name="cardXav">&lt;p&gt;3D-Secure xav&lt;/p&gt; </param> 
-        /// <param name="cardCavv">&lt;p&gt;3D-Secure cavv&lt;/p&gt; </param> 
-        /// <param name="mobileNumber">&lt;p&gt;Mobile number&lt;/p&gt; </param> 
-        /// <param name="ninNumber">&lt;p&gt;Customer NIN Number&lt;/p&gt; </param> 
-        /// <param name="ninCountryCode">&lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt; </param> 
-        /// <param name="ninGender">&lt;p&gt;Customer gender&lt;/p&gt; </param> 
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt; </param> 
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt; </param> 
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt; </param> 
-        /// <param name="autoCapture">&lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
-        /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt; </param> 
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param> 
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
-        /// <param name="zeroAuth">&lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="amount">Amount </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
+        /// <param name="vatRate">Vate rate </param> 
+        /// <param name="cardNumber">Card number </param> 
+        /// <param name="cardExpiration">Expiration date (YYMM) </param> 
+        /// <param name="cardCvd">CVD/CVV </param> 
+        /// <param name="cardToken">Card token </param> 
+        /// <param name="cardApplePayToken">Apple Pay payment-token </param> 
+        /// <param name="cardMobilepayOnlineToken">MobilePay Online payment-token </param> 
+        /// <param name="cardIssuedTo">Card holder name </param> 
+        /// <param name="cardBrand">Brand to use on multi-brand card </param> 
+        /// <param name="cardStatus">3D-Secure status </param> 
+        /// <param name="cardEci">3D-Secure eci </param> 
+        /// <param name="cardXav">3D-Secure xav </param> 
+        /// <param name="cardCavv">3D-Secure cavv </param> 
+        /// <param name="mobileNumber">Mobile number </param> 
+        /// <param name="ninNumber">Customer NIN Number </param> 
+        /// <param name="ninCountryCode">Customer country (ISO 3166-1 Alpha-3) </param> 
+        /// <param name="ninGender">Customer gender </param> 
+        /// <param name="personFirstName">Person first name </param> 
+        /// <param name="personLastName">Person last name </param> 
+        /// <param name="personEmail">Person email </param> 
+        /// <param name="autoCapture">When true, payment is captured after authorization. Default is false </param> 
+        /// <param name="acquirer">If set, will force the use of this acquirer </param> 
+        /// <param name="autofee">When true, fee is calculated and added to the given amount. Default is merchant autofee </param> 
+        /// <param name="customerIp">Customer IP </param> 
+        /// <param name="extras">Additional acquirer specific params </param> 
+        /// <param name="zeroAuth">(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false </param> 
         /// <returns>Payment</returns>            
-        public Payment POSTPaymentsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, Dictionary<string, string> cardApplePayToken, Dictionary<string, string> cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, bool? autoCapture, string acquirer, bool? autofee, string customerIp, Dictionary<string, string> extras, bool? zeroAuth)
+        public Payment POSTPaymentsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string cardNumber, string cardExpiration, string cardCvd, string cardToken, string cardApplePayToken, string cardMobilepayOnlineToken, string cardIssuedTo, string cardBrand, string cardStatus, string cardEci, string cardXav, string cardCavv, string mobileNumber, string ninNumber, string ninCountryCode, string ninGender, string personFirstName, string personLastName, string personEmail, bool? autoCapture, string acquirer, bool? autofee, string customerIp, string extras, bool? zeroAuth)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -913,11 +913,11 @@ if (zeroAuth != null) formParams.Add("zero_auth", ApiClient.ParameterToString(ze
         /// <summary>
         /// Cancel payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
         /// <returns>Payment</returns>            
         public Payment POSTPaymentsIdCancelFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, bool? synchronized)
         {
@@ -964,15 +964,15 @@ if (zeroAuth != null) formParams.Add("zero_auth", ApiClient.ParameterToString(ze
         /// <summary>
         /// Capture payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="amount">Amount </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
+        /// <param name="extras">Additional acquirer specific params </param> 
         /// <returns>Payment</returns>            
-        public Payment POSTPaymentsIdCaptureFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, Dictionary<string, string> extras)
+        public Payment POSTPaymentsIdCaptureFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, string extras)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1022,10 +1022,10 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create fraud confirmation report  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
         /// <param name="description"> </param> 
         /// <returns>FraudReport</returns>            
         public FraudReport POSTPaymentsIdFraudReportFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, string description)
@@ -1073,16 +1073,16 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Refund payment  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
-        /// <param name="vatRate">&lt;p&gt;Vate rate&lt;/p&gt; </param> 
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="amount">Amount </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
+        /// <param name="vatRate">Vate rate </param> 
+        /// <param name="extras">Additional acquirer specific params </param> 
         /// <returns>Payment</returns>            
-        public Payment POSTPaymentsIdRefundFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, Dictionary<string, string> extras)
+        public Payment POSTPaymentsIdRefundFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, float? vatRate, string extras)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1133,11 +1133,11 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Renew authorization  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
         /// <returns>Payment</returns>            
         public Payment POSTPaymentsIdRenewFormat (string acceptVersion, string authorization, int? id, string quickPayCallbackUrl, bool? synchronized)
         {
@@ -1184,22 +1184,22 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create payment session  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Payment id&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount&lt;/p&gt; </param> 
-        /// <param name="quickPayCallbackUrl">&lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt; </param> 
-        /// <param name="synchronized">&lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt; </param> 
-        /// <param name="autoCapture">&lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt; </param> 
-        /// <param name="autofee">&lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt; </param> 
-        /// <param name="customerIp">&lt;p&gt;Customer IP&lt;/p&gt; </param> 
-        /// <param name="personFirstName">&lt;p&gt;Person first name&lt;/p&gt; </param> 
-        /// <param name="personLastName">&lt;p&gt;Person last name&lt;/p&gt; </param> 
-        /// <param name="personEmail">&lt;p&gt;Person email&lt;/p&gt; </param> 
-        /// <param name="extras">&lt;p&gt;Additional acquirer specific params&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Payment id </param> 
+        /// <param name="amount">Amount </param> 
+        /// <param name="quickPayCallbackUrl">Specify the callback url (overrides merchant default callback-url) </param> 
+        /// <param name="synchronized">Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required) </param> 
+        /// <param name="autoCapture">When true, payment is captured after authorization. Default is false </param> 
+        /// <param name="acquirer">If set, will force the use of this acquirer </param> 
+        /// <param name="autofee">When true, fee is calculated and added to the given amount. Default is merchant autofee </param> 
+        /// <param name="customerIp">Customer IP </param> 
+        /// <param name="personFirstName">Person first name </param> 
+        /// <param name="personLastName">Person last name </param> 
+        /// <param name="personEmail">Person email </param> 
+        /// <param name="extras">Additional acquirer specific params </param> 
         /// <returns>Payment</returns>            
-        public Payment POSTPaymentsIdSessionFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, bool? autoCapture, string acquirer, bool? autofee, string customerIp, string personFirstName, string personLastName, string personEmail, Dictionary<string, string> extras)
+        public Payment POSTPaymentsIdSessionFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl, bool? synchronized, bool? autoCapture, string acquirer, bool? autofee, string customerIp, string personFirstName, string personLastName, string personEmail, string extras)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -1256,30 +1256,30 @@ if (extras != null) formParams.Add("extras", ApiClient.ParameterToString(extras)
         /// <summary>
         /// Create or update a payment link  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
-        /// <param name="id">&lt;p&gt;Transaction id&lt;/p&gt; </param> 
-        /// <param name="amount">&lt;p&gt;Amount to authorize&lt;/p&gt; </param> 
-        /// <param name="agreementId">&lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt; </param> 
-        /// <param name="language">&lt;p&gt;Language&lt;/p&gt; </param> 
-        /// <param name="continueUrl">&lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt; </param> 
-        /// <param name="cancelUrl">&lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt; </param> 
-        /// <param name="callbackUrl">&lt;p&gt;Endpoint for async callback&lt;/p&gt; </param> 
-        /// <param name="paymentMethods">&lt;p&gt;Limit payment methods&lt;/p&gt; </param> 
-        /// <param name="autoFee">&lt;p&gt;Add acquirer fee to amount. Default is merchant autofee&lt;/p&gt; </param> 
-        /// <param name="brandingId">&lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt; </param> 
-        /// <param name="googleAnalyticsTrackingId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param> 
-        /// <param name="googleAnalyticsClientId">&lt;p&gt;Send events to Google Analytics&lt;/p&gt; </param> 
-        /// <param name="acquirer">&lt;p&gt;Force usage of the given acquirer&lt;/p&gt; </param> 
-        /// <param name="deadline">&lt;p&gt;Set a deadline in seconds for the cardholder to complete&lt;/p&gt; </param> 
-        /// <param name="framed">&lt;p&gt;Allow opening in iframe&lt;/p&gt; </param> 
-        /// <param name="brandingConfig">&lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt; </param> 
-        /// <param name="customerEmail">&lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt; </param> 
-        /// <param name="invoiceAddressSelection">&lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt; </param> 
-        /// <param name="shippingAddressSelection">&lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt; </param> 
-        /// <param name="autoCapture">&lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
+        /// <param name="id">Transaction id </param> 
+        /// <param name="amount">Amount to authorize </param> 
+        /// <param name="agreementId">Agreement to use. Defaults to the Payment Window agreement </param> 
+        /// <param name="language">Language </param> 
+        /// <param name="continueUrl">Url that cardholder is redirected to after authorize </param> 
+        /// <param name="cancelUrl">Url that cardholder is redirected to after cancelation </param> 
+        /// <param name="callbackUrl">Endpoint for async callback </param> 
+        /// <param name="paymentMethods">Limit payment methods </param> 
+        /// <param name="autoFee">Add acquirer fee to amount. Default is merchant autofee </param> 
+        /// <param name="brandingId">Override branding. Default is merchant default branding </param> 
+        /// <param name="googleAnalyticsTrackingId">Send events to Google Analytics </param> 
+        /// <param name="googleAnalyticsClientId">Send events to Google Analytics </param> 
+        /// <param name="acquirer">Force usage of the given acquirer </param> 
+        /// <param name="deadline">Set a deadline in seconds for the cardholder to complete </param> 
+        /// <param name="framed">Allow opening in iframe </param> 
+        /// <param name="brandingConfig">Config for branding. Will be merged with the default config in the branding </param> 
+        /// <param name="customerEmail">Required for PayPal. Email of customer. </param> 
+        /// <param name="invoiceAddressSelection">Get customer invoice address via acquirer (Currently MobilePay and PayPal only) </param> 
+        /// <param name="shippingAddressSelection">Get customer shipping address via acquirer (Currently MobilePay and PayPal only) </param> 
+        /// <param name="autoCapture">When true, payment is captured after authorization. Default is false </param> 
         /// <returns>PaymentLinkUrl</returns>            
-        public PaymentLinkUrl PUTPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, bool? autoFee, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, int? deadline, bool? framed, Dictionary<string, string> brandingConfig, string customerEmail, bool? invoiceAddressSelection, bool? shippingAddressSelection, bool? autoCapture)
+        public PaymentLinkUrl PUTPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId, string language, string continueUrl, string cancelUrl, string callbackUrl, string paymentMethods, bool? autoFee, int? brandingId, string googleAnalyticsTrackingId, string googleAnalyticsClientId, string acquirer, int? deadline, bool? framed, string brandingConfig, string customerEmail, bool? invoiceAddressSelection, bool? shippingAddressSelection, bool? autoCapture)
         {
             
             // verify the required parameter 'acceptVersion' is set

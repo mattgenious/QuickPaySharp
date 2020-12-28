@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,8 +31,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>PaymentMethodPriority</returns>
         PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization);
 
@@ -43,8 +43,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of PaymentMethodPriority</returns>
         ApiResponse<PaymentMethodPriority> GETPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -54,11 +54,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns></returns>
-        void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority);
+        void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, string paymentMethodPriority);
 
         /// <summary>
         /// Replaces the payment method priority of the merchant
@@ -67,11 +67,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> POSTPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority);
+        ApiResponse<Object> POSTPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization, string paymentMethodPriority);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -81,8 +81,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of PaymentMethodPriority</returns>
         System.Threading.Tasks.Task<PaymentMethodPriority> GETPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization);
 
@@ -93,8 +93,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (PaymentMethodPriority)</returns>
         System.Threading.Tasks.Task<ApiResponse<PaymentMethodPriority>> GETPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization);
         /// <summary>
@@ -104,11 +104,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task POSTPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority);
+        System.Threading.Tasks.Task POSTPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization, string paymentMethodPriority);
 
         /// <summary>
         /// Replaces the payment method priority of the merchant
@@ -117,11 +117,11 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> POSTPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority);
+        System.Threading.Tasks.Task<ApiResponse<Object>> POSTPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string paymentMethodPriority);
         #endregion Asynchronous Operations
     }
 
@@ -226,8 +226,8 @@ namespace IO.Swagger.Api
         /// Get merchant payment method priority  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>PaymentMethodPriority</returns>
         public PaymentMethodPriority GETPaymentMethodPriorityFormat (string acceptVersion, string authorization)
         {
@@ -239,8 +239,8 @@ namespace IO.Swagger.Api
         /// Get merchant payment method priority  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>ApiResponse of PaymentMethodPriority</returns>
         public ApiResponse< PaymentMethodPriority > GETPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -301,8 +301,8 @@ namespace IO.Swagger.Api
         /// Get merchant payment method priority  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of PaymentMethodPriority</returns>
         public async System.Threading.Tasks.Task<PaymentMethodPriority> GETPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization)
         {
@@ -315,8 +315,8 @@ namespace IO.Swagger.Api
         /// Get merchant payment method priority  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Task of ApiResponse (PaymentMethodPriority)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<PaymentMethodPriority>> GETPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization)
         {
@@ -377,11 +377,11 @@ namespace IO.Swagger.Api
         /// Replaces the payment method priority of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns></returns>
-        public void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority)
+        public void POSTPaymentMethodPriorityFormat (string acceptVersion, string authorization, string paymentMethodPriority)
         {
              POSTPaymentMethodPriorityFormatWithHttpInfo(acceptVersion, authorization, paymentMethodPriority);
         }
@@ -390,11 +390,11 @@ namespace IO.Swagger.Api
         /// Replaces the payment method priority of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> POSTPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority)
+        public ApiResponse<Object> POSTPaymentMethodPriorityFormatWithHttpInfo (string acceptVersion, string authorization, string paymentMethodPriority)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
@@ -458,11 +458,11 @@ namespace IO.Swagger.Api
         /// Replaces the payment method priority of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task POSTPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority)
+        public async System.Threading.Tasks.Task POSTPaymentMethodPriorityFormatAsync (string acceptVersion, string authorization, string paymentMethodPriority)
         {
              await POSTPaymentMethodPriorityFormatAsyncWithHttpInfo(acceptVersion, authorization, paymentMethodPriority);
 
@@ -472,11 +472,11 @@ namespace IO.Swagger.Api
         /// Replaces the payment method priority of the merchant  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="paymentMethodPriority">&lt;p&gt;A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … }&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
+        /// <param name="paymentMethodPriority">A map of payment method to acquirers, e.g. { “visa”: [“clearhaus”, “nets”], … } </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> POSTPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, Dictionary<string, string> paymentMethodPriority)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> POSTPaymentMethodPriorityFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string paymentMethodPriority)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)

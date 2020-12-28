@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -235,7 +235,7 @@ namespace IO.Swagger.Test
             //int? acquirerSettingsMobilepaysubscriptionsLastTokenRefresh = null;
             //string acquirerSettingsMobilepaysubscriptionsNonce = null;
             //int? acquirerSettingsMobilepaysubscriptionsPendingStatus = null;
-            //Dictionary<string, string> acquirerSettingsMobilepaysubscriptionsProvider = null;
+            //string acquirerSettingsMobilepaysubscriptionsProvider = null;
             //string acquirerSettingsMobilepaysubscriptionsRefreshToken = null;
             //bool? acquirerSettingsNetsActive = null;
             //string acquirerSettingsNetsIdentificationCode = null;
@@ -254,7 +254,7 @@ namespace IO.Swagger.Test
             //bool? acquirerSettingsPaypalCreditCard = null;
             //string acquirerSettingsPaypalToken = null;
             //string acquirerSettingsPaypalTokenSecret = null;
-            //List<string> acquirerSettingsPaypalScope = null;
+            //string acquirerSettingsPaypalScope = null;
             //bool? acquirerSettingsSofortActive = null;
             //int? acquirerSettingsSofortCustomerNumber = null;
             //int? acquirerSettingsSofortProjectId = null;
@@ -317,7 +317,7 @@ namespace IO.Swagger.Test
             //bool? autofee = null;
             //string defaultPaymentMethods = null;
             //string shopUrl = null;
-            //List<string> shopUrls = null;
+            //string shopUrls = null;
             //string contactEmail = null;
             //string shopName = null;
             //string shopsystem = null;
@@ -328,7 +328,7 @@ namespace IO.Swagger.Test
             //bool? allowTestTransactions = null;
             //string defaultPaymentLanguage = null;
             //string defaultTextOnStatement = null;
-            //Dictionary<string, string> defaultBrandingConfig = null;
+            //string defaultBrandingConfig = null;
             //var response = instance.PATCHAccountFormat(acceptVersion, authorization, customerAddressName, customerAddressAtt, customerAddressStreet, customerAddressCity, customerAddressZipCode, customerAddressRegion, customerAddressCountryCode, customerAddressVatNo, billingAddressName, billingAddressAtt, billingAddressStreet, billingAddressCity, billingAddressZipCode, billingAddressRegion, billingAddressCountryCode, billingAddressVatNo, callbackUrl, acquirerSettingsBamboraActive, acquirerSettingsBamboraIdentificationCode, acquirerSettingsBamboraIdentificationCodeInt, acquirerSettingsBamboraBusinessCode, acquirerSettingsBamboraRecurring, acquirerSettingsBamboraAmericanexpress, acquirerSettingsBamboraDinersclub, acquirerSettingsBamboraSecurepay, acquirerSettingsBamboraVisaMpiMerchantId, acquirerSettingsBamboraMastercardMpiMerchantId, acquirerSettingsBamboraVisaBin, acquirerSettingsBamboraMastercardBin, acquirerSettingsClearhausActive, acquirerSettingsClearhausApiKey, acquirerSettingsClearhausRecurring, acquirerSettingsClearhausPayout, acquirerSettingsClearhausApplePay, acquirerSettingsElavonActive, acquirerSettingsElavonIdentificationCode, acquirerSettingsElavonIdentificationCodeInt, acquirerSettingsElavonBusinessCode, acquirerSettingsElavonRecurring, acquirerSettingsElavonAmericanexpress, acquirerSettingsElavonDinersclub, acquirerSettingsElavonSecurepay, acquirerSettingsElavonVisaMpiMerchantId, acquirerSettingsElavonMastercardMpiMerchantId, acquirerSettingsElavonVisaBin, acquirerSettingsElavonMastercardBin, acquirerSettingsHandelsbankenActive, acquirerSettingsHandelsbankenIdentificationCode, acquirerSettingsHandelsbankenIdentificationCodeInt, acquirerSettingsHandelsbankenBusinessCode, acquirerSettingsHandelsbankenRecurring, acquirerSettingsHandelsbankenAmericanexpress, acquirerSettingsHandelsbankenDinersclub, acquirerSettingsHandelsbankenSecurepay, acquirerSettingsHandelsbankenVisaMpiMerchantId, acquirerSettingsHandelsbankenMastercardMpiMerchantId, acquirerSettingsHandelsbankenVisaBin, acquirerSettingsHandelsbankenMastercardBin, acquirerSettingsKlarnaActive, acquirerSettingsKlarnaEid, acquirerSettingsKlarnaSharedSecret, acquirerSettingsMobilepayActive, acquirerSettingsMobilepayDeliveryLimitedTo, acquirerSettingsMobilepaysubscriptionsActive, acquirerSettingsMobilepaysubscriptionsAuthState, acquirerSettingsMobilepaysubscriptionsCodeVerifier, acquirerSettingsMobilepaysubscriptionsLastTokenRefresh, acquirerSettingsMobilepaysubscriptionsNonce, acquirerSettingsMobilepaysubscriptionsPendingStatus, acquirerSettingsMobilepaysubscriptionsProvider, acquirerSettingsMobilepaysubscriptionsRefreshToken, acquirerSettingsNetsActive, acquirerSettingsNetsIdentificationCode, acquirerSettingsNetsBusinessCode, acquirerSettingsNetsRecurring, acquirerSettingsNetsFbg1886, acquirerSettingsNetsSecuredByNets, acquirerSettingsNetsIdentificationCodeInt, acquirerSettingsNetsAmericanexpress, acquirerSettingsNetsDinersclub, acquirerSettingsNetsSecurepay, acquirerSettingsNetsVisaBin, acquirerSettingsNetsMastercardBin, acquirerSettingsPaypalActive, acquirerSettingsPaypalRecurring, acquirerSettingsPaypalCreditCard, acquirerSettingsPaypalToken, acquirerSettingsPaypalTokenSecret, acquirerSettingsPaypalScope, acquirerSettingsSofortActive, acquirerSettingsSofortCustomerNumber, acquirerSettingsSofortProjectId, acquirerSettingsSofortApiKey, acquirerSettingsSofortGateway, acquirerSettingsSofortIdeal, acquirerSettingsSofortIdealProjectId, acquirerSettingsSofortIdealProjectPassword, acquirerSettingsSofortIdealNotificationPassword, acquirerSettingsSwedbankActive, acquirerSettingsSwedbankIdentificationCode, acquirerSettingsSwedbankIdentificationCodeInt, acquirerSettingsSwedbankBusinessCode, acquirerSettingsSwedbankRecurring, acquirerSettingsSwedbankAmericanexpress, acquirerSettingsSwedbankDinersclub, acquirerSettingsSwedbankSecurepay, acquirerSettingsSwedbankVisaMpiMerchantId, acquirerSettingsSwedbankMastercardMpiMerchantId, acquirerSettingsSwedbankVisaBin, acquirerSettingsSwedbankMastercardBin, acquirerSettingsTellerActive, acquirerSettingsTellerIdentificationCode, acquirerSettingsTellerIdentificationCodeInt, acquirerSettingsTellerBusinessCode, acquirerSettingsTellerRecurring, acquirerSettingsTellerAmericanexpress, acquirerSettingsTellerDinersclub, acquirerSettingsTellerSecurepay, acquirerSettingsTellerVisaMpiMerchantId, acquirerSettingsTellerMastercardMpiMerchantId, acquirerSettingsTellerVisaBin, acquirerSettingsTellerMastercardBin, acquirerSettingsValitorActive, acquirerSettingsValitorIdentificationCode, acquirerSettingsValitorIdentificationCodeInt, acquirerSettingsValitorBusinessCode, acquirerSettingsValitorRecurring, acquirerSettingsValitorAmericanexpress, acquirerSettingsValitorDinersclub, acquirerSettingsValitorSecurepay, acquirerSettingsValitorVisaMpiMerchantId, acquirerSettingsValitorMastercardMpiMerchantId, acquirerSettingsValitorVisaBin, acquirerSettingsValitorMastercardBin, acquirerSettingsViabillActive, acquirerSettingsViabillApiKey, integrationSettingsEconomicActive, integrationSettingsEconomicAgreement, integrationSettingsEconomicAgreementToken, pciSaqA, pciSaqAEp, pciSaqB, pciSaqBIp, pciSaqC, pciSaqCVt, pciSaqDMerchant, pciSaqDServiceProvider, pciSaqP2peHw, autofee, defaultPaymentMethods, shopUrl, shopUrls, contactEmail, shopName, shopsystem, timezone, locale, defaultBrandingId, loggingStopsAt, allowTestTransactions, defaultPaymentLanguage, defaultTextOnStatement, defaultBrandingConfig);
             //Assert.IsInstanceOf<Merchant> (response, "response is Merchant");
         }

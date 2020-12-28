@@ -44,9 +44,9 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Transaction id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Transaction id 
 
             try
             {
@@ -66,9 +66,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Transaction id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Transaction id  | 
 
 ### Return type
 
@@ -108,27 +108,27 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var dateYear = 56;  // int? | <p>Year</p>  (optional) 
-            var dateMonth = 56;  // int? | <p>Month</p>  (optional) 
-            var dateDay = 56;  // int? | <p>Day of the month</p>  (optional) 
-            var dateHour = 56;  // int? | <p>Hour of the day</p>  (optional) 
-            var dateMinute = 56;  // int? | <p>Minute of the hour</p>  (optional) 
-            var timestamp = timestamp_example;  // string | <p>Timestamp field</p>  (optional)  (default to created_at)
-            var minTime = minTime_example;  // string | <p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>  (optional) 
-            var maxTime = maxTime_example;  // string | <p>Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”</p>  (optional) 
-            var operationsSize = 56;  // int? | <p>Maximum number of operations to retrieve</p>  (optional) 
-            var accepted = true;  // bool? | <p>Return accepted payments</p>  (optional) 
-            var orderId = orderId_example;  // string | <p>Find by order_id</p>  (optional) 
-            var state = state_example;  // string | <p>Find by state</p>  (optional) 
-            var id = 56;  // int? | <p>Find by transaction id</p>  (optional) 
-            var acquirer = acquirer_example;  // string | <p>Filter by acquirer</p>  (optional) 
-            var fraudSuspected = true;  // bool? | <p>Filter by suspected fraud</p>  (optional) 
-            var page = 56;  // int? | <p>Pagination page. Default is 1</p>  (optional)  (default to 1)
-            var pageSize = 56;  // int? | <p>Items per page. Default is 20</p>  (optional)  (default to 20)
-            var sortBy = sortBy_example;  // string | <p>Property to sort by</p>  (optional)  (default to id)
-            var sortDir = sortDir_example;  // string | <p>Sort direction</p>  (optional)  (default to desc)
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var dateYear = 56;  // int? | Year  (optional) 
+            var dateMonth = 56;  // int? | Month  (optional) 
+            var dateDay = 56;  // int? | Day of the month  (optional) 
+            var dateHour = 56;  // int? | Hour of the day  (optional) 
+            var dateMinute = 56;  // int? | Minute of the hour  (optional) 
+            var timestamp = timestamp_example;  // string | Timestamp field  (optional)  (default to created_at)
+            var minTime = minTime_example;  // string | Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional) 
+            var maxTime = maxTime_example;  // string | Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  (optional) 
+            var operationsSize = 56;  // int? | Maximum number of operations to retrieve  (optional) 
+            var accepted = true;  // bool? | Return accepted payments  (optional) 
+            var orderId = orderId_example;  // string | Find by order_id  (optional) 
+            var state = state_example;  // string | Find by state  (optional) 
+            var id = 56;  // int? | Find by transaction id  (optional) 
+            var acquirer = acquirer_example;  // string | Filter by acquirer  (optional) 
+            var fraudSuspected = true;  // bool? | Filter by suspected fraud  (optional) 
+            var page = 56;  // int? | Pagination page. Default is 1  (optional)  (default to 1)
+            var pageSize = 56;  // int? | Items per page. Default is 20  (optional)  (default to 20)
+            var sortBy = sortBy_example;  // string | Property to sort by  (optional)  (default to id)
+            var sortDir = sortDir_example;  // string | Sort direction  (optional)  (default to desc)
             var pageKey = pageKey_example;  // string |   (optional) 
 
             try
@@ -150,27 +150,27 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **dateYear** | **int?**| &lt;p&gt;Year&lt;/p&gt;  | [optional] 
- **dateMonth** | **int?**| &lt;p&gt;Month&lt;/p&gt;  | [optional] 
- **dateDay** | **int?**| &lt;p&gt;Day of the month&lt;/p&gt;  | [optional] 
- **dateHour** | **int?**| &lt;p&gt;Hour of the day&lt;/p&gt;  | [optional] 
- **dateMinute** | **int?**| &lt;p&gt;Minute of the hour&lt;/p&gt;  | [optional] 
- **timestamp** | **string**| &lt;p&gt;Timestamp field&lt;/p&gt;  | [optional] [default to created_at]
- **minTime** | **string**| &lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  | [optional] 
- **maxTime** | **string**| &lt;p&gt;Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”&lt;/p&gt;  | [optional] 
- **operationsSize** | **int?**| &lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  | [optional] 
- **accepted** | **bool?**| &lt;p&gt;Return accepted payments&lt;/p&gt;  | [optional] 
- **orderId** | **string**| &lt;p&gt;Find by order_id&lt;/p&gt;  | [optional] 
- **state** | **string**| &lt;p&gt;Find by state&lt;/p&gt;  | [optional] 
- **id** | **int?**| &lt;p&gt;Find by transaction id&lt;/p&gt;  | [optional] 
- **acquirer** | **string**| &lt;p&gt;Filter by acquirer&lt;/p&gt;  | [optional] 
- **fraudSuspected** | **bool?**| &lt;p&gt;Filter by suspected fraud&lt;/p&gt;  | [optional] 
- **page** | **int?**| &lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  | [optional] [default to 1]
- **pageSize** | **int?**| &lt;p&gt;Items per page. Default is 20&lt;/p&gt;  | [optional] [default to 20]
- **sortBy** | **string**| &lt;p&gt;Property to sort by&lt;/p&gt;  | [optional] [default to id]
- **sortDir** | **string**| &lt;p&gt;Sort direction&lt;/p&gt;  | [optional] [default to desc]
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **dateYear** | **int?**| Year  | [optional] 
+ **dateMonth** | **int?**| Month  | [optional] 
+ **dateDay** | **int?**| Day of the month  | [optional] 
+ **dateHour** | **int?**| Hour of the day  | [optional] 
+ **dateMinute** | **int?**| Minute of the hour  | [optional] 
+ **timestamp** | **string**| Timestamp field  | [optional] [default to created_at]
+ **minTime** | **string**| Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  | [optional] 
+ **maxTime** | **string**| Filter payments after the given time. Supported format: “%Y-%m-%d %H:%M:%S %z”  | [optional] 
+ **operationsSize** | **int?**| Maximum number of operations to retrieve  | [optional] 
+ **accepted** | **bool?**| Return accepted payments  | [optional] 
+ **orderId** | **string**| Find by order_id  | [optional] 
+ **state** | **string**| Find by state  | [optional] 
+ **id** | **int?**| Find by transaction id  | [optional] 
+ **acquirer** | **string**| Filter by acquirer  | [optional] 
+ **fraudSuspected** | **bool?**| Filter by suspected fraud  | [optional] 
+ **page** | **int?**| Pagination page. Default is 1  | [optional] [default to 1]
+ **pageSize** | **int?**| Items per page. Default is 20  | [optional] [default to 20]
+ **sortBy** | **string**| Property to sort by  | [optional] [default to id]
+ **sortDir** | **string**| Sort direction  | [optional] [default to desc]
  **pageKey** | **string**|   | [optional] 
 
 ### Return type
@@ -211,10 +211,10 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var operationsSize = 56;  // int? | <p>Maximum number of operations to retrieve</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var operationsSize = 56;  // int? | Maximum number of operations to retrieve  (optional) 
 
             try
             {
@@ -235,10 +235,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **operationsSize** | **int?**| &lt;p&gt;Maximum number of operations to retrieve&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **operationsSize** | **int?**| Maximum number of operations to retrieve  | [optional] 
 
 ### Return type
 
@@ -278,10 +278,10 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var operationId = 56;  // int? | <p>Operations id</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var operationId = 56;  // int? | Operations id 
 
             try
             {
@@ -302,10 +302,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **operationId** | **int?**| &lt;p&gt;Operations id&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **operationId** | **int?**| Operations id  | 
 
 ### Return type
 
@@ -324,7 +324,7 @@ No authorization required
 
 <a name="patchpaymentsidformat"></a>
 # **PATCHPaymentsIdFormat**
-> Payment PATCHPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, DateTime? deadlineAt = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, Dictionary<string, string> variables = null)
+> Payment PATCHPaymentsIdFormat (string acceptVersion, string authorization, int? id, int? basketQty, string basketItemNo, string basketItemName, int? basketItemPrice, float? basketVatRate, DateTime? deadlineAt = null, string invoiceAddressName = null, string invoiceAddressAtt = null, string invoiceAddressCompanyName = null, string invoiceAddressStreet = null, string invoiceAddressHouseNumber = null, string invoiceAddressHouseExtension = null, string invoiceAddressCity = null, string invoiceAddressZipCode = null, string invoiceAddressRegion = null, string invoiceAddressCountryCode = null, string invoiceAddressVatNo = null, string invoiceAddressPhoneNumber = null, string invoiceAddressMobileNumber = null, string invoiceAddressEmail = null, string shippingAddressName = null, string shippingAddressAtt = null, string shippingAddressCompanyName = null, string shippingAddressStreet = null, string shippingAddressHouseNumber = null, string shippingAddressHouseExtension = null, string shippingAddressCity = null, string shippingAddressZipCode = null, string shippingAddressRegion = null, string shippingAddressCountryCode = null, string shippingAddressVatNo = null, string shippingAddressPhoneNumber = null, string shippingAddressMobileNumber = null, string shippingAddressEmail = null, string shippingMethod = null, string shippingCompany = null, int? shippingAmount = null, float? shippingVatRate = null, string shippingTrackingNumber = null, string shippingTrackingUrl = null, string variables = null)
 
 Update payment
 
@@ -345,50 +345,50 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var basketQty = 56;  // int? | <p>Quantity</p> 
-            var basketItemNo = basketItemNo_example;  // string | <p>Item reference number</p> 
-            var basketItemName = basketItemName_example;  // string | <p>Item name</p> 
-            var basketItemPrice = 56;  // int? | <p>Per item price (incl. VAT)</p> 
-            var basketVatRate = 3.4;  // float? | <p>VAT rate</p> 
-            var deadlineAt = 2013-10-20T19:20:30+01:00;  // DateTime? | <p>Payment must be authorized before this time</p>  (optional) 
-            var invoiceAddressName = invoiceAddressName_example;  // string | <p>Name</p>  (optional) 
-            var invoiceAddressAtt = invoiceAddressAtt_example;  // string | <p>Att</p>  (optional) 
-            var invoiceAddressCompanyName = invoiceAddressCompanyName_example;  // string | <p>Company name</p>  (optional) 
-            var invoiceAddressStreet = invoiceAddressStreet_example;  // string | <p>Street</p>  (optional) 
-            var invoiceAddressHouseNumber = invoiceAddressHouseNumber_example;  // string | <p>House number</p>  (optional) 
-            var invoiceAddressHouseExtension = invoiceAddressHouseExtension_example;  // string | <p>House extension</p>  (optional) 
-            var invoiceAddressCity = invoiceAddressCity_example;  // string | <p>City</p>  (optional) 
-            var invoiceAddressZipCode = invoiceAddressZipCode_example;  // string | <p>Zip code</p>  (optional) 
-            var invoiceAddressRegion = invoiceAddressRegion_example;  // string | <p>Region</p>  (optional) 
-            var invoiceAddressCountryCode = invoiceAddressCountryCode_example;  // string | <p>Three letter country code according to ISO 3166-1 Alpha-3</p>  (optional) 
-            var invoiceAddressVatNo = invoiceAddressVatNo_example;  // string | <p>VAT registration number</p>  (optional) 
-            var invoiceAddressPhoneNumber = invoiceAddressPhoneNumber_example;  // string | <p>Phone number</p>  (optional) 
-            var invoiceAddressMobileNumber = invoiceAddressMobileNumber_example;  // string | <p>Mobile number</p>  (optional) 
-            var invoiceAddressEmail = invoiceAddressEmail_example;  // string | <p>Email address</p>  (optional) 
-            var shippingAddressName = shippingAddressName_example;  // string | <p>Name</p>  (optional) 
-            var shippingAddressAtt = shippingAddressAtt_example;  // string | <p>Att</p>  (optional) 
-            var shippingAddressCompanyName = shippingAddressCompanyName_example;  // string | <p>Company name</p>  (optional) 
-            var shippingAddressStreet = shippingAddressStreet_example;  // string | <p>Street</p>  (optional) 
-            var shippingAddressHouseNumber = shippingAddressHouseNumber_example;  // string | <p>House number</p>  (optional) 
-            var shippingAddressHouseExtension = shippingAddressHouseExtension_example;  // string | <p>House extension</p>  (optional) 
-            var shippingAddressCity = shippingAddressCity_example;  // string | <p>City</p>  (optional) 
-            var shippingAddressZipCode = shippingAddressZipCode_example;  // string | <p>Zip code</p>  (optional) 
-            var shippingAddressRegion = shippingAddressRegion_example;  // string | <p>Region</p>  (optional) 
-            var shippingAddressCountryCode = shippingAddressCountryCode_example;  // string | <p>Three letter country code according to ISO 3166-1 Alpha-3</p>  (optional) 
-            var shippingAddressVatNo = shippingAddressVatNo_example;  // string | <p>VAT registration number</p>  (optional) 
-            var shippingAddressPhoneNumber = shippingAddressPhoneNumber_example;  // string | <p>Phone number</p>  (optional) 
-            var shippingAddressMobileNumber = shippingAddressMobileNumber_example;  // string | <p>Mobile number</p>  (optional) 
-            var shippingAddressEmail = shippingAddressEmail_example;  // string | <p>Email address</p>  (optional) 
-            var shippingMethod = shippingMethod_example;  // string | <p>Shipping method</p>  (optional) 
-            var shippingCompany = shippingCompany_example;  // string | <p>Shipping company</p>  (optional) 
-            var shippingAmount = 56;  // int? | <p>Shipping price (incl. VAT)</p>  (optional) 
-            var shippingVatRate = 3.4;  // float? | <p>VAT rate</p>  (optional) 
-            var shippingTrackingNumber = shippingTrackingNumber_example;  // string | <p>Shipping tracking number</p>  (optional) 
-            var shippingTrackingUrl = shippingTrackingUrl_example;  // string | <p>Shipping tracking url</p>  (optional) 
-            var variables = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Custom variables</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var basketQty = 56;  // int? | Quantity 
+            var basketItemNo = basketItemNo_example;  // string | Item reference number 
+            var basketItemName = basketItemName_example;  // string | Item name 
+            var basketItemPrice = 56;  // int? | Per item price (incl. VAT) 
+            var basketVatRate = 3.4;  // float? | VAT rate 
+            var deadlineAt = 2013-10-20T19:20:30+01:00;  // DateTime? | Payment must be authorized before this time  (optional) 
+            var invoiceAddressName = invoiceAddressName_example;  // string | Name  (optional) 
+            var invoiceAddressAtt = invoiceAddressAtt_example;  // string | Att  (optional) 
+            var invoiceAddressCompanyName = invoiceAddressCompanyName_example;  // string | Company name  (optional) 
+            var invoiceAddressStreet = invoiceAddressStreet_example;  // string | Street  (optional) 
+            var invoiceAddressHouseNumber = invoiceAddressHouseNumber_example;  // string | House number  (optional) 
+            var invoiceAddressHouseExtension = invoiceAddressHouseExtension_example;  // string | House extension  (optional) 
+            var invoiceAddressCity = invoiceAddressCity_example;  // string | City  (optional) 
+            var invoiceAddressZipCode = invoiceAddressZipCode_example;  // string | Zip code  (optional) 
+            var invoiceAddressRegion = invoiceAddressRegion_example;  // string | Region  (optional) 
+            var invoiceAddressCountryCode = invoiceAddressCountryCode_example;  // string | Three letter country code according to ISO 3166-1 Alpha-3  (optional) 
+            var invoiceAddressVatNo = invoiceAddressVatNo_example;  // string | VAT registration number  (optional) 
+            var invoiceAddressPhoneNumber = invoiceAddressPhoneNumber_example;  // string | Phone number  (optional) 
+            var invoiceAddressMobileNumber = invoiceAddressMobileNumber_example;  // string | Mobile number  (optional) 
+            var invoiceAddressEmail = invoiceAddressEmail_example;  // string | Email address  (optional) 
+            var shippingAddressName = shippingAddressName_example;  // string | Name  (optional) 
+            var shippingAddressAtt = shippingAddressAtt_example;  // string | Att  (optional) 
+            var shippingAddressCompanyName = shippingAddressCompanyName_example;  // string | Company name  (optional) 
+            var shippingAddressStreet = shippingAddressStreet_example;  // string | Street  (optional) 
+            var shippingAddressHouseNumber = shippingAddressHouseNumber_example;  // string | House number  (optional) 
+            var shippingAddressHouseExtension = shippingAddressHouseExtension_example;  // string | House extension  (optional) 
+            var shippingAddressCity = shippingAddressCity_example;  // string | City  (optional) 
+            var shippingAddressZipCode = shippingAddressZipCode_example;  // string | Zip code  (optional) 
+            var shippingAddressRegion = shippingAddressRegion_example;  // string | Region  (optional) 
+            var shippingAddressCountryCode = shippingAddressCountryCode_example;  // string | Three letter country code according to ISO 3166-1 Alpha-3  (optional) 
+            var shippingAddressVatNo = shippingAddressVatNo_example;  // string | VAT registration number  (optional) 
+            var shippingAddressPhoneNumber = shippingAddressPhoneNumber_example;  // string | Phone number  (optional) 
+            var shippingAddressMobileNumber = shippingAddressMobileNumber_example;  // string | Mobile number  (optional) 
+            var shippingAddressEmail = shippingAddressEmail_example;  // string | Email address  (optional) 
+            var shippingMethod = shippingMethod_example;  // string | Shipping method  (optional) 
+            var shippingCompany = shippingCompany_example;  // string | Shipping company  (optional) 
+            var shippingAmount = 56;  // int? | Shipping price (incl. VAT)  (optional) 
+            var shippingVatRate = 3.4;  // float? | VAT rate  (optional) 
+            var shippingTrackingNumber = shippingTrackingNumber_example;  // string | Shipping tracking number  (optional) 
+            var shippingTrackingUrl = shippingTrackingUrl_example;  // string | Shipping tracking url  (optional) 
+            var variables = variables_example;  // string | Custom variables  (optional) 
 
             try
             {
@@ -409,50 +409,50 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **basketQty** | **int?**| &lt;p&gt;Quantity&lt;/p&gt;  | 
- **basketItemNo** | **string**| &lt;p&gt;Item reference number&lt;/p&gt;  | 
- **basketItemName** | **string**| &lt;p&gt;Item name&lt;/p&gt;  | 
- **basketItemPrice** | **int?**| &lt;p&gt;Per item price (incl. VAT)&lt;/p&gt;  | 
- **basketVatRate** | **float?**| &lt;p&gt;VAT rate&lt;/p&gt;  | 
- **deadlineAt** | **DateTime?**| &lt;p&gt;Payment must be authorized before this time&lt;/p&gt;  | [optional] 
- **invoiceAddressName** | **string**| &lt;p&gt;Name&lt;/p&gt;  | [optional] 
- **invoiceAddressAtt** | **string**| &lt;p&gt;Att&lt;/p&gt;  | [optional] 
- **invoiceAddressCompanyName** | **string**| &lt;p&gt;Company name&lt;/p&gt;  | [optional] 
- **invoiceAddressStreet** | **string**| &lt;p&gt;Street&lt;/p&gt;  | [optional] 
- **invoiceAddressHouseNumber** | **string**| &lt;p&gt;House number&lt;/p&gt;  | [optional] 
- **invoiceAddressHouseExtension** | **string**| &lt;p&gt;House extension&lt;/p&gt;  | [optional] 
- **invoiceAddressCity** | **string**| &lt;p&gt;City&lt;/p&gt;  | [optional] 
- **invoiceAddressZipCode** | **string**| &lt;p&gt;Zip code&lt;/p&gt;  | [optional] 
- **invoiceAddressRegion** | **string**| &lt;p&gt;Region&lt;/p&gt;  | [optional] 
- **invoiceAddressCountryCode** | **string**| &lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  | [optional] 
- **invoiceAddressVatNo** | **string**| &lt;p&gt;VAT registration number&lt;/p&gt;  | [optional] 
- **invoiceAddressPhoneNumber** | **string**| &lt;p&gt;Phone number&lt;/p&gt;  | [optional] 
- **invoiceAddressMobileNumber** | **string**| &lt;p&gt;Mobile number&lt;/p&gt;  | [optional] 
- **invoiceAddressEmail** | **string**| &lt;p&gt;Email address&lt;/p&gt;  | [optional] 
- **shippingAddressName** | **string**| &lt;p&gt;Name&lt;/p&gt;  | [optional] 
- **shippingAddressAtt** | **string**| &lt;p&gt;Att&lt;/p&gt;  | [optional] 
- **shippingAddressCompanyName** | **string**| &lt;p&gt;Company name&lt;/p&gt;  | [optional] 
- **shippingAddressStreet** | **string**| &lt;p&gt;Street&lt;/p&gt;  | [optional] 
- **shippingAddressHouseNumber** | **string**| &lt;p&gt;House number&lt;/p&gt;  | [optional] 
- **shippingAddressHouseExtension** | **string**| &lt;p&gt;House extension&lt;/p&gt;  | [optional] 
- **shippingAddressCity** | **string**| &lt;p&gt;City&lt;/p&gt;  | [optional] 
- **shippingAddressZipCode** | **string**| &lt;p&gt;Zip code&lt;/p&gt;  | [optional] 
- **shippingAddressRegion** | **string**| &lt;p&gt;Region&lt;/p&gt;  | [optional] 
- **shippingAddressCountryCode** | **string**| &lt;p&gt;Three letter country code according to ISO 3166-1 Alpha-3&lt;/p&gt;  | [optional] 
- **shippingAddressVatNo** | **string**| &lt;p&gt;VAT registration number&lt;/p&gt;  | [optional] 
- **shippingAddressPhoneNumber** | **string**| &lt;p&gt;Phone number&lt;/p&gt;  | [optional] 
- **shippingAddressMobileNumber** | **string**| &lt;p&gt;Mobile number&lt;/p&gt;  | [optional] 
- **shippingAddressEmail** | **string**| &lt;p&gt;Email address&lt;/p&gt;  | [optional] 
- **shippingMethod** | **string**| &lt;p&gt;Shipping method&lt;/p&gt;  | [optional] 
- **shippingCompany** | **string**| &lt;p&gt;Shipping company&lt;/p&gt;  | [optional] 
- **shippingAmount** | **int?**| &lt;p&gt;Shipping price (incl. VAT)&lt;/p&gt;  | [optional] 
- **shippingVatRate** | **float?**| &lt;p&gt;VAT rate&lt;/p&gt;  | [optional] 
- **shippingTrackingNumber** | **string**| &lt;p&gt;Shipping tracking number&lt;/p&gt;  | [optional] 
- **shippingTrackingUrl** | **string**| &lt;p&gt;Shipping tracking url&lt;/p&gt;  | [optional] 
- **variables** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;Custom variables&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **basketQty** | **int?**| Quantity  | 
+ **basketItemNo** | **string**| Item reference number  | 
+ **basketItemName** | **string**| Item name  | 
+ **basketItemPrice** | **int?**| Per item price (incl. VAT)  | 
+ **basketVatRate** | **float?**| VAT rate  | 
+ **deadlineAt** | **DateTime?**| Payment must be authorized before this time  | [optional] 
+ **invoiceAddressName** | **string**| Name  | [optional] 
+ **invoiceAddressAtt** | **string**| Att  | [optional] 
+ **invoiceAddressCompanyName** | **string**| Company name  | [optional] 
+ **invoiceAddressStreet** | **string**| Street  | [optional] 
+ **invoiceAddressHouseNumber** | **string**| House number  | [optional] 
+ **invoiceAddressHouseExtension** | **string**| House extension  | [optional] 
+ **invoiceAddressCity** | **string**| City  | [optional] 
+ **invoiceAddressZipCode** | **string**| Zip code  | [optional] 
+ **invoiceAddressRegion** | **string**| Region  | [optional] 
+ **invoiceAddressCountryCode** | **string**| Three letter country code according to ISO 3166-1 Alpha-3  | [optional] 
+ **invoiceAddressVatNo** | **string**| VAT registration number  | [optional] 
+ **invoiceAddressPhoneNumber** | **string**| Phone number  | [optional] 
+ **invoiceAddressMobileNumber** | **string**| Mobile number  | [optional] 
+ **invoiceAddressEmail** | **string**| Email address  | [optional] 
+ **shippingAddressName** | **string**| Name  | [optional] 
+ **shippingAddressAtt** | **string**| Att  | [optional] 
+ **shippingAddressCompanyName** | **string**| Company name  | [optional] 
+ **shippingAddressStreet** | **string**| Street  | [optional] 
+ **shippingAddressHouseNumber** | **string**| House number  | [optional] 
+ **shippingAddressHouseExtension** | **string**| House extension  | [optional] 
+ **shippingAddressCity** | **string**| City  | [optional] 
+ **shippingAddressZipCode** | **string**| Zip code  | [optional] 
+ **shippingAddressRegion** | **string**| Region  | [optional] 
+ **shippingAddressCountryCode** | **string**| Three letter country code according to ISO 3166-1 Alpha-3  | [optional] 
+ **shippingAddressVatNo** | **string**| VAT registration number  | [optional] 
+ **shippingAddressPhoneNumber** | **string**| Phone number  | [optional] 
+ **shippingAddressMobileNumber** | **string**| Mobile number  | [optional] 
+ **shippingAddressEmail** | **string**| Email address  | [optional] 
+ **shippingMethod** | **string**| Shipping method  | [optional] 
+ **shippingCompany** | **string**| Shipping company  | [optional] 
+ **shippingAmount** | **int?**| Shipping price (incl. VAT)  | [optional] 
+ **shippingVatRate** | **float?**| VAT rate  | [optional] 
+ **shippingTrackingNumber** | **string**| Shipping tracking number  | [optional] 
+ **shippingTrackingUrl** | **string**| Shipping tracking url  | [optional] 
+ **variables** | **string**| Custom variables  | [optional] 
 
 ### Return type
 
@@ -492,11 +492,11 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var operationId = 56;  // int? | <p>Operations id</p> 
-            var pending = true;  // bool? | <p>Aborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value)</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var operationId = 56;  // int? | Operations id 
+            var pending = true;  // bool? | Aborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value) 
 
             try
             {
@@ -517,11 +517,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **operationId** | **int?**| &lt;p&gt;Operations id&lt;/p&gt;  | 
- **pending** | **bool?**| &lt;p&gt;Aborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value)&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **operationId** | **int?**| Operations id  | 
+ **pending** | **bool?**| Aborts the operation. Only possible on capture, refund, recurring and cancel operations (false is the only allowed value)  | 
 
 ### Return type
 
@@ -561,8 +561,8 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
             var payment = new Payment(); // Payment | Payment
 
             try
@@ -584,8 +584,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
  **payment** | [**Payment**](Payment.md)| Payment | 
 
 ### Return type
@@ -605,7 +605,7 @@ No authorization required
 
 <a name="postpaymentsidauthorizeformat"></a>
 # **POSTPaymentsIdAuthorizeFormat**
-> Payment POSTPaymentsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, Dictionary<string, string> cardApplePayToken = null, Dictionary<string, string> cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, bool? autoCapture = null, string acquirer = null, bool? autofee = null, string customerIp = null, Dictionary<string, string> extras = null, bool? zeroAuth = null)
+> Payment POSTPaymentsIdAuthorizeFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string cardNumber = null, string cardExpiration = null, string cardCvd = null, string cardToken = null, string cardApplePayToken = null, string cardMobilepayOnlineToken = null, string cardIssuedTo = null, string cardBrand = null, string cardStatus = null, string cardEci = null, string cardXav = null, string cardCavv = null, string mobileNumber = null, string ninNumber = null, string ninCountryCode = null, string ninGender = null, string personFirstName = null, string personLastName = null, string personEmail = null, bool? autoCapture = null, string acquirer = null, bool? autofee = null, string customerIp = null, string extras = null, bool? zeroAuth = null)
 
 Authorize payment
 
@@ -626,38 +626,38 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var amount = 56;  // int? | <p>Amount</p> 
-            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | <p>Specify the callback url (overrides merchant default callback-url)</p>  (optional) 
-            var synchronized = true;  // bool? | <p>Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)</p>  (optional) 
-            var vatRate = 3.4;  // float? | <p>Vate rate</p>  (optional) 
-            var cardNumber = cardNumber_example;  // string | <p>Card number</p>  (optional) 
-            var cardExpiration = cardExpiration_example;  // string | <p>Expiration date (YYMM)</p>  (optional) 
-            var cardCvd = cardCvd_example;  // string | <p>CVD/CVV</p>  (optional) 
-            var cardToken = cardToken_example;  // string | <p>Card token</p>  (optional) 
-            var cardApplePayToken = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Apple Pay payment-token</p>  (optional) 
-            var cardMobilepayOnlineToken = new Dictionary<string, string>(); // Dictionary<string, string> | <p>MobilePay Online payment-token</p>  (optional) 
-            var cardIssuedTo = cardIssuedTo_example;  // string | <p>Card holder name</p>  (optional) 
-            var cardBrand = cardBrand_example;  // string | <p>Brand to use on multi-brand card</p>  (optional) 
-            var cardStatus = cardStatus_example;  // string | <p>3D-Secure status</p>  (optional) 
-            var cardEci = cardEci_example;  // string | <p>3D-Secure eci</p>  (optional) 
-            var cardXav = cardXav_example;  // string | <p>3D-Secure xav</p>  (optional) 
-            var cardCavv = cardCavv_example;  // string | <p>3D-Secure cavv</p>  (optional) 
-            var mobileNumber = mobileNumber_example;  // string | <p>Mobile number</p>  (optional) 
-            var ninNumber = ninNumber_example;  // string | <p>Customer NIN Number</p>  (optional) 
-            var ninCountryCode = ninCountryCode_example;  // string | <p>Customer country (ISO 3166-1 Alpha-3)</p>  (optional) 
-            var ninGender = ninGender_example;  // string | <p>Customer gender</p>  (optional) 
-            var personFirstName = personFirstName_example;  // string | <p>Person first name</p>  (optional) 
-            var personLastName = personLastName_example;  // string | <p>Person last name</p>  (optional) 
-            var personEmail = personEmail_example;  // string | <p>Person email</p>  (optional) 
-            var autoCapture = true;  // bool? | <p>When true, payment is captured after authorization. Default is false</p>  (optional) 
-            var acquirer = acquirer_example;  // string | <p>If set, will force the use of this acquirer</p>  (optional) 
-            var autofee = true;  // bool? | <p>When true, fee is calculated and added to the given amount. Default is merchant autofee</p>  (optional) 
-            var customerIp = customerIp_example;  // string | <p>Customer IP</p>  (optional) 
-            var extras = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Additional acquirer specific params</p>  (optional) 
-            var zeroAuth = true;  // bool? | <p>(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var amount = 56;  // int? | Amount 
+            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | Specify the callback url (overrides merchant default callback-url)  (optional) 
+            var synchronized = true;  // bool? | Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional) 
+            var vatRate = 3.4;  // float? | Vate rate  (optional) 
+            var cardNumber = cardNumber_example;  // string | Card number  (optional) 
+            var cardExpiration = cardExpiration_example;  // string | Expiration date (YYMM)  (optional) 
+            var cardCvd = cardCvd_example;  // string | CVD/CVV  (optional) 
+            var cardToken = cardToken_example;  // string | Card token  (optional) 
+            var cardApplePayToken = cardApplePayToken_example;  // string | Apple Pay payment-token  (optional) 
+            var cardMobilepayOnlineToken = cardMobilepayOnlineToken_example;  // string | MobilePay Online payment-token  (optional) 
+            var cardIssuedTo = cardIssuedTo_example;  // string | Card holder name  (optional) 
+            var cardBrand = cardBrand_example;  // string | Brand to use on multi-brand card  (optional) 
+            var cardStatus = cardStatus_example;  // string | 3D-Secure status  (optional) 
+            var cardEci = cardEci_example;  // string | 3D-Secure eci  (optional) 
+            var cardXav = cardXav_example;  // string | 3D-Secure xav  (optional) 
+            var cardCavv = cardCavv_example;  // string | 3D-Secure cavv  (optional) 
+            var mobileNumber = mobileNumber_example;  // string | Mobile number  (optional) 
+            var ninNumber = ninNumber_example;  // string | Customer NIN Number  (optional) 
+            var ninCountryCode = ninCountryCode_example;  // string | Customer country (ISO 3166-1 Alpha-3)  (optional) 
+            var ninGender = ninGender_example;  // string | Customer gender  (optional) 
+            var personFirstName = personFirstName_example;  // string | Person first name  (optional) 
+            var personLastName = personLastName_example;  // string | Person last name  (optional) 
+            var personEmail = personEmail_example;  // string | Person email  (optional) 
+            var autoCapture = true;  // bool? | When true, payment is captured after authorization. Default is false  (optional) 
+            var acquirer = acquirer_example;  // string | If set, will force the use of this acquirer  (optional) 
+            var autofee = true;  // bool? | When true, fee is calculated and added to the given amount. Default is merchant autofee  (optional) 
+            var customerIp = customerIp_example;  // string | Customer IP  (optional) 
+            var extras = extras_example;  // string | Additional acquirer specific params  (optional) 
+            var zeroAuth = true;  // bool? | (Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false  (optional) 
 
             try
             {
@@ -678,38 +678,38 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **amount** | **int?**| &lt;p&gt;Amount&lt;/p&gt;  | 
- **quickPayCallbackUrl** | **string**| &lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  | [optional] 
- **synchronized** | **bool?**| &lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  | [optional] 
- **vatRate** | **float?**| &lt;p&gt;Vate rate&lt;/p&gt;  | [optional] 
- **cardNumber** | **string**| &lt;p&gt;Card number&lt;/p&gt;  | [optional] 
- **cardExpiration** | **string**| &lt;p&gt;Expiration date (YYMM)&lt;/p&gt;  | [optional] 
- **cardCvd** | **string**| &lt;p&gt;CVD/CVV&lt;/p&gt;  | [optional] 
- **cardToken** | **string**| &lt;p&gt;Card token&lt;/p&gt;  | [optional] 
- **cardApplePayToken** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;Apple Pay payment-token&lt;/p&gt;  | [optional] 
- **cardMobilepayOnlineToken** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;MobilePay Online payment-token&lt;/p&gt;  | [optional] 
- **cardIssuedTo** | **string**| &lt;p&gt;Card holder name&lt;/p&gt;  | [optional] 
- **cardBrand** | **string**| &lt;p&gt;Brand to use on multi-brand card&lt;/p&gt;  | [optional] 
- **cardStatus** | **string**| &lt;p&gt;3D-Secure status&lt;/p&gt;  | [optional] 
- **cardEci** | **string**| &lt;p&gt;3D-Secure eci&lt;/p&gt;  | [optional] 
- **cardXav** | **string**| &lt;p&gt;3D-Secure xav&lt;/p&gt;  | [optional] 
- **cardCavv** | **string**| &lt;p&gt;3D-Secure cavv&lt;/p&gt;  | [optional] 
- **mobileNumber** | **string**| &lt;p&gt;Mobile number&lt;/p&gt;  | [optional] 
- **ninNumber** | **string**| &lt;p&gt;Customer NIN Number&lt;/p&gt;  | [optional] 
- **ninCountryCode** | **string**| &lt;p&gt;Customer country (ISO 3166-1 Alpha-3)&lt;/p&gt;  | [optional] 
- **ninGender** | **string**| &lt;p&gt;Customer gender&lt;/p&gt;  | [optional] 
- **personFirstName** | **string**| &lt;p&gt;Person first name&lt;/p&gt;  | [optional] 
- **personLastName** | **string**| &lt;p&gt;Person last name&lt;/p&gt;  | [optional] 
- **personEmail** | **string**| &lt;p&gt;Person email&lt;/p&gt;  | [optional] 
- **autoCapture** | **bool?**| &lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt;  | [optional] 
- **acquirer** | **string**| &lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  | [optional] 
- **autofee** | **bool?**| &lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  | [optional] 
- **customerIp** | **string**| &lt;p&gt;Customer IP&lt;/p&gt;  | [optional] 
- **extras** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;Additional acquirer specific params&lt;/p&gt;  | [optional] 
- **zeroAuth** | **bool?**| &lt;p&gt;(Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **amount** | **int?**| Amount  | 
+ **quickPayCallbackUrl** | **string**| Specify the callback url (overrides merchant default callback-url)  | [optional] 
+ **synchronized** | **bool?**| Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  | [optional] 
+ **vatRate** | **float?**| Vate rate  | [optional] 
+ **cardNumber** | **string**| Card number  | [optional] 
+ **cardExpiration** | **string**| Expiration date (YYMM)  | [optional] 
+ **cardCvd** | **string**| CVD/CVV  | [optional] 
+ **cardToken** | **string**| Card token  | [optional] 
+ **cardApplePayToken** | **string**| Apple Pay payment-token  | [optional] 
+ **cardMobilepayOnlineToken** | **string**| MobilePay Online payment-token  | [optional] 
+ **cardIssuedTo** | **string**| Card holder name  | [optional] 
+ **cardBrand** | **string**| Brand to use on multi-brand card  | [optional] 
+ **cardStatus** | **string**| 3D-Secure status  | [optional] 
+ **cardEci** | **string**| 3D-Secure eci  | [optional] 
+ **cardXav** | **string**| 3D-Secure xav  | [optional] 
+ **cardCavv** | **string**| 3D-Secure cavv  | [optional] 
+ **mobileNumber** | **string**| Mobile number  | [optional] 
+ **ninNumber** | **string**| Customer NIN Number  | [optional] 
+ **ninCountryCode** | **string**| Customer country (ISO 3166-1 Alpha-3)  | [optional] 
+ **ninGender** | **string**| Customer gender  | [optional] 
+ **personFirstName** | **string**| Person first name  | [optional] 
+ **personLastName** | **string**| Person last name  | [optional] 
+ **personEmail** | **string**| Person email  | [optional] 
+ **autoCapture** | **bool?**| When true, payment is captured after authorization. Default is false  | [optional] 
+ **acquirer** | **string**| If set, will force the use of this acquirer  | [optional] 
+ **autofee** | **bool?**| When true, fee is calculated and added to the given amount. Default is merchant autofee  | [optional] 
+ **customerIp** | **string**| Customer IP  | [optional] 
+ **extras** | **string**| Additional acquirer specific params  | [optional] 
+ **zeroAuth** | **bool?**| (Nets only) When true, will perform an initial authorize of zero, then authorize the full amount on capture. Default is false  | [optional] 
 
 ### Return type
 
@@ -749,11 +749,11 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | <p>Specify the callback url (overrides merchant default callback-url)</p>  (optional) 
-            var synchronized = true;  // bool? | <p>Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | Specify the callback url (overrides merchant default callback-url)  (optional) 
+            var synchronized = true;  // bool? | Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional) 
 
             try
             {
@@ -774,11 +774,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **quickPayCallbackUrl** | **string**| &lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  | [optional] 
- **synchronized** | **bool?**| &lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **quickPayCallbackUrl** | **string**| Specify the callback url (overrides merchant default callback-url)  | [optional] 
+ **synchronized** | **bool?**| Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  | [optional] 
 
 ### Return type
 
@@ -797,7 +797,7 @@ No authorization required
 
 <a name="postpaymentsidcaptureformat"></a>
 # **POSTPaymentsIdCaptureFormat**
-> Payment POSTPaymentsIdCaptureFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, Dictionary<string, string> extras = null)
+> Payment POSTPaymentsIdCaptureFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, string extras = null)
 
 Capture payment
 
@@ -818,13 +818,13 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var amount = 56;  // int? | <p>Amount</p> 
-            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | <p>Specify the callback url (overrides merchant default callback-url)</p>  (optional) 
-            var synchronized = true;  // bool? | <p>Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)</p>  (optional) 
-            var extras = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Additional acquirer specific params</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var amount = 56;  // int? | Amount 
+            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | Specify the callback url (overrides merchant default callback-url)  (optional) 
+            var synchronized = true;  // bool? | Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional) 
+            var extras = extras_example;  // string | Additional acquirer specific params  (optional) 
 
             try
             {
@@ -845,13 +845,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **amount** | **int?**| &lt;p&gt;Amount&lt;/p&gt;  | 
- **quickPayCallbackUrl** | **string**| &lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  | [optional] 
- **synchronized** | **bool?**| &lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  | [optional] 
- **extras** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;Additional acquirer specific params&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **amount** | **int?**| Amount  | 
+ **quickPayCallbackUrl** | **string**| Specify the callback url (overrides merchant default callback-url)  | [optional] 
+ **synchronized** | **bool?**| Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  | [optional] 
+ **extras** | **string**| Additional acquirer specific params  | [optional] 
 
 ### Return type
 
@@ -891,10 +891,10 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | <p>Specify the callback url (overrides merchant default callback-url)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | Specify the callback url (overrides merchant default callback-url)  (optional) 
             var description = description_example;  // string |   (optional) 
 
             try
@@ -916,10 +916,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **quickPayCallbackUrl** | **string**| &lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **quickPayCallbackUrl** | **string**| Specify the callback url (overrides merchant default callback-url)  | [optional] 
  **description** | **string**|   | [optional] 
 
 ### Return type
@@ -939,7 +939,7 @@ No authorization required
 
 <a name="postpaymentsidrefundformat"></a>
 # **POSTPaymentsIdRefundFormat**
-> Payment POSTPaymentsIdRefundFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, Dictionary<string, string> extras = null)
+> Payment POSTPaymentsIdRefundFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, float? vatRate = null, string extras = null)
 
 Refund payment
 
@@ -960,14 +960,14 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var amount = 56;  // int? | <p>Amount</p> 
-            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | <p>Specify the callback url (overrides merchant default callback-url)</p>  (optional) 
-            var synchronized = true;  // bool? | <p>Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)</p>  (optional) 
-            var vatRate = 3.4;  // float? | <p>Vate rate</p>  (optional) 
-            var extras = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Additional acquirer specific params</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var amount = 56;  // int? | Amount 
+            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | Specify the callback url (overrides merchant default callback-url)  (optional) 
+            var synchronized = true;  // bool? | Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional) 
+            var vatRate = 3.4;  // float? | Vate rate  (optional) 
+            var extras = extras_example;  // string | Additional acquirer specific params  (optional) 
 
             try
             {
@@ -988,14 +988,14 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **amount** | **int?**| &lt;p&gt;Amount&lt;/p&gt;  | 
- **quickPayCallbackUrl** | **string**| &lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  | [optional] 
- **synchronized** | **bool?**| &lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  | [optional] 
- **vatRate** | **float?**| &lt;p&gt;Vate rate&lt;/p&gt;  | [optional] 
- **extras** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;Additional acquirer specific params&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **amount** | **int?**| Amount  | 
+ **quickPayCallbackUrl** | **string**| Specify the callback url (overrides merchant default callback-url)  | [optional] 
+ **synchronized** | **bool?**| Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  | [optional] 
+ **vatRate** | **float?**| Vate rate  | [optional] 
+ **extras** | **string**| Additional acquirer specific params  | [optional] 
 
 ### Return type
 
@@ -1035,11 +1035,11 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | <p>Specify the callback url (overrides merchant default callback-url)</p>  (optional) 
-            var synchronized = true;  // bool? | <p>Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | Specify the callback url (overrides merchant default callback-url)  (optional) 
+            var synchronized = true;  // bool? | Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional) 
 
             try
             {
@@ -1060,11 +1060,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **quickPayCallbackUrl** | **string**| &lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  | [optional] 
- **synchronized** | **bool?**| &lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **quickPayCallbackUrl** | **string**| Specify the callback url (overrides merchant default callback-url)  | [optional] 
+ **synchronized** | **bool?**| Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  | [optional] 
 
 ### Return type
 
@@ -1083,7 +1083,7 @@ No authorization required
 
 <a name="postpaymentsidsessionformat"></a>
 # **POSTPaymentsIdSessionFormat**
-> Payment POSTPaymentsIdSessionFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, string acquirer = null, bool? autofee = null, string customerIp = null, string personFirstName = null, string personLastName = null, string personEmail = null, Dictionary<string, string> extras = null)
+> Payment POSTPaymentsIdSessionFormat (string acceptVersion, string authorization, int? id, int? amount, string quickPayCallbackUrl = null, bool? synchronized = null, bool? autoCapture = null, string acquirer = null, bool? autofee = null, string customerIp = null, string personFirstName = null, string personLastName = null, string personEmail = null, string extras = null)
 
 Create payment session
 
@@ -1104,20 +1104,20 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Payment id</p> 
-            var amount = 56;  // int? | <p>Amount</p> 
-            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | <p>Specify the callback url (overrides merchant default callback-url)</p>  (optional) 
-            var synchronized = true;  // bool? | <p>Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)</p>  (optional) 
-            var autoCapture = true;  // bool? | <p>When true, payment is captured after authorization. Default is false</p>  (optional) 
-            var acquirer = acquirer_example;  // string | <p>If set, will force the use of this acquirer</p>  (optional) 
-            var autofee = true;  // bool? | <p>When true, fee is calculated and added to the given amount. Default is merchant autofee</p>  (optional) 
-            var customerIp = customerIp_example;  // string | <p>Customer IP</p>  (optional) 
-            var personFirstName = personFirstName_example;  // string | <p>Person first name</p>  (optional) 
-            var personLastName = personLastName_example;  // string | <p>Person last name</p>  (optional) 
-            var personEmail = personEmail_example;  // string | <p>Person email</p>  (optional) 
-            var extras = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Additional acquirer specific params</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Payment id 
+            var amount = 56;  // int? | Amount 
+            var quickPayCallbackUrl = quickPayCallbackUrl_example;  // string | Specify the callback url (overrides merchant default callback-url)  (optional) 
+            var synchronized = true;  // bool? | Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  (optional) 
+            var autoCapture = true;  // bool? | When true, payment is captured after authorization. Default is false  (optional) 
+            var acquirer = acquirer_example;  // string | If set, will force the use of this acquirer  (optional) 
+            var autofee = true;  // bool? | When true, fee is calculated and added to the given amount. Default is merchant autofee  (optional) 
+            var customerIp = customerIp_example;  // string | Customer IP  (optional) 
+            var personFirstName = personFirstName_example;  // string | Person first name  (optional) 
+            var personLastName = personLastName_example;  // string | Person last name  (optional) 
+            var personEmail = personEmail_example;  // string | Person email  (optional) 
+            var extras = extras_example;  // string | Additional acquirer specific params  (optional) 
 
             try
             {
@@ -1138,20 +1138,20 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Payment id&lt;/p&gt;  | 
- **amount** | **int?**| &lt;p&gt;Amount&lt;/p&gt;  | 
- **quickPayCallbackUrl** | **string**| &lt;p&gt;Specify the callback url (overrides merchant default callback-url)&lt;/p&gt;  | [optional] 
- **synchronized** | **bool?**| &lt;p&gt;Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)&lt;/p&gt;  | [optional] 
- **autoCapture** | **bool?**| &lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt;  | [optional] 
- **acquirer** | **string**| &lt;p&gt;If set, will force the use of this acquirer&lt;/p&gt;  | [optional] 
- **autofee** | **bool?**| &lt;p&gt;When true, fee is calculated and added to the given amount. Default is merchant autofee&lt;/p&gt;  | [optional] 
- **customerIp** | **string**| &lt;p&gt;Customer IP&lt;/p&gt;  | [optional] 
- **personFirstName** | **string**| &lt;p&gt;Person first name&lt;/p&gt;  | [optional] 
- **personLastName** | **string**| &lt;p&gt;Person last name&lt;/p&gt;  | [optional] 
- **personEmail** | **string**| &lt;p&gt;Person email&lt;/p&gt;  | [optional] 
- **extras** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;Additional acquirer specific params&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Payment id  | 
+ **amount** | **int?**| Amount  | 
+ **quickPayCallbackUrl** | **string**| Specify the callback url (overrides merchant default callback-url)  | [optional] 
+ **synchronized** | **bool?**| Disables asynchronious behaviour and returns the transaction with completed operation (ex. see GET /payments/{id}). MUST be used as a query parameter “?synchronized” (value not required)  | [optional] 
+ **autoCapture** | **bool?**| When true, payment is captured after authorization. Default is false  | [optional] 
+ **acquirer** | **string**| If set, will force the use of this acquirer  | [optional] 
+ **autofee** | **bool?**| When true, fee is calculated and added to the given amount. Default is merchant autofee  | [optional] 
+ **customerIp** | **string**| Customer IP  | [optional] 
+ **personFirstName** | **string**| Person first name  | [optional] 
+ **personLastName** | **string**| Person last name  | [optional] 
+ **personEmail** | **string**| Person email  | [optional] 
+ **extras** | **string**| Additional acquirer specific params  | [optional] 
 
 ### Return type
 
@@ -1170,7 +1170,7 @@ No authorization required
 
 <a name="putpaymentsidlinkformat"></a>
 # **PUTPaymentsIdLinkFormat**
-> PaymentLinkUrl PUTPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, Dictionary<string, string> brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null, bool? autoCapture = null)
+> PaymentLinkUrl PUTPaymentsIdLinkFormat (string acceptVersion, string authorization, int? id, int? amount, int? agreementId = null, string language = null, string continueUrl = null, string cancelUrl = null, string callbackUrl = null, string paymentMethods = null, bool? autoFee = null, int? brandingId = null, string googleAnalyticsTrackingId = null, string googleAnalyticsClientId = null, string acquirer = null, int? deadline = null, bool? framed = null, string brandingConfig = null, string customerEmail = null, bool? invoiceAddressSelection = null, bool? shippingAddressSelection = null, bool? autoCapture = null)
 
 Create or update a payment link
 
@@ -1191,28 +1191,28 @@ namespace Example
         public void main()
         {
             var apiInstance = new PaymentsApi();
-            var acceptVersion = acceptVersion_example;  // string | <p>Specify the version of the API</p> 
-            var authorization = authorization_example;  // string | <p>Use Basic Auth to authorize to the API</p> 
-            var id = 56;  // int? | <p>Transaction id</p> 
-            var amount = 56;  // int? | <p>Amount to authorize</p> 
-            var agreementId = 56;  // int? | <p>Agreement to use. Defaults to the Payment Window agreement</p>  (optional) 
-            var language = language_example;  // string | <p>Language</p>  (optional)  (default to en)
-            var continueUrl = continueUrl_example;  // string | <p>Url that cardholder is redirected to after authorize</p>  (optional) 
-            var cancelUrl = cancelUrl_example;  // string | <p>Url that cardholder is redirected to after cancelation</p>  (optional) 
-            var callbackUrl = callbackUrl_example;  // string | <p>Endpoint for async callback</p>  (optional) 
-            var paymentMethods = paymentMethods_example;  // string | <p>Limit payment methods</p>  (optional) 
-            var autoFee = true;  // bool? | <p>Add acquirer fee to amount. Default is merchant autofee</p>  (optional) 
-            var brandingId = 56;  // int? | <p>Override branding. Default is merchant default branding</p>  (optional) 
-            var googleAnalyticsTrackingId = googleAnalyticsTrackingId_example;  // string | <p>Send events to Google Analytics</p>  (optional) 
-            var googleAnalyticsClientId = googleAnalyticsClientId_example;  // string | <p>Send events to Google Analytics</p>  (optional) 
-            var acquirer = acquirer_example;  // string | <p>Force usage of the given acquirer</p>  (optional) 
-            var deadline = 56;  // int? | <p>Set a deadline in seconds for the cardholder to complete</p>  (optional) 
-            var framed = true;  // bool? | <p>Allow opening in iframe</p>  (optional) 
-            var brandingConfig = new Dictionary<string, string>(); // Dictionary<string, string> | <p>Config for branding. Will be merged with the default config in the branding</p>  (optional) 
-            var customerEmail = customerEmail_example;  // string | <p>Required for PayPal. Email of customer.</p>  (optional) 
-            var invoiceAddressSelection = true;  // bool? | <p>Get customer invoice address via acquirer (Currently MobilePay and PayPal only)</p>  (optional) 
-            var shippingAddressSelection = true;  // bool? | <p>Get customer shipping address via acquirer (Currently MobilePay and PayPal only)</p>  (optional) 
-            var autoCapture = true;  // bool? | <p>When true, payment is captured after authorization. Default is false</p>  (optional) 
+            var acceptVersion = acceptVersion_example;  // string | Specify the version of the API 
+            var authorization = authorization_example;  // string | Use Basic Auth to authorize to the API 
+            var id = 56;  // int? | Transaction id 
+            var amount = 56;  // int? | Amount to authorize 
+            var agreementId = 56;  // int? | Agreement to use. Defaults to the Payment Window agreement  (optional) 
+            var language = language_example;  // string | Language  (optional)  (default to en)
+            var continueUrl = continueUrl_example;  // string | Url that cardholder is redirected to after authorize  (optional) 
+            var cancelUrl = cancelUrl_example;  // string | Url that cardholder is redirected to after cancelation  (optional) 
+            var callbackUrl = callbackUrl_example;  // string | Endpoint for async callback  (optional) 
+            var paymentMethods = paymentMethods_example;  // string | Limit payment methods  (optional) 
+            var autoFee = true;  // bool? | Add acquirer fee to amount. Default is merchant autofee  (optional) 
+            var brandingId = 56;  // int? | Override branding. Default is merchant default branding  (optional) 
+            var googleAnalyticsTrackingId = googleAnalyticsTrackingId_example;  // string | Send events to Google Analytics  (optional) 
+            var googleAnalyticsClientId = googleAnalyticsClientId_example;  // string | Send events to Google Analytics  (optional) 
+            var acquirer = acquirer_example;  // string | Force usage of the given acquirer  (optional) 
+            var deadline = 56;  // int? | Set a deadline in seconds for the cardholder to complete  (optional) 
+            var framed = true;  // bool? | Allow opening in iframe  (optional) 
+            var brandingConfig = brandingConfig_example;  // string | Config for branding. Will be merged with the default config in the branding  (optional) 
+            var customerEmail = customerEmail_example;  // string | Required for PayPal. Email of customer.  (optional) 
+            var invoiceAddressSelection = true;  // bool? | Get customer invoice address via acquirer (Currently MobilePay and PayPal only)  (optional) 
+            var shippingAddressSelection = true;  // bool? | Get customer shipping address via acquirer (Currently MobilePay and PayPal only)  (optional) 
+            var autoCapture = true;  // bool? | When true, payment is captured after authorization. Default is false  (optional) 
 
             try
             {
@@ -1233,28 +1233,28 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptVersion** | **string**| &lt;p&gt;Specify the version of the API&lt;/p&gt;  | 
- **authorization** | **string**| &lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  | 
- **id** | **int?**| &lt;p&gt;Transaction id&lt;/p&gt;  | 
- **amount** | **int?**| &lt;p&gt;Amount to authorize&lt;/p&gt;  | 
- **agreementId** | **int?**| &lt;p&gt;Agreement to use. Defaults to the Payment Window agreement&lt;/p&gt;  | [optional] 
- **language** | **string**| &lt;p&gt;Language&lt;/p&gt;  | [optional] [default to en]
- **continueUrl** | **string**| &lt;p&gt;Url that cardholder is redirected to after authorize&lt;/p&gt;  | [optional] 
- **cancelUrl** | **string**| &lt;p&gt;Url that cardholder is redirected to after cancelation&lt;/p&gt;  | [optional] 
- **callbackUrl** | **string**| &lt;p&gt;Endpoint for async callback&lt;/p&gt;  | [optional] 
- **paymentMethods** | **string**| &lt;p&gt;Limit payment methods&lt;/p&gt;  | [optional] 
- **autoFee** | **bool?**| &lt;p&gt;Add acquirer fee to amount. Default is merchant autofee&lt;/p&gt;  | [optional] 
- **brandingId** | **int?**| &lt;p&gt;Override branding. Default is merchant default branding&lt;/p&gt;  | [optional] 
- **googleAnalyticsTrackingId** | **string**| &lt;p&gt;Send events to Google Analytics&lt;/p&gt;  | [optional] 
- **googleAnalyticsClientId** | **string**| &lt;p&gt;Send events to Google Analytics&lt;/p&gt;  | [optional] 
- **acquirer** | **string**| &lt;p&gt;Force usage of the given acquirer&lt;/p&gt;  | [optional] 
- **deadline** | **int?**| &lt;p&gt;Set a deadline in seconds for the cardholder to complete&lt;/p&gt;  | [optional] 
- **framed** | **bool?**| &lt;p&gt;Allow opening in iframe&lt;/p&gt;  | [optional] 
- **brandingConfig** | [**Dictionary&lt;string, string&gt;**](string.md)| &lt;p&gt;Config for branding. Will be merged with the default config in the branding&lt;/p&gt;  | [optional] 
- **customerEmail** | **string**| &lt;p&gt;Required for PayPal. Email of customer.&lt;/p&gt;  | [optional] 
- **invoiceAddressSelection** | **bool?**| &lt;p&gt;Get customer invoice address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  | [optional] 
- **shippingAddressSelection** | **bool?**| &lt;p&gt;Get customer shipping address via acquirer (Currently MobilePay and PayPal only)&lt;/p&gt;  | [optional] 
- **autoCapture** | **bool?**| &lt;p&gt;When true, payment is captured after authorization. Default is false&lt;/p&gt;  | [optional] 
+ **acceptVersion** | **string**| Specify the version of the API  | 
+ **authorization** | **string**| Use Basic Auth to authorize to the API  | 
+ **id** | **int?**| Transaction id  | 
+ **amount** | **int?**| Amount to authorize  | 
+ **agreementId** | **int?**| Agreement to use. Defaults to the Payment Window agreement  | [optional] 
+ **language** | **string**| Language  | [optional] [default to en]
+ **continueUrl** | **string**| Url that cardholder is redirected to after authorize  | [optional] 
+ **cancelUrl** | **string**| Url that cardholder is redirected to after cancelation  | [optional] 
+ **callbackUrl** | **string**| Endpoint for async callback  | [optional] 
+ **paymentMethods** | **string**| Limit payment methods  | [optional] 
+ **autoFee** | **bool?**| Add acquirer fee to amount. Default is merchant autofee  | [optional] 
+ **brandingId** | **int?**| Override branding. Default is merchant default branding  | [optional] 
+ **googleAnalyticsTrackingId** | **string**| Send events to Google Analytics  | [optional] 
+ **googleAnalyticsClientId** | **string**| Send events to Google Analytics  | [optional] 
+ **acquirer** | **string**| Force usage of the given acquirer  | [optional] 
+ **deadline** | **int?**| Set a deadline in seconds for the cardholder to complete  | [optional] 
+ **framed** | **bool?**| Allow opening in iframe  | [optional] 
+ **brandingConfig** | **string**| Config for branding. Will be merged with the default config in the branding  | [optional] 
+ **customerEmail** | **string**| Required for PayPal. Email of customer.  | [optional] 
+ **invoiceAddressSelection** | **bool?**| Get customer invoice address via acquirer (Currently MobilePay and PayPal only)  | [optional] 
+ **shippingAddressSelection** | **bool?**| Get customer shipping address via acquirer (Currently MobilePay and PayPal only)  | [optional] 
+ **autoCapture** | **bool?**| When true, payment is captured after authorization. Default is false  | [optional] 
 
 ### Return type
 

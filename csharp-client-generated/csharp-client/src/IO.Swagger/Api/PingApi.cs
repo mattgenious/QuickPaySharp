@@ -1,7 +1,7 @@
 /* 
  * Quickpay API v10
  *
- * <h2 id=\"authorization\">Authorization</h2>  <p>Authorization is done using basic-auth. Authorization can be done with a user or an agreement.</p>  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
+ * <h2 id=\"authorization\">Authorization</h2>  Authorization is done using basic-auth. Authorization can be done with a user or an agreement.  <ul>   <li>When authorized with a user one is able to edit own settings, create new merchant or request access to existing merchant.</li>   <li>When authorized with an agreement one is able to perform anything on the account that agreement gives permissions to.</li> </ul>  
  *
  * OpenAPI spec version: 10.0
  * Contact: support@quickpay.net
@@ -31,8 +31,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Pong</returns>
         Pong GETPingFormat (string acceptVersion, string authorization = null);
 
@@ -43,8 +43,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>ApiResponse of Pong</returns>
         ApiResponse<Pong> GETPingFormatWithHttpInfo (string acceptVersion, string authorization = null);
         /// <summary>
@@ -54,8 +54,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Pong</returns>
         Pong POSTPingFormat (string acceptVersion, string authorization = null);
 
@@ -66,8 +66,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>ApiResponse of Pong</returns>
         ApiResponse<Pong> POSTPingFormatWithHttpInfo (string acceptVersion, string authorization = null);
         #endregion Synchronous Operations
@@ -79,8 +79,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Task of Pong</returns>
         System.Threading.Tasks.Task<Pong> GETPingFormatAsync (string acceptVersion, string authorization = null);
 
@@ -91,8 +91,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Task of ApiResponse (Pong)</returns>
         System.Threading.Tasks.Task<ApiResponse<Pong>> GETPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null);
         /// <summary>
@@ -102,8 +102,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Task of Pong</returns>
         System.Threading.Tasks.Task<Pong> POSTPingFormatAsync (string acceptVersion, string authorization = null);
 
@@ -114,8 +114,8 @@ namespace IO.Swagger.Api
         ///  
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Task of ApiResponse (Pong)</returns>
         System.Threading.Tasks.Task<ApiResponse<Pong>> POSTPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null);
         #endregion Asynchronous Operations
@@ -222,8 +222,8 @@ namespace IO.Swagger.Api
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Pong</returns>
         public Pong GETPingFormat (string acceptVersion, string authorization = null)
         {
@@ -235,8 +235,8 @@ namespace IO.Swagger.Api
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>ApiResponse of Pong</returns>
         public ApiResponse< Pong > GETPingFormatWithHttpInfo (string acceptVersion, string authorization = null)
         {
@@ -294,8 +294,8 @@ namespace IO.Swagger.Api
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Task of Pong</returns>
         public async System.Threading.Tasks.Task<Pong> GETPingFormatAsync (string acceptVersion, string authorization = null)
         {
@@ -308,8 +308,8 @@ namespace IO.Swagger.Api
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Task of ApiResponse (Pong)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Pong>> GETPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null)
         {
@@ -367,8 +367,8 @@ namespace IO.Swagger.Api
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Pong</returns>
         public Pong POSTPingFormat (string acceptVersion, string authorization = null)
         {
@@ -380,8 +380,8 @@ namespace IO.Swagger.Api
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>ApiResponse of Pong</returns>
         public ApiResponse< Pong > POSTPingFormatWithHttpInfo (string acceptVersion, string authorization = null)
         {
@@ -439,8 +439,8 @@ namespace IO.Swagger.Api
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Task of Pong</returns>
         public async System.Threading.Tasks.Task<Pong> POSTPingFormatAsync (string acceptVersion, string authorization = null)
         {
@@ -453,8 +453,8 @@ namespace IO.Swagger.Api
         /// Use this to test connectivity to the API  
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt;  (optional)</param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API  (optional)</param>
         /// <returns>Task of ApiResponse (Pong)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Pong>> POSTPingFormatAsyncWithHttpInfo (string acceptVersion, string authorization = null)
         {

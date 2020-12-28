@@ -14,15 +14,15 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Use this to test connectivity to the API  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Pong</returns>
         Pong GETPingFormat (string acceptVersion, string authorization);
         /// <summary>
         /// Use this to test connectivity to the API  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="acceptVersion">Specify the version of the API </param>
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param>
         /// <returns>Pong</returns>
         Pong POSTPingFormat (string acceptVersion, string authorization);
     }
@@ -83,8 +83,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Use this to test connectivity to the API  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>Pong</returns>            
         public Pong GETPingFormat (string acceptVersion, string authorization)
         {
@@ -122,8 +122,8 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Use this to test connectivity to the API  
         /// </summary>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param> 
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param> 
+        /// <param name="acceptVersion">Specify the version of the API </param> 
+        /// <param name="authorization">Use Basic Auth to authorize to the API </param> 
         /// <returns>Pong</returns>            
         public Pong POSTPingFormat (string acceptVersion, string authorization)
         {
