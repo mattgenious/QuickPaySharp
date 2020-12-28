@@ -1,6 +1,6 @@
 {
   "host": "api.quickpay.net",
-  "basePath": "/docs/v10/merchant",
+  "basePath": "/docs/v10/",
   "schemes": ["https"],
   "swagger": "2.0",
   "info": {
