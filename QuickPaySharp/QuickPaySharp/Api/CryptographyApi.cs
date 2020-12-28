@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using QuickPaySharp.Client;
+using QuickPaySharp.Model;
 
-namespace IO.Swagger.Api
+namespace QuickPaySharp.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -43,7 +43,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -55,7 +55,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -68,7 +68,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -80,7 +80,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type">  (optional)</param>
@@ -98,7 +98,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type">  (optional)</param>
@@ -115,7 +115,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -128,7 +128,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -140,7 +140,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -153,7 +153,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -165,7 +165,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -179,7 +179,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -192,7 +192,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type"> </param>
@@ -208,7 +208,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type"> </param>
@@ -223,7 +223,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -239,7 +239,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -254,7 +254,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -268,7 +268,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -283,7 +283,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -296,7 +296,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -308,7 +308,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -321,7 +321,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -333,7 +333,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type">  (optional)</param>
@@ -351,7 +351,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type">  (optional)</param>
@@ -368,7 +368,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -381,7 +381,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -393,7 +393,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -406,7 +406,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -418,7 +418,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -432,7 +432,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -445,7 +445,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type"> </param>
@@ -461,7 +461,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type"> </param>
@@ -476,7 +476,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -492,7 +492,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -507,7 +507,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -521,7 +521,7 @@ namespace IO.Swagger.Api
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -536,7 +536,7 @@ namespace IO.Swagger.Api
     /// </summary>
     public partial class CryptographyApi : ICryptographyApi
     {
-        private IO.Swagger.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private QuickPaySharp.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CryptographyApi"/> class.
@@ -544,9 +544,9 @@ namespace IO.Swagger.Api
         /// <returns></returns>
         public CryptographyApi(String basePath)
         {
-            this.Configuration = new IO.Swagger.Client.Configuration { BasePath = basePath };
+            this.Configuration = new QuickPaySharp.Client.Configuration { BasePath = basePath };
 
-            ExceptionFactory = IO.Swagger.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = QuickPaySharp.Client.Configuration.DefaultExceptionFactory;
         }
 
         /// <summary>
@@ -555,14 +555,14 @@ namespace IO.Swagger.Api
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public CryptographyApi(IO.Swagger.Client.Configuration configuration = null)
+        public CryptographyApi(QuickPaySharp.Client.Configuration configuration = null)
         {
             if (configuration == null) // use the default one in Configuration
-                this.Configuration = IO.Swagger.Client.Configuration.Default;
+                this.Configuration = QuickPaySharp.Client.Configuration.Default;
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = IO.Swagger.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = QuickPaySharp.Client.Configuration.DefaultExceptionFactory;
         }
 
         /// <summary>
@@ -588,12 +588,12 @@ namespace IO.Swagger.Api
         /// Gets or sets the configuration object
         /// </summary>
         /// <value>An instance of the Configuration</value>
-        public IO.Swagger.Client.Configuration Configuration {get; set;}
+        public QuickPaySharp.Client.Configuration Configuration {get; set;}
 
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public IO.Swagger.Client.ExceptionFactory ExceptionFactory
+        public QuickPaySharp.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -631,7 +631,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -644,7 +644,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -711,7 +711,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -725,7 +725,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -792,7 +792,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -805,7 +805,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -872,7 +872,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -886,7 +886,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Delete key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -953,7 +953,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get keys  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type">  (optional)</param>
@@ -972,7 +972,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get keys  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type">  (optional)</param>
@@ -1046,7 +1046,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get keys  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type">  (optional)</param>
@@ -1066,7 +1066,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get keys  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type">  (optional)</param>
@@ -1140,7 +1140,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1153,7 +1153,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1220,7 +1220,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1234,7 +1234,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1301,7 +1301,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1315,7 +1315,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1382,7 +1382,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1397,7 +1397,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Get key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1464,7 +1464,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// update key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1479,7 +1479,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// update key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1549,7 +1549,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// update key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1565,7 +1565,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// update key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1635,7 +1635,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type"> </param>
@@ -1652,7 +1652,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type"> </param>
@@ -1735,7 +1735,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type"> </param>
@@ -1753,7 +1753,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create key  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="type"> </param>
@@ -1836,7 +1836,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create certificate request (CSR)  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1852,7 +1852,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create certificate request (CSR)  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1935,7 +1935,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create certificate request (CSR)  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -1952,7 +1952,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Create certificate request (CSR)  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -2035,7 +2035,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Replace certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -2049,7 +2049,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Replace certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -2129,7 +2129,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Replace certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>
@@ -2144,7 +2144,7 @@ namespace IO.Swagger.Api
         /// <summary>
         /// Replace certificate  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
         /// <param name="id"> </param>

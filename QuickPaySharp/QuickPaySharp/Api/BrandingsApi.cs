@@ -13,556 +13,544 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using QuickPaySharp.Client;
+using QuickPaySharp.Model;
 
-namespace IO.Swagger.Api
+namespace QuickPaySharp.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface ICryptographyApi : IApiAccessor
+    public interface IBrandingsApi : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
-        /// Delete certificate
+        /// Delete a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <returns></returns>
-        void DELETECryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id);
+        void DELETEBrandingsIdFormat (int? id);
 
         /// <summary>
-        /// Delete certificate
+        /// Delete a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DELETECryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        ApiResponse<Object> DELETEBrandingsIdFormatWithHttpInfo (int? id);
         /// <summary>
-        /// Delete key
+        /// Deletes a branding resource
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
-        void DELETECryptographyKeysIdFormat (string acceptVersion, string authorization, int? id);
+        void DELETEBrandingsIdresourceNameFormat (int? id, string resourceName = null);
 
         /// <summary>
-        /// Delete key
+        /// Deletes a branding resource
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DELETECryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        ApiResponse<Object> DELETEBrandingsIdresourceNameFormatWithHttpInfo (int? id, string resourceName = null);
         /// <summary>
-        /// Get keys
+        /// Get brandings
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type">  (optional)</param>
-        /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="pageKey">  (optional)</param>
-        /// <returns>MerchantCryptographyKey</returns>
-        MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
+        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
+        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <returns>Branding</returns>
+        Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
-        /// Get keys
+        /// Get brandings
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type">  (optional)</param>
-        /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
-        ApiResponse<MerchantCryptographyKey> GETCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
+        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
+        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> GETBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
-        /// Get certificate
+        /// Get a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Branding</returns>
+        Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+
+        /// <summary>
+        /// Get a branding
+        /// </summary>
+        /// <remarks>
+        ///  
+        /// </remarks>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
+        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> GETBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <summary>
+        /// Gets a branding resource as a file
+        /// </summary>
+        /// <remarks>
+        ///  
+        /// </remarks>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
-        void GETCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id);
+        void GETBrandingsIdresourceNameFormat (int? id, string resourceName = null);
 
         /// <summary>
-        /// Get certificate
+        /// Gets a branding resource as a file
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GETCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        ApiResponse<Object> GETBrandingsIdresourceNameFormatWithHttpInfo (int? id, string resourceName = null);
         /// <summary>
-        /// Get key
+        /// Update a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <returns>MerchantCryptographyKey</returns>
-        MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id);
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Branding</returns>
+        Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
 
         /// <summary>
-        /// Get key
+        /// Update a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
-        ApiResponse<MerchantCryptographyKey> GETCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> PATCHBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
         /// <summary>
-        /// update key
+        /// Create a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="shortDescription">  (optional)</param>
-        /// <returns>MerchantCryptographyKey</returns>
-        MerchantCryptographyKey PATCHCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id, string shortDescription = null);
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <returns>Branding</returns>
+        Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name);
 
         /// <summary>
-        /// update key
+        /// Create a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="shortDescription">  (optional)</param>
-        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
-        ApiResponse<MerchantCryptographyKey> PATCHCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null);
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> POSTBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string name);
         /// <summary>
-        /// Create key
+        /// Copies branding and returns the new branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type"> </param>
-        /// <param name="shortDescription"> </param>
-        /// <param name="keySize"> </param>
-        /// <param name="curve"> </param>
-        /// <returns>MerchantCryptographyKey</returns>
-        MerchantCryptographyKey POSTCryptographyKeysFormat (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Branding</returns>
+        Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
         /// <summary>
-        /// Create key
+        /// Copies branding and returns the new branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type"> </param>
-        /// <param name="shortDescription"> </param>
-        /// <param name="keySize"> </param>
-        /// <param name="curve"> </param>
-        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
-        ApiResponse<MerchantCryptographyKey> POSTCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>ApiResponse of Branding</returns>
+        ApiResponse<Branding> POSTBrandingsIdCopyFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
-        /// Create certificate request (CSR)
+        /// Uploads a file and creates or replaces a resource
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="subjectKey"> </param>
-        /// <param name="subjectValue"> </param>
-        /// <param name="subjectEncoding"> </param>
-        /// <returns></returns>
-        void POSTCryptographyKeysIdCsrFormat (string acceptVersion, string authorization, int? id, string subjectKey, string subjectValue, string subjectEncoding);
-
-        /// <summary>
-        /// Create certificate request (CSR)
-        /// </summary>
-        /// <remarks>
-        ///  
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="subjectKey"> </param>
-        /// <param name="subjectValue"> </param>
-        /// <param name="subjectEncoding"> </param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> POSTCryptographyKeysIdCsrFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string subjectKey, string subjectValue, string subjectEncoding);
-        /// <summary>
-        /// Replace certificate
-        /// </summary>
-        /// <remarks>
-        ///  
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
-        void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, object _file);
+        void PUTBrandingsIdresourceNameFormat (string acceptVersion, string authorization, int? id, string _file, string resourceName = null);
 
         /// <summary>
-        /// Replace certificate
+        /// Uploads a file and creates or replaces a resource
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, object _file);
+        ApiResponse<Object> PUTBrandingsIdresourceNameFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string _file, string resourceName = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
-        /// Delete certificate
+        /// Delete a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DELETECryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id);
+        System.Threading.Tasks.Task DELETEBrandingsIdFormatAsync (int? id);
 
         /// <summary>
-        /// Delete certificate
+        /// Delete a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DELETECryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DELETEBrandingsIdFormatAsyncWithHttpInfo (int? id);
         /// <summary>
-        /// Delete key
+        /// Deletes a branding resource
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DELETECryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id);
+        System.Threading.Tasks.Task DELETEBrandingsIdresourceNameFormatAsync (int? id, string resourceName = null);
 
         /// <summary>
-        /// Delete key
+        /// Deletes a branding resource
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DELETECryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DELETEBrandingsIdresourceNameFormatAsyncWithHttpInfo (int? id, string resourceName = null);
         /// <summary>
-        /// Get keys
+        /// Get brandings
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type">  (optional)</param>
-        /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of MerchantCryptographyKey</returns>
-        System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
+        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
+        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> GETBrandingsFormatAsync (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
 
         /// <summary>
-        /// Get keys
+        /// Get brandings
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type">  (optional)</param>
-        /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
-        System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null);
+        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
+        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null);
         /// <summary>
-        /// Get certificate
+        /// Get a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> GETBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+
+        /// <summary>
+        /// Get a branding
+        /// </summary>
+        /// <remarks>
+        ///  
+        /// </remarks>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
+        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
+        /// <summary>
+        /// Gets a branding resource as a file
+        /// </summary>
+        /// <remarks>
+        ///  
+        /// </remarks>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GETCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id);
+        System.Threading.Tasks.Task GETBrandingsIdresourceNameFormatAsync (int? id, string resourceName = null);
 
         /// <summary>
-        /// Get certificate
+        /// Gets a branding resource as a file
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GETCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        System.Threading.Tasks.Task<ApiResponse<Object>> GETBrandingsIdresourceNameFormatAsyncWithHttpInfo (int? id, string resourceName = null);
         /// <summary>
-        /// Get key
+        /// Update a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <returns>Task of MerchantCryptographyKey</returns>
-        System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id);
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> PATCHBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
 
         /// <summary>
-        /// Get key
+        /// Update a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
-        System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id);
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> PATCHBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null);
         /// <summary>
-        /// update key
+        /// Create a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="shortDescription">  (optional)</param>
-        /// <returns>Task of MerchantCryptographyKey</returns>
-        System.Threading.Tasks.Task<MerchantCryptographyKey> PATCHCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id, string shortDescription = null);
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> POSTBrandingsFormatAsync (string acceptVersion, string authorization, string name);
 
         /// <summary>
-        /// update key
+        /// Create a branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="shortDescription">  (optional)</param>
-        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
-        System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> PATCHCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null);
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name);
         /// <summary>
-        /// Create key
+        /// Copies branding and returns the new branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type"> </param>
-        /// <param name="shortDescription"> </param>
-        /// <param name="keySize"> </param>
-        /// <param name="curve"> </param>
-        /// <returns>Task of MerchantCryptographyKey</returns>
-        System.Threading.Tasks.Task<MerchantCryptographyKey> POSTCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of Branding</returns>
+        System.Threading.Tasks.Task<Branding> POSTBrandingsIdCopyFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null);
 
         /// <summary>
-        /// Create key
+        /// Copies branding and returns the new branding
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type"> </param>
-        /// <param name="shortDescription"> </param>
-        /// <param name="keySize"> </param>
-        /// <param name="curve"> </param>
-        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
-        System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> POSTCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve);
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsIdCopyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null);
         /// <summary>
-        /// Create certificate request (CSR)
+        /// Uploads a file and creates or replaces a resource
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="subjectKey"> </param>
-        /// <param name="subjectValue"> </param>
-        /// <param name="subjectEncoding"> </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task POSTCryptographyKeysIdCsrFormatAsync (string acceptVersion, string authorization, int? id, string subjectKey, string subjectValue, string subjectEncoding);
-
-        /// <summary>
-        /// Create certificate request (CSR)
-        /// </summary>
-        /// <remarks>
-        ///  
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="subjectKey"> </param>
-        /// <param name="subjectValue"> </param>
-        /// <param name="subjectEncoding"> </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> POSTCryptographyKeysIdCsrFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string subjectKey, string subjectValue, string subjectEncoding);
-        /// <summary>
-        /// Replace certificate
-        /// </summary>
-        /// <remarks>
-        ///  
-        /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, object _file);
+        System.Threading.Tasks.Task PUTBrandingsIdresourceNameFormatAsync (string acceptVersion, string authorization, int? id, string _file, string resourceName = null);
 
         /// <summary>
-        /// Replace certificate
+        /// Uploads a file and creates or replaces a resource
         /// </summary>
         /// <remarks>
         ///  
         /// </remarks>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, object _file);
+        System.Threading.Tasks.Task<ApiResponse<Object>> PUTBrandingsIdresourceNameFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string _file, string resourceName = null);
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class CryptographyApi : ICryptographyApi
+    public partial class BrandingsApi : IBrandingsApi
     {
-        private IO.Swagger.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private QuickPaySharp.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CryptographyApi"/> class.
+        /// Initializes a new instance of the <see cref="BrandingsApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public CryptographyApi(String basePath)
+        public BrandingsApi(String basePath)
         {
-            this.Configuration = new IO.Swagger.Client.Configuration { BasePath = basePath };
+            this.Configuration = new QuickPaySharp.Client.Configuration { BasePath = basePath };
 
-            ExceptionFactory = IO.Swagger.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = QuickPaySharp.Client.Configuration.DefaultExceptionFactory;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CryptographyApi"/> class
+        /// Initializes a new instance of the <see cref="BrandingsApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public CryptographyApi(IO.Swagger.Client.Configuration configuration = null)
+        public BrandingsApi(QuickPaySharp.Client.Configuration configuration = null)
         {
             if (configuration == null) // use the default one in Configuration
-                this.Configuration = IO.Swagger.Client.Configuration.Default;
+                this.Configuration = QuickPaySharp.Client.Configuration.Default;
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = IO.Swagger.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = QuickPaySharp.Client.Configuration.DefaultExceptionFactory;
         }
 
         /// <summary>
@@ -588,12 +576,12 @@ namespace IO.Swagger.Api
         /// Gets or sets the configuration object
         /// </summary>
         /// <value>An instance of the Configuration</value>
-        public IO.Swagger.Client.Configuration Configuration {get; set;}
+        public QuickPaySharp.Client.Configuration Configuration {get; set;}
 
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public IO.Swagger.Client.ExceptionFactory ExceptionFactory
+        public QuickPaySharp.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -629,39 +617,29 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Delete certificate  
+        /// Delete a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <returns></returns>
-        public void DELETECryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id)
+        public void DELETEBrandingsIdFormat (int? id)
         {
-             DELETECryptographyKeysIdCertificateFormatWithHttpInfo(acceptVersion, authorization, id);
+             DELETEBrandingsIdFormatWithHttpInfo(id);
         }
 
         /// <summary>
-        /// Delete certificate  
+        /// Delete a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DELETECryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        public ApiResponse<Object> DELETEBrandingsIdFormatWithHttpInfo (int? id)
         {
-            // verify the required parameter 'acceptVersion' is set
-            if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->DELETECryptographyKeysIdCertificateFormat");
-            // verify the required parameter 'authorization' is set
-            if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->DELETECryptographyKeysIdCertificateFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->DELETECryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->DELETEBrandingsIdFormat");
 
-            var localVarPath = "/cryptography/keys/{id}/certificate";
+            var localVarPath = "/brandings/{id}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -686,8 +664,6 @@ namespace IO.Swagger.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
-            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
-            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
 
 
             // make the HTTP request
@@ -699,7 +675,7 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("DELETECryptographyKeysIdCertificateFormat", localVarResponse);
+                Exception exception = ExceptionFactory("DELETEBrandingsIdFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -709,40 +685,30 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Delete certificate  
+        /// Delete a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DELETECryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id)
+        public async System.Threading.Tasks.Task DELETEBrandingsIdFormatAsync (int? id)
         {
-             await DELETECryptographyKeysIdCertificateFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             await DELETEBrandingsIdFormatAsyncWithHttpInfo(id);
 
         }
 
         /// <summary>
-        /// Delete certificate  
+        /// Delete a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETECryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEBrandingsIdFormatAsyncWithHttpInfo (int? id)
         {
-            // verify the required parameter 'acceptVersion' is set
-            if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->DELETECryptographyKeysIdCertificateFormat");
-            // verify the required parameter 'authorization' is set
-            if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->DELETECryptographyKeysIdCertificateFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->DELETECryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->DELETEBrandingsIdFormat");
 
-            var localVarPath = "/cryptography/keys/{id}/certificate";
+            var localVarPath = "/brandings/{id}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -767,8 +733,6 @@ namespace IO.Swagger.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
-            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
-            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
 
 
             // make the HTTP request
@@ -780,7 +744,7 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("DELETECryptographyKeysIdCertificateFormat", localVarResponse);
+                Exception exception = ExceptionFactory("DELETEBrandingsIdFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -790,39 +754,31 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Delete key  
+        /// Deletes a branding resource  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
-        public void DELETECryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
+        public void DELETEBrandingsIdresourceNameFormat (int? id, string resourceName = null)
         {
-             DELETECryptographyKeysIdFormatWithHttpInfo(acceptVersion, authorization, id);
+             DELETEBrandingsIdresourceNameFormatWithHttpInfo(id, resourceName);
         }
 
         /// <summary>
-        /// Delete key  
+        /// Deletes a branding resource  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DELETECryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        public ApiResponse<Object> DELETEBrandingsIdresourceNameFormatWithHttpInfo (int? id, string resourceName = null)
         {
-            // verify the required parameter 'acceptVersion' is set
-            if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->DELETECryptographyKeysIdFormat");
-            // verify the required parameter 'authorization' is set
-            if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->DELETECryptographyKeysIdFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->DELETECryptographyKeysIdFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->DELETEBrandingsIdresourceNameFormat");
 
-            var localVarPath = "/cryptography/keys/{id}";
+            var localVarPath = "/brandings/{id}/*resource_name";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -847,8 +803,7 @@ namespace IO.Swagger.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
-            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
-            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
+            if (resourceName != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "resource_name", resourceName)); // query parameter
 
 
             // make the HTTP request
@@ -860,7 +815,7 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("DELETECryptographyKeysIdFormat", localVarResponse);
+                Exception exception = ExceptionFactory("DELETEBrandingsIdresourceNameFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -870,40 +825,32 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Delete key  
+        /// Deletes a branding resource  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DELETECryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id)
+        public async System.Threading.Tasks.Task DELETEBrandingsIdresourceNameFormatAsync (int? id, string resourceName = null)
         {
-             await DELETECryptographyKeysIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             await DELETEBrandingsIdresourceNameFormatAsyncWithHttpInfo(id, resourceName);
 
         }
 
         /// <summary>
-        /// Delete key  
+        /// Deletes a branding resource  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETECryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DELETEBrandingsIdresourceNameFormatAsyncWithHttpInfo (int? id, string resourceName = null)
         {
-            // verify the required parameter 'acceptVersion' is set
-            if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->DELETECryptographyKeysIdFormat");
-            // verify the required parameter 'authorization' is set
-            if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->DELETECryptographyKeysIdFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->DELETECryptographyKeysIdFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->DELETEBrandingsIdresourceNameFormat");
 
-            var localVarPath = "/cryptography/keys/{id}";
+            var localVarPath = "/brandings/{id}/*resource_name";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -928,8 +875,7 @@ namespace IO.Swagger.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
-            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
-            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
+            if (resourceName != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "resource_name", resourceName)); // query parameter
 
 
             // make the HTTP request
@@ -941,7 +887,7 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("DELETECryptographyKeysIdFormat", localVarResponse);
+                Exception exception = ExceptionFactory("DELETEBrandingsIdresourceNameFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -951,47 +897,47 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Get keys  
+        /// Get brandings  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type">  (optional)</param>
-        /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="pageKey">  (optional)</param>
-        /// <returns>MerchantCryptographyKey</returns>
-        public MerchantCryptographyKey GETCryptographyKeysFormat (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
+        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
+        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <returns>Branding</returns>
+        public Branding GETBrandingsFormat (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<MerchantCryptographyKey> localVarResponse = GETCryptographyKeysFormatWithHttpInfo(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
+             ApiResponse<Branding> localVarResponse = GETBrandingsFormatWithHttpInfo(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get keys  
+        /// Get brandings  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type">  (optional)</param>
-        /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="pageKey">  (optional)</param>
-        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
-        public ApiResponse< MerchantCryptographyKey > GETCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
+        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
+        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > GETBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->GETCryptographyKeysFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->GETBrandingsFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->GETCryptographyKeysFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->GETBrandingsFormat");
 
-            var localVarPath = "/cryptography/keys";
+            var localVarPath = "/brandings";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1015,12 +961,12 @@ namespace IO.Swagger.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (type != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "type", type)); // query parameter
-            if (query != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "query", query)); // query parameter
+            if (except != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "except", except)); // query parameter
+            if (only != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "only", only)); // query parameter
+            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page", page)); // query parameter
+            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page_size", pageSize)); // query parameter
             if (sortBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "sort_by", sortBy)); // query parameter
             if (sortDir != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "sort_dir", sortDir)); // query parameter
-            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page_size", pageSize)); // query parameter
-            if (pageKey != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page_key", pageKey)); // query parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
 
@@ -1034,58 +980,58 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GETCryptographyKeysFormat", localVarResponse);
+                Exception exception = ExceptionFactory("GETBrandingsFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
-        /// Get keys  
+        /// Get brandings  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type">  (optional)</param>
-        /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of MerchantCryptographyKey</returns>
-        public async System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
+        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
+        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> GETBrandingsFormatAsync (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
-             ApiResponse<MerchantCryptographyKey> localVarResponse = await GETCryptographyKeysFormatAsyncWithHttpInfo(acceptVersion, authorization, type, query, sortBy, sortDir, pageSize, pageKey);
+             ApiResponse<Branding> localVarResponse = await GETBrandingsFormatAsyncWithHttpInfo(acceptVersion, authorization, except, only, page, pageSize, sortBy, sortDir);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Get keys  
+        /// Get brandings  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type">  (optional)</param>
-        /// <param name="query">  (optional)</param>
-        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to id)</param>
-        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to desc)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <param name="page">&lt;p&gt;Pagination page. Default is 1&lt;/p&gt;  (optional, default to 1)</param>
         /// <param name="pageSize">&lt;p&gt;Items per page. Default is 20&lt;/p&gt;  (optional, default to 20)</param>
-        /// <param name="pageKey">  (optional)</param>
-        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type = null, string query = null, string sortBy = null, string sortDir = null, int? pageSize = null, int? pageKey = null)
+        /// <param name="sortBy">&lt;p&gt;Property to sort by&lt;/p&gt;  (optional, default to name)</param>
+        /// <param name="sortDir">&lt;p&gt;Sort direction&lt;/p&gt;  (optional, default to asc)</param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string except = null, string only = null, int? page = null, int? pageSize = null, string sortBy = null, string sortDir = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->GETCryptographyKeysFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->GETBrandingsFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->GETCryptographyKeysFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->GETBrandingsFormat");
 
-            var localVarPath = "/cryptography/keys";
+            var localVarPath = "/brandings";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1109,12 +1055,12 @@ namespace IO.Swagger.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (type != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "type", type)); // query parameter
-            if (query != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "query", query)); // query parameter
+            if (except != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "except", except)); // query parameter
+            if (only != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "only", only)); // query parameter
+            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page", page)); // query parameter
+            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page_size", pageSize)); // query parameter
             if (sortBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "sort_by", sortBy)); // query parameter
             if (sortDir != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "sort_dir", sortDir)); // query parameter
-            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page_size", pageSize)); // query parameter
-            if (pageKey != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page_key", pageKey)); // query parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
 
@@ -1128,49 +1074,216 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GETCryptographyKeysFormat", localVarResponse);
+                Exception exception = ExceptionFactory("GETBrandingsFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
-        /// Get certificate  
+        /// Get a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Branding</returns>
+        public Branding GETBrandingsIdFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        {
+             ApiResponse<Branding> localVarResponse = GETBrandingsIdFormatWithHttpInfo(acceptVersion, authorization, id, except, only);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get a branding  
+        /// </summary>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
+        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > GETBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        {
+            // verify the required parameter 'acceptVersion' is set
+            if (acceptVersion == null)
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->GETBrandingsIdFormat");
+            // verify the required parameter 'authorization' is set
+            if (authorization == null)
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->GETBrandingsIdFormat");
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->GETBrandingsIdFormat");
+
+            var localVarPath = "/brandings/{id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/xml",
+                "application/json",
+                "application/octet-stream",
+                "text/plain"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (except != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "except", except)); // query parameter
+            if (only != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "only", only)); // query parameter
+            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
+            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GETBrandingsIdFormat", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Branding>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
+        }
+
+        /// <summary>
+        /// Get a branding  
+        /// </summary>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
+        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> GETBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        {
+             ApiResponse<Branding> localVarResponse = await GETBrandingsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, except, only);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get a branding  
+        /// </summary>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
+        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> GETBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
+        {
+            // verify the required parameter 'acceptVersion' is set
+            if (acceptVersion == null)
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->GETBrandingsIdFormat");
+            // verify the required parameter 'authorization' is set
+            if (authorization == null)
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->GETBrandingsIdFormat");
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->GETBrandingsIdFormat");
+
+            var localVarPath = "/brandings/{id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/xml",
+                "application/json",
+                "application/octet-stream",
+                "text/plain"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
+            if (except != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "except", except)); // query parameter
+            if (only != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "only", only)); // query parameter
+            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
+            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GETBrandingsIdFormat", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Branding>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
+        }
+
+        /// <summary>
+        /// Gets a branding resource as a file  
+        /// </summary>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
-        public void GETCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id)
+        public void GETBrandingsIdresourceNameFormat (int? id, string resourceName = null)
         {
-             GETCryptographyKeysIdCertificateFormatWithHttpInfo(acceptVersion, authorization, id);
+             GETBrandingsIdresourceNameFormatWithHttpInfo(id, resourceName);
         }
 
         /// <summary>
-        /// Get certificate  
+        /// Gets a branding resource as a file  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GETCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        public ApiResponse<Object> GETBrandingsIdresourceNameFormatWithHttpInfo (int? id, string resourceName = null)
         {
-            // verify the required parameter 'acceptVersion' is set
-            if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->GETCryptographyKeysIdCertificateFormat");
-            // verify the required parameter 'authorization' is set
-            if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->GETCryptographyKeysIdCertificateFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->GETCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->GETBrandingsIdresourceNameFormat");
 
-            var localVarPath = "/cryptography/keys/{id}/certificate";
+            var localVarPath = "/brandings/{id}/*resource_name";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1195,8 +1308,7 @@ namespace IO.Swagger.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
-            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
-            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
+            if (resourceName != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "resource_name", resourceName)); // query parameter
 
 
             // make the HTTP request
@@ -1208,7 +1320,7 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GETCryptographyKeysIdCertificateFormat", localVarResponse);
+                Exception exception = ExceptionFactory("GETBrandingsIdresourceNameFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -1218,40 +1330,32 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Get certificate  
+        /// Gets a branding resource as a file  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GETCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id)
+        public async System.Threading.Tasks.Task GETBrandingsIdresourceNameFormatAsync (int? id, string resourceName = null)
         {
-             await GETCryptographyKeysIdCertificateFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
+             await GETBrandingsIdresourceNameFormatAsyncWithHttpInfo(id, resourceName);
 
         }
 
         /// <summary>
-        /// Get certificate  
+        /// Gets a branding resource as a file  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GETCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> GETBrandingsIdresourceNameFormatAsyncWithHttpInfo (int? id, string resourceName = null)
         {
-            // verify the required parameter 'acceptVersion' is set
-            if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->GETCryptographyKeysIdCertificateFormat");
-            // verify the required parameter 'authorization' is set
-            if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->GETCryptographyKeysIdCertificateFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->GETCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->GETBrandingsIdresourceNameFormat");
 
-            var localVarPath = "/cryptography/keys/{id}/certificate";
+            var localVarPath = "/brandings/{id}/*resource_name";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1276,8 +1380,7 @@ namespace IO.Swagger.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
-            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
-            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
+            if (resourceName != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "resource_name", resourceName)); // query parameter
 
 
             // make the HTTP request
@@ -1289,7 +1392,7 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GETCryptographyKeysIdCertificateFormat", localVarResponse);
+                Exception exception = ExceptionFactory("GETBrandingsIdresourceNameFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -1299,205 +1402,46 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Get key  
+        /// Update a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <returns>MerchantCryptographyKey</returns>
-        public MerchantCryptographyKey GETCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id)
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Branding</returns>
+        public Branding PATCHBrandingsIdFormat (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
-             ApiResponse<MerchantCryptographyKey> localVarResponse = GETCryptographyKeysIdFormatWithHttpInfo(acceptVersion, authorization, id);
+             ApiResponse<Branding> localVarResponse = PATCHBrandingsIdFormatWithHttpInfo(acceptVersion, authorization, id, name, except, only);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get key  
+        /// Update a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
-        public ApiResponse< MerchantCryptographyKey > GETCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id)
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > PATCHBrandingsIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->GETCryptographyKeysIdFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->PATCHBrandingsIdFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->GETCryptographyKeysIdFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->PATCHBrandingsIdFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->GETCryptographyKeysIdFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->PATCHBrandingsIdFormat");
 
-            var localVarPath = "/cryptography/keys/{id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/xml",
-                "application/json",
-                "application/octet-stream",
-                "text/plain"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
-            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
-            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GETCryptographyKeysIdFormat", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
-        }
-
-        /// <summary>
-        /// Get key  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <returns>Task of MerchantCryptographyKey</returns>
-        public async System.Threading.Tasks.Task<MerchantCryptographyKey> GETCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id)
-        {
-             ApiResponse<MerchantCryptographyKey> localVarResponse = await GETCryptographyKeysIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Get key  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> GETCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id)
-        {
-            // verify the required parameter 'acceptVersion' is set
-            if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->GETCryptographyKeysIdFormat");
-            // verify the required parameter 'authorization' is set
-            if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->GETCryptographyKeysIdFormat");
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->GETCryptographyKeysIdFormat");
-
-            var localVarPath = "/cryptography/keys/{id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/xml",
-                "application/json",
-                "application/octet-stream",
-                "text/plain"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
-            if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
-            if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GETCryptographyKeysIdFormat", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
-        }
-
-        /// <summary>
-        /// update key  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="shortDescription">  (optional)</param>
-        /// <returns>MerchantCryptographyKey</returns>
-        public MerchantCryptographyKey PATCHCryptographyKeysIdFormat (string acceptVersion, string authorization, int? id, string shortDescription = null)
-        {
-             ApiResponse<MerchantCryptographyKey> localVarResponse = PATCHCryptographyKeysIdFormatWithHttpInfo(acceptVersion, authorization, id, shortDescription);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// update key  
-        /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
-        /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="shortDescription">  (optional)</param>
-        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
-        public ApiResponse< MerchantCryptographyKey > PATCHCryptographyKeysIdFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null)
-        {
-            // verify the required parameter 'acceptVersion' is set
-            if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->PATCHCryptographyKeysIdFormat");
-            // verify the required parameter 'authorization' is set
-            if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->PATCHCryptographyKeysIdFormat");
-            // verify the required parameter 'id' is set
-            if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->PATCHCryptographyKeysIdFormat");
-
-            var localVarPath = "/cryptography/keys/{id}";
+            var localVarPath = "/brandings/{id}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1525,7 +1469,9 @@ namespace IO.Swagger.Api
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (shortDescription != null) localVarFormParams.Add("short_description", this.Configuration.ApiClient.ParameterToString(shortDescription)); // form parameter
+            if (name != null) localVarFormParams.Add("name", this.Configuration.ApiClient.ParameterToString(name)); // form parameter
+            if (except != null) localVarFormParams.Add("except", this.Configuration.ApiClient.ParameterToString(except)); // form parameter
+            if (only != null) localVarFormParams.Add("only", this.Configuration.ApiClient.ParameterToString(only)); // form parameter
 
 
             // make the HTTP request
@@ -1537,53 +1483,57 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("PATCHCryptographyKeysIdFormat", localVarResponse);
+                Exception exception = ExceptionFactory("PATCHBrandingsIdFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
-        /// update key  
+        /// Update a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="shortDescription">  (optional)</param>
-        /// <returns>Task of MerchantCryptographyKey</returns>
-        public async System.Threading.Tasks.Task<MerchantCryptographyKey> PATCHCryptographyKeysIdFormatAsync (string acceptVersion, string authorization, int? id, string shortDescription = null)
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> PATCHBrandingsIdFormatAsync (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
-             ApiResponse<MerchantCryptographyKey> localVarResponse = await PATCHCryptographyKeysIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, shortDescription);
+             ApiResponse<Branding> localVarResponse = await PATCHBrandingsIdFormatAsyncWithHttpInfo(acceptVersion, authorization, id, name, except, only);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// update key  
+        /// Update a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="shortDescription">  (optional)</param>
-        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> PATCHCryptographyKeysIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string shortDescription = null)
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt;  (optional)</param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> PATCHBrandingsIdFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string name = null, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->PATCHCryptographyKeysIdFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->PATCHBrandingsIdFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->PATCHCryptographyKeysIdFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->PATCHBrandingsIdFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->PATCHCryptographyKeysIdFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->PATCHBrandingsIdFormat");
 
-            var localVarPath = "/cryptography/keys/{id}";
+            var localVarPath = "/brandings/{id}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1611,7 +1561,9 @@ namespace IO.Swagger.Api
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (shortDescription != null) localVarFormParams.Add("short_description", this.Configuration.ApiClient.ParameterToString(shortDescription)); // form parameter
+            if (name != null) localVarFormParams.Add("name", this.Configuration.ApiClient.ParameterToString(name)); // form parameter
+            if (except != null) localVarFormParams.Add("except", this.Configuration.ApiClient.ParameterToString(except)); // form parameter
+            if (only != null) localVarFormParams.Add("only", this.Configuration.ApiClient.ParameterToString(only)); // form parameter
 
 
             // make the HTTP request
@@ -1623,65 +1575,50 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("PATCHCryptographyKeysIdFormat", localVarResponse);
+                Exception exception = ExceptionFactory("PATCHBrandingsIdFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
-        /// Create key  
+        /// Create a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type"> </param>
-        /// <param name="shortDescription"> </param>
-        /// <param name="keySize"> </param>
-        /// <param name="curve"> </param>
-        /// <returns>MerchantCryptographyKey</returns>
-        public MerchantCryptographyKey POSTCryptographyKeysFormat (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <returns>Branding</returns>
+        public Branding POSTBrandingsFormat (string acceptVersion, string authorization, string name)
         {
-             ApiResponse<MerchantCryptographyKey> localVarResponse = POSTCryptographyKeysFormatWithHttpInfo(acceptVersion, authorization, type, shortDescription, keySize, curve);
+             ApiResponse<Branding> localVarResponse = POSTBrandingsFormatWithHttpInfo(acceptVersion, authorization, name);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create key  
+        /// Create a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type"> </param>
-        /// <param name="shortDescription"> </param>
-        /// <param name="keySize"> </param>
-        /// <param name="curve"> </param>
-        /// <returns>ApiResponse of MerchantCryptographyKey</returns>
-        public ApiResponse< MerchantCryptographyKey > POSTCryptographyKeysFormatWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > POSTBrandingsFormatWithHttpInfo (string acceptVersion, string authorization, string name)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->POSTCryptographyKeysFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->POSTBrandingsFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->POSTCryptographyKeysFormat");
-            // verify the required parameter 'type' is set
-            if (type == null)
-                throw new ApiException(400, "Missing required parameter 'type' when calling CryptographyApi->POSTCryptographyKeysFormat");
-            // verify the required parameter 'shortDescription' is set
-            if (shortDescription == null)
-                throw new ApiException(400, "Missing required parameter 'shortDescription' when calling CryptographyApi->POSTCryptographyKeysFormat");
-            // verify the required parameter 'keySize' is set
-            if (keySize == null)
-                throw new ApiException(400, "Missing required parameter 'keySize' when calling CryptographyApi->POSTCryptographyKeysFormat");
-            // verify the required parameter 'curve' is set
-            if (curve == null)
-                throw new ApiException(400, "Missing required parameter 'curve' when calling CryptographyApi->POSTCryptographyKeysFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->POSTBrandingsFormat");
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling BrandingsApi->POSTBrandingsFormat");
 
-            var localVarPath = "/cryptography/keys";
+            var localVarPath = "/brandings";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1708,10 +1645,7 @@ namespace IO.Swagger.Api
 
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (type != null) localVarFormParams.Add("type", this.Configuration.ApiClient.ParameterToString(type)); // form parameter
-            if (shortDescription != null) localVarFormParams.Add("short_description", this.Configuration.ApiClient.ParameterToString(shortDescription)); // form parameter
-            if (keySize != null) localVarFormParams.Add("key_size", this.Configuration.ApiClient.ParameterToString(keySize)); // form parameter
-            if (curve != null) localVarFormParams.Add("curve", this.Configuration.ApiClient.ParameterToString(curve)); // form parameter
+            if (name != null) localVarFormParams.Add("name", this.Configuration.ApiClient.ParameterToString(name)); // form parameter
 
 
             // make the HTTP request
@@ -1723,66 +1657,51 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("POSTCryptographyKeysFormat", localVarResponse);
+                Exception exception = ExceptionFactory("POSTBrandingsFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
-        /// Create key  
+        /// Create a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type"> </param>
-        /// <param name="shortDescription"> </param>
-        /// <param name="keySize"> </param>
-        /// <param name="curve"> </param>
-        /// <returns>Task of MerchantCryptographyKey</returns>
-        public async System.Threading.Tasks.Task<MerchantCryptographyKey> POSTCryptographyKeysFormatAsync (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> POSTBrandingsFormatAsync (string acceptVersion, string authorization, string name)
         {
-             ApiResponse<MerchantCryptographyKey> localVarResponse = await POSTCryptographyKeysFormatAsyncWithHttpInfo(acceptVersion, authorization, type, shortDescription, keySize, curve);
+             ApiResponse<Branding> localVarResponse = await POSTBrandingsFormatAsyncWithHttpInfo(acceptVersion, authorization, name);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Create key  
+        /// Create a branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="type"> </param>
-        /// <param name="shortDescription"> </param>
-        /// <param name="keySize"> </param>
-        /// <param name="curve"> </param>
-        /// <returns>Task of ApiResponse (MerchantCryptographyKey)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<MerchantCryptographyKey>> POSTCryptographyKeysFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string type, string shortDescription, int? keySize, string curve)
+        /// <param name="name">&lt;p&gt;Descriptive name of the branding&lt;/p&gt; </param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsFormatAsyncWithHttpInfo (string acceptVersion, string authorization, string name)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->POSTCryptographyKeysFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->POSTBrandingsFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->POSTCryptographyKeysFormat");
-            // verify the required parameter 'type' is set
-            if (type == null)
-                throw new ApiException(400, "Missing required parameter 'type' when calling CryptographyApi->POSTCryptographyKeysFormat");
-            // verify the required parameter 'shortDescription' is set
-            if (shortDescription == null)
-                throw new ApiException(400, "Missing required parameter 'shortDescription' when calling CryptographyApi->POSTCryptographyKeysFormat");
-            // verify the required parameter 'keySize' is set
-            if (keySize == null)
-                throw new ApiException(400, "Missing required parameter 'keySize' when calling CryptographyApi->POSTCryptographyKeysFormat");
-            // verify the required parameter 'curve' is set
-            if (curve == null)
-                throw new ApiException(400, "Missing required parameter 'curve' when calling CryptographyApi->POSTCryptographyKeysFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->POSTBrandingsFormat");
+            // verify the required parameter 'name' is set
+            if (name == null)
+                throw new ApiException(400, "Missing required parameter 'name' when calling BrandingsApi->POSTBrandingsFormat");
 
-            var localVarPath = "/cryptography/keys";
+            var localVarPath = "/brandings";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1809,10 +1728,7 @@ namespace IO.Swagger.Api
 
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (type != null) localVarFormParams.Add("type", this.Configuration.ApiClient.ParameterToString(type)); // form parameter
-            if (shortDescription != null) localVarFormParams.Add("short_description", this.Configuration.ApiClient.ParameterToString(shortDescription)); // form parameter
-            if (keySize != null) localVarFormParams.Add("key_size", this.Configuration.ApiClient.ParameterToString(keySize)); // form parameter
-            if (curve != null) localVarFormParams.Add("curve", this.Configuration.ApiClient.ParameterToString(curve)); // form parameter
+            if (name != null) localVarFormParams.Add("name", this.Configuration.ApiClient.ParameterToString(name)); // form parameter
 
 
             // make the HTTP request
@@ -1824,64 +1740,54 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("POSTCryptographyKeysFormat", localVarResponse);
+                Exception exception = ExceptionFactory("POSTBrandingsFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<MerchantCryptographyKey>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (MerchantCryptographyKey) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(MerchantCryptographyKey)));
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
-        /// Create certificate request (CSR)  
+        /// Copies branding and returns the new branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="subjectKey"> </param>
-        /// <param name="subjectValue"> </param>
-        /// <param name="subjectEncoding"> </param>
-        /// <returns></returns>
-        public void POSTCryptographyKeysIdCsrFormat (string acceptVersion, string authorization, int? id, string subjectKey, string subjectValue, string subjectEncoding)
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Branding</returns>
+        public Branding POSTBrandingsIdCopyFormat (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
-             POSTCryptographyKeysIdCsrFormatWithHttpInfo(acceptVersion, authorization, id, subjectKey, subjectValue, subjectEncoding);
+             ApiResponse<Branding> localVarResponse = POSTBrandingsIdCopyFormatWithHttpInfo(acceptVersion, authorization, id, except, only);
+             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create certificate request (CSR)  
+        /// Copies branding and returns the new branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="subjectKey"> </param>
-        /// <param name="subjectValue"> </param>
-        /// <param name="subjectEncoding"> </param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> POSTCryptographyKeysIdCsrFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string subjectKey, string subjectValue, string subjectEncoding)
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>ApiResponse of Branding</returns>
+        public ApiResponse< Branding > POSTBrandingsIdCopyFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->POSTBrandingsIdCopyFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->POSTBrandingsIdCopyFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
-            // verify the required parameter 'subjectKey' is set
-            if (subjectKey == null)
-                throw new ApiException(400, "Missing required parameter 'subjectKey' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
-            // verify the required parameter 'subjectValue' is set
-            if (subjectValue == null)
-                throw new ApiException(400, "Missing required parameter 'subjectValue' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
-            // verify the required parameter 'subjectEncoding' is set
-            if (subjectEncoding == null)
-                throw new ApiException(400, "Missing required parameter 'subjectEncoding' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->POSTBrandingsIdCopyFormat");
 
-            var localVarPath = "/cryptography/keys/{id}/csr";
+            var localVarPath = "/brandings/{id}/copy";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1909,9 +1815,8 @@ namespace IO.Swagger.Api
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (subjectKey != null) localVarFormParams.Add("subject[][key]", this.Configuration.ApiClient.ParameterToString(subjectKey)); // form parameter
-            if (subjectValue != null) localVarFormParams.Add("subject[][value]", this.Configuration.ApiClient.ParameterToString(subjectValue)); // form parameter
-            if (subjectEncoding != null) localVarFormParams.Add("subject[][encoding]", this.Configuration.ApiClient.ParameterToString(subjectEncoding)); // form parameter
+            if (except != null) localVarFormParams.Add("except", this.Configuration.ApiClient.ParameterToString(except)); // form parameter
+            if (only != null) localVarFormParams.Add("only", this.Configuration.ApiClient.ParameterToString(only)); // form parameter
 
 
             // make the HTTP request
@@ -1923,65 +1828,55 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("POSTCryptographyKeysIdCsrFormat", localVarResponse);
+                Exception exception = ExceptionFactory("POSTBrandingsIdCopyFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
-        /// Create certificate request (CSR)  
+        /// Copies branding and returns the new branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="subjectKey"> </param>
-        /// <param name="subjectValue"> </param>
-        /// <param name="subjectEncoding"> </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task POSTCryptographyKeysIdCsrFormatAsync (string acceptVersion, string authorization, int? id, string subjectKey, string subjectValue, string subjectEncoding)
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of Branding</returns>
+        public async System.Threading.Tasks.Task<Branding> POSTBrandingsIdCopyFormatAsync (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
-             await POSTCryptographyKeysIdCsrFormatAsyncWithHttpInfo(acceptVersion, authorization, id, subjectKey, subjectValue, subjectEncoding);
+             ApiResponse<Branding> localVarResponse = await POSTBrandingsIdCopyFormatAsyncWithHttpInfo(acceptVersion, authorization, id, except, only);
+             return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Create certificate request (CSR)  
+        /// Copies branding and returns the new branding  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
-        /// <param name="subjectKey"> </param>
-        /// <param name="subjectValue"> </param>
-        /// <param name="subjectEncoding"> </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> POSTCryptographyKeysIdCsrFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string subjectKey, string subjectValue, string subjectEncoding)
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
+        /// <param name="except">&lt;p&gt;Specifies which attributes to skip. Default is ‘resources.data’&lt;/p&gt;  (optional)</param>
+        /// <param name="only">&lt;p&gt;Specifies which attributes to include. (Overrides except default)&lt;/p&gt;  (optional)</param>
+        /// <returns>Task of ApiResponse (Branding)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Branding>> POSTBrandingsIdCopyFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string except = null, string only = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->POSTBrandingsIdCopyFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->POSTBrandingsIdCopyFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
-            // verify the required parameter 'subjectKey' is set
-            if (subjectKey == null)
-                throw new ApiException(400, "Missing required parameter 'subjectKey' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
-            // verify the required parameter 'subjectValue' is set
-            if (subjectValue == null)
-                throw new ApiException(400, "Missing required parameter 'subjectValue' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
-            // verify the required parameter 'subjectEncoding' is set
-            if (subjectEncoding == null)
-                throw new ApiException(400, "Missing required parameter 'subjectEncoding' when calling CryptographyApi->POSTCryptographyKeysIdCsrFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->POSTBrandingsIdCopyFormat");
 
-            var localVarPath = "/cryptography/keys/{id}/csr";
+            var localVarPath = "/brandings/{id}/copy";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -2009,9 +1904,8 @@ namespace IO.Swagger.Api
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (subjectKey != null) localVarFormParams.Add("subject[][key]", this.Configuration.ApiClient.ParameterToString(subjectKey)); // form parameter
-            if (subjectValue != null) localVarFormParams.Add("subject[][value]", this.Configuration.ApiClient.ParameterToString(subjectValue)); // form parameter
-            if (subjectEncoding != null) localVarFormParams.Add("subject[][encoding]", this.Configuration.ApiClient.ParameterToString(subjectEncoding)); // form parameter
+            if (except != null) localVarFormParams.Add("except", this.Configuration.ApiClient.ParameterToString(except)); // form parameter
+            if (only != null) localVarFormParams.Add("only", this.Configuration.ApiClient.ParameterToString(only)); // form parameter
 
 
             // make the HTTP request
@@ -2023,54 +1917,56 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("POSTCryptographyKeysIdCsrFormat", localVarResponse);
+                Exception exception = ExceptionFactory("POSTBrandingsIdCopyFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<Branding>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (Branding) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Branding)));
         }
 
         /// <summary>
-        /// Replace certificate  
+        /// Uploads a file and creates or replaces a resource  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns></returns>
-        public void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, object _file)
+        public void PUTBrandingsIdresourceNameFormat (string acceptVersion, string authorization, int? id, string _file, string resourceName = null)
         {
-             PUTCryptographyKeysIdCertificateFormatWithHttpInfo(acceptVersion, authorization, id, _file);
+             PUTBrandingsIdresourceNameFormatWithHttpInfo(acceptVersion, authorization, id, _file, resourceName);
         }
 
         /// <summary>
-        /// Replace certificate  
+        /// Uploads a file and creates or replaces a resource  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> PUTCryptographyKeysIdCertificateFormatWithHttpInfo (string acceptVersion, string authorization, int? id, object _file)
+        public ApiResponse<Object> PUTBrandingsIdresourceNameFormatWithHttpInfo (string acceptVersion, string authorization, int? id, string _file, string resourceName = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->PUTCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->PUTBrandingsIdresourceNameFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->PUTCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->PUTBrandingsIdresourceNameFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->PUTCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->PUTBrandingsIdresourceNameFormat");
             // verify the required parameter '_file' is set
             if (_file == null)
-                throw new ApiException(400, "Missing required parameter '_file' when calling CryptographyApi->PUTCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter '_file' when calling BrandingsApi->PUTBrandingsIdresourceNameFormat");
 
-            var localVarPath = "/cryptography/keys/{id}/certificate";
+            var localVarPath = "/brandings/{id}/*resource_name";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -2080,7 +1976,7 @@ namespace IO.Swagger.Api
 
             // to determine the Content-Type header
             String[] localVarHttpContentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
             String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
 
@@ -2098,14 +1994,8 @@ namespace IO.Swagger.Api
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (_file != null && _file.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(_file); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = _file; // byte array
-            }
+            if (_file != null) localVarFormParams.Add("file", this.Configuration.ApiClient.ParameterToString(_file)); // form parameter
+            if (resourceName != null) localVarFormParams.Add("resource_name", this.Configuration.ApiClient.ParameterToString(resourceName)); // form parameter
 
 
             // make the HTTP request
@@ -2117,7 +2007,7 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("PUTCryptographyKeysIdCertificateFormat", localVarResponse);
+                Exception exception = ExceptionFactory("PUTBrandingsIdresourceNameFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -2127,45 +2017,47 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Replace certificate  
+        /// Uploads a file and creates or replaces a resource  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, object _file)
+        public async System.Threading.Tasks.Task PUTBrandingsIdresourceNameFormatAsync (string acceptVersion, string authorization, int? id, string _file, string resourceName = null)
         {
-             await PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo(acceptVersion, authorization, id, _file);
+             await PUTBrandingsIdresourceNameFormatAsyncWithHttpInfo(acceptVersion, authorization, id, _file, resourceName);
 
         }
 
         /// <summary>
-        /// Replace certificate  
+        /// Uploads a file and creates or replaces a resource  
         /// </summary>
-        /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="QuickPaySharp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="acceptVersion">&lt;p&gt;Specify the version of the API&lt;/p&gt; </param>
         /// <param name="authorization">&lt;p&gt;Use Basic Auth to authorize to the API&lt;/p&gt; </param>
-        /// <param name="id"> </param>
+        /// <param name="id">&lt;p&gt;Branding id&lt;/p&gt; </param>
         /// <param name="_file">&lt;p&gt;The file send as multipart&lt;/p&gt; </param>
+        /// <param name="resourceName">  (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> PUTCryptographyKeysIdCertificateFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, object _file)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> PUTBrandingsIdresourceNameFormatAsyncWithHttpInfo (string acceptVersion, string authorization, int? id, string _file, string resourceName = null)
         {
             // verify the required parameter 'acceptVersion' is set
             if (acceptVersion == null)
-                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling CryptographyApi->PUTCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'acceptVersion' when calling BrandingsApi->PUTBrandingsIdresourceNameFormat");
             // verify the required parameter 'authorization' is set
             if (authorization == null)
-                throw new ApiException(400, "Missing required parameter 'authorization' when calling CryptographyApi->PUTCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'authorization' when calling BrandingsApi->PUTBrandingsIdresourceNameFormat");
             // verify the required parameter 'id' is set
             if (id == null)
-                throw new ApiException(400, "Missing required parameter 'id' when calling CryptographyApi->PUTCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter 'id' when calling BrandingsApi->PUTBrandingsIdresourceNameFormat");
             // verify the required parameter '_file' is set
             if (_file == null)
-                throw new ApiException(400, "Missing required parameter '_file' when calling CryptographyApi->PUTCryptographyKeysIdCertificateFormat");
+                throw new ApiException(400, "Missing required parameter '_file' when calling BrandingsApi->PUTBrandingsIdresourceNameFormat");
 
-            var localVarPath = "/cryptography/keys/{id}/certificate";
+            var localVarPath = "/brandings/{id}/*resource_name";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -2175,7 +2067,7 @@ namespace IO.Swagger.Api
 
             // to determine the Content-Type header
             String[] localVarHttpContentTypes = new String[] {
-                "multipart/form-data"
+                "application/x-www-form-urlencoded"
             };
             String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
 
@@ -2193,14 +2085,8 @@ namespace IO.Swagger.Api
             if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
             if (acceptVersion != null) localVarHeaderParams.Add("Accept-Version", this.Configuration.ApiClient.ParameterToString(acceptVersion)); // header parameter
             if (authorization != null) localVarHeaderParams.Add("Authorization", this.Configuration.ApiClient.ParameterToString(authorization)); // header parameter
-            if (_file != null && _file.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(_file); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = _file; // byte array
-            }
+            if (_file != null) localVarFormParams.Add("file", this.Configuration.ApiClient.ParameterToString(_file)); // form parameter
+            if (resourceName != null) localVarFormParams.Add("resource_name", this.Configuration.ApiClient.ParameterToString(resourceName)); // form parameter
 
 
             // make the HTTP request
@@ -2212,7 +2098,7 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("PUTCryptographyKeysIdCertificateFormat", localVarResponse);
+                Exception exception = ExceptionFactory("PUTBrandingsIdresourceNameFormat", localVarResponse);
                 if (exception != null) throw exception;
             }
 
