@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 using RestSharp;
 using QuickPaySharp.Client;
 using QuickPaySharp.Model;
@@ -147,7 +148,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
                             
             // authentication setting, if any
             String[] authSettings = new String[] {  };
@@ -189,7 +190,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
                             
             // authentication setting, if any
             String[] authSettings = new String[] {  };
@@ -236,7 +237,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
                             
             // authentication setting, if any
             String[] authSettings = new String[] {  };
@@ -298,7 +299,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
             if (name != null) formParams.Add("name", ApiClient.ParameterToString(name)); // form parameter
 if (filterRulesMetricName != null) formParams.Add("filter_rules[][metric_name]", ApiClient.ParameterToString(filterRulesMetricName)); // form parameter
 if (filterRulesOperator != null) formParams.Add("filter_rules[][operator]", ApiClient.ParameterToString(filterRulesOperator)); // form parameter
@@ -370,7 +371,7 @@ if (combinator != null) formParams.Add("combinator", ApiClient.ParameterToString
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
             if (name != null) formParams.Add("name", ApiClient.ParameterToString(name)); // form parameter
 if (filterRulesMetricName != null) formParams.Add("filter_rules[][metric_name]", ApiClient.ParameterToString(filterRulesMetricName)); // form parameter
 if (filterRulesOperator != null) formParams.Add("filter_rules[][operator]", ApiClient.ParameterToString(filterRulesOperator)); // form parameter

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 using RestSharp;
 using QuickPaySharp.Client;
 using QuickPaySharp.Model;
@@ -182,7 +183,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
                             
             // authentication setting, if any
             String[] authSettings = new String[] {  };
@@ -229,7 +230,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
                             
             // authentication setting, if any
             String[] authSettings = new String[] {  };
@@ -283,7 +284,7 @@ namespace QuickPaySharp.Api
  if (pageSize != null) queryParams.Add("page_size", ApiClient.ParameterToString(pageSize)); // query parameter
  if (pageKey != null) queryParams.Add("page_key", ApiClient.ParameterToString(pageKey)); // query parameter
              if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
                             
             // authentication setting, if any
             String[] authSettings = new String[] {  };
@@ -330,7 +331,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
                             
             // authentication setting, if any
             String[] authSettings = new String[] {  };
@@ -377,7 +378,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
                             
             // authentication setting, if any
             String[] authSettings = new String[] {  };
@@ -425,7 +426,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
             if (shortDescription != null) formParams.Add("short_description", ApiClient.ParameterToString(shortDescription)); // form parameter
                 
             // authentication setting, if any
@@ -484,7 +485,7 @@ namespace QuickPaySharp.Api
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
             if (type != null) formParams.Add("type", ApiClient.ParameterToString(type)); // form parameter
 if (shortDescription != null) formParams.Add("short_description", ApiClient.ParameterToString(shortDescription)); // form parameter
 if (keySize != null) formParams.Add("key_size", ApiClient.ParameterToString(keySize)); // form parameter
@@ -547,7 +548,7 @@ if (curve != null) formParams.Add("curve", ApiClient.ParameterToString(curve)); 
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
             if (subjectKey != null) formParams.Add("subject[][key]", ApiClient.ParameterToString(subjectKey)); // form parameter
 if (subjectValue != null) formParams.Add("subject[][value]", ApiClient.ParameterToString(subjectValue)); // form parameter
 if (subjectEncoding != null) formParams.Add("subject[][encoding]", ApiClient.ParameterToString(subjectEncoding)); // form parameter
@@ -601,7 +602,7 @@ if (subjectEncoding != null) formParams.Add("subject[][encoding]", ApiClient.Par
             String postBody = null;
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
- if (authorization != null) headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+ if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
             if (_file != null) fileParams.Add("file", ApiClient.ParameterToFile("file", _file));
                 
             // authentication setting, if any

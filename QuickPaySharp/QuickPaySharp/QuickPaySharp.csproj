@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.10-alpha</Version>
+    <Version>0.0.11-alpha</Version>
     <Authors>Matt Luccas Phaure Minet</Authors>
     <Company>Matt Luccas Phaure Minet</Company>
     <Description>A modern dotnet client library for the QuickPay API</Description>
@@ -12,7 +12,7 @@
     <RepositoryUrl>https://github.com/mattgenious/QuickPaySharp</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>C#, .NET, ecommerce, quickpay, quickpay.net, payment</PackageTags>
-    <PackageReleaseNotes>Base64 encoding the basic authentication credentials helps hahaha...</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed authentication for all api clients</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>

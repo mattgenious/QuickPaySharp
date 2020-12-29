@@ -410,7 +410,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 
 			// authentication setting, if any
 			String[] authSettings = new String[] { };
@@ -511,7 +511,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 
 			// authentication setting, if any
 			String[] authSettings = new String[] { };
@@ -570,7 +570,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 
 			// authentication setting, if any
 			String[] authSettings = new String[] { };
@@ -635,7 +635,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 
 			// authentication setting, if any
 			String[] authSettings = new String[] { };
@@ -770,7 +770,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (deadlineAt != null)
 				formParams.Add("deadline_at", ApiClient.ParameterToString(deadlineAt)); // form parameter
 			if (invoiceAddressName != null)
@@ -953,7 +953,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (pending != null) formParams.Add("pending", ApiClient.ParameterToString(pending)); // form parameter
 
 			// authentication setting, if any
@@ -1110,7 +1110,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (quickPayCallbackUrl != null)
 				headerParams.Add("QuickPay-Callback-Url",
 					ApiClient.ParameterToString(quickPayCallbackUrl)); // header parameter
@@ -1220,7 +1220,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (quickPayCallbackUrl != null)
 				headerParams.Add("QuickPay-Callback-Url",
 					ApiClient.ParameterToString(quickPayCallbackUrl)); // header parameter
@@ -1291,7 +1291,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (quickPayCallbackUrl != null)
 				headerParams.Add("QuickPay-Callback-Url",
 					ApiClient.ParameterToString(quickPayCallbackUrl)); // header parameter
@@ -1356,7 +1356,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (quickPayCallbackUrl != null)
 				headerParams.Add("QuickPay-Callback-Url",
 					ApiClient.ParameterToString(quickPayCallbackUrl)); // header parameter
@@ -1430,7 +1430,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (quickPayCallbackUrl != null)
 				headerParams.Add("QuickPay-Callback-Url",
 					ApiClient.ParameterToString(quickPayCallbackUrl)); // header parameter
@@ -1497,7 +1497,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (quickPayCallbackUrl != null)
 				headerParams.Add("QuickPay-Callback-Url",
 					ApiClient.ParameterToString(quickPayCallbackUrl)); // header parameter
@@ -1576,7 +1576,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (quickPayCallbackUrl != null)
 				headerParams.Add("QuickPay-Callback-Url",
 					ApiClient.ParameterToString(quickPayCallbackUrl)); // header parameter
@@ -1676,7 +1676,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			if (amount != null) formParams.Add("amount", ApiClient.ParameterToString(amount)); // form parameter
 			if (agreementId != null)
 				formParams.Add("agreement_id", ApiClient.ParameterToString(agreementId)); // form parameter
