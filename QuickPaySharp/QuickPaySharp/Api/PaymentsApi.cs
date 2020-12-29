@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 using RestSharp;
 using QuickPaySharp.Client;
 using QuickPaySharp.Model;
@@ -415,14 +416,14 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.DELETE, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.DELETE, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling DELETEPaymentsIdLinkFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling DELETEPaymentsIdLinkFormat: " + response.ErrorMessage, response.ErrorMessage);
 
 			return;
@@ -516,17 +517,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.GET, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.GET, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling GETPaymentsFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling GETPaymentsFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (List<Payment>) ApiClient.Deserialize(response.Content, typeof(List<Payment>), response.Headers);
+			return (List<Payment>)ApiClient.Deserialize(response.Content, typeof(List<Payment>), response.Headers);
 		}
 
 		/// <summary>
@@ -575,17 +576,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.GET, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.GET, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling GETPaymentsIdFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling GETPaymentsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -640,18 +641,18 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.GET, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.GET, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling GETPaymentsIdOperationsOperationIdFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling GETPaymentsIdOperationsOperationIdFormat: " + response.ErrorMessage,
 					response.ErrorMessage);
 
-			return (Operation) ApiClient.Deserialize(response.Content, typeof(Operation), response.Headers);
+			return (Operation)ApiClient.Deserialize(response.Content, typeof(Operation), response.Headers);
 		}
 
 		/// <summary>
@@ -887,17 +888,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.PATCH, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.PATCH, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling PATCHPaymentsIdFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling PATCHPaymentsIdFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -959,18 +960,18 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.PATCH, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.PATCH, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling PATCHPaymentsIdOperationsOperationIdFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling PATCHPaymentsIdOperationsOperationIdFormat: " + response.ErrorMessage,
 					response.ErrorMessage);
 
-			return (Operation) ApiClient.Deserialize(response.Content, typeof(Operation), response.Headers);
+			return (Operation)ApiClient.Deserialize(response.Content, typeof(Operation), response.Headers);
 		}
 
 		/// <summary>
@@ -1009,24 +1010,24 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", $"basic :{ApiClient.ParameterToString(authorization)}"); // header parameter
+				headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
 			postBody = ApiClient.Serialize(payment); // http body (model) parameter
 
 			// authentication setting, if any
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -1164,17 +1165,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdAuthorizeFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdAuthorizeFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -1228,17 +1229,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdCancelFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdCancelFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -1301,17 +1302,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdCaptureFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdCaptureFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -1366,17 +1367,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdFraudReportFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdFraudReportFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (FraudReport) ApiClient.Deserialize(response.Content, typeof(FraudReport), response.Headers);
+			return (FraudReport)ApiClient.Deserialize(response.Content, typeof(FraudReport), response.Headers);
 		}
 
 		/// <summary>
@@ -1441,17 +1442,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdRefundFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdRefundFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -1505,17 +1506,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdRenewFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdRenewFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -1598,17 +1599,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdSessionFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling POSTPaymentsIdSessionFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (Payment) ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
+			return (Payment)ApiClient.Deserialize(response.Content, typeof(Payment), response.Headers);
 		}
 
 		/// <summary>
@@ -1717,17 +1718,17 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.PUT, queryParams, postBody,
+			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.PUT, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
-			if (((int) response.StatusCode) >= 400)
-				throw new ApiException((int) response.StatusCode,
+			if (((int)response.StatusCode) >= 400)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling PUTPaymentsIdLinkFormat: " + response.Content, response.Content);
-			else if (((int) response.StatusCode) == 0)
-				throw new ApiException((int) response.StatusCode,
+			else if (((int)response.StatusCode) == 0)
+				throw new ApiException((int)response.StatusCode,
 					"Error calling PUTPaymentsIdLinkFormat: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (PaymentLinkUrl) ApiClient.Deserialize(response.Content, typeof(PaymentLinkUrl), response.Headers);
+			return (PaymentLinkUrl)ApiClient.Deserialize(response.Content, typeof(PaymentLinkUrl), response.Headers);
 		}
 	}
 }
