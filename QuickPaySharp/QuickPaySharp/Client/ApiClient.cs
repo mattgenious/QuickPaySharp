@@ -24,7 +24,7 @@ namespace QuickPaySharp.Client
         /// Initializes a new instance of the <see cref="ApiClient" /> class.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath="https://api.quickpay.net/docs/v10/")
+        public ApiClient(String basePath="https://api.quickpay.net/")
         {
             BasePath = basePath;
             RestClient = new RestClient(BasePath);
