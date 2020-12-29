@@ -1009,7 +1009,7 @@ namespace QuickPaySharp.Api
 			if (acceptVersion != null)
 				headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
 			if (authorization != null)
-				headerParams.Add("Authorization", ApiClient.ParameterToString(authorization)); // header parameter
+				headerParams.Add("Authorization", $"basic :{ApiClient.ParameterToString(authorization)}"); // header parameter
 			postBody = ApiClient.Serialize(payment); // http body (model) parameter
 
 			// authentication setting, if any
