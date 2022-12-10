@@ -4,6 +4,8 @@ using System.Text;
 using RestSharp;
 using QuickPaySharp.Client;
 using QuickPaySharp.Model;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace QuickPaySharp.Api
 {
@@ -96,7 +98,7 @@ namespace QuickPaySharp.Api
         /// <param name="id"> </param>
         /// <param name="_file">The file send as multipart </param>
         /// <returns></returns>
-        void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, System.IO.Stream _file);
+        Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, System.IO.Stream _file, CancellationToken cancellationToken);
     }
   
     /// <summary>
@@ -189,7 +191,7 @@ namespace QuickPaySharp.Api
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.DELETE, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Delete, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling DELETECryptographyKeysIdCertificateFormat: " + response.Content, response.Content);
@@ -236,7 +238,7 @@ namespace QuickPaySharp.Api
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.DELETE, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Delete, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling DELETECryptographyKeysIdFormat: " + response.Content, response.Content);
@@ -290,7 +292,7 @@ namespace QuickPaySharp.Api
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.GET, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Get, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETCryptographyKeysFormat: " + response.Content, response.Content);
@@ -337,7 +339,7 @@ namespace QuickPaySharp.Api
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.GET, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Get, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETCryptographyKeysIdCertificateFormat: " + response.Content, response.Content);
@@ -384,7 +386,7 @@ namespace QuickPaySharp.Api
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.GET, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Get, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling GETCryptographyKeysIdFormat: " + response.Content, response.Content);
@@ -433,7 +435,7 @@ namespace QuickPaySharp.Api
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.PATCH, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Patch, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling PATCHCryptographyKeysIdFormat: " + response.Content, response.Content);
@@ -495,7 +497,7 @@ if (curve != null) formParams.Add("curve", ApiClient.ParameterToString(curve)); 
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Post, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTCryptographyKeysFormat: " + response.Content, response.Content);
@@ -557,7 +559,7 @@ if (subjectEncoding != null) formParams.Add("subject[][encoding]", ApiClient.Par
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.POST, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Post, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling POSTCryptographyKeysIdCsrFormat: " + response.Content, response.Content);
@@ -575,7 +577,7 @@ if (subjectEncoding != null) formParams.Add("subject[][encoding]", ApiClient.Par
         /// <param name="id"> </param> 
         /// <param name="_file">The file send as multipart </param> 
         /// <returns></returns>            
-        public void PUTCryptographyKeysIdCertificateFormat (string acceptVersion, string authorization, int? id, System.IO.Stream _file)
+        public async Task PUTCryptographyKeysIdCertificateFormatAsync (string acceptVersion, string authorization, int? id, System.IO.Stream _file, CancellationToken cancellationToken)
         {
             
             // verify the required parameter 'acceptVersion' is set
@@ -603,13 +605,13 @@ if (subjectEncoding != null) formParams.Add("subject[][encoding]", ApiClient.Par
     
                          if (acceptVersion != null) headerParams.Add("Accept-Version", ApiClient.ParameterToString(acceptVersion)); // header parameter
  if (authorization != null) headerParams.Add("Authorization", $"basic {Convert.ToBase64String(Encoding.UTF8.GetBytes(":" + ApiClient.ParameterToString(authorization)))}"); // header parameter
-            if (_file != null) fileParams.Add("file", ApiClient.ParameterToFile("file", _file));
+            if (_file != null) fileParams.Add("file", await ApiClient.ParameterToFileAsync("file", _file, cancellationToken));
                 
             // authentication setting, if any
             String[] authSettings = new String[] {  };
     
             // make the HTTP request
-            IRestResponse response = (IRestResponse) ApiClient.CallApi(path, Method.PUT, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
+            RestResponse response = (RestResponse) ApiClient.CallApi(path, Method.Put, queryParams, postBody, headerParams, formParams, fileParams, authSettings);
     
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling PUTCryptographyKeysIdCertificateFormat: " + response.Content, response.Content);

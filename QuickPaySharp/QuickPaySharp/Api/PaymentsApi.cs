@@ -416,7 +416,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.DELETE, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Delete, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -517,7 +517,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.GET, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Get, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -576,7 +576,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.GET, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Get, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -641,7 +641,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.GET, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Get, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -888,7 +888,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.PATCH, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Patch, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -960,7 +960,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.PATCH, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Patch, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1017,7 +1017,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Post, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1165,7 +1165,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Post, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1229,7 +1229,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Post, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1302,7 +1302,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Post, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1367,7 +1367,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Post, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1442,7 +1442,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Post, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1506,7 +1506,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Post, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1599,7 +1599,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.POST, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Post, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)
@@ -1718,7 +1718,7 @@ namespace QuickPaySharp.Api
 			String[] authSettings = new String[] { };
 
 			// make the HTTP request
-			IRestResponse response = (IRestResponse)ApiClient.CallApi(path, Method.PUT, queryParams, postBody,
+			RestResponse response = (RestResponse)ApiClient.CallApi(path, Method.Put, queryParams, postBody,
 				headerParams, formParams, fileParams, authSettings);
 
 			if (((int)response.StatusCode) >= 400)

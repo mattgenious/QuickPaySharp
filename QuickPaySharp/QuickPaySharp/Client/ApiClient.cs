@@ -10,6 +10,9 @@ using System.Text;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Extensions;
+using System.Threading;
+using System.Threading.Tasks;
+using QuickPaySharp.Api;
 
 namespace QuickPaySharp.Client
 {
@@ -89,7 +92,7 @@ namespace QuickPaySharp.Client
 
             // add file parameter, if any
             foreach(var param in fileParams)
-                request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentLength, param.Value.ContentType);
+                request.AddFile(param.Value.Name, param.Value.GetFile, param.Value.FileName, param.Value.ContentType);
 
             if (postBody != null) // http body (model) parameter
                 request.AddParameter("application/json", postBody, ParameterType.RequestBody);
@@ -125,14 +128,14 @@ namespace QuickPaySharp.Client
         /// <param name="name">Parameter name.</param>
         /// <param name="stream">Input stream.</param>
         /// <returns>FileParameter.</returns>
-        public FileParameter ParameterToFile(string name, Stream stream)
+        public async Task<FileParameter> ParameterToFileAsync(string name, Stream stream, CancellationToken cancellationToken)
         {
             if (stream is FileStream)
-                return FileParameter.Create(name, stream.ReadAsBytes(), Path.GetFileName(((FileStream)stream).Name));
+                return FileParameter.Create(name, await stream.ReadAsBytes(cancellationToken), Path.GetFileName(((FileStream)stream).Name));
             else
-                return FileParameter.Create(name, stream.ReadAsBytes(), "no_file_name_provided");
+                return FileParameter.Create(name, await stream.ReadAsBytes(cancellationToken), "no_file_name_provided");
         }
-    
+        
         /// <summary>
         /// If parameter is DateTime, output in a formatted string (default ISO 8601), customizable with Configuration.DateTime.
         /// If parameter is a list of string, join the list with ",".
@@ -161,7 +164,7 @@ namespace QuickPaySharp.Client
         /// <param name="type">Object type.</param>
         /// <param name="headers">HTTP headers.</param>
         /// <returns>Object representation of the JSON string.</returns>
-        public object Deserialize(string content, Type type, IList<Parameter> headers=null)
+        public object Deserialize(string content, Type type, IReadOnlyCollection<Parameter> headers=null)
         {
             if (type == typeof(Object)) // return an object
             {
